@@ -96,9 +96,9 @@ this may come from (1) the stellar wind kinetic energy (2) supernovae
 \citet{Generozov+2015} find that the gas density depends on the
 mass return parameter, $\eta$, the heating rate, $v_w$, the black hole
 mass, $\Mbh$, and the power law slope of the stellar density profile
-($\rho_\star\sim r^{-\Gamma}$ for small radii).
+($\rho_\star\sim r^{-\delta_1}$ for small radii).
 
-For a cusp galaxy ($\Gamma\gsim 0.5$), the gas density, $\rho\sim
+For a cusp galaxy ($\delta_1> 0.5$), the gas density, $\rho\sim
 r^{-1}$. In this case the gas density at $10^{18}$ cm, $n_{18}$ can be
 approximated using a simple scaling relation 
 
@@ -111,15 +111,15 @@ n_{18}\simeq 0.4 \Mbh[,7]^{0.5} \eta_{0.02} v_{500}^{-1.5} {\rm
 where $\Mbh[,7]=\frac{\Mbh}{10^7 \Msun}$,
 $\eta_{0.02}=\frac{\eta}{0.02}$, and $v_{500}=\frac{v_w}{500 {\rm
     km/s}}$, and we have assumed a fixed slope for the stellar density
-profile $\Gamma=0.8$. Thus, the gas density is quite sensitive to the
-mass return parameter and the heating rate, which are related to the
-star formation history. Young, massive stars put out very energetic
-winds with $v_w\simeq 1000$ km/s with a high mass return rate,
-$\eta\simeq 100$, in contrast stars with age comparable to hat of the
-universe will have slow winds with speeds of order $\sim 10$ km/s and
-mass return parameters, $\eta\simeq0.02$. In the next section we
-explore the range of mass return parameters, heating rates, and gas
-densities allowed by plausible star formation histories.
+power law slope $\delta_1=1.8$. Thus, the gas density is quite
+sensitive to the mass return parameter and the heating rate, which are
+related to the star formation history. Young, massive stars put out
+very energetic winds with $v_w\simeq 1000$ km/s with a high mass
+return rate, $\eta\simeq 100$, in contrast stars with age comparable
+to hat of the universe will have slow winds with speeds of order $\sim
+10$ km/s and mass return parameters, $\eta\simeq0.02$. In the next
+section we explore the range of mass return parameters, heating rates,
+and gas densities allowed by plausible star formation histories.
 
 \subsection{Plausible range of CNM gas densities}
 Increasing the mass return parameter, $\eta$, or decreasing the
@@ -150,12 +150,30 @@ The maximum physical $\eta\simeq 400$\footnote{For details
   of how to calculate $\eta$ for a given star formation history see
   appendix C of \citet{Generozov+2015}.} occurs $\sim 3$ Myr after a
 burst of star formation. Evaluating equation~\eqref{eq:n18ti} with
-$\eta=430$ gives the maximum possible CNM density
+$\eta=400$ gives the maximum possible CNM density
 
 \begin{equation}
 n_{\rm 18,max} \simeq 2,700 \Mbh[,7]^{0.38} {\rm cm^{-3}}
 \label{eq:n18max}
 \end{equation}
+
+Although such large gas densities would be present in the immediate
+aftermath of a starburst, the wind mass loss rate (and thus the gas
+density) declines as $\eta \sim t^{-3}$. Thus we expect the gas density would
+decline by an order of magnitude after a few Myr. Note that type II
+Supernovae could inject additional mass into the CNM, but this
+injection would be intermittent (e.g. the time between SNe would be
+long compared to a dynamical time).
+
+However, we also find high gas densities ($n_{18}\sim 2000$ cm$^{-3}$)
+may be present for E+A galaxies with stellar ages $\tau_\star\sim
+10^8-10^9$ years.  
+
+{\bf AG possibly some of this detail could go into an appendix} We
+construct a gas density profile for the nearby E+A galaxy NGC
+3156. This galaxy has a stellar light profile measured with high
+resolution HST photometry. \citealt{Krajnovic+2013} find a steep inner
+power law slope 
 
 What is the smallest plausible CNM density? This would correspond to a
 small mass return parameter and a small heating rate. The mass return
@@ -244,8 +262,8 @@ where $0.1 \Mbh[7]^{1/2} \lsim n_{\rm 18}\lsim 2,700
 
 The gas density density experiences a break at radius $r_b$, the break
 radius in the stellar density profile, where the stellar density
-transitions from an inner power law slope $\Gamma\lsim 1$ to an outer
-power law slope $\beta\gsim 1$. $r_b\gsim 100$ pc for cusp galaxies,
+transitions from an inner power law slope $\delta_1\lsim 2$ to an outer
+power law slope $\delta_2\gsim 2$. $r_b\gsim 100$ pc for cusp galaxies,
 in which case the break radius may be safely ignored as it will be
 well outside the jet deceleration radius. But if there is a nuclear
 star cluster present the effect $r_b$, the outer boundary of the
@@ -281,8 +299,8 @@ $n_{18}$ & $r_b [{\rm pc}]$ & $\beta$\\
 
 We also use a core galaxy profile to see how the For core galaxies the stellar density profile is not a pure power
 law. To simplify things we will consider one particular slope for the
-stellar density profile  $\rho_\star\sim r^{-1-\Gamma}$ with
-$\Gamma=0.1$. The gas density profile may be approximated as 
+stellar density profile:  $\rho_\star\sim r^{\delta_1}$ with
+$\delta_1=1.1$. The gas density profile may be approximated as 
 
 \begin{align}
 \begin{cases}
