@@ -39,9 +39,11 @@
   Radio light curves calculated for TDE jets. CNM
   densities based on \citet{Generozov+2015}. 
 \end{abstract}
-
+\section{Introduction}
+\label{sec:intro}
 
 \section{CNM density}
+\label{sec:cnm}
 
 \subsection{Model}
 
@@ -170,14 +172,14 @@ may be present for E+A galaxies with stellar ages $\tau_\star\sim
 10^8-10^9$ years. Although E+A galaxies are rare they host $\sim 20
 \%$ of all optically selected TDE candidates. Thus, the high density
 limit could be relevant for sizable fraction of TDEs {\bf AG citation
-  needed here}.
+  needed here...}
 
 {\bf AG too much detail?} We construct a gas density profile for the
 nearby E+A galaxy NGC 3156. This galaxy has a stellar light profile
 measured with high resolution HST photometry. \citealt{Krajnovic+2013}
 find a steep inner stellar density profile with $\rho_\star\sim
 r^{-2.78}$, albeit with a possible turnover to a shallower profile at
-$r sim 2-4$ pc. We assume a core-like profile with $\rho_\star \sim
+$r \sim 2-4$ pc. We assume a core-like profile with $\rho_\star \sim
 r^{-1.1}$ for small radii, but find our results are relatively
 insensitive to the choice of inner stellar density slope.
 
@@ -243,11 +245,6 @@ density.
     sequence). The contribution of this older burst increases towards
     the right, crossing boundary of the thermally unstable (``TI'')
     region below the thick black line.}
-% Space of possible mass return parameters
-%     ($\eta$) and heating rates ($v_w$) with lines of constant gas
-%     density in (black lines). Red and brown lines show different star
-%     formation histories... {\bf AG should include supernova heating in
-%       this plot}.
 \end{figure}
 
 
@@ -290,8 +287,11 @@ Table~\ref{tab:params} below
 
 
 \begin{table}
-\caption{\label{tab:params} Summary of numerical parameters used for
-  the CNM profile (equation~\eqref{eq:profile}). Entries in}
+  \caption{\label{tab:params} Summary of numerical parameters used for
+    the CNM profile (equation~\eqref{eq:profile}). ``-'' in the $r_b$
+    and $\beta$ column indicate that the gas density profile is a
+    single power law without any breaks. ``...'' in any column
+    indicates the entry is the same as the one above it.}
 \begin{minipage}{\columnwidth}
 \begin{tabular}{|l|l|l|}
 $n_{18}$ & $r_b [{\rm pc}]$ & $\beta$\\
@@ -344,6 +344,60 @@ $r_s$ are given in the table below.
  Low & 0.1 $\Mbh[7]^{-0.24}$ cm$^{-3}$ & 6$\times 10^{16} \Mbh[7]$ cm
 \end{tabular}
 \end{table}
+
+\section{TDE jets}
+This section would summarize modeling of TDE jets.
+
+\subsection{Jet Models}
+
+\subsection{Hydrodynamics}
+
+\subsection{Light Curves}
+
+
+\section{Results}
+
+\subsection{Effects of gas density}
+
+In Fig.~\ref{fig:upper_limits} we show the on-axis light curves for
+our fiducial jet model with CNM density profile $n=n_{18} (r/10^{18}
+{\rm} cm)^{-1}$ cm$^{-3}$ with $n_{18}$=2, 60, and 2000 cm$^{-3}$. The
+higher density models peak at later times with smaller peak
+luminosities {\bf AG Do we understand this? Is this due to the effect
+  of self-absorption?}.
+
+{\bf AG it would probably be good to have a figure showing the
+  different components contributing to the emission.} The radio light
+curve has contributions from both the slow and fast jet
+components. The fast component dominates at
+early times for the $n_{18}=2$ and 60 lightcurves, while the slow
+component dominates for all times as frequencies for
+$n_{18}$=2000. Generally, the fast component is more important at
+higher frequencies, and lower densities.
+
+We also show radio upper limits and detections for various TDE
+candidates in Fig.~\ref{fig:upper_limits} (these were compiled from
+various sources into Table 1 of \citealt{Mimica+2015}). Overall, the
+measurements were taken too late to be strongly constraining,
+especially for the low density models: the lightcurves or $n_{18}=2$
+peak on time-scales of months, while many of the radio measurements
+were taken decades after the TDE flare.
+
+\begin{figure} 
+  \includegraphics[width=8cm]{lightcurves.pdf}
+  \caption{\label{fig:upper_limits} On-axis radio light-curves for
+    fiducial jet model ({\bf AG-Summary table for jet models}) and CNM
+    density profile $n=n_{18} (r/10^{18} {\rm cm})^{-1}$, for three
+    different values of n$_{18}$: 2, 60, and 2000. Radio upper limits and
+    detections are shown as gray triangles and circles respectively
+    (compiled in Table 1 of \citealt{Mimica+2015}).}
+\end{figure}
+
+\subsection{Effect of stellar density slope}
+
+
+\subsection{Effects of viewing angle}
+
 
   \footnotesize{
     \bibliographystyle{mn2e}
