@@ -41,7 +41,62 @@
 \end{abstract}
 \section{Introduction}
 \label{sec:intro}
-The remainder of the this paper is organized is possible: In
+When stars wander too close to a black hole (BH) they are disrupted by
+tidal forces. If a star passes within a tidal radius it will be fully
+torn apart with half of the material bound to the BH while the
+other half is flung outwards towards infinity. It is expected that the
+bound material will accrete onto the hole and create a luminous flare
+\citep{Hills1975, Carter+1982, Rees1988}. 
+
+Many tidal disruption candidates have now been identified in the
+UV/optical and/or soft x-rays {\bf AG: citations}. Additionally,
+observers have now found three tidal disruption candidates accompanied
+by synchrotron emission from relativistic outflows
+(\citealt{Bloom+2011, Zauderer+2011, Cenko+2012, Brown+2015} ({\bf AG:
+  should probably cite more here}). These events are all characterized
+by non-thermal, highly variable x-ray emission (possibly from the base
+of the jet), and self-absorbed synchrotron emission (naturally
+explained by acceleration of particles at shocks formed at the
+interface between the jet and cicumnuclear gas).
+
+Although a handful of such jetted tidal disruption candidates are
+now known, the overall fraction of TDEs which launches jets is small:
+of order $\sim 0.1-10\%$
+\citep{van-Velzen+2013}\footnote{\citet{van-Velzen+2013} give a lower
+  limit of 0 in case the jetted events so far are actually associated
+  with AGN activity}.  There are two classes of explanations for this:
+(1) jets are launched in the majority of tidal disruption flares, but
+the CNM density is either too high or too low for producing observable
+synchrotron emission. (2) Jets are intrinsically uncommon. For
+example, jets may be rare because the conditions required for the
+Blandford-Znajek mechanism are not met in most stellar tidal
+disruption events.
+
+Here we explore the possibility that the jet emission is usually
+stifled by simulating the jet-CNM interaction with a broad range of
+circumnuclear medium densities. We simulate the hydrodynamic
+interaction of the jet with the CNM in one and two-dimensions, and
+calculate resulting synchrotron emission, as done by
+\citet{Mimica+2015}. In order to isolate the effects of varying the
+nuclear gas density, we fix the jet properties to the best jet model
+from \citet{Mimica+2015} for the Sw J1644+57 tidal disruption flare.
+This is a two component jet with a fast ($\Gamma=10$) core and a slow
+($\Gamma=2$) sheath with isotropic equivalent energy $E=4 \times
+10^{54}$ ergs.
+
+To establish low and high density limits for the circumnuclear gas, we
+consider the rate of mass injection from stellar winds for different
+stellar populations. A younger stellar population would have
+significant wind mass loss from O \& B stars. In contrast, these rate
+of wind mass loss from an older population, which lacks these massive
+stars, could $\sim 2$ orders of magnitude smaller. We use the
+formalism of \citet{Generozov+2015} (hereafter GSM15) to estimate CNM
+gas density for a broad range of stellar populations. By comparing the
+radio light-curves with observed radio upper limits, we test whether
+TDE jets would produce observable synchrotron emission for the
+physically expected range of CNM densities.
+
+The remainder of the this paper is organized as follows: In
 $\S\ref{sec:cnm}$ we bracket the range of physically expected CNM
 densities. In $\S\ref{sec:jet}$ we describe the our model for the TDE
 jet and the jet-CNM interaction. We use both 1d and 2d hydrodynamic
@@ -303,8 +358,8 @@ Table~\ref{tab:params} below
 
 \begin{table}
   \caption{\label{tab:params} Summary of numerical parameters used for
-    the CNM profile (equation~\eqref{eq:profile}). ``-'' in the $r_b$
-    and $\beta$ column indicate that the gas density profile is a
+    the CNM profile (equation~\eqref{eq:profile}). A ``-'' in the $r_b$
+    or $\beta$ columns indicates that the gas density profile is a
     single power law without any breaks. ``...'' in any column
     indicates the entry is the same as the one above it.}
 \begin{minipage}{\columnwidth}
@@ -323,10 +378,12 @@ $n_{18}$ & $r_b [{\rm pc}]$ & $\beta$\\
 
 {\bf AG cores...}
 
-We also use a core galaxy profile to see how the For core galaxies the stellar density profile is not a pure power
-law. To simplify things we will consider one particular slope for the
-stellar density profile:  $\rho_\star\sim r^{\delta_1}$ with
-$\delta_1=1.1$. The gas density profile may be approximated as 
+We also use a core galaxy profile to see how the shape of the stellar
+density profile would affect the radio lightcurve. For core galaxies
+the stellar density profile is not a pure power law. To simplify
+things we will consider one particular slope for the stellar density
+profile: $\rho_\star\sim r^{-\delta_1}$ with $\delta_1=1.1$. The gas
+density profile may be approximated as
 
 \begin{align}
 \begin{cases}
