@@ -118,7 +118,8 @@ The density profile of the CNM encountered by a relativistic TDE jet
 will affect the observed radio light curve. A very high density could
 rapidly decelerate the jet, suppressing the synchrotron emission. A
 very low density would gradually decelerate the jet and spread the
-radio emission over long time scales \citep{Mimica+2015}.  It could be 
+radio emission over long time scales \citep{Mimica+2015} {\bf but this
+is not what we actually see in the simulations}.  It could be 
 radio emission from TDE jets is only observable for a narrow range of
 CNM properties. Although the empirical rate of jetted tidal disruption
 events is small (0.1-10\% of the TDE rate according to
@@ -259,10 +260,10 @@ pc. {\bf AG--w/o turnover the inner density slope would be -2--possibly
 do a special case?}
 
 What is the smallest plausible CNM density? This would correspond to a
-small mass return parameter and a small heating rate. The mass return
-return parameter, $\eta=0.02$, reaches its minimum value for a stellar
+small mass return parameter and a high heating rate. The mass return
+parameter, $\eta=0.02$, reaches its minimum value for a stellar
 population that is a Hubble time old. A stellar population
-that is $<$ 3 Myr old will have rate, $v_w=3,000$ km/s.
+that is $<$ 3 Myr old will have a heating rate, $v_w=3,000$ km/s.
 
 A stellar population in which a small fraction, $f$ of the stars
 formed $\lsim 3$ Myr ago and the rest are a Hubble time old, will have
@@ -335,23 +336,71 @@ black hole accretion rate, $\dot{M}_{\bullet}$:
 \end{align}
 
 The black hole accretion rate is some fraction $f_{\rm in}<1$ of the
-large scale inflow rate $\dot{M}$. So equation~\eqref{eq:tgrow}
-This can be translated into an upper bound for gas density, $n_{18}$,
-if we assume an inflow velocity $\sqrt{G M/r}$:
+large scale inflow rate $\dot{M}$. So equation~\eqref{eq:tgrow} can be
+translated into an upper bound for gas density, $n_{18}$, using
+$\dot{M}_{\bullet} = f_{\rm in} \dot{M} = f_{\rm in} 4 \pi r^2 \mu m_p
+n v$.  Assuming an inflow velocity $v=\sqrt{G M/r}$
 
 \begin{align}
-n_{18} &\lsim 10^4 \Mbh[,7]^{0.5} \left(\frac{f_{\rm in}}{0.01}\right)
+n_{18} &\lsim 10^3 \Mbh[,7]^{0.5} \left(\frac{f_{\rm in}}{0.1}\right)
 {\rm cm^{-3}}, 
 \label{eq:tgrowDens}
 \end{align}
 
 e.g. within a factor of a few of the high density limit given in
-equation~\eqref{eq:n18max}, for $f_{\rm in}$=0.01. However, we note
+equation~\eqref{eq:n18max}, for $f_{\rm in}$=0.1. However, we note
 that the value of $f_{in}$ is a large source of uncertainty in this
 analysis. In our own galaxy Faraday rotation measurements {\bf AG
   cite!} suggest $f_{in}\simeq 0.001$.
 
-Alternatively 
+An alternative constraint may be derived by considering the effects of
+black hole feedback. Equation 45 in GSM15 provides an expression for
+the inflow rate for which Compton heating self-regulates the accretion
+flow:
+
+\begin{align}
+\frac{\dot{M}_{C}}{\dot{M}_{\rm edd}} \approx 
+% \Begin{cases} 2\times 10^{-3} \eta_{0.02}^{0.2}T_{\rm
+% C,9}^{-0.8}\epsilon_{-2}^{-0.8} M_{\bullet,8}^{0.16}
+% &, \text{core}\\
+8\times 10^{-4} \eta_{0.02}^{0.3}T_{\rm
+C,9}^{-0.7}\epsilon_{-2}^{-0.7} M_{\bullet,8}^{0.14}
+&, \text{cusp}, 
+  \label{eq:MdotCa}
+\end{align}
+
+where $\epsilon_{-2}=\epsilon_{\rm rad} f_{\rm in}/0.01$, depends on
+both ratio of the accretion rate to the large scale inflow rate,
+$f_{\rm in}$, and the radiative efficientcy of the inner accretion
+$\epsilon_{\rm rad}$, which is itself a function of the accretion
+rate. $T_{C,9}$ is the Compton temperature normalized to $10^9$
+K (see...). Taking $\epsilon_{\rm rad}=0.03$ and the maximum physically
+plausible $\eta=400$, we obtain
+
+\begin{align}
+n_{18} \simeq 700 \Mbh[,7]^{0.6} \left(\frac{f_{\rm
+      in}}{0.1}\right)^{0.7} \left(\frac{T_{\rm C}}{10^9 {\rm
+      K}}\right)^{-0.7} {\rm cm^{-3}},
+\end{align}
+
+{\bf AG note that the maximum physically plausible eta already
+  presupposes that the mass budget is dominated by young stars, and in
+this regime we expect that Compton heating would be very
+subdominant...}
+
+{\bf AG momentum based feed-back.}
+
+
+{\bf AG Jeans criterion -- but be careful of tidal effects.}
+
+AGN feedback would may blow low density bubbles in the
+CNM. \citet{Russell+2013} used Chandra x-ray observations to measure gas
+density and temperature profiles for a sample of massive elliptical
+galaxies. The measured electron density on scales of $\sim 100
+pc$ is $\gsim 0.1$ cm$^{-3}$. Note that the gas density at 100 pc
+would be irrelevant for a TDE jet, but we would not expect the gas
+density to be decreasing towards the galactic center in a steady
+state. {\bf These are only massive ellipticals with $\Mbh\sim 10^{9} \Msun$.}
 
 \subsection{Adopted gas density profiles}
  Motivated by the preceding sections we adopt the following density
@@ -457,8 +506,34 @@ This section would summarize modeling of TDE jets.
 
 \subsection{Hydrodynamics}
 
-\subsection{Light Curves}
+\subsection{1-d vs. 2-d Models}
+We compare the light-curves for 1-d and 2-d jet simulations with the
+same structure (fast ($\Gamma=10$) core and slow ($\Gamma-2$)
+sheath). Note that the hydrodynamic evolution of these 2 components is
+independent in 1-d, but the radiative transfer/light-curve calculation
+is sensitive to the jet geometry.
 
+2-d effects reduce peak radio luminosity, especially for large
+observing frequencies and on-axis jets. Two-dimensional jets also show
+an earlier peak for off-axis events (see Fig.~\ref{fig:1d2d}).
+
+\begin{figure}
+\includegraphics[width=8cm]{comparison_1ghz.pdf}
+\caption{\label{fig:1d2d} Comparison of 1-d (dashed) and 2-d (solid)
+  light-curves for 1 GHz, for fixed CNM density $n=60
+    (r/10^{18} {\rm cm})^{-1}$.}
+\end{figure}
+
+These discrepancies are due to the fact that in 2-d the jet rapidly
+spreads out and becomes quasi-spherical {\bf AG--dependence on
+  density.} 
+
+We find that to a good approximation the late-time results of two
+component 2-d simulations may be reproduced using a 1-d simulation
+with the same fast core, and an expanded slow component extending to
+$\theta=\pi/2$ radians. The isotropic equivalent jet energy for the
+1-d simulations, should be fixed so that the true energy in the 1-d
+and 2-d simulations would be the same.
 
 \section{Results}
 \label{sec:results}
@@ -508,15 +583,15 @@ were taken decades after the TDE flare.
 
 \subsection{Effects of viewing angle}
 
-\section{2d calculations}
-\label{sec:2d}
 
 \section{Discussion}
 \label{sec:disc}
+{\bf AG -- Observational prescriptions and rates?}
 
 \section{Summary and Conclusions}
 \label{sec:conc}
 
+\clearpage
   \footnotesize{
     \bibliographystyle{mn2e}
     \bibliography{master}
