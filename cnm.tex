@@ -339,10 +339,11 @@ The black hole accretion rate is some fraction $f_{\rm in}<1$ of the
 large scale inflow rate $\dot{M}$. So equation~\eqref{eq:tgrow} can be
 translated into an upper bound for gas density, $n_{18}$, using
 $\dot{M}_{\bullet} = f_{\rm in} \dot{M} = f_{\rm in} 4 \pi r^2 \mu m_p
-n v$.  Assuming an inflow velocity $v=\sqrt{G M/r}$
+n v$.  Assuming an inflow velocity $v=\sqrt{G M/r}$ {\bf AG double
+  check this equation.}
 
 \begin{align}
-n_{18} &\lsim 10^3 \Mbh[,7]^{0.5} \left(\frac{f_{\rm in}}{0.1}\right)
+n_{18} &\lsim 10^3 \Mbh[,7]^{0.5} \left(\frac{f_{\rm in}}{0.1}\right)^{-1}
 {\rm cm^{-3}}, 
 \label{eq:tgrowDens}
 \end{align}
@@ -403,8 +404,8 @@ density to be decreasing towards the galactic center in a steady
 state. {\bf These are only massive ellipticals with $\Mbh\sim 10^{9} \Msun$.}
 
 \subsection{Adopted gas density profiles}
- Motivated by the preceding sections we adopt the following density
- profile to describe to describe the CNM of cusp galaxies
+ The following density provided a good fit to the CNM density profile
+ of cusp galaxies.
 
 \begin{align}
 n=
@@ -424,37 +425,43 @@ radius in the stellar density profile, where the stellar density
 transitions from an inner power law slope $\delta_1\lsim 2$ to an outer
 power law slope $\delta_2\gsim 2$. $r_b\gsim 100$ pc for cusp galaxies,
 in which case the break radius may be safely ignored as it will be
-well outside the jet deceleration radius. But if there is a nuclear
+well outside the jet deceleration radius. If there is a nuclear
 star cluster present the effect $r_b$, the outer boundary of the
 nuclear star cluster will correspond to a much smaller effective
-$r_b\sim 1-5$ pc. 
+$r_b\sim 1-5$ pc. However, even in this case the break radius is still
+one too large scales to affect the light-curve evolution {\bf AG why?}
+Thus, we don't include a break radius in our gas density profiles.
 
-The outer power law slope of the gas density will depend on the slope
-of the $\beta$ but will typically vary between 1.5 and 2. 
+We perform simulations with CNM density $n=n_{18} \left(r/10^{18} {\rm
+  cm}\right)^{-1}$ with $n_{18}$=2, 60, and 2000 to see what effect
+varying the CNM density would have on the observed radio light-curve.
 
-We explore the parameter space of $n_{18}$, $\beta$, and $r_b$,
-adopting values for these parameters summarized by
-Table~\ref{tab:params} below
+% The outer power law slope of the gas density will depend on the slope
+% of the $\beta$ but will typically vary between 1.5 and 2. 
+
+% We explore the parameter space of $n_{18}$, $\beta$, and $r_b$,
+% adopting values for these parameters summarized by
+% Table~\ref{tab:params} below
 
 
-\begin{table}
-  \caption{\label{tab:params} Summary of numerical parameters used for
-    the CNM profile (equation~\eqref{eq:profile}). A ``-'' in the $r_b$
-    or $\beta$ columns indicates that the gas density profile is a
-    single power law without any breaks. ``...'' in any column
-    indicates the entry is the same as the one above it.}
-\begin{minipage}{\columnwidth}
-\begin{tabular}{|l|l|l|}
-$n_{18}$ & $r_b [{\rm pc}]$ & $\beta$\\
-\hline
-  2     &  -    &  -\\
-  60    &  -    &  -\\
-  ...   &  1    &  1.5\\
-  ...   &  ...   &  2\\
-  2000  &  -    &  -\\
-\end{tabular}
-\end{minipage}
-\end{table}
+% \begin{table}
+%   \caption{\label{tab:params} Summary of numerical parameters used for
+%     the CNM profile (equation~\eqref{eq:profile}). A ``-'' in the $r_b$
+%     or $\beta$ columns indicates that the gas density profile is a
+%     single power law without any breaks. ``...'' in any column
+%     indicates the entry is the same as the one above it.}
+% \begin{minipage}{\columnwidth}
+% \begin{tabular}{|l|l|l|}
+% $n_{18}$ & $r_b [{\rm pc}]$ & $\beta$\\
+% \hline
+%   2     &  -    &  -\\
+%   60    &  -    &  -\\
+%   ...   &  1    &  1.5\\
+%   ...   &  ...   &  2\\
+%   2000  &  -    &  -\\
+% \end{tabular}
+% \end{minipage}
+% \end{table}
 
 
 {\bf AG cores...}
@@ -473,6 +480,7 @@ n = 2.0 n(r_s) (x/0.4)^{-0.95} & x < 0.4\\
 n = 0.75 n(r_s) (x/2.0)^{-0.26} & 2.0< x \leq r_s/r_b\\
 n \sim x^{-1.5} & x>r_s/r_b\\
 \end{cases}
+\label{eq:cores}
 \end{align}
 
 Where, 
@@ -483,20 +491,24 @@ Where,
       x\frac{x^{0.9}-1}{x^{1.9}-1}}
 \end{align}
 
-We consider a high density model (near the verge of thermal
-instability) and a low density model (near the lower limit of what
-stellar winds can give for the CNM density). The values $n(r_s)$ and
-$r_s$ are given in the table below. 
+To isolate the effects of the shape of the density profile, consider a
+core density profile with $r_s=10^{18}$ cm, and $n_{18}=2000$: the
+same as our high density cusp model.
 
-\begin{table}
-\begin{tabular}{|l|l|l}
- core models & $n(r_s)$ & $r_s$\\
-\hline
- High & 2,500 $\Mbh[7]^{-0.32}$ cm$^{-3}$ &  4 $\times 10^{17}  
- \Mbh[7]^{0.8}$ cm\\
- Low & 0.1 $\Mbh[7]^{-0.24}$ cm$^{-3}$ & 6$\times 10^{16} \Mbh[7]$ cm
-\end{tabular}
-\end{table}
+% We consider a high density model (near the verge of thermal
+% instability) and a low density model (near the lower limit of what
+% stellar winds can give for the CNM density). The values $n(r_s)$ and
+% $r_s$ are given in the table below. 
+
+% \begin{table}
+% \begin{tabular}{|l|l|l}
+%  core models & $n(r_s)$ & $r_s$\\
+% \hline
+%  High & 2,500 $\Mbh[7]^{-0.32}$ cm$^{-3}$ &  4 $\times 10^{17}  
+%  \Mbh[7]^{0.8}$ cm\\
+%  Low & 0.1 $\Mbh[7]^{-0.24}$ cm$^{-3}$ & 6$\times 10^{16} \Mbh[7]$ cm
+% \end{tabular}
+% \end{table}
 
 \section{TDE jets}
 \label{sec:jet}
@@ -578,7 +590,31 @@ were taken decades after the TDE flare.
     limits at 5.0 GHz.}
 \end{figure}
 
-\subsection{Effect of stellar density slope}
+\subsection{Effect of gas density profile}
+We have also computed the radio light-curves for different shapes of
+the gas density profile, while holding $n_{18}$ fixed. We compute the
+results for $n_{18}=2000$ for both our fiducial $n\sim r^{-1}$ profile and
+the core galaxy profile, shown in equation~\eqref{eq:cores}. The
+former would more relevant for a cuspy stellar density profile with
+stellar density $\rho_{\star}\sim r^{-2}$, while the latter would be more
+appropriate for a flatter $\rho_{\star}\sim r^{-1}$ stellar density
+profile. As a steeper stellar density is more favorable for producing
+tidal disruption events, we would expect most events to occur is cusp
+rather than core galaxies.
+
+The results are virtually indistinguishable as shown in
+Fig.~\ref{fig:cores}. Overall, the late time evolution of the
+light-curve is insensitive to the slope of the stellar density profile
+(see Figure 3 of \citealt{Mimica+2015}) {\bf AG this is only for the
+  fast narrow component--how do we justify this more generally?}.
+
+
+\begin{figure} 
+  \includegraphics[width=8cm]{fig_cores.pdf}
+  \caption{\label{fig:cores} Comparison of the light-curves for
+    $n_{18}=2000$ and two different CNM gas density profiles: $n\sim
+    r^{-1}$ and the core galaxy profile from...}
+\end{figure}
 
 
 \subsection{Effects of viewing angle}
