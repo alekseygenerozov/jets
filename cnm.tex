@@ -192,7 +192,7 @@ sensitive to the mass return parameter and the heating rate, which are
 related to the star formation history. Young, massive stars put out
 very energetic winds with $v_w\simeq 1000$ km/s with a high mass
 return rate, $\eta\simeq 100$, in contrast stars with age comparable
-to hat of the universe will have slow winds with speeds of order $\sim
+to that of the universe will have slow winds with speeds of order $\sim
 10$ km/s and mass return parameters, $\eta\simeq0.02$. In the next
 section we explore the range of mass return parameters, heating rates,
 and gas densities allowed by plausible star formation histories.
@@ -244,6 +244,10 @@ Supernovae could inject additional mass into the CNM, but this
 injection would be intermittent (e.g. the time between SNe would be
 long compared to a dynamical time).
 
+{\bf AG the subsequent discussion relies on out of date parameters for
+the stellar light profile for NGC 3156. In calculating the profile, we
+assume it turns over at 2 pc. In reality it probably turns over at ~20
+pc, and becomes a typical cusp profile. Next few paragraphs should be axed.}
 However, we also find high gas densities ($n_{18}\sim 2000$ cm$^{-3}$)
 may be present for E+A galaxies with stellar ages $\tau_\star\sim
 10^8-10^9$ years. Although E+A galaxies are rare they host $\sim 20
@@ -277,6 +281,11 @@ parsecs of the galaxy {\bf AG--reran with proper normalization of the
   double-check these results.}
 
 
+{\bf AG--we could probably look for archival ROSAT observations for
+  non-active galaxies, to constrain the gas densities
+  there. For any galaxy w/o central x-ray source could put upper
+  limits on the gas density based on the free-free emission we would
+  have to have.}
 We found an archival X-ray observation from ROSAT for this galaxy {\bf
   AG describe observation here; look for other observation}. There are
 no X-ray sources consistent with the galactic nucleus, which gives a
@@ -288,8 +297,9 @@ tool\footnote{https://heasarc.gsfc.nasa.gov/cgi-bin/Tools/w3pimms/w3pimms.pl}. W
 use an APEC emission model, temperature of ($10^{7} K$--the
 approximate temperature of the gas for radii dominating the x-ray
 emission a solar metallicity ({\bf AG Check for metallicity
-  measurements for this galaxy}), and $2.43\times 10^{20} {\rm cm^{-2}}$ for
-the galactic HI column density\footnote{from https://heasarc.gsfc.nasa.gov/cgi-bin/Tools/w3nh/w3nh.pl}. With
+  measurements for this galaxy}), and $2.43\times 10^{20} {\rm
+  cm^{-2}}$ for the galactic HI column density\footnote{from
+  https://heasarc.gsfc.nasa.gov/cgi-bin/Tools/w3nh/w3nh.pl}. With
 these parameters non-detection gives an upper limit on the flux of
 $\lsim 2\times 10^{39}$ ergs/s {\bf AG check for other x-ray
   images}. Thus, the non-detection is marginally consistent with the
@@ -337,6 +347,14 @@ increasing the density past the thermal instability threshold (thick,
 black line). The intersection between the dashed gray line and the
 thermal instability line corresponds to the maximum possible CNM
 density.
+
+{\bf AG--for these star formation histories there may be small numbers
+of massive stars present. In particular for the low density limit we
+would produce a stellar population, with 1 massive star within the
+stagnation radius, in this case our formalism would break down.}
+
+{\bf AG--Describe a more typical case of a 1 Gyr age stellar
+  population, and heating coming from Ia supernova.}
 
 \begin{figure} 
   \includegraphics[width=8cm]{cnm_plot.pdf}
@@ -391,45 +409,45 @@ that the value of $f_{in}$ is a large source of uncertainty in this
 analysis. In our own galaxy Faraday rotation measurements suggest
 $f_{in}\simeq 0.001$ \citep{Quataert+2000}.{\bf AG more modern citations.}
 
-An alternative constraint may be derived by considering the effects of
-black hole feedback. Equation 45 in GSM15 provides an expression for
-the inflow rate for which Compton heating self-regulates the accretion
-flow:
+% An alternative constraint may be derived by considering the effects of
+% black hole feedback. Equation 45 in GSM15 provides an expression for
+% the inflow rate for which Compton heating self-regulates the accretion
+% flow:
 
-\begin{align}
-\frac{\dot{M}_{C}}{\dot{M}_{\rm edd}} \approx 
-% \Begin{cases} 2\times 10^{-3} \eta_{0.02}^{0.2}T_{\rm
-% C,9}^{-0.8}\epsilon_{-2}^{-0.8} M_{\bullet,8}^{0.16}
-% &, \text{core}\\
-8\times 10^{-4} \eta_{0.02}^{0.3}T_{\rm
-C,9}^{-0.7}\epsilon_{-2}^{-0.7} M_{\bullet,8}^{0.14}
-&, \text{cusp}, 
-  \label{eq:MdotCa}
-\end{align}
+% \begin{align}
+% \frac{\dot{M}_{C}}{\dot{M}_{\rm edd}} \approx 
+% % \Begin{cases} 2\times 10^{-3} \eta_{0.02}^{0.2}T_{\rm
+% % C,9}^{-0.8}\epsilon_{-2}^{-0.8} M_{\bullet,8}^{0.16}
+% % &, \text{core}\\
+% 8\times 10^{-4} \eta_{0.02}^{0.3}T_{\rm
+% C,9}^{-0.7}\epsilon_{-2}^{-0.7} M_{\bullet,8}^{0.14}
+% &, \text{cusp}, 
+%   \label{eq:MdotCa}
+% \end{align}
 
-where $\epsilon_{-2}=\epsilon_{\rm rad} f_{\rm in}/0.01$, depends on
-both ratio of the accretion rate to the large scale inflow rate,
-$f_{\rm in}$, and the radiative efficientcy of the inner accretion
-$\epsilon_{\rm rad}$, which is itself a function of the accretion
-rate. $T_{C,9}$ is the Compton temperature normalized to $10^9$
-K (see...). Taking $\epsilon_{\rm rad}=0.03$ and the maximum physically
-plausible $\eta=400$, we obtain
+% where $\epsilon_{-2}=\epsilon_{\rm rad} f_{\rm in}/0.01$, depends on
+% both ratio of the accretion rate to the large scale inflow rate,
+% $f_{\rm in}$, and the radiative efficiency of the inner accretion
+% $\epsilon_{\rm rad}$, which is itself a function of the accretion
+% rate. $T_{C,9}$ is the Compton temperature normalized to $10^9$
+% K (see...). Taking $\epsilon_{\rm rad}=0.03$ and the maximum physically
+% plausible $\eta=400$, we obtain
 
-\begin{align}
-n_{18} \simeq 700 \Mbh[,7]^{0.6} \left(\frac{f_{\rm
-      in}}{0.1}\right)^{0.7} \left(\frac{T_{\rm C}}{10^9 {\rm
-      K}}\right)^{-0.7} {\rm cm^{-3}},
-\end{align}
+% \begin{align}
+% n_{18} \simeq 700 \Mbh[,7]^{0.6} \left(\frac{f_{\rm
+%       in}}{0.1}\right)^{0.7} \left(\frac{T_{\rm C}}{10^9 {\rm
+%       K}}\right)^{-0.7} {\rm cm^{-3}},
+% \end{align}
 
-{\bf AG note that the maximum physically plausible eta already
-  presupposes that the mass budget is dominated by young stars, and in
-this regime we expect that Compton heating would be very
-subdominant...}
+% {\bf AG note that the maximum physically plausible eta already
+%   presupposes that the mass budget is dominated by young stars, and in
+% this regime we expect that Compton heating would be very
+% subdominant...}
 
-{\bf AG momentum based feed-back.}
+% {\bf AG momentum based feed-back.}
 
 
-{\bf AG Jeans criterion -- but be careful of tidal effects.}
+% {\bf AG Jeans criterion -- but be careful of tidal effects.}
 
 AGN feedback would may blow low density bubbles in the
 CNM. \citet{Russell+2013} used Chandra x-ray observations to measure gas
