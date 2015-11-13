@@ -379,72 +379,79 @@ stagnation radius, in this case our formalism would break down.}
 In this section we present alternative constraints on the CNM gas
 density.  
 
-\citet{Heckman+2004} find that in the local universe small black
-holes {\bf (AG $\Mbh\sim 10^6 \Msun$?)} have growth times, $t_{\rm grow}$
-comparable to a Hubble time, $t_h$, while massive black holes have
-$t_{\rm grow} \gg \th$. This can be used to put a constraint on the
-black hole accretion rate, $\dot{M}_{\bullet}$:
+We can translate observed distributions of Eddington ratio into 
+distributions of $n_{18}$ using
+
+\begin{equation}
+m \dot{M}_{\rm Edd}= f_{\rm in} 4 \pi r^2 \mu m_p n v,
+\end{equation}
+
+where $n$ is the average density at a given radius and $f_{\rm in}$
+represents the fraction of the large scale inflow, which actually
+accretes onto the black hole.  Using the free-fall velocity for
+$v$, we obtain
+
+\begin{equation}
+n_{18} = 3 \times 10^6 M_7^{1/2} m \left(\frac{f_{\rm in}}{0.01}\right)^{-1} {\rm
+  cm}^{-3}
+\label{eq:n18Edd}
+\end{equation}
+
+\citet{Kauffmann+2009} present distributions of
+${\rm L[OIII]}/\Mbh$, for different bins of black hole mass (see their
+Figure 4).  Assuming a bolometric correction, these can be translated
+into distributions of Eddington ratio $m$. We assume that ${\rm
+  L[0III]}/\Mbh=1.7$, corresponds to Eddington ratio of 1, and assume
+that the bolometric correction is independent of ${\rm
+  L[0III]}/\Mbh$.
+
+We focus on the distribution of Eddington ratios for low mass lack
+hole bin ($10^7$ and $10^{7.25} \Msun$) in \citet{Kauffmann+2009}
+(this is the cyan curve in left hand panel their Figure 4). The
+distribution is well fit by
 
 \begin{align}
-\dot{M}_{\bullet} &\lsim \frac{\Mbh}{t_h} \lsim 7 \times 10^{-4}
-\Mbh[,7] \,\, \Msun \pyear
-\label{eq:tgrow}
+  &F_{\rm cum}(m)=\frac{F_{m_0}}{2^{-1/s}}
+  \left(\left(\frac{m}{m_0}\right)^{-a1\,
+      s}+\left(\frac{m}{m_0}\right)^{-a2 \, s}\right)^{-1/s} \label{khFit}\\
+  &s, a1, a2, F_{m_0}=1.42, -0.166, -1.20, 0.235.\nonumber
 \end{align}
 
-The black hole accretion rate is some fraction $f_{\rm in}<1$ of the
-large scale inflow rate $\dot{M}$. So equation~\eqref{eq:tgrow} can be
-translated into an upper bound for gas density, $n_{18}$, using
-$\dot{M}_{\bullet} = f_{\rm in} \dot{M} = f_{\rm in} 4 \pi r^2 \mu m_p
-n v$.  Assuming an inflow velocity $v=\sqrt{G M/r}$ 
+We can use equation~\eqref{eq:n18Edd} to translate the cumulative
+distribution of Eddington ratios from \citet{Kauffmann+2009}  to a cumulative
+distribution of $n_{18}$. We show this for two different choices of
+$f_{\rm in}$ is Fig.~\ref{n18Cum}.
 
-\begin{align}
-n_{18} &\lsim 10^3 \Mbh[,7]^{0.5} \left(\frac{f_{\rm in}}{0.1}\right)^{-1}
-{\rm cm^{-3}}, 
-\label{eq:tgrowDens}
-\end{align}
+\begin{figure}
+\includegraphics[width=8cm]{fcum_n18.pdf}
+\caption{\label{n18Cum} Cumulative distributions of $n_{18}$ from
+  equations~\eqref{n18Edd} and~\eqref{khfit}, for $f_{\rm in}$=1.} 
+\end{figure}
 
-e.g. within a factor of a few of the high density limit given in
-equation~\eqref{eq:n18max}, for $f_{\rm in}$=0.1. However, we note
-that the value of $f_{in}$ is a large source of uncertainty in this
-analysis. In our own galaxy Faraday rotation measurements suggest
-$f_{in}\simeq 0.001$ \citep{Quataert+2000}.{\bf AG more modern citations.}
+No galaxies have an average $n_{18} \lsim$ few cm$^{-3}$, and this
+lower bound would increase as $f_{\rm in}^{-1}$. However, measurements
+of Eddington ratio below $\sim 10^{-3}$ are unreliable, so a small
+fraction of galaxies ($\sim 20\%$), could have much lower gas
+densities.
 
-% An alternative constraint may be derived by considering the effects of
-% black hole feedback. Equation 45 in GSM15 provides an expression for
-% the inflow rate for which Compton heating self-regulates the accretion
-% flow:
+At the high density few galaxies have densities above $\sim$1000
+$f_{\rm in}^{-1}$ cm$^{-3}$.  We expect that $f_{\rm in}$ could be
+quite small for highly sub Eddington systems. For example, Faraday
+rotation measurements \citet{Quataert1999}, show $f_{\rm in}\approx
+10^{-3}$, in our own galactic center. However,  we expect $f_{\rm in}$
+will be of order unity for systems with $m\gsim 0.01$ {\bf AG
+  explain/where exactly we draw the line will have implications for
+  the maximum density}. 
 
-% \begin{align}
-% \frac{\dot{M}_{C}}{\dot{M}_{\rm edd}} \approx 
-% % \Begin{cases} 2\times 10^{-3} \eta_{0.02}^{0.2}T_{\rm
-% % C,9}^{-0.8}\epsilon_{-2}^{-0.8} M_{\bullet,8}^{0.16}
-% % &, \text{core}\\
-% 8\times 10^{-4} \eta_{0.02}^{0.3}T_{\rm
-% C,9}^{-0.7}\epsilon_{-2}^{-0.7} M_{\bullet,8}^{0.14}
-% &, \text{cusp}, 
-%   \label{eq:MdotCa}
-% \end{align}
+Two potential complications to keep in mind are (i) clumpiness of the
+CNM and (ii) anistropy. The distributions above are
+distributions of the {\it average} $n_{18}$. This that some of the
+nuclear gas in a low density hot phase, while the rest is high density
+cold clumps/filaments. However, in this case the cold filaments would
+be dissolved by the radiation from the jet...{\bf AG this needs
+  justification/validation. If this is really true, then analytic
+  section is faulty because it focuses on the hot phase.}
 
-% where $\epsilon_{-2}=\epsilon_{\rm rad} f_{\rm in}/0.01$, depends on
-% both ratio of the accretion rate to the large scale inflow rate,
-% $f_{\rm in}$, and the radiative efficiency of the inner accretion
-% $\epsilon_{\rm rad}$, which is itself a function of the accretion
-% rate. $T_{C,9}$ is the Compton temperature normalized to $10^9$
-% K (see...). Taking $\epsilon_{\rm rad}=0.03$ and the maximum physically
-% plausible $\eta=400$, we obtain
-
-% \begin{align}
-% n_{18} \simeq 700 \Mbh[,7]^{0.6} \left(\frac{f_{\rm
-%       in}}{0.1}\right)^{0.7} \left(\frac{T_{\rm C}}{10^9 {\rm
-%       K}}\right)^{-0.7} {\rm cm^{-3}},
-% \end{align}
-
-% {\bf AG note that the maximum physically plausible eta already
-%   presupposes that the mass budget is dominated by young stars, and in
-% this regime we expect that Compton heating would be very
-% subdominant...}
-
-% {\bf AG momentum based feed-back.}
 
 
 % {\bf AG Jeans criterion -- but be careful of tidal effects.}
