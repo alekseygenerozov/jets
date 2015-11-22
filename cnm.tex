@@ -58,7 +58,7 @@ Previous works (\citet{Bower+13}; \citet{van-Velzen+2013}; \citealt{Mimica+15}) 
 
 In this paper we address the range of gas densities encountered by jetted TDEs and estimate their synchrotron emission by means of analytic calculations and numerical simulations.   If we are led to the conclusion that the observable radio emission should be detected for all allowed CNM densities, then we are lead to the conclusion that most TDEs do not launch J1644-like jets.  This result would have significant implications for the physics of jet launching in TDEs and more broadly.  
 
-In $\S\ref{sec:cnm}$ we explore the expected CNM densities using the formalism developed in \citet{Generozov+2015} (hereafter GSM15) to calculate the CNM profile for different assumptions about the stellar population in the galactic nucleus.  We show that the requirement of a physical stellar population, combined with condition of thermal stability of the hot gas phase, limits the gas density on a scale of $10^{18}$ cm to a range of $n_{18} \sim 0.1-10^{3}$ cm$^{-3}$.  Although the CNM may not be stable in the presence of a starburst associated with AGN activity, we show empirically based on the measured distribution of Eddington ratios that a similar upper limit is present.  
+In $\S\ref{sec:cnm}$ we explore the expected CNM densities using the formalism developed in \citet{Generozov+2015} (hereafter GSM15) to calculate the CNM profile for different assumptions about the stellar population in the galactic nucleus.  A younger stellar population produces significant wind mass loss from O \& B stars. In contrast, the rate of wind mass loss from an older population, which lacks these massive stars, could $\sim 2$ orders of magnitude smaller.  We show that the requirement of a physical stellar population, combined with condition of thermal stability of the hot gas phase, limits the gas density on a scale of $10^{18}$ cm to a range of $n_{18} \sim 0.1-10^{3}$ cm$^{-3}$.  Although the CNM may not be stable in the presence of a starburst associated with AGN activity, we show empirically based on the measured distribution of Eddington ratios that a similar upper limit is present.  
 
 As a second component of this paper, in In $\S\ref{sec:jet}$ we explore the expected synchrotron emission from J1644+57-like across the allowed range of CNM conditions.  We start in $\S\ref{sec:analytic}$ with analytic conditions.  Then in $\S\ref{sec:numerical}$ use both 1d and 2d hydrodynamic models to simulate the jet propagating through the CNM and compare the results in $\S\ref{sec:2d}$. In $\S\ref{sec:results}$ we show radio light-curves from our 1d models for a wide range of CNM densities, to illustrate qualitatively how much varying the CNM density by itself
 could change the radio light-curve.  We discuss the implications of our models for detections of TDEs by future radio surveys in
@@ -67,42 +67,16 @@ $\S\ref{sec:disc}$, and summarize our conclusions in $\S\ref{sec:conc}$.
 \section{Range of CNM Densities}
 \label{sec:cnm}
 
+In this section we place theoretical and observational constraints on the radial profile of the gas density $n(r)$ in the nuclei of galaxies, which is typically takes on a power-law form $n = n_{18}(r/10^{18}{\rm cm})^{-\gamma}$ with $\gamma \approx 1-1.5$.  We focus constraining the normalization $n_{18}$ of the density at $r = 10^{18}$ cm, as the latter represents the approximate deceleration radius of the blast wave ($\S\ref{sec:analytic}$) 
 
-To establish low and high density limits for the circumnuclear gas, we
-consider the rate of mass injection from stellar winds for different
-stellar populations. A younger stellar population would have
-significant wind mass loss from O \& B stars. In contrast, these rate
-of wind mass loss from an older population, which lacks these massive
-stars, could $\sim 2$ orders of magnitude smaller. We use the
-formalism of \citet{Generozov+2015} (hereafter GSM15) to estimate CNM
-gas density for a broad range of stellar populations. By comparing the
-radio light-curves with observed radio upper limits, we test whether
-TDE jets would produce observable synchrotron emission for the
-physically expected range of CNM densities.
+\subsection{Analytic Constraints on CNM Density}
 
-
-\subsection{Model}
-
-The density profile of the CNM encountered by a relativistic TDE jet
-will affect the observed radio light curve. A very high density could
-rapidly decelerate the jet, suppressing the synchrotron emission.
-{\bf AG more details.}  It could be radio emission from TDE jets is
-only observable for a narrow range of CNM properties. Although the
-empirical rate of jetted tidal disruption events is small (0.1-10\% of
-the TDE rate according to \citealt{van-Velzen+2013}) it is possible
-that the intrinsic rate is far higher.
-
-We calculate radio light curves for a range of physically plausible
-CNM densities, to explore what conditions are required for TDE jets to
-produce observable radio emission. 
+\subsubsection{CNM Model}
 
 The dominant source of gas injection into the CNM of quiescent
 galaxies is winds from stars in the galactic nucleus. The 1D spherical
 hydrodynamic equations with stellar wind mass injection are
-(e.g. \citealt{Holzer+1970}) {\bf AG: possibly the detailed
-  description of the CNM model should get a separate appendix.}
-
-
+(e.g. \citealt{Holzer+1970}; \citealt{Quataert04}) 
 \begin{align}
   &\frac{\partial \rho}{\partial t}+\frac{1}{r^2}\frac{\partial}{\partial r}\left(\rho r^2 v\right)=q \label{eq:drhodt}\\
   &\rho \left(\frac{\partial v}{\partial t} + v\frac{\partial
@@ -113,51 +87,33 @@ hydrodynamic equations with stellar wind mass injection are
     \frac{p}{\rho} \right] ,
 \label{eq:dsdt}
 \end{align}
+where $\rho = m_p n$, $v$, $p$, and $s$ are the density, velocity, pressure (assumed to be an ideal gas with $\mu = 0.62$), and
+specific entropy, respectively.  The enclosed mass $\Menc = M_{\bullet} + M_{\star}$ includes both the black hole mass $M_{\bullet}$ and enclosed stellar mass $M_{\star} \propto \int \rho_{\star}r^{2}dr$.  
 
-where $\rho$, $v$, $p$, and $s$ are the density, velocity, pressure, and
-specific entropy, respectively.  $\Menc$ is the combined black hole
-and enclosed stellar mass. The pressure is given by an ideal gas
-equation of state.  {\bf AG: Quick summary of previous work on
-  modeling CNM density.}
+The mass source term $q =\eta \rho_\star/\th$ is the mass injection rate per unit volume per unit time, where $\rho_\star$ is the stellar density.  At small radii of interest, inside the Nuker `break' radius, the stellar density follows $\rho_\star\sim r^{-\delta_1}$, where $\delta_1 = 0-1$ is the inner Nuker profile (REF LAUER).  The energy source term $\propto v_w^{2}$ parameterizes the heating rate of the gas, as physically results from stellar wind kinetic energy, supernovae, and black hole feedback.  
 
- {\bf AG: note I took the mean molecular weight to be
-  0.62.}
-
-$q$ is the mass injection rate per unit volume per unit time and is
-proportional the stellar density divided by a Hubble time: $q=\eta
-\rho_\star/\th$. $v_w$ encapsulates the heating of the gas. Physically
-this may come from (1) the stellar wind kinetic energy (2) supernovae
-(3) black hole feedback.
-
-\citet{Generozov+2015} find that the gas density depends on the
-mass return parameter, $\eta$, the heating rate, $v_w$, the black hole
-mass, $\Mbh$, and the power law slope of the stellar density profile
-($\rho_\star\sim r^{-\delta_1}$ for small radii).
-
-For a cusp galaxy ($\delta_1> 0.5$), the gas density, $\rho\sim
-r^{-1}$. In this case the gas density at $10^{18}$ cm, $n_{18}$ can be
-approximated using a simple scaling relation 
-
+For a cusp galaxy ($\delta_1> 0.5$), \citet{Generozov+2015} show that the gas density obeys $n \sim
+r^{-1}$, with a normalization
 \begin{equation}
 n_{18}\simeq 0.4 \Mbh[,7]^{0.5} \eta_{0.02} v_{500}^{-1.5} {\rm
   cm^{-3}},
 \label{eq:n18}
 \end{equation}
+where $\Mbh[,7]= \Mbh/10^7 \Msun$,
+$\eta_{0.02}= \eta/0.02$, and $v_{500}=v_w/500$ km s$^{-1}$, and we have assumed a fixed slope for the stellar density
+power law slope $\delta_1=1.8$. 
 
-where $\Mbh[,7]=\frac{\Mbh}{10^7 \Msun}$,
-$\eta_{0.02}=\frac{\eta}{0.02}$, and $v_{500}=\frac{v_w}{500 {\rm
-    km/s}}$, and we have assumed a fixed slope for the stellar density
-power law slope $\delta_1=1.8$. Thus, the gas density is quite
-sensitive to the mass return parameter and the heating rate, which are
+Equation (\ref{eq:n18}) shows that the gas density is sensitive to the mass return parameter and the heating rate, which are
 related to the star formation history. Young, massive stars put out
-very energetic winds with $v_w\simeq 1000$ km/s with a high mass
-return rate, $\eta\simeq 100$, in contrast stars with age comparable
+very energetic winds with $v_w\simeq 1000$ km s$^{-1}$ with a high mass
+return rate, $\eta\simeq 100$.  In contrast, stars with age comparable
 to that of the universe will have slow winds with speeds of order $\sim
-10$ km/s and mass return parameters, $\eta\simeq0.02$. In the next
+10$ km s$^{-1}$ and mass return parameters, $\eta\simeq0.02$. In the next
 section we explore the range of mass return parameters, heating rates,
 and gas densities allowed by plausible star formation histories.
 
-\subsection{Plausible range of CNM gas densities}
+\subsection{Allowed Range of CNM Densities}
+
 Increasing the mass return parameter, $\eta$, or decreasing the
 heating parameter $v_w$, increases the gas density, $n_{18}$.
 However, one cannot increase the $\eta$ or decrease $v_w$ arbitrarily
@@ -556,7 +512,9 @@ same as our high density cusp model.
 
 \section{TDE jets}
 \label{sec:jet}
-This section would summarize modeling of TDE jets.
+
+\subsection{Analytic Considerations}
+\label{sec:analytic}
 
 \subsection{Jet Models}
 
