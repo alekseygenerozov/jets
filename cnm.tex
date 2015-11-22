@@ -107,58 +107,37 @@ Equation (\ref{eq:n18}) shows that the gas density is sensitive to the mass retu
 related to the star formation history. Young, massive stars put out
 very energetic winds with $v_w\simeq 1000$ km s$^{-1}$ with a high mass
 return rate, $\eta\simeq 100$.  In contrast, stars with age comparable
-to that of the universe will have slow winds with speeds of order $\sim
+to that of the universe will have slow winds with speeds of order\footnote{In the case of such low heating, $v_w \lesssim \sigma$, the heating of the gas is dominated by the velocity dispersion of the nucleus $\sigma$.} $\sim
 10$ km s$^{-1}$ and mass return parameters, $\eta\simeq0.02$. In the next
 section we explore the range of mass return parameters, heating rates,
 and gas densities allowed by plausible star formation histories.
 
-\subsection{Allowed Range of CNM Densities}
+\subsubsection{Allowed Density Range for Thermal Stability}
 
-Increasing the mass return parameter, $\eta$, or decreasing the
-heating parameter $v_w$, increases the gas density, $n_{18}$.
-However, one cannot increase the $\eta$ or decrease $v_w$ arbitrarily
-as the CNM will become thermally unstable. Specifically if the heating
-rate falls below
-
+Equation (\ref{eq:n18}) shows that increasing the mass return parameter, $\eta$, or decreasing the heating parameter $v_w$, increases the gas density, $n_{18}$.  However, as we now show, one cannot increase the $\eta$ or decrease $v_w$ indefinitely, as the CNM will become thermally unstable.  Defining thermally instability as occuring when the cooling time of the gas is less than 10 times the local dynamical timescale (\citealt{McCourt+11}), GSM15 show that the CNM is thermally unstable for wind heating rates below a critical value 
 \begin{equation}
-v_{\rm w,TI}\simeq 200 \eta_{0.02}^{0.17} \Mbh[,7]^{0.08} \,{\rm km/s} 
+v_{\rm w,TI}\simeq 200 \eta_{0.02}^{0.17} \Mbh[,7]^{0.08} \,{\rm km \,\,s^{-1}},
 \label{eq:ti}
 \end{equation}
+where we have assumed line cooling dominates free-free emission, as is valid for $v_{\rm w} \lesssim 10^{3}$ km s$^{-1}$.
 
-{\bf AG: for vw$>1000$ km/s the cooling will be dominated by
-  Bremstrahlung and so the ti criterion may be somewhat different} {\bf
-  AG: Note that properly interpreted this critical heating rate
-  corresponds to the total heating--including the velocity dispersion
-  heaitng.}  
-If the heating rate falls below this critical value the
-CNM will become thermally unstable, condensing into cold clouds {\bf
-  AG--caveats}. Thus, the maximum possible density $n_{18}$ for a
-given $\eta$ will correspond to $v_{\rm w,TI}$. From
-equations~\eqref{eq:n18} and~\eqref{eq:ti} this will be given by
-
+If the hot phase of CNM reaches a thermally unstable condition ($v_{\rm w} \lesssim v_{\rm w,TI}$), it is likely that portions of the hot phase will condense into cold gas, eventually resulting in star formation.  Therefore, it is reasonable to hypothesize that the CNM will regulate itself to the condition $v_w \lesssim v_{\rm w,TI}$ (a similar argument has been made on larger scales in galaxies; \citealt{Voit+15}).  The condition places a lower limit on the gas density
 \begin{equation}
-n_{\rm 18,TI}\simeq 1.6 \eta_{0.02}^{0.75} \Mbh[,7]^{0.38} \, {\rm cm^{-3}}
-\label{eq:n18ti}
+n_{18} \lesssim n_{\rm 18,TI}\simeq 1.6 \eta_{0.02}^{0.75} \Mbh[,7]^{0.38} \, {\rm cm^{-3}}\,\,\,\text{Thermal Stability}
+\label{eq:n18ti},
 \end{equation}
+where we have used equations~\eqref{eq:n18} and~\eqref{eq:ti}.
 
-The maximum physical $\eta\simeq 400$\footnote{For details
+The maximum physical value of $\eta\simeq 400$ occurs $\sim 3$ Myr after a burst of star formation.\footnote{For details
   of how to calculate $\eta$ for a given star formation history see
-  appendix C of \citet{Generozov+2015}.} occurs $\sim 3$ Myr after a
-burst of star formation. Evaluating equation~\eqref{eq:n18ti} with
-$\eta=400$ gives the maximum possible CNM density
-
+  appendix C of \citet{Generozov+2015}.}  Evaluating equation~\eqref{eq:n18ti} with
+$\eta=400$ gives the maximum thermally-stable CNM density
 \begin{equation}
-n_{\rm 18,max} \simeq 2,700 \Mbh[,7]^{0.38} {\rm cm^{-3}}
+n_{\rm 18,max} \simeq 2.7\times 10^{3} \Mbh[,7]^{0.38} {\rm cm^{-3}}
 \label{eq:n18max}
 \end{equation}
 
-Although such large gas densities would be present in the immediate
-aftermath of a starburst, the wind mass loss rate (and thus the gas
-density) declines as $\eta \sim t^{-3}$. Thus we expect the gas density would
-decline by an order of magnitude after a few Myr. Note that type II
-Supernovae could inject additional mass into the CNM, but this
-injection would be intermittent (e.g. the time between SNe would be
-long compared to a dynamical time).
+Although such a large gas density would be present in the immediate aftermath of a starburst, the wind mass loss rate (and hence the gas density) declines as $\eta \sim t^{-3}$. Thus we expect the gas density would decline by an order of magnitude after a few Myr. Note that type II Supernovae could inject additional mass into the CNM, but this injection would be intermittent (e.g. the time between SNe would be long compared to a dynamical time).
 
 % {\bf AG the subsequent discussion relies on out of date parameters for
 % the stellar light profile for NGC 3156. In calculating the profile, we
@@ -226,7 +205,7 @@ What is the smallest plausible CNM density? This would correspond to a
 small mass return parameter and a high heating rate. The mass return
 parameter, $\eta=0.02$, reaches its minimum value for a stellar
 population that is a Hubble time old. A stellar population
-that is $<$ 3 Myr old will have a heating rate, $v_w=3,000$ km/s.
+that is $<$ 3 Myr old will have a heating rate, $v_w=3,000$ km s$^{-1}$.
 
 A stellar population in which a small fraction, $f$ of the stars
 formed $\lsim 3$ Myr ago and the rest are a Hubble time old, will have
@@ -235,8 +214,7 @@ $n_{18}$ will be minimized for $f=4\times 10^{-4}$. Both old and young
 stars contribute significantly to the mass injection rate giving
 $\eta\simeq 0.03$, while the young star dominate the heating
 $v_w\simeq 3,000$ km/s and thermally stabilize the gas. These
-parameters give us the minimum possible CNM gas density
-
+parameters provide the minimum possible CNM gas density
 \begin{equation}
 n_{\rm 18,min}\simeq 0.06 \Mbh[,7]^{0.5} {\rm cm^{-3}}
 \label{eq:n18min}
@@ -291,7 +269,7 @@ stagnation radius, in this case our formalism would break down.}
 \end{figure}
 
 
-\subsection{Alternative constraints on CNM gas density}
+\subsection{Empirical Constraints on CNM Density}
 In this section we present alternative constraints on the CNM gas
 density.  
 
