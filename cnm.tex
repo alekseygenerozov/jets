@@ -384,6 +384,7 @@ distributions of $n_{18}$ using
 
 \begin{equation}
 m \dot{M}_{\rm Edd}= f_{\rm in} 4 \pi r^2 \mu m_p n v,
+\label{eq:mdot}
 \end{equation}
 
 where $n$ is the average density at radius $r$ and $f_{\rm in}$
@@ -423,24 +424,46 @@ $n_{18}$ in Fig.~\ref{fig:n18Cum}.
 
 \begin{figure}
 \includegraphics[width=8cm]{fcum_n18.pdf}
-\caption{\label{fig:n18Cum} Cumulative distributions of $n_{18}$ from
-  equations~\eqref{eq:n18Edd} and~\eqref{eq:khFit}, for $f_{\rm in}$=1.} 
+\caption{\label{fig:n18Cum} Fraction of black holes with $f_{\rm in}
+  n_{18}$ greater than a given value--from equations~\eqref{eq:n18Edd}
+  and~\eqref{eq:khFit}. Recall that $f_{\rm in}$ is the ratio of the
+  true accretion rate onto the black hole to the inflow rate of
+  free-falling gas at $10^{18}$ cm. 
+% We expect $f_{\rm in}\approx
+%   {10^{-3}-10^{-2}}$ for low densities and $f_{\rm in} n_{18} \simeq
+%   1$ to be of order unity for $f_{\rm in} n_{18} \gsim 100 $.  In terms of
+%   Eddington ratio, $m$, this corresponds to only a small fraction of
+%   the large scale inflow reaching the hole for $m\lsim 0.01$, and an
+%   order unity fraction reaching the hole for $m\gsim 0.01$.
+}
 \end{figure}
 
-No galaxies have an average $n_{18} \lsim$ few cm$^{-3}$, for the
-maximum $f_{\rm in}=1$.  Also, this lower bound would increase as $f_{\rm
-  in}^{-1}$. However, measurements of Eddington ratio below $\sim
-10^{-3}$ are unreliable, so a small fraction of galaxies ($\sim
-20\%$), could have much lower gas densities.
+No galaxies have a $f_{\rm in }n_{18} \lsim$ few cm$^{-3}$.  This
+gives a lower bound on $n_{18} \gsim$ few cm${-3}$.  This lower bound
+would increase as $f_{\rm in}^{-1}$. However, measurements of
+Eddington ratio below $\sim 10^{-3}$ are unreliable, so a small
+fraction of galaxies ($\sim 20\%$), could have much lower gas
+densities.
 
-At the high density few galaxies have densities above $\sim$1000
-$f_{\rm in}^{-1}$ cm$^{-3}$.  We expect that $f_{\rm in}$ could be
-quite small for highly sub Eddington systems. For example, Faraday
-rotation measurements \citep{Quataert+2000} show $f_{\rm in}\approx
-10^{-3}$, in our own galactic center. However,  we expect $f_{\rm in}$
-will be of order unity for systems with $m\gsim 0.01$ {\bf AG
-  explain/where exactly we draw the line will have implications for
-  the maximum density}. 
+We expect that $f_{\rm in}$ could be quite small for highly sub
+Eddington systems. For example, Faraday rotation measurements
+\citep{Quataert+2000} show $f_{\rm in}\approx 10^{-3}$, in our own
+galactic center. However, we expect $f_{\rm in}$ will be of order
+unity for systems with $m\gsim 0.1$.  
+
+In order to obtain the cumulative distribution for $n_{18}$, we need
+a prescription for $f_{\rm in}$. We refer to \citet{Li+2013}, who
+performed two-dimensional hydrodynamical simulations of axi-symmetric
+rotating accretion flows. When the inflow rate on large scales was
+very sub-Eddington ($\dot{M}/\dot{M}_{\rm Edd} \lsim 10^{-4}$),
+cooling was inefficient and $f_{\rm in}$ was $\sim 0.01$. On the other
+hand, when $\dot{M}/\dot{M}_{\rm Edd}\gsim 10^{-2}$, $f_{\rm in}$
+approaches unity.  We use $\dot{M}_{\rm Acc}/\dot{M}_{\rm Bondi}$ in
+their Figure 6 for $f_{\rm in}$.  
+
+Note that \citet{Li+2013} use an alpha viscosity prescription with
+$\alpha=0.01$. We would expect that the value of $f_{\rm in}$ would be
+sensitive to this choice. {\bf AG--a little more discussion of limitations.}
 
 Two potential complications to keep in mind are (i) clumpiness of the
 CNM and (ii) anistropy. The distributions above are
@@ -450,8 +473,6 @@ cold clumps/filaments. However, in this case the cold filaments would
 be dissolved by the radiation from the jet...{\bf AG this needs
   justification/validation. If this is really true, then analytic
   section is faulty because it focuses on the hot phase.}
-
-
 
 % {\bf AG Jeans criterion -- but be careful of tidal effects.}
 
