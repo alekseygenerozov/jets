@@ -56,17 +56,17 @@ conclude that $\lesssim 10\%$ of TDEs produce jetted TDE emission at a level sim
 
 Previous works (\citet{Bower+13}; \citet{van-Velzen+2013}; \citealt{Mimica+15}) have generally assumed that all TDEs occur in a similar environment as  {\it Swift} J1644+57.  However, in general the gas density in a galactic nucleus depends sensitively on the sources of gas from stellar winds, and the sources of gas heating (\citealt{Quataert04},\citealt{Generozov+2015}).  In a gamma-ray burst, the environment the jet emerges is relatively well-understood to be the wind of the massive progenitor star, or the ISM of the host galaxy.  However, in a TDE, the density could in principle be orders of magnitude higher.   
 
-In this paper we address the range of gas densities encountered by jetted TDEs and the nature of their synchrotron emission by means of analytic calculations and numerical simulations.   We fix the jet properties to the best-fit model of \citet{Mimica+2015} for {\it Swift} J1644+57.  If we are led to the conclusion that the observable radio emission should be detected for all allowed CNM densities, then we are lead to the conclusion that most TDEs do not launch J1644-like jets.  This result would have significant implications for the physics of jet launching in TDEs and more broadly.  
+In this paper we address the range of gas densities encountered by jetted TDEs and estimate their synchrotron emission by means of analytic calculations and numerical simulations.   If we are led to the conclusion that the observable radio emission should be detected for all allowed CNM densities, then we are lead to the conclusion that most TDEs do not launch J1644-like jets.  This result would have significant implications for the physics of jet launching in TDEs and more broadly.  
 
-% We simulate the hydrodynamic interaction of the jet with the CNM in
-% one and two-dimensions, and calculate resulting synchrotron emission,
-% as done by \citet{Mimica+2015}.  This is a two component jet with a fast
-% ($\Gamma=10$) core and a slow ($\Gamma=2$) sheath with isotropic
-% equivalent energy $E=4 \times 10^{54}$ ergs {\bf AG--Modification for
-%   reproducing 2-d sims...}.
-{\bf AG I commented out a paragraph here describing some of the
-  details of the jet model, but I think this could actually go in a
-  different section.}
+In $\S\ref{sec:cnm}$ we explore the expected CNM densities using the formalism developed in \citet{Generozov+2015} (hereafter GSM15) to calculate the CNM profile for different assumptions about the stellar population in the galactic nucleus.  We show that the requirement of a physical stellar population, combined with condition of thermal stability of the hot gas phase, limits the gas density on a scale of $10^{18}$ cm to a range of $n_{18} \sim 0.1-10^{3}$ cm$^{-3}$.  Although the CNM may not be stable in the presence of a starburst associated with AGN activity, we show empirically based on the measured distribution of Eddington ratios that a similar upper limit is present.  
+
+As a second component of this paper, in In $\S\ref{sec:jet}$ we explore the expected synchrotron emission from J1644+57-like across the allowed range of CNM conditions.  We start in $\S\ref{sec:analytic}$ with analytic conditions.  Then in $\S\ref{sec:numerical}$ use both 1d and 2d hydrodynamic models to simulate the jet propagating through the CNM and compare the results in $\S\ref{sec:2d}$. In $\S\ref{sec:results}$ we show radio light-curves from our 1d models for a wide range of CNM densities, to illustrate qualitatively how much varying the CNM density by itself
+could change the radio light-curve.  We discuss the implications of our models for detections of TDEs by future radio surveys in
+$\S\ref{sec:disc}$, and summarize our conclusions in $\S\ref{sec:conc}$.
+
+\section{Range of CNM Densities}
+\label{sec:cnm}
+
 
 To establish low and high density limits for the circumnuclear gas, we
 consider the rate of mass injection from stellar winds for different
@@ -80,21 +80,6 @@ radio light-curves with observed radio upper limits, we test whether
 TDE jets would produce observable synchrotron emission for the
 physically expected range of CNM densities.
 
-The remainder of the this paper is organized as follows: In
-$\S\ref{sec:cnm}$ we bracket the range of physically expected CNM
-densities. In $\S\ref{sec:jet}$ we describe the our model for the TDE
-jet and the jet-CNM interaction. We use both 1d and 2d hydrodynamic
-models to simulate the jet propagating through the CNM and compare the
-results in $\S\ref{sec:2d}$. In $\S\ref{sec:results}$ we show radio
-light-curves from our 1d models for a wide range of CNM densities, to
-illustrate qualitatively how much varying the CNM density by itself
-could change the radio light-curve.  We discuss the implications of
-our models for detections of TDEs by future radio surveys in
-$\S\ref{sec:disc}$, and summarize our conclusions in
-$\S\ref{sec:conc}$.
-
-\section{CNM density}
-\label{sec:cnm}
 
 \subsection{Model}
 
@@ -575,6 +560,13 @@ This section would summarize modeling of TDE jets.
 
 \subsection{Jet Models}
 
+
+We simulate the hydrodynamic interaction of the jet with the CNM in
+ one and two-dimensions, and calculate resulting synchrotron emission,
+ as done by \citet{Mimica+2015}.  This is a two component jet with a fast
+ ($\Gamma=10$) core and a slow ($\Gamma=2$) sheath with isotropic
+ equivalent energy $E=4 \times 10^{54}$ ergs {\bf AG--Modification for
+   reproducing 2-d sims...}.
 \subsection{Hydrodynamics}
 
 \subsection{1-d vs. 2-d Models}
