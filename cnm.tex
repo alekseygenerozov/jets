@@ -155,10 +155,10 @@ massive stars, could $\sim 2$ orders of magnitude smaller.  We show
 that the requirement of a physical stellar population, combined with
 condition of thermal stability of the hot gas phase, limits the gas
 density on a scale of $10^{18}$ cm to a range of $n_{18} \sim
-0.1-10^{3}$ cm$^{-3}$.  Although the CNM may not be stable in the
-presence of a starburst associated with AGN activity, we show
-empirically based on the measured distribution of Eddington ratios
-that a similar upper limit is present.
+0.1-10^{3}$ cm$^{-3}$.  Although these limits come from considering
+only the hot phase of gas, we show empirically based on the measured
+distribution of Eddington ratios that the average density in most
+galactic nuclei is bracketed by this range {\bf AG rephrased}.
 
 As a second component of this paper, in In $\S\ref{sec:jet}$ we
 explore the expected synchrotron emission from J1644+57-like across
@@ -200,7 +200,14 @@ hydrodynamic equations with stellar wind mass injection are
 where $\rho = \mu m_p n$, $v$, $p$, and $s$ are the density, velocity, pressure (assumed to be an ideal gas with $\mu = 0.62$), and
 specific entropy, respectively.  The enclosed mass $\Menc = M_{\bullet} + M_{\star}$ includes both the black hole mass $M_{\bullet}$ and enclosed stellar mass $M_{\star} \propto \int \rho_{\star}r^{2}dr$.  
 
-The mass source term $q =\eta \rho_\star/\th$ is the mass injection rate per unit volume per unit time, where $\rho_\star$ is the stellar density.  At small radii of interest, inside the Nuker `break' radius, the stellar density follows $\rho_\star\sim r^{-\delta_1}$, where $\delta_1 = 0-1$ is the inner Nuker profile (REF LAUER).  The energy source term $\propto v_w^{2}$ parameterizes the heating rate of the gas, as physically results from stellar wind kinetic energy, supernovae, and black hole feedback.  
+The mass source term $q =\eta \rho_\star/\th$ is the mass injection
+rate per unit volume per unit time, where $\rho_\star$ is the stellar
+density.  At small radii of interest, inside the Nuker `break' radius,
+the stellar density follows $\rho_\star\sim r^{-\delta_1}$, where
+$\delta_1 = 0-1$ is the inner Nuker profile \citep{Lauer+2007}.  The energy
+source term $\propto v_w^{2}$ parameterizes the heating rate of the
+gas, as physically results from stellar wind kinetic energy,
+supernovae, and black hole feedback.
 
 For a cusp galaxy ($\delta_1> 0.5$), \citet{Generozov+2015} show that the gas density obeys $n \sim
 r^{-1}$, with a normalization
@@ -213,14 +220,18 @@ where $\Mbh[,7]= \Mbh/10^7 \Msun$,
 $\eta_{0.02}= \eta/0.02$, and $v_{500}=v_w/500$ km s$^{-1}$, and we have assumed a fixed slope for the stellar density
 power law slope $\delta_1=1.8$. 
 
-Equation (\ref{eq:n18}) shows that the gas density is sensitive to the mass return parameter and the heating rate, which are
-related to the star formation history. Young, massive stars put out
-very energetic winds with $v_w\simeq 1000$ km s$^{-1}$ with a high mass
-return rate, $\eta\simeq 100$.  In contrast, stars with age comparable
-to that of the universe will have slow winds with speeds of order\footnote{In the case of such low heating, $v_w \lesssim \sigma$, the heating of the gas is dominated by the velocity dispersion of the nucleus $\sigma$.} $\sim
-10$ km s$^{-1}$ and mass return parameters, $\eta\simeq0.02$. In the next
-section we explore the range of mass return parameters, heating rates,
-and gas densities allowed by plausible star formation histories.
+Equation (\ref{eq:n18}) shows that the gas density is sensitive to the
+mass return parameter and the heating rate, which are related to the
+star formation history. Young, massive stars put out very energetic
+winds with $v_w\simeq 1000$ km s$^{-1}$ with a high mass return rate,
+$\eta\simeq 100$.  In contrast, stars with age comparable to that of
+the universe will have slow winds with speeds of order\footnote{In the
+  case of such low heating, $v_w \lesssim \sigma$, the heating of the
+  gas is dominated by the velocity dispersion of the nucleus
+  $\sigma$.} $\sim 10$ km s$^{-1}$ and mass return parameters,
+$\eta\simeq0.02$. In the next section we explore the range of mass
+return parameters, heating rates, and gas densities allowed by
+plausible star formation histories.
 
 \subsubsection{Allowed Density Range for Thermal Stability}
 
@@ -239,7 +250,14 @@ v_{\rm w,TI}\simeq 200 \eta_{0.02}^{0.17} \Mbh[,7]^{0.08} \,{\rm km \,\,s^{-1}},
 \end{equation}
 where we have assumed line cooling dominates free-free emission, as is valid for $v_{\rm w} \lesssim 10^{3}$ km s$^{-1}$.
 
-If the hot phase of CNM reaches a thermally unstable condition ($v_{\rm w} \lesssim v_{\rm w,TI}$), it is likely that portions of the hot phase will condense into cold gas, eventually resulting in star formation.  Therefore, it is reasonable to hypothesize that the CNM will regulate itself to the condition $v_w \lesssim v_{\rm w,TI}$ (a similar argument has been made on larger scales in galaxies; \citealt{Voit+15}).  The condition places a lower limit on the gas density
+If the hot phase of CNM reaches a thermally unstable condition
+($v_{\rm w} \lesssim v_{\rm w,TI}$), it is likely that portions of the
+hot phase will condense into cold gas, eventually resulting in star
+formation.  Therefore, it is reasonable to hypothesize that the CNM
+will regulate itself to the condition $v_w \lesssim v_{\rm w,TI}$ (a
+similar argument has been made on larger scales in galaxies;
+\citealt{Voit+2015}).  The condition places an upper limit on the gas
+density
 \begin{equation}
 n_{18} \lesssim n_{\rm 18,TI}\simeq 1.6 \eta_{0.02}^{0.75} \Mbh[,7]^{0.38} \, {\rm cm^{-3}}\,\,\,\text{Thermal Stability}
 \label{eq:n18ti},
@@ -593,19 +611,19 @@ same as our high density cusp model.
 
 
 The mass of CNM swept up by the jet $2\pi\theta_{\rm j}^{2}\int m_p
-n_{\rm cnm}r^{2}dr$ equals its own rest mass $M_{\rm j} = E_{\rm
+n_{\rm cnm}(r) r^{2}dr$ equals its own rest mass $M_{\rm j} = E_{\rm
   j}/\Gamma_{\rm j}c^{2}$ at the characteristic (`Sedov') radius given
 by 
 
 \begin{equation}
-r_{\rm sedov} = 0.6\epsilon_{\rm
-  j,-1}^{2/3}M_{\bullet,6}^{-2/3}(\theta_j
-\Gamma_j)^{-4/3}\Gamma_{10}^{2/3}\,{\rm pc} 
+r_{\rm sedov} = 8 \epsilon_{\rm
+  j,-1}^{1/2} (\theta_j
+\Gamma_j)^{-1}\Gamma_{10}^{1/2} n_{\rm 18}^{-1}\,{\rm pc}, 
 \end{equation}
 
-where we have estimated the CNM density profile using equation
-(\ref{eq:nbondi}) for $\dot{M}_{\rm in} = \dot{M}_{\rm rg}$ and have
-estimated the jet energy by its value in the super-Eddington case.
+where we have taken $n_{\rm cnm} (r)=n_{18} \left(r/10^{18} {\rm
+    cm}\right)^{-1}$, and $E_{\rm j}=0.1 \epsilon_{\rm j,-1} \Msun
+c^2$.
 
 From the continuity equation, the (co-moving) density of the jet is
 given by (e.g. Uhm \& Beloborodov 2007)
