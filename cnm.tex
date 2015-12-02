@@ -160,7 +160,7 @@ only the hot phase of gas, we show empirically based on the measured
 distribution of Eddington ratios that the average density in most
 galactic nuclei is bracketed by this range {\bf AG rephrased}.
 
-As a second component of this paper, in In $\S\ref{sec:jet}$ we
+As a second component of this paper, in $\S\ref{sec:jet}$ we
 explore the expected synchrotron emission from J1644+57-like across
 the allowed range of CNM conditions.  We start in
 $\S\ref{sec:analytic}$ with analytic conditions.  Then in
@@ -524,7 +524,7 @@ break in the mass source function, which causes the gas density
 profile to steepen as well. The core profile is similar to the cusp
 galaxy for $r<10^{18}$ cm. It flattens around $10^{18}$ cm and then
 steepens again at the break radius of 25 pc. Note that the radius
-scale on which the core profile flattens corresponds to the stagnation
+where the core profile flattens corresponds to the stagnation
 radius,  $r_s$,  where the gas velocity goes through 0.  $r_s$ will
 depend on the model parameter ($\Mbh$ and $v_w$--see GSM15).
 
@@ -564,7 +564,8 @@ equation~\eqref{eq:cuspProfile} as our fiducial CNM density profile.
 
 We also experiment with a core-like density profile
 (appendix~\ref{app:core}), and compare the radio light-curves for jets
-going through core and cusp-like density profiles in...
+going through core and cusp-like density profiles in
+$\S\ref{sec:profileComp}$.
 
 
 \begin{figure}
@@ -573,7 +574,7 @@ going through core and cusp-like density profiles in...
   profiles. We have taken $\Mbh=10^{7} \Msun$ and $v_w$=600 km/s and
   both profiles have mass source function $q(r) \propto
   r^{-3}$ for $r > 25$. The core profile has $q(r) \propto
-  r^{-1.1}$ for $r < 25$ and the cusp profile has $\rho_{\star}
+  r^{-1.1}$ for $r < 25$ and the cusp profile has $q(r)
   \propto r^{-1.8}$.  The colors at each radius indicate the value of
   isotropic jet energy $E_{52} n_{18}^{1}$, such that the gas mass
   inside that radius is equal to the mass inside the jet.}
@@ -803,6 +804,7 @@ were taken decades after the TDE flare.
 \end{figure}
 
 \subsection{Effect of gas density profile}
+\label{sec:profileComp}
 We have also computed the radio light-curves for different shapes of
 the gas density profile, while holding $n_{18}$ fixed. We compute the
 results for $n_{18}=2000$ for both our fiducial $n\sim r^{-1}$ profile and
@@ -840,6 +842,37 @@ light-curve is insensitive to the slope of the stellar density profile
 
 \section{Summary and Conclusions}
 \label{sec:conc}
+
+\appendix
+\section{Core Profile}
+In $\S\ref{sec:profileComp}$ we compare the results of radio
+light-curves from jets propagating in core and cusp like gas density
+profiles. See Fig.~\ref{fig:profiles} for a comparison of core and
+cusp-like profiles. 
+
+We use the following analytic expression to approximate the core
+galaxy profile
+
+\begin{align}
+\begin{cases}
+n=n(r_s) k(x) & 0.4 \leq x\leq 2.0\\
+n = 2.0 n(r_s) (x/0.4)^{-0.95} & x < 0.4\\
+n = 0.75 n(r_s) (x/2.0)^{-0.26} & x>2.\\
+\end{cases}
+\label{eq:cores}
+\end{align}
+
+Where, 
+
+\begin{align}
+  &x=r/r_s\\\nonumber
+  &k(x)=\frac{45}{19} \frac{1}{x^{3/2}} \frac{1-x^{1.9}}{9-19
+      x\frac{x^{0.9}-1}{x^{1.9}-1}}
+\end{align}
+
+To isolate the effects of the shape of the density profile, consider a
+core density profile with $r_s=10^{18}$ cm, and $n_{18}=2000$: the
+same as our high density cusp model.
 
 \clearpage
   \footnotesize{
