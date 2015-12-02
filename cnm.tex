@@ -239,6 +239,76 @@ $\eta\simeq0.02$. In the next section we explore the range of mass
 return parameters, heating rates, and gas densities allowed by
 plausible star formation histories.
 
+\subsection{Gas density profiles}
+We show example steady state gas density profiles core and cusp
+galaxies in Fig.~\ref{fig:profiles}. For the cusp profile the gas density
+$\rho \propto r^{-1}-r^{-1.1}$ for $r < 25$ pc. At 25 pc we put a
+break in the mass source function, which causes the gas density
+profile to steepen as well. The core profile is similar to the cusp
+galaxy for $r<10^{18}$ cm. It flattens around $10^{18}$ cm and then
+steepens again at the break radius of 25 pc. Note that the radius
+where the core profile flattens corresponds to the stagnation
+radius,  $r_s$,  where the gas velocity goes through 0.  $r_s$ will
+depend on the model parameter ($\Mbh$ and $v_w$--see GSM15).
+
+These profiles also show the characteristic (Sedov) radius at which
+jets of different energy would have swept up their own mass in CNM
+gas.  The jet mostly decelerates inside of this radius, and the
+density at larger radii will only affect the radio at late times, we
+past the peak. {\bf AG could probably explain this better--note take
+  gamma_j=2 in calculating Sedov radius.}
+
+Physically, we expect breaks in the gas density profile wherever there
+are breaks in the stellar density (since the mass source function is
+proportional to the stellar density).  Nuclear stellar light profiles
+are well fit by broken power laws, but the characteristic break radius
+is typically larger than $5 pc$ \citep{Lauer+2007}. However, if a
+nuclear star cluster is present there would be a small effective break
+at the outer edge of the cluster, typically 1-5 pc
+\citep{Georgiev+2014}.
+
+Fig.~\ref{fig:profiles} shows that the Sedov radius for these profiles
+lies inside of $r=1$ pc for $E_{52} n_{18}^{-1} < 20$. Thus for
+realistic break radii $>1$ pc, and our fiducial isotropic equivalent
+energy of $4\times 10^{54}$, the break radius will only be important
+for small densities ($n_{18}<20$). Henceforward we will not consider
+the effects of the break radius in our analysis {\bf AG--this not a
+  strong justification as the lowest luminosities are produced by our
+  lowest density models.} 
+
+From Fig.~\ref{fig:profiles}, the density profile for a
+cusp galaxy is approximately 
+
+\begin{equation}
+n(r) = n_{18} \left(\frac{r}{10^{18} cm}\right)^{-1}
+\label{eq:cuspProfile}
+\end{equation}
+
+inside of the break radii. As we expect, cusp galaxies
+to dominate the tidal disruption event rate \citep{Stone+2014}, we adopt
+equation~\eqref{eq:cuspProfile} as our fiducial CNM density profile.
+
+We also experiment with a core-like density profile
+(appendix~\ref{app:core}), and compare the radio light-curves for jets
+going through core and cusp-like density profiles in
+$\S\ref{sec:profileComp}$.
+
+
+\begin{figure}
+\includegraphics[width=8cm]{sedov_radius.pdf}
+\caption{\label{fig:profiles} Steady state core and cusp density
+  profiles. We have taken $\Mbh=10^{7} \Msun$ and $v_w$=600 km/s and
+  both profiles have mass source function $q(r) \propto
+  r^{-3}$ for $r > 25$. The core profile has $q(r) \propto
+  r^{-1.1}$ for $r < 25$ and the cusp profile has $q(r)
+  \propto r^{-1.8}$.  The colors at each radius indicate the value of
+  isotropic jet energy $E_{52} n_{18}^{1}$, such that the gas mass
+  inside that radius is equal to the mass inside the jet. }
+\end{figure}
+
+
+
+
 \subsubsection{Allowed Density Range for Thermal Stability}
 
 Equation (\ref{eq:n18}) shows that increasing the mass return
@@ -420,7 +490,10 @@ In this section we translate observed constraints on the accretion rate distribu
 \end{equation}
 where $n$ is the average density at radius $r$ and $f_{\rm in}$
 represents the fraction of the large scale inflow, which actually
-accretes onto the black hole.  If we assume that $r$ is interior to the sonic radius, then we can approximate $v$ as the free-fall velocity, $v_{\rm ff} = (GM_{\bullet}/2r)^{1/2}$.  In this case we obtain
+accretes onto the black hole.  If we assume that $r$ is interior to
+the sonic radius, then we can approximate $v$ as the free-fall
+velocity, $v_{\rm ff} = (GM_{\bullet}/2r)^{1/2}$.  In this case we
+obtain
 \begin{equation}
 n_{18} = 3 \times 10^3 M_{\bullet,7}^{1/2} m f_{\rm in}^{-1} {\rm
   cm}^{-3}
@@ -474,8 +547,8 @@ from combining this distribution with equation~\eqref{eq:n18Edd}.  The
 absence of galaxies with $f_{\rm in }n_{18} \lsim$ few cm$^{-3}$
 places a lower bound on $n_{18}$ of a few cm$^{-3}$.  However,
 measurements of Eddington ratio below $\sim 10^{-3}$ are not reliable
-(shown with a vertical dashed line in Fig.~\ref{fig:n18Cum}), allowing
-a moderate fraction of galaxies ($\sim 20\%$) to have much lower gas
+(shown with a vertical line in Fig.~\ref{fig:n18Cum}), allowing
+a moderate fraction of galaxies ($\sim 30\%$) to have much lower gas
 densities.
 
 
@@ -515,71 +588,6 @@ pc$ is $\gsim 0.1$ cm$^{-3}$. Note that the gas density at 100 pc
 would be irrelevant for a TDE jet, but we would not expect the gas
 density to be decreasing towards the galactic center in a steady
 state. {\bf These are only massive ellipticals with $\Mbh\sim 10^{9} \Msun$.}
-
-\subsection{Gas density profiles}
-We show example steady state gas density profiles core and cusp
-galaxies in Fig.~\ref{fig:profiles}. For the cusp profile the gas density
-$\rho \propto r^{-1}-r^{-1.1}$ for $r < 25$ pc. At 25 pc we put a
-break in the mass source function, which causes the gas density
-profile to steepen as well. The core profile is similar to the cusp
-galaxy for $r<10^{18}$ cm. It flattens around $10^{18}$ cm and then
-steepens again at the break radius of 25 pc. Note that the radius
-where the core profile flattens corresponds to the stagnation
-radius,  $r_s$,  where the gas velocity goes through 0.  $r_s$ will
-depend on the model parameter ($\Mbh$ and $v_w$--see GSM15).
-
-These profiles also show the characteristic (Sedov) radius at which
-jets of different energy would have swept up their own mass in CNM
-gas.  The jet mostly decelerates inside of this radius, and the
-density at larger radii will only affect the radio at late times, we
-past the peak {\bf AG could probably explain this better}.
-
-Fig.~\ref{fig:profiles} shows that the Sedov radius for these profiles
-lies inside of $r=5$ pc for $E_{52} n_{18}^{1} < 400$.  Thus, except
-for energetic jets in low density environments any break in the
-density profile outside of 5 pc will only affect the radio light-curves at
-late times.
-
-Physically, we expect breaks in the gas density profile wherever there
-are breaks in the stellar density (since the mass source function is
-proportional to the stellar density).  Nuclear stellar light profiles
-are well fit by broken power laws, but the characteristic break radius
-is typically larger than $5 pc$ \citep{Lauer+2007}. However, if a
-nuclear star cluster is present there would be a break at the outer
-edge of the cluster, typically 1-5 pc \citep{Georgiev+2014} {\bf AG:
-  read through this reference carefully. How can we justify ignoring
-  the outer break radius?} 
-
-From Fig.~\ref{fig:profiles}, the density profile for a
-cusp galaxy is approximately 
-
-\begin{equation}
-n(r) = n_{18} \left(\frac{r}{10^{18} cm}\right)^{-1}
-\label{eq:cuspProfile}
-\end{equation}
-
-for small radii inside of the break radii. As we expect, cusp galaxies
-to dominate the tidal disruption event rate \citep{Stone+2014}, we adopt
-equation~\eqref{eq:cuspProfile} as our fiducial CNM density profile.
-
-We also experiment with a core-like density profile
-(appendix~\ref{app:core}), and compare the radio light-curves for jets
-going through core and cusp-like density profiles in
-$\S\ref{sec:profileComp}$.
-
-
-\begin{figure}
-\includegraphics[width=8cm]{sedov_radius.pdf}
-\caption{\label{fig:profiles} Steady state core and cusp density
-  profiles. We have taken $\Mbh=10^{7} \Msun$ and $v_w$=600 km/s and
-  both profiles have mass source function $q(r) \propto
-  r^{-3}$ for $r > 25$. The core profile has $q(r) \propto
-  r^{-1.1}$ for $r < 25$ and the cusp profile has $q(r)
-  \propto r^{-1.8}$.  The colors at each radius indicate the value of
-  isotropic jet energy $E_{52} n_{18}^{1}$, such that the gas mass
-  inside that radius is equal to the mass inside the jet. }
-\end{figure}
-
 
 
 
