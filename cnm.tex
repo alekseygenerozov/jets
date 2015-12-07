@@ -156,9 +156,9 @@ that the requirement of a physical stellar population, combined with
 condition of thermal stability of the hot gas phase, limits the gas
 density on a scale of $10^{18}$ cm to a range of $n_{18} \sim
 0.1-10^{3}$ cm$^{-3}$.  Although these limits come from considering
-only the hot phase of gas, we show empirically based on the measured
-distribution of Eddington ratios that the average density in most
-galactic nuclei is bracketed by this range {\bf AG rephrased}.
+only the hot phase of gas, we show based on the measured distribution
+of Eddington ratios that the average density in most galactic nuclei
+is bracketed by this range {\bf AG rephrased}.
 
 As a second component of this paper, in $\S\ref{sec:jet}$ we
 explore the expected synchrotron emission from J1644+57-like across
@@ -543,13 +543,7 @@ where $\{s, a_1, a_2, F_{m_0}\} =\{1.42, -0.166, -1.20, 0.235\}$.
   n_{18}$ greater than a given value--from equations~\eqref{eq:n18Edd}
   and~\eqref{eq:khFit}. Recall that $f_{\rm in}$ is the ratio of the
   true accretion rate onto the black hole to the inflow rate of
-  free-falling gas at $10^{18}$ cm.   {\bf BDM: add vertical dashed line for eddington ratio of 1e-3}
-% We expect $f_{\rm in}\approx
-%   {10^{-3}-10^{-2}}$ for low densities and $f_{\rm in} n_{18} \simeq
-%   1$ to be of order unity for $f_{\rm in} n_{18} \gsim 100 $.  In terms of
-%   Eddington ratio, $m$, this corresponds to only a small fraction of
-%   the large scale inflow reaching the hole for $m\lsim 0.01$, and an
-%   order unity fraction reaching the hole for $m\gsim 0.01$.
+  free-falling gas at $10^{18}$ cm.   
 }
 \end{figure}
 
@@ -641,38 +635,63 @@ A critical parameter is the ratio of the density of the jet to the
 CNM
 
 \begin{equation}
-  f\approx 40 L_{\rm j,48} n_{18}^{-1} \Gamma_{10}^{-2} \, \left(\frac{r}{10^{18} {\rm
+  f\approx 40\,  L_{\rm j,48} n_{18}^{-1} \Gamma_{10}^{-2} \, \left(\frac{r}{10^{18} {\rm
         cm}}\right)^{-1} 
 \end{equation}
 
+For a given $f$, the Lorentz factor of the shocked material may be
+calculated using the relativistic shock jump condition and pressure
+equality between the forward and reverse shocks\footnote{but see
+  \citet{Beloborodov&Uhm2006}...{\bf AG problems with this
+    approach}}. {\bf AG--best to move some of these details to
+  appendix} In the ultra-relativistic limit
 
-% A critical parameter is the ratio of the density of the jet to the CNM
-% \begin{eqnarray}
-% &&f \equiv \frac{n_{\rm j}}{n_{\rm cnm}}  \nonumber \\
-% &\approx & \left\{
-% \begin{array}{lr}
-% 0.1\epsilon_{\rm j,-1}m_{\star}^{1/6}\Gamma_{10}^{-2}(M_{\bullet}/M_{\bullet, \rm Edd})^{-1}r_{\rm pc}^{-1/2}
-% &  M_{\bullet} < M_{\bullet, \rm Edd} \\
-% 0.02\epsilon_{\rm j,-1}m_{\star}^{1/6}\Gamma_{10}^{-2}(M_{\bullet}/M_{\bullet, \rm Edd})^{-2/5}r_{\rm pc}^{-1/2}
-% ,& M_{\bullet} > M_{\bullet, \rm Edd}\\
-% \end{array}
-% \right. 
-% \label{eq:f}
-% \end{eqnarray}
-% The blast wave of shocked matter expands with a common Lorentz factor $\Gamma_{\rm sh}$, which 
-% in the limit that $\Gamma_{\rm sh} \gg 1$ can be written (Sari \& Piran 1995; as can be derived from eq.~[\ref{eq:energy}] below)
-% \begin{eqnarray}
-% &&\Gamma_{\rm sh} \underset{\Gamma_{\rm sh} \gg 1}= \Gamma_{\rm ej}\left[1 + 2\Gamma_{\rm ej}f^{-1/2}\right]^{-1/2} \underset{f \ll 4\Gamma_{\rm j}^{2}}\approx 0.71\Gamma_{\rm ej}^{1/2}f^{1/4} \approx \nonumber \\
-% &&\left\{
-% \begin{array}{lr}
-% 1.26\epsilon_{\rm j,-1}^{1/4}m_{\star}^{1/24}(M_{\bullet}/M_{\bullet, \rm Edd})^{-1/4}r_{\rm pc}^{-1/8}
-% &  M_{\bullet} < M_{\bullet, \rm Edd} \\
-% 0.84\epsilon_{\rm j,-1}m_{\star}^{1/24}(M_{\bullet}/M_{\bullet, \rm Edd})^{-1/10}r_{\rm pc}^{-1/8}
-% ,& M_{\bullet} > M_{\bullet, \rm Edd}\\
-% \end{array}
-% \right. 
-% \label{eq:gammash}
-% \end{eqnarray}
+\begin{equation}
+\Gamma_{\rm sh} \underset{\Gamma_{\rm sh} \gg 1}= \Gamma_{\rm j}\left[1 + 2\Gamma_{\rm j}f^{-1/2}\right]^{-1/2}
+\end{equation}
+
+However, this expression is problematic when the outflow is mildly
+relativistic or non-relativistic. In particular, it gives Lorentz
+factors less than 1. A more general expression for $\Gamma_{\rm sh}$
+can be obtained using equation 3 from \citet{Beloborodov&Uhm2006}
+
+\begin{align}
+&\frac{\Gamma_j^2-1}{\gamma_{43}^2-1} f^{-1}=1\\
+&\gamma_{43}=\Gamma_j \Gamma_{\rm sh} \left(1-\beta_{\rm sh} \beta_j\right).
+\label{eq:gammaShGen}
+\end{align}
+
+We use this expression to find the Lorentz factor when the reverse
+shock crosses the bulk of the ejecta.  At a given snap-shot in time,
+we have the Lorentz factor of the reverse shock (in the lab frame)
+
+\begin{equation}
+\Gamma_{\rm rs}=\frac{\beta_{\rm sh}(f)-\beta_{43}(f)/3}{1-\beta_{\rm
+    sh}(f) \beta_{43}(f)/3}.
+\end{equation} 
+
+Then it is straightforward for a jet of a given thickness, $\delta$,
+to find the radius where the reverse shock crosses the trailing edge
+of the jet. Then using equation~\eqref{eq:gammaShGen}, we can find the
+Lorentz factor of the shocked jet material at the time the reverse
+shock has crossed through the jet.  
+
+We plot the fraction of the slow component ($\Gamma_j=2$) kinetic
+energy dissipated at the time of reverse shock crossing as a function
+of the isotropic jet luminosity and $n_{18}$ in
+Fig.~\ref{fig:diss}. In our model the jet has constant luminosity for
+time $t_{\rm fb}=5\times 10^5$ s, after which point the jet luminosity
+declines as $t^{-5/3}$. We consider only the constant luminosity
+portion of the jet with thickness $c t_{\rm fb}=1.5 \times 10^{16}$ cm
+for the purposes of this calculation.
+
+\begin{figure}
+\includegraphics[width=8cm]{diss.pdf}
+\caption{\label{fig:diss} Fraction of the slow component
+  ($\Gamma_j=2$) kinetic energy dissipated by the reverse shock
+  vs. the isotropic jet luminosity ($L_{\rm j,iso}$) and $n_{18}$.}
+\end{figure}
+
 % We thus conclude that the shocked material will be decelerated to
 % mildly relativistic velocities on scales $r \sim r_{\rm sedov}$.  Note
 % the $\Gamma_{\rm j}$ cancellation.  For Sw J1644+57, the inferred BH
