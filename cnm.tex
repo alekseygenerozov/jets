@@ -204,16 +204,19 @@ hydrodynamic equations with stellar wind mass injection are
     \frac{p}{\rho} \right] ,
 \label{eq:dsdt}
 \end{align}
-where $\rho = \mu m_p n$, $v$, $p$, and $s$ are the density, velocity, pressure (assumed to be an ideal gas with $\mu = 0.62$), and
-specific entropy, respectively.  The enclosed mass $\Menc = M_{\bullet} + M_{\star}$ includes both the black hole mass $M_{\bullet}$ and enclosed stellar mass $M_{\star} \propto \int \rho_{\star}r^{2}dr$.  
+where $\rho = \mu m_p n$, $v$, $p$, and $s$ are the density, velocity,
+pressure (assumed to be an ideal gas with $\mu = 0.62$), and specific
+entropy, respectively.  The enclosed mass $\Menc = M_{\bullet} +
+M_{\star}$ includes both the black hole mass $M_{\bullet}$ and
+enclosed stellar mass $M_{\star} \propto \int \rho_{\star}r^{2}dr$.
 
 The mass source term $q =\eta \rho_\star/\th$ is the mass injection
 rate per unit volume per unit time, where $\rho_\star$ is the stellar
 density.  At small radii of interest, inside the Nuker `break' radius,
 the stellar density follows $\rho_\star\sim r^{-\delta_1}$, where
-$\delta_1 = 0-1$ is the inner Nuker profile \citep{Lauer+2007}.  The energy
-source term $\propto v_w^{2}$ parameterizes the heating rate of the
-gas, as physically results from stellar wind kinetic energy,
+$\delta_1 = 1-2$ is the inner Nuker profile \citep{Lauer+2007}.  The
+energy source term $\propto v_w^{2}$ parameterizes the heating rate of
+the gas, as physically results from stellar wind kinetic energy,
 supernovae, and black hole feedback.
 
 For a cusp galaxy ($\delta_1> 0.5$), \citet{Generozov+2015} show that the gas density obeys $n \sim
@@ -241,52 +244,55 @@ return parameters, heating rates, and gas densities allowed by
 plausible star formation histories.
 
 \subsection{Gas density profiles}
-We show example steady state gas density profiles for two different
-stellar density profiles Fig.~\ref{fig:profiles}. The solid (dashed)
-line corresponds to a cusp (core) profile with $\rho_\star \propto r^{-1.8
-  (-1.1)}$ for $r < 25$ pc. Both stellar density profiles steepen at 25
-pc, so that $\rho_\star \propto r^{-3}$ for $r > 25$ pc. Note that the 
-mass source function is proportional to the stellar density profile
-see~\ref{sec:model}.
+The slope of the gas density profile depends on the slope of the
+stellar density profile.  This is because the  mass source function is
+proportional to the stellar density (see~\ref{sec:model}). There are
+two broad categories of stellar density profiles: ``cusps'', with power
+law slopes $>$ 0.5  and ``cores'', with power law slopes $<0.3$.
+
+We show example steady state gas density profiles for a cusp and a
+core stellar density profiles in Fig.~\ref{fig:profiles}. The cusp
+(core) profile has $\rho_\star \propto r^{-1.8 (-1.1)}$ for $r < 25$
+pc. Both have $\rho_\star \propto r^{-3}$ for $r > 25$ pc.
 
 For the cusp profile the gas density $\rho \propto r^{-1}-r^{-1.1}$
-for $r < 25$ pc.  The core profile is similar to the cusp galaxy for
-$r<10^{18}$ cm. It flattens near $10^{18}$ cm and then steepens again
-at the break radius of 25 pc. Note that the radius where the core
-profile flattens corresponds to the stagnation radius, $r_s$, where
-the gas velocity goes through 0.  $r_s$ will depend on the model
-parameter ($\Mbh$ and $v_w$--see GSM15).
+inside of the stellar density break radius (25 pc).  The core profile
+is similar to the cusp galaxy for $r<10^{18}$ cm. It flattens near
+$10^{18}$ cm and then steepens again at the break radius. The radius
+where the core profile flattens corresponds to the stagnation radius,
+$r_s$, where the gas velocity goes through 0.  $r_s$ will depend on
+the model parameter ($\Mbh$ and $v_w$--see GSM15).
 
 Fig.~\ref{fig:profiles} also shows the characteristic (Sedov) radius
 at which jets of different energy would have swept up their own mass
 in CNM gas.  The jet mostly decelerates inside of this radius, and the
-density at larger radii will only affect the radio at late times after
-the peak of the radio light curve {\bf note take $\gamma_j$=2 in
-  calculating Sedov radius.}
+density profile at larger radii will only affect the radio at late
+times after the peak of the radio light curve {\bf note take
+  $\gamma_j$=2 in calculating Sedov radius.}
 
-Physically, we expect breaks in the gas density profile wherever there
-are breaks in the stellar density (since the mass source function is
-proportional to the stellar density).  Nuclear stellar light profiles
-are well fit by broken power laws, but the characteristic break radius
-is typically larger than $5 $ pc \citep{Lauer+2007}. However, if a
-nuclear star cluster is present there would be a small effective break
-at the outer edge of the cluster, typically 1-5 pc
-\citep{Georgiev+2014}.
+There will be breaks slope wherever there are breaks in the stellar
+density slope (since the mass source function is proportional to the
+stellar density).  Nuclear stellar light profiles are well fit by
+broken power laws, but the characteristic break radius is typically
+larger than $5 $ pc \citep{Lauer+2007}. However, if a nuclear star
+cluster is present there would be a small effective break at the outer
+edge of the cluster, typically 1-5 pc \citep{Georgiev+2014}.
 
 Fig.~\ref{fig:profiles} shows that the Sedov radius for these profiles
-lies inside of $r=1$ pc for $E_{54} n_{18}^{-1} < 0.2$. Thus for
-realistic break radii $>1$ pc, and our fiducial isotropic equivalent
-energy of $4\times 10^{54}$, the break radius will only be important
-for small densities ($n_{18}<20$). Henceforward we will not consider
-the effects of the break radius in our analysis {\bf AG--this not a
-  strong justification as the lowest luminosities are produced by our
-  lowest density models.} 
+lies inside of $r=1$ pc as a function of $E_{54} n_{18}^{-1}$, where
+$E_{54}$ is isotropic equivalent energy in units of $10^{54}$
+ergs. For realistic break radii $\gsim 1$ pc and our fiducial
+$E_{54}=4$, the break radius will only be important for small
+densities ($n_{18}<20$). Henceforward we will not consider the effects
+of the break radius in our analysis {\bf AG--this not a strong
+  justification as the lowest luminosities are produced by our lowest
+  density models.}
 
-From Fig.~\ref{fig:profiles}, the density profile for a
-cusp galaxy is approximately 
+From Fig.~\ref{fig:profiles}, the inner gas density profile for a cusp
+galaxy is approximately
 
 \begin{equation}
-n(r) = n_{18} \left(\frac{r}{10^{18} cm}\right)^{-1}
+n(r) \approx n_{18} \left(\frac{r}{10^{18} cm}\right)^{-1}
 \label{eq:cuspProfile}
 \end{equation}
 
