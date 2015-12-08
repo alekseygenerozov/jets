@@ -158,7 +158,7 @@ density on a scale of $10^{18}$ cm to a range of $n_{18} \sim
 0.1-10^{3}$ cm$^{-3}$.  Although these limits come from considering
 only the hot phase of gas, we show based on the measured distribution
 of Eddington ratios that the average density in most galactic nuclei
-is bracketed by this range {\bf AG rephrased}.
+is bracketed by this range. 
 
 As a second component of this paper, in $\S\ref{sec:jet}$ we
 explore the expected synchrotron emission from J1644+57-like across
@@ -265,10 +265,11 @@ the model parameter ($\Mbh$ and $v_w$--see GSM15).
 
 Fig.~\ref{fig:profiles} also shows the characteristic (Sedov) radius
 at which jets of different energy would have swept up their own mass
-in CNM gas.  The jet mostly decelerates inside of this radius, and the
-density profile at larger radii will only affect the radio at late
-times after the peak of the radio light curve {\bf note take
-  $\gamma_j$=2 in calculating Sedov radius.}
+in CNM gas.  The jet mostly decelerates inside of this radius,
+becoming Newtonian and so the profile outside of this radius will be
+of minimal importance in shaping the radio light-curve {\bf note take
+  $\gamma_j$=2 in calculating Sedov radius. Be more quantitative here
+  what is the Lorentz factor at Sedov radius}.
 
 There will be breaks slope wherever there are breaks in the stellar
 density slope (since the mass source function is proportional to the
@@ -477,8 +478,34 @@ of massive stars present. In particular for the low density limit we
 would produce a stellar population, with 1 massive star within the
 stagnation radius, in this case our formalism would break down.}
 
-{\bf AG--Describe a more typical case of a 1 Gyr age stellar
-  population, and heating coming from Ia supernova.}
+A typical host galaxy for TDE has evidence of some star formation
+within 1 Gyr {\bf AG cite}. In this case the return efficiency will be
+$\eta\simeq 0.4$. The heating is dominated by Ia supernovae.  Gas will
+be inflowing inside of the Ia radius, where the time-scale between
+supernovae is equal to the dynamical time: for $10^7 \Msun$ and this
+will be $\simeq 10$ pc. Then,
+
+\begin{equation}
+\n_{\rm Ia}=\frac{t_{\rm dyn}(r_{\rm Ia}) (\eta M_{\star} (r_{\rm
+    Ia})/t_h)}{4 \pi/3 r_{\rm Ia}^3 m_p}
+\label{eq:nIa}
+\end{equation}
+
+$t_{\rm dyn}(r_{\rm Ia})=\sqrt{\frac{G \Mbh}{r_{\rm Ia}^3}}$ is the
+dynamical time at Ia radius. $M_{\star}(r_{\rm Ia})$ is the stellar
+mass enclosed inside the Ia radius:
+
+\begin{align}
+&$\Mbh (r_{\rm Ia}/r_{inf})^{3-\delta}$\\
+&$r_{\inf}\approx 3.5 \Mbh[7]$ pc
+\end{align}
+
+$r_{\rm inf}$ is the influence radius and $\delta$
+is power law slope of the stellar density profile. Overall, we obtain
+a density of $n_{\rm Ia} \simeq 1 {\rm cm}^{-3}$ at the Ia
+radius. Assuming $\n\propto r^{-1}$ we obtain $n_{18}\simeq 50$ cm$^{-3}$. 
+
+ 
 
 \begin{figure} 
   \includegraphics[width=8cm]{cnm_plot.pdf}
@@ -617,11 +644,12 @@ n_{\rm cnm}(r) r^{2}dr$ equals its own rest mass $M_{\rm j} = E_{\rm
 radius given by
 
 \begin{equation}
-r_{\rm sedov} = E_{54}^{1/2} \Gamma_{10}^{-1/2} n_{\rm 18}^{-1}\,{\rm pc}, 
+r_{\rm sedov} = E_{54}^{1/2} \Gamma_{10}^{-1/2} n_{\rm 18}^{-1/2}\,{\rm pc}, 
 \end{equation}
 
 where $E_{54}$ is the isotropic equivalent jet energy normalized to
-$10^{54}$ ergs.
+$10^{54}$ ergs. We use our fiducial CNM density profile $n(r)=n_{18}
+\left(r/10^{18} {\rm cm}\right)^{-1}$.
 
 From the continuity equation, the (co-moving) density of the jet is
 given by (e.g. Uhm \& Beloborodov 2007)
