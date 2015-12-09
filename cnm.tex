@@ -248,7 +248,7 @@ The slope of the gas density profile depends on the slope of the
 stellar density profile.  This is because the  mass source function is
 proportional to the stellar density (see~\ref{sec:model}). There are
 two broad categories of stellar density profiles: ``cusps'', with power
-law slopes $>$ 0.5  and ``cores'', with power law slopes $<0.3$.
+law slopes $>$ 0.5  and ``cores'', with power law slopes $<0.3$ \citep{Lauer+2007}.
 
 We show example steady state gas density profiles for a cusp and a
 core stellar density profiles in Fig.~\ref{fig:profiles}. The cusp
@@ -257,35 +257,34 @@ pc. Both have $\rho_\star \propto r^{-3}$ for $r > 25$ pc.
 
 For the cusp profile the gas density $\rho \propto r^{-1}-r^{-1.1}$
 inside of the stellar density break radius (25 pc).  The core profile
-is similar to the cusp galaxy for $r<10^{18}$ cm. It flattens near
-$10^{18}$ cm and then steepens again at the break radius. The radius
-where the core profile flattens corresponds to the stagnation radius,
-$r_s$, where the gas velocity goes through 0.  $r_s$ will depend on
-the model parameter ($\Mbh$ and $v_w$--see GSM15).
+is similar to the cusp galaxy for $r<10^{18}$ cm. However, it flattens near
+$10^{18}$ cm.  The radius where the core profile flattens corresponds
+to the stagnation radius, $r_s$, where the gas velocity goes through
+0.  $r_s$ will depend on the model parameter ($\Mbh$ and $v_w$--see
+GSM15).
 
-Fig.~\ref{fig:profiles} also shows the characteristic (Sedov) radius
-at which jets of different energy would have swept up their own mass
-in CNM gas.  The jet mostly decelerates inside of this radius,
-becoming Newtonian and so the profile outside of this radius will be
-of minimal importance in shaping the radio light-curve {\bf note take
+Both gas density profiles steepen at the stellar density break
+radius. In general, there will be breaks in the gas density slope
+wherever there are breaks in the stellar density slope (since the mass
+source function is proportional to the stellar density).  Integrated
+light profiles of galactic nuclei are well fit by broken power laws,
+but the characteristic break radius is typically larger than $5 $ pc
+\citep{Lauer+2007}. However, if a nuclear star cluster is present
+there would be a small effective break at the outer edge of the
+cluster, typically 1-5 pc \citep{Georgiev+2014}.
+
+We expect breaks in the gas density profile will only be important
+inside of the Sedov radius, where it has swept up its own mass in CNM
+gas.  The jet mostly decelerates inside of this radius, becoming
+Newtonian and so the profile outside of this radius will be of minimal
+importance in shaping the radio light-curve {\bf note take
   $\gamma_j$=2 in calculating Sedov radius. Be more quantitative here
-  what is the Lorentz factor at Sedov radius}.
-
-There will be breaks slope wherever there are breaks in the stellar
-density slope (since the mass source function is proportional to the
-stellar density).  Nuclear stellar light profiles are well fit by
-broken power laws, but the characteristic break radius is typically
-larger than $5 $ pc \citep{Lauer+2007}. However, if a nuclear star
-cluster is present there would be a small effective break at the outer
-edge of the cluster, typically 1-5 pc \citep{Georgiev+2014}.
-
-Fig.~\ref{fig:profiles} shows that the Sedov radius for these profiles
-lies inside of $r=1$ pc as a function of $E_{54} n_{18}^{-1}$, where
-$E_{54}$ is isotropic equivalent energy in units of $10^{54}$
-ergs. For realistic break radii $\gsim 1$ pc and our fiducial
-$E_{54}=4$, the break radius will only be important for small
-densities ($n_{18}<20$). Henceforward we will not consider the effects
-of the break radius in our analysis {\bf AG--this not a strong
+  what is the Lorentz factor at Sedov radius}. We plot the Sedov
+radius for different energy jet on each of the profile in
+Fig.~\ref{fig:profiles}. For realistic break radii $\gsim 1$ pc and
+our fiducial $E_{54}=4$, the break radius will only be important for
+small densities ($n_{18}<20$). Henceforward we will not consider the
+effects of the break radius in our analysis {\bf AG--this not a strong
   justification as the lowest luminosities are produced by our lowest
   density models.}
 
@@ -839,12 +838,12 @@ the flux at times after the peak of the light-curve.
 
 \begin{figure*}
 \includegraphics[width=16cm]{1d_2d.pdf}
-\caption{\label{fig:1d2dB} Comparison light-curves for $n_{18}=60$
-  (top) and $n_{18}=2000$ (bottom) for frequencies of 1 GHz (left) and
-  30 GHz (right) and an observer angle of 0.8 radians to the jet
-  axis. We assume an $n\sim r^{-1}$ density profile for $n_{18}=2000$,
-  but take $n\sim r^{-1.5}$ for $n_{18}=60$ for computational
-  convenience.}
+\caption{\label{fig:1d2dB} Comparison of 1-d and 2-d light-curves for
+  $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for frequencies of 1
+  GHz (left) and 30 GHz (right) and an observer angle of 0.8 radians
+  to the jet axis. We assume an $n\sim r^{-1}$ density profile for
+  $n_{18}=2000$, but take $n\sim r^{-1.5}$ for $n_{18}=60$ for
+  computational convenience.}
 \end{figure*}
 
 
@@ -879,15 +878,16 @@ were taken decades after the TDE flare.
 
 \begin{figure} 
   \includegraphics[width=8cm]{lightcurves.pdf}
-  \caption{\label{fig:upper_limits} On-axis radio light-curves for
-    fiducial jet model and CNM density profile $n=n_{18} (r/10^{18}
-    {\rm cm})^{-1}$, for three different values of n$_{18}$: 2, 60,
-    and 2000. Radio upper limits and detections are shown as
-    black/gray triangles and squares respectively (compiled in Table 1
-    of \citealt{Mimica+2015}). The single upper limit in the top panel
-    corresponds to 1.4 GHz. Gray triangles and squares in the middle
-    panel indicate upper limits and detections at 3.0 GHz, while black
-    triangles indicate upper limits at 5.0 GHz.}
+  \caption{\label{fig:upper_limits} Off-axis ($\theta_{\rm obs}=0.8$
+    radio light-curves for fiducial jet model and CNM density profile
+    $n=n_{18} (r/10^{18} {\rm cm})^{-1}$, for three different values
+    of n$_{18}$: 2, 60, and 2000. Radio upper limits and detections
+    are shown as black/gray triangles and squares respectively
+    (compiled in Table 1 of \citealt{Mimica+2015}). The single upper
+    limit in the top panel corresponds to 1.4 GHz. Gray triangles and
+    squares in the middle panel indicate upper limits and detections
+    at 3.0 GHz, while black triangles indicate upper limits at 5.0
+    GHz.}
 \end{figure}
 
 \subsection{Effect of gas density profile}
@@ -921,6 +921,24 @@ light-curve is insensitive to the slope of the stellar density profile
 
 
 \subsection{Effects of viewing angle}
+We show a comparison off and on-axis light-curves in
+Fig.~\ref{fig:onOff}.  For $n_{18}=2000$ the two light-curves differ
+little.  For $n_{18}=60$ the two light-curves differ for early and
+late times. In the case, the off-axis peak luminosity is a factor of a
+few lower. At late times the off- and on-axis light-curves are quite
+close to each other.
+
+
+\begin{figure*}
+\includegraphics[width=16cm]{on_off.pdf}
+\caption{\label{fig:onOff} Comparison of (2-d) off- and on-axis
+  light-curves for $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for
+  frequencies of 1 GHz (left) and 5 GHz (right). The observer line of
+  sight is taken to be at $\theta_{\rm obs}=0.8$ with respect to the
+  jet axis. We assume an $n\sim r^{-1}$ density profile for
+  $n_{18}=2000$, but take $n\sim r^{-1.5}$ for $n_{18}=60$ for
+  computational convenience.}
+\end{figure*}
 
 
 \section{Discussion}
