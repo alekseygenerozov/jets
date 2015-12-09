@@ -486,24 +486,24 @@ supernovae is equal to the dynamical time: for $10^7 \Msun$ and this
 will be $\simeq 10$ pc. Then,
 
 \begin{equation}
-\n_{\rm Ia}=\frac{t_{\rm dyn}(r_{\rm Ia}) (\eta M_{\star} (r_{\rm
-    Ia})/t_h)}{4 \pi/3 r_{\rm Ia}^3 m_p}
+n_{\rm Ia}=\frac{t_{\rm dyn}(r_{\rm Ia}) \left[\eta M_{\star} (r_{\rm
+    Ia})/t_h\right]}{4 \pi/3 r_{\rm Ia}^3 m_p}
 \label{eq:nIa}
 \end{equation}
 
-$t_{\rm dyn}(r_{\rm Ia})=\sqrt{\frac{G \Mbh}{r_{\rm Ia}^3}}$ is the
+$t_{\rm dyn}(r_{\rm Ia})=(G \Mbh/r_{\rm Ia}^3)^{-1/2}$ is the
 dynamical time at Ia radius. $M_{\star}(r_{\rm Ia})$ is the stellar
 mass enclosed inside the Ia radius:
 
 \begin{align}
-&$\Mbh (r_{\rm Ia}/r_{inf})^{3-\delta}$\\
-&$r_{\inf}\approx 3.5 \Mbh[7]$ pc
+&\Mbh (r_{\rm Ia}/r_{\rm inf})^{3-\delta}\\
+&r_{\inf}\approx 3.5 \Mbh[,7] \, {\rm pc}
 \end{align}
 
 $r_{\rm inf}$ is the influence radius and $\delta$
 is power law slope of the stellar density profile. Overall, we obtain
-a density of $n_{\rm Ia} \simeq 1 {\rm cm}^{-3}$ at the Ia
-radius. Assuming $\n\propto r^{-1}$ we obtain $n_{18}\simeq 50$ cm$^{-3}$. 
+a density of $n_{\rm Ia} \simeq 1 \, {\rm cm}^{-3}$ at the Ia
+radius. Assuming $n\propto r^{-1}$ we obtain $n_{18}\simeq 50$ cm$^{-3}$. 
 
  
 
@@ -528,7 +528,10 @@ radius. Assuming $\n\propto r^{-1}$ we obtain $n_{18}\simeq 50$ cm$^{-3}$.
 
 \subsection{Empirical Constraints on CNM Density}
 
-In this section we translate observed constraints on the accretion rate distribution of supermassive BHs into constraints on the CNM density.  The density $n$ at radius $r$ can be approximated from the inflow rate $\dot{M}$ as
+In this section we translate observed constraints on the accretion
+rate distribution of supermassive BHs into constraints on the CNM
+density.  The density $n$ at radius $r$ can be approximated from the
+inflow rate $\dot{M}$ as
 \begin{equation}
 \dot{M} = m \dot{M}_{\rm Edd}= f_{\rm in} 4 \pi r^2 \mu m_p n v,
 \label{eq:mdot}
@@ -622,8 +625,7 @@ be dissolved by the radiation from the jet...{\bf AG this needs
 AGN feedback would may blow low density bubbles in the
 CNM. \citet{Russell+2013} used Chandra x-ray observations to measure gas
 density and temperature profiles for a sample of massive elliptical
-galaxies. The measured electron density on scales of $\sim 100
-pc$ is $\gsim 0.1$ cm$^{-3}$. Note that the gas density at 100 pc
+galaxies. The measured electron density on scales of $\sim 100$ pc is $\gsim 0.1$ cm$^{-3}$. Note that the gas density at 100 pc
 would be irrelevant for a TDE jet, but we would not expect the gas
 density to be decreasing towards the galactic center in a steady
 state. {\bf These are only massive ellipticals with $\Mbh\sim 10^{9} \Msun$.}
@@ -811,7 +813,11 @@ i.e. the denser the CNM, the faster this is expected to happen ({\bf
   PM: references? Zhang \& MacFadyen or de Colle \& Ramirez-Ruiz? need
   to check later}).
 
-Since the agrrement between 1D and 2D models is good at the early times (when the fast component dominates), we modify only the slow component in 1D models. We assume that is spans $[0.1\ {\rm rad}, \pi/2\ {\rm rad}]$ and lower its $E_{\rm ISO}$ so that the true jet energy remains unchanged with respect to the original model:
+Since the agrrement between 1D and 2D models is good at the early
+times (when the fast component dominates), we modify only the slow
+component in 1D models. We assume that is spans $[0.1\ {\rm rad},
+\pi/2\ {\rm rad}]$ and lower its $E_{\rm ISO}$ so that the true jet
+energy remains unchanged with respect to the original model:
 \begin{equation}\label{eq:Eiso}
  E_{\rm ISO, new} = E_{\rm ISO} \left(\frac{\cos(0.1) - \cos(0.5)}{\cos(0.1) - \cos(\pi/2)}\right)\approx 0.12 E_{\rm ISO}\, .
 \end{equation}
@@ -820,7 +826,16 @@ We assume $E_{\rm ISO} = 4\times 10^{54}$ erg, and that the jet luminosity time 
 \begin{equation}\label{eq:lum}
 L_j(t) = L_{j,0}\max\left[1, (t/t_0)\right]^{-5/3}
 \end{equation}
-where $t_0 = 5\times 10^5$ seconds and $L_{j, 0}$ can be determined from $E_{\rm ISO}$ by integrating equation~\ref{eq:lum} in time from $0$ to $\infty$. We show a comparison of this modified 1-d approach with the true 2-d result in Figure~\ref{fig:1d2dB}, for $n_{18}=60$ and $n_{18}=2000$.
+where $t_0 = 5\times 10^5$ seconds and $L_{j, 0}$ can be determined
+from $E_{\rm ISO}$ by integrating equation~\ref{eq:lum} in time from
+$0$ to $\infty$. We show a comparison of this modified 1-d approach
+with the true 2-d result in Figure~\ref{fig:1d2dB}, for $n_{18}=60$
+and $n_{18}=2000$. For $n_{18}=2000$ the agreement is excellent, while
+for $n_{18}=60$ the 1d models still over-predict still over-predict
+the flux at times after the peak of the light-curve.
+
+
+
 
 \begin{figure*}
 \includegraphics[width=16cm]{1d_2d.pdf}
