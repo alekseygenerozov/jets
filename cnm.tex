@@ -292,7 +292,7 @@ From Fig.~\ref{fig:profiles}, the inner gas density profile for a cusp
 galaxy is approximately
 
 \begin{equation}
-n(r) \approx n_{18} \left(\frac{r}{10^{18} cm}\right)^{-1}
+n(r) \approx n_{18} \left(\frac{r}{10^{18} {\rm cm}}\right)^{-1}
 \label{eq:cuspProfile}
 \end{equation}
 
@@ -603,8 +603,8 @@ hand, when $\dot{M}/\dot{M}_{\rm Edd}\gsim 10^{-2}$, $f_{\rm in}$
 approaches unity.  We use $\dot{M}_{\rm Acc}/\dot{M}_{\rm Bondi}$ in
 their Figure 6 for $f_{\rm in}$.  With this choice only a third of
 nuclei have $n_{18}>2,000$ and only 6\% have $n_{18}>10^{4}$ {\bf
-  AG--TDEs could be subset which have very high or very low
-  densities.}
+  AG--TDEs are unlikely to have very high densities, because active
+  galaxies are generally excluded from TDE samples.}
 
 Note that \citet{Li+2013} use an alpha viscosity prescription with
 $\alpha=0.01$. We would expect that the value of $f_{\rm in}$ would be
@@ -616,8 +616,7 @@ distributions of the {\it average} $n_{18}$.  Most likely, some of the
 nuclear gas in a low density hot phase, while the rest is in high density
 cold clumps/filaments. However, in this case the cold filaments would
 be dissolved by the radiation from the jet...{\bf AG this needs
-  justification/validation. If this is really true, then analytic
-  section is faulty because it focuses on the hot phase.}
+  justification/validation.}
 
 % {\bf AG Jeans criterion -- but be careful of tidal effects.}
 
@@ -947,6 +946,60 @@ close to each other.
 
 \section{Summary and Conclusions}
 \label{sec:conc}
+
+We calculate radio light-curves for tidal disruption event jets
+propagating through different circumnuclear (CNM) gas densities. We
+simulate the jet propagation using both 1d and 2d hydrodynamic
+simulations post-process these to produce radio synchrotron
+light-curves. To isolate the effects of the density profile we take a
+fixed two component jet model from \citet{Mimica+2015}, which produced
+a good fit to the observed radio data in the Sw1644 transient. We
+consider a broad range of gas densities motivated by analytic
+estimates of stellar wind mass injection and empirical constraints
+based on observed distributions of Eddington ratios. Our conclusions
+are summarized as follows.
+
+\begin{enumerate}
+\item We estimate the hot phase densities expected from injection of
+  stellar wind material for different star formation histories. We
+  find that that range of gas densities at 10$^{18}$ cm is $n_{18}
+  \sim$ 0.1-1000 cm$^{-3}$.
+
+\item The slope of the gas density profile depends on the slope of the
+  stellar density profile. We expect a typical TDE host to have cusp
+  like stellar density profile inside of a few pc, with $\rho_\star
+  \propto r^{-2}$. This translates into a gas density profile $n
+  \propto r^{-1}$. However, the radio light-curve of a TDE jet is most
+  sensitive to the density at the deceleration/Sedov radius (roughly
+  where it has swept up its mass in CNM gas). The light-curve will be
+  insensitive to changes in slope in the CNM gas density as long as
+  the density at the Sedov radius is held fixed.
+
+\item We use the distribution of Eddington ratios (measured by
+  \citealt{Kauffmann+2009} using $L[0III]/\Mbh$) for a sample $\sim
+  10^{7} \Msun$ black holes from SDSS to obtain an empirical
+  constraint on the average circumnuclear gas density, including all
+  phases of gas. We find that $\sim90\%$ of galaxies in the sample
+  have $n_{18}<10^{4} {\rm cm}^{-3}$, although we note that there is
+  considerable uncertainty in translating an observed Eddington ratio
+  to a circumnuclear gas density. TDE hosts would not fall on this
+  high density tail, as TDE searches exclude galaxies with evidence of
+  AGN activity.
+
+\item We take a jet model which fit the radio data for the Sw1644
+  transient (from \citealt{Mimica+2015} and run it through a range of
+  different density profiles. Motivated by the above results for the
+  expected range of gas densities we take $n(r)=n_{18} \left(r/10^{18}
+    {\rm cm}\right)^{-1}) {\rm cm}^{-3}$ for the CNM density profile,
+  with $n_{18}=2, 60,$ of 2000.  We find bright radio emission at a
+  few GHz across this entire range of densities, with the peak
+  luminosity only weakly dependent on the chosen value of $n_{18}$.
+  For smaller densities the light-curves peak earlier in time. Based
+  on existing radio upper limits for existing tidal disruption event
+  candidates, we show Swift 1644-like jet are absent in most TDEs. In
+  the future, prompt follow-up of TDE candidates could place even more
+  stringent constraints on the presence of jets.
+\end{enumerate}
 
 \appendix
 \section{Core Profile}
