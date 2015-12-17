@@ -39,8 +39,25 @@
 \begin{document}
 
 \begin{abstract}
-  Radio light curves calculated for TDE jets. CNM
-  densities based on \citet{Generozov+2015}. 
+  There are now dozens of candidates for tidal disruptions of stars by
+  supermassive black holes (TDEs) in optical and x-rays. A small
+  fraction of these events, (e.g. Sw-J1644+57) have radio emission
+  consistent with a powerful, relativistic jet interacting with
+  surrounding nuclear gas. A priori it is not clear if the small
+  number of such relativistic TDEs is due to an intrinsic lack of jets
+  or unfavorable nuclear gas densities for producing observable radio
+  emission. We test the second possibility by calculating radio
+  light-curves for jets interacting with a broad range of density
+  profiles, bracketing the expected range of gas densities in galactic
+  nuclei (0.1-1000 $cm^{-3}$ at $10^{18}$ cm). We find bright radio
+  transients across the entire range of expected density
+  profiles. Existing radio upper limits are often taken decades after
+  the observed flare, well past the expected peak of the light-curve
+  for low density environments. Nonetheless they exclude powerful,
+  Sw-J1644-like jets for CNM densities less than 60 $cm^{-3}$ at
+  $10^{18}$ cm. More stringent constraints would be possible with
+  prompt follow-up of tidal disruption event candidates. Such
+  constraints would inform our understanding jet launching physics.
 \end{abstract}
 \section{Introduction}
 \label{sec:intro}
@@ -59,17 +76,17 @@ Many thermal TDE flares have now been identified at UV/optical
 soft x-ray wavelengths \citep{Esquej+2007}.  Beginning with the
 discovery of {\it Swift} J1644+57 in 2011, three additional TDEs have
 been discovered by their non-thermal x-ray emission
-(\citealt{Bloom+2011, Levan+2011, Burrows+2011, Zauderer+2011, Cenko+2012,
-  Pasham+2015, Brown+2015}).  Unlike the thermal TDEs, these events are
-the result of emission from a transient relativistic jet beamed along
-our line of sight, similar to the blazar geometry of active galactic
-nuclei (AGN).  In addition to their highly variable X-ray emission,
-which likely originates from the base of the jet, these events are
-characterized by radio synchrotron emission.  The latter, more slowly
-evolving, is powered by shocks formed at the interface between the jet
-and surrounding circumnuclear medium (CNM)
-(\citealt{Giannios&Metzger2011,Metzger+2012}), analagous to the afterglow
-of a gamma-ray burst.
+(\citealt{Bloom+2011, Levan+2011, Burrows+2011, Zauderer+2011,
+  Cenko+2012, Pasham+2015, Brown+2015}).  Unlike the thermal TDEs,
+these events are the result of emission from a transient relativistic
+jet beamed along our line of sight, similar to the blazar geometry of
+active galactic nuclei (AGN).  In addition to their highly variable
+X-ray emission, which likely originates from the base of the jet,
+these events are characterized by radio synchrotron emission.  The
+latter, more slowly evolving, is powered by shocks formed at the
+interface between the jet and surrounding circumnuclear medium (CNM)
+(\citealt{Giannios&Metzger2011,Metzger+2012}), analagous to the
+afterglow of a gamma-ray burst.
 
 Although a handful of jetted TDE flares have been observed, their
 volumetric rate is a very small fraction $\sim 10^{-4}$ of the rate of
@@ -551,13 +568,12 @@ unity for systems with $m\gsim 0.1$.
 
 \citet{Kauffmann+2009} present distributions of the OIII line
 luminosity, ${\rm L[OIII]}/\Mbh$, for a range of BH masses
-($10^7-10^{8.5} \Msun$) from SDSS galaxies {\bf BDM fill in--AG what
-  exactly?q}.  Assuming a bolometric correction, these can be
-translated into distributions of Eddington ratio $m$.  According to
-\citet{Kauffmann+2009} ${\rm L[0III]}/\Mbh=1.7$, roughly corresponds
-to Eddington ratio of 1. We adopt this conversion and assume that the
-bolometric correction is independent of ${\rm L[0III]}/\Mbh$. {\bf
-  AG--possibly factor of 2 discrepancy here to track down.}
+($10^7-10^{8.5} \Msun$) from SDSS galaxies.  Assuming a bolometric
+correction, these can be translated into distributions of Eddington
+ratio $m$.  According to \citet{Kauffmann+2009} ${\rm
+  L[0III]}/\Mbh=1.7$, roughly corresponds to Eddington ratio of 1. We
+adopt this conversion and assume that the bolometric correction is
+independent of ${\rm L[0III]}/\Mbh$. 
 
 The distribution of Eddington ratios for the lowest mass BH bin of
 $M_{\bullet} = 10^7 - 10^{7.25} \Msun$ (\citealt{Kauffmann+2009};
@@ -604,8 +620,10 @@ nuclei have $n_{18}>2,000$ and only 6\% have $n_{18}>10^{4}$ {\bf
   galaxies are generally excluded from TDE samples.}
 
 Note that \citet{Li+2013} use an alpha viscosity prescription with
-$\alpha=0.01$. We would expect that the value of $f_{\rm in}$ would be
-sensitive to this choice. {\bf AG--a little more discussion of limitations.}
+$\alpha=0.01$.  $f_{\rm in}$ would depend on this choice. This
+uncertainty in $f_{\rm in}$ translates into a systematic uncertainty
+in the distribution of $n_{18}$. 
+ 
 
 Two potential complications to keep in mind are (i) clumpiness of the
 CNM and (ii) anistropy. The distributions above are
@@ -618,12 +636,17 @@ be dissolved by the radiation from the jet...{\bf AG this needs
 % {\bf AG Jeans criterion -- but be careful of tidal effects.}
 
 AGN feedback would may blow low density bubbles in the
-CNM. \citet{Russell+2013} used Chandra x-ray observations to measure gas
-density and temperature profiles for a sample of massive elliptical
-galaxies. The measured electron density on scales of $\sim 100$ pc is $\gsim 0.1$ cm$^{-3}$. Note that the gas density at 100 pc
+CNM. \citet{Russell+2013} used Chandra x-ray observations to measure
+gas density and temperature profiles for a sample of massive
+elliptical galaxies. The measured electron density on scales of $\sim
+100$ pc is $\gsim 0.1$ cm$^{-3}$. Note that the gas density at 100 pc
 would be irrelevant for a TDE jet, but we would not expect the gas
 density to be decreasing towards the galactic center in a steady
-state. {\bf These are only massive ellipticals with $\Mbh\sim 10^{9} \Msun$.}
+state.  We note that massive black holes in the \citet{Russell+2013}
+sample , with $\Mbh\sim 10^{9} \Msun$, whereas black holes tidal
+disruption events would have $\Mbh\lsim 10^8 \Msun$. This is because
+more massive black holes would not be able to disrupt (main sequence)
+stars.
 
 
 
@@ -673,9 +696,7 @@ CNM
 For a given $f$, the Lorentz factor of the shocked material may be
 calculated using the relativistic shock jump condition and pressure
 equality between the forward and reverse shocks\footnote{but see
-  \citet{Beloborodov&Uhm2006}...{\bf AG problems with this
-    approach}}. {\bf AG--best to move some of these details to
-  appendix} In the ultra-relativistic limit
+  \citet{Beloborodov&Uhm2006}}. In the ultra-relativistic limit
 
 \begin{equation}
 \Gamma_{\rm sh} \underset{\Gamma_{\rm sh} \gg 1}= \Gamma_{\rm j}\left[1 + 2\Gamma_{\rm j}f^{-1/2}\right]^{-1/2}
@@ -723,42 +744,6 @@ for the purposes of this calculation.
   vs. the isotropic jet luminosity ($L_{\rm j,iso}$) and $n_{18}$.}
 \end{figure}
 
-% We thus conclude that the shocked material will be decelerated to
-% mildly relativistic velocities on scales $r \sim r_{\rm sedov}$.  Note
-% the $\Gamma_{\rm j}$ cancellation.  For Sw J1644+57, the inferred BH
-% mass was $\lesssim 1/30M_{\bullet,\rm Edd}$ and $\epsilon_{\rm j,-1}
-% \sim 0.1-1$, implying $\Gamma_{\rm sh} \sim $ few on scales $\sim 0.3$
-% pc.
-
-% In the above we have assumed that the jet expands freely.  According
-% to Bromberg et al.~(2011), a jet of intrinsic opening angle
-% $\theta_{\rm j}$ will be self-collimated if its luminosity is less
-% than a critical value
-
-% \begin{equation}
-% L_{\rm j} < L_{\rm crit} = 2\pi \theta_{\rm j}^{2}n_{\rm cnm} m_p c^{3}\theta_0^{-4/3},
-% \end{equation}
-
-% i.e.~ if
-
-% \begin{equation}
-% f < 0.2(\theta_{\rm j}/0.1)^{2/3}(\theta_{\rm j}\Gamma_{\rm j})^{-2}
-% \end{equation}
-
-% According to equation (\ref{eq:f}) this condition is achieved at a radius 
-% \begin{eqnarray}
-% r_{\rm sc}  &\approx & \left\{
-% \begin{array}{lr}
-% 0.25\epsilon_{\rm j,-1}^{2}m_{\star}^{1/3}(\theta_{\rm j}/0.1)^{8/3}(M_{\bullet}/M_{\bullet, \rm Edd})^{-2}{\rm pc}
-% &  M_{\bullet} < M_{\bullet, \rm Edd} \\
-% 0.01\epsilon_{\rm j,-1}^{2}m_{\star}^{1/3}(\theta_{\rm j}/0.1)^{8/3}(M_{\bullet}/M_{\bullet, \rm Edd})^{-4/5}{\rm pc}
-% ,& M_{\bullet} > M_{\bullet, \rm Edd}\\
-% \end{array}
-% \right. 
-% \label{eq:rsc}
-% \end{eqnarray}
-
-
 \subsection{Jet Models}
 \label{sec:numerical}
 
@@ -804,9 +789,7 @@ panels in Fig. 8 in][]{Mimica+2015}. This is the reason for the
 discrepancy with the 1D simulation, because there the slow component
 angular size is fixed to the initial one. We note that the stage at
 which the jet becomes ``isotropic'' depends on the CNM density,
-i.e. the denser the CNM, the faster this is expected to happen ({\bf
-  PM: references? Zhang \& MacFadyen or de Colle \& Ramirez-Ruiz? need
-  to check later}).
+i.e. the denser the CNM, the faster this is expected to happen.
 
 Since the agrrement between 1D and 2D models is good at the early
 times (when the fast component dominates), we modify only the slow
@@ -852,17 +835,17 @@ In Fig.~\ref{fig:upper_limits} we show the on-axis light curves for
 our fiducial jet model and CNM density profile $n=n_{18} (r/10^{18}
 {\rm} cm)^{-1}$ cm$^{-3}$ with $n_{18}$=2, 60, and 2000 cm$^{-3}$. The
 higher density models peak at later times with smaller peak
-luminosities {\bf AG Do we understand this? Is this due to the effect
-  of self-absorption?}
+luminosities.  This is due to the effects of synchrotron
+self-absorption: the peak of the emission occurs as the jet
+transitions from being optically thick to optically thin. This occurs
+later in the higher density models.
 
-{\bf AG it would probably be good to have a figure showing the
-  different components contributing to the emission.} The radio light
-curve has contributions from both the slow and fast jet
-components. The fast component dominates at
-early times for the $n_{18}=2$ and 60 lightcurves, while the slow
-component dominates for all times as frequencies for
-$n_{18}$=2000. Generally, the fast component is more important at
-higher frequencies, and lower densities.
+The radio light curve has contributions from both the slow and fast
+jet components. The fast component dominates at early times for the
+$n_{18}=2$ and 60 lightcurves, while the slow component dominates for
+all times as frequencies for $n_{18}$=2000. Generally, the fast
+component is more important at higher frequencies, and lower
+densities.
 
 We also show radio upper limits and detections for various TDE
 candidates in Fig.~\ref{fig:upper_limits} (these were compiled from
@@ -902,8 +885,9 @@ rather than core galaxies.
 The results are virtually indistinguishable as shown in
 Fig.~\ref{fig:cores}. Overall, the late time evolution of the
 light-curve is insensitive to the slope of the stellar density profile
-(see Figure 3 of \citealt{Mimica+2015}) {\bf AG this is only for the
-  fast narrow component--how do we justify this more generally?}.
+(see Figure 3 of \citealt{Mimica+2015}). {\bf AG this is stupid--the
+  profiles are similar inside of the deceleration radius, so we would
+  not expect the profiles to be different.}
 
 
 \begin{figure} 
