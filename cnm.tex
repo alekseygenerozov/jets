@@ -34,10 +34,20 @@
 \newcommand{\pyear}{{\rm yr}^{-1}}
 
 % write title (with email and institute)
-\title{Radio light-curves for tidal disruption event jets.}
+\title{Are tidal disruption event jets hiding?}
+\author[Generozov et al.]{ A. Generozov$^{1}$, P. Mimica$^{2}$,
+  B. D. Metzger$^{1}$,
+  D. Giannios$^{3}$, 
+  N. Stone$^{1}$,
+  M.A. Aloy$^{2}$ 
+  \\
+  $^{1}$Columbia Astrophysics Laboratory, Columbia University, 550 West 120th Street, New York, NY 10027\\
+  $^{2}$Departamento de Astronomia y Astrofisica, Universidad de Valencia, E-46100 Burjassot, Spain\\
+  $^{3}$Department of Physics and Astronomy, Purdue University, 525
+  Northwestern Avenue, West Lafayette, IN 47907, USA}
 
 \begin{document}
-
+\maketitle
 \begin{abstract}
   There are now dozens of candidates for tidal disruptions of stars by
   supermassive black holes (TDEs) in optical and x-rays. A small
@@ -56,8 +66,8 @@
   for low density environments. Nonetheless they exclude powerful,
   Sw-J1644-like jets for CNM densities less than 60 cm$^{-3}$ at
   $10^{18}$ cm. More stringent constraints would be possible with
-  prompt follow-up of tidal disruption event candidates. Such
-  constraints would inform our understanding jet launching physics.
+  prompt follow-up of tidal disruption event candidates and would
+  inform our understanding jet launching physics.
 \end{abstract}
 \section{Introduction}
 \label{sec:intro}
@@ -125,7 +135,7 @@ flares at radio wavelengths on timescales of months to decades after
 the outburst (\citealt{Bower+2013}; \citealt{van-Velzen+2013}; see Table
 1 of \citet{Mimica+2015} for a compilation).  \citet{van-Velzen+2013}
 detected no radio emission from their 7 candidates, while
-\citet{Bower+2013} detected radio emission from two out of ROSAT flares:
+\citet{Bower+2013} detected radio emission from two of the  ROSAT flares:
 RX J1420.4+5334 and IC 3599.  However, for RX J1420.4+5334 the radio
 emission was observed in a different galaxy than that originally
 identified by \citet{Komossa+1999} as the host.  Furthermore, the
@@ -133,7 +143,7 @@ highly irregular behavior of IC 3599, including multiple outbursts
 over the past few decades from this low luminosity AGN
 (e.g.~\citealt{Campana+2015}), calls into question whether this event is
 a true TDE at all.  \citet{Bower+2013} and \citet{van-Velzen+2013} use a
-simple model for the radio emission as a Sedov blastwave, to conclude
+simple model for the radio emission as a Sedov blast wave, to conclude
 that $\lesssim 10\%$ of TDEs produce jetted TDE emission at a level
 similar to that produced in {\it Swift} J1644+57.  \citet{Mimica+2015}
 used 2D hydrodynamical models, coupled with a synchrotron radiation
@@ -155,12 +165,11 @@ of magnitude higher.
 
 In this paper we address the range of gas densities encountered by
 jetted TDEs and estimate their synchrotron emission by means of
-analytic calculations and numerical simulations.  If we are led to the
-conclusion that the observable radio emission should be detected for
-all plausible CNM densities, then we are lead to the conclusion that
-most TDEs do not launch J1644-like jets.  This result would have
-significant implications for the physics of jet launching in TDEs and
-more broadly.
+analytic calculations and numerical simulations.  If we find radio
+emission should be detected for all plausible CNM densities, then we
+are lead to the conclusion that most TDEs do not launch J1644-like
+jets.  This result would have significant implications for the physics
+of jet launching in TDEs and more broadly.
 
 In $\S\ref{sec:cnm}$ we explore the expected CNM densities using the
 formalism developed in \citet{Generozov+2015} (hereafter GSM15) to
@@ -186,9 +195,7 @@ simulate the jet propagating through the CNM and compare the results
 in $\S\ref{sec:2d}$. In $\S\ref{sec:results}$ we show radio
 light-curves from our 1d models for a wide range of CNM densities, to
 illustrate qualitatively how much varying the CNM density by itself
-could change the radio light-curve.  We discuss the implications of
-our models for detections of TDEs by future radio surveys in
-$\S\ref{sec:disc}$, and summarize our conclusions in
+could change the radio light-curve.  We summarize our conclusions in
 $\S\ref{sec:conc}$.
 
 \section{Range of CNM Densities}
@@ -383,68 +390,6 @@ that type II Supernovae could inject additional mass into the CNM, but
 this injection would be intermittent (e.g. the time between SNe is
 long compared to a dynamical time for the scales of interest).
 
-% {\bf AG the subsequent discussion relies on out of date parameters for
-% the stellar light profile for NGC 3156. In calculating the profile, we
-% assume it turns over at 2 pc. In reality it probably turns over at ~20
-% pc, and becomes a typical cusp profile. Next few paragraphs should be axed.}
-% However, we also find high gas densities ($n_{18}\sim 2000$ cm$^{-3}$)
-% may be present for E+A galaxies with stellar ages $\tau_\star\sim
-% 10^8-10^9$ years. Although E+A galaxies are rare they host $\sim 20
-% \%$ of all optically selected TDE candidates. Thus, the high density
-% limit could be relevant for a sizable fraction of TDEs {\bf AG citation
-%   needed here...}
-
-% {\bf AG too much detail?} We construct a gas density profile for the
-% nearby E+A galaxy NGC 3156. This galaxy has a stellar light profile
-% measured with high resolution HST photometry. \citealt{Krajnovic+2013}
-% find a steep inner stellar density profile with $\rho_\star\sim
-% r^{-2.78}$, albeit with a possible turnover to a shallower profile at
-% $r \sim 2-4$ pc. We assume a core-like profile with $\rho_\star \sim
-% r^{-1.1}$ for $r<2$ pc.
-
-% We find a thermally stable profile for NGC 3156 for mass
-% return parameter $\eta\simeq0.5$ and Type Ia supernova heating
-% $v_w\simeq600 $ km/s, as expected for 1 Gyr after a burst of star
-% formation. We find $n \sim 2000 (r/10^{18} {\rm cm})^{-1.3}$
-% cm$^{-3}$, for $r<2$ pc, $n\sim r^{-2}$ for $r>2$ pc, which is quite
-% similar to the profile for a normal cusp galaxy with break at $r_b$=2
-% pc. {\bf AG--w/o turnover the inner density slope would be -2--possibly
-% do a special case?}
-
-% Such a large gas density should produce a large x-ray luminosity in
-% the galactic nucleus from metal line cooling and free-free emission.
-% In particular our model for the E+A galaxy predicts an x-ray
-% luminosity of $\sim$ few $\times 10^{39}$ egs/s, from the inner few
-% parsecs of the galaxy {\bf AG--reran with proper normalization of the
-%   cooling function (this was incorrect in GSM15). Would be good to
-%   double-check these results.}
-
-
-% {\bf AG--we could probably look for archival ROSAT observations for
-%   non-active galaxies, to constrain the gas densities
-%   there. For any galaxy w/o central x-ray source could put upper
-%   limits on the gas density based on the free-free emission we would
-%   have to have.}
-% We found an archival X-ray observation from ROSAT for this galaxy {\bf
-%   AG describe observation here; look for other observation}. There are
-% no X-ray sources consistent with the galactic nucleus, which gives a
-% 90\% confidence of upper limit $<2.4$ counts over the $\sim$400 s
-% exposure time. We then use this non-detection to put an upper limit on
-% the unresolved x-ray flux from the galactic nucleus using the
-% web-PIMMS
-% tool\footnote{https://heasarc.gsfc.nasa.gov/cgi-bin/Tools/w3pimms/w3pimms.pl}. We
-% use an APEC emission model, temperature of ($10^{7} K$--the
-% approximate temperature of the gas for radii dominating the x-ray
-% emission a solar metallicity ({\bf AG Check for metallicity
-%   measurements for this galaxy}), and $2.43\times 10^{20} {\rm
-%   cm^{-2}}$ for the galactic HI column density\footnote{from
-%   https://heasarc.gsfc.nasa.gov/cgi-bin/Tools/w3nh/w3nh.pl}. With
-% these parameters non-detection gives an upper limit on the flux of
-% $\lsim 2\times 10^{39}$ ergs/s {\bf AG check for other x-ray
-%   images}. Thus, the non-detection is marginally consistent with the
-% model, though it shows the density cannot be much higher than we
-% predict.
-
 What is the smallest plausible CNM density? This would correspond to a
 small mass return parameter and a high heating rate. The mass return
 parameter, $\eta=0.02$, reaches its minimum value for a stellar
@@ -468,16 +413,15 @@ We illustrate how the mass return parameter, heating rate, and density
 vary with star formation history in Fig.~\ref{fig:param}. The solid
 gray line represents a two-burst model for star formation in which a
 fraction, $f$, of the stars formed $<$ 3 Myr ago and the remainder
-formed a Hubble time ago (top gray line) or 1 Gyr ago (bottom red
-line).  Towards the top right the $f=1$ and the young stars dominate
-the mass injection rate and the heating rate.  Moving towards the
-left, $f$ decreases, along with the mass return rate, and density
-(blue lines), but the heating rate, $v_w$, remains $\gsim 1000$ km/s
-except for very small values of $f$. The minimum density (eq.~\eqref
-{eq:n18min}) is obtained for $f=4\times 10^{-4}$. However, for this
-$f$, we expect less than 1 massive star within the stagnation
-radius. In this case our formalism would break down, and the true
-density would be larger.
+formed a Hubble time ago (solid gray line).  Towards the top right the
+$f=1$ and the young stars dominate the mass injection rate and the
+heating rate.  Moving towards the left, $f$ decreases, along with the
+mass return rate, and density (blue lines), but the heating rate,
+$v_w$, remains $\gsim 1000$ km/s except for very small values of
+$f$. The minimum density (eq.~\eqref {eq:n18min}) is obtained for
+$f=4\times 10^{-4}$. However, for this $f$, we expect less than 1
+massive star within the stagnation radius. In this case our formalism
+would break down, and the true density would be larger.
 
 The dashed, gray line represents another two burst formation history
 but the older burst is $\sim 3$ Myr old (when stars are beginning to
@@ -492,7 +436,7 @@ A typical host galaxy for TDE has evidence of some star formation
 within 1 Gyr\footnote{Iair Arcavi private communication}. In this case
 the return efficiency will be $\eta\simeq 0.4$. The heating is
 dominated by the stellar velocity dispersion Ia supernovae.  Gas will
-be inflowing inside of the Ia radius, where the time-scale between
+be inflowing inside of the Ia radius, where the time between
 supernovae is equal to the dynamical time: for $10^7 \Msun$ and this
 will be $\simeq 10$ pc. Then,
 
@@ -508,7 +452,7 @@ mass enclosed inside the Ia radius:
 
 \begin{align}
 &\Mbh (r_{\rm Ia}/r_{\rm inf})^{3-\delta}\\
-&r_{\inf}\approx 3.5 \Mbh[,7] \, {\rm pc}
+&r_{\inf}\approx 3.5 \Mbh[,7]^{0.6} \, {\rm pc}
 \end{align}
 
 $r_{\rm inf}$ is the influence radius and $\delta$
@@ -522,18 +466,18 @@ radius. Assuming $n\propto r^{-1}$ we obtain $n_{18}\simeq 50$ cm$^{-3}$.
   \includegraphics[width=8cm]{cnm_plot.pdf}
   \caption{\label{fig:param} Heating rates ($v_w$) and mass return
     parameters ($\eta$) for different star formation histories (gray
-    lines). Solid, gray lines correspond to a star-burst of $<3$ Myr
+    lines). The solid, gray line corresponds to a star-burst of $<3$ Myr
     ago forming a fraction $f$ of the stars. The rest of the stars
-    formed either a Hubble time ago (top line) or 1 Gyr ago (bottom
-    line). The fraction $f$ increases and the gas density from left to
-    right along these lines. The dashed, gray line corresponds to an
-    alternate scenario in which there are two recent bursts in rapid
-    succession in rapid succession: the older burst is $\sim 3$ Myr
-    old (just at the point when stars are beginning to leave the main
-    sequence). The contribution of this older burst increases towards
-    the right, crossing boundary of the thermally unstable (``TI'')
-    region below the thick black line. Iso-contours for the density at
-    $10^{18}$ cm ($\mathrm{n_{18}}$) are shown as solid blue lines.} 
+    formed either a Hubble time ago. The fraction $f$ increases and
+    the gas density from left to right along these lines. The dashed,
+    gray line corresponds to an alternate scenario in which there are
+    two recent bursts in rapid succession in rapid succession: the
+    older burst is $\sim 3$ Myr old (just at the point when stars are
+    beginning to leave the main sequence). The contribution of this
+    older burst increases towards the right, approaching the 
+    thermally unstable (``TI'') region below the thick black
+    line. Iso-contours for the density at $10^{18}$ cm
+    ($\mathrm{n_{18}}$) are shown as solid blue lines.}
 \end{figure}
 
 
@@ -551,7 +495,7 @@ where $n$ is the average density at radius $r$ and $f_{\rm in}$
 represents the fraction of the large scale inflow, which actually
 accretes onto the black hole.  If we assume that $r$ is interior to
 the sonic radius, then we can approximate $v$ as the free-fall
-velocity, $v_{\rm ff} = (GM_{\bullet}/2r)^{1/2}$.  In this case we
+velocity, $v_{\rm ff} = (2 G \Mbh/r)^{1/2}$.  In this case we
 obtain
 \begin{equation}
 n_{18} = 3 \times 10^3 M_{\bullet,7}^{1/2} m f_{\rm in}^{-1} {\rm
@@ -585,19 +529,20 @@ where $\{s, a_1, a_2, F_{m_0}\} =\{1.42, -0.166, -1.20, 0.235\}$.
 
 \begin{figure}
 \includegraphics[width=8cm]{fcum_n18.pdf}
-\caption{\label{fig:n18Cum} Fraction of black holes with $f_{\rm in}
-  n_{18}$ greater than a given value based on the observed cumulative
-  distributions of Eddington ratios from \citet{Kauffmann+2009}
-  {\it (solid black line)}. Recall that $f_{\rm in}$ is the ratio of
-  the true accretion rate onto the black hole to the inflow rate of
-  free-falling gas at $10^{18}$ cm.  The dashed blue line is the
-  corresponding cumulative distribution of $n_{18}$, taking an $f_{\rm
-    in}$ based on the simulations of \citet{Li+2013} ( $\dot{M}_{\rm
-    Acc}/\dot{M}_{\rm Bondi}$ in their Figure 6). The distribution of
-  $f_{\rm in} n_{18}$ ($n_{18}$) is unreliable to the left of the
-  solid black (dashed blue) vertical line. This is because the nuclear
-  OIII luminosity from which these densities are inferred may be
-  coming from star formation rather than the accretion flow.}
+\caption{\label{fig:n18Cum} Cumulative distribution of $f_{\rm in}
+  n_{18}$ for black holes with mass $\Mbh\simeq 10^{7} \Msun$ based on
+  the observed cumulative distributions of Eddington ratios from
+  \citet{Kauffmann+2009} {\it (solid black line)}. Recall that $f_{\rm
+    in}$ is the ratio of the true accretion rate onto the black hole
+  to the inflow rate of free-falling gas at $10^{18}$ cm.  The dashed
+  blue line is the corresponding cumulative distribution of $n_{18}$,
+  taking an $f_{\rm in}$ based on the simulations of \citet{Li+2013} (
+  $\dot{M}_{\rm Acc}/\dot{M}_{\rm Bondi}$ in their Figure 6). The
+  distribution of $f_{\rm in} n_{18}$ ($n_{18}$) is unreliable to the
+  left of the solid black (dashed blue) vertical line. Such low
+  densities correspond to systems with very small OIII luminosities,
+  which could be coming from star formation rather than the black hole
+  accretion flow}
 \end{figure}
 
 
@@ -662,6 +607,19 @@ sample, with $\Mbh\sim 10^{9} \Msun$, whereas black holes tidal
 disruption events would have $\Mbh\lsim 10^8 \Msun$. This is because
 more massive black holes would not be able to disrupt (main sequence)
 stars.
+
+
+These empirical constraints nicely complement the analytic estimates
+in the previous section. On the one hand, the distribution of
+Eddington ratios becomes unreliable for low luminosities.  In this
+case it is difficult to put a lower bound on the density
+observationally. However, the analytics give a low density floor
+expected from injection of stellar wind material ($\sim 0.1$
+cm$^{-3}$). On the other hand, the analytic estimates are specific to
+the hot phase of gas. The Eddington ratio distribution probes the
+average density (including any cold clumps). The
+distribution of Eddington ratios gives us confidence in our high
+density limit ($\sim 1000$ cm$^{-3}$).
 
 
 
@@ -747,7 +705,7 @@ We plot the fraction of the slow component ($\Gamma_j=2$) kinetic
 energy dissipated at the time of reverse shock crossing as a function
 of the isotropic jet luminosity and $n_{18}$ in
 Fig.~\ref{fig:diss}. In our model the jet has constant luminosity for
-time $t_{\rm fb}=5\times 10^5$ s, after which point the jet luminosity
+time $t_{\rm fb}=5\times 10^5$ s. Afterwards, the jet luminosity
 declines as $t^{-5/3}$. We consider only the constant luminosity
 portion of the jet with thickness $c t_{\rm fb}=1.5 \times 10^{16}$ cm
 for the purposes of this calculation.
@@ -806,7 +764,7 @@ angular size is fixed to the initial one. We note that the stage at
 which the jet becomes ``isotropic'' depends on the CNM density,
 i.e. the denser the CNM, the faster this is expected to happen.
 
-Since the agrrement between 1D and 2D models is good at the early
+Since the agreement between 1D and 2D models is good at the early
 times (when the fast component dominates), we modify only the slow
 component in 1D models. We assume that is spans $[0.1\ {\rm rad},
 \pi/2\ {\rm rad}]$ and lower its $E_{\rm ISO}$ so that the true jet
@@ -815,7 +773,8 @@ energy remains unchanged with respect to the original model:
  E_{\rm ISO, new} = E_{\rm ISO} \left(\frac{\cos(0.1) - \cos(0.5)}{\cos(0.1) - \cos(\pi/2)}\right)\approx 0.12 E_{\rm ISO}\, .
 \end{equation}
 
-We assume $E_{\rm ISO} = 4\times 10^{54}$ erg, and that the jet luminosity time dependence is the same as in \citet{Mimica+2015},
+We assume $E_{\rm ISO} = 4\times 10^{54}$ erg, and that the jet
+luminosity time dependence is the same as in \citet{Mimica+2015},
 \begin{equation}\label{eq:lum}
 L_j(t) = L_{j,0}\max\left[1, (t/t_0)\right]^{-5/3}
 \end{equation}
@@ -828,8 +787,6 @@ for $n_{18}=60$ the 1d models still over-predict still over-predict
 the flux at times after the peak of the light-curve.
 
 
-
-
 \begin{figure*}
 \includegraphics[width=16cm]{1d_2d.pdf}
 \caption{\label{fig:1d2dB} Comparison of 1-d and 2-d light-curves for
@@ -838,7 +795,8 @@ the flux at times after the peak of the light-curve.
   to the jet axis. We assume an $n\sim r^{-1}$ density profile for
   $n_{18}=2000$, but take $n\sim r^{-1.5}$ for $n_{18}=60$ for
   computational convenience--this model was previously computed in
-  \citet{Mimica+2015}, and 2-d model are very computationally intensive.}
+  \citet{Mimica+2015} and 1-d results suggest that the density slope would
+  have minimal impact on the results (see $\S$~\ref{sec:profileComp})}.
 \end{figure*}
 
 \section{Results}
@@ -846,10 +804,10 @@ the flux at times after the peak of the light-curve.
 
 \subsection{Effects of gas density}
 
-In Fig.~\ref{fig:upper_limits} we show the off-axis light curves for
-our fiducial jet model and a few different density profiles.
-The higher density models peak at later times with smaller peak
-luminosities.  This is due to the effects of synchrotron
+In Fig.~\ref{fig:upper_limits} we show off-axis light curves for our
+fiducial jet model and a few different densities: n$_{18}$: 2,
+60, and 2000 cm$^{-3}$. The higher density models peak at later times with
+smaller peak luminosities.  This is due to the effects of synchrotron
 self-absorption: the peak of the emission occurs as the jet
 transitions from being optically thick to optically thin. This occurs
 later in the higher density models.
@@ -857,7 +815,7 @@ later in the higher density models.
 The radio light curve has contributions from both the slow and fast
 jet components. The fast component dominates at early times for the
 $n_{18}=2$ and 60 lightcurves, while the slow component dominates for
-all times as frequencies for $n_{18}$=2000. Generally, the fast
+all times for $n_{18}$=2000. Generally, the fast
 component is more important at higher frequencies, and lower
 densities. 
 
@@ -866,9 +824,10 @@ candidates in Fig.~\ref{fig:upper_limits} (these were compiled from
 various sources into Table 1 of \citealt{Mimica+2015}). Note that all
 of 5 GHz light-curves fall above the upper limits. However, we were
 unable to perform a 2-d calculation for $n_{18}=2$.  For $n_{18}=60$,
-the 2-d light-curve systematically falls $\sim$ one order of magnitude
-below the 1-d light-curve. Thus, we caution that the 1-d light-curves
-for $n_{18}=2$ may overestimate the late time radio luminosity. 
+the 2-d light-curve falls $\sim$one order of magnitude below the 1-d
+light-curve after $\sim$ 10 years. Thus, we caution that the 1-d
+light-curves for $n_{18}=2$ may overestimate the late time radio
+luminosity.
 
 Overall, earlier radio measurements would provide tighter constraints
 for tidal disruption event jets: the lightcurves or $n_{18}=2$ peak on
@@ -882,9 +841,10 @@ decades after the TDE flare.
     values of n$_{18}$: 2, 60, and 2000. When available we have
     plotted the 2-d light-curves for ($n_{18}=60$ and $n_{18}$=2000),
     and use a 1-d model for $n_{18}=2$. Note we use $n\propto r^{-1}$
-    for $n_{18}=$ 2 and 2000, but $r^{-1.5}$ for $n_{18}=60$, as
-    \citet{Mimica+2015} had already computed this model and 2-d
-    calculations are very expensive.  Radio upper limits and
+    for $n_{18}=$ 2 and 2000, but $r^{-1.5}$ for $n_{18}=60$, as this
+    model had already been computed and since the 1-d results suggest
+    that the density slope will have minimal impact on the results
+    (see $\S$~\ref{sec:profileComp}).  Radio upper limits and
     detections are shown as black/gray triangles and squares
     respectively (compiled in Table 1 of \citealt{Mimica+2015}). The
     single upper limit in the top panel corresponds to 1.4 GHz. Gray
@@ -900,17 +860,17 @@ the gas density profile, while holding $n_{18}$ fixed. We compute the
 results for $n_{18}=2000$ for both our fiducial $n\sim r^{-1}$ profile and
 the core galaxy profile, shown in equation~\eqref{eq:cores}. The
 former would more relevant for a cuspy stellar density profile with
-stellar density $\rho_{\star}\sim r^{-2}$, while the latter would be more
-appropriate for a flatter $\rho_{\star}\sim r^{-1}$ stellar density
+stellar density $\rho_{\star}\propto r^{-2}$, while the latter would be more
+appropriate for a flatter $\rho_{\star}\propto r^{-1}$ stellar density
 profile. As a steeper stellar density is more favorable for producing
 tidal disruption events, we would expect most events to occur is cusp
 rather than core galaxies.
 
-The on-axis are virtually indistinguishable as shown in
+The on-axis light-curves are virtually indistinguishable as shown in
 Fig.~\ref{fig:cores}. This result is not surprising as
 the core and cusp profiles are quite similar inside of $10^{18}$ cm,
 and we expect the jet to have decelerated inside of this radius for
-these high density profiles.
+these high densities. 
 
 In Fig.~\ref{fig:profs2} we compare the 1D on-axis light-curves for
 density two density profiles $n\propto r^{-1}$ and $n\propto r^{-1.5}$
@@ -935,20 +895,19 @@ to differ significantly.
 
 
 \begin{figure} 
-  \includegraphics[width=8cm]{fig_profs.pdf}
+  \includegraphics[width=8cm]{profs2.pdf}
   \caption{\label{fig:profs2} Comparison of (on-axis) light-curves for
     $n_{18}=60$ and two different CNM gas density profiles: $n\propto
-    r^{-1}$ ({\it solid black}) and $n\propto r^{-1.5}$.}
+    r^{-1}$ ({\it solid black}) and $n\propto r^{-1.5}$ ({\it dashed
+      red}).}
 \end{figure}
 
 \subsection{Effects of viewing angle}
 We show a comparison off and on-axis light-curves in
-Fig.~\ref{fig:onOff}.  For $n_{18}=2000$ the two light-curves differ
-little.  For $n_{18}=60$ the two light-curves differ for early and
-late times. In the case, the off-axis peak luminosity is a factor of a
-few lower. For late times the off- and on-axis light-curves are quite
-close to each other.
-
+Fig.~\ref{fig:onOff}.  For $n_{18}=2000$ the light-curves differ
+little.  For $n_{18}=60$ off-axis luminosity is lower by a factor
+before and near the peak. However, for late times
+the off- and on-axis light-curves are quite similar.
 
 \begin{figure*}
 \includegraphics[width=16cm]{on_off.pdf}
@@ -1003,7 +962,7 @@ are summarized as follows.
   considerable uncertainty in translating an observed Eddington ratio
   to a circumnuclear gas density. TDE hosts would not fall on this
   high density tail, as TDE searches exclude galaxies with evidence of
-  AGN activity.
+  AGN activity. 
 
 \item We take a jet model which fits the radio data for the Sw1644
   transient (from \citealt{Mimica+2015}) and run it through a range of
@@ -1014,8 +973,10 @@ are summarized as follows.
   the peak luminosity only weakly dependent on the chosen value of
   $n_{18}$.  For smaller densities the light-curves peak earlier in
   time. Based on existing radio upper limits for tidal disruption
-  event candidates, we show Swift 1644-like jet are absent in most TDE
-  as long as $n_{18} > 60$.
+  event candidates, we show Swift 1644-like jet are absent in most TDEs
+  as long as the density at $10^{18}$, $n_{18} \gsim  60$
+  cm$^{-3}$. Prompt follow-up in the radio could provide tighter
+  constraints on the existence of TDE jets.   
 \end{enumerate}
 
 \appendix
