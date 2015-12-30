@@ -54,7 +54,7 @@
   fraction of these events, (e.g. Sw-J1644+57) have radio emission
   consistent with a powerful, relativistic jet interacting with
   surrounding nuclear gas. A priori it is not clear if the small
-  number of such relativistic TDEs is due to an intrinsic lack of jets
+  number of observed relativistic TDEs is due to an intrinsic lack of jets
   or unfavorable nuclear gas densities for producing observable radio
   emission. We test the second possibility by calculating radio
   light-curves for jets interacting with a broad range of density
@@ -62,7 +62,7 @@
   nuclei (0.1-1000 cm$^{-3}$ at $10^{18}$ cm). We find bright radio
   transients across the entire range of expected density
   profiles. Existing radio upper limits are often taken decades after
-  the observed flare, well past the expected peak of the light-curve
+  the observed flare, well after the expected peak of the light-curve
   for low density environments. Nonetheless they exclude powerful,
   Sw-J1644-like jets for CNM densities less than 60 cm$^{-3}$ at
   $10^{18}$ cm. More stringent constraints would be possible with
@@ -413,7 +413,7 @@ We illustrate how the mass return parameter, heating rate, and density
 vary with star formation history in Fig.~\ref{fig:param}. The solid
 gray line represents a two-burst model for star formation in which a
 fraction, $f$, of the stars formed $<$ 3 Myr ago and the remainder
-formed a Hubble time ago (solid gray line).  Towards the top right the
+formed a Hubble time ago.  Towards the top right the
 $f=1$ and the young stars dominate the mass injection rate and the
 heating rate.  Moving towards the left, $f$ decreases, along with the
 mass return rate, and density (blue lines), but the heating rate,
@@ -780,7 +780,7 @@ L_j(t) = L_{j,0}\max\left[1, (t/t_0)\right]^{-5/3}
 \end{equation}
 where $t_0 = 5\times 10^5$ seconds and $L_{j, 0}$ can be determined
 from $E_{\rm ISO}$ by integrating equation~\ref{eq:lum} in time from
-$0$ to $\infty$. We show a comparison of this modified 1-d approach
+$0$ to $\infty$. We show a comparison of this modified 1D approach
 with the true 2-d result in Figure~\ref{fig:1d2dB}, for $n_{18}=60$
 and $n_{18}=2000$. For $n_{18}=2000$ the agreement is excellent, while
 for $n_{18}=60$ the 1d models still over-predict still over-predict
@@ -789,20 +789,20 @@ the flux at times after the peak of the light-curve.
 
 \begin{figure*}
 \includegraphics[width=16cm]{1d_2d.pdf}
-\caption{\label{fig:1d2dB} Comparison of 1-d and 2-d light-curves for
+\caption{\label{fig:1d2dB} Comparison of 1D and 2-d light-curves for
   $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for frequencies of 1
   GHz (left) and 30 GHz (right) and an observer angle of 0.8 radians
   to the jet axis. We assume an $n\sim r^{-1}$ density profile for
   $n_{18}=2000$, but take $n\sim r^{-1.5}$ for $n_{18}=60$ for
   computational convenience--this model was previously computed in
-  \citet{Mimica+2015} and 1-d results suggest that the density slope would
+  \citet{Mimica+2015} and 1D results suggest that the density slope would
   have minimal impact on the results (see $\S$~\ref{sec:profileComp})}.
 \end{figure*}
 
 \section{Results}
 \label{sec:results}
 
-\subsection{Effects of gas density}
+\subsection{Effect of gas density}
 
 In Fig.~\ref{fig:upper_limits} we show off-axis light curves for our
 fiducial jet model and a few different densities: n$_{18}$: 2,
@@ -824,8 +824,8 @@ candidates in Fig.~\ref{fig:upper_limits} (these were compiled from
 various sources into Table 1 of \citealt{Mimica+2015}). Note that all
 of 5 GHz light-curves fall above the upper limits. However, we were
 unable to perform a 2-d calculation for $n_{18}=2$.  For $n_{18}=60$,
-the 2-d light-curve falls $\sim$one order of magnitude below the 1-d
-light-curve after $\sim$ 10 years. Thus, we caution that the 1-d
+the 2-d light-curve falls $\sim$one order of magnitude below the 1D
+light-curve after $\sim$ 10 years. Thus, we caution that the 1D
 light-curves for $n_{18}=2$ may overestimate the late time radio
 luminosity.
 
@@ -840,9 +840,9 @@ decades after the TDE flare.
     radio light-curves for our fiducial jet model and three different
     values of n$_{18}$: 2, 60, and 2000. When available we have
     plotted the 2-d light-curves for ($n_{18}=60$ and $n_{18}$=2000),
-    and use a 1-d model for $n_{18}=2$. Note we use $n\propto r^{-1}$
+    and use a 1D model for $n_{18}=2$. Note we use $n\propto r^{-1}$
     for $n_{18}=$ 2 and 2000, but $r^{-1.5}$ for $n_{18}=60$, as this
-    model had already been computed and since the 1-d results suggest
+    model had already been computed and since the 1D results suggest
     that the density slope will have minimal impact on the results
     (see $\S$~\ref{sec:profileComp}).  Radio upper limits and
     detections are shown as black/gray triangles and squares
@@ -873,16 +873,11 @@ and we expect the jet to have decelerated inside of this radius for
 these high densities. 
 
 In Fig.~\ref{fig:profs2} we compare the 1D on-axis light-curves for
-density two density profiles $n\propto r^{-1}$ and $n\propto r^{-1.5}$
+density two density profiles: $n\propto r^{-1}$ and $n\propto r^{-1.5}$
 with $n_{18}=60$. Once again the results are quite similar. Again this
 is not surprising as the models have the same density near the Sedov
 radius ($\sim 10^{18}$ cm).  
 
-For the 2-d light-curve for $n_{18}=60$, we took $n\propto r^{-1.5}$,
-instead of our fiducial choice of $n \propto r^{-1}$. However, based
-on the comparison Fig.~\ref{fig:profs2}, we do not expect the results
-to differ significantly.
- 
 
 \begin{figure} 
   \includegraphics[width=8cm]{fig_cores.pdf}
@@ -911,7 +906,7 @@ the off- and on-axis light-curves are quite similar.
 
 \begin{figure*}
 \includegraphics[width=16cm]{on_off.pdf}
-\caption{\label{fig:onOff} Comparison of (2-d) off- and on-axis
+\caption{\label{fig:onOff} Comparison of (2D) off- and on-axis
   light-curves for $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for
   frequencies of 1 GHz (left) and 5 GHz (right). The observer line of
   sight is taken to be at $\theta_{\rm obs}=0.8$ with respect to the
@@ -976,7 +971,7 @@ are summarized as follows.
   event candidates, we show Swift 1644-like jet are absent in most TDEs
   as long as the density at $10^{18}$, $n_{18} \gsim  60$
   cm$^{-3}$. Prompt follow-up in the radio could provide tighter
-  constraints on the existence of TDE jets.   
+  constraints on the existence of TDE jets.  
 \end{enumerate}
 
 \appendix
