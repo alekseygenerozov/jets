@@ -102,7 +102,7 @@ Although a handful of jetted TDE flares have been observed, their
 volumetric rate is a very small fraction $\sim 10^{-4}$ of the rate of
 the observed thermal TDE flares (e.g., \citealt{Burrows+2011}), and an
 even smaller fraction of the theoretically predicted TDE rate
-(\citealt{Stone&Metzger2015}).  One potential explanation for this
+(\citealt{Stone&Metzger2016}).  One potential explanation for this
 discrepancy is that the majority of TDEs produce powerful jets, but
 their non-thermal X-ray emission is relativistically beamed into a
 small angle $\theta_{\rm b}$, making them visible to only a small
@@ -317,7 +317,7 @@ n(r) \approx n_{18} \left(\frac{r}{10^{18} {\rm cm}}\right)^{-1}
 \end{equation}
 
 inside of the break radii. As we expect, cusp galaxies to dominate the
-tidal disruption event rate \citep{Stone&Metzger2015}, we adopt
+tidal disruption event rate \citep{Stone&Metzger2016}, we adopt
 equation~\eqref{eq:cuspProfile} as our fiducial CNM density profile.
 
 We also experiment with a core-like density profile
@@ -363,7 +363,7 @@ If the hot phase of CNM reaches a thermally unstable condition
 ($v_{\rm w} \lesssim v_{\rm w,TI}$), it is likely that portions of the
 hot phase will condense into cold gas, eventually resulting in star
 formation.  Therefore, it is reasonable to hypothesize that the CNM
-will regulate itself to the condition $v_w \lesssim v_{\rm w,TI}$ (a
+will regulate itself to the condition $v_w \gsim v_{\rm w,TI}$ (a
 similar argument has been made on larger scales in galaxies;
 \citealt{Voit+2015}).  The condition places an upper limit on the gas
 density
@@ -437,7 +437,7 @@ intersection between the dashed gray line and the thermal instability
 line corresponds to the maximum possible hot phase CNM density.
 
 A typical host galaxy for TDE has evidence of some star formation
-within 1 Gyr\footnote{Iair Arcavi private communication}. In this case
+within 1 Gyr \citep{French+2016}. In this case
 the return efficiency will be $\eta\simeq 0.4$. The heating is
 dominated by the stellar velocity dispersion Ia supernovae.  Gas will
 be inflowing inside of the Ia radius, where the time between
@@ -489,8 +489,8 @@ radius. Assuming $n\propto r^{-1}$ we obtain $n_{18}\simeq 50$ cm$^{-3}$.
 
 In this section we translate observed constraints on the accretion
 rate distribution of supermassive BHs into constraints on the CNM
-density.  The density $n$ at radius $r$ can be approximated from the
-inflow rate $\dot{M}$ as
+density.  The density $n$ at radius $r$ can be written in terms of the
+inflow rate, $\dot{M}$
 \begin{equation}
 \dot{M} = m \dot{M}_{\rm Edd}= f_{\rm in} 4 \pi r^2 \mu m_p n v,
 \label{eq:mdot}
@@ -706,13 +706,13 @@ Lorentz factor of the shocked jet material at the time the reverse
 shock has crossed through the jet.  
 
 We plot the fraction of the slow component ($\Gamma_j=2$) kinetic
-energy dissipated at the time of reverse shock crossing as a function
-of the isotropic jet luminosity and $n_{18}$ in
-Fig.~\ref{fig:diss}. In our model the jet has constant luminosity for
-time $t_{\rm fb}=5\times 10^5$ s. Afterwards, the jet luminosity
-declines as $t^{-5/3}$. We consider only the constant luminosity
-portion of the jet with thickness $c t_{\rm fb}=1.5 \times 10^{16}$ cm
-for the purposes of this calculation.
+energy dissipated by the reverse shock as a function of isotropic jet
+luminosity and $n_{18}$ in Fig.~\ref{fig:diss}. For the purposes of
+our analytic estimates, we assume a constant luminosity jet, which
+shuts off after time $t_{\rm fb}=5 \times 10^{5}$ s. For the numerical
+calculations described in the subsequent sections, the jet luminosity
+declines as $t^{-5/3}$ after time $t_{\rm fb}$ (see equation~\eqref{eq:lum}).
+
 
 \begin{figure}
 \includegraphics[width=8cm]{diss.pdf}
@@ -732,7 +732,7 @@ for the fast inner core and $\Gamma = 2$ for the slow outer sheath),
 but we introduce a number of modifications regarding the jet energy
 when performing 1D simulations.
 
-\subsection{1-d vs. 2-d Models}
+\subsection{1D vs. 2D Models}
 \label{sec:2d}
 
 The preferred numerical model for Swift J1644+57 \citep[Fig.10
@@ -743,7 +743,7 @@ paper]{Mimica+2015} matches the 2D light curve only at early times,
 when the emission from the inner relativistic jet dominates, while at
 late times, when the emission from the slow outer core dominates, the
 1D model overestimates the emission from the 2D model. In this work we
-found a modification of the 1D model that alloed its light curves to
+found a modification of the 1D model that made its light curves
 match the 2D results much more closely.
 
 We first summarize the two-component model as presented in
