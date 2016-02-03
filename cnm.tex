@@ -34,7 +34,7 @@
 \newcommand{\pyear}{{\rm yr}^{-1}}
 
 % write title (with email and institute)
-\title{Are tidal disruption event jets hiding?}
+\title{The influence of environment on radio emission from TDE jets}
 \author[Generozov et al.]{ A. Generozov$^{1}$, P. Mimica$^{2}$,
   B. D. Metzger$^{1}$,
   D. Giannios$^{3}$, 
@@ -132,25 +132,24 @@ emission from an off-axis is predicted to be relatively isotropic
 
 Observational campaigns have been conducted to follow-up thermal TDE
 flares at radio wavelengths on timescales of months to decades after
-the outburst (\citealt{Bower+2013}; \citealt{van-Velzen+2013}; see Table
-1 of \citet{Mimica+2015} for a compilation).  \citet{van-Velzen+2013}
-detected no radio emission from their 7 candidates, while
-\citet{Bower+2013} detected radio emission from two of the  ROSAT flares:
-RX J1420.4+5334 and IC 3599.  However, for RX J1420.4+5334 the radio
-emission was observed in a different galaxy than that originally
-identified by \citet{Komossa+1999} as the host.  Furthermore, the
-highly irregular behavior of IC 3599, including multiple outbursts
-over the past few decades from this low luminosity AGN
-(e.g.~\citealt{Campana+2015}), calls into question whether this event is
-a true TDE at all.  \citet{Bower+2013} and \citet{van-Velzen+2013} use a
-simple model for the radio emission as a Sedov blast wave, to conclude
-that $\lesssim 10\%$ of TDEs produce jetted TDE emission at a level
-similar to that produced in {\it Swift} J1644+57.  \citet{Mimica+2015}
-used 2D hydrodynamical models, coupled with a synchrotron radiation
-transport calculation, to model the on-axis emission from {\it Swift}
-J1644+57, which they then extended to the case of an off-axis viewing
-angle to conclude that most previous TDEs should have been detected if
-their jets were as powerful.
+the outburst (\citealt{Bower+2013}; \citealt{van-Velzen+2013}; see
+Table 1 of \citet{Mimica+2015} for a compilation). Neither of these
+campaigns found any radio afterglows definitively associated with the
+host galaxies of strong thermal TDE candidates.\footnote{There were
+  radio detections for two ROSAT flares: RX J1420.4+5334 and IC
+  3599. However, for RX J1420.4+5334 the radio emission was observed
+  in a different galaxy than was originally associated with the flare.
+  IC 3599 has shown multiple outbursts in the calling into question
+  whether it is a true TDE at all \citep{Campana+2015}.}
+\citet{Bower+2013} and \citet{van-Velzen+2013} use a simple model for
+the radio emission as a Sedov blast wave, to conclude that $\lesssim
+10\%$ of TDEs produce jetted TDE emission at a level similar to that
+produced in {\it Swift} J1644+57.  \citet{Mimica+2015} used 2D
+hydrodynamical models, coupled with a synchrotron radiation transport
+calculation, to model the on-axis emission from {\it Swift} J1644+57,
+which they then extended to the case of an off-axis viewing angle to
+conclude that most previous TDEs should have been detected if their
+jets were as powerful.
 
 Previous works (\citet{Bower+2013}; \citet{van-Velzen+2013};
 \citealt{Mimica+2015}) have generally assumed that all TDEs occur in a
@@ -203,11 +202,7 @@ $\S\ref{sec:conc}$.
 
 In this section we place theoretical and observational constraints on
 the radial profile of the gas density $n(r)$ in the nuclei of
-galaxies, which typically takes on a power-law form $n =
-n_{18}(r/10^{18}{\rm cm})^{-\gamma}$ with $\gamma \approx 1-1.5$.  We
-focus constraining the normalization $n_{18}$ of the density at $r =
-10^{18}$ cm, as the latter represents the approximate deceleration
-radius of the blast wave ($\S\ref{sec:analytic}$)
+galaxies. 
 
 \subsection{Analytic Constraints on CNM Density}
 
@@ -243,8 +238,8 @@ energy source term $\propto v_w^{2}$ parameterizes the heating rate of
 the gas, as physically results from stellar wind kinetic energy,
 supernovae, and black hole feedback.
 
-For a cusp galaxy ($\delta_1> 0.5$), \citet{Generozov+2015} show that the gas density obeys $n \sim
-r^{-1}$, with a normalization
+For a cusp galaxy ($\delta_1> 0.5$), \citet{Generozov+2015} show that
+the gas density obeys $n \propto r^{-1}$, with a normalization
 \begin{equation}
 n_{18}\simeq 0.4 \Mbh[,7]^{0.5} \eta_{0.02} v_{500}^{-1.5} {\rm
   cm^{-3}},
@@ -521,15 +516,20 @@ ratio $m$.  According to \citet{Kauffmann&Heckman2009} ${\rm
 adopt this conversion and assume that the bolometric correction is
 independent of ${\rm L[0III]}/\Mbh$. 
 
-The distribution of Eddington ratios for the lowest mass BH bin of
-$M_{\bullet} = 10^7 - 10^{7.25} \Msun$ (\citealt{Kauffmann&Heckman2009};
-their Figure 4) is well fit by the expression,
-\begin{align}
-  F_{\rm cum}(m)=\frac{F_{m_0}}{2^{-1/s}}
-  \left[\left(\frac{m}{m_0}\right)^{-a_1\,
-      s}+\left(\frac{m}{m_0}\right)^{-a_2 \, s}\right]^{-1/s} \label{eq:khFit},
-\end{align}
-where $\{s, a_1, a_2, F_{m_0}\} =\{1.42, -0.166, -1.20, 0.235\}$.
+{\bf Intermediate step, going from distribution of L/Ledd to
+  Mdot/MdotEdd. This requires, a radiative efficiency. I use our
+  prescription from the last paper. 
+}
+
+% The distribution of Eddington ratios for the lowest mass BH bin of
+% $M_{\bullet} = 10^7 - 10^{7.25} \Msun$ (\citealt{Kauffmann&Heckman2009};
+% their Figure 4) is well fit by the expression,
+% \begin{align}
+%   F_{\rm cum}(m)=\frac{F_{m_0}}{2^{-1/s}}
+%   \left[\left(\frac{m}{m_0}\right)^{-a_1\,
+%       s}+\left(\frac{m}{m_0}\right)^{-a_2 \, s}\right]^{-1/s} \label{eq:khFit},
+% \end{align}
+% where $\{s, a_1, a_2, F_{m_0}\} =\{1.42, -0.166, -1.20, 0.235\}$.
 
 \begin{figure}
 \includegraphics[width=8cm]{fcum_n18.pdf}
@@ -927,11 +927,11 @@ the off- and on-axis light-curves are quite similar.
 
 We calculate radio light-curves for tidal disruption event jets
 propagating through different circumnuclear (CNM) gas densities. We
-simulate the jet propagation using both 1d and 2d hydrodynamic
+simulate the jet propagation using both 1D and 2D hydrodynamic
 simulations. We then post-process these to produce radio synchrotron
 light-curves. To isolate the effects of the density profile we take a
 fixed two component jet model from \citet{Mimica+2015}, which produces
-a good fit to the observed radio data in the Sw1644 transient. We
+a good fit to the observed radio data in Sw1644. We
 consider a broad range of gas densities motivated by analytic
 estimates of stellar wind mass injection and empirical constraints
 based on observed distributions of Eddington ratios. Our conclusions
