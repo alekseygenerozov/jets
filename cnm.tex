@@ -236,7 +236,7 @@ density. The energy source term $\propto v_w^{2}$ parameterizes the
 heating rate of the gas, as physically results from stellar wind
 kinetic energy, supernovae, and black hole feedback.
 
-As described in \citet{Generozov+2015}, we have analytic expressions
+As described in \citet{Generozov+2015}, we have analytic approximations
 for the densities and temperatures of steady state solutions to
 equation~\eqref{eq:model}. We will apply these analytic formulas
 across the physical range heating rates ($v_w$) and mass injection
@@ -246,9 +246,9 @@ rates ($\eta$), to obtain the physical range of CNM gas densities.
 The radio emission produced by a TDE jet is most sensitive to the gas
 density at the ``Sedov'' or deceleration radius, where the jet has
 swept up it's own mass in nuclear gas. For Swift 1644 the deceleration
-radius of the jet was approximately $\sim 10^{18}$ cm. Thus, it is
-convenient to approximate nuclear gas density as a power law:
-$n(r)=n_{18} (r/10^{18})^{-k}$.
+radius of the jet was approximately $\sim 10^{18}$
+cm \citep{Mimica+2015}. Thus, we focus on determining the nuclear gas
+density as $10^{18}$ cm, $n_{18}$.  
 
 In the presence of strong heating, one-dimensional steady-state flow
 is characterized by an inflow-outflow structure, with a critical
@@ -258,9 +258,19 @@ stagnation radius is accreted, while that outside $\rs$ is unbound in
 an outflow from the nucleus.  It is most convenient to
 first calculate $n(\rs)$ and then infer $n_{18}$. 
 
-$n(\rs)$ depends on the injection rate of stellar wind material inside
-of $\rs$, $\dot{M}$. This is simply related to the stellar mass
-enclosed inside of $\rs$, $M_{\rm enc}(\rs)$:
+% The stagnation radius can be calculated analytically from the heating
+% rate ($v_w$) and black hole mass ($M$)
+
+% \begin{equation}
+% r_s=f \frac{G M}{v_w^2}. 
+% \label{eq:rs}
+% \end{equation}
+
+
+The density at the stagnation radius, $n(\rs)$ depends on the
+injection rate of stellar wind material inside of $\rs$,
+$\dot{M}$. This is proportional to the stellar mass enclosed inside of
+$\rs$, $M_{\rm enc}(\rs)$:
 
 \begin{equation}
 \dot{M}=\frac{\eta M_{\rm enc}(\rs)}{t_h}
@@ -281,7 +291,7 @@ The slope of the gas density profile depends on the slope of the
 stellar density profile.  This is because the mass source function is
 proportional to the stellar density (see~\ref{sec:model}). At small
 radii of interest, inside the Nuker `break' radius, the stellar
-density follows $\rho_\star\sim r^{-\delta_1}$, where $\delta_1 = 1-2$
+density follows $\rho_\star\sim r^{-\delta}$, where $\delta = 1-2$
 is the inner Nuker profile. There are two broad categories of stellar
 density profiles: ``cusps'', with power law slopes $>$ 0.5 and
 ``cores'', with power law slopes $<0.3$ \citep{Lauer+2007}.
@@ -314,21 +324,38 @@ Fig.~\ref{fig:profiles} shows steady state gas density profiles for a
 cusp and a core stellar density profile. For the cusp (core) profile
 we take a stellar density profile $\rho_\star \propto r^{-1.8
   (-1.1)}$, for $r<25$ pc (the break radius). Both profiles have
-$\rho_\star \propto r^{-3}$ outside of the break radius.
+$\rho_\star \propto r^{-3}$ outside of the break radius. 
 
-{\bf AG need better transition here.}
+{\bf Use cusp stellar density profile $r^{-1.7}.$ (currently
+  $r^{-1.8}$.}
 
-% For radii inside of the break radius, but much larger than the
-% stagnation radius, we expect that the gas density slope will be $\sim
-% \delta-1$, for stellar density slope $\delta$.  
-In the vicinity of the stagnation radius, we expect the gas density
-slope to be $\sim (4\delta-1)/6$. The median $\delta$ for low mass
-black holes ($\lsim 10^8 \Msun$) in the \citet{Lauer+2007} sample is
-$\sim 1.7$, for which $n(r)\propto r^{-1}$ near $\rs$.  {\bf A bit
-  more justification here...}  Thus, we adopt $n(r)= n_{18} (r/10^{18}
-{\rm cm})^{-1}$, as our fiducial density profile, and $\delta=1.7$ as
-our fiducial stellar density slope.  Combining
-equations~\eqref{eq:dotM} and~\eqref{eq:nrs}, we obtain
+We mark the stagnation radius (where the velocity goes to zero) with a
+blue dot on each profile. As described in \citet{Generozov+2015}, we
+find that the stagnation radius can be written down in terms of the
+black hole mass, $M$, the heating rate, $v_w$, and an order unity
+function of the stellar density slope $\delta$, $f(\delta)$,
+
+\begin{equation}
+r_s= f(\delta) \frac{G M}{v_w^2}.
+\label{eq:rs}
+\end{equation}
+
+
+
+In the vicinity of the stagnation radius, we find that the slope of
+the gas density profile is $\sim (4\delta-1)/6$. The median $\delta$
+for low mass black holes ($\lsim 10^8 \Msun$) in the
+\citet{Lauer+2007} sample is $\sim 1.7$, which gives $n(r)\propto
+r^{-1}$ near $\rs$. Also, the density profile remains close to
+$n\propto r^{-1}$ for the relevant range of radii for such a cuspy
+stellar density\footnote{For cusp galaxies, the gas velocity
+  asymptotes to a constant between the stagnation radius and break
+  radius (if they are sufficiently far apart). In this region we
+  expect $n\propto r^{1-\delta}$.}  Thus, we adopt $n(r)= n_{18}
+(r/10^{18} {\rm cm})^{-1}$, as our fiducial density profile, and
+$\delta=1.7$ as our fiducial stellar density slope.  Combining
+equations~\eqref{eq:dotM}, ~\eqref{eq:nrs}, and ~\eqref{eq:rs}, and
+taking $n\propto r^{-1}$, we obtain
 
 {\bf AG this is still left over expression from delta=1.8. Need to
   explain what we assume for the influence radius.}
@@ -538,20 +565,14 @@ radius. Assuming $n\propto r^{-1}$ we obtain $n_{18}\simeq 50$ cm$^{-3}$.
 
 \begin{figure} 
   \includegraphics[width=8cm]{cnm_plot.pdf}
-  \caption{\label{fig:param} Heating rates ($v_w$) and mass return
-    parameters ($\eta$) for different star formation histories (gray
-    lines). The solid, gray line corresponds to a star-burst of $<3$ Myr
-    ago forming a fraction $f$ of the stars. The rest of the stars
-    formed either a Hubble time ago. The fraction $f$ increases and
-    the gas density from left to right along these lines. The dashed,
-    gray line corresponds to an alternate scenario in which there are
-    two recent bursts in rapid succession in rapid succession: the
-    older burst is $\sim 3$ Myr old (just at the point when stars are
-    beginning to leave the main sequence). The contribution of this
-    older burst increases towards the right, approaching the 
-    thermally unstable (``TI'') region below the thick black
-    line. Iso-contours for the density at $10^{18}$ cm
-    ($\mathrm{n_{18}}$) are shown as solid blue lines.}
+  \caption{\label{fig:param} Iso-contours for the density at $10^{18}$
+    cm ($\mathrm{n_{18}}$) (gray lines) for a $10^{7} \Msun$ black
+    hole and bursts of star formation occurring time, $t_{\rm burst}$
+    ago, which formed a fraction $f$ of the stars, with the rest
+    forming a Hubble time ago. Note that we assume that the density of
+    old stars follows the density of young stars.  For large, recent
+    burst young O\&B stars provide substantial mass and energy
+    injection into the gas. }
 \end{figure}
 
 
