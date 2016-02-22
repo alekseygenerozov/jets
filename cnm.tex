@@ -242,6 +242,9 @@ equation~\eqref{eq:model}. We will apply these analytic formulas
 across the physical range heating rates ($v_w$) and mass injection
 rates ($\eta$), to obtain the physical range of CNM gas densities.
 
+\subsubsection{Galaxy models}
+
+
 \subsubsection{Gas density profiles}
 The radio emission produced by a TDE jet is most sensitive to the gas
 density at the ``Sedov'' or deceleration radius, where the jet has
@@ -258,24 +261,40 @@ stagnation radius is accreted, while that outside $\rs$ is unbound in
 an outflow from the nucleus.  It is most convenient to
 first calculate $n(\rs)$ and then infer $n_{18}$. 
 
-% The stagnation radius can be calculated analytically from the heating
-% rate ($v_w$) and black hole mass ($M$)
+Fig.~\ref{fig:profiles} shows steady state gas density profiles
+calculated for two different stellar density profiles. We mark the
+stagnation radius, $r_s$, as a blue dot on each profile. As described
+in \citet{Generozov+2015} $r_s$ can be calculated analytically from the
+heating rate ($v_w$) and black hole mass ($M$):
 
-% \begin{equation}
-% r_s=f \frac{G M}{v_w^2}. 
-% \label{eq:rs}
-% \end{equation}
+\begin{equation}
+r_s=f(\delta) \frac{G M}{v_w^2},
+\label{eq:rs}
+\end{equation}
 
 
+where $f(\delta)$ is an order unity function of the stellar density slope.
 The density at the stagnation radius, $n(\rs)$ depends on the
 injection rate of stellar wind material inside of $\rs$,
 $\dot{M}$. This is proportional to the stellar mass enclosed inside of
 $\rs$, $M_{\rm enc}(\rs)$:
 
 \begin{equation}
-\dot{M}=\frac{\eta M_{\rm enc}(\rs)}{t_h}
+\dot{M}=\frac{\eta M_{\rm \star}(\rs)}{t_h}
 \label{eq:dotM}
 \end{equation}
+
+To specify $M_{\star}$ we need to specify the influence radius,
+$r_{\rm inf}$, where $M_{\star}(r_{\rm inf})=\Mbh.$ We take
+$r_{\rm inf}=3.5 \Mbh[7]^{0.6}$. Thus, 
+
+\begin{equation}
+\dot{M}=
+\end{equation}
+
+% For our fiducial $\delta$ we take $\delta=1.7$, the median $\delta$
+% for low mass ($\lsim 10^{8} \Msun$) black holes from the
+% \citet{Lauer+2007} sample.
 
 Then, the density at the stagnation radius, $n(\rs)$, can be estimated
 by equating the gas injected by stellar winds over a free-fall time
@@ -286,71 +305,18 @@ enclosed inside of the stagnation radius:
 \frac{4 \pi}{3} \rs^3 \mu m_p n(r_s) \approx \dot{M} t_{\rm ff} (\rs)
 \label{eq:nrs}
 \end{equation}
+ 
 
 The slope of the gas density profile depends on the slope of the
-stellar density profile.  This is because the mass source function is
-proportional to the stellar density (see~\ref{sec:model}). At small
-radii of interest, inside the Nuker `break' radius, the stellar
-density follows $\rho_\star\sim r^{-\delta}$, where $\delta = 1-2$
-is the inner Nuker profile. There are two broad categories of stellar
-density profiles: ``cusps'', with power law slopes $>$ 0.5 and
-``cores'', with power law slopes $<0.3$ \citep{Lauer+2007}.
-
-% For a cusp galaxy ($\delta_1> 0.5$), \citet{Generozov+2015} show that
-% the gas density obeys $n \propto r^{-1}$, with a normalization
-% \begin{equation}
-% n_{18}\simeq 0.4 \Mbh[,7]^{0.5} \eta_{0.02} v_{500}^{-1.5} {\rm
-%   cm^{-3}},
-% \label{eq:n18}
-% \end{equation}
-% where $\Mbh[,7]= \Mbh/10^7 \Msun$,
-% $\eta_{0.02}= \eta/0.02$, and $v_{500}=v_w/500$ km s$^{-1}$, and we have assumed a fixed slope for the stellar density
-% power law slope $\delta_1=1.8$. 
-
-% Equation (\ref{eq:n18}) shows that the gas density is sensitive to the
-% mass return parameter and the heating rate, which are related to the
-% star formation history. Young, massive stars put out very energetic
-% winds with $v_w\simeq 1000$ km s$^{-1}$ with a high mass return rate,
-% $\eta\simeq 100$.  In contrast, stars with age comparable to that of
-% the universe will have slow winds with speeds of order\footnote{In the
-%   case of such low heating, $v_w \lesssim \sigma$, the heating of the
-%   gas is dominated by the velocity dispersion of the nucleus
-%   $\sigma$.} $\sim 10$ km s$^{-1}$ and mass return parameters,
-% $\eta\simeq0.02$. We will explore the range of mass
-% return parameters, heating rates, and gas densities allowed by
-% plausible star formation histories in $\S$~\ref{sec:densAllowed}.
-
-Fig.~\ref{fig:profiles} shows steady state gas density profiles for a
-cusp and a core stellar density profile. For the cusp (core) profile
-we take a stellar density profile $\rho_\star \propto r^{-1.8
-  (-1.1)}$, for $r<25$ pc (the break radius). Both profiles have
-$\rho_\star \propto r^{-3}$ outside of the break radius. 
-
-{\bf Use cusp stellar density profile $r^{-1.7}.$ (currently
-  $r^{-1.8}$.}
-
-We mark the stagnation radius (where the velocity goes to zero) with a
-blue dot on each profile. As described in \citet{Generozov+2015}, we
-find that the stagnation radius can be written down in terms of the
-black hole mass, $M$, the heating rate, $v_w$, and an order unity
-function of the stellar density slope $\delta$, $f(\delta)$,
-
-\begin{equation}
-r_s= f(\delta) \frac{G M}{v_w^2}.
-\label{eq:rs}
-\end{equation}
-
-
-
-In the vicinity of the stagnation radius, we find that the slope of
-the gas density profile is $\sim (4\delta-1)/6$. The median $\delta$
-for low mass black holes ($\lsim 10^8 \Msun$) in the
-\citet{Lauer+2007} sample is $\sim 1.7$, which gives $n(r)\propto
-r^{-1}$ near $\rs$. Also, the density profile remains close to
-$n\propto r^{-1}$ for the relevant range of radii for such a cuspy
-stellar density\footnote{For cusp galaxies, the gas velocity
-  asymptotes to a constant between the stagnation radius and break
-  radius (if they are sufficiently far apart). In this region we
+stellar density profile. In the vicinity of the stagnation radius, we
+find that the slope of the gas density profile is $\sim
+(4\delta-1)/6$. The median $\delta$ for low mass black holes ($\lsim
+10^8 \Msun$) in the \citet{Lauer+2007} sample is $\sim 1.7$, which
+gives $n(r)\propto r^{-1}$ near $\rs$. Also, the density profile
+remains close to $n\propto r^{-1}$ for the relevant range of radii for
+such a cuspy stellar density\footnote{For cusp galaxies, the gas
+  velocity asymptotes to a constant between the stagnation radius and
+  break radius (if they are sufficiently far apart). In this region we
   expect $n\propto r^{1-\delta}$.}  Thus, we adopt $n(r)= n_{18}
 (r/10^{18} {\rm cm})^{-1}$, as our fiducial density profile, and
 $\delta=1.7$ as our fiducial stellar density slope.  Combining
@@ -390,30 +356,6 @@ our fiducial $E_{54}=4$, the break radius will only be important for
 small densities ($n_{18}<20$). Henceforward we will not consider the
 effects of the break radius in our analysis.
 
-% For the cusp profile in Fig.~\ref{fig:profiles} the gas density $\rho
-% \propto r^{-0.8}-r^{-1.1}$ inside of break in stellar density (25 pc).
-% The core profile is similar to the cusp galaxy for $r<10^{18}$
-% cm. However, it flattens near $10^{18}$ cm.  The radius where the core
-% profile flattens corresponds to the stagnation radius, $r_s$, where
-% the gas velocity goes through 0.  $\rs$ depends on the model parameter
-% ($\Mbh$ and $v_w$--see GSM15).
-
-
-
-%Note that for the cusp profile with $\delta=1.8$, 
-
-% From Fig.~\ref{fig:profiles}, the gas density profile for a cusp
-% galaxy is approximately
-
-% \begin{equation}
-% n(r) \approx n_{18} \left(\frac{r}{10^{18} {\rm cm}}\right)^{-1}
-% \label{eq:cuspProfile}
-% \end{equation}
-
-% inside of the break radii. As we expect, cusp galaxies to dominate the
-% tidal disruption event rate \citep{Stone&Metzger2016}, we adopt
-% equation~\eqref{eq:cuspProfile} as our fiducial CNM density profile.
-
 We also experiment with a core-like density profile
 (appendix~\ref{app:core}), and compare the radio light-curves for jets
 going through core and cusp-like density profiles in
@@ -440,138 +382,99 @@ $\S\ref{sec:profileComp}$.
 \subsubsection{Allowed Density Range}
 \label{sec:densAllowed}
 
-As the density of CNM gas increases, the rate of radiative cooling
-also increases. Eventually the cooling rate will equal the heating
-rate of the gas, resulting in a thermal instability. Portions of the
-CNM will condense into cold clouds, eventually resulting in star
-formation. This allows the CNM to regulate itself to a condition of
-(marginal) thermal stability\footnote{This argument has been applied
-  to larger scales in galaxies \citep{Voit+2015}}. We obtain an upper
-limit for the CNM gas density by requiring it to be thermally stable
-{\bf AG what do our empirical constraints on the gas density, say
-  about this argument? The large Eddington ratios of most galaxies
-  suggest very high densities in most galaxies...}
+We calculate the density at $10^{18}$ cm, $n_{18}$, for a range of
+different star formation histories. We consider an old stellar
+population that is a Hubble time old plus a young component that
+formed a time $t_{\rm burst}$ ago and formed a fraction $f_{\rm
+  burst}$ of the stars. We assume that both the young and old stars
+have the same (cuspy) density profile, which implies that a gas
+density profile, $n\propto r^{-1}$.
 
-Defining thermally instability as occuring when the cooling time of
-the gas is less than 10 times the local dynamical timescale
-(\citealt{McCourt+2012}), GSM15 show that the CNM is thermally
-unstable for wind heating rates below a critical value
-\begin{equation}
-v_{\rm w,TI}\simeq 200 \eta_{0.02}^{0.17} \Mbh[,7]^{0.08} \,{\rm km \,\,s^{-1}},
-\label{eq:ti}
-\end{equation}
-where we have assumed line cooling dominates free-free emission, as is valid for $v_{\rm w} \lesssim 10^{3}$ km s$^{-1}$.
+We show how $n_{18}$ varies with star burst properties ($f_{\rm
+  burst}$ and $t_{\rm burst}$) in Fig.~\ref{fig:param}.  
 
-The condition places an upper limit on the gas
-density
-\begin{equation}
-n_{18} \lesssim n_{\rm 18,TI}\simeq 1.6 \eta_{0.02}^{0.75} \Mbh[,7]^{0.38} \, {\rm cm^{-3}}\,\,\,\text{Thermal Stability}
-\label{eq:n18ti},
-\end{equation}
-where we have used equations~\eqref{eq:n18} and~\eqref{eq:ti}.
-
-The maximum physical value of $\eta\simeq 400$ occurs $\sim 3$ Myr after a burst of star formation.\footnote{For details
-  of how to calculate $\eta$ for a given star formation history see
-  appendix C of \citet{Generozov+2015}.}  Evaluating equation~\eqref{eq:n18ti} with
-$\eta=400$ gives the maximum thermally-stable CNM density
-\begin{equation}
-n_{\rm 18,max} \simeq 2.7\times 10^{3} \Mbh[,7]^{0.38} {\rm cm^{-3}}
-\label{eq:n18max}
-\end{equation}
-
+For a stellar population formed $\sim 4\times 10^{6}$ years ago, we
+obtain our maximum density of $\sim 2,700$ cm$^{-3}$. In this case
+both the energy an mass budgets are dominated by fast O star winds
 Although such a large gas density would be present in the immediate
 aftermath of a starburst, the wind mass loss rate (and hence the gas
 density) declines as $\eta \sim t^{-3}$. Thus we expect the gas
-density would decline by an order of magnitude after just a few Myr. Note
-that type II Supernovae could inject additional mass into the CNM, but
-this injection would be intermittent (e.g. the time between SNe is
-long compared to a dynamical time for the scales of interest).
+density would decline by an order of magnitude after just a few Myr.
 
-What is the smallest plausible CNM density? This would correspond to a
-small mass return parameter and a high heating rate. The mass return
-parameter, $\eta=0.02$, reaches its minimum value for a stellar
-population that is a Hubble time old. A stellar population
-that is $<$ 3 Myr old will have a heating rate, $v_w=3,000$ km s$^{-1}$.
+The lowest density, $n_{18}\sim 0.06$ cm$^{-3}$ achieved for a
+relatively modest burst, forming $f_{\rm burst}=4\times 10^{-4}$ of the
+stars. In this case we have a high rating due to young O star winds
+and a low mass injection rate with both the old stellar population and
+O stars contributing.
 
-A stellar population in which a small fraction, $f$ of the stars
-formed $\lsim 3$ Myr ago and the rest are a Hubble time old, will have
-both a high heating rate and a low mass return rate. In this scenario
-$n_{18}$ will be minimized for $f=4\times 10^{-4}$. Both old and young
-stars contribute significantly to the mass injection rate giving
-$\eta\simeq 0.03$, while the young star dominate the heating
-$v_w\simeq 3,000$ km/s and thermally stabilize the gas. These
-parameters provide the minimum possible CNM gas density
-\begin{equation}
-n_{\rm 18,min}\simeq 0.06 \Mbh[,7]^{0.5} {\rm cm^{-3}}
-\label{eq:n18min}
-\end{equation}
+In deriving this lower limit on the density, we assume that the O
+stars provide a spatially continuous heating source, even on small
+scales. If this were true we would expect the O heating winds to expel
+gas outside of $r_s=\sim 5\times 10^{16} cm$. However, for $f_{\rm
+  burst}=4\times 10^{-4}$, we expect less than one O star inside of
+$r_s$.  In this case our formalism breaks down, and the true density
+would be larger. For a simple estimate we set the location of the
+stagnation radius by requiring it enclose ten massive ($\gsim 20
+\Msun$) stars. Plugging this value of $r_s$ in equation~\eqref{eq:nrs}
+and taking $n\propto r^{-1}$ gives $n_{18} \sim$ 3 cm$^{-3}$. Thus, the
+minimum plausible $n_{18}$ is $\sim$ few cm$^{-3}$.
 
-We illustrate how the mass return parameter, heating rate, and density
-vary with star formation history in Fig.~\ref{fig:param}. The solid
-gray line represents a two-burst model for star formation in which a
-fraction, $f$, of the stars formed $<$ 3 Myr ago and the remainder
-formed a Hubble time ago.  Towards the top right the
-$f=1$ and the young stars dominate the mass injection rate and the
-heating rate.  Moving towards the left, $f$ decreases, along with the
-mass return rate, and density (blue lines), but the heating rate,
-$v_w$, remains $\gsim 1000$ km/s except for very small values of
-$f$. The minimum density (eq.~\eqref {eq:n18min}) is obtained for
-$f=4\times 10^{-4}$. However, for this $f$, we expect less than 1
-massive star within the stagnation radius. In this case our formalism
-would break down, and the true density would be larger. For a simple
-estimate we set the location of the stagnation radius by requiring it
-enclose ten massive stars, we obtain a density of $n_{18} \sim$ 3
-cm$^{-3}$ (note we assume $n\sim r^{-1}$). Thus, the minimum plausible
-$n_{18}$ is $\sim$ few cm$^{-3}$.  
+Discreteness effects will generically be important wherever, young
+massive stars dominate the heating rate of the gas (hatched regions of
+Fig.~\ref{fig:param} {\bf AG double check...}) However, we expect that
+the range of hot phase densities derived above, $n_{18}\sim 1 - 1000$
+cm$^{-3}$ is robust to these considerations.
 
-The dashed, gray line represents another two burst formation history
-but the older burst is $\sim 3$ Myr old (when stars are beginning to
-leave the main sequence), increasing the mass injection rate. Towards
-the lower right of the dashed, gray line these somewhat older stars
-dominate the mass injection into the CNM, increasing the density
-towards the the thermal instability threshold (thick, black line). The
-intersection between the dashed gray line and the thermal instability
-line corresponds to the maximum possible hot phase CNM density.
 
 A typical host galaxy for TDE has evidence of some star formation
-within 1 Gyr \citep{French+2016}. In this case
-the return efficiency will be $\eta\simeq 0.4$. The heating is
-dominated by the stellar velocity dispersion Ia supernovae.  Gas will
-be inflowing inside of the Ia radius, where the time between
-supernovae is equal to the dynamical time: for $10^7 \Msun$ and this
-will be $\simeq 10$ pc. Then,
+within 1 Gyr \citep{French+2016}. This corresponds the right hand side
+of Fig.~\ref{fig:param}. In this case the heating rate will be
+dominated by Ia supernovae. Gas will be outflowing outside of the Ia
+radius, $r_{Ia}$, where the time between successive Ias is equal to
+the dynamical time. For a 1 Gyr stellar population and $10^7 \Msun$
+and this $r_{Ia}\simeq 10$ pc. Plugging in $10$ pc for $r_s$ is
+equation~\eqref{eq:nrs}, we obtain a density of $\sim 1$
+cm$^{-3}$. Taking $n\propto r^{-1}$, we then obtain $n_{18}\sim 50$ cm$^{-3}$.
 
-\begin{equation}
-n_{\rm Ia}=\frac{t_{\rm dyn}(r_{\rm Ia}) \left[\eta M_{\star} (r_{\rm
-    Ia})/t_h\right]}{4 \pi/3 r_{\rm Ia}^3 m_p}
-\label{eq:nIa}
-\end{equation}
 
-$t_{\rm dyn}(r_{\rm Ia})=(G \Mbh/r_{\rm Ia}^3)^{-1/2}$ is the
-dynamical time at Ia radius. $M_{\star}(r_{\rm Ia})$ is the stellar
-mass enclosed inside the Ia radius:
+% In this case
+% the return efficiency will be $\eta\simeq 0.4$. The heating is
+% dominated by the stellar velocity dispersion Ia supernovae.  Gas will
+% be inflowing inside of the Ia radius, where the time between
+% supernovae is equal to the dynamical time: for $10^7 \Msun$ and this
+% will be $\simeq 10$ pc. Then,
 
-\begin{align}
-&\Mbh (r_{\rm Ia}/r_{\rm inf})^{3-\delta}\\
-&r_{\inf}\approx 3.5 \Mbh[,7]^{0.6} \, {\rm pc}
-\end{align}
+% \begin{equation}
+% n_{\rm Ia}=\frac{t_{\rm dyn}(r_{\rm Ia}) \left[\eta M_{\star} (r_{\rm
+%     Ia})/t_h\right]}{4 \pi/3 r_{\rm Ia}^3 m_p}
+% \label{eq:nIa}
+% \end{equation}
 
-$r_{\rm inf}$ is the influence radius and $\delta$
-is power law slope of the stellar density profile. Overall, we obtain
-a density of $n_{\rm Ia} \simeq 1 \, {\rm cm}^{-3}$ at the Ia
-radius. Assuming $n\propto r^{-1}$ we obtain $n_{18}\simeq 50$ cm$^{-3}$. 
+% $t_{\rm dyn}(r_{\rm Ia})=(G \Mbh/r_{\rm Ia}^3)^{-1/2}$ is the
+% dynamical time at Ia radius. $M_{\star}(r_{\rm Ia})$ is the stellar
+% mass enclosed inside the Ia radius:
+
+% \begin{align}
+% &\Mbh (r_{\rm Ia}/r_{\rm inf})^{3-\delta}\\
+% &r_{\inf}\approx 3.5 \Mbh[,7]^{0.6} \, {\rm pc}
+% \end{align}
+
+% $r_{\rm inf}$ is the influence radius and $\delta$
+% is power law slope of the stellar density profile. Overall, we obtain
+% a density of $n_{\rm Ia} \simeq 1 \, {\rm cm}^{-3}$ at the Ia
+% radius. Assuming $n\propto r^{-1}$ we obtain $n_{18}\simeq 50$ cm$^{-3}$. 
 
  
 
 \begin{figure} 
   \includegraphics[width=8cm]{cnm_plot.pdf}
   \caption{\label{fig:param} Iso-contours for the density at $10^{18}$
-    cm ($\mathrm{n_{18}}$) (gray lines) for a $10^{7} \Msun$ black
+    cm ($\mathrm{n_{18}}$) (gray lines) for a $10^{7} \, \Msun$ black
     hole and bursts of star formation occurring time, $t_{\rm burst}$
-    ago, which formed a fraction $f$ of the stars, with the rest
+    ago, which formed a fraction $f_{\rm burst}$ of the stars, with the rest
     forming a Hubble time ago. Note that we assume that the density of
     old stars follows the density of young stars.  For large, recent
-    burst young O\&B stars provide substantial mass and energy
+    burst young O stars provide substantial mass and energy
     injection into the gas. }
 \end{figure}
 
@@ -617,15 +520,6 @@ independent of ${\rm L[0III]}/\Mbh$.
   prescription from the last paper. 
 }
 
-% The distribution of Eddington ratios for the lowest mass BH bin of
-% $M_{\bullet} = 10^7 - 10^{7.25} \Msun$ (\citealt{Kauffmann&Heckman2009};
-% their Figure 4) is well fit by the expression,
-% \begin{align}
-%   F_{\rm cum}(m)=\frac{F_{m_0}}{2^{-1/s}}
-%   \left[\left(\frac{m}{m_0}\right)^{-a_1\,
-%       s}+\left(\frac{m}{m_0}\right)^{-a_2 \, s}\right]^{-1/s} \label{eq:khFit},
-% \end{align}
-% where $\{s, a_1, a_2, F_{m_0}\} =\{1.42, -0.166, -1.20, 0.235\}$.
 
 \begin{figure}
 \includegraphics[width=8cm]{fcum_n18.pdf}
