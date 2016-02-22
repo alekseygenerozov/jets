@@ -242,7 +242,26 @@ equation~\eqref{eq:model}. We will apply these analytic formulas
 across the physical range heating rates ($v_w$) and mass injection
 rates ($\eta$), to obtain the physical range of CNM gas densities.
 
-\subsubsection{Galaxy models}
+\subsubsection{Stellar density profiles}
+We assume a broken power law for the stellar density profile, $\rho_{\star}$.
+This is motivated by the work of \citet{Lauer+2007} who use {\it
+  Hubble Space Telescope} WFPC2 imaging to measure the radial surface
+brightness profiles for hundreds of nearby early type galaxies. The
+measured profile is well fit by a ``Nuker'' law parameterization:
+i.e., a broken power law that transitions from an inner power law
+slope, $\Gamma$, to an outer power law slope, $\beta$, at a break
+radius, $r_b$.
+
+Generally $0<\Gamma<1$. There are two broad classes of galaxies: cores
+with $\Gamma<0.3$ and cusps with $\Gamma>0.5$. Assuming spherical
+symmetry, the inner Nuker translates into a stellar density profile,
+$\rho_\star\propto r^{-1-\Gamma}=r^{-\delta}$. Core galaxies will have
+$1<\delta<1.3$, while cusps have $1.5<\delta<2$.
+
+The median value of $\Gamma$ for the \citet{Lauer+2007} sample is
+0.7. Thus, we adopt $\delta=1.7$ as our fiducial value {\bf Most
+  expressions have $\delta=1.8$ need to fix}.
+
 
 
 \subsubsection{Gas density profiles}
@@ -262,13 +281,13 @@ an outflow from the nucleus.  It is most convenient to
 first calculate $n(\rs)$ and then infer $n_{18}$. 
 
 Fig.~\ref{fig:profiles} shows steady state gas density profiles
-calculated for two different stellar density profiles. We mark the
+calculated for example core and cusp stellar density profiles. We mark the
 stagnation radius, $r_s$, as a blue dot on each profile. As described
 in \citet{Generozov+2015} $r_s$ can be calculated analytically from the
 heating rate ($v_w$) and black hole mass ($M$):
 
 \begin{equation}
-r_s=f(\delta) \frac{G M}{v_w^2},
+r_s \approx f(\delta) \frac{G M}{v_w^2},
 \label{eq:rs}
 \end{equation}
 
@@ -277,7 +296,7 @@ where $f(\delta)$ is an order unity function of the stellar density slope.
 The density at the stagnation radius, $n(\rs)$ depends on the
 injection rate of stellar wind material inside of $\rs$,
 $\dot{M}$. This is proportional to the stellar mass enclosed inside of
-$\rs$, $M_{\rm enc}(\rs)$:
+$\rs$, $M_{\star}(\rs)$:
 
 \begin{equation}
 \dot{M}=\frac{\eta M_{\rm \star}(\rs)}{t_h}
@@ -285,54 +304,58 @@ $\rs$, $M_{\rm enc}(\rs)$:
 \end{equation}
 
 To specify $M_{\star}$ we need to specify the influence radius,
-$r_{\rm inf}$, where $M_{\star}(r_{\rm inf})=\Mbh.$ We take
-$r_{\rm inf}=3.5 \Mbh[7]^{0.6}$. Thus, 
+$r_{\rm inf}$, where $M_{\star}(r_{\rm inf})=\Mbh.$ We take $r_{\rm
+  inf}=3.5 \Mbh[,7]^{0.6}$. For this $r_{\rm inf}$ and our fiducial $\delta=1.7$,
+we get {\bf \bf AG: This expression is for delta=1.8 for now for
+  consistency with other expressions.}
 
 \begin{equation}
-\dot{M}=
+\dot{M}= 3.2 \times 10^{-6} \Mbh[,7]^{0.28} \eta_{0.02} \left(\frac{r_s}{\rm
+  pc}\right) \Msun \, {\rm yr}^{-1}
 \end{equation}
 
-% For our fiducial $\delta$ we take $\delta=1.7$, the median $\delta$
-% for low mass ($\lsim 10^{8} \Msun$) black holes from the
-% \citet{Lauer+2007} sample.
 
-Then, the density at the stagnation radius, $n(\rs)$, can be estimated
+The density at the stagnation radius, $n(\rs)$, can be estimated
 by equating the gas injected by stellar winds over a free-fall time
 (at the stagnation radius--$t_{\rm ff} (\rs)$) to the gas mass
 enclosed inside of the stagnation radius:
 
-\begin{equation}
-\frac{4 \pi}{3} \rs^3 \mu m_p n(r_s) \approx \dot{M} t_{\rm ff} (\rs)
+\begin{align}
+  &\frac{4 \pi}{3} \rs^3 \mu m_p n(r_s) \approx \dot{M} t_{\rm ff}
+  (\rs) \nonumber\\
+  &n(r_s) = 0.24 \eta_{0.02} \Mbh[,7]^{-0.22} \left(\frac{r_s}{\rm
+      pc}\right)^{-0.3}
 \label{eq:nrs}
-\end{equation}
+\end{align}
  
+Using equation~\eqref{eq:rs}, for $r_s$, we obtain 
 
-The slope of the gas density profile depends on the slope of the
-stellar density profile. In the vicinity of the stagnation radius, we
-find that the slope of the gas density profile is $\sim
-(4\delta-1)/6$. The median $\delta$ for low mass black holes ($\lsim
-10^8 \Msun$) in the \citet{Lauer+2007} sample is $\sim 1.7$, which
-gives $n(r)\propto r^{-1}$ near $\rs$. Also, the density profile
-remains close to $n\propto r^{-1}$ for the relevant range of radii for
-such a cuspy stellar density\footnote{For cusp galaxies, the gas
-  velocity asymptotes to a constant between the stagnation radius and
-  break radius (if they are sufficiently far apart). In this region we
-  expect $n\propto r^{1-\delta}$.}  Thus, we adopt $n(r)= n_{18}
-(r/10^{18} {\rm cm})^{-1}$, as our fiducial density profile, and
-$\delta=1.7$ as our fiducial stellar density slope.  Combining
-equations~\eqref{eq:dotM}, ~\eqref{eq:nrs}, and ~\eqref{eq:rs}, and
-taking $n\propto r^{-1}$, we obtain
-
-{\bf AG this is still left over expression from delta=1.8. Need to
-  explain what we assume for the influence radius.}
 \begin{equation}
-n_{18}\simeq 0.4 \Mbh[,7]^{0.5} \eta_{0.02} v_{500}^{-1.5} {\rm
-  cm^{-3}},
+n(r_s)=0.3 \, v_{500}^{0.6} \eta_{0.02} \Mbh[,7]^{-0.52} {\rm cm}^{-3}
+\label{eq:nrs2}
+\end{equation}
+
+To obtain $n_{18}$ from $n(r_s)$, we must extrapolate. In the vicinity
+of the stagnation radius, we find that the slope of the gas density
+profile is $\sim (4\delta-1)/6$. For our fiducial $\delta$, 1.7, this
+gives $n(r)\propto r^{-1}$ near $\rs$. The density profile remains
+close to $n\propto r^{-1}$ for small radii of interest. \footnote{For
+  cusp galaxies, the gas velocity asymptotes to a constant between the
+  stagnation radius and break radius (if they are sufficiently far
+  apart). In this region we expect $n\propto r^{1-\delta}$.}  Thus, we
+adopt $n(r)= n_{18} (r/10^{18} {\rm cm})^{-1}$.  Then from
+equation~\eqref{eq:nrs2}, we obtain
+
+{\bf AG this is still left over expression from delta=1.8.}
+\begin{equation}
+n_{18}\simeq 0.4 \Mbh[,7]^{0.48} \eta_{0.02} v_{500}^{-1.4} {\rm
+  cm^{-3}}.
 \label{eq:n18}
 \end{equation} 
 
-where $\Mbh[,7]= \Mbh/10^7 \Msun$, $\eta_{0.02}= \eta/0.02$, and
-$v_{500}=v_w/500$ km s$^{-1}$. 
+
+%where $\Mbh[,7]= \Mbh/10^7 \Msun$, $\eta_{0.02}= \eta/0.02$, and
+%$v_{500}=v_w/500$ km s$^{-1}$. 
 
 
 Both gas density profiles steepen at the stellar break
@@ -384,7 +407,7 @@ $\S\ref{sec:profileComp}$.
 
 We calculate the density at $10^{18}$ cm, $n_{18}$, for a range of
 different star formation histories. We consider an old stellar
-population that is a Hubble time old plus a young component that
+population formed a Hubble time ago plus a young component that
 formed a time $t_{\rm burst}$ ago and formed a fraction $f_{\rm
   burst}$ of the stars. We assume that both the young and old stars
 have the same (cuspy) density profile, which implies that a gas
@@ -410,12 +433,12 @@ O stars contributing.
 In deriving this lower limit on the density, we assume that the O
 stars provide a spatially continuous heating source, even on small
 scales. If this were true we would expect the O heating winds to expel
-gas outside of $r_s=\sim 5\times 10^{16} cm$. However, for $f_{\rm
+gas outside of $r_s \sim 5\times 10^{16}$ cm. However, for $f_{\rm
   burst}=4\times 10^{-4}$, we expect less than one O star inside of
 $r_s$.  In this case our formalism breaks down, and the true density
 would be larger. For a simple estimate we set the location of the
 stagnation radius by requiring it enclose ten massive ($\gsim 20
-\Msun$) stars. Plugging this value of $r_s$ in equation~\eqref{eq:nrs}
+\Msun$) stars. Plugging this value of $r_s$ into equation~\eqref{eq:nrs}
 and taking $n\propto r^{-1}$ gives $n_{18} \sim$ 3 cm$^{-3}$. Thus, the
 minimum plausible $n_{18}$ is $\sim$ few cm$^{-3}$.
 
