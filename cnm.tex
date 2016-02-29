@@ -207,7 +207,7 @@ galaxies.
 
 \subsection{Analytic Constraints on CNM Density}
 
-\subsubsection{CNM Model}
+\subsubsection{Dynamical Model}
 \label{sec:model}
 
 The dominant source of gas injection into the CNM of quiescent
@@ -248,7 +248,7 @@ This is motivated by \citet{Lauer+2007} who use {\it
   Hubble Space Telescope} WFPC2 imaging to measure the radial surface
 brightness profiles for hundreds of nearby early type galaxies. The
 measured profile is well fit by a ``Nuker'' law parameterization:
-i.e., a broken power law that transitions from an inner power law
+i.e., a broken power law that smoothly transitions from an inner power law
 slope, $\Gamma$, to an outer power law slope, $\beta$, at a break
 radius, $r_b$.
 
@@ -259,19 +259,22 @@ ratio, the inner stellar profile translate to stellar density
 $\rho_\star\propto r^{-1-\Gamma}=r^{-\delta}$. Core galaxies will have
 $1<\delta<1.3$, while cusps have $1.5<\delta<2$.
 
-The median value of $\Gamma$ for low mass ($\Mbh \lsim 10^{8} \Msun$ in
-the \citet{Lauer+2007} sample is 0.7 {\bf AG Also close to the rate
-  weighted average in Stone \& Metzger 2016}. Thus, we adopt $\delta=1.7$ as
-our fiducial value {\bf Recently changed from $\delta=1.8$, need to
+Cusps are more common than cores for low mass black holes ($\Mbh\lsim
+10^{8} \Msun$), relevant to TDEs. Additionally, as described in
+\citet{Stone&Metzger2016} TDEs occur in preferentially cuspy
+galaxies. Using the tabulated TDE rates in Table C of
+\citet{Stone&Metzger2016} we find a rate weighted average Nuker
+$\Gamma$ of $\sim 0.7$. We adopt this $\Gamma$ (and the corresponding
+stellar density power law slope $\delta=1.7$), as fiducial.
+
+ {\bf Recently changed from $\delta=1.8$, need to
   double check all expressions.}
-
-
 
 \subsubsection{Gas density profiles}
 The radio emission produced by a TDE jet is most sensitive to the gas
 density at the ``Sedov'' or deceleration radius, where the jet has
 swept up it's own mass in nuclear gas. For Swift 1644 the deceleration
-radius of the jet was approximately $\sim 10^{18}$
+radius of the jet was $\sim 10^{18}$
 cm \citep{Mimica+2015}. Thus, we focus on determining the nuclear gas
 density as $10^{18}$ cm, $n_{18}$.  
 
@@ -284,7 +287,7 @@ an outflow from the nucleus.  It is most convenient to
 first calculate $n(\rs)$ and then infer $n_{18}$. 
 
 Fig.~\ref{fig:profiles} shows steady state gas density profiles
-calculated for example core and cusp stellar density profiles. We mark the
+calculated for a core and a cusp stellar density profile. We mark the
 stagnation radius, $r_s$, as a blue dot on each profile. As described
 in \citet{Generozov+2015}, $r_s$ can be calculated analytically from the
 heating rate ($v_w$) and black hole mass ($M$):
@@ -296,7 +299,7 @@ r_s \approx f(\delta) \frac{G M}{v_w^2},
 
 
 where $f(\delta)$ is an order unity function of the stellar density slope.
-The density at the stagnation radius, $n(\rs)$ depends on the
+The density at the stagnation radius, $n(\rs)$ is determined by
 injection rate of stellar wind material inside of $\rs$,
 $\dot{M}$. This is proportional to the stellar mass enclosed inside of
 $\rs$, $M_{\star}(\rs)$:
@@ -306,9 +309,9 @@ $\rs$, $M_{\star}(\rs)$:
 \label{eq:dotM}
 \end{equation}
 
-To specify $M_{\star}$ we need to specify the influence radius,
-$r_{\rm inf}$, where $M_{\star}(r_{\rm inf})=\Mbh.$ We take $r_{\rm
-  inf}=3.5 \Mbh[,7]^{0.6}$. Then for our fiducial $\delta=1.7$,
+At the sphere of influence, $r_{\rm inf}$, $M_{\star}(r_{\rm
+  inf})=\Mbh.$ We take $r_{\rm inf}=3.5 \Mbh[,7]^{0.6}$. Then for our
+fiducial $\delta=1.7$,
 
 \begin{equation}
 \dot{M}= 3.0 \times 10^{-6} \Mbh[,7]^{0.22} \eta_{0.02} \left(\frac{r_s}{\rm
@@ -338,13 +341,21 @@ n(r_s)=0.3 \, v_{500}^{0.6} \eta_{0.02} \Mbh[,7]^{-0.52} {\rm cm}^{-3}
 
 In the vicinity of the stagnation radius, we find that the slope of
 the gas density profile is $\sim (4\delta-1)/6$. For our fiducial
-$\delta$, 1.7, this gives $n(r)\propto r^{-1}$ near $\rs$. The density
-profile remains close to $n\propto r^{-1}$ for small radii of
-interest. \footnote{For cusp galaxies, the gas velocity asymptotes to
-  a constant between the stagnation radius and break radius (if they
-  are sufficiently far apart). In this region we expect $n\propto
-  r^{1-\delta}$.}  Thus, we adopt $n(r)= n_{18} (r/10^{18} {\rm
-  cm})^{-1}$.  Then from equation~\eqref{eq:nrs2}, we obtain
+$\delta$, 1.7, this gives $n(r)\propto r^{-1}$ near
+$\rs$. Furthermore, the density profile remains close to $n\propto
+r^{-1}$ for small radii of interest.\footnote{For cusp galaxies, the
+  gas velocity asymptotes to a constant between the stagnation radius
+  and break radius (if they are sufficiently far apart). In this
+  region we expect $n\propto r^{1-\delta}$.}  Thus, we adopt $n(r)=
+n_{18} (r/10^{18} {\rm cm})^{-1}$ as our fiducial density profile.  We
+also experiment with a core-like density profile
+(appendix~\ref{app:core}), and compare the radio light-curves for jets
+going through core and cusp-like density profiles in
+$\S\ref{sec:profileComp}$.
+
+
+From our fiducial $n\propto r^{-1}$ and equation~\eqref{eq:nrs2}, we
+obtain
 
 \begin{equation}
 n_{18}\simeq 0.3 \Mbh[,7]^{0.49} \eta_{0.02} v_{500}^{-1.5} {\rm
@@ -353,31 +364,28 @@ n_{18}\simeq 0.3 \Mbh[,7]^{0.49} \eta_{0.02} v_{500}^{-1.5} {\rm
 \end{equation} 
 
 
-We also experiment with a core-like density profile
-(appendix~\ref{app:core}), and compare the radio light-curves for jets
-going through core and cusp-like density profiles in
-$\S\ref{sec:profileComp}$.
-
-
 In general the gas density steepens at the stellar break radius, $r_b$
 (see Fig.~\ref{fig:profiles}). However, such breaks will only be
 important if the $r_b$ is inside of the Sedov radius, where the jet
 sweeps up its own mass in CNM gas.  The jet mostly decelerates inside
-of this radius, becoming Newtonian. Thus, the profile outside of this
-radius will be of minimal importance in shaping the radio
+of this radius, becoming Newtonian. Therefore, the profile outside of
+this radius will be of minimal importance in shaping the radio
 light-curve. We plot the Sedov radius for different energy jets on
-each of the profiles in Fig.~\ref{fig:profiles}. Typically Nuker break
-radii are larger than 10 pc. This is larger than the Sedov radius for
-even a very powerful jet, with isotropic equivalent energy $E=4\times
-10^{54}$ erg, interacting with a low density CNM ($n_{18}=2$). If a
-nuclear star cluster (NSC) is present in the galactic center there will be a
-smaller effective break radius at the outer edge of the NSC (typically
-1-5 pc--see \citealt{Georgiev+2014})
+each of the profiles in Fig.~\ref{fig:profiles}. The measured break
+radii of all but four the \citet{Lauer+2007} galaxies is larger than
+10 pc. This is larger than the Sedov radius for even a very powerful
+jet (isotropic equivalent energy $E=4\times 10^{54}$ erg), interacting
+with a low density CNM ($n_{18}=2$). If a nuclear star cluster (NSC)
+is present in the galactic center there will be a smaller effective
+break radius at the outer edge of the NSC (typically 1-5 pc--see
+\citealt{Georgiev+2014}). However, even for a break radius of 1 pc the
+break radius will only be inside the Sedov radius for small densities
+($n_{18}<20$) and powerful jets {\bf AG still feel that this is a
+  relevant region of parameter space}. Henceforward we will not
+consider the effects of the break radius in our analysis.
 
-Even for a break radius of 1 pc the small densities ($n_{18}<20$) and
-powerful jets {\bf AG still feel that this is a relevant region of
-  parameter space}. Henceforward we will not consider the effects of
-the break radius in our analysis.
+{\bf AG describe Ia heating limit early as this is
+  relevant for constructing Fig. 2.}
 
 
 \begin{figure}
@@ -410,25 +418,24 @@ $n\propto r^{-1}$. We show how $n_{18}$ varies with star burst
 properties ($f_{\rm burst}$ and $t_{\rm burst}$) in
 Fig.~\ref{fig:param}.
 
-For a stellar population formed $\sim 4\times 10^{6}$ years ago, we
-obtain our maximum density of $\sim 2,700$ cm$^{-3}$. In this case
-both the energy an mass budgets are dominated by fast winds from
-massive stars ($\gsim 20 \Msun$)\footnote{Type II Supernovae are
-  another important source of energy for young stellar
+We find a maximum $n_{18}$ of $\sim 2,700$ cm$^{-3}$, $4$ Myr
+after a burst of star formation forming 100\% of the stars. In
+this case both the energy an mass budgets are dominated by fast winds
+from massive stars ($\gsim 20 \, \Msun$).\footnote{Type II Supernovae
+  are another important source of energy for young stellar
   populations. Overall the energy injected by O stars winds and Type
   II SNe will be comparable \citep{Voss+2009}. However, heating from
-  Type II SNe will be intermittent, and is not included here for
-  simplicity.}.  Although such a large gas density would be present in
+  Type II SNe will be intermittent and is not included here for
+  simplicity.}  Although such a large gas density would be present in
 the immediate aftermath of a starburst, the wind mass loss rate (and
-hence the gas density) declines as $\eta \sim t^{-3}$. Thus we expect
-the gas density would decline by an order of magnitude after just a
-few Myr.
+hence the gas density) declines as $\eta \sim t^{-3}$. This means, the
+gas density would decline by an order of magnitude after just a few
+Myr.
 
 The lowest density, $n_{18}\sim 0.06$ cm$^{-3}$ achieved for a
-relatively modest burst, forming $f_{\rm burst}=4\times 10^{-4}$ of the
-stars. In this case we have a high rating from the young, massive stars 
-and a low mass injection rate from both the young stars and
-the old stellar population.
+relatively modest burst, with $f_{\rm burst}=4\times 10^{-4}$. In this
+case we have a high heating rate from the young, massive stars and a
+low mass injection rate, with both young and old stars contributing.
 
 In deriving this lower limit on the density, we assume that the massive
 stars provide a spatially homogeneous heating source, even on small
@@ -444,9 +451,9 @@ minimum plausible $n_{18}$ is $\sim$ few cm$^{-3}$.
 
 Discreteness effects will generically be important wherever, young
 massive stars dominate the heating rate of the gas (hatched regions of
-Fig.~\ref{fig:param} {\bf AG double check...}) However, we expect that
-the range of hot phase densities derived above, $n_{18}\sim 1 - 1000$
-cm$^{-3}$ is robust to these considerations.
+Fig.~\ref{fig:param}). {\bf AG need to address this somehow. I think
+  $1-1000$ cm$^{-3}$, will bracket the range of plausible
+  n18s, with discreteness effects included...}
 
 
 A typical host galaxy for TDE has evidence of some star formation
@@ -495,18 +502,24 @@ obtain $n_{18}\sim 80$ cm$^{-3}$.
   \includegraphics[width=8cm]{cnm_plot.pdf}
   \caption{\label{fig:param} Iso-contours for the density at $10^{18}$
     cm ($\mathrm{n_{18}}$) (thick, gray lines) for a $10^{7} \, \Msun$
-    black hole and bursts of star formation occurring time, $t_{\rm
-      burst}$, ago, which formed a fraction $f_{\rm burst}$ of the
-    stars, with the rest of the stars formed a Hubble time ago. Note
-    that we assume that the old and young stars have the same density
-    profile. For young bursts of star formation ($t_{\rm burst}\lsim
-    10^7$ yr), massive stars ($\gsim 20 \, \Msun$) can be a substantial
-    heating source. Hatched areas indicate regions of parameter space,
-    where massive stars dominate the gas heating rate, but we would
-    expect less than one (doubly hatched) or less than ten (singly
-    hatched) inside the nominal stagnation radius
-    (equation~\eqref{eq:rs}). In these regions of parameter space
-    discreteness effects not captured by our formalism become important.}
+    black hole and bursts of star formation forming a fraction,
+    $f_{\rm burst}$, of the stars time, $t_{\rm burst}$, ago. The rest
+    of the stars formed a Hubble time ago. Note that we assume that
+    the old and young stars have the same density profile. We mark
+    regions of parameter space where approximations in our model would
+    break down. Hatched areas indicate regions of parameter space,
+    where massive stars ($\gsim 20 \, \Msun$) dominate the gas heating
+    rate, but we would expect less than one (doubly hatched) or less
+    than ten (singly hatched) massive stars inside the nominal
+    stagnation radius (equation~\eqref{eq:rs}). In these regions of
+    parameter space discreteness effects not captured by our formalism
+    become important. In area inside of the red contours, the cooling
+    time, $t_{\rm cool}$, becomes comparable to the free-fall time
+    $t_{\rm ff}$, at the stagnation radius, with $t_{\rm cool}<10
+    t_{\rm ff}$ inside of the solid contour and $t_{\rm cool}< t_{\rm
+      ff}$ inside of the solid contour. In this region radiative
+    cooling and thermal instability become important (\textit{see text
+      for discussion}).}
 \end{figure}
 
 
@@ -660,6 +673,7 @@ n_{\rm cnm}(r) r^{2}dr$ equals its own rest mass $M_{\rm j} = E_{\rm
   j}/\Gamma_{\rm j}c^{2} \approx \frac{E_{\rm iso}
   (\theta_j^2/2)}{\Gamma_j c^2} $ at the characteristic (`Sedov')
 radius given by
+n by
 
 \begin{equation}
 r_{\rm sedov} = E_{54}^{1/2} \Gamma_{10}^{-1/2} n_{\rm 18}^{-1/2}\,{\rm pc}, 
@@ -781,7 +795,7 @@ sensitive to the jet geometry.
 
 Second, we note that, although the sheath is injected in a relatively
 narrow angular interval, at late stages of the jet evolution the bow
-shock created by its ineraction with CNM spans a much larger interval,
+shock created by its interaction with CNM spans a much larger interval,
 i.e. the slow component becomes almost isotropic \citep[bottom two
 panels in Fig. 8 in][]{Mimica+2015}. This is the reason for the
 discrepancy with the 1D simulation, because there the slow component
@@ -839,7 +853,7 @@ later in the higher density models.
 
 The radio light curve has contributions from both the slow and fast
 jet components. The fast component dominates at early times for the
-$n_{18}=2$ and 60 lightcurves, while the slow component dominates for
+$n_{18}=2$ and 60 light curves, while the slow component dominates for
 all times for $n_{18}$=2000. Generally, the fast
 component is more important at higher frequencies, and lower
 densities. 
@@ -855,7 +869,7 @@ light-curves for $n_{18}=2$ may overestimate the late time radio
 luminosity.
 
 Overall, earlier radio measurements would provide tighter constraints
-for tidal disruption event jets: the lightcurves or $n_{18}=2$ peak on
+for tidal disruption event jets: the light curves or $n_{18}=2$ peak on
 time-scales of months, while many of the radio measurements were taken
 decades after the TDE flare.
 
