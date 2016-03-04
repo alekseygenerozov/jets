@@ -260,8 +260,8 @@ $\rho_\star\propto r^{-1-\Gamma}=r^{-\delta}$. Core galaxies will have
 $1<\delta<1.3$, while cusps have $1.5<\delta<2$.
 
 Cusps are more common than cores for low mass black holes ($\Mbh\lsim
-10^{8} \Msun$), relevant to TDEs. Additionally, as described in
-\citet{Stone&Metzger2016} TDEs occur in preferentially cuspy
+10^{8} \Msun$) relevant to TDEs. Additionally, as described in
+\citet{Stone&Metzger2016} TDEs preferentially occur cuspy
 galaxies. Using the tabulated TDE rates in Table C of
 \citet{Stone&Metzger2016} we find a rate weighted average Nuker
 $\Gamma$ of $\sim 0.7$. We adopt this $\Gamma$ (and the corresponding
@@ -437,17 +437,18 @@ relatively modest burst, with $f_{\rm burst}=4\times 10^{-4}$. In this
 case we have a high heating rate from the young, massive stars and a
 low mass injection rate, with both young and old stars contributing.
 
-In deriving this lower limit on the density, we assume that the massive
-stars provide a spatially homogeneous heating source, even on small
-scales. If this were true we would expect them to expel
-gas outside of $r_s \sim 5\times 10^{16}$ cm. However, for $f_{\rm
-  burst}=4\times 10^{-4}$, we expect less than one massive star inside of
-$r_s$.  In this case our formalism breaks down, and the true density
-would be larger. For a simple estimate we set the location of the
-stagnation radius by requiring it enclose ten massive ($\gsim 20
-\, \Msun$) stars. Plugging this value of $r_s$ into equation~\eqref{eq:nrs}
-and taking $n\propto r^{-1}$ gives $n_{18} \sim$ 3 cm$^{-3}$. Thus, the
-minimum plausible $n_{18}$ is $\sim$ few cm$^{-3}$.
+In deriving this lower limit on the density, we assume that the
+massive stars provide a spatially homogeneous heating source, even on
+small scales. If this were true we would expect them to expel gas
+outside of $r_s \sim 5\times 10^{16}$ cm. However, for the assumed
+$f_{\rm burst}=4\times 10^{-4}$, we expect less than one massive star
+inside of $r_s$.  In this case our formalism breaks down, and the true
+density would be larger. For a simple estimate we set the location of
+the stagnation radius by requiring it enclose ten massive ($\gsim 20
+\, \Msun$) stars. Plugging this value of $r_s$ into
+equation~\eqref{eq:nrs} and taking $n\propto r^{-1}$ gives $n_{18}
+\sim$ 3 cm$^{-3}$. Thus, the minimum plausible $n_{18}$ is $\sim$ few
+cm$^{-3}$.
 
 Discreteness effects will generically be important wherever, young
 massive stars dominate the heating rate of the gas (hatched regions of
@@ -893,7 +894,27 @@ decades after the TDE flare.
     limits at 5.0 GHz.}
 \end{figure}
 
-\section{Effect of jet energy}
+\subsection{Effects of viewing angle}
+We show a comparison off and on-axis light-curves in
+Fig.~\ref{fig:onOff}.  For $n_{18}=2000$ the light-curves differ
+little.  For $n_{18}=60$ off-axis luminosity is lower by a factor
+before and near the peak. However, for late times
+the off- and on-axis light-curves are quite similar. This is as
+expected, at late times the jet becomes more isotropic, which means
+the viewing angle has relatively little effect on the observed light curve.
+
+\begin{figure*}
+\includegraphics[width=16cm]{on_off.pdf}
+\caption{\label{fig:onOff} Comparison of (2D) off- and on-axis
+  light-curves for $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for
+  frequencies of 1 GHz (left) and 5 GHz (right). The observer line of
+  sight is taken to be at $\theta_{\rm obs}=0.8$ with respect to the
+  jet axis. We assume an $n\sim r^{-1}$ density profile for
+  $n_{18}=2000$, but take $n\sim r^{-1.5}$ for $n_{18}=60$ for
+  computational convenience.}
+\end{figure*}
+
+\subsection{Effect of jet energy}
 In Figure~\ref{fig:lightcurves_lw} we show radio light curves
 for a jet with energy $E=5\times 10^{52}$
 ergs--an order of magnitude smaller than our fiducial case.
@@ -959,24 +980,6 @@ radius ($\sim 10^{18}$ cm).
     r^{-1}$ ({\it solid black}) and $n\propto r^{-1.5}$ ({\it dashed
       red}).}
 \end{figure}
-
-\subsection{Effects of viewing angle}
-We show a comparison off and on-axis light-curves in
-Fig.~\ref{fig:onOff}.  For $n_{18}=2000$ the light-curves differ
-little.  For $n_{18}=60$ off-axis luminosity is lower by a factor
-before and near the peak. However, for late times
-the off- and on-axis light-curves are quite similar.
-
-\begin{figure*}
-\includegraphics[width=16cm]{on_off.pdf}
-\caption{\label{fig:onOff} Comparison of (2D) off- and on-axis
-  light-curves for $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for
-  frequencies of 1 GHz (left) and 5 GHz (right). The observer line of
-  sight is taken to be at $\theta_{\rm obs}=0.8$ with respect to the
-  jet axis. We assume an $n\sim r^{-1}$ density profile for
-  $n_{18}=2000$, but take $n\sim r^{-1.5}$ for $n_{18}=60$ for
-  computational convenience.}
-\end{figure*}
 
 
 
