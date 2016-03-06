@@ -813,18 +813,19 @@ energy remains unchanged with respect to the original model:
  E_{\rm ISO, new} = E_{\rm ISO} \left(\frac{\cos(0.1) - \cos(0.5)}{\cos(0.1) - \cos(\pi/2)}\right)\approx 0.12 E_{\rm ISO}\, .
 \end{equation}
 
-We assume $E_{\rm ISO} = 4\times 10^{54}$ erg, and that the jet
-luminosity time dependence is the same as in \citet{Mimica+2015},
+We assume that the time dependence of the jet luminosity is the same as in
+\citet{Mimica+2015},
 \begin{equation}\label{eq:lum}
 L_j(t) = L_{j,0}\max\left[1, (t/t_0)\right]^{-5/3}
 \end{equation}
 where $t_0 = 5\times 10^5$ seconds and $L_{j, 0}$ can be determined
 from $E_{\rm ISO}$ by integrating equation~\ref{eq:lum} in time from
 $0$ to $\infty$. We show a comparison of this modified 1D approach
-with the true 2-d result in Figure~\ref{fig:1d2dB}, for $n_{18}=60$
-and $n_{18}=2000$. For $n_{18}=2000$ the agreement is excellent, while
-for $n_{18}=60$ the 1d models still over-predict still over-predict
-the flux at times after the peak of the light-curve.
+with the true 2D result in Figure~\ref{fig:1d2dB}, for $n_{18}=60$ and
+$n_{18}=2000$ and $E_{\rm ISO}=4 \times 10^{54}$ ergs. For
+$n_{18}=2000$ the agreement is excellent, while for $n_{18}=60$ the 1D
+models still over-predict still over-predict the flux at times after
+the peak of the light-curve.
 
 
 \begin{figure*}
@@ -841,63 +842,114 @@ the flux at times after the peak of the light-curve.
 
 \section{Results}
 \label{sec:results}
+We have computed on-axis radio light curves across a grid of CNM
+densities and jet energies. We use three different values for the
+jet energy ($5 \times 10^{51}$, $5 \times 10^{52}$, and $5 \times
+10^{53}$ ergs) and five different values for $n_{18}$ (2, 11, 60, 345,
+and 2000 cm$^{-3}$). 
 
-\subsection{Effect of gas density}
+We show isocontours of the peak time, $t_p$, and the peak luminosity,
+$\nu L_{\nu, p}$, in Fig.~\ref{fig:jetContours} below. We find the
+following analytic formula roughly reproduces the behavior of the peak
+luminosity across our grid:
 
-In Fig.~\ref{fig:lightcurves} we show off-axis light curves for our
-fiducial jet model and a few different densities: n$_{18}$: 2,
-60, and 2000 cm$^{-3}$. The higher density models peak at later times with
-smaller peak luminosities.  This is due to the effects of synchrotron
-self-absorption: the peak of the emission occurs as the jet
-transitions from being optically thick to optically thin. This occurs
-later in the higher density models.
+\begin{equation}
+\nu L_{\nu, p}=2.6 \times 10^{41} \left(\frac{E}{5 \times 10^{53}
+    {\rm ergs}}\right)^{0.9}
+\left(\frac{\nu}{5 {\rm GHz}}\right)^{1.8} {\rm ergs/s}
+\label{eq:peakLum}
+\end{equation}
 
-The radio light curve has contributions from both the slow and fast
-jet components. The fast component dominates at early times for the
-$n_{18}=2$ and 60 light curves, while the slow component dominates for
-all times for $n_{18}$=2000. Generally, the fast
-component is more important at higher frequencies, and lower
-densities. 
+\begin{figure*}
+  \includegraphics[width=8cm]{lp_contours.pdf}
+  \includegraphics[width=8cm]{tp_contours.pdf}
+  \caption{\label{fig:jetContours} Isocontours of peak radio
+    luminosity and peak time for a jet of energy $E$ interacting with
+    nuclear gas with density profile $n=n_{18}
+    \left(r/10^{18}\right)^{-1}$ (\textit{solid lines}). The jet model is described in 
+  $\S$~\ref{sec:2d}. We also see analytic fits (see
+  equations~\eqref{eq:peakTime} and~\eqref{eq:peakLum}) to the
+  numerical results as dashed lines.}
+\end{figure*}
 
-We also show radio upper limits and detections for various TDE
-candidates in Fig.~\ref{fig:lightcurves} (these were compiled from
-various sources into Table 1 of \citealt{Mimica+2015}). Note that all
-of 5 GHz light-curves fall above the upper limits. However, we were
-unable to perform a 2-d calculation for $n_{18}=2$.  For $n_{18}=60$,
-the 2-d light-curve falls $\sim$one order of magnitude below the 1D
-light-curve after $\sim$ 10 years. Thus, we caution that the 1D
-light-curves for $n_{18}=2$ may overestimate the late time radio
-luminosity.
 
-Overall, earlier radio measurements would provide tighter constraints
-for tidal disruption event jets: the light curves or $n_{18}=2$ peak on
-time-scales of months, while many of the radio measurements were taken
-decades after the TDE flare.
+Remarkably, we find that the peak luminosity is only weakly dependent
+on density across most of the parameter space. In the optically thin
+limit the peak luminosity scales as the density $n^{0.5}$. In our case the
+jet is initially optically thick and then becomes optically thin at
+later times. In fact, the peak of the light curves occurs, when the total
+optical depth of the jet is $\sim 1$. {\bf AG more explanation...}
 
-\begin{figure} 
+
+We also find the following relation fitting formula for the time of
+peak, $t_p$, 
+
+\begin{equation}
+t_p = 39.5 \left(\frac{E}{5 \times 10^{53} {\rm ergs}}\right)^{0.3} 
+\left(\frac{\nu}{5 {\rm GHz}}\right)^{-1} n_{18}^{0.35} {\rm days}
+\label{eq:peakTime}
+\end{equation}
+
+Note that the peak time occurs later for larger $n_{18}$, as the
+transition from optically thick to optically thin occurs at later times.
+
+\subsection{Components}
+
+\subsection{Comparison with radio detections and upper limits.}
+
+In the left panel of Fig.~\ref{fig:lightcurves} we show on-axis light
+curves for a $5\times 10^{53}$ erg jet and a few different densities:
+n$_{18}$: 2, 60, and 2000 cm$^{-3}$ together with radio upper limits
+and detections for various TDE candidates in
+Fig.~\ref{fig:lightcurves} (these were compiled from various sources
+into Table 1 of \citealt{Mimica+2015}). The energy is comparable to
+that inferred for the Sw1644 jet.  All of the 5 GHz light-curves
+fall above the upper limits. However, we were unable to perform a 2D
+calculation for $n_{18}=2$.  For $n_{18}=60$, the 2D light-curve falls
+$\sim$one order of magnitude below the 1D light-curve after $\sim$ 10
+years. Thus, we caution that the 1D light-curves for $n_{18}=2$ likely
+overestimate the late time radio luminosity. For this density even a
+Sw1644 like jet would fall below existing upper limits. As shown in
+the right-hand panel of Fig.~\ref{fig:lightcurves}, for a jet two
+orders of magnitude lower in energy, the light curves are either
+comparable to or below existing upper limits. 
+
+Multiple radio measurements from several months to a few years after a
+tidal disruption flare would provide better constraints on the
+presence of TDE jets. Non-detections would rule out jets with $\gsim
+1\%$ of the energy of Sw1644.
+
+
+
+\begin{figure*} 
   \includegraphics[width=8cm]{lightcurves.pdf}
-  \caption{\label{fig:lightcurves} Off-axis ($\theta_{\rm obs}=0.8$)
-    radio light-curves for our fiducial jet model and three different
-    values of n$_{18}$: 2, 60, and 2000. Solid lines correspond to the
-    light-curves from 1D jet simulations. When available ($n_{18}=60$
-    and $n_{18}$=2000), we have plotted light curves from the 2D jet
-    simulations as dashed lines. Note we use $n\propto r^{-1}$ for
-    $n_{18}=$ 2 and 2000, but $r^{-1.5}$ for $n_{18}=60$, as this
-    model had already been computed and since the 1D results suggest
-    that the density slope will have minimal impact on the results
-    (see $\S$~\ref{sec:profileComp}).  Radio upper limits and
-    detections are shown as black/gray triangles and squares
-    respectively (compiled in Table 1 of \citealt{Mimica+2015}). The
-    single upper limit in the top panel corresponds to 1.4 GHz. Gray
-    triangles and squares in the middle panel indicate upper limits
-    and detections at 3.0 GHz, while black triangles indicate upper
-    limits at 5.0 GHz.}
-\end{figure}
+  \includegraphics[width=8cm]{lightcurves_en.pdf}
+  \caption{\label{fig:lightcurves} \textit{Right-hand panel:} On-axis
+    ($\theta_{\rm obs}=0$) radio light-curves for our fiducial jet
+    model and three different values of n$_{18}$: 2, 60, and
+    2000. Solid lines correspond to the light-curves from 1D jet
+    simulations. When available ($n_{18}=60$ and $n_{18}$=2000), we
+    have plotted light curves from the 2D jet simulations as dashed
+    lines. Note we use $n\propto r^{-1}$ for $n_{18}=$ 2 and 2000, but
+    $r^{-1.5}$ for $n_{18}=60$, as this model had already been
+    computed and since the 1D results suggest that the density slope
+    will have minimal impact on the results (see
+    $\S$~\ref{sec:profileComp}).  Radio upper limits and detections
+    are shown as black/gray triangles and squares respectively
+    (compiled in Table 1 of \citealt{Mimica+2015}). The single upper
+    limit in the top panel corresponds to 1.4 GHz. Gray triangles and
+    squares in the middle panel indicate upper limits and detections
+    at 3.0 GHz, while black triangles indicate upper limits at 5.0
+    GHz. \textit{Left-hand panel} 1D on-axis light curves for a jet
+    with a total energy of $5\times 10^{51}$ ergs, together with radio
+    upper limits and the light curves for our fiducial case
+    (translucent lines).}
+\end{figure*}
 
 \subsection{Effects of viewing angle}
 We show a comparison off and on-axis light-curves in
 Fig.~\ref{fig:onOff}.  For $n_{18}=2000$ the light-curves differ
-little.  For $n_{18}=60$ off-axis luminosity is lower by a factor
+little.  For $n_{18}=60$ off-axis luminosity is lower by a factor of a few
 before and near the peak. However, for late times
 the off- and on-axis light-curves are quite similar. This is as
 expected, at late times the jet becomes more isotropic, which means
@@ -914,27 +966,16 @@ the viewing angle has relatively little effect on the observed light curve.
   computational convenience.}
 \end{figure*}
 
-\subsection{Effect of jet energy}
-In Figure~\ref{fig:lightcurves_lw} we show radio light curves
-for a jet with energy $E=5\times 10^{52}$
-ergs--an order of magnitude smaller than our fiducial case.
-Comparing to Figure~\ref{fig:lightcurves} we see that the peak
-luminosities are also about an order of magnitude smaller, indicating
-that the peak luminosity scales linearly with jet energy. {\bf More
-  details once figure is finalized with the off axis light curves.}
+% \subsection{Effect of jet energy}
+% In the left-hand panel of Figure~\ref{fig:lightcurves} we show radio
+% light curves for a jet with energy $E=5\times 10^{51}$ ergs--two
+% orders of magnitude smaller than for the high energy jet.  The peak
+% luminosities are also $\sim$ two orders of magnitude lower, as the
+% peak luminosity is approximately linear in jet energy. 
 
-\begin{figure} 
-  \includegraphics[width=8cm]{lightcurves_lw.pdf}
-  \caption{\label{fig:lightcurves_lw} Light curves for $5\times
-    10^{52}$ erg jet--an order of magnitude below our fiducial case
-    (shown in Fig.~\ref{fig:lightcurves}). Line and marker styles are
-    the same as in Fig.~\ref{fig:lightcurves}. {\bf AG note I have
-      put the on axis light curves here as a place holder, I am
-      assuming we will eventually have off axis light curves as well.}}
-\end{figure}
-
-
-
+% For low densities ($n_{18}\sim 60$ cm$^{-3}$) the radio light curves
+% for the low energy jet fall below the observed radio upper limits at
+% late times. 
 
 
 \subsection{Effect of gas density profile}
@@ -942,13 +983,14 @@ that the peak luminosity scales linearly with jet energy. {\bf More
 We have also computed the radio light curves for different shapes of
 the gas density profile, while holding $n_{18}$ fixed. We compute the
 results for $n_{18}=2000$ for both our fiducial $n\sim r^{-1}$ profile and
-the core galaxy profile, shown in equation~\eqref{eq:cores}. The
-former would more relevant for a cuspy stellar density profile with
-stellar density $\rho_{\star}\propto r^{-2}$, while the latter would be more
-appropriate for a flatter $\rho_{\star}\propto r^{-1}$ stellar density
-profile. As a steeper stellar density is more favorable for producing
-tidal disruption events, we would expect most events to occur is cusp
-rather than core galaxies.
+the core galaxy profile, shown in equation~\eqref{eq:cores}. 
+% The
+% former would more relevant for a cuspy stellar density profile with
+% stellar density $\rho_{\star}\propto r^{-2}$, while the latter would be more
+% appropriate for a flatter $\rho_{\star}\propto r^{-1}$ stellar density
+% profile. As a steeper stellar density is more favorable for producing
+% tidal disruption events, we would expect most events to occur is cusp
+% rather than core galaxies.
 
 The on-axis light-curves are virtually indistinguishable as shown in
 Fig.~\ref{fig:cores}. This result is not surprising as
