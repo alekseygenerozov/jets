@@ -100,19 +100,22 @@ interface between the jet and surrounding circumnuclear medium (CNM)
 afterglow of a gamma-ray burst.
 
 Although a handful of jetted TDE flares have been observed, their
-volumetric rate is a very small fraction $\sim 10^{-4}$ of the rate of
-the observed thermal TDE flares (e.g., \citealt{Burrows+2011}), and an
-even smaller fraction of the theoretically predicted TDE rate
-(\citealt{Stone&Metzger2016}).  One potential explanation for this
-discrepancy is that the majority of TDEs produce powerful jets, but
-their non-thermal X-ray emission is relativistically beamed into a
-small angle $\theta_{\rm b}$, making them visible to only a small
-fraction of observers.  However, in order to explain the required
-beaming fraction $f_b \approx \theta_{b}^{2}/2 \sim 10^{-4}$ would
-require $\theta_{\rm b} \sim 0.01$ and hence a jet with a bulk Lorentz
-factor of $\Gamma \gtrsim 1/\theta_j \sim 100$, much higher than
-typically inferred for AGN jets or inferred for {\it Swift} J1644+57
-(\citealt{Metzger+2012}).
+volumetric rate is a very small fraction $\sim 10^{-5}-10^{-4}$ of the
+rate of the observed thermal TDE flares (e.g., \citealt{Burrows+2011},
+\citealt{Brown+2015}), and an even smaller fraction of the
+theoretically predicted TDE rate (\citealt{Stone&Metzger2016}).  One
+potential explanation for this discrepancy is that the majority of
+TDEs produce powerful jets, but their non-thermal X-ray emission is
+relativistically beamed into a small angle $\theta_{\rm b}$, making
+them visible to only a small fraction of observers.  However, in order
+to explain the required beaming fraction $f_b \approx \theta_{b}^{2}/2
+\sim 10^{-5}-10^{-4}$ would require $\theta_{\rm b} \sim 0.01$ and
+hence a jet with a bulk Lorentz factor of $\Gamma \gtrsim 1/\theta_j
+\sim 100$, much higher than typically inferred for AGN jets or
+inferred for {\it Swift} J1644+57 (\citealt{Metzger+2012}) {\bf AG
+  estimate of jetted fraction. Jetted event rate went down with other
+  events due to larger co-moving volume, but there is considerable
+  uncertainty in the TDE rate and hence the presented range.}.
 
 The low detection rate of non-thermal TDE may instead indicate that
 jets are intrinsically rare in TDEs, or the conditions of the
@@ -190,10 +193,10 @@ As a second component of this paper, in $\S\ref{sec:jet}$ we
 explore the expected synchrotron emission from J1644+57-like across
 the allowed range of CNM conditions.  We start in
 $\S\ref{sec:analytic}$ with analytic conditions.  Then in
-$\S\ref{sec:numerical}$ use both 1d and 2d hydrodynamic models to
+$\S\ref{sec:numerical}$ use both 1D and 2D hydrodynamic models to
 simulate the jet propagating through the CNM and compare the results
-in $\S\ref{sec:2d}$. In $\S\ref{sec:results}$ we show radio
-light-curves from our 1d models for a wide range of CNM densities, to
+in $\S\ref{sec:2D}$. In $\S\ref{sec:results}$ we show radio
+light-curves from our 1D models for a wide range of CNM densities, to
 illustrate qualitatively how much varying the CNM density by itself
 could change the radio light-curve.  We summarize our conclusions in
 $\S\ref{sec:conc}$.
@@ -501,7 +504,7 @@ obtain $n_{18}\sim 80$ cm$^{-3}$.
 
 \begin{figure} 
   \includegraphics[width=8cm]{cnm_plot.pdf}
-  \caption{\label{fig:param} Iso-contours for the density at $10^{18}$
+  \caption{\label{fig:param} Isocontours for the density at $10^{18}$
     cm ($\mathrm{n_{18}}$) (thick, gray lines) for a $10^{7} \, \Msun$
     black hole and bursts of star formation forming a fraction,
     $f_{\rm burst}$, of the stars time, $t_{\rm burst}$, ago. The rest
@@ -560,11 +563,14 @@ ratio $m$.  According to \citet{Kauffmann&Heckman2009} ${\rm
 adopt this conversion and assume that the bolometric correction is
 independent of ${\rm L[0III]}/\Mbh$. 
 
-{\bf Intermediate step, going from distribution of L/Ledd to
-  Mdot/MdotEdd. This requires, a radiative efficiency. I use our
-  prescription from the last paper. 
-}
+We can turn the distribution of $L/L_{\rm Edd}$ into a distribution of
+$\dot{M}/\dot{M}_{\rm Edd}$, with a prescription $\epsilon_{\rm rad}$. We
+  adopt a piecewise prescription 
 
+\begin{equation}
+\epsilon_{\rm rad}=
+\end{equation}
+{\bf AG Finish...}
 
 \begin{figure}
 \includegraphics[width=8cm]{fcum_n18.pdf}
@@ -769,7 +775,7 @@ but we introduce a number of modifications regarding the jet energy
 when performing 1D simulations.
 
 \subsection{1D vs. 2D Models}
-\label{sec:2d}
+\label{sec:2D}
 
 The preferred numerical model for Swift J1644+57 \citep[Fig.10
 in][]{Mimica+2015} was obtained using 2D simulations (the red line in
@@ -813,7 +819,7 @@ energy remains unchanged with respect to the original model:
  E_{\rm ISO, new} = E_{\rm ISO} \left(\frac{\cos(0.1) - \cos(0.5)}{\cos(0.1) - \cos(\pi/2)}\right)\approx 0.12 E_{\rm ISO}\, .
 \end{equation}
 
-We assume that the time dependence of the jet luminosity is the same as in
+We assume the same time dependence for the jet luminosity as in
 \citet{Mimica+2015},
 \begin{equation}\label{eq:lum}
 L_j(t) = L_{j,0}\max\left[1, (t/t_0)\right]^{-5/3}
@@ -821,20 +827,24 @@ L_j(t) = L_{j,0}\max\left[1, (t/t_0)\right]^{-5/3}
 where $t_0 = 5\times 10^5$ seconds and $L_{j, 0}$ can be determined
 from $E_{\rm ISO}$ by integrating equation~\ref{eq:lum} in time from
 $0$ to $\infty$. We show a comparison of this modified 1D approach
-with the true 2D result in Figure~\ref{fig:1d2dB}, for $n_{18}=60$ and
+with the true 2D result in Figure~\ref{fig:1D2DB}, for $n_{18}=60$ and
 $n_{18}=2000$ and $E_{\rm ISO}=4 \times 10^{54}$ ergs. For
 $n_{18}=2000$ the agreement is excellent, while for $n_{18}=60$ the 1D
 models still over-predict still over-predict the flux at times after
 the peak of the light-curve.
 
+We adopt $p=2.3$, $\epsilon_e=0.1$, and $\epsilon_b=0.002$ for the
+microphysical parameters. 
+
+
 
 \begin{figure*}
-\includegraphics[width=16cm]{1d_2d.pdf}
-\caption{\label{fig:1d2dB} Comparison of 1D and 2-d light-curves for
+\includegraphics[width=16cm]{1D_2D.pdf}
+\caption{\label{fig:1D2DB} Comparison of 1D and 2D light curves for
   $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for frequencies of 1
   GHz (left) and 30 GHz (right) and an observer angle of 0.8 radians
-  to the jet axis. We assume an $n\sim r^{-1}$ density profile for
-  $n_{18}=2000$, but take $n\sim r^{-1.5}$ for $n_{18}=60$ for
+  to the jet axis. We assume an $n\propto r^{-1}$ density profile for
+  $n_{18}=2000$, but take $n\propto r^{-1.5}$ for $n_{18}=60$ for
   computational convenience--this model was previously computed in
   \citet{Mimica+2015} and 1D results suggest that the density slope would
   have minimal impact on the results (see $\S$~\ref{sec:profileComp})}.
@@ -867,7 +877,7 @@ luminosity across our grid:
     luminosity and peak time for a jet of energy $E$ interacting with
     nuclear gas with density profile $n=n_{18}
     \left(r/10^{18}\right)^{-1}$ (\textit{solid lines}). The jet model is described in 
-  $\S$~\ref{sec:2d}. We also see analytic fits (see
+  $\S$~\ref{sec:2D}. We also see analytic fits (see
   equations~\eqref{eq:peakTime} and~\eqref{eq:peakLum}) to the
   numerical results as dashed lines.}
 \end{figure*}
@@ -900,11 +910,11 @@ component is more important for earlier times, higher frequencies, and
 lower densities. 
 
 We show the relative contributions of the fast and slow components to
-the 5 GHz light curve for a $5 \times 10^{53}$ erg jet and two
-different densities $n_{18}$=2 and 2000. For $n_{18}=2000$, the slow
-component dominates for nearly all times.  For $n_{18}=2$, the fast
-component dominates at early times and at the peak of the light
-curve, while the slow component dominates after  $\sim$1 year.
+the 5 GHz light curve of a $5 \times 10^{53}$ erg jet going through
+different gas densities. For $n_{18}=2000$, the slow component
+dominates for nearly all times.  For $n_{18}=2$, the fast component
+dominates at early times and at the peak of the light curve, while the
+slow component dominates after $\sim$1 year.
 
 
 \begin{figure}
@@ -916,7 +926,9 @@ curve, while the slow component dominates after  $\sim$1 year.
 \end{figure}
 
 We don't include emission from the reverse
-shock. Although we expect it would be important for {...}
+shock. Generally, we expect it would be either self-absorbed or
+absorbed by the forward shock. However, emission from the reverse
+shock may be important for \textbf{...AG flesh out} 
 
 \subsection{Comparison with radio detections and upper limits.}
 
@@ -1079,15 +1091,17 @@ are summarized as follows.
   deceleration radius.
 
 \item We use the distribution of Eddington ratios (measured by
-  \citealt{Kauffmann&Heckman2009} using $L[0III]/\Mbh$) for a sample $\sim
-  10^{7} \Msun$ black holes from SDSS to obtain an empirical
+  \citealt{Kauffmann&Heckman2009} using $L[0III]/\Mbh$) for a sample
+  $\sim 10^{7} \Msun$ black holes from SDSS to obtain an empirical
   constraint on the average circumnuclear gas density, including all
   phases of gas. We find that $\sim90\%$ of galaxies in the sample
   have $n_{18}<10^{4} {\rm cm}^{-3}$, although we note that there is
   considerable uncertainty in translating an observed Eddington ratio
   to a circumnuclear gas density. TDE hosts would not fall on this
   high density tail, as TDE searches exclude galaxies with evidence of
-  AGN activity. 
+  AGN activity {\bf AG: not sure if this is accurate statement (TDE
+    survey don't explicitly filter on OIII luminosities). But TDE
+    hosts don't appear to have very large OIII luminosities.}.
 
 \item We take a jet model which fits the radio data for the Sw1644
   transient (from \citealt{Mimica+2015}) and run it through a range of
