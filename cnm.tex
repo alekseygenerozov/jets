@@ -107,15 +107,15 @@ theoretically predicted TDE rate (\citealt{Stone&Metzger2016}).  One
 potential explanation for this discrepancy is that the majority of
 TDEs produce powerful jets, but their non-thermal X-ray emission is
 relativistically beamed into a small angle $\theta_{\rm b}$, making
-them visible to only a small fraction of observers.  However, in order
-to explain the required beaming fraction $f_b \approx \theta_{b}^{2}/2
-\sim 10^{-5}-10^{-4}$ would require $\theta_{\rm b} \sim 0.01$ and
-hence a jet with a bulk Lorentz factor of $\Gamma \gtrsim 1/\theta_j
-\sim 100$, much higher than typically inferred for AGN jets or
-inferred for {\it Swift} J1644+57 (\citealt{Metzger+2012}) {\bf AG
-  estimate of jetted fraction. Jetted event rate went down with other
-  events due to larger co-moving volume, but there is considerable
-  uncertainty in the TDE rate and hence the presented range.}.
+them visible to only a small fraction of observers.  However, the
+inferred beaming fraction $f_b \approx \theta_{b}^{2}/2 \sim
+10^{-5}-10^{-4}$ would require $\theta_{\rm b} \sim 0.01$ and hence a
+jet with a bulk Lorentz factor of $\Gamma \gtrsim 1/\theta_j \sim
+100$, much higher than typically inferred for AGN jets or inferred for
+{\it Swift} J1644+57 (\citealt{Metzger+2012}) {\bf AG estimate of
+  jetted fraction. Jetted event rate went down with other events due
+  to larger co-moving volume, but there is considerable uncertainty in
+  the TDE rate and hence the presented range.}.
 
 The low detection rate of non-thermal TDE may instead indicate that
 jets are intrinsically rare in TDEs, or the conditions of the
@@ -180,14 +180,12 @@ calculate the CNM profile for different assumptions about the stellar
 population in the galactic nucleus.  A younger stellar population
 produces significant wind mass loss from O \& B stars. In contrast,
 the rate of wind mass loss from an older population, which lacks these
-massive stars, could $\sim 2$ orders of magnitude smaller.  We show
-that the requirement of a physical stellar population, combined with
-condition of thermal stability of the hot gas phase, limits the gas
+massive stars, could be $\sim 2$ orders of magnitude smaller.  We show
+that the requirement of a physical stellar population limits the gas
 density on a scale of $10^{18}$ cm to a range of $n_{18} \sim
-1-10^{3}$ cm$^{-3}$.  Although these limits come from considering
-only the hot phase of gas, we show based on the measured distribution
-of Eddington ratios that the average density in most galactic nuclei
-is bracketed by this range. 
+1-10^{3}$ cm$^{-3}$. We also show that the measured distribution
+of Eddington ratios suggests that the gas density in most galaxies is
+bracketed by this range.
 
 As a second component of this paper, in $\S\ref{sec:jet}$ we
 explore the expected synchrotron emission from J1644+57-like across
@@ -214,9 +212,9 @@ galaxies.
 \label{sec:model}
 
 The dominant source of gas injection into the CNM of quiescent
-galaxies is winds from stars in the galactic nucleus. The 1D spherical
-hydrodynamic equations with stellar wind mass injection are
-(e.g. \citealt{Holzer+1970}; \citealt{Quataert2004}) 
+galaxies is winds from stars in the galactic nucleus. We model this
+using the 1D spherical hydrodynamic equations with stellar wind mass
+injection (e.g. \citealt{Holzer+1970}; \citealt{Quataert2004})
 \begin{align}
   &\frac{\partial \rho}{\partial t}+\frac{1}{r^2}\frac{\partial}{\partial r}\left(\rho r^2 v\right)=q \label{eq:drhodt}\\
   &\rho \left(\frac{\partial v}{\partial t} + v\frac{\partial
@@ -235,7 +233,7 @@ enclosed stellar mass $M_{\star} \propto \int \rho_{\star}r^{2}dr$.
 
 The mass source term $q =\eta \rho_\star/\th$ is the mass injection
 rate per unit volume per unit time, where $\rho_\star$ is the stellar
-density. The energy source term $\propto v_w^{2}$, which parameterizes the
+density. The energy source term $\propto v_w^{2}$, parameterizes the
 heating rate of the gas, as physically results from stellar wind
 kinetic energy, supernovae, and black hole feedback.
 
@@ -258,8 +256,8 @@ radius, $r_b$.
 Most galaxies have $0<\Gamma<1$, and are classified into two broad
 categories: cores with $\Gamma<0.3$ and cusps with
 $\Gamma>0.5$. Assuming spherical symmetry and a constant mass-to-light
-ratio, the inner stellar profile translate to stellar density
-$\rho_\star\propto r^{-1-\Gamma}=r^{-\delta}$. Core galaxies will have
+ratio, the inner stellar profile translates to a stellar density
+$\rho_\star\propto r^{-1-\Gamma}=r^{-\delta}$. Core galaxies have
 $1<\delta<1.3$, while cusps have $1.5<\delta<2$.
 
 Cusps are more common than cores for low mass black holes ($\Mbh\lsim
@@ -324,7 +322,7 @@ fiducial $\delta=1.7$,
 
 The density at the stagnation radius, $n(\rs)$, can be estimated
 by equating the gas injected by stellar winds over a free-fall time
-(at the stagnation radius--$t_{\rm ff} (\rs)$) to the gas mass
+at the stagnation radius, $t_{\rm ff} (\rs)$, to the gas mass
 enclosed inside of the stagnation radius:
 
 \begin{align}
@@ -415,7 +413,7 @@ We consider an old stellar population formed a Hubble time ago plus a
 young component that formed a time $t_{\rm burst}$ ago and formed a
 fraction $f_{\rm burst}$ of the stars. We assume that both the young
 and old stars have the same (cuspy) density profile, which implies
-that a gas density profile, $n\propto r^{-1}$. 
+that the gas density profile, $n\propto r^{-1}$. 
 
 For a sufficiently large burst with $t_{\rm burst}<40$ Myr, heating
 will be dominated by massive star winds.\footnote{Type II Supernovae
@@ -434,22 +432,30 @@ sources including Ia Supernovae or AGN feedback {\bf AG also unbound
   \citep{Guillochon+2015a})}. We focus on quiescent phases, where the
 SNe Ia dominate. As discussed in GSM15 the Ias can clear the gas
 inside of the Ia radius ($r_{\rm Ia}$), where the time between
-successive Ia supernovae is equal to the dynamical time (see
-appendix~\ref{app:Ia}). To calculate $n_{18}$, when Ias dominate the
-heating rate, we plug $r_{Ia}$ into equation~\eqref{eq:nrs}, and
-extrapolate to $10^{18}$ cm.
+successive Ia supernovae is equal to the dynamical time. To calculate
+$n_{18}$, when Ias dominate the heating rate, we plug $r_{\rm Ia}$
+into equation~\eqref{eq:nrs}, and extrapolate to $10^{18}$ cm. $r_{\rm
+  Ia}$ is calculated as described in GSM15 for times $t>300 {\rm
+  Myr}$. the Ia rate is given by $8.8 \times 10^{-13}
+\left(\frac{t}{3\times 10^{8} {\rm yr}}\right)^{-1.12} \, \Msun^{-1}
+{\rm yr}^{-1} $ for $t>3\times 10^8$ years. In GSM15 we incorrectly
+extrapolated this rate all of the way to 3 Myr--this is clearly
+un-physical as no white dwarfs would have formed by this time. Here,
+we instead take the Ia rate to be 0 for times less than 40 Myr and
+flat from 40 to 300 Myr.
 
-Fig.~\ref{fig:param} shows how $n_{18}$ varies with star burst
+Fig{fig:param} shows how $n_{18}$ varies with star burst
 properties ($f_{\rm burst}$ and $t_{\rm burst}$).  We find a maximum
-$n_{18}$ of $\sim 2,700$ cm$^{-3}$, $4$ Myr after a burst of star
-formation forming 100\% of the stars. In this case both the energy an
-mass budgets are dominated by fast winds from massive stars ($\gsim 20
-\, \Msun$).  Although such a large gas density would be present in the
-immediate aftermath of a starburst, the wind mass loss rate (and hence
-the gas density) declines as $\eta \sim t^{-3}$. This means, the gas
-density would decline by an order of magnitude after just a few Myr.
+$n_{18}$ of $\sim 2,700$ cm$^{-3}$, $\sim 4$ Myr after a burst of star
+formation forming 100\% of the stars in the nucleus. In this case both
+the energy an mass budgets are dominated by fast winds from massive
+stars ($\gsim 15 \, \Msun$).  Although such a large gas density would
+be present in the immediate aftermath of a starburst, the wind mass
+loss rate (and hence the gas density) declines as $\eta \sim
+t^{-3}$. This means, the gas density would decline by an order of
+magnitude after just a few Myr.
 
-The lowest density, $n_{18}\sim 0.06$ cm$^{-3}$ achieved for a
+The lowest density, $n_{18}\sim 0.03$ cm$^{-3}$ achieved for a
 relatively modest burst, with $f_{\rm burst}=4\times 10^{-4}$. In this
 case we have a high heating rate from the young, massive stars and a
 low mass injection rate, with both young and old stars contributing.
@@ -461,17 +467,14 @@ outside of $r_s \sim 5\times 10^{16}$ cm. However, for the assumed
 $f_{\rm burst}=4\times 10^{-4}$, we expect less than one massive star
 inside of $r_s$.  In this case our formalism breaks down, and the true
 density would be larger. For a simple estimate we set the location of
-the stagnation radius by requiring it enclose ten massive ($\gsim 20
-\, \Msun$) stars. Plugging this value of $r_s$ into
+the stagnation radius by requiring it enclose one massive ($\gsim 15
+\, \Msun$) star. This gives $r_s\sim 1.6\times 10^{18}$ cm. Using
 equation~\eqref{eq:nrs} and taking $n\propto r^{-1}$ gives $n_{18}
-\sim$ 3 cm$^{-3}$. Thus, the minimum plausible $n_{18}$ is $\sim$ few
-cm$^{-3}$.
+\sim$ 0.5 cm$^{-3}$.  
 
 Discreteness effects will generically be important wherever, young
 massive stars dominate the heating rate of the gas (hatched regions of
-Fig.~\ref{fig:param}). {\bf AG need to address this somehow. I think
-  $1-1000$ cm$^{-3}$, will bracket the range of plausible
-  n18s, with discreteness effects included...}
+Fig.~\ref{fig:param}). 
 
 
 A typical host galaxy for TDE has evidence of some star formation
@@ -480,33 +483,6 @@ of Fig.~\ref{fig:param}. In this case the heating rate will be
 dominated by Ia supernovae and $n_{18}\sim 80$ cm$^{-3}$.
 
 {\bf Need to discuss thermal stability...}
-
-% In this case
-% the return efficiency will be $\eta\simeq 0.4$. The heating is
-% dominated by the stellar velocity dispersion Ia supernovae.  Gas will
-% be inflowing inside of the Ia radius, where the time between
-% supernovae is equal to the dynamical time: for $10^7 \Msun$ and this
-% will be $\simeq 10$ pc. Then,
-
-% \begin{equation}
-% n_{\rm Ia}=\frac{t_{\rm dyn}(r_{\rm Ia}) \left[\eta M_{\star} (r_{\rm
-%     Ia})/t_h\right]}{4 \pi/3 r_{\rm Ia}^3 m_p}
-% \label{eq:nIa}
-% \end{equation}
-
-% $t_{\rm dyn}(r_{\rm Ia})=(G \Mbh/r_{\rm Ia}^3)^{-1/2}$ is the
-% dynamical time at Ia radius. $M_{\star}(r_{\rm Ia})$ is the stellar
-% mass enclosed inside the Ia radius:
-
-% \begin{align}
-% &\Mbh (r_{\rm Ia}/r_{\rm inf})^{3-\delta}\\
-% &r_{\inf}\approx 3.5 \Mbh[,7]^{0.6} \, {\rm pc}
-% \end{align}
-
-% $r_{\rm inf}$ is the influence radius and $\delta$
-% is power law slope of the stellar density profile. Overall, we obtain
-% a density of $n_{\rm Ia} \simeq 1 \, {\rm cm}^{-3}$ at the Ia
-% radius. Assuming $n\propto r^{-1}$ we obtain $n_{18}\simeq 50$ cm$^{-3}$. 
 
  
 
@@ -520,7 +496,7 @@ dominated by Ia supernovae and $n_{18}\sim 80$ cm$^{-3}$.
     the old and young stars have the same density profile. We mark
     regions of parameter space where approximations in our model would
     break down. Hatched areas indicate regions of parameter space,
-    where massive stars ($\gsim 20 \, \Msun$) dominate the gas heating
+    where massive stars ($\gsim 15 \, \Msun$) dominate the gas heating
     rate, but we would expect less than one (doubly hatched) or less
     than ten (singly hatched) massive stars inside the nominal
     stagnation radius (equation~\eqref{eq:rs}). In these regions of
@@ -920,7 +896,8 @@ on density across most of the parameter space. In the optically thin
 limit the peak luminosity scales as the density $n^{0.5}$. In our case the
 jet is initially optically thick and then becomes optically thin at
 later times. In fact, the peak of the light curves occurs, when the total
-optical depth of the jet is $\sim 1$. {\bf AG more explanation...}
+optical depth of the jet is $\sim 1$. {\bf AG need to explain why the
+  dependence on density is so weak...}
 
 
 We also find the following relation fitting formula for the time of
@@ -1181,6 +1158,10 @@ Where,
 To isolate the effects of the shape of the density profile, consider a
 core density profile with $r_s=10^{18}$ cm, and $n_{18}=2000$: the
 same as our high density cusp model.
+
+\clearpage
+
+
 
 \clearpage
   \footnotesize{
