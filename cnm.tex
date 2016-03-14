@@ -60,7 +60,7 @@
   emission. We test the second possibility by calculating radio
   light curves for jets interacting with a broad range of density
   profiles, bracketing the expected range of gas densities in galactic
-  nuclei (1-1000 cm$^{-3}$ at $10^{18}$ cm). We find bright radio
+  nuclei ($\sim$ 0.5-1000 cm$^{-3}$ at $10^{18}$ cm). We find bright radio
   transients across the entire range of expected density
   profiles. Existing radio upper limits are often taken decades after
   the observed flare, well after the expected peak of the light curve
@@ -311,19 +311,20 @@ $\rs$, $M_{\star}(\rs)$:
 \end{equation}
 
 At the sphere of influence, $r_{\rm inf}$, $M_{\star}(r_{\rm
-  inf})=\Mbh.$ We take $r_{\rm inf}=3.5 \Mbh[,7]^{0.6}$. Then for our
+  inf})=\Mbh.$ We take $r_{\rm inf}=3.5 \Mbh[,7]^{0.6}$, where
+$\Mbh[,7]=\Mbh/10^7 \Msun$. Then for our
 fiducial $\delta=1.7$,
 
 \begin{equation}
 \dot{M}= 3.0 \times 10^{-6} \Mbh[,7]^{0.22} \eta_{0.02} \left(\frac{r_s}{\rm
-  pc}\right)^{1.3} \Msun \, {\rm yr}^{-1}
+  pc}\right)^{1.3} \Msun \, {\rm yr}^{-1},
 \end{equation}
 
 
-The density at the stagnation radius, $n(\rs)$, can be estimated
-by equating the gas injected by stellar winds over a free-fall time
-at the stagnation radius, $t_{\rm ff} (\rs)$, to the gas mass
-enclosed inside of the stagnation radius:
+where $\eta_{0.02}=\eta/0.02$. The density at the stagnation radius,
+$n(\rs)$, can be estimated by equating the gas injected by stellar
+winds over a free-fall time at the stagnation radius, $t_{\rm ff}
+(\rs)$, to the gas mass enclosed inside of the stagnation radius:
 
 \begin{align}
   &\frac{4 \pi}{3} \rs^3 \mu m_p n(r_s) \approx \dot{M} t_{\rm ff}
@@ -336,23 +337,23 @@ enclosed inside of the stagnation radius:
 Using equation~\eqref{eq:rs}, for $r_s$, we obtain 
 
 \begin{equation}
-n(r_s)=0.3 \, v_{500}^{0.6} \eta_{0.02} \Mbh[,7]^{-0.52} {\rm cm}^{-3}
+n(r_s)=0.3 \, v_{500}^{0.6} \eta_{0.02} \Mbh[,7]^{-0.52} {\rm cm}^{-3},
 \label{eq:nrs2}
 \end{equation}
 
-In the vicinity of the stagnation radius, we find that the slope of
-the gas density profile is $\sim (4\delta-1)/6$. For our fiducial
-$\delta$, 1.7, this gives $n(r)\propto r^{-1}$ near
-$\rs$. Furthermore, the density profile remains close to $n\propto
-r^{-1}$ for small radii of interest.\footnote{For cusp galaxies, the
-  gas velocity asymptotes to a constant between the stagnation radius
-  and break radius (if they are sufficiently far apart). In this
-  region we expect $n\propto r^{1-\delta}$.}  Thus, we adopt $n(r)=
-n_{18} (r/10^{18} {\rm cm})^{-1}$ as our fiducial density profile.  We
-also experiment with a core-like density profile
-(appendix~\ref{app:core}), and compare the radio light curves for jets
-going through core and cusp-like density profiles in
-$\S\ref{sec:profileComp}$.
+where $v_{500}=v_w/\left(500 \,\mathrm{km/s}\right)$. In the vicinity of
+the stagnation radius, we find that the slope of the gas density
+profile is $\sim (4\delta-1)/6$. For our fiducial $\delta$, 1.7, this
+gives $n(r)\propto r^{-1}$ near $\rs$. Furthermore, the density
+profile remains close to $n\propto r^{-1}$ for small radii of
+interest.\footnote{For cusp galaxies, the gas velocity asymptotes to a
+  constant between the stagnation radius and break radius (if they are
+  sufficiently far apart). In this region we expect $n\propto
+  r^{1-\delta}$.}  Thus, we adopt $n(r)= n_{18} (r/10^{18} {\rm
+  cm})^{-1}$ as our fiducial density profile.  We also experiment with
+a core-like density profile (appendix~\ref{app:core}), and compare the
+radio light curves for jets going through core and cusp-like density
+profiles in $\S\ref{sec:profileComp}$.
 
 
 From our fiducial $n\propto r^{-1}$ and equation~\eqref{eq:nrs2}, we
@@ -367,7 +368,7 @@ n_{18}\simeq 0.3 \Mbh[,7]^{0.49} \eta_{0.02} v_{500}^{-1.5} {\rm
 
 In general the gas density steepens at the stellar break radius, $r_b$
 (see Fig.~\ref{fig:profiles}). However, such breaks will only be
-important if the $r_b$ is inside of the Sedov radius, where the jet
+important if $r_b$ is inside of the Sedov radius, where the jet
 sweeps up its own mass in CNM gas.  The jet mostly decelerates inside
 of this radius, becoming Newtonian. Therefore, the profile outside of
 this radius will be of minimal importance in shaping the radio
@@ -435,16 +436,16 @@ inside of the Ia radius ($r_{\rm Ia}$), where the time between
 successive Ia supernovae is equal to the dynamical time. To calculate
 $n_{18}$, when Ias dominate the heating rate, we plug $r_{\rm Ia}$
 into equation~\eqref{eq:nrs}, and extrapolate to $10^{18}$ cm. $r_{\rm
-  Ia}$ is calculated as described in GSM15 for times $t>300 {\rm
+  Ia}$ is calculated as described in GSM15 for times $t>300 \,{\rm
   Myr}$. the Ia rate is given by $8.8 \times 10^{-13}
-\left(\frac{t}{3\times 10^{8} {\rm yr}}\right)^{-1.12} \, \Msun^{-1}
+\left(\frac{t}{3\times 10^{8} {\rm yr}}\right)^{-1.12} \, \Msun^{-1} \,
 {\rm yr}^{-1} $ for $t>3\times 10^8$ years. In GSM15 we incorrectly
 extrapolated this rate all of the way to 3 Myr--this is clearly
 un-physical as no white dwarfs would have formed by this time. Here,
 we instead take the Ia rate to be 0 for times less than 40 Myr and
 flat from 40 to 300 Myr.
 
-Fig{fig:param} shows how $n_{18}$ varies with star burst
+Fig.~\ref{fig:param} shows how $n_{18}$ varies with star burst
 properties ($f_{\rm burst}$ and $t_{\rm burst}$).  We find a maximum
 $n_{18}$ of $\sim 2,700$ cm$^{-3}$, $\sim 4$ Myr after a burst of star
 formation forming 100\% of the stars in the nucleus. In this case both
@@ -468,9 +469,9 @@ $f_{\rm burst}=4\times 10^{-4}$, we expect less than one massive star
 inside of $r_s$.  In this case our formalism breaks down, and the true
 density would be larger. For a simple estimate we set the location of
 the stagnation radius by requiring it enclose one massive ($\gsim 15
-\, \Msun$) star. This gives $r_s\sim 1.6\times 10^{18}$ cm. Using
-equation~\eqref{eq:nrs} and taking $n\propto r^{-1}$ gives $n_{18}
-\sim$ 0.5 cm$^{-3}$.  
+\, \Msun$) star. This gives $r_s\sim 1.6\times 10^{18}$ cm. Plugging
+this into equation~\eqref{eq:nrs} and taking $n\propto r^{-1}$ gives
+$n_{18} \sim$ 0.5 cm$^{-3}$.
 
 Discreteness effects will generically be important wherever, young
 massive stars dominate the heating rate of the gas (hatched regions of
@@ -489,25 +490,25 @@ dominated by Ia supernovae and $n_{18}\sim 80$ cm$^{-3}$.
 \begin{figure} 
   \includegraphics[width=8cm]{cnm_plot.pdf}
   \caption{\label{fig:param} Isocontours for the density at $10^{18}$
-    cm ($\mathrm{n_{18}}$) (blue lines) for a $10^{7} \, \Msun$
-    black hole and bursts of star formation forming a fraction,
-    $f_{\rm burst}$, of the stars time, $t_{\rm burst}$, ago. The rest
-    of the stars formed a Hubble time ago. Note that we assume that
-    the old and young stars have the same density profile. We mark
-    regions of parameter space where approximations in our model would
-    break down. Hatched areas indicate regions of parameter space,
-    where massive stars ($\gsim 15 \, \Msun$) dominate the gas heating
-    rate, but we would expect less than one (doubly hatched) or less
-    than ten (singly hatched) massive stars inside the nominal
-    stagnation radius (equation~\eqref{eq:rs}). In these regions of
-    parameter space discreteness effects not captured by our formalism
-    become important. In area inside of the red contours, the cooling
-    time, $t_{\rm cool}$, becomes comparable to the free-fall time
-    $t_{\rm ff}$, at the stagnation radius, with $t_{\rm cool}<10
-    t_{\rm ff}$ inside of the solid contour and $t_{\rm cool}< t_{\rm
-      ff}$ inside of the solid contour. In this region radiative
-    cooling and thermal instability become important (\textit{see text
-      for discussion}).}
+    cm ($\mathrm{n_{18}}$) (blue lines) for a $10^{7} \, \Msun$ black
+    hole and bursts of star formation forming a fraction, $f_{\rm
+      burst}$, of the stars $t_{\rm burst}$ years ago. We assume that
+    the remaining stars had formed a Hubble time ago. We also 
+    assume that the old and young stars have the same density
+    profile. We mark regions of parameter space where approximations
+    in our model would break down. Hatched areas indicate regions of
+    parameter space, where massive stars ($\gsim 15 \, \Msun$)
+    dominate the gas heating rate, but we would expect less than one
+    (doubly hatched) or less than ten (singly hatched) massive stars
+    inside the nominal stagnation radius (equation~\eqref{eq:rs}). In
+    these regions of parameter space discreteness effects not captured
+    by our formalism become important. In area inside of the red
+    contours, the cooling time, $t_{\rm cool}$, becomes comparable to
+    the free-fall time $t_{\rm ff}$, at the stagnation radius, with
+    $t_{\rm cool}<10 t_{\rm ff}$ inside of the solid contour and
+    $t_{\rm cool}< t_{\rm ff}$ inside of the solid contour. In this
+    region radiative cooling and thermal instability become important
+    (\textit{see text for discussion}).}
 \end{figure}
 
 
@@ -516,7 +517,7 @@ dominated by Ia supernovae and $n_{18}\sim 80$ cm$^{-3}$.
   \caption{\label{fig:param2} $n_{18}$ as a function of the mass
     return ($\eta$) and heating ($v_w$) parameters for a $10^7 \Msun$
     black hole. We translate the gray line from Fig.~\ref{fig:param}
-    to this parameter. $f_{\rm burst}$ increased in the direction
+    to this parameter space. $f_{\rm burst}$ increased in the direction
     indicated by the gray arrow. As indicated by the black solid line,
     the area below the black solid line is thermally unstable
     (\textit{see text for discussion}).}
@@ -559,10 +560,11 @@ adopt this conversion and assume that the bolometric correction is
 independent of ${\rm L[0III]}/\Mbh$. 
 
 We can turn the distribution of $L/L_{\rm Edd}$ into a distribution of
-$m=\dot{M}/\dot{M}_{\rm Edd}$, with a prescription $\epsilon_{\rm
-  rad}$.  For $m \leq 0.01$, we refer to \citet{Sharma+2007}, who
-estimate the radiative efficiency of low luminosity AGN using MHD
-shearing box simulations.  They find (see their Fig.~6)
+$m=\dot{M}/\dot{M}_{\rm Edd}$, with a prescription for the radiative
+efficiency $\epsilon_{\rm rad}$.  For $m \leq 0.01$, we refer to
+\citet{Sharma+2007}, who estimate the radiative efficiency of low
+luminosity AGN using MHD shearing box simulations.  They find (see
+their Fig.~6)
 
 \begin{align}
 \epsilon_{\rm rad} \simeq 
@@ -575,10 +577,10 @@ shearing box simulations.  They find (see their Fig.~6)
 
 
 with a large uncertainty (factor of 5 in either direction) for small
-$m\lsim 10^{-4}$, depending on assumptions on the micro-physical
-parameters. We adopt equation~\eqref{eq:efficiency} for $m <0.01$,
-$\epsilon_{\rm rad}=0.1$ for $m>0.1$, and linearly interpolate between
-the two for intermediate values of $m$.
+$m\lsim 10^{-4}$, as the radiative efficiency depends on uncertain
+micro-physical parameters. We adopt equation~\eqref{eq:efficiency} for
+$m <0.01$, $\epsilon_{\rm rad}=0.1$ for $m>0.1$, and linearly
+interpolate between the two for intermediate values of $m$.
 
 \begin{figure}
 \includegraphics[width=8cm]{fcum_n18.pdf}
@@ -621,9 +623,7 @@ their Figure 6 for $f_{\rm in}$.  With this choice only a third of
 nuclei have $n_{18}>2,000$ and only 6\% have $n_{18}>10^{4}$. Note
 that existing tidal disruption event candidates are unlikely to be in
 the high density tail with either no sign or sign of or very weak AGN
-emission lines (e.g. \citealt{van-Velzen+2011, Arcavi+2014}). Active
-galaxies are generally excluded, so that the TDE sample is not
-contaminated by AGN flares.
+emission lines (e.g. \citealt{van-Velzen+2011, Arcavi+2014}). 
 
 Note that \citet{Li+2013} use an alpha viscosity prescription with
 $\alpha=0.01$.  $f_{\rm in}$ would depend on this choice. This
@@ -667,12 +667,14 @@ in the previous section. On the one hand, the distribution of
 Eddington ratios becomes unreliable for low luminosities.  In this
 case it is difficult to put a lower bound on the density
 observationally. However, the analytics give a low density floor
-expected from injection of stellar wind material ($\sim 0.1$
-cm$^{-3}$). On the other hand, the analytic estimates are specific to
-the hot phase of gas. The Eddington ratio distribution probes the
-average density (including any cold clumps). The
-distribution of Eddington ratios gives us confidence in our high
-density limit ($\sim 1000$ cm$^{-3}$).
+expected from injection of stellar wind material ($\sim 0.5$
+cm$^{-3}$). 
+
+% On the other hand, the analytic estimates are specific to
+% the hot phase of gas. The Eddington ratio distribution probes the
+% average density (including any cold clumps). The
+% distribution of Eddington ratios gives us confidence in our high
+% density limit ($\sim 1000$ cm$^{-3}$).
 
 
 
@@ -732,7 +734,11 @@ ultra-relativistic limit
 However, this expression is problematic when the outflow is mildly
 relativistic or non-relativistic. In particular, it gives Lorentz
 factors less than 1. A more general expression for $\Gamma_{\rm sh}$
-can be obtained using equation 3 from \citet{Beloborodov&Uhm2006}
+can be obtained using equation 3 from
+\citet{Beloborodov&Uhm2006}\footnote{As pointed out by
+  \citet{Beloborodov&Uhm2006}, this expression may still be
+  problematic as it assumes a constant pressure between the forward
+  and reverse shocks.}
 
 \begin{align}
 &\frac{\Gamma_j^2-1}{\gamma_{43}^2-1} f^{-1}=1\\
@@ -751,9 +757,7 @@ we have the Lorentz factor of the reverse shock (in the lab frame)
 
 Then it is straightforward for a jet of a given thickness, $\delta$,
 to find the radius where the reverse shock crosses the trailing edge
-of the jet. Then using equation~\eqref{eq:gammaShGen}, we can find the
-Lorentz factor of the shocked jet material at the time the reverse
-shock has crossed through the jet.  
+of the jet using equation~\eqref{eq:gammaShGen}.
 
 We plot the fraction of the slow component ($\Gamma_j=2$) kinetic
 energy dissipated by the reverse shock as a function of isotropic jet
@@ -761,7 +765,7 @@ luminosity and $n_{18}$ in Fig.~\ref{fig:diss}. For the purposes of
 our analytic estimates, we assume a constant luminosity jet, which
 shuts off after time $t_{\rm fb}=5 \times 10^{5}$ s. For the numerical
 calculations described in the subsequent sections, the jet luminosity
-declines as $t^{-5/3}$ after time $t_{\rm fb}$ (see equation~\eqref{eq:lum}).
+declines as $t^{-5/3}$ after time $t_{\rm fb}$ (see equation~\ref{eq:lum}).
 
 
 \begin{figure}
@@ -774,7 +778,7 @@ declines as $t^{-5/3}$ after time $t_{\rm fb}$ (see equation~\eqref{eq:lum}).
 \subsection{Jet Models}
 \label{sec:numerical}
 
-The jet-CNM interaction is simulated using one and two-dimensions, and
+The jet-CNM interaction is simulated in one and two-dimensions, and
 the resulting synchrotron emission is computed using the same
 procedure described in \citet{Mimica+2015}. We assume the same angular
 Lorentz factor dependence as in previous paper (i.e., $\Gamma = 10$
@@ -797,16 +801,16 @@ found a modification of the 1D model that made its light curves
 match the 2D results much more closely.
 
 We first summarize the two-component model as presented in
-\citet{Mimica+2015}. The jet has a fast inner core spans an
-angular interval $[0, 0.1\ {\rm rad}]$, while the slow outer sheath
-occupies $[0.1\ {\rm rad}, 0.5\ {\rm rad}]$. For both components we
-assume $E_{\rm ISO} = 4\times 10^{54}$ erg. The crucial thing to
-notice is that, keeping $E_{\rm ISO}$ constant, the true jet energy
-depends only on the angular interval: $E_{\rm jet} = E_{\rm ISO}
-(\cos\theta_{\rm j,min} - \cos\theta_{\rm j,max})$. Note that the
-hydrodynamic evolution of the components is independent of angle in 1D
-simulations, but the radiative transfer/light curve calculation is
-sensitive to the jet geometry.
+\citet{Mimica+2015}. The jet has a fast inner core spans an angular
+interval $[0, 0.1\ {\rm rad}]$, while the slow outer sheath occupies
+$[0.1\ {\rm rad}, 0.5\ {\rm rad}]$. For both components we assume
+$E_{\rm ISO} = 4\times 10^{54}$ erg. The crucial thing to notice is
+that, keeping $E_{\rm ISO}$ constant, the true jet energy depends only
+on the angular interval: $E_{\rm jet} = E_{\rm ISO} (\cos\theta_{\rm
+  j,min} - \cos\theta_{\rm j,max})$. The hydrodynamic evolution of the
+components is independent of angle in 1D simulations, but the
+radiative transfer/light curve calculation is sensitive to the jet
+geometry.
 
 Second, we note that, although the sheath is injected in a relatively
 narrow angular interval, at late stages of the jet evolution the bow
@@ -818,7 +822,7 @@ angular size is fixed to the initial one. We note that the stage at
 which the jet becomes ``isotropic'' depends on the CNM density,
 i.e. the denser the CNM, the faster this is expected to happen.
 
-Since the agreement between 1D and 2D models is good at the early
+Since the agreement between 1D and 2D models is good for early
 times (when the fast component dominates), we modify only the slow
 component in 1D models. We assume that is spans $[0.1\ {\rm rad},
 \pi/2\ {\rm rad}]$ and lower its $E_{\rm ISO}$ so that the true jet
@@ -830,19 +834,49 @@ energy remains unchanged with respect to the original model:
 We assume the same time dependence for the jet luminosity as in
 \citet{Mimica+2015},
 \begin{equation}\label{eq:lum}
-L_j(t) = L_{j,0}\max\left[1, (t/t_0)\right]^{-5/3}
+L_{\rm j, ISO}(t) = L_{j,0}\max\left[1, (t/t_0)\right]^{-5/3}
 \end{equation}
-where $t_0 = 5\times 10^5$ seconds and $L_{j, 0}$ can be determined
-from $E_{\rm ISO}$ by integrating equation~\ref{eq:lum} in time from
-$0$ to $\infty$. We show a comparison of this modified 1D approach
-with the true 2D result in Figure~\ref{fig:1D2DB}, for $n_{18}=60$ and
-$n_{18}=2000$ and $E_{\rm ISO}=4 \times 10^{54}$ ergs. For
-$n_{18}=2000$ the agreement is excellent, while for $n_{18}=60$ the 1D
-models still over-predict still over-predict the flux at times after
-the peak of the light curve.
+where $t_0 = 5\times 10^5$ seconds. Integrating equation~\ref{eq:lum}
+in time from $0$ to $\infty$ would give $E_{\rm ISO}$. Thus,
+$L_{j,0}=0.4\, E_{\rm ISO}/t_0$. 
 
-We adopt $p=2.3$, $\epsilon_e=0.1$, and $\epsilon_b=0.002$ for the
-microphysical parameters. 
+We show a comparison of this modified 1D approach with the true 2D
+result in Figure~\ref{fig:1D2DB}, for $n_{18}=60$ and $n_{18}=2000$
+and $E_{\rm ISO}=4 \times 10^{54}$ ergs. For $n_{18}=2000$ the
+agreement is excellent, while for $n_{18}=60$ the 1D models still
+over-predict still over-predict the flux at times after the peak of
+the light curve.
+
+We summarize our fiducial jet model in Table~\ref{tab:jetParams}.
+
+\begin{table}
+  \caption{\label{tab:jetParams}Parameters for our jet model}
+  \begin{tabular}{ll}
+    \hline
+    Fast component\\ 
+    $\Gamma_j$ & 10 \\
+    $[\theta_{\rm min}$, $\theta_{\rm max}]$ & [0, 0.1] radians \\
+    $E_{\rm ISO}$ & $4 \times 10^{54}$ ergs \\
+    $E$ & $2 \times 10^{52}$ ergs\\
+    $L_{\rm j,ISO}$ & $L_{j,0} \max\left[1, (t/t_0)\right]^{-5/3}$  \\
+    $t_0$ & $5\times 10^5$ s\\
+    $L_{j,0}$ & $3.2 \times 10^{48}$ ergs/s\\
+    \hline 
+    Slow component\\
+    $\Gamma_j$ & 2 \\
+    $[\theta_{\rm min}$, $\theta_{\rm max}]$ & [0.1, $\pi/2$] radians \\
+    $E_{\rm ISO}$ & $4.7 \times 10^{53}$ ergs \\
+    $E$ & $4.7 \times 10^{53}$ ergs\\
+    $L_{\rm j, ISO}$ & $L_{j,0} \max\left[1, (t/t_0)\right]^{-5/3}$  \\
+    $t_0$ & $5\times 10^5$ s\\
+    $L_{j,0}$ & $3.8 \times 10^{47}$ ergs/s\\
+    \hline
+    Micro-physical parameters\\
+    $\epsilon_e$ & 0.1\\
+    $\epsilon_b$ & 0.002\\
+    $p$ & 2.3\\
+  \end{tabular}
+\end{table}
 
 
 
@@ -850,7 +884,7 @@ microphysical parameters.
 \includegraphics[width=16cm]{1D_2D.pdf}
 \caption{\label{fig:1D2DB} Comparison of 1D and 2D light curves for
   $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for frequencies of 1
-  GHz (left) and 30 GHz (right) and an observer angle of 0.8 radians
+  GHz (left) and 5 GHz (right) and an observer angle of 0.8 radians
   to the jet axis. We assume an $n\propto r^{-1}$ density profile for
   $n_{18}=2000$, but take $n\propto r^{-1.5}$ for $n_{18}=60$ for
   computational convenience--this model was previously computed in
@@ -1025,7 +1059,7 @@ the viewing angle has relatively little effect on the observed light curve.
 \label{sec:profileComp}
 We have also computed the radio light curves for different shapes of
 the gas density profile, while holding $n_{18}$ fixed. We compute the
-results for $n_{18}=2000$ for both our fiducial $n\sim r^{-1}$ profile and
+results for $n_{18}=2000$ for both our fiducial $n\propto r^{-1}$ profile and
 the core galaxy profile, shown in equation~\eqref{eq:cores}. 
 % The
 % former would more relevant for a cuspy stellar density profile with
@@ -1087,7 +1121,7 @@ are summarized as follows.
 \item We estimate the hot phase densities expected from injection of
   stellar wind material for different star formation histories. We
   find that that range of gas densities at 10$^{18}$ cm is $n_{18}
-  \sim$ 1-1000 cm$^{-3}$.
+  \sim$ 0.5-1000 cm$^{-3}$.
 
 \item The slope of the gas density profile depends on the slope of the
   stellar density profile. We expect a typical TDE host to have cusp
