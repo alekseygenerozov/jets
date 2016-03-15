@@ -391,15 +391,15 @@ consider the effects of the break radius in our analysis.
 \includegraphics[width=8cm]{sedov_radius.pdf}
 \caption{\label{fig:profiles} Steady state core and cusp density
   profiles. We have taken $\Mbh=10^{7} \Msun$ and $v_w$=600 km/s and
-  both profiles have mass source function $q(r) \propto
-  r^{-3}$ for $r > 25$. The core profile has $q(r) \propto
-  r^{-1.1}$ for $r < 25$ and the cusp profile has $q(r)
+  both have stellar density $\rho_\star$ and mass source function
+  $q(r) \propto r^{-3}$ for $r > 25$. The core profile has $q(r)
+  \propto r^{-1.1}$ for $r < 25$ and the cusp profile has $q(r)
   \propto r^{-1.8}$.  The colors at each radius indicate the value of
   isotropic jet energy $E_{52} n_{18}^{1}$, such that the gas mass
   inside that radius is equal to the mass inside the jet. We take the
   Lorentz factor of the un-shocked jet to be $\gamma_{\rm jet}=2$.
   Note that blue circles mark the location of the stagnation radius
-      for each profile (where the gas velocity goes through 0).}
+  for each profile (where the gas velocity goes through 0).}
 \end{figure}
 
 
@@ -416,15 +416,14 @@ fraction $f_{\rm burst}$ of the stars. We assume that both the young
 and old stars have the same (cuspy) density profile, which implies
 that the gas density profile, $n\propto r^{-1}$. 
 
-For a sufficiently large burst with $t_{\rm burst}<40$ Myr, heating
-will be dominated by massive star winds.\footnote{Type II Supernovae
-  are another important source of energy for young stellar
-  populations. Overall the energy injected by O stars winds and Type
-  II SNe will be comparable \citep{Voss+2009}. However, heating from
-  Type II SNe will be intermittent and is not included here for
-  simplicity.} In this case, we can calculate the mass return ($\eta$)
-and heating parameters ($v_w$), using the procedure described in
-GSM15. In this case $n_{18}$, can simply be calculated by using
+For a sufficiently large burst with $t_{\rm burst}<40$ Myr, the gas is
+heated by energy from massive star winds.\footnote{Type II supernovae
+  are another important heating source and dominate stellar winds
+  after $\sim$6 Myr \citep{Voss+2009}. However, heating from Type II SNe
+  will be intermittent and is not included here for simplicity.} In
+this case, we can calculate the mass return ($\eta$) and heating
+parameters ($v_w$), using the procedure described in GSM15. In this
+case $n_{18}$, can simply be calculated by using
 equation~\eqref{eq:n18}.
 
 For older stellar populations, heating may come from a few different
@@ -477,14 +476,23 @@ Discreteness effects will generically be important wherever, young
 massive stars dominate the heating rate of the gas (hatched regions of
 Fig.~\ref{fig:param}). 
 
-
 A typical host galaxy for TDE has evidence of some star formation
 within 1 Gyr \citep{French+2016}. This corresponds the right hand side
 of Fig.~\ref{fig:param}. In this case the heating rate will be
 dominated by Ia supernovae and $n_{18}\sim 80$ cm$^{-3}$.
 
-{\bf Need to discuss thermal stability...}
+Note that we are considering the total gas density resulting from
+stellar wind material, including all phases of gas. In the first few
+Myr after a star burst the injected stellar wind material will all be
+quite hot, with $T\gsim 10^{7}$ K due to the thermalized wind kinetic
+energy. For later times, SNe Ia provide intermittent heating, but the
+stellar wind material that accumulates on small scales, between
+successive Ias would be much cooler ($T\sim 10^{3}$ K), and would form
+clumps. However, as discussed in Section~\ref{sec:empirical}, from the
+point of view a TDE jet a clumpy medium would not be too different
+from a smooth one with the same average density.
 
+It is possible that the 
  
 
 \begin{figure} 
@@ -502,13 +510,7 @@ dominated by Ia supernovae and $n_{18}\sim 80$ cm$^{-3}$.
     (doubly hatched) or less than ten (singly hatched) massive stars
     inside the nominal stagnation radius (equation~\eqref{eq:rs}). In
     these regions of parameter space discreteness effects not captured
-    by our formalism become important. In area inside of the red
-    contours, the cooling time, $t_{\rm cool}$, becomes comparable to
-    the free-fall time $t_{\rm ff}$, at the stagnation radius, with
-    $t_{\rm cool}<10 t_{\rm ff}$ inside of the solid contour and
-    $t_{\rm cool}< t_{\rm ff}$ inside of the solid contour. In this
-    region radiative cooling and thermal instability become important
-    (\textit{see text for discussion}).}
+    by our formalism become important.}
 \end{figure}
 
 
@@ -524,6 +526,7 @@ dominated by Ia supernovae and $n_{18}\sim 80$ cm$^{-3}$.
 \end{figure}
 
 \subsection{Empirical Constraints on CNM Density}
+\label{sec:empirical}
 
 In this section we translate observed constraints on the accretion
 rate distribution of supermassive BHs into constraints on the CNM
@@ -577,7 +580,7 @@ their Fig.~6)
 
 
 with a large uncertainty (factor of 5 in either direction) for small
-$m\lsim 10^{-4}$, as the radiative efficiency depends on uncertain
+$m\lsim 10^{-4}$, since the radiative efficiency depends on uncertain
 micro-physical parameters. We adopt equation~\eqref{eq:efficiency} for
 $m <0.01$, $\epsilon_{\rm rad}=0.1$ for $m>0.1$, and linearly
 interpolate between the two for intermediate values of $m$.
@@ -629,7 +632,7 @@ Note that \citet{Li+2013} use an alpha viscosity prescription with
 $\alpha=0.01$.  $f_{\rm in}$ would depend on this choice. This
 uncertainty in $f_{\rm in}$ translates into a systematic uncertainty
 in the distribution of $n_{18}$. 
- 
+
 Two potential complications to keep in mind are (i) clumpiness of the
 CNM and (ii) anistropy. The distributions above are distributions of
 the {\it average} $n_{18}$.  Most likely, some of the nuclear gas in a
@@ -763,10 +766,9 @@ We plot the fraction of the slow component ($\Gamma_j=2$) kinetic
 energy dissipated by the reverse shock as a function of isotropic jet
 luminosity and $n_{18}$ in Fig.~\ref{fig:diss}. For the purposes of
 our analytic estimates, we assume a constant luminosity jet, which
-shuts off after time $t_{\rm fb}=5 \times 10^{5}$ s. For the numerical
+shuts off after time $t_{0}=5 \times 10^{5}$ s. For the numerical
 calculations described in the subsequent sections, the jet luminosity
-declines as $t^{-5/3}$ after time $t_{\rm fb}$ (see equation~\ref{eq:lum}).
-
+declines as $t^{-5/3}$ after time $t_{0}$ (see equation~\ref{eq:lum}).
 
 \begin{figure}
 \includegraphics[width=8cm]{diss.pdf}
