@@ -470,11 +470,9 @@ density would be larger. For a simple estimate we set the location of
 the stagnation radius by requiring it enclose one massive ($\gsim 15
 \, \Msun$) star. This gives $r_s\sim 1.6\times 10^{18}$ cm. Plugging
 this into equation~\eqref{eq:nrs} and taking $n\propto r^{-1}$ gives
-$n_{18} \sim$ 0.5 cm$^{-3}$.
-
-Discreteness effects will generically be important wherever, young
-massive stars dominate the heating rate of the gas (hatched regions of
-Fig.~\ref{fig:param}). 
+$n_{18} \sim$ 0.5 cm$^{-3}$. Discreteness effects will generically be
+important wherever, young massive stars dominate the heating rate of
+the gas (hatched regions of Fig.~\ref{fig:param}).
 
 A typical host galaxy for TDE has evidence of some star formation
 within 1 Gyr \citep{French+2016}. This corresponds the right hand side
@@ -488,12 +486,19 @@ quite hot, with $T\gsim 10^{7}$ K due to the thermalized wind kinetic
 energy. For later times, SNe Ia provide intermittent heating, but the
 stellar wind material that accumulates on small scales, between
 successive Ias would be much cooler ($T\sim 10^{3}$ K), and would form
-clumps. However, as discussed in Section~\ref{sec:empirical}, from the
-point of view a TDE jet a clumpy medium would not be too different
-from a smooth one with the same average density.
+clumps. However, as discussed in Section~\ref{sec:empirical}, the
+radio emission from a TDE jet would be quite similar for a clumpy and
+a smooth medium with the same average density.
 
-It is possible that the 
- 
+It is possible that some of these cold clumps would condense into
+stars. To estimate the star formation rate, we conjecture that the CNM
+self-regulates itself to a condition of marginal thermal
+stability (so that the cooling time, $t_{\rm cool}$, is ten times the
+dynamical time). For the case of a TDE host with a 1 Gyr old stellar
+population, we find that this requires a star formation rate $\dot{M_\star}
+=5.3 \times 10^{-4} \Msun$ yr$^{-1}$, which means that $\sim 40$\% of
+the gas injected on small scales would be turned into stars. This
+would leave a substantial gas density $n_{18}=50$ cm$^{-3}$.   
 
 \begin{figure} 
   \includegraphics[width=8cm]{cnm_plot.pdf}
@@ -514,16 +519,16 @@ It is possible that the
 \end{figure}
 
 
-\begin{figure}
-  \includegraphics[width=8cm]{cnm_plot_2.pdf}
-  \caption{\label{fig:param2} $n_{18}$ as a function of the mass
-    return ($\eta$) and heating ($v_w$) parameters for a $10^7 \Msun$
-    black hole. We translate the gray line from Fig.~\ref{fig:param}
-    to this parameter space. $f_{\rm burst}$ increased in the direction
-    indicated by the gray arrow. As indicated by the black solid line,
-    the area below the black solid line is thermally unstable
-    (\textit{see text for discussion}).}
-\end{figure}
+% \begin{figure}
+%   \includegraphics[width=8cm]{cnm_plot_2.pdf}
+%   \caption{\label{fig:param2} $n_{18}$ as a function of the mass
+%     return ($\eta$) and heating ($v_w$) parameters for a $10^7 \Msun$
+%     black hole. We translate the gray line from Fig.~\ref{fig:param}
+%     to this parameter space. $f_{\rm burst}$ increased in the direction
+%     indicated by the gray arrow. As indicated by the black solid line,
+%     the area below the black solid line is thermally unstable
+%     (\textit{see text for discussion}).}
+% \end{figure}
 
 \subsection{Empirical Constraints on CNM Density}
 \label{sec:empirical}
@@ -1060,34 +1065,26 @@ the viewing angle has relatively little effect on the observed light curve.
 \subsection{Effect of gas density profile}
 \label{sec:profileComp}
 We have also computed the radio light curves for different shapes of
-the gas density profile, while holding $n_{18}$ fixed. We compute the
-results for $n_{18}=2000$ for both our fiducial $n\propto r^{-1}$ profile and
-the core galaxy profile, shown in equation~\eqref{eq:cores}. 
-% The
-% former would more relevant for a cuspy stellar density profile with
-% stellar density $\rho_{\star}\propto r^{-2}$, while the latter would be more
-% appropriate for a flatter $\rho_{\star}\propto r^{-1}$ stellar density
-% profile. As a steeper stellar density is more favorable for producing
-% tidal disruption events, we would expect most events to occur is cusp
-% rather than core galaxies.
+the gas density profile, while holding $n_{18}$ fixed. In
+Fig.~\ref{fig:cores}, we show on-axis radio light curves for our
+fiducial $n\propto r^{-1}$ and a core galaxy profile
+(equation~\eqref{eq:cores}), both with $n_{18}=2$.
+The results are within a factor of a few of each other. The core and
+cusp light curves are even closer at higher densities, and virtually
+indistinguishable at $n_{18}=2000$. For larger densities, the jet only
+samples small radii, where the core and cusp profiles are quite
+similar (see Fig.~\ref{fig:profiles}). It is only at lower densities,
+for which the Sedov radius lies outside of the flattening the core
+density profile, that noticeable difference emerge. {\bf AG why are
+  there differences at early times for $n_{18}=2$ but not
+  $n_{18}=2000$. Is this simply an artifact of the starting radius.}
 
-The on-axis light curves are virtually indistinguishable as shown in
-Fig.~\ref{fig:cores}. This result is not surprising as
-the core and cusp profiles are quite similar inside of $10^{18}$ cm,
-and we expect the jet to have decelerated inside of this radius for
-these high densities. 
-
-In Fig.~\ref{fig:profs2} we compare the 1D on-axis light curves for
-density two density profiles: $n\propto r^{-1}$ and $n\propto r^{-1.5}$
-with $n_{18}=60$. Once again the results are quite similar. Again this
-is not surprising as the models have the same density near the Sedov
-radius ($\sim 10^{18}$ cm).  
 
 
 \begin{figure} 
   \includegraphics[width=8cm]{fig_cores.pdf}
   \caption{\label{fig:cores} Comparison of (on-axis) light curves for
-    $n_{18}=2000$ and two different CNM gas density profiles: $n\sim
+    $n_{18}=2$ and two different CNM gas density profiles: $n\sim
     r^{-1}$ and the core galaxy profile from \eqref{eq:cores} with
     $r_s=10^{18}$ cm and $n(r_s)=2000$, so that we can isolate the
     effect of the shape of the density profile.}
@@ -1143,10 +1140,8 @@ are summarized as follows.
   have $n_{18}<10^{4} {\rm cm}^{-3}$, although we note that there is
   considerable uncertainty in translating an observed Eddington ratio
   to a circumnuclear gas density. TDE hosts would not fall on this
-  high density tail, as TDE searches exclude galaxies with evidence of
-  AGN activity {\bf AG: not sure if this is accurate statement (TDE
-    survey don't explicitly filter on OIII luminosities). But TDE
-    hosts don't appear to have very large OIII luminosities.}.
+  high density tail, as TDE hosts have either weak or no detected OIII
+  emission.
 
 \item We take a jet model which fits the radio data for the Sw1644
   transient (from \citealt{Mimica+2015}) and run it through a range of
