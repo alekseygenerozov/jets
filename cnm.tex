@@ -294,7 +294,7 @@ in \citet{Generozov+2015}, $r_s$ can be calculated analytically from the
 heating rate ($v_w$) and black hole mass ($M$):
 
 \begin{equation}
-r_s \approx f(\delta) \frac{G M}{v_w^2},
+r_s \simeq f(\delta) \frac{G M}{v_w^2},
 \label{eq:rs}
 \end{equation}
 
@@ -327,9 +327,9 @@ winds over a free-fall time at the stagnation radius, $t_{\rm ff}
 (\rs)$, to the gas mass enclosed inside of the stagnation radius:
 
 \begin{align}
-  &\frac{4 \pi}{3} \rs^3 \mu m_p n(r_s) \approx \dot{M} t_{\rm ff}
+  &\frac{4 \pi}{3} \rs^3 \mu m_p n(r_s) \simeq \dot{M} t_{\rm ff}
   (\rs) \nonumber\\
-  &n(r_s) = 0.21 \eta_{0.02} \Mbh[,7]^{-0.28} \left(\frac{r_s}{\rm
+  &n(r_s) \simeq 0.21 \eta_{0.02} \Mbh[,7]^{-0.28} \left(\frac{r_s}{\rm
       pc}\right)^{-0.2}
 \label{eq:nrs}
 \end{align}
@@ -337,7 +337,7 @@ winds over a free-fall time at the stagnation radius, $t_{\rm ff}
 Using equation~\eqref{eq:rs}, for $r_s$, we obtain 
 
 \begin{equation}
-n(r_s)=0.3 \, v_{500}^{0.6} \eta_{0.02} \Mbh[,7]^{-0.52} {\rm cm}^{-3},
+n(r_s) \simeq 0.2 \, v_{500}^{0.4} \eta_{0.02} \Mbh[,7]^{-0.48} {\rm cm}^{-3},
 \label{eq:nrs2}
 \end{equation}
 
@@ -356,13 +356,22 @@ radio light curves for jets going through core and cusp-like density
 profiles in $\S\ref{sec:profileComp}$.
 
 
-From our fiducial $n\propto r^{-1}$ and equation~\eqref{eq:nrs2}, we
+For our fiducial $n\propto r^{-1}$ and equation~\eqref{eq:nrs}, we
 obtain
 
 \begin{equation}
-n_{18}\simeq 0.3 \Mbh[,7]^{0.49} \eta_{0.02} v_{500}^{-1.5} {\rm
+  n_{18}\simeq 0.6 \left(\frac{r_s}{\rm pc}\right)^{0.8}
+  \Mbh[,7]^{-0.28} {\rm cm^{-3}}
+  \label{eq:n18}
+\end{equation}
+
+Substituting equation~\eqref{eq:rs} for the stagnation radius in
+equation~\eqref{eq:n18} gives 
+
+\begin{equation}
+n_{18}\simeq 0.3 \Mbh[,7]^{0.52} \eta_{0.02} v_{500}^{-1.6} {\rm
   cm^{-3}}.
-\label{eq:n18}
+\label{eq:n182}
 \end{equation} 
 
 
@@ -408,13 +417,12 @@ consider the effects of the break radius in our analysis.
 \label{sec:densAllowed}
 
 We calculate the density at $10^{18}$ cm, $n_{18}$, for a range of
-different star formation histories. 
-
-We consider an old stellar population formed a Hubble time ago plus a
-young component that formed a time $t_{\rm burst}$ ago and formed a
-fraction $f_{\rm burst}$ of the stars. We assume that both the young
-and old stars have the same (cuspy) density profile, which implies
-that the gas density profile, $n\propto r^{-1}$. 
+different star formation histories. We consider an old stellar
+population formed a Hubble time ago plus a young component that formed
+a time $t_{\rm burst}$ ago and formed a fraction $f_{\rm burst}$ of
+the stars. We assume that both the young and old stars have the same
+(cuspy) density profile, which implies that the gas density profile,
+$n\propto r^{-1}$.
 
 For a sufficiently large burst with $t_{\rm burst}<40$ Myr, the gas is
 heated by energy from massive star winds.\footnote{Type II supernovae
@@ -424,31 +432,30 @@ heated by energy from massive star winds.\footnote{Type II supernovae
 this case, we can calculate the mass return ($\eta$) and heating
 parameters ($v_w$), using the procedure described in GSM15. In this
 case $n_{18}$, can simply be calculated by using
-equation~\eqref{eq:n18}.
+equation~\eqref{eq:n182}.
 
-For older stellar populations, heating may come from a few different
-sources including Ia Supernovae or AGN feedback {\bf AG also unbound
-  debris streams produced in tidal disruption events (see
+For older stellar populations, heating may come from a several
+different sources including Ia Supernovae or AGN feedback {\bf AG also
+  unbound debris streams produced in tidal disruption events (see
   \citep{Guillochon+2015a})}. We focus on quiescent phases, where the
 SNe Ia dominate. As discussed in GSM15 the Ias can clear the gas
 inside of the Ia radius ($r_{\rm Ia}$), where the time between
-successive Ia supernovae is equal to the dynamical time. To calculate
-$n_{18}$, when Ias dominate the heating rate, we plug $r_{\rm Ia}$
-into equation~\eqref{eq:nrs}, and extrapolate to $10^{18}$ cm. $r_{\rm
-  Ia}$ is calculated as described in GSM15 for times $t>300 \,{\rm
-  Myr}$. the Ia rate is given by $8.8 \times 10^{-13}
-\left(\frac{t}{3\times 10^{8} {\rm yr}}\right)^{-1.12} \, \Msun^{-1} \,
-{\rm yr}^{-1} $ for $t>3\times 10^8$ years. In GSM15 we incorrectly
-extrapolated this rate all of the way to 3 Myr--this is clearly
-un-physical as no white dwarfs would have formed by this time. Here,
-we instead take the Ia rate to be 0 for times less than 40 Myr and
-flat from 40 to 300 Myr.
+successive Ia supernovae is equal to the dynamical time. In this case,
+$n_{18}$ can be calculated by substituting $r_{\rm Ia}$ in
+equation~\eqref{eq:n18}. $r_{\rm Ia}$ is calculated as described in
+GSM15 for times $t>300 \,{\rm Myr}$. the Ia rate is given by $8.8
+\times 10^{-13} \left(\frac{t}{3\times 10^{8} {\rm yr}}\right)^{-1.12}
+\, \Msun^{-1} \, {\rm yr}^{-1} $ for $t>3\times 10^8$ years. In GSM15
+we incorrectly extrapolated this rate all of the way to 3 Myr--this is
+clearly un-physical as no white dwarfs would have formed by this
+time. Here, we instead take the Ia rate to be 0 for times less than 40
+Myr and flat from 40-300 Myr.
 
 Fig.~\ref{fig:param} shows how $n_{18}$ varies with star burst
 properties ($f_{\rm burst}$ and $t_{\rm burst}$).  We find a maximum
 $n_{18}$ of $\sim 2,700$ cm$^{-3}$, $\sim 4$ Myr after a burst of star
 formation forming 100\% of the stars in the nucleus. In this case both
-the energy an mass budgets are dominated by fast winds from massive
+the energy and mass budgets are dominated by fast winds from massive
 stars ($\gsim 15 \, \Msun$).  Although such a large gas density would
 be present in the immediate aftermath of a starburst, the wind mass
 loss rate (and hence the gas density) declines as $\eta \sim
@@ -479,6 +486,8 @@ within 1 Gyr \citep{French+2016}. This corresponds the right hand side
 of Fig.~\ref{fig:param}. In this case the heating rate will be
 dominated by Ia supernovae and $n_{18}\sim 80$ cm$^{-3}$.
 
+\subsubsection{Thermal properties of gas}
+
 Note that we are considering the total gas density resulting from
 stellar wind material, including all phases of gas. In the first few
 Myr after a star burst the injected stellar wind material will all be
@@ -491,12 +500,12 @@ radio emission from a TDE jet would be quite similar for a clumpy and
 a smooth medium with the same average density.
 
 It is possible that some of these cold clumps would condense into
-stars. To estimate the star formation rate, we conjecture that the CNM
+stars. To estimate the star formation rate, we assume that the CNM
 self-regulates itself to a condition of marginal thermal
 stability (so that the cooling time, $t_{\rm cool}$, is ten times the
-dynamical time). For the case of a TDE host with a 1 Gyr old stellar
+dynamical time). For the case of a TDE host with a $\sim$1 Gyr old stellar
 population, we find that this requires a star formation rate $\dot{M_\star}
-=5.3 \times 10^{-4} \Msun$ yr$^{-1}$, which means that $\sim 40$\% of
+=5.3 \times 10^{-4} \,\Msun$ yr$^{-1}$, which means that $\sim 40$\% of
 the gas injected on small scales would be turned into stars. This
 would leave a substantial gas density $n_{18}=50$ cm$^{-3}$.   
 
@@ -506,16 +515,15 @@ would leave a substantial gas density $n_{18}=50$ cm$^{-3}$.
     cm ($\mathrm{n_{18}}$) (blue lines) for a $10^{7} \, \Msun$ black
     hole and bursts of star formation forming a fraction, $f_{\rm
       burst}$, of the stars $t_{\rm burst}$ years ago. We assume that
-    the remaining stars had formed a Hubble time ago. We also 
-    assume that the old and young stars have the same density
-    profile. We mark regions of parameter space where approximations
-    in our model would break down. Hatched areas indicate regions of
-    parameter space, where massive stars ($\gsim 15 \, \Msun$)
-    dominate the gas heating rate, but we would expect less than one
-    (doubly hatched) or less than ten (singly hatched) massive stars
-    inside the nominal stagnation radius (equation~\eqref{eq:rs}). In
-    these regions of parameter space discreteness effects not captured
-    by our formalism become important.}
+    the remaining stars had formed a Hubble time ago. We also assume
+    that the old and young stars have the same density profile.
+    Hatched areas indicate regions of parameter space, where massive
+    stars ($\gsim 15 \, \Msun$) dominate the gas heating rate, but we
+    would expect less than one (doubly hatched) or less than ten
+    (singly hatched) massive stars inside the nominal stagnation
+    radius (equation~\ref{eq:rs}). In these regions of parameter
+    space discreteness effects not captured by our formalism become
+    important.}
 \end{figure}
 
 
@@ -1077,7 +1085,7 @@ similar (see Fig.~\ref{fig:profiles}). It is only at lower densities,
 for which the Sedov radius lies outside of the flattening the core
 density profile, that noticeable difference emerge. {\bf AG why are
   there differences at early times for $n_{18}=2$ but not
-  $n_{18}=2000$. Is this simply an artifact of the starting radius.}
+  $n_{18}=2000$. Is this simply an artifact of the starting radius?}
 
 
 
