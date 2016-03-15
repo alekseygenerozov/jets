@@ -488,16 +488,17 @@ dominated by Ia supernovae and $n_{18}\sim 80$ cm$^{-3}$.
 
 \subsubsection{Thermal properties of gas}
 
-Note that we are considering the total gas density resulting from
-stellar wind material, including all phases of gas. In the first few
-Myr after a star burst the injected stellar wind material will all be
-quite hot, with $T\gsim 10^{7}$ K due to the thermalized wind kinetic
-energy. For later times, SNe Ia provide intermittent heating, but the
-stellar wind material that accumulates on small scales, between
-successive Ias would be much cooler ($T\sim 10^{3}$ K), and would form
-clumps. However, as discussed in Section~\ref{sec:empirical}, the
-radio emission from a TDE jet would be quite similar for a clumpy and
-a smooth medium with the same average density.
+In the above estimates we are considering the total gas density
+resulting from stellar wind material, including all phases of gas. In
+the first few Myr after a star burst the injected stellar wind
+material will all be quite hot, with $T\gsim 10^{7}$ K due to the
+thermalized wind kinetic energy. For later times, SNe Ia provide
+intermittent heating, but the stellar wind material that accumulates
+on small scales, between successive Ias would be much cooler ($T\sim
+10^{3}$ K), and would form clumps. However, as discussed in
+Section~\ref{sec:empirical}, the radio emission from a TDE jet would
+be quite similar for a clumpy and a smooth medium with the same
+average density.
 
 It is possible that some of these cold clumps would condense into
 stars. To estimate the star formation rate, we assume that the CNM
@@ -650,7 +651,7 @@ light curve of a jet propagating through a clumpy medium will differ
 little from that of a smooth medium with the same average
 density. Even in the late stages when the jet becomes non-relativistic
 clumps will only make a difference when the size of the clumps is
-comparable to the size of the jets.
+comparable to the size of the jets {\bf AG include some refs here}.
 
 The cold gas could be distributed anistropically. For example it could
 be could be concentrated in a ring-like structure. In this scenario,
@@ -859,7 +860,9 @@ the light curve.
 We summarize our fiducial jet model in Table~\ref{tab:jetParams}.
 
 \begin{table}
-  \caption{\label{tab:jetParams}Parameters for our jet model}
+\begin{threeparttable}
+  \caption{\label{tab:jetParams}Fiducial parameters for our jet
+    model.}
   \begin{tabular}{ll}
     \hline
     Fast component\\ 
@@ -885,8 +888,11 @@ We summarize our fiducial jet model in Table~\ref{tab:jetParams}.
     $\epsilon_b$ & 0.002\\
     $p$ & 2.3\\
   \end{tabular}
+% \begin{tablenotes}
+% \item $^{\dagger}$  Additional values of physical parameters we tried.
+% \end{tablenotes}
+\end{threeparttable}
 \end{table}
-
 
 
 \begin{figure*}
@@ -907,19 +913,22 @@ We have computed on-axis radio light curves across a grid of CNM
 densities and jet energies. We use three different values for the
 jet energy ($5 \times 10^{51}$, $5 \times 10^{52}$, and $5 \times
 10^{53}$ ergs) and five different values for $n_{18}$ (2, 11, 60, 345,
-and 2000 cm$^{-3}$). 
+and 2000 cm$^{-3}$). We also compute models for $\epsilon_e=(0.05,\, 0.2)$
+and $\epsilon_b=(0.001,\, 0.005)$, keeping other jet parameters fixed to
+their fiducial values. {\bf AG reorganize table and put this info in}
 
 We show isocontours of the peak time, $t_p$, and the peak luminosity,
 $\nu L_{\nu, p}$, in Fig.~\ref{fig:jetContours} below. We find the
 following analytic formula roughly reproduces the behavior of the peak
 luminosity across our grid:
 
-\begin{equation}
-\nu L_{\nu, p}=2.6 \times 10^{41} \left(\frac{E}{5 \times 10^{53}
-    {\rm ergs}}\right)^{0.9}
-\left(\frac{\nu}{5 {\rm GHz}}\right)^{1.8} {\rm ergs/s}
+\begin{align}
+\nu L_{\nu, p}=&2.6 \times 10^{41} \left(\frac{E}{5 \times 10^{53}
+    {\rm ergs}}\right)^{0.9} \left(\frac{\epsilon_e}{0.1}\right)^{0.6} \left(\frac{\epsilon_b}{0.002}\right)^{0.3}
+\nonumber\\
+&\left(\frac{\nu}{5 {\rm GHz}}\right)^{1.8} {\rm ergs/s}
 \label{eq:peakLum}
-\end{equation}
+\end{align}
 
 \begin{figure*}
   \includegraphics[width=8cm]{lp_contours.pdf}
@@ -929,7 +938,7 @@ luminosity across our grid:
     nuclear gas with density profile $n=n_{18}
     \left(r/10^{18}\right)^{-1}$ (\textit{solid lines}). The jet model is described in 
   $\S$~\ref{sec:2D}. We also see analytic fits (see
-  equations~\eqref{eq:peakTime} and~\eqref{eq:peakLum}) to the
+  equations~\ref{eq:peakTime} and~\ref{eq:peakLum}) to the
   numerical results as dashed lines.}
 \end{figure*}
 
@@ -946,11 +955,12 @@ total optical depth of the jet is $\sim 1$. {\bf AG finish. Need to
 We also find the following relation fitting formula for the time of
 peak, $t_p$, 
 
-\begin{equation}
-t_p = 39.5 \left(\frac{E}{5 \times 10^{53} {\rm ergs}}\right)^{0.3} 
-\left(\frac{\nu}{5 {\rm GHz}}\right)^{-1} n_{18}^{0.35} {\rm days}
+\begin{align}
+  t_p =& 39.5 \left(\frac{E}{5 \times 10^{53} {\rm ergs}}\right)^{0.3}   \left(\frac{\epsilon_e}{0.1}\right)^{0.3}
+  \left(\frac{\epsilon_b}{0.002}\right)^{0.3}\nonumber\\
+ & \left(\frac{\nu}{5 {\rm GHz}}\right)^{-1} n_{18}^{0.35}  {\rm days}
 \label{eq:peakTime}
-\end{equation}
+\end{align}
 
 Note that the peak time occurs later for larger $n_{18}$, as the
 transition from optically thick to optically thin occurs at later times.
