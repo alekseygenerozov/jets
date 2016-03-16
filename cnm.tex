@@ -515,9 +515,10 @@ would leave a substantial gas density $n_{18}=50$ cm$^{-3}$.
   \caption{\label{fig:param} Isocontours for the density at $10^{18}$
     cm ($\mathrm{n_{18}}$) (blue lines) for a $10^{7} \, \Msun$ black
     hole and bursts of star formation forming a fraction, $f_{\rm
-      burst}$, of the stars $t_{\rm burst}$ years ago. We assume that
-    the remaining stars had formed a Hubble time ago. We also assume
-    that the old and young stars have the same density profile.
+      burst}$, of the stars $t_{\rm burst}$ years ago, with the
+    remaining stars forming a Hubble time ago. We assume
+    that the old and young stars both have a cuspy density profile,
+    which means that the gas density, $n\propto r^{-1}$.
     Hatched areas indicate regions of parameter space, where massive
     stars ($\gsim 15 \, \Msun$) dominate the gas heating rate, but we
     would expect less than one (doubly hatched) or less than ten
@@ -978,7 +979,6 @@ dominates for nearly all times.  For $n_{18}=2$, the fast component
 dominates at early times and at the peak of the light curve, while the
 slow component dominates after $\sim$1 year.
 
-
 \begin{figure}
 \includegraphics[width=8cm]{components.pdf}
 \caption{\label{fig:components} Contributions from the fast
@@ -1057,13 +1057,16 @@ the viewing angle has relatively little effect on the observed light curve.
 
 \begin{figure*}
 \includegraphics[width=16cm]{on_off.pdf}
-\caption{\label{fig:onOff} Comparison of (2D) off- and on-axis
-  light curves for $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for
+\caption{\label{fig:onOff} Comparison of (2D) off- and on-axis light
+  curves for $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for
   frequencies of 1 GHz (left) and 5 GHz (right). The observer line of
   sight is taken to be at $\theta_{\rm obs}=0.8$ with respect to the
-  jet axis. We assume an $n\sim r^{-1}$ density profile for
-  $n_{18}=2000$, but take $n\sim r^{-1.5}$ for $n_{18}=60$ for
-  computational convenience.}
+  jet axis. We assume an $n\propto r^{-1}$ density profile for
+  $n_{18}=2000$, but take $n\propto r^{-1.5}$ for $n_{18}=60$ for
+  computational convenience--this model was previously computed in
+  \citet{Mimica+2015} and 1D results suggest that the density slope
+  would have minimal impact on the results (see
+  $\S$~\ref{sec:profileComp}).}
 \end{figure*}
 
 % \subsection{Effect of jet energy}
@@ -1084,7 +1087,7 @@ We have also computed the radio light curves for different shapes of
 the gas density profile, while holding $n_{18}$ fixed. In
 Fig.~\ref{fig:cores}, we show on-axis radio light curves for our
 fiducial $n\propto r^{-1}$ and a core galaxy profile
-(equation~\eqref{eq:cores}), both with $n_{18}=2$.
+(equation~\ref{eq:cores}), both with $n_{18}=2$.
 The results are within a factor of a few of each other. The core and
 cusp light curves are even closer at higher densities, and virtually
 indistinguishable at $n_{18}=2000$. For larger densities, the jet only
@@ -1095,7 +1098,15 @@ density profile, that noticeable differences emerge. {\bf AG why are
   there differences at early times for $n_{18}=2$ but not
   $n_{18}=2000$. Is this simply an artifact of the starting radius?}
 
+In Fig.~\ref{fig:profs2} we compare the 1D on-axis light curves for
+density two density profiles: $n\propto r^{-1}$ and $n\propto r^{-1.5}$
+with $n_{18}=60$. For most times the light curves are very close.
+This is as expected, since the Sedov radius, $r_{\rm sedov}\sim
+10^{18}$ cm. 
 
+Overall we conclude the slope of the stellar density will profile will
+have minimal effect on the radio light curve, as long as the density
+near the deceleration radius is fixed. 
 
 \begin{figure} 
   \includegraphics[width=8cm]{fig_cores.pdf}
@@ -1140,7 +1151,7 @@ are summarized as follows.
 \item The slope of the gas density profile depends on the slope of the
   stellar density profile. We expect a typical TDE host to have cuspy
   stellar density profile inside of a few pc, with $\rho_\star
-  \propto r^{-2}$. This translates into a gas density profile $n
+  \propto r^{-1.7}$. This translates into a gas density profile $n
   \propto r^{-1}$. The radio light curve of a TDE jet is most
   sensitive to the density at the deceleration/Sedov radius (where it
   has swept up its mass in CNM gas). The light curve will be
