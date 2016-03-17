@@ -51,25 +51,25 @@
 \maketitle
 \begin{abstract}
   There are now dozens of candidates for tidal disruptions of stars by
-  supermassive black holes (TDEs) at optical and x-ray frequencies. A
-  small fraction of these events, (e.g. Swift-J1644+57) have radio
+  supermassive black holes (TDEs) at optical and x-ray wavelengths. A
+  small fraction of these events, (e.g. {\it Swift} J1644+57) have radio
   synchrotron emission consistent with a powerful, relativistic jet
-  shocking surrounding nuclear gas. The low detection rate of
-  relativistic jets may be due to either an intrinsic lack of jets or
-  unfavorable nuclear gas densities for producing observable radio
-  emission. We explore the second possibility by calculating radio
-  light curves for jets interacting with a broad range of density
-  profiles, bracketing the expected range of gas densities in galactic
-  nuclei ($\sim$ 0.5-2000 cm$^{-3}$ at $10^{18}$ cm) {\bf fix}. We
-  find bright radio transients across the entire range of expected
-  density profiles. Existing radio upper limits are often taken
-  decades after the observed flare, well after the expected peak of
-  the light curve for low density environments. Nonetheless they
-  exclude powerful, Swift-J1644-like jets for CNM densities less than
-  60 cm$^{-3}$ at $10^{18}$ cm. More stringent constraints would be
-  possible with prompt follow-up of tidal disruption event candidates
-  and would inform our understanding of the conditions necessary to
-  launch jets.
+  shocking surrounding gas. The low detection rate of such events may
+  mean that powerful jets are intrinsically rare in TDEs. However, it
+  could also mean that typical nuclear gas densities are unfavorable
+  for producing observable radio emission. We explore this
+  possibility, constraining the range of gas densities which could be
+  encountered by a TDE jet. We then calculate radio light curves for
+  jets across the expected range of gas densities ($\sim$ 0.5-2000
+  cm$^{-3}$ at $10^{18}$ cm). We find bright radio transients across
+  this range of density profiles. Existing radio upper limits are
+  often taken decades after the observed flare, well after the
+  expected peak of the light curve for low density
+  environments. Nonetheless they exclude powerful, {\it Swift} J1644-like
+  jets for CNM densities less than 60 cm$^{-3}$ at $10^{18}$ cm. More
+  stringent constraints would be possible with prompt follow-up of
+  tidal disruption event candidates and would inform our understanding
+  of the conditions necessary to launch jets.
 \end{abstract}
 \section{Introduction}
 \label{sec:intro}
@@ -83,30 +83,39 @@ potentially complex process of debris circularization
 accretes onto the BH, creating a luminous flare lasting months to
 years \citep{Hills1975, Carter+1982, Rees1988}.
 
-Many thermally dominated TDE flares have now been identified at UV/optical
-\citep{van-Velzen+2011, Gezari+2012, Chornock+2014, Arcavi+2014} and
-soft x-ray wavelengths \citep{Esquej+2007}.  Beginning with the
-discovery of {\it Swift} J1644+57 in 2011, three additional TDEs have
-been discovered by their non-thermal x-ray emission
-(\citealt{Bloom+2011, Levan+2011, Burrows+2011, Zauderer+2011,
-  Cenko+2012, Pasham+2015, Brown+2015}).  Unlike the thermally
-dominated TDEs, these events are the result of emission from a
-transient relativistic jet beamed along our line of sight, similar to
-the blazar geometry of active galactic nuclei (AGN).  In addition to
-their highly variable X-ray emission, which likely originates from the
-base of the jet, these events are characterized by radio synchrotron
-emission.  The latter, more slowly evolving, is powered by shocks
-formed at the interface between the jet and surrounding circumnuclear
-medium (CNM) (\citealt{Giannios&Metzger2011,Metzger+2012}), analagous
-to the afterglow of a gamma-ray burst.
+Many TDE flares have now been identified at UV/optical
+\citep{Gezari+2008, Gezari+2009, van-Velzen+2011, Gezari+2012,
+  Arcavi+2014, Chornock+2014, Holoien+2014, Vinko+2015, Holoien+2016}
+and soft x-ray wavelengths \citep{Bade+1996, Grupe+1999,
+  Komossa&Greiner1999, Greiner+2000, Esquej+2007, Maksym+2010,
+  Saxton+2012}. Beginning with the discovery of {\it Swift} J1644+57
+in 2011, three additional TDEs have been discovered by their hard
+x-ray emission (\citealt{Bloom+2011, Levan+2011, Burrows+2011,
+  Zauderer+2011, Cenko+2012, Pasham+2015, Brown+2015}) {\bf Mostly
+  same set of refs for optical/soft x-ray as Holoien+2016, with
+  addition of Greiner+2000, and exclusion of Donley+2002 (who are
+  looking at statistics of x-ray outbursts wo identifying a specific
+  event)}.  Unlike the optical/UV and soft X-ray TDEs, these events
+are the result of emission from a transient relativistic jet beamed
+along our line of sight, similar to the blazar geometry of active
+galactic nuclei (AGN).  In addition to their highly variable X-ray
+emission, which likely originates from the base of the jet, these
+events are characterized by radio synchrotron emission.  The latter,
+more slowly evolving, is powered by shocks formed at the interface
+between the jet and surrounding circumnuclear medium (CNM)
+\citep{Bloom+2011,Giannios&Metzger2011,Metzger+2012,Mimica+2015} {\bf
+  other refs? did not see others in Mimica+2015},
+analagous to the afterglow of a gamma-ray burst {\bf AG change thermal
+  to optical/UV and soft X-ray: X-ray emission may not be thermal
+  (often times difficult to tell given spectral data.)}.
 
 Although a handful of jetted TDE flares have been observed, their
 volumetric rate is a very small fraction $\sim 10^{-5}-10^{-4}$ of the
-rate of the observed thermal TDE flares (e.g., \citealt{Burrows+2011},
+rate of the observed TDE flare rate (e.g., \citealt{Burrows+2011},
 \citealt{Brown+2015}), and an even smaller fraction of the
 theoretically predicted TDE rate (\citealt{Stone&Metzger2016}).  One
 potential explanation for this discrepancy is that the majority of
-TDEs produce powerful jets, but their non-thermal X-ray emission is
+TDEs produce powerful jets, but their hard X-ray emission is
 relativistically beamed into a small angle $\theta_{\rm b}$, making
 them visible to only a small fraction of observers.  However, the
 inferred beaming fraction $f_b \approx \theta_{b}^{2}/2 \sim
@@ -115,7 +124,7 @@ jet with a bulk Lorentz factor of $\Gamma \gtrsim 1/\theta_j \sim
 100$, much higher than typically inferred for AGN jets or inferred for
 {\it Swift} J1644+57 (\citealt{Metzger+2012}).
 
-The low detection rate of non-thermal TDE may instead indicate that
+The low detection rate of hard X-ray TDEs may instead indicate that
 jets are intrinsically rare in these events, or that the conditions of the
 surrounding environment are unfavorable for producing bright emission.
 Jets could be rare if they require, for instance, a highly
@@ -126,33 +135,33 @@ particularly strong magnetic flux threading the star
 or its X-ray emission could be suppressed if the disk undergoes
 Lens-Thirring precession due to a misalignment between the angular
 momentum of the BH and that of the disrupted star
-(\citealt{Stone&Loeb2012}).  In the latter case, however, even a `messy'
+(\citealt{Stone&Loeb2012}).  In the latter case, however, even a `dirty'
 jet could still be produced, which emits luminous non-thermal radio
 synchrotron emission as it interacts the surrounding CNM.  The radio
 emission from an off-axis is predicted to be relatively isotropic
-(\citealt{Giannios&Metzger2011},\citealt{Mimica+2015}).
+\citep{Giannios&Metzger2011,Mimica+2015}.
 
 {\bf fix} Observational campaigns have been conducted to follow-up
-thermal TDE flares at radio wavelengths on timescales of months to
-decades after the outburst (\citealt{Bower+2013};
-\citealt{van-Velzen+2013}; see Table 1 of \citet{Mimica+2015} for a
-compilation). Neither of these campaigns found any radio afterglows
-definitively associated with the host galaxies of strong thermal TDE
-candidates.\footnote{There were radio detections for two ROSAT flares:
-  RX J1420.4+5334 and IC 3599. However, for RX J1420.4+5334 the radio
-  emission was observed in a different galaxy than was originally
-  associated with the flare.  IC 3599 has shown multiple outbursts in
-  the calling into question whether it is a true TDE at all
-  \citep{Campana+2015}.}  \citet{Bower+2013} and
-\citet{van-Velzen+2013} use a simple model for the radio emission as a
-Sedov blast wave, to conclude that $\lesssim 10\%$ of TDEs produce
-jetted TDE emission at a level similar to that produced in {\it Swift}
-J1644+57.  \citet{Mimica+2015} used 2D hydrodynamical models, coupled
-with a synchrotron radiation transport calculation, to model the
-on-axis emission from {\it Swift} J1644+57. They then extended this
-model to off-axis viewing angles, and concluded that most
-previous TDEs should have been detected if their jets were as
-powerful.
+optical/UV and soft X-ray TDE flares at radio wavelengths on
+timescales of months to decades after the outburst
+(\citealt{Bower+2013}; \citealt{van-Velzen+2013}; see Table 1 of
+\citet{Mimica+2015} for a compilation). Neither of these campaigns
+found any radio afterglows definitively associated with the host
+galaxies of strong TDE candidates.\footnote{There were radio
+  detections for two ROSAT flares: RX J1420.4+5334 and IC
+  3599. However, for RX J1420.4+5334 the radio emission was observed
+  in a different galaxy than was originally associated with the flare.
+  IC 3599 has shown multiple outbursts in the calling into question
+  whether it is a true TDE at all \citep{Campana+2015}.}
+\citet{Bower+2013} and \citet{van-Velzen+2013} use a simple model for
+the radio emission as a Sedov blast wave, to conclude that $\lesssim
+10\%$ of TDEs produce jetted TDE emission at a level similar to that
+produced in {\it Swift} J1644+57.  \citet{Mimica+2015} used 2D
+hydrodynamical models, coupled with a synchrotron radiation transport
+calculation, to model the on-axis emission from {\it Swift}
+J1644+57. They then extended this model to off-axis viewing angles,
+and concluded that most previous TDEs should have been detected if
+their jets were as powerful.
 
 Previous works (\citet{Bower+2013}; \citet{van-Velzen+2013};
 \citealt{Mimica+2015}) have generally assumed that all TDEs occur in a
@@ -186,14 +195,14 @@ the gas density on a scale of $10^{18}$ cm to a range of $n_{18} \sim
 accretion rates of low mass SMBHs in the local universe suggests that
 the gas density in most galactic nuclei lie within a similar range.
 
-As a second component of this paper, in $\S\ref{sec:jet}$ we
-explore the expected synchrotron emission from J1644+57-like across
-the allowed range of CNM conditions.  We start in
+As a second component of this paper, in $\S\ref{sec:jet}$ we explore
+the expected synchrotron emission from {\it Swift} J1644+57-like
+across the allowed range of CNM conditions.  We start in
 $\S\ref{sec:analytic}$ with analytic conditions.  Then in
 $\S\ref{sec:numerical}$ use both 1D and 2D hydrodynamic models to
 simulate the jet propagating through the CNM and compare the results
-in $\S\ref{sec:2D}$. In $\S\ref{sec:results}$ we show radio
-light curves from our 1D models for a wide range of CNM densities, to
+in $\S\ref{sec:2D}$. In $\S\ref{sec:results}$ we show radio light
+curves from our 1D models for a wide range of CNM densities, to
 illustrate qualitatively how much varying the CNM density by itself
 could change the radio light curve.  We summarize our conclusions in
 $\S\ref{sec:conc}$.
@@ -263,10 +272,11 @@ $\rho_\star\propto r^{-1-\Gamma}=r^{-\delta}$. Core galaxies have
 $1<\delta<1.3$, while cusp galaxies have $1.5<\delta<2$.
 
 Galaxies with low mass black holes ($\Mbh\lsim 10^{8} \Msun$) relevant
-to TDEs. Additionally, as described in \citet{Stone&Metzger2016} TDEs
+to TDEs are more likely to have cusp-like stellar density
+profiles. Additionally, as described in \citet{Stone&Metzger2016} TDEs
 a cuspy stellar density profile results in a higher TDE rate. We adopt
-a fiducial value of $\Gamma=0.7$, the rate weighted average for the
-galaxies in Table C of \citet{Stone&Metzger2016}.
+a fiducial value of $\Gamma=0.7$ ($\delta=1.7$), the rate weighted
+average for the galaxies in Table C of \citet{Stone&Metzger2016}.
 
  {\bf Recently changed from $\delta=1.8$, need to
   double check all expressions.}
@@ -274,9 +284,10 @@ galaxies in Table C of \citet{Stone&Metzger2016}.
 \subsubsection{Gas density profiles}
 The radio emission produced by a TDE jet is most sensitive to the gas
 density at the ``Sedov'' or deceleration radius, where the jet has
-swept up it's own mass in nuclear gas. For Swift 1644 the deceleration
-radius of the jet was $\sim 10^{18}$ cm \citep{Mimica+2015}. Thus, we
-focus on determining the nuclear gas density on parsec scales.
+swept up it's own mass in nuclear gas. For {\it Swift} J1644+57 the
+deceleration radius of the jet was $\sim 10^{18}$ cm
+\citep{Mimica+2015}. Thus, we focus on determining the nuclear gas
+density on parsec scales.
 
 In the presence of strong heating, one-dimensional steady-state flow
 is characterized by an inflow-outflow structure. The velocity passed
@@ -298,7 +309,7 @@ r_s \simeq f(\delta) \frac{G M}{v_w^2},
 
 
 \noindent where $f(\delta)$ is a function of the stellar density slope with
-value of order unity.  The density at the stagnation radius, $n(\rs)$
+value of order unity.  The density at the stagnation radius, $n(\rs)$,
 is determined by injection rate of stellar wind material inside of
 $\rs$, $\dot{M}$. This is proportional to the stellar mass enclosed
 inside of $\rs$, $M_{\star}(\rs)$:
@@ -373,8 +384,7 @@ n_{18}\simeq 0.3 \Mbh[,7]^{0.52} \eta_{0.02} v_{500}^{-1.6} {\rm
   cm^{-3}}.
 \label{eq:n182}
 \end{equation} 
-
-
+%
 In general the gas density steepens at the stellar break radius, $r_b$
 (see Fig.~\ref{fig:profiles}). However, such breaks will only have an
 effect on the observed radio emission if $r_b$ is inside of the Sedov
@@ -417,22 +427,20 @@ consider the effects of the break radius in our analysis.
 \subsubsection{Plausible Density Range}
 \label{sec:densAllowed}
 
-We calculate the density at $10^{18}$ cm, $n_{18}$, for a range of
-different star formation histories. We consider an old stellar
-population formed a Hubble time ago plus a young component that formed
-a time $t_{\rm burst}$ ago and formed a fraction $f_{\rm burst}$ of
-the stars. We assume that both the young and old stars have the same
-(cuspy) density profile, which implies that the gas density profile,
-$n\propto r^{-1}$.
+We calculate the density at $10^{18}$ cm for stellar populations
+formed in two bursts: one occurring a Hubble time ago and the
+occurring more recently.  Both the young and old stars have the same
+(cuspy) density profile, which implies that the gas density profile
+$\propto r^{-1}$.
 
-For a sufficiently large burst with $t_{\rm burst}<40$ Myr, the gas is
+For a sufficiently large burst with less than 40 Myr ago, the gas is
 heated by energy from massive star winds.\footnote{Type II supernovae
   are another important heating source and dominate stellar winds
-  after $\sim$6 Myr \citep{Voss+2009}. However, heating from Type II SNe
-  will be intermittent and is not included here for simplicity.} In
-this case, we can calculate the mass return ($\eta$) and heating
-parameters ($v_w$), using the procedure described in GSM15. In this
-case $n_{18}$, can simply be calculated by using
+  after $\sim$6 Myr \citep{Voss+2009}. However, heating from Type II
+  SNe will be intermittent and is not included here for simplicity.}
+In this case, we can calculate the mass return ($\eta$) and heating
+parameters ($v_w$), using the procedure described in GSM15. Then, the
+density at $10^{18}$ cm can be calculated by using
 equation~\eqref{eq:n182}.
 
 For older stellar populations, heating may come from a several
@@ -440,44 +448,41 @@ different sources including Ia Supernovae or AGN feedback {\bf AG also
   unbound debris streams produced in tidal disruption events (see
   \citep{Guillochon+2015a})}. We focus on quiescent phases, where the
 SNe Ia dominate. As discussed in GSM15 the Ias can clear the gas
-inside of the Ia radius ($r_{\rm Ia}$), where the time between
+inside of the Ia radius where the time between
 successive Ia supernovae is equal to the dynamical time. In this case,
-$n_{18}$ can be calculated by substituting $r_{\rm Ia}$ in
-equation~\eqref{eq:n18}. $r_{\rm Ia}$ is calculated as described in
-GSM15 for times $t>300 \,{\rm Myr}$. the Ia rate is given by $8.8
+$n_{18}$ can be calculated by substituting Ia radius in
+equation~\eqref{eq:n18}. The Ia radius is calculated as described in
+GSM15 for times $t>300 \,{\rm Myr}$.\footnote{The Ia rate is given by $8.8
 \times 10^{-13} \left(\frac{t}{3\times 10^{8} {\rm yr}}\right)^{-1.12}
-\, \Msun^{-1} \, {\rm yr}^{-1} $ for $t>3\times 10^8$ years. In GSM15
+\, \Msun^{-1} \, {\rm yr}^{-1} $ for $t>3\times 10^8$ years.} In GSM15
 we incorrectly extrapolated this rate all of the way to 3 Myr--this is
 clearly un-physical as no white dwarfs would have formed by this
 time. Here, we instead take the Ia rate to be 0 for times less than 40
 Myr and flat from 40-300 Myr.
 
-Fig.~\ref{fig:param} shows how $n_{18}$ varies with star burst
-properties ($f_{\rm burst}$ and $t_{\rm burst}$).  We find a maximum
-$n_{18}$ of $\sim 2,700$ cm$^{-3}$, $\sim 4$ Myr after a burst of star
-formation forming 100\% of the stars in the nucleus. In this case both
-the energy and mass budgets are dominated by fast winds from massive
-stars ($\gsim 15 \, \Msun$).  Although such a large gas density would
-be present in the immediate aftermath of a starburst, the wind mass
-loss rate (and hence the gas density) declines as $\eta \sim
-t^{-3}$. This means, the gas density would decline by an order of
-magnitude after just a few Myr.
+Fig.~\ref{fig:param} shows how the density at $10^{18}$ cm varies with
+star burst properties.  We find a maximum density of $\sim 2,700$
+cm$^{-3}$, $\sim 4$ Myr after a burst of star formation forming 100\%
+of the stars in the nucleus. In this case both the energy and mass
+budgets are dominated by fast winds from massive stars ($\gsim 15 \,
+\Msun$).  Although such a large gas density would be present in the
+immediate aftermath of a starburst, the wind mass loss rate (and hence
+the gas density) declines as $t^{-3}$. Therefore, the gas
+density would decline by an order of magnitude after just a few Myr.
 
-The lowest density, $n_{18}\sim 0.03$ cm$^{-3}$ achieved for a
-relatively modest burst, with $f_{\rm burst}=4\times 10^{-4}$. In this
-case we have a high heating rate from the young, massive stars and a
-low mass injection rate, with both young and old stars contributing.
+The lowest density $\sim 0.03$ cm$^{-3}$ achieved for a relatively
+modest burst, forming $4\times 10^{-4}$ of the stars. In this case we
+have a high heating rate from the young, massive stars and a low mass
+injection rate, with both young and old stars contributing.
 
-In deriving this lower limit on the density, we assume that the
-massive stars provide a spatially homogeneous heating source, even on
-small scales. If this were true we would expect them to expel gas
-outside of $r_s \sim 5\times 10^{16}$ cm. However, for the assumed
-$f_{\rm burst}=4\times 10^{-4}$, we expect less than one massive star
-inside of $r_s$.  In this case our formalism breaks down, and the true
-density would be larger. For a simple estimate we set the location of
-the stagnation radius by requiring it enclose one massive ($\gsim 15
-\, \Msun$) star. This gives $r_s\sim 1.6\times 10^{18}$ cm. Plugging
-this into equation~\eqref{eq:nrs} and taking $n\propto r^{-1}$ gives
+We assume that massive stars provide a spatially homogeneous heating
+source, even on small scales. If this were true we would expect them
+to expel gas outside of the stagnation radius $\sim 5\times 10^{16}$
+cm. However, for the assumed size of the burst, we expect less than
+one massive ($\gsim 15 \Msun$) star inside of this radius. The radius
+enclosing one massive star ($\sim 1.6\times 10^{18}$ cm), provides a
+rough lower bound for the stagnation radius. From
+equation~\eqref{eq:n18}, the corresponding 
 $n_{18} \sim$ 0.5 cm$^{-3}$. Discreteness effects will generically be
 important wherever, young massive stars dominate the heating rate of
 the gas (hatched regions of Fig.~\ref{fig:param}).
@@ -492,25 +497,29 @@ dominated by Ia supernovae and $n_{18}\sim 80$ cm$^{-3}$.
 In the above estimates we are considering the total gas density
 resulting from stellar wind material, including all phases of gas. In
 the first few Myr after a star burst the injected stellar wind
-material will all be quite hot, with temperature $T\gsim 10^{7}$ K due
+material will all be quite hot, with temperature $gsim 10^{7}$ K due
 to the thermalized wind kinetic energy. For later times, SNe Ia
 provide intermittent heating, but the stellar wind material that
 accumulates on small scales, between successive Ias would be much
-cooler ($T\sim 10^{3}$ K), and would form clumps. However, as
-discussed in Section~\ref{sec:empirical}, the radio emission from a
-TDE jet would be quite similar for a clumpy and a smooth medium with
-the same average density.
+cooler, with temperature $\sim 10^{3}$ K, and would form
+clumps. However, as discussed in Section~\ref{sec:empirical}, the
+radio emission from a TDE jet would be quite similar for a clumpy and
+a smooth medium with the same average density.
+
+
 
 It is possible that some of these cold clumps would condense into
 stars. To estimate the star formation rate, we assume that the CNM
-self-regulates itself to a condition of marginal thermal
-stability (so that the cooling time, $t_{\rm cool}$, is ten times the
-dynamical time). For the case of a TDE host with a $\sim$1 Gyr old stellar
-population, we find that this requires a star formation rate $\dot{M_\star}
-=5.3 \times 10^{-4} \,\Msun$ yr$^{-1}$, which means that $\sim 40$\% of
-the gas injected on small scales would be turned into stars. This
-would leave a substantial gas density $n_{18}=50$ cm$^{-3}$.   
+self-regulates itself to a condition of marginal thermal stability (so
+that the cooling time is ten times the dynamical time). For the case
+of a TDE host with a $\sim$1 Gyr old stellar population, we find that
+this requires a star formation rate of  $5.3 \times 10^{-4}
+\,\Msun$ yr$^{-1}$, which means that $\sim 40$\% of the gas injected
+on small scales would be turned into stars. This would leave a
+substantial gas density $n_{18}=50$ cm$^{-3}$.
 
+
+\ref{eq:n18}
 \begin{figure} 
   \includegraphics[width=8cm]{cnm_plot.pdf}
   \caption{\label{fig:param} Isocontours for the density at $10^{18}$
@@ -563,7 +572,7 @@ n_{18} = 3 \times 10^3 M_{\bullet,7}^{1/2} m f_{\rm in}^{-1} {\rm
   cm}^{-3}
 \label{eq:n18Edd}
 \end{equation}
-
+%
 \citet{Kauffmann&Heckman2009} present distributions of the OIII line
 luminosity, ${\rm L[OIII]}/\Mbh$ for SDSS galaxies.  Assuming a bolometric
 correction, these can be translated into distributions of Eddington
@@ -587,8 +596,7 @@ their Fig.~6)
 \end{cases}
 \label{eq:efficiency}
 \end{align}
-
-
+%
 with a large uncertainty (factor of 5 in either direction) for small
 $m\lsim 10^{-4}$, since the radiative efficiency depends on uncertain
 micro-physical parameters. We adopt equation~\eqref{eq:efficiency} for
