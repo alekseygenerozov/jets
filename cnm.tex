@@ -518,8 +518,6 @@ this requires a star formation rate of  $5.3 \times 10^{-4}
 on small scales would be turned into stars. This would leave a
 substantial gas density $n_{18}=50$ cm$^{-3}$.
 
-
-\ref{eq:n18}
 \begin{figure} 
   \includegraphics[width=8cm]{cnm_plot.pdf}
   \caption{\label{fig:param} Isocontours for the density at $10^{18}$
@@ -555,18 +553,16 @@ substantial gas density $n_{18}=50$ cm$^{-3}$.
 
 In this section we translate observed constraints on the accretion
 rate distribution of supermassive BHs into constraints on the CNM
-density.  The density $n$ at radius $r$ can be written in terms of the
-inflow rate, $\dot{M}$
+density.  The accretion rate can be written as
 \begin{equation}
-\dot{M} = m \dot{M}_{\rm Edd}= f_{\rm in} 4 \pi r^2 \mu m_p n v,
+\dot{M}_{\bullet} = f_{\rm in} 4 \pi r^2 \mu m_p n v,
 \label{eq:mdot}
 \end{equation}
 where $n$ is the average density at radius $r$ and $f_{\rm in}$
 represents the fraction of the large scale inflow, which actually
 accretes onto the black hole.  If we assume that $r$ is interior to
 the sonic radius, then we can approximate $v$ as the free-fall
-velocity, $v_{\rm ff} = (2 G \Mbh/r)^{1/2}$.  In this case we
-obtain
+velocity, $v_{\rm ff} = (2 G \Mbh/r)^{1/2}$.  Thus, 
 \begin{equation}
 n_{18} = 3 \times 10^3 M_{\bullet,7}^{1/2} m f_{\rm in}^{-1} {\rm
   cm}^{-3}
@@ -591,7 +587,7 @@ their Fig.~6)
 \begin{align}
 \epsilon_{\rm rad} \simeq 
 \begin{cases}
-  0.03 \left(\frac{\dot{M}_{\bullet}}{10^{-4}\dot{M}_{\rm edd}}\right)^{0.9} & \frac{\dot{M}_{\bullet}}{\dot{M}_{\rm edd}} \lsim 10^{-4} \\
+  0.03 \left(\frac{\dot{M}_{\bullet}}{10^{-4}\dot{M}_{\rm Edd}}\right)^{0.9} & \frac{\dot{M}_{\bullet}}{\dot{M}_{\rm edd}} \lsim 10^{-4} \\
  0.03 &  10^{-2} \gsim \frac{\dot{M}_{\bullet}}{\dot{M}_{\rm edd}} \gsim  10^{-4},
 \end{cases}
 \label{eq:efficiency}
