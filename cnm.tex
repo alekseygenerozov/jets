@@ -65,7 +65,7 @@
   this range of density profiles. Existing radio upper limits are
   often taken decades after the observed flare, well after the
   expected peak of the light curve for low density
-  environments. Nonetheless they exclude powerful, {\it Swift} J1644-like
+  environments. Nonetheless they exclude powerful, {\it Swift} J1644+57-like
   jets for CNM densities less than 60 cm$^{-3}$ at $10^{18}$ cm. More
   stringent constraints would be possible with prompt follow-up of
   tidal disruption event candidates and would inform our understanding
@@ -89,25 +89,25 @@ Many TDE flares have now been identified at UV/optical
 and soft x-ray wavelengths \citep{Bade+1996, Grupe+1999,
   Komossa&Greiner1999, Greiner+2000, Esquej+2007, Maksym+2010,
   Saxton+2012}. Beginning with the discovery of {\it Swift} J1644+57
-in 2011, three additional TDEs have been discovered by their hard
-x-ray emission (\citealt{Bloom+2011, Levan+2011, Burrows+2011,
-  Zauderer+2011, Cenko+2012, Pasham+2015, Brown+2015}) {\bf Mostly
-  same set of refs for optical/soft x-ray as Holoien+2016, with
-  addition of Greiner+2000, and exclusion of Donley+2002 (who are
-  looking at statistics of x-ray outbursts wo identifying a specific
-  event)}.  Unlike the optical/UV and soft X-ray TDEs, these events
-are the result of emission from a transient relativistic jet beamed
-along our line of sight, similar to the blazar geometry of active
-galactic nuclei (AGN).  In addition to their highly variable X-ray
-emission, which likely originates from the base of the jet, these
-events are characterized by radio synchrotron emission.  The latter,
-more slowly evolving, is powered by shocks formed at the interface
-between the jet and surrounding circumnuclear medium (CNM)
+(henceforward Sw1644) in 2011, three additional TDEs have been
+discovered by their hard x-ray emission (\citealt{Bloom+2011,
+  Levan+2011, Burrows+2011, Zauderer+2011, Cenko+2012, Pasham+2015,
+  Brown+2015}) {\bf Mostly same set of refs for optical/soft x-ray as
+  Holoien+2016, with addition of Greiner+2000, and exclusion of
+  Donley+2002 (who are looking at statistics of x-ray outbursts wo
+  identifying a specific event)}.  Unlike the optical/UV and soft
+X-ray TDEs, these events are the result of emission from a transient
+relativistic jet beamed along our line of sight, similar to the blazar
+geometry of active galactic nuclei (AGN).  In addition to their highly
+variable X-ray emission, which likely originates from the base of the
+jet, these events are characterized by radio synchrotron emission.
+The latter, more slowly evolving, is powered by shocks formed at the
+interface between the jet and surrounding circumnuclear medium (CNM)
 \citep{Bloom+2011,Giannios&Metzger2011,Metzger+2012,Mimica+2015} {\bf
-  other refs? did not see others in Mimica+2015},
-analagous to the afterglow of a gamma-ray burst {\bf AG change thermal
-  to optical/UV and soft X-ray: X-ray emission may not be thermal
-  (often times difficult to tell given spectral data.)}.
+  other refs? did not see others in Mimica+2015}, analagous to the
+afterglow of a gamma-ray burst {\bf AG change thermal to optical/UV
+  and soft X-ray: X-ray emission may not be thermal (often times
+  difficult to tell given spectral data.)}.
 
 Although a handful of jetted TDE flares have been observed, their
 volumetric rate is a very small fraction $\sim 10^{-5}-10^{-4}$ of the
@@ -122,7 +122,7 @@ inferred beaming fraction $f_b \approx \theta_{b}^{2}/2 \sim
 10^{-5}-10^{-4}$ would require $\theta_{\rm b} \sim 0.01$ and hence a
 jet with a bulk Lorentz factor of $\Gamma \gtrsim 1/\theta_j \sim
 100$, much higher than typically inferred for AGN jets or inferred for
-{\it Swift} J1644+57 (\citealt{Metzger+2012}).
+Sw1644 (\citealt{Metzger+2012}).
 
 The low detection rate of hard X-ray TDEs may instead indicate that
 jets are intrinsically rare in these events, or that the conditions of the
@@ -178,7 +178,7 @@ In this paper we address the range of gas densities encountered by
 jetted TDEs and estimate their synchrotron emission by means of
 analytic calculations and numerical simulations.  If we find radio
 emission should be detected for all plausible CNM densities, then we
-are lead to the conclusion that most TDEs do not launch J1644-like
+are lead to the conclusion that most TDEs do not launch Sw1644-like
 jets.  This result would have significant implications for the physics
 of jet launching in TDEs and other accretion flows. 
 
@@ -211,7 +211,9 @@ $\S\ref{sec:conc}$.
 \label{sec:cnm}
 
 In this section we place constraints on the radial profile of the gas
-density in galactic nuclei. {\bf fix}
+density in galactic nuclei. First, we determine the possible range of
+densities resulting from mass injection by stellar winds. Then we use
+empirical dis
 
 \subsection{Analytic Constraints on CNM Density}
 
@@ -284,10 +286,9 @@ average for the galaxies in Table C of \citet{Stone&Metzger2016}.
 \subsubsection{Gas density profiles}
 The radio emission produced by a TDE jet is most sensitive to the gas
 density at the ``Sedov'' or deceleration radius, where the jet has
-swept up it's own mass in nuclear gas. For {\it Swift} J1644+57 the
-deceleration radius of the jet was $\sim 10^{18}$ cm
-\citep{Mimica+2015}. Thus, we focus on determining the nuclear gas
-density on parsec scales.
+swept up it's own mass in nuclear gas. For Sw1644 the deceleration
+radius of the jet was $\sim 10^{18}$ cm \citep{Mimica+2015}. Thus, we
+focus on determining the nuclear gas density on parsec scales.
 
 In the presence of strong heating, one-dimensional steady-state flow
 is characterized by an inflow-outflow structure. The velocity passed
@@ -409,17 +410,13 @@ consider the effects of the break radius in our analysis.
 
 \begin{figure}
 \includegraphics[width=8cm]{sedov_radius.pdf}
-\caption{\label{fig:profiles} Steady state core and cusp density
-  profiles. We have taken $\Mbh=10^{7} \Msun$ and $v_w$=600 km/s and
-  both have stellar density $\rho_\star$ and mass source function
-  $q(r) \propto r^{-3}$ for $r > 25$. The core profile has $q(r)
-  \propto r^{-1.1}$ for $r < 25$ and the cusp profile has $q(r)
-  \propto r^{-1.8}$.  The colors at each radius indicate the value of
-  isotropic jet energy $E_{52} n_{18}^{1}$, such that the gas mass
-  inside that radius is equal to the mass inside the jet. We take the
-  Lorentz factor of the un-shocked jet to be $\gamma_{\rm jet}=2$.
-  Note that blue circles mark the location of the stagnation radius
-  for each profile (where the gas velocity goes through 0).}
+\caption{\label{fig:profiles} Steady-state gas density profiles for
+  black hole mass $10^{7} \,\Msun$, heating parameter $v_w=600$ km
+  s$^{-1}$, and a cuspy ({\it solid}) or core-like ({\it dashed})
+  stellar density profile. Note that we normalize the gas density to
+  the density at $10^{18}$ cm ($n_{18}$). For each radius, we indicate
+  the value of isotropic equivalent jet energy $E_{52} n_{18}^{1}$,
+  of a $\gamma$=2 jet that sweeps up its own mass at that radius.}
 \end{figure}
 
 
@@ -428,10 +425,10 @@ consider the effects of the break radius in our analysis.
 \label{sec:densAllowed}
 
 We calculate the density at $10^{18}$ cm for stellar populations
-formed in two bursts: one occurring a Hubble time ago and the
-occurring more recently.  Both the young and old stars have the same
-(cuspy) density profile, which implies that the gas density profile
-$\propto r^{-1}$.
+formed via two bursts of star formation, with the older burst
+occurring a Hubble time ago.  Both the young and old stars have the
+same (cuspy) density profile, which implies that the gas density
+profile goes as $r^{-1}$.
 
 For a sufficiently large burst with less than 40 Myr ago, the gas is
 heated by energy from massive star winds.\footnote{Type II supernovae
@@ -440,7 +437,7 @@ heated by energy from massive star winds.\footnote{Type II supernovae
   SNe will be intermittent and is not included here for simplicity.}
 In this case, we can calculate the mass return ($\eta$) and heating
 parameters ($v_w$), using the procedure described in GSM15. Then, the
-density at $10^{18}$ cm can be calculated by using
+density at $10^{18}$ cm, $n_{18}$, can be calculated by using
 equation~\eqref{eq:n182}.
 
 For older stellar populations, heating may come from a several
@@ -460,32 +457,32 @@ clearly un-physical as no white dwarfs would have formed by this
 time. Here, we instead take the Ia rate to be 0 for times less than 40
 Myr and flat from 40-300 Myr.
 
-Fig.~\ref{fig:param} shows how the density at $10^{18}$ cm varies with
-star burst properties.  We find a maximum density of $\sim 2,700$
-cm$^{-3}$, $\sim 4$ Myr after a burst of star formation forming 100\%
-of the stars in the nucleus. In this case both the energy and mass
-budgets are dominated by fast winds from massive stars ($\gsim 15 \,
-\Msun$).  Although such a large gas density would be present in the
-immediate aftermath of a starburst, the wind mass loss rate (and hence
-the gas density) declines as $t^{-3}$. Therefore, the gas
-density would decline by an order of magnitude after just a few Myr.
+Fig.~\ref{fig:param} shows how $n_{18}$ varies with star burst
+properties.  We find a maximum density of $\sim 2,700$ cm$^{-3}$,
+$\sim 4$ Myr after a burst of star formation forming 100\% of the
+stars in the nucleus. In this case both the energy and mass budgets
+are dominated by fast winds from massive stars ($\gsim 15 \, \Msun$).
+Although such a large gas density would be present in the immediate
+aftermath of a starburst, the wind mass loss rate (and hence the gas
+density) declines as $t^{-3}$. Therefore, the gas density would
+decline by an order of magnitude after just a few Myr.
 
 The lowest density $\sim 0.03$ cm$^{-3}$ achieved for a relatively
-modest burst, forming $4\times 10^{-4}$ of the stars. In this case we
-have a high heating rate from the young, massive stars and a low mass
+modest burst, forming $4\times 10^{-4}$ of the stars. In this case
+there is a high heating rate from the young, massive stars and a low mass
 injection rate, with both young and old stars contributing.
 
-We assume that massive stars provide a spatially homogeneous heating
-source, even on small scales. If this were true we would expect them
-to expel gas outside of the stagnation radius $\sim 5\times 10^{16}$
-cm. However, for the assumed size of the burst, we expect less than
-one massive ($\gsim 15 \Msun$) star inside of this radius. The radius
-enclosing one massive star ($\sim 1.6\times 10^{18}$ cm), provides a
-rough lower bound for the stagnation radius. From
-equation~\eqref{eq:n18}, the corresponding 
-$n_{18} \sim$ 0.5 cm$^{-3}$. Discreteness effects will generically be
-important wherever, young massive stars dominate the heating rate of
-the gas (hatched regions of Fig.~\ref{fig:param}).
+This is likely an underestimate as we do not include discreteness
+effects. In particular, we assume that massive stars provide a
+spatially homogeneous heating source, even on small scales. However,
+for small bursts of star formation (the doubly hatched region in
+Fig.~\ref{fig:param}) there may be less than one massive star inside
+of the nominal stagnation radius (equation~\ref{eq:rs}). This is the
+case for the star formation history producing the minimum $n_{18}$
+($\sim 0.03$ cm$^{-3}$). Using the radius enclosing one massive
+($\gsim 15 \Msun$) star as the stagnation radius in
+equation~\eqref{eq:n18} gives a much larger $n_{18}$ of $\sim 0.5$
+cm$^{-3}$.
 
 A typical host galaxy for TDE has evidence of some star formation
 within 1 Gyr \citep{French+2016}. This corresponds the right hand side
@@ -494,14 +491,14 @@ dominated by Ia supernovae and $n_{18}\sim 80$ cm$^{-3}$.
 
 \subsubsection{Thermal properties of gas}
 
-In the above estimates we are considering the total gas density
+To above estimates correspond to the total gas density
 resulting from stellar wind material, including all phases of gas. In
 the first few Myr after a star burst the injected stellar wind
 material will all be quite hot, with temperature $\gsim 10^{7}$ K due
 to the thermalized wind kinetic energy. For later times, SNe Ia
 provide intermittent heating, but the stellar wind material that
 accumulates on small scales, between successive Ias would be much
-cooler, with temperature $\sim 10^{3}$ K, and would form
+cooler, with temperature $\sim 10^{3}$ K, and would condense into
 clumps. However, as discussed in Section~\ref{sec:empirical}, the
 radio emission from a TDE jet would be quite similar for a clumpy and
 a smooth medium with the same average density.
@@ -521,12 +518,12 @@ substantial gas density $n_{18}=50$ cm$^{-3}$.
 \begin{figure} 
   \includegraphics[width=8cm]{cnm_plot.pdf}
   \caption{\label{fig:param} Isocontours for the density at $10^{18}$
-    cm ($\mathrm{n_{18}}$) (blue lines) for a $10^{7} \, \Msun$ black
+    cm (blue lines) for a $10^{7} \, \Msun$ black
     hole and bursts of star formation forming a fraction, $f_{\rm
       burst}$, of the stars $t_{\rm burst}$ years ago, with the
     remaining stars forming a Hubble time ago. We assume
     that the old and young stars both have a cuspy density profile,
-    which means that the gas density, $n\propto r^{-1}$.
+    which means that the gas density goes as $r^{-1}$.
     Hatched areas indicate regions of parameter space, where massive
     stars ($\gsim 15 \, \Msun$) dominate the gas heating rate, but we
     would expect less than one (doubly hatched) or less than ten
@@ -552,7 +549,7 @@ substantial gas density $n_{18}=50$ cm$^{-3}$.
 \label{sec:empirical}
 
 In this section we translate observed constraints on the accretion
-rate distribution of supermassive BHs into constraints on the CNM
+rate distribution of supermassive black holes into constraints on the CNM
 density.  The accretion rate can be written as
 \begin{equation}
 \dot{M}_{\bullet} = f_{\rm in} 4 \pi r^2 \mu m_p n v,
@@ -560,44 +557,58 @@ density.  The accretion rate can be written as
 \end{equation}
 where $n$ is the average density at radius $r$ and $f_{\rm in}$
 represents the fraction of the large scale inflow, which actually
-accretes onto the black hole.  If we assume that $r$ is interior to
+accretes onto the black hole. If we assume that $r$ is interior to
 the sonic radius, then we can approximate $v$ as the free-fall
-velocity, $v_{\rm ff} = (2 G \Mbh/r)^{1/2}$.  Thus, 
+velocity, $v_{\rm ff} = (2 G \Mbh/r)^{1/2}$. Then, 
+
 \begin{equation}
-n_{18} = 3 \times 10^3 M_{\bullet,7}^{1/2} m f_{\rm in}^{-1} {\rm
-  cm}^{-3}
+  \dot{M}_{\bullet} = 1.1\times 10^{-5} \Mbh[,7]^{0.5} f_{\rm in}
+  n_{18} \,\,\Msun {\rm yr}^{-1}.
+\end{equation}
+%
+The corresponding Eddington ratio is
+
+\begin{equation}
+  \lambda\equiv L/L_{\rm Edd} = 4.8 \times 10^{-5}
+  \left(\frac{\epsilon_{\rm rad}}{0.1}\right) \Mbh[,7]^{0.5} f_{\rm in}
+  n_{18},
 \label{eq:n18Edd}
 \end{equation}
 %
-\citet{Kauffmann&Heckman2009} present distributions of the OIII line
-luminosity, ${\rm L[OIII]}/\Mbh$ for SDSS galaxies.  Assuming a bolometric
+where $\epsilon_{\rm rad}$ is the radiative
+efficiency. \citet{Kauffmann&Heckman2009} present distributions of the
+OIII line luminosity, ${\rm L[OIII]}/\Mbh$ for a volume limited {\bf
+  AG double check} sample of SDSS galaxies.  Assuming a bolometric
 correction, these can be translated into distributions of Eddington
-ratio $m$.  According to \citet{Kauffmann&Heckman2009} ${\rm
+ratio.  According to \citet{Kauffmann&Heckman2009} ${\rm
   L[0III]}/\Mbh=1.7$, roughly corresponds to Eddington ratio of 1. We
 adopt this conversion and assume that the bolometric correction is
-independent of ${\rm L[0III]}/\Mbh$. 
+independent of ${\rm L[0III]}/\Mbh$.
 
-We can turn the distribution of $L/L_{\rm Edd}$ into a distribution of
-$m=\dot{M}/\dot{M}_{\rm Edd}$, with a prescription for the radiative
-efficiency $\epsilon_{\rm rad}$.  For $m \leq 0.01$, we refer to
-\citet{Sharma+2007}, who estimate the radiative efficiency of low
-luminosity AGN using MHD shearing box simulations.  They find (see
-their Fig.~6)
+Converting this distribution Eddington ratios into a distribution of
+gas densities, requires a prescription for the radiative efficiency.  For
+low accretion rates, we refer to \citet{Sharma+2007}, who estimate the
+radiative efficiency of low luminosity AGN using MHD shearing box
+simulations.  They find (see their Fig.~6)
 
 \begin{align}
-\epsilon_{\rm rad} \simeq 
+&\epsilon_{\rm rad} \simeq 
 \begin{cases}
   0.03 \left(\frac{\dot{M}_{\bullet}}{10^{-4}\dot{M}_{\rm Edd}}\right)^{0.9} & \frac{\dot{M}_{\bullet}}{\dot{M}_{\rm edd}} \lsim 10^{-4} \\
- 0.03 &  10^{-2} \gsim \frac{\dot{M}_{\bullet}}{\dot{M}_{\rm edd}} \gsim  10^{-4},
-\end{cases}
+ 0.03 &  10^{-2} \gsim \frac{\dot{M}_{\bullet}}{\dot{M}_{\rm edd}}
+ \gsim  10^{-4}
+\end{cases}\nonumber\\
+&\dot{M}_{\rm Edd} \equiv \frac{L_{\rm Edd}}{0.1 c^2}
 \label{eq:efficiency}
 \end{align}
 %
-with a large uncertainty (factor of 5 in either direction) for small
-$m\lsim 10^{-4}$, since the radiative efficiency depends on uncertain
-micro-physical parameters. We adopt equation~\eqref{eq:efficiency} for
-$m <0.01$, $\epsilon_{\rm rad}=0.1$ for $m>0.1$, and linearly
-interpolate between the two for intermediate values of $m$.
+with a factor of $\sim$ 5 uncertainty for small $\dot{M}/\dot{M}_{\rm
+  Edd}\lsim 10^{-4}$, since the radiative efficiency depends on
+uncertain microphysical parameters. We adopt
+equation~\eqref{eq:efficiency} for $\dot{M}/\dot{M}_{\rm Edd}<0.01$,
+and $\epsilon_{\rm rad}=0.1$ for $\dot{M}/\dot{M}_{\rm Edd}>0.1$. We
+linearly interpolate between the two for intermediate values of the
+Eddington ratio.
 
 \begin{figure}
 \includegraphics[width=8cm]{fcum_n18.pdf}
@@ -618,35 +629,34 @@ interpolate between the two for intermediate values of $m$.
 \end{figure}
 
 
-Fig.~\ref{fig:n18Cum} shows the distribution of $n_{18}$ resulting
-from combining this distribution with equation~\eqref{eq:n18Edd}.  The
-absence of galaxies with $f_{\rm in }n_{18} \lsim$ few cm$^{-3}$
-places a lower bound on $n_{18}$ of a few cm$^{-3}$.  However,
-measurements of Eddington ratio below $\sim 10^{-3}$ (shown with a
-vertical line in Fig.~\ref{fig:n18Cum}) are not reliable. This allows a
-moderate fraction of galaxies ($\sim 30\%$) to have much lower gas
-densities.
+Fig.~\ref{fig:n18Cum} shows the distribution of $f_{\rm in} n_{18}$
+resulting from combining the distributions of Eddington ratio from
+\citet{Kauffmann&Heckman2009} with equations~\eqref{eq:n18Edd} and
+~\eqref{eq:efficiency}.  The absence of galaxies with $f_{\rm in
+}n_{18} \lsim$ few cm$^{-3}$ places a lower bound on $n_{18}$ of a few
+cm$^{-3}$.  However, measurements of Eddington ratio below $\sim
+10^{-3}$ (shown with a vertical line in Fig.~\ref{fig:n18Cum}) are not
+reliable. This allows a moderate fraction of galaxies ($\sim 30\%$) to
+have much lower gas densities.
 
 
 In order to obtain the cumulative distribution for $n_{18}$, we need a
 prescription for $f_{\rm in}$. We use the results \citet{Li+2013}, who
-performed two-dimensional hydro-dynamical simulations of axi-symmetric
+performed two-dimensional hydro-dynamical simulations of axisymmetric
 rotating accretion flows. They find that when the inflow rate on large
 scales is very sub-Eddington ($\dot{M}/\dot{M}_{\rm Edd} \lsim
-10^{-4}$), cooling is inefficient and $f_{\rm in}\sim
-0.01$. On the other hand, when $\dot{M}/\dot{M}_{\rm Edd}\gsim
-10^{-2}$, $f_{\rm in}$ approaches unity.  We use $\dot{M}_{\rm
-  Acc}/\dot{M}_{\rm Bondi}$ in their Figure 6 for $f_{\rm in}$.  With
-this choice only a third of nuclei have $n_{18}>2,000$ and only 6\%
-have $n_{18}>10^{4}$. Note that existing tidal disruption event
-candidates are unlikely to be in the high density tail with either no
-sign or sign of or very weak AGN emission lines
-(e.g. \citealt{van-Velzen+2011, Arcavi+2014}).
-
-Note that \citet{Li+2013} use an alpha viscosity prescription with
-$\alpha=0.01$.  $f_{\rm in}$ would depend on this choice. This
-uncertainty in $f_{\rm in}$ translates into a systematic uncertainty
-in the distribution of $n_{18}$. 
+10^{-4}$), cooling is inefficient and $f_{\rm in}\sim 0.01$. On the
+other hand, when $\dot{M}/\dot{M}_{\rm Edd}\gsim 10^{-2}$, $f_{\rm
+  in}$ approaches unity.  We use $\dot{M}_{\rm Acc}/\dot{M}_{\rm
+  Bondi}$ in their Figure 6 for $f_{\rm in}$.\footnote{Note that
+  \citet{Li+2013} use an alpha viscosity prescription with
+  $\alpha=0.01$.  $f_{\rm in}$ would depend on this choice. This
+  uncertainty in $f_{\rm in}$ translates into a systematic uncertainty
+  in the distribution of $n_{18}$.}  With this choice only a third of
+nuclei have $n_{18}>2,000$ and only 6\% have $n_{18}>10^{4}$. Note
+that existing tidal disruption event candidates are unlikely to be in
+the high density tail with either no sign or sign of or very weak AGN
+emission lines (e.g. \citealt{van-Velzen+2011, Arcavi+2014}).
 
 Two potential complications to keep in mind are (i) clumpiness of the
 CNM and (ii) anisotropy. The distributions above are distributions of
@@ -656,8 +666,8 @@ clumps/filaments.  However, while the jet is relativistic the
 light curve of a jet propagating through a clumpy medium will differ
 little from that of a smooth medium with the same average
 density. Even in the late stages when the jet becomes non-relativistic
-clumps will only make a difference when the size of the clumps is
-comparable to the size of the jets {\bf AG include some refs here}.
+clumps will only make a difference if the size of the clumps is
+comparable to the size of the jet {\bf AG include some refs here}.
 
 The cold gas could be distributed anisotropically. For example it could
 be could be concentrated in a ring-like structure. In this scenario,
@@ -701,31 +711,29 @@ material ($\sim 0.5$ cm$^{-3}$).
 \subsection{Analytic Considerations}
 \label{sec:analytic}
 
+The mass of the CNM swept up by a jet is equal to its own rest mass at
+``Sedov'' radius. For our fiducial CNM density profile $n=n_{18}
+\left(r/10^{18}\right)^{-1} {\rm cm}$ this is given by
 
-The mass of CNM swept up by the jet $2\pi\theta_{\rm j}^{2}\int m_p
-n_{\rm cnm}(r) r^{2}dr$ equals its own rest mass $M_{\rm j} = E_{\rm
-  j}/\Gamma_{\rm j}c^{2} \approx \frac{E_{\rm iso}
-  (\theta_j^2/2)}{\Gamma_j c^2} $ at the characteristic (`Sedov')
-radius given by
-n by
 
 \begin{equation}
-r_{\rm sedov} = E_{54}^{1/2} \Gamma_{10}^{-1/2} n_{\rm 18}^{-1/2}\,{\rm pc}, 
+r_{\rm sedov} = E_{54}^{1/2} \Gamma_{10}^{-1/2} n_{\rm 18}^{-1/2}\,{\rm pc}. 
 \end{equation}
 
-where $E_{54}$ is the isotropic equivalent jet energy normalized to
-$10^{54}$ ergs. We use our fiducial CNM density profile $n(r)=n_{18}
-\left(r/10^{18} {\rm cm}\right)^{-1}$.
+\noindent where $E_{54}$ is the isotropic equivalent jet energy
+normalized to $10^{54}$ ergs and $\Gamma_{10}$ is the Lorentz factor
+of the jet normalized to 10.
 
 From the continuity equation, the (co-moving) density of the jet is
 given by (e.g. Uhm \& Beloborodov 2007)
  \begin{align}
    n_{\rm j} =  \frac{L_{\rm j, iso}}{4 \pi r^{2}\Gamma_{\rm
        j}^{2}c^{3}m_p(1 + r \dot{\Gamma_{\rm j}}/c\Gamma_{\rm j}^{3})}
-   \approx  \frac{L_{\rm j, iso}}{4 \pi r^{2}\Gamma_{\rm j}^{2}c^{3}m_p}
+   \approx  \frac{L_{\rm j, iso}}{4 \pi r^{2}\Gamma_{\rm j}^{2}c^{3}m_p},
 \end{align}
-
-where the second term in the denominator is generally negligible as
+%
+where $L_{\rm j, iso}$ is the isotropic equivalent luminosity of the
+jet. The second term in the denominator is generally negligible as
 long as the Lorentz factor of the jet changes slowly
 $\dot{\Gamma}_{\rm j} \ll c\Gamma_{\rm j}^{3}/r$, as can be shown to
 be true at radii $r < r_{\rm sedov}$ as long as $\Gamma_{\rm j}$
@@ -738,56 +746,57 @@ CNM
   f\approx 40\,  L_{\rm j,48} n_{18}^{-1} \Gamma_{10}^{-2} \, \left(\frac{r}{10^{18} {\rm
         cm}}\right)^{-1} 
 \end{equation}
-
+%
 For a given $f$, the Lorentz factor of the shocked material may be
 calculated using the relativistic shock jump condition and pressure
 equality between the forward and reverse shocks. In the
-ultra-relativistic limit
+ultra-relativistic limit 
 
 \begin{equation}
 \Gamma_{\rm sh} \underset{\Gamma_{\rm sh} \gg 1}= \Gamma_{\rm j}\left[1 + 2\Gamma_{\rm j}f^{-1/2}\right]^{-1/2}
 \end{equation}
-
+%
 However, this expression is problematic when the outflow is mildly
 relativistic or non-relativistic. In particular, it gives Lorentz
 factors less than 1. A more general expression for $\Gamma_{\rm sh}$
 can be obtained using equation 3 from
-\citet{Beloborodov&Uhm2006}\footnote{As pointed out by
-  \citet{Beloborodov&Uhm2006}, this expression may still be
-  problematic as it assumes a constant pressure between the forward
-  and reverse shocks.}
+\citet{Beloborodov&Uhm2006}:\footnote{As pointed out by
+  \citet{Beloborodov&Uhm2006}, the assumption pressure equality
+  between the forward and reverse shocks used to derive this
+  expression could be problematic.}
 
 \begin{align}
-&\frac{\Gamma_j^2-1}{\gamma_{43}^2-1} f^{-1}=1\\
-&\gamma_{43}=\Gamma_j \Gamma_{\rm sh} \left(1-\beta_{\rm sh} \beta_j\right).
+&\frac{\Gamma_{\rm j}^2-1}{\Gamma_{43}^2-1} f^{-1}=1\\
+&\Gamma_{43}=\Gamma_{\rm j} \Gamma_{\rm sh} \left(1-\beta_{\rm sh} \beta_j\right),
 \label{eq:gammaShGen}
 \end{align}
-
-We use this expression to find the Lorentz factor when the reverse
-shock crosses the bulk of the ejecta.  At a given snap-shot in time,
-we have the Lorentz factor of the reverse shock (in the lab frame)
+%
+where $\Gamma_{43}$ is the Lorentz of shocked jet material in the
+frame of the un-shocked jet. In the lab frame the velocity of the
+reverse shock is
 
 \begin{equation}
-\Gamma_{\rm rs}=\frac{\beta_{\rm sh}(f)-\beta_{43}(f)/3}{1-\beta_{\rm
+\beta_{\rm rs}=\frac{\beta_{\rm sh}(f)-\beta_{43}(f)/3}{1-\beta_{\rm
     sh}(f) \beta_{43}(f)/3}.
 \end{equation} 
-
+%
 Then it is straightforward for a jet of a given thickness, $\delta$,
-to find the radius where the reverse shock crosses the trailing edge
-of the jet using equation~\eqref{eq:gammaShGen}.
+to find the radius and the Lorentz factor of the shocked material when
+the reverse shock crosses the trailing edge of the jet using
+equation~\eqref{eq:gammaShGen}.
 
-We plot the fraction of the slow component ($\Gamma_j=2$) kinetic
-energy dissipated by the reverse shock as a function of isotropic jet
-luminosity and $n_{18}$ in Fig.~\ref{fig:diss}. For the purposes of
+Fig.~\ref{fig:diss} shows the fraction of the slow component
+($\Gamma_{\rm j}=2$) kinetic energy dissipated by the reverse shock as a
+function of isotropic jet luminosity and $n_{18}$. For the purposes of
 our analytic estimates, we assume a constant luminosity jet, which
-shuts off after time $t_{0}=5 \times 10^{5}$ s. For the numerical
+shuts off after time $5 \times 10^{5}$ s. For the numerical
 calculations described in the subsequent sections, the jet luminosity
-declines as $t^{-5/3}$ after time $t_{0}$ (see equation~\ref{eq:lum}).
+declines as $t^{-5/3}$ after this time (see equation~\ref{eq:lum}).
 
 \begin{figure}
 \includegraphics[width=8cm]{diss.pdf}
 \caption{\label{fig:diss} Fraction of the slow component
-  ($\Gamma_j=2$) kinetic energy dissipated by the reverse shock
+  ($\Gamma_{\rm j}=2$) kinetic energy dissipated by the reverse shock
   vs. the isotropic jet luminosity ($L_{\rm j,iso}$) and $n_{18}$.}
 \end{figure}
 
@@ -828,7 +837,7 @@ components is independent of angle in 1D simulations, but the
 radiative transfer/light curve calculation is sensitive to the jet
 geometry.
 
-Second, we note that, although the sheath is injected in a relatively
+Although the sheath is injected in a relatively
 narrow angular interval, at late stages of the jet evolution the bow
 shock created by its interaction with CNM spans a much larger interval,
 i.e. the slow component becomes almost isotropic \citep[bottom two
@@ -838,20 +847,23 @@ angular size is fixed to the initial one. We note that the stage at
 which the jet becomes ``isotropic'' depends on the CNM density,
 i.e. the denser the CNM, the faster this is expected to happen.
 
-Since the agreement between 1D and 2D models is good for early
-times (when the fast component dominates), we modify only the slow
-component in 1D models. We assume that is spans $[0.1\ {\rm rad},
-\pi/2\ {\rm rad}]$ and lower its $E_{\rm ISO}$ so that the true jet
-energy remains unchanged with respect to the original model:
+Since the agreement between 1D and 2D models is good for early times
+(when the fast component dominates), we modify only the slow component
+in 1D models. We assume that is spans $[0.1\ {\rm rad}, \pi/2\ {\rm
+  rad}]$ and lower its isotropic equivalent energy so that the true
+jet energy remains unchanged with respect to the original model:
+
 \begin{equation}\label{eq:Eiso}
  E_{\rm ISO, new} = E_{\rm ISO} \left(\frac{\cos(0.1) - \cos(0.5)}{\cos(0.1) - \cos(\pi/2)}\right)\approx 0.12 E_{\rm ISO}\, .
 \end{equation}
-
+%
 We assume the same time dependence for the jet luminosity as in
 \citet{Mimica+2015},
+
 \begin{equation}\label{eq:lum}
 L_{\rm j, ISO}(t) = L_{j,0}\max\left[1, (t/t_0)\right]^{-5/3}
 \end{equation}
+%
 where $t_0 = 5\times 10^5$ seconds. Integrating equation~\ref{eq:lum}
 in time from $0$ to $\infty$ would give $E_{\rm ISO}$. Thus,
 $L_{j,0}=0.4\, E_{\rm ISO}/t_0$. 
@@ -872,7 +884,7 @@ We summarize our fiducial jet model in Table~\ref{tab:jetParams}.
   \begin{tabular}{ll}
     \hline
     Fast component\\ 
-    $\Gamma_j$ & 10 \\
+    $\Gamma_{\rm j}$ & 10 \\
     $[\theta_{\rm min}$, $\theta_{\rm max}]$ & [0, 0.1] radians \\
     $E_{\rm ISO}$ & $4 \times 10^{54}$ ergs \\
     $E$ & $2 \times 10^{52}$ ergs\\
@@ -881,7 +893,7 @@ We summarize our fiducial jet model in Table~\ref{tab:jetParams}.
     $L_{j,0}$ & $3.2 \times 10^{48}$ ergs/s\\
     \hline 
     Slow component\\
-    $\Gamma_j$ & 2 \\
+    $\Gamma_{\rm j}$ & 2 \\
     $[\theta_{\rm min}$, $\theta_{\rm max}]$ & [0.1, $\pi/2$] radians \\
     $E_{\rm ISO}$ & $4.7 \times 10^{53}$ ergs \\
     $E$ & $4.7 \times 10^{53}$ ergs\\
@@ -935,6 +947,14 @@ luminosity across our grid:
 &\left(\frac{\nu}{5 {\rm GHz}}\right)^{1.8} {\rm ergs/s}
 \label{eq:peakLum}
 \end{align}
+%
+Remarkably, we find that the peak luminosity is only weakly dependent
+on density across most of the parameter space. In the optically thin
+limit the peak luminosity scales as the density $n^{0.5}$. In our case
+the jet is initially optically thick and then becomes optically thin
+at later times. In fact, the peak of the light curves occurs, when the
+total optical depth of the jet is $\sim 1$. {\bf AG finish. Need to
+  explain why the dependence on density is so weak...}
 
 \begin{figure*}
   \includegraphics[width=8cm]{lp_contours.pdf}
@@ -948,16 +968,6 @@ luminosity across our grid:
   numerical results as dashed lines.}
 \end{figure*}
 
-
-Remarkably, we find that the peak luminosity is only weakly dependent
-on density across most of the parameter space. In the optically thin
-limit the peak luminosity scales as the density $n^{0.5}$. In our case
-the jet is initially optically thick and then becomes optically thin
-at later times. In fact, the peak of the light curves occurs, when the
-total optical depth of the jet is $\sim 1$. {\bf AG finish. Need to
-  explain why the dependence on density is so weak...}
-
-
 We also find the following relation fitting formula for the time of
 peak, $t_p$, 
 
@@ -967,7 +977,7 @@ peak, $t_p$,
  & \left(\frac{\nu}{5 {\rm GHz}}\right)^{-1} n_{18}^{0.35}  {\rm days}
 \label{eq:peakTime}
 \end{align}
-
+%
 Note that the peak time occurs later for larger $n_{18}$, as the
 transition from optically thick to optically thin occurs at later times.
 
@@ -1183,7 +1193,7 @@ are summarized as follows.
   the peak luminosity only weakly dependent on the chosen value of
   $n_{18}$.  For smaller densities the light curves peak earlier in
   time. Based on existing radio upper limits for tidal disruption
-  event candidates, we show Swift 1644-like jet are absent in most TDEs
+  event candidates, we show Swift J1644+57-like jet are absent in most TDEs
   as long as the density at $10^{18}$, $n_{18} \gsim  60$
   cm$^{-3}$. Prompt follow-up in the radio could provide tighter
   constraints on the existence of TDE jets.  
