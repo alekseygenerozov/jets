@@ -412,7 +412,7 @@ consider the effects of the break radius in our analysis.
 \includegraphics[width=8cm]{sedov_radius.pdf}
 \caption{\label{fig:profiles} Steady-state gas density profiles for
   black hole mass $10^{7} \,\Msun$, heating parameter $v_w=600$ km
-  s$^{-1}$, and a cuspy ({\it solid}) or core-like ({\it dashed})
+  s$^{-1}$, and cuspy ({\it solid}) and core-like ({\it dashed})
   stellar density profile. Both profiles go as $r^{-3}$ outside of 25
   pc. Note that we normalize the gas density to the density at
   $10^{18}$ cm ($n_{18}$). For each radius, we indicate the value of
@@ -558,9 +558,9 @@ density.  The accretion rate can be written as
 \end{equation}
 where $n$ is the average density at radius $r$ and $f_{\rm in}$
 represents the fraction of the large scale inflow, which actually
-accretes onto the black hole. If we assume that $r$ is interior to
-the sonic radius, then we can approximate $v$ as the free-fall
-velocity, $v_{\rm ff} = (2 G \Mbh/r)^{1/2}$. Then, 
+accretes onto the black hole. At small radii, the velocity will
+approach the free-fall value. Replacing $v$ with the free-fall
+velocity in equation~\eqref{eq:mdot} gives
 
 \begin{equation}
   \dot{M}_{\bullet} = 1.1\times 10^{-5} \Mbh[,7]^{0.5} f_{\rm in}
@@ -736,7 +736,7 @@ given by (e.g. Uhm \& Beloborodov 2007)
 where $L_{\rm j, iso}$ is the isotropic equivalent luminosity of the
 jet. The second term in the denominator is generally negligible as
 long as the Lorentz factor of the jet changes slowly
-$\dot{\Gamma}_{\rm j} \ll c\Gamma_{\rm j}^{3}/r$, as can be shown to
+($\dot{\Gamma}_{\rm j} \ll c\Gamma_{\rm j}^{3}/r$), as can be shown to
 be true at radii $r < r_{\rm sedov}$ as long as $\Gamma_{\rm j}$
 changes on timescales $\gtrsim t_{\rm j}$.
 
@@ -779,12 +779,13 @@ reverse shock is
 \begin{equation}
 \beta_{\rm rs}=\frac{\beta_{\rm sh}(f)-\beta_{43}(f)/3}{1-\beta_{\rm
     sh}(f) \beta_{43}(f)/3}.
+\label{eq:betars}
 \end{equation} 
 %
-Then it is straightforward for a jet of a given thickness, $\delta$,
-to find the radius and the Lorentz factor of the shocked material when
-the reverse shock crosses the trailing edge of the jet using
-equation~\eqref{eq:gammaShGen}.
+From equations~\eqref{eq:gammaShGen} and ~\eqref{eq:betars} it is
+straightforward to find the radius and the Lorentz factor of the
+shocked material when the reverse shock crosses the trailing edge of
+the jet.
 
 Fig.~\ref{fig:diss} shows the fraction of the slow component
 ($\Gamma_{\rm j}=2$) kinetic energy dissipated by the reverse shock as a
@@ -809,7 +810,7 @@ the resulting synchrotron emission is computed using the same
 procedure described in \citet{Mimica+2015}. We assume the same angular
 Lorentz factor dependence as in previous paper (i.e., $\Gamma = 10$
 for the fast inner core and $\Gamma = 2$ for the slow outer sheath),
-but we introduce a number of modifications regarding the jet energy
+but introduce a number of modifications regarding the jet energy
 when performing 1D simulations.
 
 \subsection{1D vs. 2D Models}
@@ -823,7 +824,7 @@ paper]{Mimica+2015} matches the 2D light curve only at early times,
 when the emission from the inner relativistic jet dominates, while at
 late times, when the emission from the slow outer core dominates, the
 1D model overestimates the emission from the 2D model. In this work we
-found a modification of the 1D model that made its light curves
+found a modification of the 1D model that makes its light curves
 match the 2D results much more closely.
 
 We first summarize the two-component model as presented in
@@ -842,9 +843,9 @@ Although the sheath is injected in a relatively
 narrow angular interval, at late stages of the jet evolution the bow
 shock created by its interaction with CNM spans a much larger interval,
 i.e. the slow component becomes almost isotropic \citep[bottom two
-panels in Fig. 8 in][]{Mimica+2015}. This is the reason for the
-discrepancy with the 1D simulation, because there the slow component
-angular size is fixed to the initial one. We note that the stage at
+panels in Fig. 8 in][]{Mimica+2015}. Thus, the light curves from the
+2D simulations differ from those of the 1D simulations in which the
+angular size of the jet is held fixed. We note that the stage at
 which the jet becomes ``isotropic'' depends on the CNM density,
 i.e. the denser the CNM, the faster this is expected to happen.
 
@@ -876,7 +877,8 @@ agreement is excellent, while for $n_{18}=60$ the 1D models still
 over-predict still over-predict the flux at times after the peak of
 the light curve.
 
-We summarize our fiducial jet model in Table~\ref{tab:jetParams}.
+We summarize our fiducial jet model and our grid of simulations in
+Table~\ref{tab:jetParams}
 
 \begin{table}
 \begin{threeparttable}
@@ -928,18 +930,9 @@ We summarize our fiducial jet model in Table~\ref{tab:jetParams}.
 
 \section{Results}
 \label{sec:results}
-We have computed on-axis radio light curves across a grid of CNM
-densities and jet energies. We use three different values for the
-jet energy ($5 \times 10^{51}$, $5 \times 10^{52}$, and $5 \times
-10^{53}$ ergs) and five different values for $n_{18}$ (2, 11, 60, 345,
-and 2000 cm$^{-3}$). We also compute models for $\epsilon_e=(0.05,\, 0.2)$
-and $\epsilon_b=(0.001,\, 0.005)$, keeping other jet parameters fixed to
-their fiducial values. {\bf AG reorganize table and put this info in}
-
-We show isocontours of the peak time, $t_p$, and the peak luminosity,
-$\nu L_{\nu, p}$, in Fig.~\ref{fig:jetContours} below. We find the
-following analytic formula roughly reproduces the behavior of the peak
-luminosity across our grid:
+Fig.~\ref{fig:jetContours} shows isocontours of the peak time and the
+peak luminosity for on-axis jets. The following equation roughly
+reproduces the behavior of the peak luminosity:
 
 \begin{align}
 \nu L_{\nu, p}=&2.6 \times 10^{41} \left(\frac{E}{5 \times 10^{53}
@@ -949,13 +942,13 @@ luminosity across our grid:
 \label{eq:peakLum}
 \end{align}
 %
-Remarkably, we find that the peak luminosity is only weakly dependent
-on density across most of the parameter space. In the optically thin
-limit the peak luminosity scales as the density $n^{0.5}$. In our case
-the jet is initially optically thick and then becomes optically thin
-at later times. In fact, the peak of the light curves occurs, when the
-total optical depth of the jet is $\sim 1$. {\bf AG finish. Need to
-  explain why the dependence on density is so weak...}
+Remarkably, the peak luminosity is only weakly dependent on density
+across most of the parameter space. In the optically thin limit the
+peak luminosity scales as the density $n^{0.5}$. In our case the jet
+is initially optically thick and then becomes optically thin at later
+times. In fact, the peak of the light curves occurs, when the total
+optical depth of the jet is $\sim 1$. {\bf AG finish. Need to explain
+  why the dependence on density is so weak...}
 
 \begin{figure*}
   \includegraphics[width=8cm]{lp_contours.pdf}
@@ -969,8 +962,8 @@ total optical depth of the jet is $\sim 1$. {\bf AG finish. Need to
   numerical results as dashed lines.}
 \end{figure*}
 
-We also find the following relation fitting formula for the time of
-peak, $t_p$, 
+The following equation roughly reproduces the behavior of the peak
+time:
 
 \begin{align}
   t_p =& 39.5 \left(\frac{E}{5 \times 10^{53} {\rm ergs}}\right)^{0.3}   \left(\frac{\epsilon_e}{0.1}\right)^{0.4}
