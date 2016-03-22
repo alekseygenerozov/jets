@@ -415,9 +415,9 @@ consider the effects of the break radius in our analysis.
   s$^{-1}$, and cuspy ({\it solid}) and core-like ({\it dashed})
   stellar density profile. Both profiles go as $r^{-3}$ outside of 25
   pc. Note that we normalize the gas density to the density at
-  $10^{18}$ cm ($n_{18}$). For each radius, we indicate the value of
-  isotropic equivalent jet energy $E_{52} n_{18}^{1}$, of a $\gamma$=2
-  jet that sweeps up its own mass at that radius.}
+  $10^{18}$ cm ($n_{18}$). Colors mark the Sedov radii of modestly
+  relativistic ($\Gamma=2$) jets with different isotropic equivalent
+  energies. This is where the jet sweeps up its own mass in CNM gas.}
 \end{figure}
 
 
@@ -425,23 +425,23 @@ consider the effects of the break radius in our analysis.
 \subsubsection{Plausible Density Range}
 \label{sec:densAllowed}
 
-We calculate the density at $10^{18}$ cm for stellar populations
+We calculate the $n_{18}$ for stellar populations
 formed via two bursts of star formation, with the older burst
 occurring a Hubble time ago.  Both the young and old stars have the
 same (cuspy) density profile, which implies that the gas density
 profile goes as $r^{-1}$.
 
-For a sufficiently large burst with less than 40 Myr ago, the gas is
-heated by energy from massive star winds.\footnote{Type II supernovae
-  are another important heating source and dominate stellar winds
-  after $\sim$6 Myr \citep{Voss+2009}. However, heating from Type II
-  SNe will be intermittent and is not included here for simplicity.}
-In this case, we can calculate the mass return ($\eta$) and heating
-parameters ($v_w$), using the procedure described in GSM15. Then, the
-density at $10^{18}$ cm, $n_{18}$, can be calculated by using
-equation~\eqref{eq:n182}.
+For a sufficiently large burst occurring less than 40 Myr ago, the gas
+is heated by energy from massive star winds.\footnote{Type II
+  supernovae are another important heating source and dominate stellar
+  winds after $\sim$6 Myr \citep{Voss+2009}. However, heating from
+  Type II SNe will be intermittent and is not included here for
+  simplicity.}  In this case, the mass return ($\eta$) and heating
+parameters ($v_w$), can be calculated using the procedure described in
+appendix C GSM15. Then, the density at $10^{18}$ cm, $n_{18}$, follows
+from equation~\eqref{eq:n182}.
 
-For older stellar populations, heating may come from a several
+For older stellar populations, heating may come from a few
 different sources including Ia Supernovae or AGN feedback {\bf AG also
   unbound debris streams produced in tidal disruption events (see
   \citep{Guillochon+2015a})}. We focus on quiescent phases, where the
@@ -492,17 +492,17 @@ dominated by Ia supernovae and $n_{18}\sim 80$ cm$^{-3}$.
 
 \subsubsection{Thermal properties of gas}
 
-To above estimates correspond to the total gas density
-resulting from stellar wind material, including all phases of gas. In
-the first few Myr after a star burst the injected stellar wind
-material will all be quite hot, with temperature $\gsim 10^{7}$ K due
-to the thermalized wind kinetic energy. For later times, SNe Ia
-provide intermittent heating, but the stellar wind material that
-accumulates on small scales, between successive Ias would be much
-cooler, with temperature $\sim 10^{3}$ K, and would condense into
-clumps. However, as discussed in Section~\ref{sec:empirical}, the
-radio emission from a TDE jet would be quite similar for a clumpy and
-a smooth medium with the same average density.
+To above estimates correspond to the total gas density resulting from
+stellar wind material, including all phases of gas. In the first few
+Myr after a star burst the injected stellar wind material will all be
+quite hot, with temperature $\gsim 10^{7}$ K due to the thermalized
+wind kinetic energy. Later, SNe Ia provide intermittent heating, but
+the stellar wind material that accumulates on small scales, between
+successive Ias would be much cooler, with temperature $\sim 10^{3}$ K,
+and would condense into clumps. However, as discussed in
+Section~\ref{sec:empirical}, the radio emission from a TDE jet would
+be quite similar for a clumpy and a smooth medium with the same
+average density.
 
 
 
@@ -519,19 +519,17 @@ substantial gas density $n_{18}=50$ cm$^{-3}$.
 \begin{figure} 
   \includegraphics[width=8cm]{cnm_plot.pdf}
   \caption{\label{fig:param} Isocontours for the density at $10^{18}$
-    cm (blue lines) for a $10^{7} \, \Msun$ black
-    hole and bursts of star formation forming a fraction, $f_{\rm
-      burst}$, of the stars $t_{\rm burst}$ years ago, with the
-    remaining stars forming a Hubble time ago. We assume
-    that the old and young stars both have a cuspy density profile,
-    which means that the gas density goes as $r^{-1}$.
+    cm (blue lines) for a $10^{7} \, \Msun$ black hole and bursts of
+    star formation forming a fraction, $f_{\rm burst}$, of the stars
+    $t_{\rm burst}$ years ago. The remaining stars formed a Hubble
+    time ago. The old and young stars both have a cuspy density
+    profile, which means that the gas density goes as $r^{-1}$.
     Hatched areas indicate regions of parameter space, where massive
     stars ($\gsim 15 \, \Msun$) dominate the gas heating rate, but we
     would expect less than one (doubly hatched) or less than ten
     (singly hatched) massive stars inside the nominal stagnation
-    radius (equation~\ref{eq:rs}). In these regions of parameter
-    space discreteness effects not captured by our formalism become
-    important.}
+    radius (equation~\ref{eq:rs}). In these regions of parameter space
+    discreteness effects not captured by our formalism are important.}
 \end{figure}
 
 
@@ -587,7 +585,7 @@ adopt this conversion and assume that the bolometric correction is
 independent of ${\rm L[0III]}/\Mbh$.
 
 Converting this distribution Eddington ratios into a distribution of
-gas densities, requires a prescription for the radiative efficiency.  For
+gas densities requires a prescription for the radiative efficiency.  For
 low accretion rates, we refer to \citet{Sharma+2007}, who estimate the
 radiative efficiency of low luminosity AGN using MHD shearing box
 simulations.  They find (see their Fig.~6)
@@ -738,7 +736,8 @@ jet. The second term in the denominator is generally negligible as
 long as the Lorentz factor of the jet changes slowly
 ($\dot{\Gamma}_{\rm j} \ll c\Gamma_{\rm j}^{3}/r$), as can be shown to
 be true at radii $r < r_{\rm sedov}$ as long as $\Gamma_{\rm j}$
-changes on timescales $\gtrsim t_{\rm j}$.
+changes on timescales $\gtrsim t_{\rm j}$ ({\bf AG: What is $t_j$?
+  Time for which jet? Replace $t_0$ later on w/ $t_j$?}).
 
 A critical parameter is the ratio of the density of the jet to the
 CNM
@@ -764,7 +763,7 @@ can be obtained using equation 3 from
 \citet{Beloborodov&Uhm2006}:\footnote{As pointed out by
   \citet{Beloborodov&Uhm2006}, the assumption pressure equality
   between the forward and reverse shocks used to derive this
-  expression could be problematic.}
+  expression could be inaccurate.}
 
 \begin{align}
 &\frac{\Gamma_{\rm j}^2-1}{\Gamma_{43}^2-1} f^{-1}=1\\
@@ -877,37 +876,41 @@ agreement is excellent, while for $n_{18}=60$ the 1D models still
 over-predict still over-predict the flux at times after the peak of
 the light curve.
 
-We summarize our fiducial jet model and our grid of simulations in
-Table~\ref{tab:jetParams}
+% We summarize our fiducial jet model and our grid of simulations in
+% Table~\ref{tab:jetParams}
 
 \begin{table}
 \begin{threeparttable}
-  \caption{\label{tab:jetParams}Fiducial parameters for our jet
-    model.}
-  \begin{tabular}{ll}
+  \caption{\label{tab:jetParams} Summary of parameters for grid of on
+    axis jet simulations.}
+  \begin{tabular}{lll}
     \hline
-    Fast component\\ 
-    $\Gamma_{\rm j}$ & 10 \\
-    $[\theta_{\rm min}$, $\theta_{\rm max}]$ & [0, 0.1] radians \\
-    $E_{\rm ISO}$ & $4 \times 10^{54}$ ergs \\
+    {Fast component} & Fiducial value & Other values \\ 
+    $\Gamma_{\rm j}$ & 10 &\\
+    $[\theta_{\rm min}$, $\theta_{\rm max}]$ & [0, 0.1] radians & \\
+    $E_{\rm ISO}/10^{54} {\,\rm erg}$ & 4  & 0.04, 0.4\\
     $E$ & $2 \times 10^{52}$ ergs\\
-    $L_{\rm j,ISO}$ & $L_{j,0} \max\left[1, (t/t_0)\right]^{-5/3}$  \\
-    $t_0$ & $5\times 10^5$ s\\
-    $L_{j,0}$ & $3.2 \times 10^{48}$ ergs/s\\
+    % $L_{\rm j,ISO}$ & $L_{j,0} \max\left[1, (t/t_0)\right]^{-5/3}$  \\
+    % $t_0$ & $5\times 10^5$ s &\\
+    % $L_{j,0}$ & $3.2 \times 10^{48}$ erg/s & \\
     \hline 
     Slow component\\
     $\Gamma_{\rm j}$ & 2 \\
-    $[\theta_{\rm min}$, $\theta_{\rm max}]$ & [0.1, $\pi/2$] radians \\
-    $E_{\rm ISO}$ & $4.7 \times 10^{53}$ ergs \\
-    $E$ & $4.7 \times 10^{53}$ ergs\\
-    $L_{\rm j, ISO}$ & $L_{j,0} \max\left[1, (t/t_0)\right]^{-5/3}$  \\
-    $t_0$ & $5\times 10^5$ s\\
-    $L_{j,0}$ & $3.8 \times 10^{47}$ ergs/s\\
+    $[\theta_{\rm min}$, $\theta_{\rm max}]$ & [0.1, $\pi/2$] radians
+    & \\
+    $E_{\rm ISO}/10^{54} {\rm erg}$ & $4.7$ & 0.047, 0.47 \\
+    $E$ & $4.7 \times 10^{53}$ erg & \\
+    % $L_{\rm j, ISO}$ & $L_{j,0} \max\left[1, (t/t_0)\right]^{-5/3}$ & \\
+    % $t_0$ & $5\times 10^5$ s & \\
+    % $L_{j,0}$ & $3.8 \times 10^{47}$ erg/s & \\
     \hline
     Micro-physical parameters\\
-    $\epsilon_e$ & 0.1\\
-    $\epsilon_b$ & 0.002\\
+    $\epsilon_e$ & 0.1 &  0.05, 0.2\\
+    $\epsilon_b$ & 0.002 & 0.001, 0.005\\
     $p$ & 2.3\\
+    \hline 
+    Nuclear gas density \\
+    $n_{18}$ & 60 & 2, 11, 345, 2000
   \end{tabular}
 % \begin{tablenotes}
 % \item $^{\dagger}$  Additional values of physical parameters we tried.
@@ -920,16 +923,24 @@ Table~\ref{tab:jetParams}
 \includegraphics[width=16cm]{1D_2D.pdf}
 \caption{\label{fig:1D2DB} Comparison of 1D and 2D light curves for
   $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for frequencies of 1
-  GHz (left) and 5 GHz (right) and an observer angle of 0.8 radians
-  to the jet axis. We assume an $n\propto r^{-1}$ density profile for
+  GHz (left) and 5 GHz (right) and an observer angle of 0.8 radians to
+  the jet axis. We assume that the gas density $n\propto r^{-1}$ for
   $n_{18}=2000$, but take $n\propto r^{-1.5}$ for $n_{18}=60$ for
   computational convenience--this model was previously computed in
-  \citet{Mimica+2015} and 1D results suggest that the density slope would
-  have minimal impact on the results (see $\S$~\ref{sec:profileComp})}.
+  \citet{Mimica+2015} and 1D results suggest that the density slope
+  would have minimal impact on the results (see
+  $\S$~\ref{sec:profileComp})}.
 \end{figure*}
 
 \section{Results}
 \label{sec:results}
+We calculate light curves for a grid of on-axis jet simulations, with
+five different values of $n_{18}$ (2, 11, 60, 345, and 2000 cm$^{-3}$)
+and three different values of the jet energy ($5\times 10^{51}$,
+$5\times 10^{52}$, $5\times 10^{53}$ erg). The grid is summarized in
+Table~\ref{tab:jetParams}.
+
+
 Fig.~\ref{fig:jetContours} shows isocontours of the peak time and the
 peak luminosity for on-axis jets. The following equation roughly
 reproduces the behavior of the peak luminosity:
@@ -956,10 +967,10 @@ optical depth of the jet is $\sim 1$. {\bf AG finish. Need to explain
   \caption{\label{fig:jetContours} Isocontours of peak radio
     luminosity and peak time for a jet of energy $E$ interacting with
     nuclear gas with density profile $n=n_{18}
-    \left(r/10^{18}\right)^{-1}$ (\textit{solid lines}). The jet model is described in 
-  $\S$~\ref{sec:2D}. We also see analytic fits (see
-  equations~\ref{eq:peakTime} and~\ref{eq:peakLum}) to the
-  numerical results as dashed lines.}
+    \left(r/10^{18}\right)^{-1}$ (\textit{solid lines}). The jet model
+    is described in $\S$~\ref{sec:2D}. We also see analytic fits (see
+    equations~\ref{eq:peakTime} and~\ref{eq:peakLum}) to the numerical
+    results as dashed lines.}
 \end{figure*}
 
 The following equation roughly reproduces the behavior of the peak
@@ -982,11 +993,11 @@ component is more important for earlier times, higher frequencies, and
 lower densities. 
 
 We show the relative contributions of the fast and slow components to
-the 5 GHz light curve of a $5 \times 10^{53}$ erg jet going through
-different gas densities. For $n_{18}=2000$, the slow component
-dominates for nearly all times.  For $n_{18}=2$, the fast component
-dominates at early times and at the peak of the light curve, while the
-slow component dominates after $\sim$1 year.
+the 5 GHz light curve of a $5 \times 10^{53}$ erg jet for different
+ambient gas densities. For $n_{18}=2000$, the slow component dominates
+for nearly all times.  For $n_{18}=2$, the fast component dominates at
+early times and at the peak of the light curve, while the slow
+component dominates after $\sim$1 year.
 
 \begin{figure}
 \includegraphics[width=8cm]{components.pdf}
