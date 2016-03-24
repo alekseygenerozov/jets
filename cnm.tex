@@ -705,24 +705,40 @@ material ($\sim 0.5$ cm$^{-3}$).
 
 
 
-\section{TDE jets}
+\section{Analytic considerations}
 \label{sec:jet}
 
-\subsection{Analytic Considerations}
+\subsection{Dynamics}
 \label{sec:analytic}
 
 The mass of the CNM swept up by a jet is equal to its own rest mass at
-``Sedov'' radius. For our fiducial CNM density profile $n=n_{18}
-\left(r/10^{18}\right)^{-1} {\rm cm}$ this is given by
+``Sedov'' radius. For a power law gas density profile, $n= n_0 \left(r/r_0\right)^{-k}$
+
+\begin{equation}
+  r_{\rm dec} = r_0 \left( \frac{E(3-k)}{4\pi n_{0}
+      \Gamma m_{\rm p} c^2 r_0^3} \right)^{1/(3-k)}, 
+  \label{eq:rdec}
+\end{equation}
+%
+where $E$ and $\Gamma$ are the isotropic equivalent energy and Lorentz
+factor of the jet. The jet reaches this radius at this radius at the
+deceleration time, given by
+
+\begin{align}
+ t_{\rm dec}= &c/r_{\rm dec} \nonumber\\
+ \approx & \left(\frac{E}{10^{52} {\rm erg}}\right)^{1/(3-k)}
+ n_0^{-1/(3-k)} \Gamma^{-1/(3-k)}{\rm year}
+ \label{eq:tdec}
+\end{align}
+%
+For our fiducial CNM density profile $n=n_{18}\left(r/10^{18}\right)^{-1} {\rm cm}$
 
 
 \begin{equation}
 r_{\rm sedov} = E_{54}^{1/2} \Gamma_{10}^{-1/2} n_{\rm 18}^{-1/2}\,{\rm pc}. 
 \end{equation}
 
-\noindent where $E_{54}$ is the isotropic equivalent jet energy
-normalized to $10^{54}$ ergs and $\Gamma_{10}$ is the Lorentz factor
-of the jet normalized to 10.
+\noindent where $E_{54}=E/(10^{54} {\rm erg})$and $\Gamma_{10}=\Gamma/10$.
 
 From the continuity equation, the (co-moving) density of the jet is
 given by (e.g. Uhm \& Beloborodov 2007)
@@ -802,7 +818,107 @@ declines as $t^{-5/3}$ after this time (see equation~\ref{eq:lum}).
   vs. the isotropic jet luminosity ($L_{\rm j,iso}$) and $n_{18}$.}
 \end{figure}
 
-\subsection{Jet Models}
+\subsection{Peak Luminosities and times}
+% The deceleration time will correspond to the peak of the light curve,
+% if the jet {\bf AG forward shock} is optically thin at this
+% time. Otherwise, if the jet is optically thick, the peak will occur
+% after the deceleration time, when the self-absorption frequency
+% crosses the observer's band.
+
+\citet{Leventis+2012} present analytic scaling relations for the
+synchrotron flux of a spherical blast wave propagating through a
+medium with a power law density profile, $n\propto r^{-k}$ (this is a
+generalization of \citealt{Nakar&Piran2011} who derive scalings for a
+blast wave propagating through a constant density medium). It is very
+important to take synchrotron self-absorption into account,
+particularly for high ambient gas densities. For the late stage
+Newtonian evolution of the jet, the spectrum will be self-absorbed
+for frequencies below 
+
+\begin{align}
+  \nu_{\rm sa}=&C_1(p, k) E_{54}^{\frac{10 p-k p -6 k}{2 (4+p) (5-k)}} n_{18}^{\frac{30 - 5 p}{2 (4 + p) (5 - k)}}
+  \epsilon_e^{\frac{2 (p-1)}{4+p}} \epsilon_b^{\frac{p+2}{2 (4+p)}}\nonumber\\
+  &t^{\frac{10 - 8 k - 15 p + 4 k p}{(4 + p) (5 - k)}}, 
+\label{eq:nuSa} 
+\end{align}
+%
+where $p$, $\epsilon_e$, and $\epsilon_b$ are the standard parameters
+describing the microphysics of the shocked electrons, $E_{54}$ is the
+blast wave energy in units of $10^{54}$ erg, and $C_1(p, k)$ is an
+overall normalization factor.  Note that equation~\eqref{eq:nuSa}
+assumes that self-absorption frequency is greater than the synchrotron
+peak frequency
+
+\begin{equation}
+\nu_m=C_2(p, k) E_{54}^{\frac{10-k}{2 (5-k)}} n_{18}^{-\frac{5}{2
+    (5-k)}}  \epsilon_e^2  \epsilon_b^{1/2}  t^{\frac{4 k-15}{5-k}}.
+\end{equation}
+%
+The observing frequencies considered here ($\geq 1$ GHz), are also
+greater than $\nu_m$. The peak of the light curve will occur at the
+deceleration time (equation~\ref{eq:tdec}) if the self-absorption
+frequency is below the observing band then (``Case 1''). Otherwise, it
+will occur after the deceleration time, when the self-absorption
+frequency crosses through the observing band (``Case 2''). The peak
+time for these two cases is
+
+\begin{align}
+t_{\rm peak}=
+\begin{cases}
+  t_{\rm dec}\approx \left(100 \, E_{54}\right)^{1/(3-k)}
+  n_0^{-1/(3-k)} {\rm year} & {\rm Case\, 1}\\\\
+  C_1(p, k)^{-\frac{(5 - k) (4 + p)}{10 - 8 k - 15 p + 4 k
+      p}}E_{54}^{-\frac{-k p-6 k+10 p}{2 (4 k p-8 k-15 p+10)}}\\
+  \times n_{18}^{-\frac{30-5 p}{2 (4 k p-8 k-15 p+10)}} \nu_{\rm
+    obs}^{\frac{(5-k) (p+4)}{4 k p-8 k-15 p+10}}
+  \epsilon_b^{-\frac{(5-k) (p+2)}{2 (4 k p-8 k-15 p+10)}}\\
+  \times \epsilon_e^{-\frac{2 (5-k) (p-1)}{4 k p-8 k-15 p+10}} & {\rm
+    Case\, 2}
+\end{cases}
+\label{eq:tpeak}
+\end{align}
+%
+Note that we assume the blast wave is modestly relativistic with
+velocity comparable to $c$ and a Lorentz factor of order unity. The
+unabsorbed flux at the peak frequency is given by
+
+\begin{align}
+  F_{\nu_m} =  C_3(p, k) E_{54}^{\frac{8-3 k}{2 (5-k)}}
+  n_{18}^{\frac{7}{2 (5-k)}} \epsilon_b^{1/2} t^{\frac{3-2 k}{5-k}}
+\label{eq:Fnum}
+\end{align}
+%
+Extrapolating to the observer frequency gives 
+
+\begin{align}
+  \nu_{\rm obs} F_{\rm peak} (\nu_{\rm obs}) &= \nu_{\rm obs}   F_{\nu_m}
+  \left(\frac{\nu_{\rm obs}}{\nu_m}\right)^{-(p-1)/2}.
+  \label{eq:Fpeak1}
+\end{align}
+%
+Then from equations~\eqref{eq:tpeak}, ~\eqref{eq:Fnum},
+and~\eqref{eq:Fpeak1}
+
+\begin{align}
+  \nu_{\rm obs} F_{\rm peak} (\nu_{\rm obs}) \propto
+  \begin{cases}
+    E_{54}^{\frac{k (p+5)-12}{4 (k-3)}} n_{18}^{-\frac{3 (p+1)}{4
+        (k-3)}} \nu_{\rm obs}^{\frac{-(p-1)}{2}}
+    \epsilon_b^{\frac{p+1}{4}} \epsilon_e^{p-1} & {\rm Case \,
+      1}\\\\
+    E_{54}^{\frac{k(-(p-2))-10 p+3}{4 k (p-2)-15 p+10}} \\ \times
+    n_{18}^{\frac{11 (p-2)}{4 k (p-2)-15 p+10}} \nu_{\rm
+      obs}^{\frac{14 k (p-2)-47 p+57}{4 k (p-2)-15 p+10}} \\ \times
+    \epsilon_b^{\frac{k (-(p-2))+p-8}{4 k(p-2)-15 p+10}}
+    \epsilon_e^{-\frac{11 (p-1)}{4 k (p-2)-15p+10}} & {\rm Case \, 2}
+  \end{cases}
+\end{align}
+
+
+
+
+
+\section{Jet Models}
 \label{sec:numerical}
 
 The jet-CNM interaction is simulated in one and two-dimensions, and
