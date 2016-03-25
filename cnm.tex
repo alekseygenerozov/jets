@@ -198,7 +198,9 @@ the gas density in most galactic nuclei lie within a similar range.
 As a second component of this paper, in $\S\ref{sec:jet}$ we explore
 the expected synchrotron emission from {\it Swift} J1644+57-like
 across the allowed range of CNM conditions.  We start in
-$\S\ref{sec:analytic}$ with analytic conditions.  Then in
+$\S\ref{sec:analytic}$ with analytic conditions. We also present
+analytic scaling relations for the time of peak and peak flux of the
+radio light curve in Appendix~\ref{app:analyt}.  Then in
 $\S\ref{sec:numerical}$ use both 1D and 2D hydrodynamic models to
 simulate the jet propagating through the CNM and compare the results
 in $\S\ref{sec:2D}$. In $\S\ref{sec:results}$ we show radio light
@@ -212,8 +214,9 @@ $\S\ref{sec:conc}$.
 
 In this section we place constraints on the radial profile of the gas
 density in galactic nuclei. First, we determine the possible range of
-densities resulting from mass injection by stellar winds. Then we use
-empirical dis
+densities resulting from mass loss by stellar winds. Then we convert
+empirical distributions for black hole luminosities into distributions
+of nuclear gas densities.
 
 \subsection{Analytic Constraints on CNM Density}
 
@@ -818,105 +821,6 @@ declines as $t^{-5/3}$ after this time (see equation~\ref{eq:lum}).
   vs. the isotropic jet luminosity ($L_{\rm j,iso}$) and $n_{18}$.}
 \end{figure}
 
-\subsection{Peak Luminosities and times}
-% The deceleration time will correspond to the peak of the light curve,
-% if the jet {\bf AG forward shock} is optically thin at this
-% time. Otherwise, if the jet is optically thick, the peak will occur
-% after the deceleration time, when the self-absorption frequency
-% crosses the observer's band.
-
-\citet{Leventis+2012} present analytic scaling relations for the
-synchrotron flux of a spherical blast wave propagating through a
-medium with a power law density profile, $n\propto r^{-k}$ (this is a
-generalization of \citealt{Nakar&Piran2011} who derive scalings for a
-blast wave propagating through a constant density medium). It is very
-important to take synchrotron self-absorption into account,
-particularly for high ambient gas densities. For the late stage
-Newtonian evolution of the jet, the spectrum will be self-absorbed
-for frequencies below 
-
-\begin{align}
-  \nu_{\rm sa}=&C_1(p, k) E_{54}^{\frac{10 p-k p -6 k}{2 (4+p) (5-k)}} n_{18}^{\frac{30 - 5 p}{2 (4 + p) (5 - k)}}
-  \epsilon_e^{\frac{2 (p-1)}{4+p}} \epsilon_b^{\frac{p+2}{2 (4+p)}}\nonumber\\
-  &t^{\frac{10 - 8 k - 15 p + 4 k p}{(4 + p) (5 - k)}}, 
-\label{eq:nuSa} 
-\end{align}
-%
-where $p$, $\epsilon_e$, and $\epsilon_b$ are the standard parameters
-describing the microphysics of the shocked electrons, $E_{54}$ is the
-blast wave energy in units of $10^{54}$ erg, and $C_1(p, k)$ is an
-overall normalization factor.  Note that equation~\eqref{eq:nuSa}
-assumes that self-absorption frequency is greater than the synchrotron
-peak frequency
-
-\begin{equation}
-\nu_m=C_2(p, k) E_{54}^{\frac{10-k}{2 (5-k)}} n_{18}^{-\frac{5}{2
-    (5-k)}}  \epsilon_e^2  \epsilon_b^{1/2}  t^{\frac{4 k-15}{5-k}}.
-\end{equation}
-%
-The observing frequencies considered here ($\geq 1$ GHz), are also
-greater than $\nu_m$. The peak of the light curve will occur at the
-deceleration time (equation~\ref{eq:tdec}) if the self-absorption
-frequency is below the observing band then (``Case 1''). Otherwise, it
-will occur after the deceleration time, when the self-absorption
-frequency crosses through the observing band (``Case 2''). The peak
-time for these two cases is
-
-\begin{align}
-t_{\rm peak}=
-\begin{cases}
-  t_{\rm dec}\approx \left(100 \, E_{54}\right)^{1/(3-k)}
-  n_0^{-1/(3-k)} {\rm year} & {\rm Case\, 1}\\\\
-  C_1(p, k)^{-\frac{(5 - k) (4 + p)}{10 - 8 k - 15 p + 4 k
-      p}}E_{54}^{-\frac{-k p-6 k+10 p}{2 (4 k p-8 k-15 p+10)}}\\
-  \times n_{18}^{-\frac{30-5 p}{2 (4 k p-8 k-15 p+10)}} \nu_{\rm
-    obs}^{\frac{(5-k) (p+4)}{4 k p-8 k-15 p+10}}
-  \epsilon_b^{-\frac{(5-k) (p+2)}{2 (4 k p-8 k-15 p+10)}}\\
-  \times \epsilon_e^{-\frac{2 (5-k) (p-1)}{4 k p-8 k-15 p+10}} & {\rm
-    Case\, 2}
-\end{cases}
-\label{eq:tpeak}
-\end{align}
-%
-Note that we assume the blast wave is modestly relativistic with
-velocity comparable to $c$ and a Lorentz factor of order unity. The
-unabsorbed flux at the peak frequency is given by
-
-\begin{align}
-  F_{\nu_m} =  C_3(p, k) E_{54}^{\frac{8-3 k}{2 (5-k)}}
-  n_{18}^{\frac{7}{2 (5-k)}} \epsilon_b^{1/2} t^{\frac{3-2 k}{5-k}}
-\label{eq:Fnum}
-\end{align}
-%
-Extrapolating to the observer frequency gives 
-
-\begin{align}
-  \nu_{\rm obs} F_{\rm peak} (\nu_{\rm obs}) &= \nu_{\rm obs}   F_{\nu_m}
-  \left(\frac{\nu_{\rm obs}}{\nu_m}\right)^{-(p-1)/2}.
-  \label{eq:Fpeak1}
-\end{align}
-%
-Then from equations~\eqref{eq:tpeak}, ~\eqref{eq:Fnum},
-and~\eqref{eq:Fpeak1}
-
-\begin{align}
-  \nu_{\rm obs} F_{\rm peak} (\nu_{\rm obs}) \propto
-  \begin{cases}
-    E_{54}^{\frac{k (p+5)-12}{4 (k-3)}} n_{18}^{-\frac{3 (p+1)}{4
-        (k-3)}} \nu_{\rm obs}^{\frac{3-p}{2}}
-    \epsilon_b^{\frac{p+1}{4}} \epsilon_e^{p-1} & {\rm Case \,
-      1}\\\\
-    E_{54}^{\frac{k(-(p-2))-10 p+3}{4 k (p-2)-15 p+10}} \\ \times
-    n_{18}^{\frac{11 (p-2)}{4 k (p-2)-15 p+10}} \nu_{\rm
-      obs}^{\frac{14 k (p-2)-47 p+57}{4 k (p-2)-15 p+10}} \\ \times
-    \epsilon_b^{\frac{k (-(p-2))+p-8}{4 k(p-2)-15 p+10}}
-    \epsilon_e^{-\frac{11 (p-1)}{4 k (p-2)-15p+10}} & {\rm Case \, 2}
-  \end{cases}
-\end{align}
-
-
-
-
 
 \section{Jet Models}
 \label{sec:numerical}
@@ -1000,7 +904,7 @@ the light curve.
 \begin{threeparttable}
   \caption{\label{tab:jetParams} Summary of parameters for grid of on
     axis jet simulations.}
-  \begin{tabular}{lll}
+  \begin{tabular*}{0.95\columnwidth}{lll}
     \hline
     {Fast component} & Fiducial value & Other values \\ 
     $\Gamma_{\rm j}$ & 10 &\\
@@ -1028,7 +932,7 @@ the light curve.
     \hline 
     Nuclear gas density \\
     $n_{18}$ & 60 & 2, 11, 345, 2000
-  \end{tabular}
+  \end{tabular*}
 % \begin{tablenotes}
 % \item $^{\dagger}$  Additional values of physical parameters we tried.
 % \end{tablenotes}
@@ -1057,64 +961,23 @@ and three different values of the jet energy ($5\times 10^{51}$,
 $5\times 10^{52}$, $5\times 10^{53}$ erg). The grid is summarized in
 Table~\ref{tab:jetParams}.
 
+The left-hand side of Fig.~\ref{fig:jetContours} shows contours of the
+total peak luminosity (including both the fast core and slow sheath)
+across this grid, as well as contours of the peak luminosity of just
+the slow sheath. In general, the slow component is more important for
+higher densities and lower frequencies.  This is further illustrated
+in Fig~\ref{fig:components}, which shows the relative contributions of
+the fast and slow components to the 5 GHz light curve of a $5 \times
+10^{53}$ erg jet for different ambient gas densities. For
+$n_{18}=2000$, the slow component dominates for nearly all times.  For
+$n_{18}=2$, the fast component dominates at early times and at the
+peak of the light curve, while the slow component dominates after
+$\sim$1 year.
 
-Fig.~\ref{fig:jetContours} shows isocontours of the peak time and the
-peak luminosity for on-axis jets. The following equation roughly
-reproduces the behavior of the peak luminosity across our grid:
-
-\begin{align}
-\nu L_{\nu, p}=&2.6 \times 10^{41} \left(\frac{E}{5 \times 10^{53}
-    {\rm ergs}}\right)^{0.9} \left(\frac{\epsilon_e}{0.1}\right)^{0.6} \left(\frac{\epsilon_b}{0.002}\right)^{0.3}
-\nonumber\\
-&\left(\frac{\nu_{\rm obs}}{5 {\rm GHz}}\right)^{1.8} {\rm ergs/s}
-\label{eq:peakLum}
-\end{align}
-%
-Remarkably, the peak luminosity is only weakly dependent on density
-across most of the parameter space. In the optically thin limit the
-peak luminosity scales as the density $n^{0.5}$. In our case the jet
-is initially optically thick and then becomes optically thin at later
-times. In fact, the peak of the light curves occurs, when the total
-optical depth of the jet is $\sim 1$. {\bf AG finish. Need to explain
-  why the dependence on density is so weak...}
-
-\begin{figure*}
-  \includegraphics[width=8cm]{lp_contours.pdf}
-  \includegraphics[width=8cm]{tp_contours.pdf}
-  \caption{\label{fig:jetContours} Isocontours of peak radio
-    luminosity and peak time for a jet of energy $E$ interacting with
-    nuclear gas with density profile $n=n_{18}
-    \left(r/10^{18}\right)^{-1}$ (\textit{solid lines}). The jet model
-    is described in $\S$~\ref{sec:2D}. We also see analytic fits (see
-    equations~\ref{eq:peakTime} and~\ref{eq:peakLum}) to the numerical
-    results as dashed lines.}
-\end{figure*}
-
-The following equation roughly reproduces the behavior of the peak
-time:
-
-\begin{align}
-  t_p =& 39.5 \left(\frac{E}{5 \times 10^{53} {\rm ergs}}\right)^{0.3}   \left(\frac{\epsilon_e}{0.1}\right)^{0.4}
-  \left(\frac{\epsilon_b}{0.002}\right)^{0.4}\nonumber\\
- & \left(\frac{\nu}{5 {\rm GHz}}\right)^{-1} n_{18}^{0.35}  {\rm days}
-\label{eq:peakTime}
-\end{align}
-%
-Note that the peak time occurs later for larger $n_{18}$, as the
-transition from optically thick to optically thin occurs at later times.
-
-\subsection{Emission by components}
-Our radio light curves include contributions from both the fast
-$\Gamma=10$ core and the slow $\Gamma=2$ sheath. In general, the fast
-component is more important for earlier times, higher frequencies, and
-lower densities. 
-
-We show the relative contributions of the fast and slow components to
-the 5 GHz light curve of a $5 \times 10^{53}$ erg jet for different
-ambient gas densities. For $n_{18}=2000$, the slow component dominates
-for nearly all times.  For $n_{18}=2$, the fast component dominates at
-early times and at the peak of the light curve, while the slow
-component dominates after $\sim$1 year.
+Overall, the peak luminosity of the slow component falls off sharply
+at low densities and high frequencies. However, the fast component
+compensates for this decline, so that the total peak luminosity is
+very weakly dependent on density across the entire grid.
 
 \begin{figure}
 \includegraphics[width=8cm]{components.pdf}
@@ -1124,10 +987,78 @@ component dominates after $\sim$1 year.
   (\textit{bottom}).}
 \end{figure}
 
-We don't include emission from the reverse
-shock. Generally, we expect it would be either self-absorbed or
-absorbed by the forward shock. However, emission from the reverse
-shock may be important for \textbf{...AG flesh out} 
+% The right-hand side of Fig.~\ref{fig:jetContours} shows a comparison
+% between the analytic scaling relation for the peak luminosity
+% (equation~\ref{eq:peakLumGen}), and the numerical results for the
+% slow component. 
+
+The dependence of slow component peak luminosity on jet parameters and
+nuclear gas density can be calculated analytically (see
+equation~\ref{eq:peakLumGen}). Substituting in our fiducial values for
+power law slopes of the gas density profile and energy distribution of
+accelerated electrons ($p$) gives
+
+\begin{align}
+\nu L_{\nu, p}&=
+\begin{cases}
+  A_1 \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.59}
+  \left(\frac{\epsilon_e}{0.1}\right)^{1.3}
+  \left(\frac{\epsilon_b}{0.002}\right)^{0.825}\\
+  \left(\frac{\nu_{\rm obs}}{5 {\rm GHz}}\right)^{0.35} n_{18}^{1.24} {\rm ergs/s} & {\rm Case \,1}\\\\
+  A_2 \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.87}
+  \left(\frac{\epsilon_e}{0.1}\right)^{0.61}
+  \left(\frac{\epsilon_b}{0.002}\right)^{0.26}\\
+  \left(\frac{\nu_{\rm obs}}{5 {\rm GHz}}\right)^{2.01} n_{18}^{-0.14}
+  {\rm ergs/s} & {\rm Case \,2}
+\end{cases}
+\label{eq:peakLum}
+\end{align}
+%
+where $A_1$ and $A_2$ are overall normalization constants.  Case 1
+would be relevant for a low density medium, in which the jet is
+optically thin at the deceleration time. In this case, the peak flux
+is quite sensitive to density. Case 2 would be relevant for a high
+density medium, in which the jet is optically thick at the
+deceleration time. In this case, the peak flux is only weakly
+dependent on the ambient gas density. This is qualitatively consistent
+with the numerical results for the slow component in
+Fig.~\ref{fig:jetContours}.
+
+The right hand side of Fig.~\ref{fig:jetContours} shows comparisons of
+the numerical results for the slow component with the results of
+equation~\eqref{eq:peakLum}, with $A_1=7.6\times 10^{39}$ and $A_2=1.7
+\times 10^{41}$ to match the results for low and high nuclear gas
+densities respectively.
+
+
+
+
+\begin{figure*}
+  \includegraphics[width=16cm]{lp_contours_new.pdf}
+  \caption{\label{fig:jetContours} {\it {Left:}} Thick solid lines
+    show peak luminosity as a function of jet energy and density at
+    $10^{18}$ cm for our fiducial gas density profile, $n\propto
+    r^{-1}$. Thin lines show contours of peak luminosity for the slow
+    component of the jet (see~\ref{sec:2D}). {\it Right:} Analytic
+    scaling for the peak luminosity (equation~\ref{eq:peakLum})
+    compared to the numerical results for the slow component.}
+\end{figure*}
+
+% The following equation roughly reproduces the behavior of the peak
+% time:
+
+% \begin{align}
+%   t_p =& 39.5 \left(\frac{E}{5 \times 10^{53} {\rm ergs}}\right)^{0.3}   \left(\frac{\epsilon_e}{0.1}\right)^{0.4}
+%   \left(\frac{\epsilon_b}{0.002}\right)^{0.4}\nonumber\\
+%  & \left(\frac{\nu}{5 {\rm GHz}}\right)^{-1} n_{18}^{0.35}  {\rm days}
+% \label{eq:peakTime}
+% \end{align}
+% %
+% Note that the peak time occurs later for larger $n_{18}$, as the
+% transition from optically thick to optically thin occurs at later times.
+
+%\subsection{Emission by components}
+
 
 \subsection{Comparison with radio detections and upper limits.}
 
@@ -1154,7 +1085,7 @@ we can constrain the energy of the jet to be
 
 \begin{equation}
 E\lsim 7.6 \times 10^{48} \left(\frac{S}{50 \,\mu{\rm Jy}}\right)^{1.1}
-  \left(\frac{d}{200 \,{\rm Mpc}}\right)^{2.2} {\rm ergs}
+  \left(\frac{d}{200 \,{\rm Mpc}}\right)^{2.2} {\rm ergs}'
 \end{equation}
 
 
@@ -1184,13 +1115,13 @@ E\lsim 7.6 \times 10^{48} \left(\frac{S}{50 \,\mu{\rm Jy}}\right)^{1.1}
 \end{figure*}
 
 \subsection{Effects of viewing angle}
-We show a comparison off and on-axis light curves in
-Fig.~\ref{fig:onOff}.  For $n_{18}=2000$ the light curves differ
-little.  For $n_{18}=60$ off-axis luminosity is lower by a factor of a few
-before and near the peak. However, for late times
-the off- and on-axis light curves are quite similar. This is as
-expected, at late times the jet becomes more isotropic, which means
-the viewing angle has relatively little effect on the observed light curve.
+Fig.~\ref{fig:onOff} shows a comparison off and on-axis light curves.
+For $n_{18}=2000$ the light curves differ little.  For $n_{18}=60$
+off-axis luminosity is lower by a factor of a few before and near the
+peak. However, for late times the off- and on-axis light curves are
+quite similar. This is as expected, at late times the jet becomes more
+isotropic, which means the viewing angle has relatively little effect
+on the observed light curve.
 
 \begin{figure*}
 \includegraphics[width=16cm]{on_off.pdf}
@@ -1353,7 +1284,105 @@ To isolate the effects of the shape of the density profile, consider a
 core density profile with $r_s=10^{18}$ cm, and $n_{18}=2000$: the
 same as our high density cusp model.
 
-\clearpage
+\section{Peak Luminosities and times}
+\label{app:analyt}
+\citet{Leventis+2012} present analytic scaling relations for the
+synchrotron flux of a spherical blast wave propagating through a
+medium with a power law density profile, $n\propto r^{-k}$
+(generalizing \citealt{Nakar&Piran2011} who derive scalings for a
+blast wave propagating through a constant density medium). In this
+appendix, we use these results to write down an expression for the
+peak flux of the slow component of the jet.
+
+It is very important to take synchrotron self-absorption into account,
+particularly for high ambient gas densities. For the late stage
+Newtonian evolution of the jet, the spectrum will be self-absorbed for
+frequencies below
+
+\begin{align}
+  \nu_{\rm sa}=&C_1(p, k) E_{54}^{\frac{10 p-k p -6 k}{2 (4+p) (5-k)}} n_{18}^{\frac{30 - 5 p}{2 (4 + p) (5 - k)}}
+  \epsilon_e^{\frac{2 (p-1)}{4+p}} \epsilon_b^{\frac{p+2}{2 (4+p)}}\nonumber\\
+  &t^{\frac{10 - 8 k - 15 p + 4 k p}{(4 + p) (5 - k)}}, 
+\label{eq:nuSa} 
+\end{align}
+%
+where $p$, $\epsilon_e$, and $\epsilon_b$ are the standard parameters
+describing the microphysics of the shocked electrons, $E_{54}$ is the
+blast wave energy in units of $10^{54}$ erg, and $C_1(p, k)$ is an
+overall normalization factor.  Note that equation~\eqref{eq:nuSa}
+assumes that self-absorption frequency is greater than the synchrotron
+peak frequency
+
+\begin{equation}
+\nu_m=C_2(p, k) E_{54}^{\frac{10-k}{2 (5-k)}} n_{18}^{-\frac{5}{2
+    (5-k)}}  \epsilon_e^2  \epsilon_b^{1/2}  t^{\frac{4 k-15}{5-k}}.
+\end{equation}
+%
+% The observing frequencies considered here ($\geq 1$ GHz), are also
+% greater than $\nu_m$. 
+The peak of the light curve will occur at the
+deceleration time (equation~\ref{eq:tdec}) if the self-absorption
+frequency is below the observing band then (``Case 1''). Otherwise, it
+will occur after the deceleration time, when the self-absorption
+frequency crosses through the observing band (``Case 2''). The peak
+time for these two cases is
+
+\begin{align}
+t_{\rm p}=
+\begin{cases}
+  t_{\rm dec}\approx \left(100 \, E_{54}\right)^{1/(3-k)}
+  n_0^{-1/(3-k)} {\rm year} & {\rm Case\, 1}\\\\
+  C_1(p, k)^{-\frac{(5 - k) (4 + p)}{10 - 8 k - 15 p + 4 k
+      p}}E_{54}^{-\frac{-k p-6 k+10 p}{2 (4 k p-8 k-15 p+10)}}\\
+  \times n_{18}^{-\frac{30-5 p}{2 (4 k p-8 k-15 p+10)}} \nu_{\rm
+    obs}^{\frac{(5-k) (p+4)}{4 k p-8 k-15 p+10}}
+  \epsilon_b^{-\frac{(5-k) (p+2)}{2 (4 k p-8 k-15 p+10)}}\\
+  \times \epsilon_e^{-\frac{2 (5-k) (p-1)}{4 k p-8 k-15 p+10}} & {\rm
+    Case\, 2}
+\end{cases}
+\label{eq:tpeak}
+\end{align}
+%
+Note that we assume the blast wave is modestly relativistic with
+velocity comparable to $c$ and a Lorentz factor of order unity {\bf
+  AG:strictly speaking not self-consistent as in the scaling relation
+  the blast wave is assumed to be in the ST phase, and so
+  non-relativistic}. The unabsorbed flux at the peak frequency is
+given by
+
+\begin{align}
+  F_{\nu_m} =  C_3(p, k) E_{54}^{\frac{8-3 k}{2 (5-k)}}
+  n_{18}^{\frac{7}{2 (5-k)}} \epsilon_b^{1/2} t^{\frac{3-2 k}{5-k}}
+\label{eq:Fnum}
+\end{align}
+%
+Extrapolating to the observer frequency gives 
+
+\begin{align}
+  \nu_{\rm obs} F_{\rm p} (\nu_{\rm obs}) &= \nu_{\rm obs}   F_{\nu_m}
+  \left(\frac{\nu_{\rm obs}}{\nu_m}\right)^{-(p-1)/2}.
+  \label{eq:Fpeak1}
+\end{align}
+%
+Then from equations~\eqref{eq:tpeak}, ~\eqref{eq:Fnum},
+and~\eqref{eq:Fpeak1}
+
+\begin{align}
+  \nu_{\rm obs} F_{\rm p} (\nu_{\rm obs}) \propto
+  \begin{cases}
+    E_{54}^{\frac{k (p+5)-12}{4 (k-3)}} n_{18}^{-\frac{3 (p+1)}{4
+        (k-3)}} \nu_{\rm obs}^{\frac{3-p}{2}}
+    \epsilon_b^{\frac{p+1}{4}} \epsilon_e^{p-1} & {\rm Case \,
+      1}\\\\
+    E_{54}^{\frac{k(-(p-2))-10 p+3}{4 k (p-2)-15 p+10}} \\ \times
+    n_{18}^{\frac{11 (p-2)}{4 k (p-2)-15 p+10}} \nu_{\rm
+      obs}^{\frac{14 k (p-2)-47 p+57}{4 k (p-2)-15 p+10}} \\ \times
+    \epsilon_b^{\frac{k (-(p-2))+p-8}{4 k(p-2)-15 p+10}}
+    \epsilon_e^{-\frac{11 (p-1)}{4 k (p-2)-15p+10}} & {\rm Case \, 2}
+  \end{cases}
+  \label{eq:peakLumGen}
+\end{align}
+
 
 
 
