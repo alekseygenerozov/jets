@@ -10,6 +10,7 @@
  
 
 \usepackage{amsmath,amssymb}
+\usepackage{cases}
 \usepackage{mathrsfs}
 \usepackage{graphicx}
 \usepackage{epstopdf}
@@ -1028,17 +1029,46 @@ equation~\eqref{eq:peakLum}, with $A_1=7.6\times 10^{39}$ and $A_2=1.7
 \times 10^{41}$ to match the results for low and high nuclear gas
 densities respectively.
 
-Fig.~\ref{fig:ContoursTp} shows contours for the time of the peak time
-. All other things being equal, a higher energy jet will produce a
-radio light curve peaking later in time. Also, over most of the
-parameter space, a higher ambient gas density results in a later peak
-time. This is an absorption effect: the peak usually occurs when the
-jet transitions from being optically thick to thin in the observing
-band {\bf AG: is this true when fast component dominates at the peak
-  of the light curve?} This occurs later for an ambient medium with a
-larger density. However, for high frequencies and low densities...
+Equation~\eqref{eq:tpeakGen} gives the peak time for the slow
+component. Substituting in our fiducial values for power law slopes of
+the gas density profile and energy distribution of accelerated
+electrons, gives
 
 
+\begin{align}
+t_p=
+\begin{cases}
+  t_1 E_{54}^{0.5} n_{18}^{-0.5} & {\rm Case \, 1}\\\\
+  t_2 \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.32}
+  \left(\frac{\epsilon_e}{0.1}\right)^{0.45}
+  \left(\frac{\epsilon_b}{0.002}\right)^{0.37}\\
+  \left(\frac{\nu_{\rm obs}}{5 {\rm GHz}}\right)^{-1.1} n_{18}^{0.4} &
+  {\rm Case \, 2}
+\end{cases}
+\label{eq:tpeak}
+\end{align}
+%
+where $t_1$ and $t_2$ are normalization constants. In general, the
+light curve for a higher energy jet will peak later than the light
+curve for a low energy jet. The scaling with density is more
+complicated: if the emitting region is optically thick at the
+deceleration time (``Case 2''), a higher ambient density results in a
+later peak time. The peak occurs when the self-absorption frequency
+crosses through the observing band and this occurs later for higher
+ambient gas densities. Otherwise, the peak time will scale with the
+deceleration time, and a larger ambient gas density will result in a
+later peak (``Case 1'').
+
+Fig.~\ref{fig:ContoursTp} shows contours of the peak time for the
+overall light curve, the peak time for just the slow component, and
+the Case 2 peak time from equation~\eqref{eq:tpeak}. For high
+densities/low frequencies the peak time scaling with energy and
+density is roughly consistent with the analytic result for ``Case
+2''. For lower densities, the numerical results diverge from the
+analytic prediction, in part due to the contributions of the fast
+component.  Furthermore, the peak time for the 30 GHz light curves
+decreases with density for small $n_{18}$, as the emitting region is
+optically thin at the deceleration time (``Case 1'').
 
 
 \begin{figure*}
@@ -1361,7 +1391,7 @@ t_{\rm p}=
   \times  \epsilon_b^{-\frac{(5-k) (p+2)}{2 (4 k p-8 k-15 p+10)}} \epsilon_e^{-\frac{2 (5-k) (p-1)}{4 k p-8 k-15 p+10}} & {\rm
     Case\, 2}
 \end{cases}
-\label{eq:tpeak}
+\label{eq:tpeakGen}
 \end{align}
 %
 Note that we assume the blast wave is modestly relativistic with
