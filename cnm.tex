@@ -286,10 +286,10 @@ a cuspy stellar density profile results in a higher TDE rate per galaxy.  We ado
   double check all expressions.}
 
 \subsubsection{Gas density profiles}
-The radio emission from TDE jets is most sensitive to the density of gas near the deceleration (or ``Sedov") radius, outside of which the jet has swept up a gaseous mass equal to its own.  For SwJ1644 the deceleration
-radius of the jet was $\sim 10^{18}$ cm \citep{Mimica+2015}. Thus, we focus on determining the nuclear gas density on parsec scales.
+The radio emission from TDE jets is sensitive to the density of gas near the deceleration (or ``Sedov") radius, outside of which the jet has swept up a gaseous mass exceeding its own.  For SwJ1644 the deceleration
+radius of the jet was $\sim 10^{18}$ cm \citep{Mimica+2015}; we therefore focus on determining the gas density on parsec scales.
 
-In the presence of strong heating, one-dimensional steady-state model for the CNM is characterized by an inflow-outflow structure.  The velocity passes through zero at the ``stagnation radius'', $\rs$.  Mass loss from stars interior to the stagnation radius is accreted, while that outside of $\rs$ is unbound in an outflow from the nucleus.  Fig.~\ref{fig:profiles} shows example radial profiles of the steady-state gas density calculated for a core and a cusp stellar density profile. The stagnation radius is marked as a blue dot on each profile.
+Given sufficiently strong heating, a one-dimensional steady-state model for the CNM is characterized by an inflow-outflow structure.  The velocity passes through zero at the ``stagnation radius'', $\rs$.  Mass loss from stars interior to the stagnation radius is accreted, while that outside of $\rs$ is unbound in an outflow from the nucleus.  Fig.~\ref{fig:profiles} shows example radial profiles of the steady-state gas density calculated for a core and a cusp stellar density profile. The stagnation radius is marked as a blue dot on each profile.
 
 As described in GSM15, the stagnation radius is approximately given by
 \begin{equation}
@@ -302,7 +302,7 @@ where $f(\delta)$ is a constant of order unity that depends on the slope of the 
   pc}\right)^{1.3} \Msun \, {\rm yr}^{-1},
 \label{eq:dotM}
 \end{equation}
-where $M_{\star}(\rs)$ is the total stellar mass enclosed within the stagnation radius and the second equality was derived for our fiducial value of $\delta=1.7$, where $\eta_{0.02}=\eta/0.02$.
+where $M_{\star}(\rs)$ is the total stellar mass enclosed within the stagnation radius and the second equality was derived for our fiducial value of $\delta=1.7$, where $\eta_{0.02}=\eta/0.02$ is normalized to a fiducial value characteristic of an old stellar population.
 
 The density at the stagnation radius, $n(\rs)$, is estimated by equating the gas injected by stellar winds over a dynamical time at the stagnation radius, $t_{\rm dyn} (\rs)=(\rs^3/G \Mbh)^{1/2}$, to the gas mass enclosed at this location.  This gives
 \begin{align}
@@ -330,26 +330,19 @@ obtain
   \Mbh[,7]^{-0.28} {\rm cm^{-3}},
   \label{eq:n18}
 \end{equation}
-Substituting our expression for the stagnation radius (eq.~\ref{eq:rs}) into this expression gives
+Substituting the stagnation radius (eq.~\ref{eq:rs}) into this expression gives
 \begin{equation}
 n_{18}\simeq 0.3 \Mbh[,7]^{0.52} \eta_{0.02} v_{500}^{-1.6} {\rm
   cm^{-3}}.
 \label{eq:n182}
 \end{equation} 
 
-Although the gas density steepens near the break radius $r_b$ of the stellar density profile (Fig.~\ref{fig:profiles}), this will only affect the radio emission near its peak if $r_b$ lies inside of the Sedov radius of the jet.  Figure \ref{fig:profiles} shows the Sedov radius for different energy jets, calculated for the radial gas profiles in Fig.~\ref{fig:profiles}.  The measured break radii of all but four the galaxies in \citet{Lauer+2007} exceeds 10 parsecs.  This is well outside of the Sedov radius, even for a very energetic jet, with an isotropic equivalent energy of $E=4\times 10^{54}$ erg in a CNM of particularly low density, $n_{18} \sim 1$ cm$^{-3}$.  The presence of nuclear star cluster in the galactic center could produce a similar break in the stellar density profile near the outer edge of the NSC, which is typically located at a radius of 1-5 pc \citep{Georgiev+2014}.   However, even a break radius of 1 pc will reside inside the Sedov radius, except for  the combination of a powerful jet and relatively small CNM density, $n_{18}<20$ cm$^{-3}$.  Henceforth we neglect the effects of the stellar break radius in our analysis.
+Although the gas density steepens near the break radius $r_b$ of the stellar density profile (Fig.~\ref{fig:profiles}), this will only affect the radio emission near its peak if $r_b$ lies inside of the Sedov radius of the jet.  Figure \ref{fig:profiles} shows the Sedov radius for different energy jets, calculated for the radial gas profiles in Fig.~\ref{fig:profiles}.  The measured break radii of all but four the galaxies in \citet{Lauer+2007} exceeds 10 parsecs.  This is well outside of the Sedov radius, even for a very energetic jet, with an isotropic equivalent energy of $E=4\times 10^{54}$ erg in a CNM of particularly low density, $n_{18} \sim 1$ cm$^{-3}$.  The presence of nuclear star cluster in the galactic center could produce a similar break in the stellar density profile near the outer edge of the NSC, which is typically located at $\sim 1-5$ pc \citep{Georgiev+2014}.   However, even a break radius of 1 pc will reside inside the Sedov radius, except for  the combination of a powerful jet and relatively small CNM density, $n_{18}<20$ cm$^{-3}$.  Henceforth we neglect the effects of the stellar break radius in our analysis.
 
 
 \begin{figure}
 \includegraphics[width=8cm]{sedov_radius.pdf}
-\caption{\label{fig:profiles} Steady-state gas density profiles for
-  black hole mass $10^{7} \,\Msun$, heating parameter $v_w=600$ km
-  s$^{-1}$, and cuspy ({\it solid}) and core-like ({\it dashed})
-  stellar density profile. Both profiles go as $r^{-3}$ outside of 25
-  pc. Note that we normalize the gas density to the density at
-  $10^{18}$ cm ($n_{18}$). Colors mark the Sedov radii of modestly
-  relativistic ($\Gamma=2$) jets with different isotropic equivalent
-  energies. This is where the jet sweeps up its own mass in CNM gas.}
+\caption{\label{fig:profiles} Steady-state radial profiles of the gas density of the CNM, $n(r)/n_{18}$, normalized to the value $n_{18} = n(r = 10^{18}$ cm), calculated for a black hole mass $10^{7} \,\Msun$ and gas heating parameter $v_w=600$ km s$^{-1}$.  Cusp and core stellar density profiles are shown with solid and dashed lines, respectively.  The line color denotes the isotropic equivalent energy of a jet for which the Sedov radius equals that radius from the black hole (given the swept up interior gaseous mass), assuming an initial jet Lorentz factor of $\Gamma=2$.}
 \end{figure}
 
 
@@ -357,21 +350,13 @@ Although the gas density steepens near the break radius $r_b$ of the stellar den
 \subsubsection{Plausible Density Range}
 \label{sec:densAllowed}
 
-In this section, we calculate $n_{18}$ for stellar populations
-formed via two bursts of star formation, with the older burst
-occurring a Hubble time ago.  Both the young and old stars have the
-same (cuspy) density profile, which implies that the gas density
-profile goes as $r^{-1}$.
+In this section, we estimate the plausible range in the normalization of the CNM gas profile, $n_{18}$.  We assume that star formation occurs in two bursts, an old burst of age comparable to the Hubble time $t_{\rm h} = 10^{10}$ yr which contains most of the stars, and a ``young" burst of variable age $t_{\rm burst} \ll t_{\rm h}$ which contributes a fraction $f_{\rm burst}$.
+%Both the young and old stars have the
+%same (cuspy) density profile, which implies that the gas density
+%profile goes as $r^{-1}$.
 
-For a sufficiently large burst occurring less than 40 Myr ago, the gas
-is heated by energetic winds from massive star winds.\footnote{Type II
-  supernovae are another important heating source and dominate stellar
-  winds after $\sim$6 Myr \citep{Voss+2009}. However, heating from
-  Type II SNe will be intermittent and is not included here for
-  simplicity.}  In this case, the mass return ($\eta$) and heating
-parameters ($v_w$), can be calculated using the procedure described in
-appendix C GSM15. With these parameters, the density at $10^{18}$ cm,
-$n_{18}$, follows from equation~\eqref{eq:n182}.
+For a sufficiently large burst occurring less than 40 Myr ago, gas heating is dominated by the energetic winds of massive star winds.\footnote{Type II supernovae are also an important heating source, which dominates stellar winds after $\sim$6 Myr \citep{Voss+2009}.  However, Type II SN are intermittent and hence their contribution to the gas heating is neglected for simplicity.}  In this case, the mass return ($\eta$) and heating
+parameters ($v_w$) are calculated as described in GSM15 (their Appendix C).  Given $\eta(t_{\rm burst},f_{\rm burst})$ and $v_w(t_{\rm burst},f_{\rm burst})$, $n_{18}$ is calculated from equation~\eqref{eq:n182}.
 
 For older stellar populations, heating may come from a few different
 sources including Ia Supernovae or AGN feedback {\bf AG also unbound
