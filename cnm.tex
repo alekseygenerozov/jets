@@ -275,128 +275,58 @@ a cuspy stellar density profile results in a higher TDE rate per galaxy.  We ado
   double check all expressions.}
 
 \subsubsection{Gas density profiles}
-The radio emission produced by a TDE jet is most sensitive to the gas
-density at the ``Sedov'' or deceleration radius, where the jet has
-swept up it's own mass in nuclear gas. For SwJ1644 the deceleration
-radius of the jet was $\sim 10^{18}$ cm \citep{Mimica+2015}. Thus, we
-focus on determining the nuclear gas density on parsec scales.
+The radio emission from TDE jets is most sensitive to the density of gas near the deceleration (or ``Sedov") radius, outside of which the jet has swept up a gaseous mass equal to its own.  For SwJ1644 the deceleration
+radius of the jet was $\sim 10^{18}$ cm \citep{Mimica+2015}. Thus, we focus on determining the nuclear gas density on parsec scales.
 
-In the presence of strong heating, one-dimensional steady-state flow
-is characterized by an inflow-outflow structure. The velocity passed
-through 0 at the ``stagnation radius'', $\rs$.  Mass loss from stars
-interior to the stagnation radius is accreted, while that outside
-$\rs$ is unbound in an outflow from the nucleus. 
+In the presence of strong heating, one-dimensional steady-state model for the CNM is characterized by an inflow-outflow structure.  The velocity passes through zero at the ``stagnation radius'', $\rs$.  Mass loss from stars interior to the stagnation radius is accreted, while that outside of $\rs$ is unbound in an outflow from the nucleus.  Fig.~\ref{fig:profiles} shows example radial profiles of the steady-state gas density calculated for a core and a cusp stellar density profile. The stagnation radius is marked as a blue dot on each profile.
 
-Fig.~\ref{fig:profiles} shows example profiles of the steady-state gas
-density calculated for a core and a cusp stellar density profile. The
-stagnation radius is marked as a blue dot on each profile.
-
-As described in GSM15 the stagnation radius can be estimated
-analytically by the expression below
-
+As described in GSM15, the stagnation radius is approximately given by
 \begin{equation}
 r_s \simeq f(\delta) \frac{G M}{v_w^2},
 \label{eq:rs}
 \end{equation}
-
-
-\noindent where $f(\delta)$ is a function of the stellar density slope with
-value of order unity.  The density at the stagnation radius, $n(\rs)$,
-is determined by injection rate of stellar wind material inside of
-$\rs$, $\dot{M}$. This is proportional to the stellar mass enclosed
-inside of $\rs$, $M_{\star}(\rs)$:
-
+where $f(\delta)$ is a constant of order unity that depends on the slope of the stellar density profile $\delta$.  The gas density at the stagnation radius, $n(\rs)$, is determined by the rate at which stellar winds inject mass  interior to this,
 \begin{equation}
-\dot{M}=\frac{\eta M_{\rm \star}(\rs)}{t_h}
+\dot{M}=\frac{\eta M_{\rm \star}(\rs)}{t_h} \approx  3.0 \times 10^{-6} \Mbh[,7]^{0.22} \eta_{0.02} \left(\frac{r_s}{\rm
+  pc}\right)^{1.3} \Msun \, {\rm yr}^{-1},
 \label{eq:dotM}
 \end{equation}
+where $M_{\star}(\rs)$ is the total stellar mass enclosed within the stagnation radius and the second equality was derived for our fiducial value of $\delta=1.7$, where $\eta_{0.02}=\eta/0.02$.
 
-\noindent For our fiducial value of $\delta=1.7$,
-
-\begin{equation}
-\dot{M}= 3.0 \times 10^{-6} \Mbh[,7]^{0.22} \eta_{0.02} \left(\frac{r_s}{\rm
-  pc}\right)^{1.3} \Msun \, {\rm yr}^{-1},
-\end{equation}
-
-
-\noindent where $\eta_{0.02}=\eta/0.02$. 
-
-The density at the stagnation radius, $n(\rs)$, can be estimated by
-equating the gas injected by stellar winds over a dynamical time at
-the stagnation radius ($t_{\rm dyn} (\rs)=\sqrt{\rs^3/G \Mbh}$) to the
-gas mass enclosed inside of the stagnation radius:
-
+The density at the stagnation radius, $n(\rs)$, is estimated by equating the gas injected by stellar winds over a dynamical time at the stagnation radius, $t_{\rm dyn} (\rs)=(\rs^3/G \Mbh)^{1/2}$, to the gas mass enclosed at this location.  This gives
 \begin{align}
   &\frac{4 \pi}{3} \rs^3 \mu m_p n(r_s) \simeq \dot{M} t_{\rm dyn}
   (\rs) \nonumber\\
-  &n(r_s) \simeq 0.21 \eta_{0.02} \Mbh[,7]^{-0.28} \left(\frac{r_s}{\rm
-      pc}\right)^{-0.2}
+  &\Rightarrow n(r_s) \simeq 0.21 \eta_{0.02} \Mbh[,7]^{-0.28} \left(\frac{r_s}{\rm
+      pc}\right)^{-0.2} {\rm cm}^{-3}.
 \label{eq:nrs}
 \end{align}
- 
-\noindent Using equation~\eqref{eq:rs}, for $r_s$, we obtain 
-
+Substituting equation~\eqref{eq:rs} for $r_s$, we obtain 
 \begin{equation}
 n(r_s) \simeq 0.2 \, v_{500}^{0.4} \eta_{0.02} \Mbh[,7]^{-0.48} {\rm cm}^{-3},
 \label{eq:nrs2}
 \end{equation}
+where $v_{500}=v_w/\left(500 \,\mathrm{km\,\,
+    s^{-1}}\right)$. 
 
-\noindent where $v_{500}=v_w/\left(500 \,\mathrm{km
-    s^{-1}}\right)$. Near the stagnation radius, we find
-that the radial power law slope of the gas density profile is $\sim
-(4\delta-1)/6$. For our fiducial value of $\delta$=1.7, this gives
-$n(r)\propto r^{-1}$ near the stagnation radius. Furthermore, the
-density profile remains close to $n\propto r^{-1}$ for radii of
-interest.\footnote{For cusp galaxies, the gas velocity asymptotes to a
-  constant between the stagnation radius and break radius (if they are
-  sufficiently far apart). In this region we expect $n\propto
-  r^{1-\delta}$.}  Thus, we adopt $n(r)= n_{18} (r/10^{18} {\rm
-  cm})^{-1}$ as our fiducial density profile.  We also experiment with
-a core-like density profile (appendix~\ref{app:core}), and compare the
-radio light curves for jets going through core and cusp-like density
-profiles in $\S\ref{sec:profileComp}$.
+Near the stagnation radius, GSM15 found that the radial gas profile $n \propto r^{-\alpha}$ has a power-law slope of $\alpha \approx (4\delta-1)/6$, which for our fiducial value of $\delta$=1.7 gives $n \propto r^{-1}$.  A similar density profile obtains for most radii of interest.\footnote{For cusp galaxies, the gas velocity asymptotes to a constant value between the stagnation radius and break radius (provided they are
+  sufficiently far apart). In this region we instead expect $n\propto r^{1-\delta}$.}  Thus, we adopt $n(r)= n_{18} (r/10^{18} {\rm cm})^{-1}$ as our fiducial density profile, where $n_{18}$ is the density at $r = 10^{18}$ cm.  In Appendix~\ref{app:core} we explore a core-like density profile, to which we compare our results for the jetted radio emission to the fiducial cusp case in $\S\ref{sec:profileComp}$.
 
-
-\noindent For our fiducial $n\propto r^{-1}$ and equation~\eqref{eq:nrs}, we
+Combining our assumption of a $n\propto r^{-1}$ profile with equation~\eqref{eq:nrs}, we
 obtain
-
 \begin{equation}
   n_{18}\simeq 0.6 \left(\frac{r_s}{\rm pc}\right)^{0.8}
   \Mbh[,7]^{-0.28} {\rm cm^{-3}},
   \label{eq:n18}
 \end{equation}
-
-
-\noindent where $n_{18}$ is the density at $10^{18}$ cm. Substituting
-equation~\eqref{eq:rs} for the stagnation radius in
-equation~\eqref{eq:n18} gives
-
+Substituting our expression for the stagnation radius (eq.~\ref{eq:rs}) into this expression gives
 \begin{equation}
 n_{18}\simeq 0.3 \Mbh[,7]^{0.52} \eta_{0.02} v_{500}^{-1.6} {\rm
   cm^{-3}}.
 \label{eq:n182}
 \end{equation} 
-%
-In general the gas density steepens at the stellar break radius, $r_b$
-(see Fig.~\ref{fig:profiles}). However, such breaks will only have an
-effect on the observed radio emission if $r_b$ is inside of the Sedov
-radius, where the jet sweeps up its own mass in CNM gas.  The jet
-mostly decelerates inside of this radius, becoming
-non-relativistic. Therefore, the profile outside of this radius will be of
-minimal importance in shaping the radio light curve. We plot the Sedov
-radius for different energy jets on each of the profiles in
-Fig.~\ref{fig:profiles}. The measured break radii of all but four the
-\citet{Lauer+2007} galaxies is larger than 10 pc. This exceeds
-the Sedov radius, for even a very powerful jet (isotropic equivalent
-energy $E=4\times 10^{54}$ erg), interacting with a low density CNM
-($n_{18}=2$). If a nuclear star cluster (NSC) is present in the
-galactic center there will be a smaller effective break radius at the
-outer edge of the NSC (typically 1-5 pc--see
-\citealt{Georgiev+2014}). However, even for a break radius of 1 pc the
-break radius will only be inside the Sedov radius for small densities
-($n_{18}<20$) and powerful jets {\bf AG still feel that this is a
-  relevant region of parameter space}. Henceforward we will not
-consider the effects of the break radius in our analysis.
+
+Although the gas density steepens near the break radius $r_b$ of the stellar density profile (Fig.~\ref{fig:profiles}), this will only affect the radio emission near its peak if $r_b$ lies inside of the Sedov radius of the jet.  Figure \ref{fig:profiles} shows the Sedov radius for different energy jets, calculated for the radial gas profiles in Fig.~\ref{fig:profiles}.  The measured break radii of all but four the galaxies in \citet{Lauer+2007} exceeds 10 parsecs.  This is well outside of the Sedov radius, even for a very energetic jet, with an isotropic equivalent energy of $E=4\times 10^{54}$ erg in a CNM of particularly low density, $n_{18} \sim 1$ cm$^{-3}$.  The presence of nuclear star cluster in the galactic center could produce a similar break in the stellar density profile near the outer edge of the NSC, which is typically located at a radius of 1-5 pc \citep{Georgiev+2014}.   However, even a break radius of 1 pc will reside inside the Sedov radius, except for  the combination of a powerful jet and relatively small CNM density, $n_{18}<20$ cm$^{-3}$.  Henceforth we neglect the effects of the stellar break radius in our analysis.
 
 
 \begin{figure}
