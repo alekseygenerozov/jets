@@ -210,12 +210,13 @@ $\S\ref{sec:conc}$.
 \label{sec:cnm}
 
 In this section we place constraints on the radial profile of the gas
-density in galactic nuclei. First, we determine the possible range of
-densities resulting from mass loss by stellar winds. Then we convert
+density in galactic nuclei. In $\S\ref{sec:analy}$, we determine the possible range of
+densities resulting from mass loss by stellar winds. Then in $\S\ref{sec:empirical}$ we convert
 empirical distributions for black hole luminosities into distributions
 of nuclear gas densities.
 
 \subsection{Analytic Constraints on CNM Density}
+\label{sec:analy}
 
 \subsubsection{Dynamical Model}
 \label{sec:model}
@@ -240,7 +241,7 @@ pressure (assumed to be an ideal gas with $\mu = 0.62$), and specific
 entropy, respectively.  The enclosed mass $\Menc = M_{\bullet} +
 M_{\star}$ includes both the black hole mass $M_{\bullet}$ and
 enclosed stellar mass $M_{\star} \propto \int \rho_{\star}r^{2}dr$, where $\rho_{\star}$ is the stellar density. At
-the radius of the sphere of influence, $r_{\rm inf}$, the enclosed stellar and black masses are equal, $M_{\star}(r_{\rm inf})=\Mbh$.  We following GSM15 in taking $r_{\rm inf}=3.5 \Mbh[,7]^{0.6}$, where $\Mbh[,7]=\Mbh/10^7
+the radius of the sphere of influence, $r_{\rm inf}$, the enclosed stellar and black masses are equal, $M_{\star}(r_{\rm inf})=\Mbh$.  We take $r_{\rm inf}=3.5 \Mbh[,7]^{0.6}$ (GSM15), where $\Mbh[,7]=\Mbh/10^7
 \Msun$.
 
 The mass source term $q =\eta \rho_\star/\th$ is the mass injection
@@ -255,28 +256,20 @@ physically allowed range heating rates ($v_w$) and mass injection
 rates ($\eta$), and obtain the corresponding range of gas densities.
 
 \subsubsection{Stellar density profiles}
-We assume a broken power law for the stellar density profile, $\rho_{\star}$.
-This is motivated by \citet{Lauer+2007}, who use {\it
-  Hubble Space Telescope} WFPC2 imaging to measure the radial surface
-brightness profiles for hundreds of nearby early type galaxies. The
-measured profile is well fit by a ``Nuker'' law parameterization:
+We assume a broken power law for the stellar density profile, $\rho_{\star}$,  motivated by Hubble measurements of the radial surface brightness profiles for hundreds of nearby early type galaxies \citep{Lauer+2007}.  The measured profile is well fit by the so-called ``Nuker'' law parameterization:
 i.e., a broken power law that smoothly transitions from an inner power law
 slope, $\Gamma$, to an outer power law slope, $\beta$, at a break
 radius, $r_b$.
 
 Most galaxies have $0<\Gamma<1$, and are classified into two broad
-categories: core galaxies with $\Gamma<0.3$ and cusp galaxies with
+categories: ``core" galaxies with $\Gamma<0.3$ and ``cusp" galaxies with
 $\Gamma>0.5$. Assuming spherical symmetry and a constant mass-to-light
-ratio, the inner stellar profile translates to a stellar density
+ratio, the inner stellar profile translates to a stellar density of
 $\rho_\star\propto r^{-1-\Gamma}=r^{-\delta}$. Core galaxies have
 $1<\delta<1.3$, while cusp galaxies have $1.5<\delta<2$.
 
-Galaxies with low mass black holes ($\Mbh\lsim 10^{8} \Msun$) relevant
-to TDEs are more likely to have cusp-like stellar density
-profiles. Additionally, as described in \citet{Stone&Metzger2016} 
-a cuspy stellar density profile results in a higher TDE rate. We adopt
-a fiducial value of $\Gamma=0.7$ ($\delta=1.7$), the rate weighted
-average for the galaxies in Table C of \citet{Stone&Metzger2016}.
+Low mass black holes ($\Mbh\lsim 10^{8} \Msun$), which are more commonly characterized by cusp-like profiles, are the most relevant to TDEs for two reasons.  First, above this black hole mass the star is swallowed whole instead of undergoing a TDE.  Additionally, as described in \citet{Stone&Metzger2016} 
+a cuspy stellar density profile results in a higher TDE rate per galaxy.  We adopt a fiducial value of $\Gamma=0.7$ ($\delta=1.7$), motivated by the rate-weighted average value of the stellar density profile for the galaxies in \citet{Stone&Metzger2016} (their Table C).
 
  {\bf Recently changed from $\delta=1.8$, need to
   double check all expressions.}
