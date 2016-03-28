@@ -344,57 +344,27 @@ In this section, we estimate the plausible range in the normalization of the CNM
 %same (cuspy) density profile, which implies that the gas density
 %profile goes as $r^{-1}$.
 
-For a sufficiently large burst occurring less than 40 Myr ago, gas heating is dominated by the energetic winds of massive star winds.\footnote{Type II supernovae are also an important heating source, which dominates stellar winds after $\sim$6 Myr \citep{Voss+2009}.  However, Type II SN are intermittent and hence their contribution to the gas heating is neglected for simplicity.}  In this case, the mass return ($\eta$) and heating
-parameters ($v_w$) are calculated as described in GSM15 (their Appendix C).  Given $\eta(t_{\rm burst},f_{\rm burst})$ and $v_w(t_{\rm burst},f_{\rm burst})$, $n_{18}$ is calculated from equation~\eqref{eq:n182}.
+For a sufficiently large burst occurring less than 40 Myr ago, gas heating is dominated by the energetic winds of massive star winds.\footnote{Type II supernovae are also an important heating source, which dominates stellar winds after $\sim$6 Myr \citep{Voss+2009}.  However, SN II are intermittent and hence their contribution to the gas heating is neglected for simplicity.}  In this case, the mass return ($\eta$) and heating
+parameters ($v_w$) are calculated as described in GSM15 (their Appendix C).  Given $\eta(t_{\rm burst},f_{\rm burst})$ and $v_w(t_{\rm burst},f_{\rm burst})$, we calculate $n_{18}$ following equation~\eqref{eq:n182}.
 
-For older stellar populations, heating may come from a few different
-sources including Ia Supernovae or AGN feedback {\bf AG also unbound
-  debris streams produced in tidal disruption events (see
-  \citep{Guillochon+2015a})}. We focus on quiescent phases, where the
-SNe Ia dominate. As discussed in GSM15 the Ias can clear the gas
-inside of the Ia radius where the time between successive Ia
-supernovae is equal to the dynamical time. In this case, $n_{18}$ can
-be calculated by substituting the Ia radius for the stagnation radius
-in equation~\eqref{eq:n18}. The Ia radius is calculated as described
-in GSM15 for times $t>300 \,{\rm Myr}$.\footnote{The Ia rate is given
-  by $8.8 \times 10^{-13} \left(\frac{t}{3\times 10^{8} {\rm
-        yr}}\right)^{-1.12} \, \Msun^{-1} \, {\rm yr}^{-1} $ for
-  $t>3\times 10^8$ years.} In GSM15 we incorrectly extrapolated this
+For older stellar populations, gas heating may come from a few different sources, including Type Ia Supernovae (SNe)\footnote{Unbound debris streams from TDEs provide another source of heating localized in the galactic center (see \citep{Guillochon+2015a}), which we neglect since we find that its contribution to the heating is at most comparable to that from SNe Ia.} and AGN feedback.  We focus on quiescent phases, during which SNe Ia dominate.  As discussed in GSM15, SNe Ia clear out the gas external to a critical radius, $r_{\rm Ia}$, where the interval between successive Ia SNe equals the dynamical (gas inflow) timescale.  For an old stellar population, $n_{18}$ is estimated by equating $r_{\rm Ia}$ with the stagnation radius in equation~\eqref{eq:n18}.  The Ia radius is calculated as described in GSM15 at times $t>300 \,{\rm Myr}$ after star formation, and is taken to be constant for $t = 40-300$ Myr.\footnote{GSM15 incorrectly extrapolated the Ia rate valid at times $t>300 \,{\rm Myr}$ back to a time $t = 3$ Myr, which unphysical as no white dwarfs would have formed by this time.  Although its qualitative impact on our results is minimal, here we instead take the Ia rate to be 0 for $ t < 40$ Myr.}
+
+%\footnote{The Ia rate is given
+ % by $8.8 \times 10^{-13} \left(\frac{t}{3\times 10^{8} {\rm
+  %      yr}}\right)^{-1.12} \, \Msun^{-1} \, {\rm yr}^{-1} $ for
+  %$t>3\times 10^8$ years.} In GSM15 we incorrectly extrapolated this
 rate all of the way to 3 Myr--this is clearly un-physical as no white
 dwarfs would have formed by this time. Here, we instead take the Ia
 rate to be 0 for times less than 40 Myr and flat from 40-300 Myr.
 
-Fig.~\ref{fig:param} shows how $n_{18}$ varies with star burst
-properties.  We find a maximum density of $\sim 2,700$ cm$^{-3}$,
-$\sim 4$ Myr after a burst of star formation forming 100\% of the
-stars in the nucleus. In this case both the energy and mass budgets
-are dominated by fast winds from massive stars ($\gsim 15 \, \Msun$).
-Although such a large gas density would be present in the immediate
-aftermath of a starburst, the wind mass loss rate (and hence the gas
-density) declines as $t^{-3}$. Therefore, the gas density would
-decline by an order of magnitude after just a few Myr.
+Fig.~\ref{fig:param} shows how $n_{18}$ varies with the young starburst properties, $f_{\rm burst}$ and $t_{\rm burst}$.  We find a maximum density of $n_{18} \sim 3000$ cm$^{-3}$ is achieved for a burst of age $t_{\rm burst} \sim 4$ Myr which forms most of the stars in the nucleus $f_{\rm burst} \sim 1$.  In this case, both the energy and mass budgets of the CNM are dominated by fast winds from massive stars ($\gsim 15 \, \Msun$).  Although a large gas density is present in the immediate aftermath of a starburst, its magnitude will decline with the wind mass loss rate, approximately $\propto t^{-3}$.  Therefore, the gas density would
+decline by an order of magnitude from its maximum possible value after just a few Myr.
 
-The lowest density $\sim 0.03$ cm$^{-3}$ achieved for a relatively
-modest burst, forming $4\times 10^{-4}$ of the stars. In this case
-there is a high heating rate from the young, massive stars and a low mass
-injection rate, with both young and old stars contributing.
+By contrast, the lowest density $\sim 0.03$ cm$^{-3}$ is achieved for a relatively modest burst of young stars $t_{\rm burst} \approx 10^{6}$ Myr, which forms a fraction $f_{\rm burst} = 4\times 10^{-4}$ of the total stellar mass. In this case young, massive stars provide a high heating rate, while the mass injection rate is relatively low, with both young and old stars contributing.
 
-This is likely an underestimate as we do not include discreteness
-effects. In particular, we assume that massive stars provide a
-spatially homogeneous heating source, even on small scales. However,
-for small bursts of star formation (the doubly hatched region in
-Fig.~\ref{fig:param}) there may be less than one massive star inside
-of the nominal stagnation radius (equation~\ref{eq:rs}). This is the
-case for the star formation history producing the minimum $n_{18}$
-($\sim 0.03$ cm$^{-3}$). Using the radius enclosing one massive
-($\gsim 15 \Msun$) star as the stagnation radius in
-equation~\eqref{eq:n18} gives a much larger $n_{18}$ of $\sim 0.5$
-cm$^{-3}$.
+Our procedure likely underestimates the value of $n_{18}$ somewhat, as we do not include the effects of discreteness on the assumed stellar population.  In particular, we assume that massive stars provide a spatially homogeneous heating source, even on small scales where the number of massive stars present may be very small.  The doubly hatched region in Fig.~\ref{fig:param} denotes the region where less than one massive star is on average present inside of the nominal stagnation radius (eq.~\ref{eq:rs}).  Discreteness effects are thus important for relatively small bursts of star formation, including the case described above which gives the minimum $n_{18}$.  If we instead equate the stagnation radius to the radius enclosing a single star of mass $\gsim 15 \Msun$, we find a larger value of $n_{18}$ of $\sim 0.3$ cm$^{-3}$.  The true minimum density likely resides between these extremes, i.e.~$n_{18} \sim 0.03-0.3$ cm$^{-3}$.
 
-A typical TDE host galaxy has evidence of some star formation
-within 1 Gyr \citep{French+2016}. This corresponds to the right hand side
-of Fig.~\ref{fig:param}. In this case the heating rate will be
-dominated by Ia supernovae and $n_{18}\sim 80$ cm$^{-3}$.
+The majority of the host galaxies of observed TDE flares shows evidence for a stellar population of age $t_{\rm burst} \lesssim$ 1 Gyr \citep{French+2016}, which corresponds to the right hand side of Fig.~\ref{fig:param}. In this region of parameter space, gas heating rate is dominated by SN Ia and we typically expect $n_{18}\sim 100$ cm$^{-3}$.
 
 \subsubsection{Thermal properties of gas}
 
