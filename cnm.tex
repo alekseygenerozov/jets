@@ -160,7 +160,18 @@ J1644+57.  \citet{Mimica+2015} used 2D hydrodynamical models, coupled
 with a synchrotron radiation transport calculation, to model the
 on-axis emission from {\it Swift} J1644+57. They then extended this
 model to off-axis viewing angles, and concluded that most previous
-TDEs should have been detected if their jets were as powerful.
+TDEs should have been detected if their jets were as powerful. 
+
+Recently, a candidate TDE flare (ASSASN-14li) was observed to
+have transient radio emission, consistent with either a weak
+relativistic jet \citep{van-Velzen+2015} or a sub-relativistic outflow
+\citep{Alexander+2015} with overall energy in the range of
+$10^{48}-10^{49}$ ergs.  ASSASN-14li occurred in a very nearby galaxy,
+and if other TDE candidates launched similar outflows, their radio
+afterglows would be below existing upper limits. However, a priori it
+is not obvious whether the lack of observed radio emission in most
+thermal TDEs is due to (i) weak/no outflows or (ii) a nuclear gas
+environment unfavorable for producing observable radio emission.
 
 Previous works (\citet{Bower+2013}; \citet{van-Velzen+2013};
 \citealt{Mimica+2015}) have generally assumed that all TDEs occur in a
@@ -714,7 +725,7 @@ material ($\sim 0.5$ cm$^{-3}$).
 \label{sec:analytic}
 
 The mass of the CNM swept up by a jet is equal to its own rest mass at
-``Sedov'' radius. For a power law gas density profile, $n= n_0 \left(r/r_0\right)^{-k}$
+``Sedov'' radius. For a power law gas density profile, $n= n_0 \left(r/r_0\right)^{-k}$,
 
 \begin{equation}
   r_{\rm dec} = r_0 \left( \frac{E(3-k)}{4\pi n_{0}
@@ -723,8 +734,8 @@ The mass of the CNM swept up by a jet is equal to its own rest mass at
 \end{equation}
 %
 where $E$ and $\Gamma$ are the isotropic equivalent energy and Lorentz
-factor of the jet. In the observer frame, The jet reaches this radius
-at this radius at the deceleration time, given by
+factor of the jet. In the lab frame, The jet reaches this radius
+at the deceleration time, given by
 
 \begin{align}
  t_{\rm dec}= &c/r_{\rm dec} \nonumber\\
@@ -759,7 +770,7 @@ changes on timescales $\gtrsim t_{\rm j}$ ({\bf AG: What is $t_j$?
   Time for which jet? Replace $t_0$ later on w/ $t_j$?}).
 
 A critical parameter is the ratio of the density of the jet to the
-CNM
+density of the CNM,
 
 \begin{equation}
   f\approx 40\,  L_{\rm j,48} n_{18}^{-1} \Gamma_{10}^{-2} \, \left(\frac{r}{10^{18} {\rm
@@ -846,17 +857,16 @@ late times, when the emission from the slow outer core dominates, the
 found a modification of the 1D model that makes its light curves
 match the 2D results much more closely.
 
-We first summarize the two-component model as presented in
-\citet{Mimica+2015}. The jet has a fast inner core spans an angular
-interval $[0, 0.1\ {\rm rad}]$, while the slow outer sheath occupies
-$[0.1\ {\rm rad}, 0.5\ {\rm rad}]$. For both components we assume
-$E_{\rm ISO} = 4\times 10^{54}$ erg. The crucial thing to notice is
-that, keeping $E_{\rm ISO}$ constant, the true jet energy depends only
-on the angular interval: $E_{\rm jet} = E_{\rm ISO} (\cos\theta_{\rm
-  j,min} - \cos\theta_{\rm j,max})$. The hydrodynamic evolution of the
-components is independent of angle in 1D simulations, but the
-radiative transfer/light curve calculation is sensitive to the jet
-geometry.
+In the two component model of \citet{Mimica+2015}, the jet has a fast
+inner core spans an angular interval $[0, 0.1\ {\rm rad}]$, while the
+slow outer sheath occupies $[0.1\ {\rm rad}, 0.5\ {\rm rad}]$. For
+both components we assume $E_{\rm ISO} = 4\times 10^{54}$ erg. The
+crucial thing to notice is that, keeping $E_{\rm ISO}$ constant, the
+true jet energy depends only on the angular interval: $E_{\rm jet} =
+E_{\rm ISO} (\cos\theta_{\rm j,min} - \cos\theta_{\rm j,max})$. The
+hydrodynamic evolution of the components is independent of angle in 1D
+simulations, but the radiative transfer/light curve calculation is
+sensitive to the jet geometry.
 
 Although the sheath is injected in a relatively
 narrow angular interval, at late stages of the jet evolution the bow
@@ -962,10 +972,10 @@ Table~\ref{tab:jetParams}.
 
 The left-hand side of Fig.~\ref{fig:jetContours} shows contours of the
 total peak luminosity (including both the fast core and slow sheath)
-across this grid. It also shows contours of the peak luminosity of just
-the slow sheath. In general, the slow component is more important for
-higher densities and smaller frequencies.  This is further illustrated
-in Fig~\ref{fig:components}, which shows the relative contributions of
+and the peak luminosity of just the slow component across this
+grid. In general, the slow component dominates for large densities
+and small frequencies.  This is further illustrated in
+Fig~\ref{fig:components}, which shows the relative contributions of
 the fast and slow components to the 5 GHz light curve of a $5 \times
 10^{53}$ erg jet for different ambient gas densities. For
 $n_{18}=2000$, the slow component dominates for nearly all times.  For
@@ -973,10 +983,11 @@ $n_{18}=2$, the fast component dominates at early times and at the
 peak of the light curve, while the slow component dominates after
 $\sim$1 year.
 
-Overall, the peak luminosity of the slow component falls off sharply
-at low densities and high frequencies. However, the fast component
+Overall, the peak luminosity of the slow component declines at low
+densities, especially at 30 GHz. However, the fast component
 compensates for this decline, so that the total peak luminosity is
-very weakly dependent on density across the entire grid.
+very weakly dependent on density across the entire grid {\bf AG Not
+  satisfying. Seems very coincidental and model dependent}. 
 
 \begin{figure}
 \includegraphics[width=8cm]{components.pdf}
@@ -1015,10 +1026,10 @@ accelerated electrons ($p$) gives
 %
 where $A_1$ and $A_2$ are overall normalization constants.  Case 1
 would be relevant for a low density medium, in which the jet is
-optically thin at the deceleration time. In this case, the peak flux
+optically thin at the deceleration time. In this case, the peak luminosity
 is quite sensitive to density. Case 2 would be relevant for a high
 density medium, in which the jet is optically thick at the
-deceleration time. In this case, the peak flux is only weakly
+deceleration time. In this case, the peak luminosity is only weakly
 dependent on the ambient gas density. This is qualitatively consistent
 with the numerical results for the slow component in
 Fig.~\ref{fig:jetContours}.
@@ -1049,7 +1060,7 @@ t_p=
 \end{align}
 %
 where $t_1$ and $t_2$ are normalization constants. In general, the
-light curve for a higher energy jet will peak later than the light
+light curve of a higher energy jet will peak later than the light
 curve for a low energy jet. The scaling with density is more
 complicated: if the emitting region is optically thick at the
 deceleration time (``Case 2''), a higher ambient density results in a
@@ -1059,13 +1070,13 @@ ambient gas densities. Otherwise, the peak time will scale with the
 deceleration time, and a larger ambient gas density will result in a
 later peak (``Case 1'').
 
-Fig.~\ref{fig:ContoursTp} shows contours of the peak time for the
-overall light curve, the peak time for just the slow component, and
-the Case 2 peak time from equation~\eqref{eq:tpeak}. For high
-densities/low frequencies the peak time scaling with energy and
-density is roughly consistent with the analytic result for ``Case
-2''. For lower densities, the numerical results diverge from the
-analytic prediction, in part due to the contributions of the fast
+The left-hand side of Fig.~\ref{fig:ContoursTp} shows contours of the
+peak time for the overall light curve and the peak time for just the
+slow component. The right-hand side of Fig.~\ref{fig:ContoursTp} shows
+the Case 2 peak time from equation~\eqref{eq:tpeak}, which roughly
+reproduces the numerical results for high densities/low
+frequencies. For lower densities, the numerical results diverge from
+the analytic prediction, in part due to the contributions of the fast
 component.  Furthermore, the peak time for the 30 GHz light curves
 decreases with density for small $n_{18}$, as the emitting region is
 optically thin at the deceleration time (``Case 1'').
