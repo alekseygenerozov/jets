@@ -778,50 +778,63 @@ for the fast inner core and $\Gamma = 2$ for the slow outer sheath),
 but introduce a number of modifications regarding the jet energy
 when performing 1D simulations.
 
-\subsection{1D vs. 2D Models}
-\label{sec:2D}
+% \subsection{1D vs. 2D Models}
+% \label{sec:2D}
 
-The preferred numerical model for SwJ1644 \citep[Fig.10
-in][]{Mimica+2015} was obtained using 2D simulations (the red line in
-that figure). However, the light curve of a 1D version of the same
-model \citep[black line in Fig. 10 in][see also section 4.2 of that
-paper]{Mimica+2015} matches the 2D light curve only at early times,
-when the emission from the inner relativistic jet dominates, while at
-late times, when the emission from the slow outer core dominates, the
-1D model overestimates the emission from the 2D model. In this work we
-found a modification of the 1D model that makes its light curves
-match the 2D results much more closely.
+% The preferred numerical model for SwJ1644 \citep[Fig.10
+% in][]{Mimica+2015} was obtained using 2D simulations (the red line in
+% that figure). However, the light curve of a 1D version of the same
+% model \citep[black line in Fig. 10 in][see also section 4.2 of that
+% paper]{Mimica+2015} matches the 2D light curve only at early times,
+% when the emission from the inner relativistic jet dominates, while at
+% late times, when the emission from the slow outer core dominates, the
+% 1D model overestimates the emission from the 2D model. In this work we
+% found a modification of the 1D model that makes its light curves
+% match the 2D results much more closely.
 
-In the two component model of \citet{Mimica+2015}, the jet has a fast
-inner core spans an angular interval $[0, 0.1\ {\rm rad}]$, while the
-slow outer sheath occupies $[0.1\ {\rm rad}, 0.5\ {\rm rad}]$. For
-both components we assume $E_{\rm ISO} = 4\times 10^{54}$ erg. The
-crucial thing to notice is that, keeping $E_{\rm ISO}$ constant, the
-true jet energy depends only on the angular interval: $E_{\rm jet} =
-E_{\rm ISO} (\cos\theta_{\rm j,min} - \cos\theta_{\rm j,max})$. The
-hydrodynamic evolution of the components is independent of angle in 1D
-simulations, but the radiative transfer/light curve calculation is
-sensitive to the jet geometry.
+In the two component model of \citet{Mimica+2015}, the fast inner core
+spans an angular interval $[0, 0.1\ {\rm rad}]$, while the slow outer
+sheath occupies $[0.1\ {\rm rad}, 0.5\ {\rm rad}]$. 
+% For both
+% components they assume $E_{\rm ISO} = 4\times 10^{54}$ erg. Note that,
+% for fixed $E_{\rm ISO}$, the true jet energy depends only on the
+% angular interval: $E_{\rm jet} = E_{\rm ISO} (\cos\theta_{\rm j,min} -
+% \cos\theta_{\rm j,max})$.
 
-Although the sheath is injected in a relatively
-narrow angular interval, at late stages of the jet evolution the bow
-shock created by its interaction with CNM spans a much larger interval,
-i.e. the slow component becomes almost isotropic \citep[bottom two
-panels in Fig. 8 in][]{Mimica+2015}. Thus, the light curves from the
-2D simulations differ from those of the 1D simulations in which the
-angular size of the jet is held fixed. We note that the stage at
-which the jet becomes ``isotropic'' depends on the CNM density,
-i.e. the denser the CNM, the faster this is expected to happen.
+Although the sheath is injected in a relatively narrow angular
+interval, at late stages of the jet evolution the bow shock created by
+its interaction with CNM spans a much larger interval i.e. the slow
+component becomes almost isotropic \citep[bottom two panels in Fig. 8
+in][]{Mimica+2015}. To account for this, we take $[0.1 {\rm rad},
+\pi/2 {\rm rad}]$ for the angular extent of the slow component. Doing
+so better reproduces the light curves from 2D jet simulation (see
+$\S~\ref{sec:1d2d}$. The ratio of the true energy of the fast
+component is fixed to be 4\% of the energy in the slow component, as
+in \citet{Mimica+2015}.
 
-Since the agreement between 1D and 2D models is good for early times
-(when the fast component dominates), we modify only the slow component
-in 1D models. We assume that is spans $[0.1\ {\rm rad}, \pi/2\ {\rm
-  rad}]$ and lower its isotropic equivalent energy so that the true
-jet energy remains unchanged with respect to the original model:
+ % The hydrodynamic evolution of the components
+% is independent of angle in 1D simulations, but the radiative
+% transfer/light curve calculation is sensitive to the jet geometry.
 
-\begin{equation}\label{eq:Eiso}
- E_{\rm ISO, new} = E_{\rm ISO} \left(\frac{\cos(0.1) - \cos(0.5)}{\cos(0.1) - \cos(\pi/2)}\right)\approx 0.12 E_{\rm ISO}\, .
-\end{equation}
+% Although the sheath is injected in a relatively
+% narrow angular interval, at late stages of the jet evolution the bow
+% shock created by its interaction with CNM spans a much larger interval,
+% i.e. the slow component becomes almost isotropic \citep[bottom two
+% panels in Fig. 8 in][]{Mimica+2015}. Thus, the light curves from the
+% 2D simulations differ from those of the 1D simulations in which the
+% angular size of the jet is held fixed. We note that the stage at
+% which the jet becomes ``isotropic'' depends on the CNM density,
+% i.e. the denser the CNM, the faster this is expected to happen.
+
+% Since the agreement between 1D and 2D models is good for early times
+% (when the fast component dominates), we modify only the slow component
+% in 1D models. We assume that is spans $[0.1\ {\rm rad}, \pi/2\ {\rm
+%   rad}]$ and lower its isotropic equivalent energy so that the true
+% jet energy remains unchanged with respect to the original model:
+
+% \begin{equation}\label{eq:Eiso}
+%  E_{\rm ISO, new} = E_{\rm ISO} \left(\frac{\cos(0.1) - \cos(0.5)}{\cos(0.1) - \cos(\pi/2)}\right)\approx 0.12 E_{\rm ISO}\, .
+% \end{equation}
 %
 We assume the same time dependence for the jet luminosity as in
 \citet{Mimica+2015},
