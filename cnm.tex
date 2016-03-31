@@ -345,8 +345,6 @@ steady-state gas density calculated for a core and a cusp stellar
 density profile. The stagnation radius is marked as a blue dot on each
 profile.
 
-
-
 As described in GSM15, the stagnation radius is approximately given by
 
 \begin{equation}
@@ -803,39 +801,16 @@ sheath occupies $[0.1\ {\rm rad}, 0.5\ {\rm rad}]$.
 
 Although the sheath is injected in a relatively narrow angular
 interval, at late stages of the jet evolution the bow shock created by
-its interaction with CNM spans a much larger interval i.e. the slow
-component becomes almost isotropic \citep[bottom two panels in Fig. 8
-in][]{Mimica+2015}. To account for this, we take $[0.1 {\rm rad},
-\pi/2 {\rm rad}]$ for the angular extent of the slow component. Doing
-so better reproduces the light curves from 2D jet simulation (see
+its interaction with CNM spans a much larger interval in 2D
+simulations i.e. the slow component becomes almost isotropic
+\citep[bottom two panels in Fig. 8 in][]{Mimica+2015}. To account for
+this, we take $[0.1 {\rm rad}, \pi/2 {\rm rad}]$ for the angular
+extent of the slow component for our 1D simulations. Doing so better
+reproduces the light curves from 2D jet simulation (see
 $\S~\ref{sec:1d2d}$. The ratio of the true energy of the fast
 component is fixed to be 4\% of the energy in the slow component, as
 in \citet{Mimica+2015}.
 
- % The hydrodynamic evolution of the components
-% is independent of angle in 1D simulations, but the radiative
-% transfer/light curve calculation is sensitive to the jet geometry.
-
-% Although the sheath is injected in a relatively
-% narrow angular interval, at late stages of the jet evolution the bow
-% shock created by its interaction with CNM spans a much larger interval,
-% i.e. the slow component becomes almost isotropic \citep[bottom two
-% panels in Fig. 8 in][]{Mimica+2015}. Thus, the light curves from the
-% 2D simulations differ from those of the 1D simulations in which the
-% angular size of the jet is held fixed. We note that the stage at
-% which the jet becomes ``isotropic'' depends on the CNM density,
-% i.e. the denser the CNM, the faster this is expected to happen.
-
-% Since the agreement between 1D and 2D models is good for early times
-% (when the fast component dominates), we modify only the slow component
-% in 1D models. We assume that is spans $[0.1\ {\rm rad}, \pi/2\ {\rm
-%   rad}]$ and lower its isotropic equivalent energy so that the true
-% jet energy remains unchanged with respect to the original model:
-
-% \begin{equation}\label{eq:Eiso}
-%  E_{\rm ISO, new} = E_{\rm ISO} \left(\frac{\cos(0.1) - \cos(0.5)}{\cos(0.1) - \cos(\pi/2)}\right)\approx 0.12 E_{\rm ISO}\, .
-% \end{equation}
-%
 We assume the same time dependence for the jet luminosity as in
 \citet{Mimica+2015},
 
@@ -847,15 +822,14 @@ where $t_0 = 5\times 10^5$ seconds. Integrating equation~\ref{eq:lum}
 in time from $0$ to $\infty$ would give $E_{\rm ISO}$. Thus,
 $L_{j,0}=0.4\, E_{\rm ISO}/t_0$. 
 
-We show a comparison of this modified 1D approach with the true 2D
-result in Figure~\ref{fig:1D2DB}, for $n_{18}=60$ and $n_{18}=2000$
-and $E_{\rm ISO}=4 \times 10^{54}$ ergs. For $n_{18}=2000$ the
-agreement is excellent, while for $n_{18}=60$ the 1D models still
-over-predict still over-predict the flux at times after the peak of
-the light curve.
+% We show a comparison of this modified 1D approach with the true 2D
+% result in Figure~\ref{fig:1D2DB}, for $n_{18}=60$ and $n_{18}=2000$
+% and $E_{\rm ISO}=4 \times 10^{54}$ ergs. For $n_{18}=2000$ the
+% agreement is excellent, while for $n_{18}=60$ the 1D models still
+% over-predict still over-predict the flux at times after the peak of
+% the light curve.
 
-% We summarize our fiducial jet model and our grid of simulations in
-% Table~\ref{tab:jetParams}
+
 
 \begin{table}
 \begin{threeparttable}
@@ -1052,6 +1026,26 @@ optically thin at the deceleration time (``Case 1'').
     lines)}
 \end{figure*}
 
+ \subsection{1D vs. 2D simulations}
+ \label{sec:1d2d}
+ As described in $\S~\ref{sec:numerical}$, we take a slow component
+ extending from 0.1-$\pi/2$ radians for our 1D simulations
+
+ Fig.~\ref{fig:1D2DB}, shows a comparison of the light curves derived
+ from 1D and 2D results. For the 2D simulations we assume that the
+ slow component of the jet initially extends from 0.1-0.5
+ radians. Although, the slow component for the 1D simulations is much
+ broader, the 1D results and 2D results are quite close at high
+ densities ($n_{18}=2000$). This is because the jet rapidly spreads
+ out and isotropizes in 2D. The agreement is not as good for
+ $n_{18}=60$, for which the 1D calculation predict systematically
+ higher luminosities. 
+
+% Light curves from 1D simulations with broadened
+%  slow components show much better agreement with the 2D results
+%  (especially large ambient gas densities) than 1D simulations where the
+%  angular extent of the slow component is the slow 
+
  \subsection{Effects of viewing angle}
 Fig.~\ref{fig:onOff} shows a comparison off and on-axis light curves.
 For $n_{18}=2000$ the light curves differ little.  For $n_{18}=60$
@@ -1118,7 +1112,7 @@ near the deceleration radius is fixed.
 \end{figure}
 
 \subsection{Contributions of the reverse shock}
-The result in Figures~\ref{fig:1D2DB}-~\ref{fig:ContoursTp} only
+The result in Figures~\ref{fig:1D2DB}-~\ref{fig:cores} only
 include emission from the forward shock. In this section we discuss
 the contribution of reverse shock emission on the radio light curve.
 
