@@ -991,7 +991,7 @@ t_p=
   \left(\frac{\nu_{\rm obs}}{5 {\rm GHz}}\right)^{-1.1} n_{18}^{0.4} &
   {\rm Case \, 2}
 \end{cases}
-\label{eq:tpeak}
+\label{eq:peakTime}
 \end{align}
 %
 where $t_1$ and $t_2$ are constants. In general, the light curve of a
@@ -1008,7 +1008,7 @@ time, and a larger ambient gas density will result in a later peak
 The left-hand side of Fig.~\ref{fig:ContoursTp} shows contours of the
 peak time for the slow component and total light curves. The
 right-hand side of Fig.~\ref{fig:ContoursTp} shows the Case 2 peak
-time from equation~\eqref{eq:tpeak} (with $t_2=25.2$ days), which roughly
+time from equation~\eqref{eq:peakTime} (with $t_2=25.2$ days), which roughly
 reproduces the numerical results for high densities/low
 frequencies. For lower densities, the numerical results diverge from
 the analytic prediction, in part due to the contributions of the fast
@@ -1019,99 +1019,96 @@ optically thin at the deceleration time (``Case 1'').
 
 \begin{figure*}
   \includegraphics[width=16cm]{lp_contours_new.pdf}
-  \caption{\label{fig:jetContours} {\it {Left:}} Thick solid lines
-    show peak luminosity as a function of jet energy and density at
-    $10^{18}$ cm for our fiducial gas density profile, $n\propto
-    r^{-1}$. Thin lines show contours of peak luminosity for the slow
-    component of the jet (see~\ref{sec:numerical}). {\it Right:} Analytic
-    scaling for the peak luminosity (equation~\ref{eq:peakLum})
-    compared to the numerical results for the slow component.}
+  \caption{\label{fig:jetContours} {\it {Left:}} Thick lines show peak
+    luminosity in the parameter space of jet energy and ambient gas
+    density at $10^{18}$ cm, calculated from the grid of on-axis jet
+    simulations in Table~\ref{tab:jetParams}. Thin lines show contours
+    of peak luminosity for the slow component light curve
+    (see $\S$~\ref{sec:numerical}). {\it Right:} Analytic scaling for the
+    peak luminosity ({\it dashed}, see equation~\ref{eq:peakLum})
+    compared to the numerical results for the slow component (solid
+    lines).}
 \end{figure*}
-
 
 \begin{figure*}
   \includegraphics[width=16cm]{tp_contours_new.pdf}
-  \caption{\label{fig:ContoursTp} {\it {Left:}} Thick solid lines show
-    time of peak in days as a function of jet energy and density at
-    $10^{18}$ cm for our fiducial gas density profile, $n\propto
-    r^{-1}$. Thin lines show contours of peak time for the slow
-    component of the jet (see~\ref{sec:numerical}). {\it Right:}
-    Analytic scaling for the peak luminosity
-    (equation~\ref{eq:peakLum}) compared to the numerical results for
-    the slow component.}
+  \caption{\label{fig:ContoursTp} {\it {Left:}} Thick lines show peak
+    time in the parameter space of jet energy and ambient gas density
+    at $10^{18}$ cm, calculated from the grid of on-axis jet
+    simulations in Table~\ref{tab:jetParams}. Thin lines show contours
+    of peak luminosity for the slow component light curve
+    (see~\ref{sec:numerical}). {\it Right:} Analytic scaling for the
+    peak luminosity ({\it dashed}, see equation~\ref{eq:peakTime})
+    compared to the numerical results for the slow component (solid
+    lines)}
 \end{figure*}
 
+ \subsection{Effects of viewing angle}
+Fig.~\ref{fig:onOff} shows a comparison off and on-axis light curves.
+For $n_{18}=2000$ the light curves differ little.  For $n_{18}=60$
+off-axis luminosity is lower by a factor of a few before and near the
+peak. However, for late times the off- and on-axis light curves are
+quite similar. This is as expected, at late times the jet becomes more
+isotropic, which means the viewing angle has relatively little effect
+on the observed light curve.
 
-
-% The following equation roughly reproduces the behavior of the peak
-% time:
-
-% \begin{align}
-%   t_p =& 39.5 \left(\frac{E}{5 \times 10^{53} {\rm ergs}}\right)^{0.3}   \left(\frac{\epsilon_e}{0.1}\right)^{0.4}
-%   \left(\frac{\epsilon_b}{0.002}\right)^{0.4}\nonumber\\
-%  & \left(\frac{\nu}{5 {\rm GHz}}\right)^{-1} n_{18}^{0.35}  {\rm days}
-% \label{eq:peakTime}
-% \end{align}
-% %
-% Note that the peak time occurs later for larger $n_{18}$, as the
-% transition from optically thick to optically thin occurs at later times.
-
-%\subsection{Emission by components}
-
-
-\subsection{Comparison with radio detections and upper limits.}
-
-In the left panel of Fig.~\ref{fig:lightcurves} we show on-axis light
-curves for our fiducial $5\times 10^{53}$ erg jet (comparable to
-SwJ1644) and three different densities: n$_{18}$: 2, 60, and 2000
-cm$^{-3}$ together with radio upper limits and detections for various
-TDE candidates in Fig.~\ref{fig:lightcurves} (compiled from various
-sources into Table 1 of \citealt{Mimica+2015}).  All of the 5 GHz
-light curves fall above the upper limits. However, we were unable to
-perform a 2D calculation for $n_{18}=2$.  For $n_{18}=60$, the 2D
-light curve falls $\sim$one order of magnitude below the 1D light
-curve after $\sim$ 10 years. Thus, we caution that the 1D light curves
-for $n_{18}=2$ likely overestimate the late time radio luminosity. For
-this density even a SwJ1644 like jet would fall below existing upper
-limits. 
-
-Multiple radio measurements from several months to a few years after a
-tidal disruption flare would provide better constraints on the
-presence of TDE jets. For example, suppose we have a TDE candidate
-luminosity distance $d_L$ away and the radio flux density at 5 GHz is
-constrained to be less than $S$. Then from equation~\eqref{eq:peakLum},
-we can constrain the energy of the jet to be
-
-\begin{equation}
-E\lsim 7.6 \times 10^{48} \left(\frac{S}{50 \,\mu{\rm Jy}}\right)^{1.1}
-  \left(\frac{d}{200 \,{\rm Mpc}}\right)^{2.2} {\rm ergs}
-\end{equation}
-
-
-\begin{figure*} 
-  \includegraphics[width=8cm]{lightcurves.pdf}
-  \includegraphics[width=8cm]{lightcurves_en.pdf}
-  \caption{\label{fig:lightcurves} \textit{Right-hand panel:} On-axis
-    ($\theta_{\rm obs}=0$) radio light curves for our fiducial jet
-    model and three different values of n$_{18}$: 2, 60, and
-    2000. Solid lines correspond to the light curves from 1D jet
-    simulations. When available ($n_{18}=60$ and $n_{18}$=2000), we
-    have plotted light curves from the 2D jet simulations as dashed
-    lines. Note we use $n\propto r^{-1}$ for $n_{18}=$ 2 and 2000, but
-    $r^{-1.5}$ for $n_{18}=60$, as this model had already been
-    computed and since the 1D results suggest that the density slope
-    will have minimal impact on the results (see
-    $\S$~\ref{sec:profileComp}).  Radio upper limits and detections
-    are shown as black/gray triangles and squares respectively
-    (compiled in Table 1 of \citealt{Mimica+2015}). The single upper
-    limit in the top panel corresponds to 1.4 GHz. Gray triangles and
-    squares in the middle panel indicate upper limits and detections
-    at 3.0 GHz, while black triangles indicate upper limits at 5.0
-    GHz. \textit{Left-hand panel} 1D on-axis light curves for a jet
-    with a total energy of $5\times 10^{51}$ ergs, together with radio
-    upper limits and the light curves for our fiducial case
-    (translucent lines).}
+\begin{figure*}
+\includegraphics[width=16cm]{on_off.pdf}
+\caption{\label{fig:onOff} Comparison of (2D) off- and on-axis light
+  curves for $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for
+  frequencies of 1 GHz (left) and 5 GHz (right). The observer line of
+  sight is taken to be at $\theta_{\rm obs}=0.8$ with respect to the
+  jet axis. We assume an $n\propto r^{-1}$ density profile for
+  $n_{18}=2000$, but take $n\propto r^{-1.5}$ for $n_{18}=60$ for
+  computational convenience--this model was previously computed in
+  \citet{Mimica+2015} and 1D results suggest that the density slope
+  would have minimal impact on the results (see
+  $\S$~\ref{sec:profileComp}).}
 \end{figure*}
+
+\subsection{Effect of gas density profile}
+\label{sec:profileComp}
+We have also computed the radio light curves for different shapes of
+the gas density profile, while holding $n_{18}$ fixed. In
+Fig.~\ref{fig:cores}, we show on-axis radio light curves for our
+fiducial $n\propto r^{-1}$ and a core galaxy profile
+(equation~\ref{eq:cores}), both with $n_{18}=2$.
+The results are within a factor of a few of each other. The core and
+cusp light curves are even closer at higher densities, and virtually
+indistinguishable at $n_{18}=2000$. For larger densities, the jet only
+samples small radii, where the core and cusp profiles are quite
+similar (see Fig.~\ref{fig:profiles}). It is only at lower densities,
+for which the Sedov radius lies outside of the flattening of the core
+density profile, that noticeable differences emerge. {\bf AG why are
+  there differences at early times for $n_{18}=2$ but not
+  $n_{18}=2000$. Is this simply an artifact of the starting radius?}
+
+In Fig.~\ref{fig:profs2} we compare the 1D on-axis light curves for
+density two density profiles: $n\propto r^{-1}$ and $n\propto r^{-1.5}$
+with $n_{18}=60$. For most times the light curves are very close.
+This is as expected, since the Sedov radius, $r_{\rm sedov}\sim
+10^{18}$ cm. 
+
+Overall we conclude the slope of the stellar density will profile will
+have minimal effect on the radio light curve, as long as the density
+near the deceleration radius is fixed. 
+
+\begin{figure} 
+  \includegraphics[width=8cm]{fig_cores.pdf}
+  \caption{\label{fig:cores} Comparison of (on-axis) light curves for
+    $n_{18}=2$ and two different CNM gas density profiles: $n\sim
+    r^{-1}$ and the core galaxy profile from \eqref{eq:cores} with
+    $r_s=10^{18}$ cm.}
+\end{figure}
+
+
+\begin{figure} 
+  \includegraphics[width=8cm]{profs2.pdf}
+  \caption{\label{fig:profs2} Comparison of (on-axis) light curves for
+    $n_{18}=60$ and two different CNM gas density profiles: $n\propto
+    r^{-1}$ ({\it solid black}) and $n\propto r^{-1.5}$ ({\it dashed
+      red}).}
+\end{figure}
 
 \subsection{Contributions of the reverse shock}
 The result in Figures~\ref{fig:1D2DB}-~\ref{fig:ContoursTp} only
@@ -1164,28 +1161,63 @@ For low energy jets...
     light curve.}
 \end{figure}
 
-\subsection{Effects of viewing angle}
-Fig.~\ref{fig:onOff} shows a comparison off and on-axis light curves.
-For $n_{18}=2000$ the light curves differ little.  For $n_{18}=60$
-off-axis luminosity is lower by a factor of a few before and near the
-peak. However, for late times the off- and on-axis light curves are
-quite similar. This is as expected, at late times the jet becomes more
-isotropic, which means the viewing angle has relatively little effect
-on the observed light curve.
 
-\begin{figure*}
-\includegraphics[width=16cm]{on_off.pdf}
-\caption{\label{fig:onOff} Comparison of (2D) off- and on-axis light
-  curves for $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for
-  frequencies of 1 GHz (left) and 5 GHz (right). The observer line of
-  sight is taken to be at $\theta_{\rm obs}=0.8$ with respect to the
-  jet axis. We assume an $n\propto r^{-1}$ density profile for
-  $n_{18}=2000$, but take $n\propto r^{-1.5}$ for $n_{18}=60$ for
-  computational convenience--this model was previously computed in
-  \citet{Mimica+2015} and 1D results suggest that the density slope
-  would have minimal impact on the results (see
-  $\S$~\ref{sec:profileComp}).}
+
+\subsection{Comparison with radio detections and upper limits.}
+The left panel of Fig.~\ref{fig:lightcurves} show radio upper limits and
+detections for various TDE candidates (compiled from various sources
+into Table 1 of \citealt{Mimica+2015}) together with on-axis light
+curves for our fiducial $5\times 10^{53}$ erg jet (comparable to
+SwJ1644) and three different ambient density normalizations: n$_{18}$:
+2, 60, and 2000 cm$^{-3}$. All of the 5 GHz light curves fall above
+the upper limits. However, we were unable to perform a 2D calculation
+for $n_{18}=2$.  For $n_{18}=60$, the 2D light curve falls $\sim$one
+order of magnitude below the 1D light curve after $\sim$ 10
+years. Thus, we caution that the 1D light curves for $n_{18}=2$ likely
+overestimate the late time radio luminosity. For this density even a
+SwJ1644 like jet would fall below existing upper limits.
+
+Multiple radio measurements from several months to a few years after a
+tidal disruption flare would provide better constraints on the
+presence of TDE jets. For example, suppose we have a TDE candidate
+luminosity distance $d_L$ away and the radio flux density at 5 GHz is
+constrained to be less than $S$. Then from equation~\eqref{eq:peakLum},
+we can constrain the energy of the jet to be
+
+\begin{equation}
+E\lsim 7.6 \times 10^{48} \left(\frac{S}{50 \,\mu{\rm Jy}}\right)^{1.1}
+  \left(\frac{d}{200 \,{\rm Mpc}}\right)^{2.2} {\rm ergs}
+\end{equation}
+
+
+\begin{figure*} 
+  \includegraphics[width=8cm]{lightcurves.pdf}
+  \includegraphics[width=8cm]{lightcurves_en.pdf}
+  \caption{\label{fig:lightcurves} \textit{Right-hand panel:} On-axis
+    ($\theta_{\rm obs}=0$) radio light curves for our fiducial jet
+    model and three different values of n$_{18}$: 2, 60, and
+    2000. Solid lines correspond to the light curves from 1D jet
+    simulations. When available ($n_{18}=60$ and $n_{18}$=2000), we
+    have plotted light curves from the 2D jet simulations as dashed
+    lines. Note we use $n\propto r^{-1}$ for $n_{18}=$ 2 and 2000, but
+    $r^{-1.5}$ for $n_{18}=60$, as this model had already been
+    computed and since the 1D results suggest that the density slope
+    will have minimal impact on the results (see
+    $\S$~\ref{sec:profileComp}).  Radio upper limits and detections
+    are shown as black/gray triangles and squares respectively
+    (compiled in Table 1 of \citealt{Mimica+2015}). The single upper
+    limit in the top panel corresponds to 1.4 GHz. Gray triangles and
+    squares in the middle panel indicate upper limits and detections
+    at 3.0 GHz, while black triangles indicate upper limits at 5.0
+    GHz. \textit{Left-hand panel} 1D on-axis light curves for a jet
+    with a total energy of $5\times 10^{51}$ ergs, together with radio
+    upper limits and the light curves for our fiducial case
+    (translucent lines).}
 \end{figure*}
+
+
+
+
 
 % \subsection{Effect of jet energy}
 % In the left-hand panel of Figure~\ref{fig:lightcurves} we show radio
@@ -1197,51 +1229,6 @@ on the observed light curve.
 % For low densities ($n_{18}\sim 60$ cm$^{-3}$) the radio light curves
 % for the low energy jet fall below the observed radio upper limits at
 % late times. 
-
-
-\subsection{Effect of gas density profile}
-\label{sec:profileComp}
-We have also computed the radio light curves for different shapes of
-the gas density profile, while holding $n_{18}$ fixed. In
-Fig.~\ref{fig:cores}, we show on-axis radio light curves for our
-fiducial $n\propto r^{-1}$ and a core galaxy profile
-(equation~\ref{eq:cores}), both with $n_{18}=2$.
-The results are within a factor of a few of each other. The core and
-cusp light curves are even closer at higher densities, and virtually
-indistinguishable at $n_{18}=2000$. For larger densities, the jet only
-samples small radii, where the core and cusp profiles are quite
-similar (see Fig.~\ref{fig:profiles}). It is only at lower densities,
-for which the Sedov radius lies outside of the flattening of the core
-density profile, that noticeable differences emerge. {\bf AG why are
-  there differences at early times for $n_{18}=2$ but not
-  $n_{18}=2000$. Is this simply an artifact of the starting radius?}
-
-In Fig.~\ref{fig:profs2} we compare the 1D on-axis light curves for
-density two density profiles: $n\propto r^{-1}$ and $n\propto r^{-1.5}$
-with $n_{18}=60$. For most times the light curves are very close.
-This is as expected, since the Sedov radius, $r_{\rm sedov}\sim
-10^{18}$ cm. 
-
-Overall we conclude the slope of the stellar density will profile will
-have minimal effect on the radio light curve, as long as the density
-near the deceleration radius is fixed. 
-
-\begin{figure} 
-  \includegraphics[width=8cm]{fig_cores.pdf}
-  \caption{\label{fig:cores} Comparison of (on-axis) light curves for
-    $n_{18}=2$ and two different CNM gas density profiles: $n\sim
-    r^{-1}$ and the core galaxy profile from \eqref{eq:cores} with
-    $r_s=10^{18}$ cm.}
-\end{figure}
-
-
-\begin{figure} 
-  \includegraphics[width=8cm]{profs2.pdf}
-  \caption{\label{fig:profs2} Comparison of (on-axis) light curves for
-    $n_{18}=60$ and two different CNM gas density profiles: $n\propto
-    r^{-1}$ ({\it solid black}) and $n\propto r^{-1.5}$ ({\it dashed
-      red}).}
-\end{figure}
 
 
 
@@ -1412,7 +1399,7 @@ Extrapolating to the observer frequency gives
   \label{eq:Fpeak1}
 \end{align}
 %
-Then from equations~\eqref{eq:tpeak}, ~\eqref{eq:Fnum},
+Then from equations~\eqref{eq:tpeakGen}, ~\eqref{eq:Fnum},
 and~\eqref{eq:Fpeak1}
 
 \begin{align}
