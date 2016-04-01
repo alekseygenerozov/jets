@@ -541,14 +541,14 @@ $n_{18}\sim 0.5$ cm$^{-3}$.  The true minimum density likely resides
 between these extremes, in which case min($n_{18}) \sim 0.03-0.5$
 cm$^{-3}$.
 
-The majority of the host galaxies of observed TDE flares shows
-evidence for a stellar population of age $t_{\rm burst} \lesssim$ 1
-Gyr \citep{French+2016}, which corresponds to the right hand side of
-Fig.~\ref{fig:param}. In this region of parameter space, gas heating
-rate is dominated by SN Ia and we typically expect $n_{18}\sim 100$
-cm$^{-3}$. {\bf AG note that the entire stellar pop likely did not
-  form 1 Gyr ago. In fact the observation merely indicate that there
-  was some star formation w. in the last Gyr}
+The majority of the host galaxies of observed TDE flares show evidence
+of star formation within the last Gyr \citep{French+2016}, this
+corresponds to the right hand side of Fig.~\ref{fig:param}. In this
+region of parameter space, gas heating rate is dominated by SN Ia and
+we expect $n_{18}\sim 10-100$ cm$^{-3}$. {\bf AG note that the
+  entire stellar pop likely did not form 1 Gyr ago. In fact the
+  observation merely indicate that there was some star formation w. in
+  the last Gyr}
 
 To summarize, we expect the CNM densities of quiescent galaxies on
 parsec scales to vary from min($n_{18}) \sim 0.03$ to max($n_{18})\sim
@@ -777,30 +777,31 @@ cm$^{-3}$.
 
 \section{Jet Models}
 \label{sec:numerical}
-We calculate radio light curves due to the jet shocking the CNM across
-the physically plausible range of nuclear gas densities.  The jet-CNM
-interaction simulated in one and two-dimensions, and the resulting
-synchrotron emission is computed using the procedure described in
-\citet{Mimica+2015}.  For the jet model we take the preferred
-two-component model for SwJ1644 from \citet{Mimica+2015}: a fast,
-$\Gamma=10$ inner core and a slow, $\Gamma=2$ outer sheath.
+We calculate radio light curves due to the jet propagating through and
+shocking the CNM across the physically plausible range of nuclear gas
+densities.  The jet-CNM interaction simulated in one and
+two-dimensions, and the resulting synchrotron emission is computed
+using the procedure described in \citet{Mimica+2015}.  For the jet
+model we take the preferred two-component model for SwJ1644 from
+\citet{Mimica+2015}: a fast, $\Gamma=10$ inner core and a slow,
+$\Gamma=2$ outer sheath.
 
 
- We modify the geometry of the slow sheath for our 1D simulations to
- better reproduce the 2D results.  In \citet{Mimica+2015}, the fast
- inner core spans an angular interval $[0, 0.1\ {\rm rad}]$, while the
- slow outer sheath occupies $[0.1\ {\rm rad}, 0.5\ {\rm rad}]$.
- Although the sheath is injected in a relatively narrow angular
- interval, at late stages of the jet evolution the bow shock created
- by its interaction with CNM spans a much larger interval in 2D
- simulations i.e. the slow component becomes almost isotropic
- \citep[bottom two panels in Fig. 8 in][]{Mimica+2015}. To account for
- this, we take $[0.1 {\rm rad}, \,\pi/2\, {\rm rad}]$ for the angular
- extent of the slow component in our 1D simulations. The resulting
- light curves better match the results from the 2D jet simulation (see
- $\S~\ref{sec:1d2d}$). The ratio of the true energy of the fast
- component is fixed to be 4\% of the energy in the slow component, as
- in \citet{Mimica+2015}.
+We modify the geometry of the slow sheath for our 1D simulations to
+better reproduce the 2D results. As in \citet{Mimica+2015}, for our 2D
+simulations the fast inner core spans initially spans an angular
+interval $0-0.1\ {\rm radians}$, while the slow outer sheath extends
+from $0.1\ {\rm radians}$ to $0.5\ {\rm rad}$.  Although the sheath is
+injected in a relatively narrow angular interval, at late stages of
+the jet evolution the bow shock created by its interaction with CNM
+spans a much larger interval in 2D simulations i.e. the slow component
+becomes almost isotropic \citep[bottom two panels in Fig. 8
+in][]{Mimica+2015}. To account for this, we take a slow component
+extending from 0.1 to $\pi/2$ radians for our 1D simulations. The
+resulting light curves better match the results from the 2D jet
+simulation (see $\S~\ref{sec:1d2d}$). The ratio of the true energy of
+the fast component is fixed to be 4\% of the energy in the slow
+component, as in \citet{Mimica+2015}.
 
  We assume the same time dependence for the jet luminosity as in
  \citet{Mimica+2015},
@@ -864,14 +865,14 @@ $L_{j,0}=0.4\, E_{\rm ISO}/t_0$.
 
 \begin{figure*}
 \includegraphics[width=16cm]{1D_2D.pdf}
-\caption{\label{fig:1D2DB} Comparison of 1D and 2D light curves for
-  $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for frequencies of 1
-  GHz (left) and 5 GHz (right) and an observer angle of 0.8 radians to
-  the jet axis. We assume that the gas density $n\propto r^{-1}$ for
-  $n_{18}=2000$, but take $n\propto r^{-1.5}$ for $n_{18}=60$ for
-  computational convenience--this model was previously computed in
-  \citet{Mimica+2015} and 1D results suggest that the density slope
-  would have minimal impact on the results (see
+\caption{\label{fig:1D2DB} Comparison of light curves from 1D and 2D
+  simulations for $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for
+  frequencies of 1 GHz (left) and 5 GHz (right) and an observer angle
+  of 0.8 radians to the jet axis. We assume that the gas density
+  $n\propto r^{-1}$ for $n_{18}=2000$, but take $n\propto r^{-1.5}$
+  for $n_{18}=60$ for computational convenience--this model was
+  previously computed in \citet{Mimica+2015} and 1D results suggest
+  that the density slope would have minimal impact on the results (see
   $\S$~\ref{sec:profileComp})}.
 \end{figure*}
 
@@ -1020,7 +1021,8 @@ optically thin at the deceleration time (``Case 1'').
  \subsection{1D vs. 2D simulations}
  \label{sec:1d2d}
  As described in $\S~\ref{sec:numerical}$, we take a slow component
- extending from 0.1-$\pi/2$ radians for our 1D simulations
+ extending from 0.1-$\pi/2$ radians for our 1D simulations, to account
+ for jet spreading seen in 2D simulations.
 
  Fig.~\ref{fig:1D2DB}, shows a comparison of the light curves derived
  from 1D and 2D results. For the 2D simulations we assume that the
@@ -1032,7 +1034,7 @@ optically thin at the deceleration time (``Case 1'').
  $n_{18}=60$, for which the 1D calculation predict systematically
  higher luminosities. Nonetheless, using a broadened slow component in
  1D leads to better agreement with 2D results {\bf AG: Is this
-   actually true for n18=60}.
+   actually true for n18=60?}.
 
 % Light curves from 1D simulations with broadened
 %  slow components show much better agreement with the 2D results
@@ -1085,7 +1087,7 @@ This is as expected, since the Sedov radius, $r_{\rm sedov}\sim
 
 Overall we conclude the slope of the stellar density will profile will
 have minimal effect on the radio light curve, as long as the density
-near the deceleration radius is fixed. 
+near the deceleration/Sedov radius is fixed. 
 
 \begin{figure} 
   \includegraphics[width=8cm]{fig_cores.pdf}
@@ -1106,8 +1108,10 @@ near the deceleration radius is fixed.
 
 \subsection{Contributions of the reverse shock}
 The result in Figures~\ref{fig:1D2DB}-~\ref{fig:cores} only
-include emission from the forward shock. In this section we discuss
-the contribution of reverse shock emission on the radio light curve.
+include emission from the forward shock. In principal the reverse
+shock may provide an additional contribution to the radio light
+curve. However, as we describe in this section its contribution will
+be negligible, at least for high energy jets.
 
 The fraction of jet kinetic energy dissipated by the reverse shock
 places an upper bound on its contribution to the overall light
@@ -1118,7 +1122,9 @@ the slow component ($\Gamma_{\rm j}=2$) kinetic energy dissipated by
 the reverse shock as a function of isotropic jet luminosity and
 $n_{18}$. For the purposes this estimate, we assume a constant
 luminosity jet, which shuts off after time $5 \times 10^{5}$ s {\bf AG
-careful shocks may be emitting at different frequencies}.
+careful shocks may be emitting at different frequencies. Also this
+energy is not necessarily lost...As we discussed upper bound
+interpretation may be naive}.
 
 For high ambient densities and/or low energy jets, the reverse shock
 dissipates a substantial fraction of the kinetic energy of the
@@ -1126,17 +1132,18 @@ jet. However, for high energy jets, we expect that the emission from
 the reverse shock will be absorbed for frequencies below 10 GHz.  This
 is illustrated in Fig.~\ref{fig:reverse}, which shows the forward
 shock, reverse shock, and total 5 GHz light curves for a $5\times
-10^{53}$ erg jet propagation through a gas density profile $n = 2
-(r/10^{18} {\rm cm})^{-1}$. Although the emission from the reverse
-shock is comparable to that from the forward shock at early times, the
-reverse shock emission contributes very little to the total light
-curve, since it is absorbed at the front of the jet. While the
-fraction of energy dissipated in the reverse shock will be greater for
-a larger ambient density, any emission from the reverse shock would be
-absorbed. We thus, conclude that the reverse shock makes little
-difference for high energy ($E\sim 10^{53}$ erg) jets.
+10^{53}$ erg jet propagation through our fiducial $n \propto r^{-1}$
+density profile with density normalization $n_{18}$=2. Although the
+emission from the reverse shock is comparable to that from the forward
+shock at early times, the reverse shock emission contributes very
+little to the total light curve, since it is absorbed at the front of
+the jet. While the fraction of energy dissipated in the reverse shock
+will be greater for a larger ambient density, any emission from the
+reverse shock would be absorbed. Thus, the reverse
+shock makes little difference for high energy ($E\sim 10^{53}$ erg)
+jets.
 
-For low energy jets...
+For low energy jets...{\bf this paragraph is for you Brian} 
 
 \begin{figure}
 \includegraphics[width=8cm]{diss.pdf}
@@ -1174,15 +1181,20 @@ SwJ1644 like jet would fall below existing upper limits.
 Multiple radio measurements from several months to a few years after a
 tidal disruption flare would provide better constraints on the
 presence of TDE jets. For example, suppose we have a TDE candidate
-luminosity distance $d_L$ away and the radio flux density at 5 GHz is
-constrained to be less than $S$. Then from equation~\eqref{eq:peakLum},
-we can constrain the energy of the jet to be
+with a radio upper limit, equation~\eqref{eq:peakLum}, provides a
+constraint on the total energy of the jet
+
+% luminosity distance $d_L$ away and the radio flux density at 5 GHz is
+% constrained to be less than $S$. Then from equation~\eqref{eq:peakLum},
+% we can constrain the energy of the jet to be
 
 \begin{equation}
 E\lsim 7.6 \times 10^{48} \left(\frac{S}{50 \,\mu{\rm Jy}}\right)^{1.1}
-  \left(\frac{d}{200 \,{\rm Mpc}}\right)^{2.2} {\rm ergs}
+  \left(\frac{d_L}{200 \,{\rm Mpc}}\right)^{2.2} {\rm ergs},
 \end{equation}
 
+where $S$ is upper limit for the flux density and $d_L$ is the
+luminosity distance to the source.
 
 \begin{figure*} 
   \includegraphics[width=8cm]{lightcurves.pdf}
