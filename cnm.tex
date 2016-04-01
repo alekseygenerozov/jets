@@ -301,39 +301,53 @@ the galaxies in \citet{Stone&Metzger2016} (their Table C).
   double check all expressions.}
 
 \subsubsection{Gas density profiles}
-The radio emission from TDE jets is sensitive to the density of gas
-near the deceleration (or ``Sedov'') radius, outside of which the jet
-has swept up a gaseous mass exceeding its own. For a power law gas
-density profile, $n= n_0 \left(r/r_0\right)^{-k}$,
+The radio emission from a jet is most sensitive to the density of
+ambient gas near the ``Sedov'' radius, outside of which the jet has
+swept up a gaseous mass exceeding its own. For a power law gas density
+profile, $n= n_0 \left(r/r_0\right)^{-k}$,
 
 \begin{equation}
-  r_{\rm dec} = r_0 \left( \frac{E(3-k)}{4\pi n_{0}
-      \Gamma m_{\rm p} c^2 r_0^3} \right)^{1/(3-k)}, 
+  r_{\rm sed} = r_0 \left( \frac{E(3-k)}{4\pi n_{0}
+      m_{\rm p} c^2 r_0^3} \right)^{1/(3-k)}, 
   \label{eq:rdec}
 \end{equation}
 %
-where $E$ and $\Gamma$ are the isotropic equivalent energy and Lorentz
-factor of the jet. In the lab frame, The jet reaches this radius
-at the deceleration time, given by  
+where $E$ is the isotropic equivalent energy. The jet decelerates to
+non-relativistic speeds at this radius, so the Lorentz factor of the
+jet has been set to 1.  Note that the jet will begin to decelerate
+before reaching the Sedov radius. Specifically, the jet will
+slow down once it has swept a fraction $1/\Gamma$ of its rest mass,
+at the deceleration radius
+
+\begin{equation}
+  r_{\rm dec}=\frac{r_{\rm sed}}{\Gamma^{2/(3-k)}}
+  \label{eq:rdec2}
+\end{equation}
+%
+In the lab frame, the jet reaches the Sedov and deceleration radii at
+times
 
 \begin{align}
+ t_{\rm sed}= &c/r_{\rm sed} \nonumber\\
+ \approx & \left(\frac{E}{10^{52} {\rm erg}}\right)^{1/(3-k)}
+ n_0^{-1/(3-k)} {\rm year}\\
  t_{\rm dec}= &c/r_{\rm dec} \nonumber\\
  \approx & \left(\frac{E}{10^{52} {\rm erg}}\right)^{1/(3-k)}
- n_0^{-1/(3-k)} \Gamma^{-1/(3-k)}{\rm year}
+ n_0^{-1/(3-k)} \Gamma^{-2/(3-k)} {\rm year}
  \label{eq:tdec}
 \end{align}
 %
 For our fiducial CNM density profile
-$n=n_{18}\left(r/10^{18}\right)^{-1} {\rm cm}$
+$n=n_{18}\left(r/10^{18}\right)^{-1} {\rm cm}$, the Sedov radius is
+given by 
 
 \begin{equation}
-r_{\rm dec} = E_{54}^{1/2} \Gamma_{10}^{-1/2} n_{\rm 18}^{-1/2}\,{\rm pc}. 
+r_{\rm sed} = 3 E_{54}^{1/2} n_{\rm 18}^{-1/2}\,{\rm pc}. 
 \end{equation}
 %
-where $E_{54}=E/(10^{54} {\rm  erg})$and $\Gamma_{10}=\Gamma/10$.  For
-a  powerful SwJ1644-like  jet the  deceleration radius  is of  order a
-parsec. We  therefore focus  on determining the  gas density on these
-scales.
+where $E_{54}=E/(10^{54} {\rm erg})$.  For a powerful SwJ1644-like jet
+the deceleration radius is of order a parsec. We therefore focus on
+determining the gas density on these scales. 
 
 Given sufficiently strong heating, a one-dimensional steady-state
 model for the CNM is characterized by an inflow-outflow structure.
@@ -612,14 +626,18 @@ star formation.
 \subsection{Empirical Constraints on CNM Density}
 \label{sec:empirical}
 
-In this section we translate observed constraints on the accretion rate distribution of supermassive black holes into constraints on the CNM density.  The accretion rate can be written as
+In this section we translate observed constraints on the accretion
+rate distribution of supermassive black holes into constraints on the
+CNM density.  The accretion rate can be written as
 \begin{equation}
 \dot{M}_{\bullet} = f_{\rm in} 4 \pi r^2 \mu m_p n v,
 \label{eq:mdot}
 \end{equation}
-where $n$ is the average density at radius $r$ and $f_{\rm in}$
-is the fraction of the large scale inflow which actually reaches small scales and accretes onto the black hole. 
-Inside the sonic point the velocity approaches the free-fall velocity, in which case  equation~\eqref{eq:mdot} becomes
+where $n$ is the average density at radius $r$ and $f_{\rm in}$ is the
+fraction of the large scale inflow which actually reaches small scales
+and accretes onto the black hole.  Inside the sonic point the velocity
+approaches the free-fall velocity, in which case
+equation~\eqref{eq:mdot} becomes
 \begin{equation}
   \dot{M}_{\bullet} = 1.1\times 10^{-5} \Mbh[,7]^{0.5} f_{\rm in}
   n_{18} \,\,\Msun {\rm yr}^{-1}.
@@ -1363,11 +1381,11 @@ peak frequency
 %
 % The observing frequencies considered here ($\geq 1$ GHz), are also
 % greater than $\nu_m$. 
-The peak of the light curve will at the deceleration time
-(equation~\ref{eq:tdec}) if the self-absorption frequency is below the
-observing band then (``Case 1''). Otherwise, it will occur after the
-deceleration time, when the self-absorption frequency crosses through
-the observing band (``Case 2''). The peak time for these two cases is
+The peak of the light curve will occur at the deceleration time if the
+self-absorption frequency is below the observing band then (``Case
+1''). Otherwise, it will occur after the deceleration time, when the
+self-absorption frequency crosses through the observing band (``Case
+2''). The peak time for these two cases is
 
 \begin{align}
 t_{\rm p}=
