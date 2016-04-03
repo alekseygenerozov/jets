@@ -755,7 +755,7 @@ cm$^{-3}$.
   \begin{tabular*}{0.95\columnwidth}{lll}
     \hline
     {Fast component} & Fiducial value & Other values \\ 
-    $\Gamma_{\rm j}$ & 10 &\\
+    $\Gamma$ & 10 &\\
     $[\theta_{\rm min}$, $\theta_{\rm max}]$ & [0, 0.1] radians & \\
     $E_{\rm ISO}/10^{54} {\,\rm erg}$ & 4  & 0.04, 0.4\\
     $E$ & $2 \times 10^{52}$ ergs\\
@@ -764,7 +764,7 @@ cm$^{-3}$.
     % $L_{j,0}$ & $3.2 \times 10^{48}$ erg/s & \\
     \hline 
     Slow component\\
-    $\Gamma_{\rm j}$ & 2 \\
+    $\Gamma$ & 2 \\
     $[\theta_{\rm min}$, $\theta_{\rm max}]$ & [0.1, $\pi/2$] radians
     & \\
     $E_{\rm ISO}/10^{54} {\rm erg}$ & $4.7$ & 0.047, 0.47 \\
@@ -1065,7 +1065,7 @@ places an upper bound on its contribution to the overall light
 curve. This can be calculated using the relativistic shock jump
 conditions, as described in
 Appendix~\ref{sec:reverse}. Fig.~\ref{fig:diss} shows the fraction of
-the slow component ($\Gamma_{\rm j}=2$) kinetic energy dissipated by
+the slow component ($\Gamma=2$) kinetic energy dissipated by
 the reverse shock as a function of isotropic jet luminosity and
 $n_{18}$. For the purposes this estimate, we assume a constant
 luminosity jet, which shuts off after time $5 \times 10^{5}$ s {\bf AG
@@ -1095,7 +1095,7 @@ For low energy jets...{\bf this paragraph is for you Brian}
 \begin{figure}
 \includegraphics[width=8cm]{diss.pdf}
 \caption{\label{fig:diss} Fraction of the slow component
-  ($\Gamma_{\rm j}=2$) kinetic energy dissipated by the reverse shock
+  ($\Gamma=2$) kinetic energy dissipated by the reverse shock
   vs. the isotropic jet luminosity ($L_{\rm j,iso}$) and $n_{18}$.}
 \end{figure}
 
@@ -1353,72 +1353,47 @@ and~\eqref{eq:Fpeak1}, we find
 
 \section{Reverse shock}
 \label{sec:reverse}
-In this appendix we provide a prescription for determining the
-fraction of jet kinetic energy that is dissipated by the reverse
-shock.
+Her we estimate the fraction of jet kinetic energy that is dissipated by the reverse
+shock, as opposed to the forward shock contribution focused on in this paper.
 
-From the continuity equation, the (co-moving) density of the jet is
-given by (e.g. Uhm \& Beloborodov 2007)
+From continuity, the co-moving density of a steady relativistic jet is given by (e.g. \citealt{Uhm&Beloborodov07})
  \begin{align}
    n_{\rm j} =  \frac{L_{\rm j, iso}}{4 \pi r^{2}\Gamma_{\rm
-       j}^{2}c^{3}m_p(1 + r \dot{\Gamma_{\rm j}}/c\Gamma_{\rm j}^{3})}
-   \approx  \frac{L_{\rm j, iso}}{4 \pi r^{2}\Gamma_{\rm j}^{2}c^{3}m_p},
+       j}^{2}c^{3}m_p(1 + r \dot{\Gamma}/c\Gamma^{3})}
+   \approx  \frac{L_{\rm j, iso}}{4 \pi r^{2}\Gamma^{2}c^{3}m_p},
 \end{align}
 %
 where $L_{\rm j, iso}$ is the isotropic equivalent luminosity of the
-jet. The second term in the denominator is generally negligible as
-long as the Lorentz factor of the jet changes slowly
-($\dot{\Gamma}_{\rm j} \ll c\Gamma_{\rm j}^{3}/r$), as can be shown to
-be true at radii $r < r_{\rm sedov}$ as long as $\Gamma_{\rm j}$
-changes on timescales $\gtrsim t_{\rm j}$ ({\bf AG: What is $t_j$?
-  Time for which jet? Replace $t_0$ later on w/ $t_j$?}).
+jet. The second term in the denominator is generally negligible if the jet Lorentz factor changes slowly
+($\dot{\Gamma}_{\rm j} \ll c\Gamma^{3}/r$), as can be shown to be true at radii $r < r_{\rm dec}$ as long as $\Gamma$ changes on timescales $\gtrsim t_{\rm 0}$, where $t_{\rm 0}$ is the jet duration.
 
-A critical parameter is the ratio of the density of the jet to the
-density of the CNM,
-
+The Lorentz factor of the shocked material may be estimated using the relativistic shock jump condition and pressure equality between the forward and reverse shocks.  In the ultra-relativistic limit this gives,
+\begin{equation}
+\Gamma_{\rm sh} \underset{\Gamma_{\rm sh} \gg 1}= \Gamma\left[1 + 2\Gamma f^{-1/2}\right]^{-1/2},
+\end{equation}
+where
 \begin{equation}
   f\approx 40\,  L_{\rm j,48} n_{18}^{-1} \Gamma_{10}^{-2} \, \left(\frac{r}{10^{18} {\rm
         cm}}\right)^{-1} 
 \end{equation}
-%
-For a given $f$, the Lorentz factor of the shocked material may be
-calculated using the relativistic shock jump condition and pressure
-equality between the forward and reverse shocks. In the
-ultra-relativistic limit 
-
-\begin{equation}
-\Gamma_{\rm sh} \underset{\Gamma_{\rm sh} \gg 1}= \Gamma_{\rm j}\left[1 + 2\Gamma_{\rm j}f^{-1/2}\right]^{-1/2}
-\end{equation}
-%
-However, this expression is problematic when the outflow is mildly
-relativistic or non-relativistic. In particular, it gives Lorentz
-factors less than 1. A more general expression for $\Gamma_{\rm sh}$
-can be obtained using equation 3 from
-\citet{Beloborodov&Uhm2006}\footnote{As pointed out by
-  \citet{Beloborodov&Uhm2006}, the assumption pressure equality
-  between the forward and reverse shocks used to derive this
-  expression could be inaccurate.}:
-
+is the ratio of the jet density to that of the CNM.  This expression is inaccurate for mildly relativistic or non-relativistic, in which case we apply the more general expression for $\Gamma_{\rm sh}$ given by 
+\citet{Beloborodov&Uhm2006} (their Fig.~6)
 \begin{align}
-&\frac{\Gamma_{\rm j}^2-1}{\Gamma_{43}^2-1} f^{-1}=1 \nonumber \\
-&\Gamma_{43}=\Gamma_{\rm j} \Gamma_{\rm sh} \left(1-\beta_{\rm sh} \beta_j\right),
+&\frac{\Gamma^2-1}{\Gamma_{43}^2-1} f^{-1}=1 \nonumber \\
+&\Gamma_{43}=\Gamma \Gamma_{\rm sh} \left(1-\beta_{\rm sh} \beta_j\right),
 \label{eq:gammaShGen}
 \end{align}
 %
 where $\Gamma_{43}$ is the Lorentz of shocked jet material in the
 frame of the un-shocked jet. In the lab frame the velocity of the
 reverse shock is
-
 \begin{equation}
 \beta_{\rm rs}=\frac{\beta_{\rm sh}(f)-\beta_{43}(f)/3}{1-\beta_{\rm
     sh}(f) \beta_{43}(f)/3}.
 \label{eq:betars}
 \end{equation} 
 %
-From equations~\eqref{eq:gammaShGen} and ~\eqref{eq:betars} it is
-straightforward to find the radius and the Lorentz factor of the
-shocked material when the reverse shock crosses the trailing edge of
-the jet.
+From equations~\eqref{eq:gammaShGen} and ~\eqref{eq:betars} we calculate the radius and value of $\Gamma_{\rm sh}$ at the time when the reverse shock crosses the trailing edge of the jet.  This allows us to calculate the fraction of the initial kinetic energy of the jet which is dissipated at the reverse shock, instead of being immediately transferred to the shocked external medium via the forward shock.  
 
 
 
