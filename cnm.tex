@@ -1276,19 +1276,9 @@ same as our high density cusp model.
 
 \section{Peak Luminosities and times}
 \label{app:analyt}
-\citet{Leventis+2012} present analytic scaling relations for the
-synchrotron flux of a spherical blast wave propagating through a
-medium with a power law density profile, $n\propto r^{-k}$
-(generalizing the \citealt{Nakar&Piran2011} scalings for a
-blast wave propagating through a constant density medium). In this
-appendix, we use these results to write down an expression for the
-peak flux of the slow component of the jet.
+\citet{Leventis+2012} present analytic scaling relations for the synchrotron flux of a spherical blast wave propagating through a medium with a power law density profile, $n\propto r^{-k}$.  Here we make use of their results to estimate the peak radio flux of the slow (sheath) component of the jet.
 
-It is very important to take synchrotron self-absorption into account,
-particularly for high ambient gas densities. For the late stage
-Newtonian evolution of the jet, the spectrum will be self-absorbed for
-frequencies below
-
+During the late-time, Newtonian stage of the jet evolution, synchrotron self absorption is important for frequencies below
 \begin{align}
   \nu_{\rm sa}=&C_1(p, k) E_{54}^{\frac{10 p-k p -6 k}{2 (4+p) (5-k)}} n_{18}^{\frac{30 - 5 p}{2 (4 + p) (5 - k)}}
   \epsilon_e^{\frac{2 (p-1)}{4+p}} \epsilon_b^{\frac{p+2}{2 (4+p)}}\nonumber\\
@@ -1296,13 +1286,7 @@ frequencies below
 \label{eq:nuSa} 
 \end{align}
 %
-where $p$, $\epsilon_e$, and $\epsilon_b$ are the standard parameters
-describing the microphysics of the shocked electrons, $E_{54}$ is the
-blast wave energy in units of $10^{54}$ erg, and $C_1(p, k)$ is an
-overall normalization factor.  Note that equation~\eqref{eq:nuSa}
-assumes that self-absorption frequency is greater than the synchrotron
-peak frequency
-
+where $E = 10^{54}E_{54}$ erg is the blast wave energy and $C_1(p, k)$ is a normalization factor.  Equation~\eqref{eq:nuSa} is valid only if self-absorption frequency is greater than the synchrotron peak frequency,
 \begin{equation}
 \nu_m=C_2(p, k) E_{54}^{\frac{10-k}{2 (5-k)}} n_{18}^{-\frac{5}{2
     (5-k)}}  \epsilon_e^2  \epsilon_b^{1/2}  t^{\frac{4 k-15}{5-k}}.
@@ -1310,18 +1294,14 @@ peak frequency
 %
 % The observing frequencies considered here ($\geq 1$ GHz), are also
 % greater than $\nu_m$. 
-The peak of the light curve will occur at the deceleration time
-(eq.~\ref{eq:tdec}) if the self-absorption frequency is below the
-observing band then (``Case 1''). Otherwise, it will occur after the
-deceleration time, when the self-absorption frequency crosses through
-the observing band (``Case 2''). The peak time for these two cases is
+The light curve will peak at the deceleration time (eq.~\ref{eq:tdec}) if the self-absorption frequency is below the observing band then (``Case 1''). Otherwise, it will occur after the deceleration time, when the self-absorption frequency crosses through the observing band (``Case 2''). The peak time for these two cases is
 
 \begin{align}
 t_{\rm p} \approx
 \begin{cases}
   \frac{t_{\rm dec}}{2 \Gamma^2} \approx \left(100 \,
     E_{54}\right)^{1/(3-k)} \Gamma^{(2k - 8)/(3-k)} 
-  n_{18}^{-1/(3-k)} {\rm year} & {\rm Case\, 1}\\\\
+  n_{18}^{-1/(3-k)} {\rm yr} & {\rm Case\, 1}\\\\
   C_1(p, k)^{-\frac{(5 - k) (4 + p)}{10 - 8 k - 15 p + 4 k
       p}}E_{54}^{-\frac{-k p-6 k+10 p}{2 (4 k p-8 k-15 p+10)}}\\
   \times n_{18}^{-\frac{30-5 p}{2 (4 k p-8 k-15 p+10)}} \nu_{\rm
@@ -1332,14 +1312,13 @@ t_{\rm p} \approx
 \label{eq:tpeakGen}
 \end{align}
 %
-where $\Gamma$ is the Lorentz factor of the outflow. The additional
-factor of $1/2 \Gamma^2$ for Case 1 is a correction accounting for the
-fact that the observed light curve will be compressed in time due to
-light travel time effects.
+where $\Gamma$ is the initial jet Lorentz factor. 
+%The additional
+%factor of $1/2 \Gamma^2$ for Case 1 is a correction accounting for the
+%fact that the observed light curve will be compressed in time due to
+%light travel time effects.
 
-The unabsorbed flux at the peak frequency is
-given by
-
+The unabsorbed flux at the peak frequency is given by
 \begin{align}
   F_{\nu_m} =  C_3(p, k) E_{54}^{\frac{8-3 k}{2 (5-k)}}
   n_{18}^{\frac{7}{2 (5-k)}} \epsilon_b^{1/2} t^{\frac{3-2 k}{5-k}}
@@ -1347,16 +1326,14 @@ given by
 \end{align}
 %
 Extrapolating to the observer frequency gives 
-
 \begin{align}
   \nu_{\rm obs} F_{\rm p} (\nu_{\rm obs}) &= \nu_{\rm obs}   F_{\nu_m}
   \left(\frac{\nu_{\rm obs}}{\nu_m}\right)^{-(p-1)/2}.
   \label{eq:Fpeak1}
 \end{align}
 %
-Then from equations~\eqref{eq:tpeakGen}, ~\eqref{eq:Fnum},
-and~\eqref{eq:Fpeak1}
-
+Combining equations~\eqref{eq:tpeakGen}, ~\eqref{eq:Fnum},
+and~\eqref{eq:Fpeak1}, we find
 \begin{align}
   \nu_{\rm obs} F_{\rm p} (\nu_{\rm obs}) \propto
   \begin{cases}
