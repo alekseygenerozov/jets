@@ -370,7 +370,6 @@ the gas mass enclosed at this location.  This gives
 \end{align}
 %
 Substituting equation~\eqref{eq:rs} for $r_s$, we obtain 
-
 \begin{equation}
 n(r_s) \simeq 0.2 \, v_{500}^{0.4} \eta_{0.02} \Mbh[,7]^{-0.48} {\rm cm}^{-3},
 \label{eq:nrs2}
@@ -392,9 +391,8 @@ core-like density profile, to which we compare our results for the
 jetted radio emission to the fiducial cusp case in
 $\S\ref{sec:profileComp}$.
 
-Combining our assumption of a $n\propto r^{-1}$ profile with
+Combining our assumed $n\propto r^{-1}$ profile with
 equation~\eqref{eq:nrs}, we obtain
-
 \begin{equation}
   n_{18}\simeq 0.6 \left(\frac{r_s}{\rm pc}\right)^{0.8}
   \Mbh[,7]^{-0.28} {\rm cm^{-3}},
@@ -412,20 +410,22 @@ n_{18}\simeq 0.3 \Mbh[,7]^{0.52} \eta_{0.02} v_{500}^{-1.6} {\rm
 Although the gas density steepens near the break radius $r_b$ of the
 stellar density profile (Fig.~\ref{fig:profiles}), this will only
 affect the radio emission near its peak if $r_b$ lies inside of the
-Sedov radius of the jet.  Figure \ref{fig:profiles} shows the Sedov
+Sedov radius (eq.~\ref{eq:rdec}).  Figure \ref{fig:profiles} shows the Sedov
 radius for different energy jets and the gas density profiles there.
 The measured break radii of all but four the galaxies in
 \citet{Lauer+2007} exceeds 10 parsecs.  This is well outside of the
 Sedov radius, even for a very energetic jet, with an isotropic
 equivalent energy of $E=4\times 10^{54}$ erg in a CNM of particularly
-low density, $n_{18} \sim 1$ cm$^{-3}$.  The presence of nuclear star
+low density, $n_{18} \sim 1$ cm$^{-3}$.  
+
+The presence of nuclear star
 cluster in the galactic center could produce another break in the
 stellar density profile near the outer edge of the NSC, which is
 typically located at $\sim 1-5$ pc \citep{Georgiev+2014}.  However,
 even a break radius of 1 pc will reside inside the Sedov radius,
 except for the combination of a powerful jet and relatively small CNM
 density, $n_{18}<20$ cm$^{-3}$.  Henceforth we neglect the effects of
-the stellar break radius in our analysis.
+a break in the stellar density profile in our analysis.
 
 
 \begin{figure}
@@ -458,9 +458,9 @@ $t_{\rm burst} \ll t_{\rm h}$ which contributes a fraction $f_{\rm
 
 For a sufficiently large burst occurring less than 40 Myr ago, gas
 heating is dominated by the energetic winds of massive star
-winds.\footnote{Type II supernovae are also an important heating
-  source, which dominates stellar winds after $\sim$6 Myr
-  \citep{Voss+2009}.  However, SN II are intermittent and hence their
+winds.\footnote{Although Type II supernovae are also an important heating
+  source which dominates stellar winds after $\sim$6 Myr
+  \citep{Voss+2009}, they are intermittent and hence their
   contribution to the gas heating is neglected for simplicity.}  In
 this case, the mass return ($\eta$) and heating parameters ($v_w$) are
 calculated as described in GSM15 (their Appendix C).  Given
@@ -470,9 +470,8 @@ $\eta(t_{\rm burst},f_{\rm burst})$ and $v_w(t_{\rm burst},f_{\rm
 For older stellar populations, gas heating may come from a few
 different sources, including Type Ia Supernovae (SNe)\footnote{Unbound
   debris streams from TDEs provide another source of heating localized
-  in the galactic center (see \citep{Guillochon+2015a}), which we
-  neglect since we find that its contribution to the heating is at
-  most comparable to that from SNe Ia.} and AGN feedback.  We focus on
+  in the galactic center (\citealt{Guillochon+2015a}), which we
+  neglect.} and AGN feedback.  We focus on
 quiescent phases, during which SNe Ia dominate.  As discussed in
 GSM15, SNe Ia clear out the gas external to a critical radius, $r_{\rm
   Ia}$, where the interval between successive Ia SNe equals the
@@ -491,10 +490,8 @@ and is taken to be constant for $t = 40-300$ Myr.\footnote{GSM15
  % by $8.8 \times 10^{-13} \left(\frac{t}{3\times 10^{8} {\rm
   %      yr}}\right)^{-1.12} \, \Msun^{-1} \, {\rm yr}^{-1} $ for
   %$t>3\times 10^8$ years.} =
-In GSM15 we incorrectly extrapolated this rate all of the way to 3
-Myr--this is clearly un-physical as no white dwarfs would have formed
-by this time. Here, we instead take the Ia rate to be 0 for times less
-than 40 Myr and flat from 40-300 Myr.
+%In GSM15 we incorrectly extrapolated this rate all of the way to 3
+%Myr, which is unphysical because white dwarfs have not yet formed. Here, we instead take the Ia rate to be zero for times less than 40 Myr and constant from 40$-$300 Myr.
 
 Fig.~\ref{fig:param} shows how $n_{18}$ varies with the young
 starburst properties, $f_{\rm burst}$ and $t_{\rm burst}$.  We find a
@@ -505,17 +502,15 @@ and mass budgets of the CNM are dominated by fast winds from massive
 stars.  Although a large gas density is present in the immediate
 aftermath of a starburst, its magnitude will decline with the wind
 mass loss rate, approximately $\propto t^{-3}$.  Therefore, the gas
-density would decline by an order of magnitude from its maximum
-possible value after just a few Myr.
+density would decline by an order of magnitude from this maximum
+allowed value after just a few Myr.
 
-By contrast, the lowest density $\sim 0.03$ cm$^{-3}$ is achieved for
+By contrast, the lowest allowed density $\sim 0.03$ cm$^{-3}$ is achieved for
 a relatively modest burst of young stars $t_{\rm burst} \approx
 10^{6}$ Myr, which forms a fraction $f_{\rm burst} = 4\times 10^{-4}$
-of the total stellar mass. In this case young, massive stars provide a
-high heating rate, while the mass injection rate is relatively low,
-with both young and old stars contributing.
+of the total stellar mass. In this case the young massive stars provide a high heating rate, while the mass injection rate is comparatively low and receives contributions from both young and old stars.
 
-Our procedure likely underestimates the value of $n_{18}$ somewhat, as
+Our procedure may underestimate the value of $n_{18}$ somewhat, as
 we do not include the effects of discreteness on the assumed stellar
 population.  In particular, we assume that massive stars provide a
 spatially homogeneous heating source, even on small scales where the
@@ -527,32 +522,29 @@ thus important for relatively small bursts of star formation,
 including the case described above which gives the minimum $n_{18}$.
 If we instead equate the stagnation radius to the radius enclosing a
 single star of mass $\gsim 15 \Msun$, we find a larger value of
-$n_{18}\sim 0.5$ cm$^{-3}$.  The true minimum density likely resides
-between these extremes, in which case min($n_{18}) \sim 0.03-0.5$
+$n_{18}\sim 0.5$ cm$^{-3}$.  From this we conclude that the true minimum density likely resides
+between these extremes, min($n_{18}) \sim 0.03-0.5$
 cm$^{-3}$.
 
-The majority of the host galaxies of observed TDE flares show evidence
-of star formation within the last Gyr \citep{French+2016}, this
-corresponds to the right hand side of Fig.~\ref{fig:param}. In this
-region of parameter space, gas heating rate is dominated by SN Ia and
-we expect $n_{18}\sim 10-100$ cm$^{-3}$. {\bf AG note that the
-  entire stellar pop likely did not form 1 Gyr ago. In fact the
-  observation merely indicate that there was some star formation w. in
-  the last Gyr}
+Most of the host galaxies of observed TDE flares show evidence
+of some star formation within the last Gyr \citep{French+2016}.  In this region of parameter space corresponding to the right side of Fig.~\ref{fig:param}, gas heating rate is dominated by SN Ia and
+we expect $n_{18}\sim 10-100$ cm$^{-3}$. 
+%{\bf AG note that the
+ % entire stellar pop likely did not form 1 Gyr ago. In fact the
+  %observation merely indicate that there was some star formation w. in
+ % the last Gyr}
 
 To summarize, we expect the CNM densities of quiescent galaxies on
 parsec scales to vary from min($n_{18}) \sim 0.03$ to max($n_{18})\sim
-10^{3}$ cm$^{-3}$, with a typical value of $n_{18}\sim 100$ cm$^{-3}$
-in TDE host galaxies.
+10^{3}$ cm$^{-3}$, with a typical value of perhaps $n_{18}\sim 100$ cm$^{-3}$
+in the host galaxies of observed TDEs.
 
 \subsubsection{Mass drop-out from star formation?}
 
-Our model for the CNM makes predictions for the total gas density
+Our model for the CNM predicts the total gas density
 sourced by stellar winds, including both hot and cold phases.  In the
-first few Myr after a starburst, the injected stellar wind material
-will be quite hot, with temperature $\gsim 10^{7}$ K due to the
-thermalized wind kinetic energy.  Later, SNe Ia provide intermittent
-heating, but the stellar wind material that accumulates on small
+first few Myr after a starburst, the injected stellar wind material is hot ($T\gsim 10^{7}$ K) due to the
+thermalized wind kinetic energy.  Later, SNe Ia provide intermittent heating, but the stellar wind material that accumulates on small
 scales, between successive SNe Ia may become much cooler, with
 temperature $\lesssim 10^{4}$ K, and would condense into clumps.
 
@@ -573,18 +565,9 @@ star formation.
 
 \begin{figure} 
   \includegraphics[width=8cm]{cnm_plot.pdf}
-  \caption{\label{fig:param} Isocontours for the density at $10^{18}$
-    cm (blue lines) for a $10^{7} \, \Msun$ black hole and bursts of
-    star formation forming a fraction, $f_{\rm burst}$, of the stars
-    $t_{\rm burst}$ years ago. The remaining stars formed a Hubble
-    time ago. The old and young stars both have a cuspy density
-    profile, which means that the gas density goes as $r^{-1}$.
-    Hatched areas indicate regions of parameter space, where massive
-    stars ($\gsim 15 \, \Msun$) dominate the gas heating rate, but we
-    would expect less than one (doubly hatched) or less than ten
-    (singly hatched) massive stars inside the nominal stagnation
-    radius (equation~\ref{eq:rs}). In these regions of parameter space
-    discreteness effects not captured by our formalism are important.}
+  \caption{\label{fig:param} Isocontours of $n_{18}$, the CNM density at $r = 10^{18}$
+    cm (blue lines), as a function of the stellar population in the galactic nucleus.  The star formation is parameterized assuming that a fraction $f_{\rm burst}$ of the stars form in a burst of age $t_{\rm burst}$, while the remaining stars formed a Hubble time ago.  We have assumed a black hole of mass $10^{7} \, \Msun$ and that both young and old stars possess a cusp-like density profile, which produces a gas density profile obeys $n \propto r^{-1}$.  Hatched areas indicate regions of parameter space where massive stars ($\gsim 15 \, \Msun$) dominate the gas heating rate, but less than one (doubly hatched) or less than ten
+    (singly hatched) massive stars are present on average inside the nominal stagnation radius (eq.~\ref{eq:rs}).  In these regions of parameter space discreteness effects not captured by our formalism may be important.}
 \end{figure}
 
 
@@ -602,7 +585,7 @@ star formation.
 \subsection{Empirical Constraints on CNM Density}
 \label{sec:empirical}
 
-In this section we translate observed constraints on the accretion
+We now translate observed constraints on the accretion
 rate distribution of supermassive black holes into constraints on the
 CNM density.  The accretion rate can be written as
 \begin{equation}
@@ -621,7 +604,6 @@ equation~\eqref{eq:mdot} becomes
 \end{equation}
 %
 The corresponding Eddington ratio is
-
 \begin{equation}
   \lambda\equiv L/L_{\rm Edd} = 4.8 \times 10^{-5}
   \left(\frac{\epsilon_{\rm rad}}{0.1}\right) \Mbh[,7]^{0.5} f_{\rm in}
