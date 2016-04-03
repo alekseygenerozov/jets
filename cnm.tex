@@ -84,7 +84,7 @@ potentially complex process of debris circularization
 accretes onto the BH, creating a luminous flare lasting months to
 years \citep{Hills1975, Carter+1982, Rees1988}.
 
-Many TDE flares have now been identified at UV/optical
+Many TDE flares have now been identified at optical/ultraviolet (UV)
 \citep{Gezari+2008, Gezari+2009, van-Velzen+2011, Gezari+2012,
   Arcavi+2014, Chornock+2014, Holoien+2014, Vinko+2015, Holoien+2016}
 and soft x-ray wavelengths \citep{Bade+1996, Grupe+1999,
@@ -93,28 +93,22 @@ and soft x-ray wavelengths \citep{Bade+1996, Grupe+1999,
 (hereafter SwJ1644) in 2011, three additional TDEs have been
 discovered by their hard x-ray emission (\citealt{Bloom+2011,
   Levan+2011, Burrows+2011, Zauderer+2011, Cenko+2012, Pasham+2015,
-  Brown+2015}) {\bf Mostly same refs for optical/soft x-ray as
-  Holoien+2016, with addition of Greiner+2000, and exclusion of
-  Donley+2002 (who are looking at statistics of x-ray outbursts wo
-  identifying a specific event)}.  Unlike the optical/UV and soft
-X-ray TDEs, these events are the result of emission from a transient
+  Brown+2015}).  Unlike the optical/UV and soft
+X-ray TDEs, these events are the result of non-thermal emission from a transient
 relativistic jet beamed along our line of sight, similar to the blazar
 geometry of active galactic nuclei (AGN).  In addition to their highly
 variable X-ray emission, which likely originates from the base of the
 jet, these events are characterized by radio synchrotron emission.
 The latter, more slowly evolving, is powered by shocks formed at the
 interface between the jet and surrounding circumnuclear medium (CNM)
-\citep{Bloom+2011,Giannios&Metzger2011,Metzger+2012,Mimica+2015} {\bf
-  other refs? did not see others in Mimica+2015}, analagous to the
-afterglow of a gamma-ray burst {\bf AG change thermal to optical/UV
-  and soft X-ray: X-ray emission may not be thermal (often times
-  difficult to tell given spectral data.)}.
+\citep{Bloom+2011,Giannios&Metzger2011,Metzger+2012,De-Colle+2012,Mimica+2015}, analagous to the
+afterglow of a gamma-ray burst.
 
 Although a handful of jetted TDE flares have been observed, their
 volumetric rate is a very small fraction $\sim 10^{-5}-10^{-4}$ of the
 rate of the observed TDE flare rate (e.g., \citealt{Burrows+2011},
 \citealt{Brown+2015}), and an even smaller fraction of the
-theoretically predicted TDE rate (\citealt{Stone&Metzger2016}).  One
+theoretically predicted TDE rate (\citealt{Wang&Merritt04}; \citealt{Stone&Metzger2016}).  One
 potential explanation for this discrepancy is that the majority of
 TDEs produce powerful jets, but their hard X-ray emission is
 relativistically beamed into a small angle $\theta_{\rm b}$, making
@@ -164,8 +158,8 @@ TDEs should have been detected if their jets were as powerful.
 Recently, a candidate TDE flare (ASSASN-14li) was observed to
 have transient radio emission, consistent with either a weak
 relativistic jet \citep{van-Velzen+2015} or a sub-relativistic outflow
-\citep{Alexander+2015} with overall energy in the range of
-$10^{48}-10^{49}$ ergs.  ASSASN-14li occurred in a very nearby galaxy,
+\citep{Alexander+2015} with a total energy of
+$\sim 10^{48}-10^{49}$ ergs.  ASSASN-14li occurred in a very nearby galaxy,
 and if other TDE candidates launched similar outflows, their radio
 afterglows would be below existing upper limits. A priori it
 is not obvious whether the lack of observed radio emission in most
@@ -177,7 +171,7 @@ Previous works (\citealt{Bower+2013}; \citealt{van-Velzen+2013};
 similar environment as SwJ1644.  However, in general the
 gas density in a galactic nucleus depends sensitively on the sources
 of gas from stellar winds, and the sources of gas heating
-(\citealt{Quataert2004,Generozov+2015}).  In a gamma-ray burst, the
+(\citealt{Quataert2004,Generozov+2015}).  In a normal gamma-ray burst, the
 environment the jet emerges from is relatively well-understood to be
 the wind of the massive progenitor star, or the ISM of the host
 galaxy.  However, the density of the CNM encountered by a TDE jet
@@ -275,7 +269,7 @@ We assume a broken power law for the stellar density profile,
 $\rho_{\star}$, motivated by Hubble measurements of the radial surface
 brightness profiles for hundreds of nearby early type galaxies
 \citep{Lauer+2007}.  The measured profile is well fit by the so-called
-``Nuker'' law parameterization: i.e., a broken power law that smoothly
+``Nuker'' law parameterization, i.e.~a piece-wise power law that smoothly
 transitions from an inner power law slope, $\Gamma$, to an outer power
 law slope, $\beta$, at a break radius, $r_b$.
 
@@ -301,53 +295,33 @@ the galaxies in \citet{Stone&Metzger2016} (their Table C).
   double check all expressions.}
 
 \subsubsection{Gas density profiles}
-The radio emission from a jet is most sensitive to the density of
-ambient gas near the ``Sedov'' radius, outside of which the jet has
+The radio emission of a jet is sensitive to the density of
+ambient gas near the Sedov radius, outside of which the jet has
 swept up a gaseous mass exceeding its own. For a power law gas density
-profile, $n= n_0 \left(r/r_0\right)^{-k}$,
-
+profile, $n= n_{18} \left(r/r_{18}\right)^{-k}$,
 \begin{equation}
-  r_{\rm sed} = r_0 \left( \frac{E(3-k)}{4\pi n_{0}
-      m_{\rm p} c^2 r_0^3} \right)^{1/(3-k)}, 
+  r_{\rm sed} = r_{18} \left( \frac{E(3-k)}{4\pi n_{0}
+      m_{\rm p} c^2 r_{18}^3} \right)^{1/(3-k)} \approx 3 E_{54}^{1/2} n_{\rm 18}^{-1/2}\,{\rm pc}. 
   \label{eq:rdec}
 \end{equation}
-%
-where $E$ is the isotropic equivalent energy. The jet decelerates to
-non-relativistic speeds at this radius, so the Lorentz factor of the
-jet has been set to 1.  Note that the jet will begin to decelerate
-before reaching the Sedov radius. Specifically, the jet will
-slow down once it has swept a fraction $1/\Gamma$ of its rest mass,
-at the deceleration radius
+where $E = E_{54}10^{54}$ erg is the isotropic equivalent energy, $r_{18} = r/10^{18}$ cm, and in the final equality we have taken $k = 1$.  For a powerful jet similar to SwJ1644, the deceleration radius is typically of order a parsec.
 
+An initially relativistic jet will slow to sub-relativistic speeds at $r \sim r_{\rm sed}$.  However, deceleration sets in earlier, once the jet has swept up a fraction $\sim 1/\Gamma$ of its rest mass, as occurs at the radius
 \begin{equation}
-  r_{\rm dec}=\frac{r_{\rm sed}}{\Gamma^{2/(3-k)}}
+  r_{\rm dec}=\frac{r_{\rm sed}}{\Gamma^{2/(3-k)}}.
   \label{eq:rdec2}
 \end{equation}
 %
-In the lab frame, the jet reaches the Sedov and deceleration radii at
-times
-
-\begin{align}
- t_{\rm sed}= &c/r_{\rm sed} \nonumber\\
- \approx & \left(\frac{E}{10^{52} {\rm erg}}\right)^{1/(3-k)}
- n_0^{-1/(3-k)} {\rm year}\\
- t_{\rm dec}= &c/r_{\rm dec} \nonumber\\
- \approx & \left(\frac{E}{10^{52} {\rm erg}}\right)^{1/(3-k)}
- n_0^{-1/(3-k)} \Gamma^{-2/(3-k)} {\rm year}
+The jet reaches the Sedov and deceleration radii, respectively, at
+observer times
+\be
+ t_{\rm sed} = \frac{c}{r_{\rm sed}} \approx 10E_{54}^{-1/2}n_{18}^{1/2} {\rm year}
+\ee
+\be
+ t_{\rm dec} = \frac{c}{2\Gamma^{2} r_{\rm dec}} = \frac{t_{\rm sed}}{2\Gamma^{3(4-k)/(3-k)}} = \frac{t_{\rm sed}}{2\Gamma^{3}},
  \label{eq:tdec}
-\end{align}
-%
-For our fiducial CNM density profile
-$n=n_{18}\left(r/10^{18}\right)^{-1} {\rm cm}$, the Sedov radius is
-given by 
-
-\begin{equation}
-r_{\rm sed} = 3 E_{54}^{1/2} n_{\rm 18}^{-1/2}\,{\rm pc}. 
-\end{equation}
-%
-where $E_{54}=E/(10^{54} {\rm erg})$.  For a powerful SwJ1644-like jet
-the deceleration radius is of order a parsec. We therefore focus on
-determining the gas density on these scales. 
+\ee
+where in the final equality we have again taken $k = 1$.
 
 Given sufficiently strong heating, a one-dimensional steady-state
 model for the CNM is characterized by an inflow-outflow structure.
