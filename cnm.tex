@@ -806,22 +806,19 @@ cm$^{-3}$.
 \label{sec:results}
 \subsection{Numerical Jet Simulation}
 \label{sec:numerical}
-We calculate synchrotron radio emission due to the jet propagating through and shocking the CNM across the physically plausible range of nuclear gas densities.  The jet-CNM interaction is simulated in both one and
-two dimensions, and the resulting synchrotron emission is computed using the procedure described in \citet{Mimica+2015}.  For the jet structure we adopt the preferred two-component model for SwJ1644 from
-\citet{Mimica+2015}, corresponding to a fast, inner core of Lorentz factor $\Gamma = 10$, surrounded by a slower, $\Gamma=2$ outer sheath.
+We calculate synchrotron radio emission from the TDE jet propagating through and shocking the CNM across the physically plausible range of nuclear gas densities.  The jet-CNM interaction is simulated in both one and
+two dimensions, and the resulting synchrotron emission is computed as described in \citet{Mimica+2015}.  {\bf BDM: slightly more detail about numerical procedure} 
 
-We assume the same time dependence for the jet luminosity as in
- \citet{Mimica+2015},
+For the jet structure we adopt the preferred two-component model for SwJ1644 from
+\citet{Mimica+2015}, corresponding to a fast, inner core of Lorentz factor $\Gamma = 10$, surrounded by a slower, $\Gamma=2$ outer sheath.  For our 2D simulations the fast inner core spans an angular interval $0-0.1\ {\rm radians}$, while the slow outer sheath extends from $0.1\ {\rm radians}$ to $0.5\ {\rm rad}$ (\citealt{Mimica+2015}).  The time dependence of the jet kinetic luminosity is given by
 \begin{equation}\label{eq:lum}
 L_{\rm j, ISO}(t) = L_{j,0}\max\left[1, (t/t_0)\right]^{-5/3}
 \end{equation}
 %
-where $t_0 = 5\times 10^5$ seconds.  As in \citet{Mimica+2015}, for our 2D simulations the fast inner core spans an angular interval $0-0.1\ {\rm radians}$, while the slow outer sheath extends from $0.1\ {\rm radians}$ to $0.5\ {\rm rad}$.  Integrating equation~\ref{eq:lum} from $t = 0$ to $\infty$ gives the isotropic equivalent energy $E_{\rm ISO}$, where $L_{j,0}=0.4\, E_{\rm ISO}/t_0$.  The ratio of the true energy of
-the fast component is fixed to be 4\% of the energy in the slow component, as in \citet{Mimica+2015}.
+where the $t_0 = 5\times 10^5$ s is the duration of peak jet power and approximately corresponds to the duration of the peak non-thermal X-ray emission of SwJ1644.  Integrating equation~\ref{eq:lum} from $t = 0$ to $\infty$ gives the isotropic equivalent energy of the jet, $E_{\rm ISO}$, where $L_{j,0}=0.4\, E_{\rm ISO}/t_0$.  The ratio of the true (beaming-corrected) energy of the fast component is fixed to be 4\% of that in the slow component (\citealt{Mimica+2015}).
 
-For our 1D simulations, we modify the geometry of the slow sheath to better reproduce the results of the 2D simulations.  Although the sheath in 2D is injected in a relatively narrow angular interval, at late stages of
-the jet evolution the bow shock created by its interaction with CNM spans a much larger interval in 2D simulations i.e. the slow component becomes almost isotropic \citep[bottom two panels in Fig. 8
-in][]{Mimica+2015}. To account for this, we take a slow component extending from 0.1 to $\pi/2$ radians for our 1D simulations. As we will show, the resulting light curves better match those from an otherwise equivalent 2D jet simulation ($\S~\ref{sec:1d2d}$). 
+For our 1D simulations, we modify the geometry of the slow sheath to better reproduce the results of the 2D simulations.  Although in out 2D models the sheath is injected within a relatively narrow angular interval, at late stages of evolution the bow shock created by the jet-CNM interaction spans a much larger range of angles due to laterial spreading, i.e. the slow component becomes almost isotropic in 2D \citep[bottom two panels of Fig.~8
+in][]{Mimica+2015}. To account for this in our 1D simulations, we instead take the slow component to extend from 0.1 to $\pi/2$ radians. As we will show, this choice is motivated by the fact that the resulting light curves better match those from the equivalent simulation of an initially narrower 2D jet ($\S~\ref{sec:1d2d}$). 
 
 \subsection{Overview of Results}
 
