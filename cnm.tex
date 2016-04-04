@@ -1047,18 +1047,22 @@ near the deceleration/Sedov radius is fixed.
 \end{figure}
 
 \subsection{Contributions of the reverse shock}
-Our calculations shown in Figs.~\ref{fig:1D2DB}$-$\ref{fig:cores} include only emission from the forward shock (shocked CNM).  In principal the reverse shock (shocked jet) may provide an additional contribution to the radio light curve.  
+Our calculations shown in Figs.~\ref{fig:1D2DB}$-$\ref{fig:cores} include only emission from the forward shock (shocked CNM).  In principal the reverse shock (shocked jet) may also contribute to the radio light curve.  
 %However, as we describe in this section its contribution will be negligible, at least for high energy jets.
 
-The fraction of the initial kinetic energy of the jet which is dissipated by the reverse shock provides a first-order estimate of its maximum contribution to the radio light curve.  Fig.~\ref{fig:diss} shows the fraction of the slow component ($\Gamma=2$) kinetic energy dissipated by the reverse shock as a function of isotropic jet luminosity and CNM denisty $n_{18}$, as calculated from the shock jump conditions (see Appendix~\ref{sec:reverse} for details).  For the purposes this estimate, we have approximated the jet as a constant source acting for a duration $t_0 = 5 \times 10^{5}$ s.  The parameters of our numerical solutions are shown as red squares in Fig.~\ref{fig:diss}.
+The fraction of the initial kinetic energy of the jet which is dissipated by the reverse shock provides a first-order estimate of its maximum contribution to the radio light curve.  Fig.~\ref{fig:diss} the fraction of the slow component ($\Gamma=2$) kinetic energy dissipated by the reverse shock as a function of isotropic jet luminosity and CNM denisty $n_{18}$, as estimated by integrating the shock evolution determined from the 
+jump conditions (see Appendix~\ref{sec:reverse} for details).  For this estimate, we approximate the jet as a constant source of duration $t_0 = 5 \times 10^{5}$ s.  The parameters of our numerical solutions are shown as red squares in Fig.~\ref{fig:diss}.
 % {\bf AG
 %careful shocks may be emitting at different frequencies. Also this
 %energy is not necessarily lost...As we discussed upper bound
 %interpretation may be naive}.
 
-For high ambient densities and/or low energy jets, the reverse shock dissipates an order unity fraction of the kinetic energy of the jet.  However, for high energy jets, the reverse shock emission will be strongly attenuated by self absorption for observer frequencies below 10 GHz.  This is illustrated in Fig.~\ref{fig:reverse}, which shows the 5 GHz light curve separated into contributions from the forward and reverse shocks, respectively, calculated for $E = 5\times 10^{53}$ erg and $n_{18} = 2$.  Although the reverse shock contribution is comparable to that of the forward shock at early times, it contributes subdominantly to the total as compared to the forward shock due to self-absorption near the front of the jet.  Indeed, while the reverse shock will dissipate a large fraction fo the jet kinetic energy for a larger ambient density, its emission will be heavily absorbed.  We conclude that the reverse shock can be neglected for the highest energy jets with $E\gtrsim 10^{53}$ erg.
+Fig.~\ref{fig:diss} shows that for high ambient densities and/or low energy jets, the reverse shock dissipates an order unity fraction of the kinetic energy of the jet.  However, this is somewhat deceptive because for high energy jets the reverse shock emission will be strongly attenuated by self absorption for observer frequencies below 10 GHz.  This is illustrated in Fig.~\ref{fig:reverse}, which shows the 5 GHz light curve separated into contributions from the forward and reverse shocks, respectively, calculated for $E = 5\times 10^{53}$ erg and $n_{18} = 2$.  Although the reverse shock contribution is comparable to that of the forward shock at early times, it contributes subdominantly to the total as compared to the forward shock due to self-absorption near the front of the jet (which is not included in the reverse shock light curve in Fig.~\ref{fig:reverse}).  While the reverse shock dissipates an even larger fraction of the jet energy for higher ambient density, its emission will be even more heavily absorbed.  We conclude that reverse shock emission can be neglected for the high energy jets with $E\gtrsim 10^{53}$ erg.
 
-For low energy jets...{\bf this paragraph is for you Brian} 
+For low energy jets, we find that jet is crushed at early times, even for low values of $n_{18}$, making the reverse shock structure more challenging analyze in our simulations.  We defer a more detailed study of the reverse shock in this case to future work.    {\bf BDM: Pere should add more here describing the issues with low energy jets}
+
+As a final note, even if the reverse shock dissipates most of the kinetic energy into thermal energy, this energy is still available to be recoverted to kinetic energy through adiabatic expansion.  However, the jet re-expansion will be relatively isotropic because the bulk Lorentz factor of the shocked gas is now mildly relativistic.  The net result will likely represent two Sedov-like `mushroom clouds' on either side of the black hole (\citealt{Giannios&Metzger2011}).
+
 
 \begin{figure}
 \includegraphics[width=8cm]{diss.pdf}
@@ -1322,7 +1326,7 @@ and~\eqref{eq:Fpeak1}, we find
 \section{Reverse shock}
 \label{sec:reverse}
 Here we estimate the fraction of the kinetic energy of the jet that is dissipated by the reverse
-shock, as opposed to the forward shock whose contribution is the focus of this paper.  From continuity, the comoving density of a relativistic jet is given by (e.g. \citealt{Uhm&Beloborodov07})
+shock, as opposed to the forward shock whose contribution is the focus of this paper.  From continuity, the comoving density of a relativistic jet is given by (e.g.~\citealt{Beloborodov&Uhm2006})
  \begin{align}
    n_{\rm j} =  \frac{L_{\rm j, iso}}{4 \pi r^{2}\Gamma_{\rm
        j}^{2}c^{3}m_p(1 + r \dot{\Gamma}/c\Gamma^{3})}
