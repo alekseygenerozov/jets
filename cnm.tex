@@ -36,12 +36,11 @@
 \newcommand{\rs}{r_s}
 
 % write title (with email and institute)
-\title{The influence of the cicumnuclear environment on the radio emission from TDE jets}
+\title[Influence of CNM on TDE radio emission]{The influence of the
+  cicumnuclear environment on the radio emission from TDE jets}
 \author[Generozov et al.]{ A. Generozov$^{1}$, P. Mimica$^{2}$,
-  B. D. Metzger$^{1}$,
-  D. Giannios$^{3}$, 
-  N. Stone$^{1}$,
-  M.A. Aloy$^{2}$ 
+  B. D. Metzger$^{1}$, D. Giannios$^{3}$, N. Stone$^{1}$,
+  M.A. Aloy$^{2}$
   \\
   $^{1}$Columbia Astrophysics Laboratory, Columbia University, 550 West 120th Street, New York, NY 10027\\
   $^{2}$Departamento de Astronomia y Astrofisica, Universidad de Valencia, E-46100 Burjassot, Spain\\
@@ -885,18 +884,18 @@ higher luminosities. Nonetheless, using a broadened slow component in
   true for n18=60?}.
 
 
-\begin{figure*}
-\includegraphics[width=16cm]{1D_2D.pdf}
+\begin{figure}
+\includegraphics[width=8cm]{1d_2d.pdf}
 \caption{\label{fig:1D2DB} Comparison of light curves from 1D and 2D
   simulations for $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for
-  frequencies of 1 GHz (left) and 5 GHz (right) and an observer angle
+  frequencies of 1 GHz and 5 GHz and an observer angle
   of 0.8 radians to the jet axis. We assume that the gas density
   $n\propto r^{-1}$ for $n_{18}=2000$, but take $n\propto r^{-1.5}$
   for $n_{18}=60$ for computational convenience--this model was
   previously computed in \citet{Mimica+2015} and 1D results suggest
   that the density slope would have minimal impact on the results (see
   $\S$~\ref{sec:profileComp})}.
-\end{figure*}
+\end{figure}
 
  \subsection{Effects of viewing angle}
 Fig.~\ref{fig:onOff} shows a comparison off and on-axis light curves.
@@ -907,11 +906,11 @@ quite similar. This is as expected, at late times the jet becomes more
 isotropic, which means the viewing angle has relatively little effect
 on the observed light curve.
 
-\begin{figure*}
-\includegraphics[width=16cm]{on_off.pdf}
+\begin{figure}
+\includegraphics[width=8cm]{on_off.pdf}
 \caption{\label{fig:onOff} Comparison of (2D) off- and on-axis light
   curves for $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for
-  frequencies of 1 GHz (left) and 5 GHz (right). The observer line of
+  frequencies of 1 and 5 GHz. The observer line of
   sight is taken to be at $\theta_{\rm obs}=0.8$ with respect to the
   jet axis. We assume an $n\propto r^{-1}$ density profile for
   $n_{18}=2000$, but take $n\propto r^{-1.5}$ for $n_{18}=60$ for
@@ -919,7 +918,7 @@ on the observed light curve.
   \citet{Mimica+2015} and 1D results suggest that the density slope
   would have minimal impact on the results (see
   $\S$~\ref{sec:profileComp}).}
-\end{figure*}
+\end{figure}
 
 \subsection{Overview of Results}
 As summarized in Table~\ref{tab:jetParams}, we calculate light curves
@@ -939,7 +938,7 @@ the fast and slow components to the 5 GHz light curve of a $5 \times
 $n_{18}=2000$, the slow component dominates for nearly all times.  For
 $n_{18}=2$, the fast component dominates at early times and at the
 peak of the light curve, while the slow component dominates after
-$\sim$1 year.
+$\sim$1 year. 
 
 The peak luminosity of the slow component falls off for low ambient
 gas densities, especially at 30 GHz. However, the fast component
@@ -968,12 +967,13 @@ electrons ($p$) gives
   A_1 \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.59}
   \left(\frac{\epsilon_e}{0.1}\right)^{1.3}
   \left(\frac{\epsilon_b}{0.002}\right)^{0.825}\\
-  \left(\frac{\nu_{\rm obs}}{5 {\rm GHz}}\right)^{0.35} n_{18}^{1.24} {\rm ergs/s} & {\rm Case \,1}\\\\
+  \left(\frac{\nu_{\rm obs}}{5 {\rm GHz}}\right)^{0.35} n_{18}^{1.24}
+  {\rm erg s^{-1}} & {\rm Case \,1}\\\\
   A_2 \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.87}
   \left(\frac{\epsilon_e}{0.1}\right)^{0.61}
   \left(\frac{\epsilon_b}{0.002}\right)^{0.26}\\
   \left(\frac{\nu_{\rm obs}}{5 {\rm GHz}}\right)^{2.01} n_{18}^{-0.14}
-  {\rm ergs/s} & {\rm Case \,2}
+  {\rm erg s^{-1}} & {\rm Case \,2}
 \end{cases}
 \label{eq:peakLum}
 \end{align}
@@ -1106,7 +1106,10 @@ near the deceleration/Sedov radius is fixed.
 \end{figure}
 
 \subsection{Contributions of the reverse shock}
-Our calculations shown in Figs.~\ref{fig:1D2DB}$-$\ref{fig:cores} include only emission from the forward shock (shocked CNM).  In principal the reverse shock (shocked jet) may also contribute to the radio light curve.  
+Our calculations shown in Figs.~\ref{fig:1D2DB}$-$\ref{fig:cores}
+include only emission from the forward shock (shocked CNM).  In
+principal the reverse shock (shocked jet) may also contribute to the
+radio light curve.
 %However, as we describe in this section its contribution will be negligible, at least for high energy jets.
 
 The fraction of the initial kinetic energy of the jet which is dissipated by the reverse shock provides a first-order estimate of its maximum contribution to the radio light curve.  Fig.~\ref{fig:diss} the fraction of the slow component ($\Gamma=2$) kinetic energy dissipated by the reverse shock as a function of isotropic jet luminosity and CNM denisty $n_{18}$, as estimated by integrating the shock evolution determined from the 
