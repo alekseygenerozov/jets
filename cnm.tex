@@ -28,7 +28,7 @@
 
 \newcommand       \be          {\begin{eqnarray}}
 \newcommand       \ee          {\end{eqnarray}}
-\newcommand{\Mbh}[1][]{M_{\bullet#1}}
+\newcommand{\Mbh}[1][]{M_{\bullet1}}
 \newcommand{\Menc}{M_{\rm enc}}
 \renewcommand{\th}{t_h}
 \newcommand{\Msun}{{\rm M_\odot}}
@@ -180,9 +180,10 @@ could in principle be orders of magnitude higher.
 In this paper we address the range of gas densities encountered by
 jetted TDEs and estimate their synchrotron emission by means of
 analytic calculations and numerical simulations.  We find that radio
-emission should be detected for all plausible CNM densities, leading to the robust conclusion that most TDEs do not launch SwJ1644-like
-jets.  This result has significant implications for the physics
-of jet launching in TDEs and other accretion flows. 
+emission should be detected for all plausible CNM densities, leading
+to the robust conclusion that most TDEs do not launch SwJ1644-like
+jets.  This result has significant implications for the physics of jet
+launching in TDEs and other accretion flows.
 
 In $\S\ref{sec:cnm}$ we use the formalism developed in
 \citet{Generozov+2015} (hereafter GSM15) to calculate the CNM profiles
@@ -234,23 +235,35 @@ profile, $n= n_{18} \left(r/r_{18}\right)^{-k}$,
       m_{\rm p} c^2 r_{18}^3} \right)^{1/(3-k)} \approx 3 E_{54}^{1/2} n_{\rm 18}^{-1/2}\,{\rm pc}. 
   \label{eq:rdec}
 \end{equation}
-where $E = E_{54}10^{54}$ erg is the isotropic equivalent energy, $r_{18} = r/10^{18}$ cm, and in the final equality we have taken $k = 1$.  For a powerful jet similar to SwJ1644, the deceleration radius is typically of order a parsec.
+where $E = E_{54}10^{54}$ erg is the isotropic equivalent energy,
+$r_{18} = r/10^{18}$ cm, and in the final equality we have taken $k =
+1$.  For a powerful jet similar to SwJ1644, the deceleration radius is
+typically of order a parsec.
 
-An initially relativistic jet will slow to sub-relativistic speeds at $r \sim r_{\rm sed}$.  However, deceleration sets in earlier, once the jet has swept up a fraction $\sim 1/\Gamma$ of its rest mass, as occurs at the radius
+An initially relativistic jet will slow to sub-relativistic speeds at
+$r \sim r_{\rm sed}$.  However, deceleration sets in earlier, once the
+jet has swept up a fraction $\sim 1/\Gamma$ of its rest mass, as
+occurs at the radius
 \begin{equation}
   r_{\rm dec}=\frac{r_{\rm sed}}{\Gamma^{2/(3-k)}}.
   \label{eq:rdec2}
 \end{equation}
 %
-The jet reaches the Sedov and deceleration radii, respectively, at
-observer times
-\be
- t_{\rm sed} = \frac{c}{r_{\rm sed}} \approx 10E_{54}^{-1/2}n_{18}^{1/2} {\rm year}
-\ee
-\be
- t_{\rm dec} = \frac{c}{2\Gamma^{2} r_{\rm dec}} = \frac{t_{\rm sed}}{2\Gamma^{3(4-k)/(3-k)}} = \frac{t_{\rm sed}}{2\Gamma^{3}},
+The jet reaches
+ the Sedov and deceleration radii, respectively, at
+observer times 
+\begin{equation}
+t_{\rm sed} = \frac{c}{r_{\rm sed}} \approx
+10 E_{54}^{-1/2}n_{18}^{1/2} {\rm year}
+ \end{equation} 
+
+\begin{equation}
+t_{\rm dec} =
+\frac{c}{2\Gamma^{2} r_{\rm dec}} = \frac{t_{\rm
+    sed}}{2\Gamma^{3(4-k)/(3-k)}} = \frac{t_{\rm sed}}{2\Gamma^{3}},
  \label{eq:tdec}
-\ee
+\end{equation}
+
 where in the final equality we have again taken $k = 1$.
 
 
