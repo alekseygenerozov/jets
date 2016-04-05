@@ -93,16 +93,16 @@ and soft x-ray wavelengths \citep{Bade+1996, Grupe+1999,
 (hereafter SwJ1644) in 2011, three additional TDEs have been
 discovered by their hard x-ray emission (\citealt{Bloom+2011,
   Levan+2011, Burrows+2011, Zauderer+2011, Cenko+2012, Pasham+2015,
-  Brown+2015}).  Unlike the optical/UV and soft
-X-ray TDEs, these events are the result of non-thermal emission from a transient
+  Brown+2015}).  Unlike the optical/UV and soft X-ray TDEs, these
+events are the result of non-thermal emission from a transient
 relativistic jet beamed along our line of sight, similar to the blazar
 geometry of active galactic nuclei (AGN).  In addition to their highly
 variable X-ray emission, which likely originates from the base of the
 jet, these events are characterized by radio synchrotron emission.
 The latter, more slowly evolving, is powered by shocks formed at the
 interface between the jet and surrounding circumnuclear medium (CNM)
-\citep{Bloom+2011,Giannios&Metzger2011,Metzger+2012,De-Colle+2012,Mimica+2015}, analagous to the
-afterglow of a gamma-ray burst.
+\citep{Bloom+2011,Giannios&Metzger2011,Metzger+2012,De-Colle+2012,Mimica+2015},
+analagous to the afterglow of a gamma-ray burst.
 
 Although a handful of jetted TDE flares have been observed, their
 volumetric rate is a very small fraction $\sim 10^{-5}-10^{-4}$ of the
@@ -684,10 +684,18 @@ of $\epsilon_{\rm rad}=0.1$ for $\dot{M}/\dot{M}_{\rm Edd}>0.1$.
 \begin{figure}
 \includegraphics[width=8cm]{fcum_n18.pdf}
 \caption{\label{fig:n18Cum} Cumulative distribution of $f_{\rm in}
-  n_{18}$ for black holes with mass $\Mbh\simeq 10^{7} \Msun$ as inferred based on
-  the distribution of measured Eddington ratios from \citet{Kauffmann&Heckman2009} {\it (solid black line)}. Here $f_{\rm in}$ is the ratio of the true accretion rate onto the black hole to the inflow rate of free-falling gas at $10^{18}$ cm.  A dashed blue line shows the corresponding cumulative distribution of
-  $n_{18}$, obtained using values of $f_{\rm in}$ motivated by the simulations of \citet{Li+2013}
-  (see text). The distribution of $f_{\rm in} n_{18}$ ($n_{18}$) is unreliable to the left of the solid black (dashed blue) vertical line.  Such low densities correspond to galaxies with small OIII luminosities, which could be the result of star formation instead of AGN activity.}
+  n_{18}$ for black holes with mass $\Mbh\simeq 10^{7} \Msun$ as
+  inferred based on the distribution of measured Eddington ratios from
+  \citet{Kauffmann&Heckman2009} {\it (solid black line)}. Here $f_{\rm
+    in}$ is the ratio of the true accretion rate onto the black hole
+  to the inflow rate of free-falling gas at $10^{18}$ cm.  A dashed
+  blue line shows the corresponding cumulative distribution of
+  $n_{18}$, obtained using values of $f_{\rm in}$ motivated by the
+  simulations of \citet{Li+2013} (see text). The distribution of
+  $f_{\rm in} n_{18}$ ($n_{18}$) is unreliable to the left of the
+  solid black (dashed blue) vertical line.  Such low densities
+  correspond to galaxies with small OIII luminosities, which could be
+  the result of star formation instead of AGN activity.}
 \end{figure}
 
 
@@ -822,6 +830,60 @@ cm$^{-3}$.
 \end{table}
 
 
+
+\section{Synchrotron Radio Emission}
+
+\label{sec:results}
+\subsection{Numerical Jet Simulation}
+\label{sec:numerical}
+We calculate synchrotron radio emission from the TDE jet propagating
+through and shocking the CNM across the physically plausible range of
+nuclear gas densities.  The jet-CNM interaction is simulated in both
+one and two dimensions, and the resulting synchrotron emission is
+computed as described in \citet{Mimica+2015}.  {\bf BDM: slightly more
+  detail about numerical procedure}
+
+For the jet structure we adopt the preferred two-component model for
+SwJ1644 from \citet{Mimica+2015}, corresponding to a fast, inner core
+of Lorentz factor $\Gamma = 10$, surrounded by a slower, $\Gamma=2$
+outer sheath.  For our 2D simulations the fast inner core spans an
+angular interval $0-0.1\ {\rm radians}$, while the slow outer sheath
+extends from $0.1\ {\rm radians}$ to $0.5\ {\rm rad}$
+(\citealt{Mimica+2015}).  The time dependence of the jet kinetic
+luminosity is given by
+\begin{equation}\label{eq:lum}
+L_{\rm j, ISO}(t) = L_{j,0}\max\left[1, (t/t_0)\right]^{-5/3}
+\end{equation}
+%
+where the $t_0 = 5\times 10^5$ s is the duration of peak jet power and
+approximately corresponds to the duration of the peak non-thermal
+X-ray emission of SwJ1644.  Integrating equation~\ref{eq:lum} from $t
+= 0$ to $\infty$ gives the isotropic equivalent energy of the jet,
+$E_{\rm ISO}$, where $L_{j,0}=0.4\, E_{\rm ISO}/t_0$.  The ratio of
+the true (beaming-corrected) energy of the fast component is fixed to
+be 4\% of that in the slow component (\citealt{Mimica+2015}).
+
+For our 1D simulations, we modify the geometry of the slow sheath to
+better reproduce the results of the 2D simulations.  Although in out
+2D models the sheath is injected within a relatively narrow angular
+interval, at late stages of evolution the bow shock created by the
+jet-CNM interaction spans a much larger range of angles due to
+laterial spreading, i.e. the slow component becomes almost isotropic
+in 2D \citep[bottom two panels of Fig.~8 in][]{Mimica+2015}. To
+account for this in our 1D simulations, we instead take the slow
+component to extend from 0.1 to $\pi/2$ radians.
+
+Fig.~\ref{fig:1D2DB}, shows a comparison of light curves from this
+modified 1D approach and the 2D simulations. Although, the slow
+component in the 1D simulations is initially much broader 2D
+simulations, the 1D results and 2D results are quite close at high
+densities ($n_{18}=2000$). This is because the slow component rapidly
+spreads out and isotropizes in 2D. The agreement is not as good for
+$n_{18}=60$, for which the 1D calculation predict systematically
+higher luminosities. Nonetheless, using a broadened slow component in
+1D leads to better agreement with 2D results {\bf AG: Is this actually
+  true for n18=60?}.
+
 \begin{figure*}
 \includegraphics[width=16cm]{1D_2D.pdf}
 \caption{\label{fig:1D2DB} Comparison of light curves from 1D and 2D
@@ -835,27 +897,30 @@ cm$^{-3}$.
   $\S$~\ref{sec:profileComp})}.
 \end{figure*}
 
-\section{Synchrotron Radio Emission}
+ \subsection{Effects of viewing angle}
+Fig.~\ref{fig:onOff} shows a comparison off and on-axis light curves.
+For $n_{18}=2000$ the light curves differ little.  For $n_{18}=60$
+off-axis luminosity is lower by a factor of a few before and near the
+peak. However, for late times the off- and on-axis light curves are
+quite similar. This is as expected, at late times the jet becomes more
+isotropic, which means the viewing angle has relatively little effect
+on the observed light curve.
 
-\label{sec:results}
-\subsection{Numerical Jet Simulation}
-\label{sec:numerical}
-We calculate synchrotron radio emission from the TDE jet propagating through and shocking the CNM across the physically plausible range of nuclear gas densities.  The jet-CNM interaction is simulated in both one and
-two dimensions, and the resulting synchrotron emission is computed as described in \citet{Mimica+2015}.  {\bf BDM: slightly more detail about numerical procedure} 
-
-For the jet structure we adopt the preferred two-component model for SwJ1644 from
-\citet{Mimica+2015}, corresponding to a fast, inner core of Lorentz factor $\Gamma = 10$, surrounded by a slower, $\Gamma=2$ outer sheath.  For our 2D simulations the fast inner core spans an angular interval $0-0.1\ {\rm radians}$, while the slow outer sheath extends from $0.1\ {\rm radians}$ to $0.5\ {\rm rad}$ (\citealt{Mimica+2015}).  The time dependence of the jet kinetic luminosity is given by
-\begin{equation}\label{eq:lum}
-L_{\rm j, ISO}(t) = L_{j,0}\max\left[1, (t/t_0)\right]^{-5/3}
-\end{equation}
-%
-where the $t_0 = 5\times 10^5$ s is the duration of peak jet power and approximately corresponds to the duration of the peak non-thermal X-ray emission of SwJ1644.  Integrating equation~\ref{eq:lum} from $t = 0$ to $\infty$ gives the isotropic equivalent energy of the jet, $E_{\rm ISO}$, where $L_{j,0}=0.4\, E_{\rm ISO}/t_0$.  The ratio of the true (beaming-corrected) energy of the fast component is fixed to be 4\% of that in the slow component (\citealt{Mimica+2015}).
-
-For our 1D simulations, we modify the geometry of the slow sheath to better reproduce the results of the 2D simulations.  Although in out 2D models the sheath is injected within a relatively narrow angular interval, at late stages of evolution the bow shock created by the jet-CNM interaction spans a much larger range of angles due to laterial spreading, i.e. the slow component becomes almost isotropic in 2D \citep[bottom two panels of Fig.~8
-in][]{Mimica+2015}. To account for this in our 1D simulations, we instead take the slow component to extend from 0.1 to $\pi/2$ radians. As we will show, this choice is motivated by the fact that the resulting light curves better match those from the equivalent simulation of an initially narrower 2D jet ($\S~\ref{sec:1d2d}$). 
+\begin{figure*}
+\includegraphics[width=16cm]{on_off.pdf}
+\caption{\label{fig:onOff} Comparison of (2D) off- and on-axis light
+  curves for $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for
+  frequencies of 1 GHz (left) and 5 GHz (right). The observer line of
+  sight is taken to be at $\theta_{\rm obs}=0.8$ with respect to the
+  jet axis. We assume an $n\propto r^{-1}$ density profile for
+  $n_{18}=2000$, but take $n\propto r^{-1.5}$ for $n_{18}=60$ for
+  computational convenience--this model was previously computed in
+  \citet{Mimica+2015} and 1D results suggest that the density slope
+  would have minimal impact on the results (see
+  $\S$~\ref{sec:profileComp}).}
+\end{figure*}
 
 \subsection{Overview of Results}
-
 As summarized in Table~\ref{tab:jetParams}, we calculate light curves
 for a grid of on-axis jet simulations for five different values of
 $n_{18}$ (2, 11, 60, 345, and 2000 cm$^{-3}$) and three different
@@ -995,52 +1060,6 @@ optically thin at the deceleration time (``Case 1'').
     peak luminosity ({\it dashed}, see equation~\ref{eq:peakTime})
     compared to the numerical results for the slow component (solid
     lines)}
-\end{figure*}
-
- \subsection{1D vs. 2D simulations}
- \label{sec:1d2d}
- As described in $\S~\ref{sec:numerical}$, we take a slow component
- extending from 0.1-$\pi/2$ radians for our 1D simulations, to account
- for jet spreading seen in 2D simulations.
-
- Fig.~\ref{fig:1D2DB}, shows a comparison of the light curves derived
- from 1D and 2D results. For the 2D simulations we assume that the
- slow component of the jet initially extends from 0.1-0.5
- radians. Although, the slow component for the 1D simulations is much
- broader, the 1D results and 2D results are quite close at high
- densities ($n_{18}=2000$). This is because the slow component rapidly
- spreads out and isotropizes in 2D. The agreement is not as good for
- $n_{18}=60$, for which the 1D calculation predict systematically
- higher luminosities. Nonetheless, using a broadened slow component in
- 1D leads to better agreement with 2D results {\bf AG: Is this
-   actually true for n18=60?}.
-
-% Light curves from 1D simulations with broadened
-%  slow components show much better agreement with the 2D results
-%  (especially large ambient gas densities) than 1D simulations where the
-%  angular extent of the slow component is the slow 
-
- \subsection{Effects of viewing angle}
-Fig.~\ref{fig:onOff} shows a comparison off and on-axis light curves.
-For $n_{18}=2000$ the light curves differ little.  For $n_{18}=60$
-off-axis luminosity is lower by a factor of a few before and near the
-peak. However, for late times the off- and on-axis light curves are
-quite similar. This is as expected, at late times the jet becomes more
-isotropic, which means the viewing angle has relatively little effect
-on the observed light curve.
-
-\begin{figure*}
-\includegraphics[width=16cm]{on_off.pdf}
-\caption{\label{fig:onOff} Comparison of (2D) off- and on-axis light
-  curves for $n_{18}=60$ (top) and $n_{18}=2000$ (bottom) for
-  frequencies of 1 GHz (left) and 5 GHz (right). The observer line of
-  sight is taken to be at $\theta_{\rm obs}=0.8$ with respect to the
-  jet axis. We assume an $n\propto r^{-1}$ density profile for
-  $n_{18}=2000$, but take $n\propto r^{-1.5}$ for $n_{18}=60$ for
-  computational convenience--this model was previously computed in
-  \citet{Mimica+2015} and 1D results suggest that the density slope
-  would have minimal impact on the results (see
-  $\S$~\ref{sec:profileComp}).}
 \end{figure*}
 
 \subsection{Effect of gas density profile}
@@ -1364,15 +1383,23 @@ and~\eqref{eq:Fpeak1}, we find
 
 \section{Reverse shock}
 \label{sec:reverse}
-Here we estimate the fraction of the kinetic energy of the jet that is dissipated by the reverse
-shock, as opposed to the forward shock whose contribution is the focus of this paper.  From continuity, the comoving density of a relativistic jet is given by (e.g.~\citealt{Beloborodov&Uhm2006})
+Here we estimate the fraction of the kinetic energy of the jet that is
+dissipated by the reverse shock, as opposed to the forward shock whose
+contribution is the focus of this paper.  From continuity, the
+comoving density of a relativistic jet is given by
+(e.g.~\citealt{Beloborodov&Uhm2006})
  \begin{align}
    n_{\rm j} =  \frac{L_{\rm j, iso}}{4 \pi r^{2}\Gamma_{\rm
        j}^{2}c^{3}m_p(1 + r \dot{\Gamma}/c\Gamma^{3})}
    \approx  \frac{L_{\rm j, iso}}{4 \pi r^{2}\Gamma^{2}c^{3}m_p},
 \end{align}
 %
-where $L_{\rm j, iso}$ is the isotropic equivalent luminosity.  The second term in the denominator can be neglected if the jet Lorentz factor changes slowly ($\dot{\Gamma}_{\rm j} \ll c\Gamma^{3}/r$), a condition which is satisfied at radii $r < r_{\rm dec}$ if $\Gamma$ changes slowly on a timescale $\gtrsim t_{\rm 0}$, where $t_{\rm 0}$ is the jet duration.
+where $L_{\rm j, iso}$ is the isotropic equivalent luminosity.  The
+second term in the denominator can be neglected if the jet Lorentz
+factor changes slowly ($\dot{\Gamma}_{\rm j} \ll c\Gamma^{3}/r$), a
+condition which is satisfied at radii $r < r_{\rm dec}$ if $\Gamma$
+changes slowly on a timescale $\gtrsim t_{\rm 0}$, where $t_{\rm 0}$
+is the jet duration.
 
 The common Lorentz factor of the shocked CNM and the shocked jet can be estimated using the relativistic shock jump condition and pressure equality between the forward and reverse shocks.  In the ultra-relativistic limit this gives,
 \begin{equation}
@@ -1400,7 +1427,13 @@ is the Lorentz of shocked jet in the frame of the unshocked jet. In the lab fram
 \label{eq:betars}
 \end{equation} 
 %
-Equations~\eqref{eq:gammaShGen} and ~\eqref{eq:betars} can be used to determine the radius of the shocks when the reverse shock crosses the trailing edge of the jet and the value of $\Gamma_{\rm sh}$ at this time.  The latter allows us to calculate what fraction of the initial kinetic energy of the jet is dissipated at the reverse shock, instead of being transferred to the shocked external medium via the forward shock.  
+Equations~\eqref{eq:gammaShGen} and ~\eqref{eq:betars} can be used to
+determine the radius of the shocks when the reverse shock crosses the
+trailing edge of the jet and the value of $\Gamma_{\rm sh}$ at this
+time.  The latter allows us to calculate what fraction of the initial
+kinetic energy of the jet is dissipated at the reverse shock, instead
+of being transferred to the shocked external medium via the forward
+shock.
 
 
 
