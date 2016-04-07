@@ -542,9 +542,6 @@ $n_{18}\sim 0.5$ cm$^{-3}$.  From this we conclude that the true
 minimum density likely resides between these extremes, min($n_{18})
 \sim 0.03-0.5$ cm$^{-3}$.
 
-We show the location of our own Galactic Center as a red star in
-Fig.~\ref{fig:param}...
-
 Most of the host galaxies of observed TDE flares show evidence of some
 star formation within the last Gyr \citep{French+2016}.  In this
 region of parameter space corresponding to the right side of
@@ -600,8 +597,8 @@ star formation.
     than ten (singly hatched) massive stars are present on average
     inside the nominal stagnation radius (eq.~\ref{eq:rs}).  In these
     regions of parameter space discreteness effects not captured by
-    our formalism may be important. The red star shows the location of
-    the galactic center in this parameter space.}
+    our formalism may be important. The red line shows the rough location of
+    the Galactic Center in this parameter space.}
 \end{figure}
 
 
@@ -619,6 +616,32 @@ star formation.
 \subsection{Empirical Constraints on CNM Density}
 \label{sec:empirical}
 
+\subsubsection{Galactic center} 
+Due to its proximity, it is possible to directly observe the gas
+density distribution on parsec scales in the Galactic
+center. \citet{Baganoff+2003} find that the hot, diffuse plasma within
+10'' ($\sim \times 10^{18}$ cm) of Sgr A* has a root mean square
+electron density of $\sim 26$ cm$^{-3}$, which implies a total number
+density of $n\sim 50$ cm$^{-3}$. At the same time this estimate
+includes regions closer to the center, where the gas density is
+higher, so that the true number density at $10^{18}$ cm may be smaller
+by a factor of $\sim 2$.
+
+For the observed star formation rate of the Galactic Center (see
+Fig. 14 of \citealt{Pfuhl+2015}), our formalism gives $n_{18}\sim 4-6$
+cm$^{-3}$, where this range reflects the observational uncertainty in
+the star formation history. Fig.~\ref{fig:param} shows the range
+of two-burst star formation models, which produce heating and mass
+return parameters equal to those derived from the full star formation
+history of the Galactic Center. 
+
+Our formalism give a somewhat lower value for the density in the
+galactic center than that observed...{\bf AG discreteness effects and
+  IMF. For example our stagnation radius is smaller than Quataerts
+  since we do not use any detailed information about the stellar
+  pop. So for example our stagnation radius is a factor of 4 further in.}
+
+\subsubsection{Eddington ratio distribution}
 We now translate observed constraints on the accretion
 rate distribution of supermassive black holes into constraints on the
 CNM density.  The accretion rate can be written as
@@ -1078,47 +1101,51 @@ very weakly dependent on density across the entire grid {\bf AG Not
 \includegraphics[width=8cm]{components.pdf}
 \caption{\label{fig:components} Contributions from the fast
   (\textit{red}) and slow (\textit{blue}) to the 5 GHz light curves
-  (\textit{black}) for $n_{18}=2$ cm$^{-3}$ (\textit{top}) and $n_{18}=2000$ cm$^{-3}$
-  (\textit{bottom}).}
+  (\textit{black}) for $n_{18}=2$ cm$^{-3}$ (\textit{top}) and
+  $n_{18}=2000$ cm$^{-3}$ (\textit{bottom}).}
 \end{figure}
 
 
-Equation~\ref{eq:peakLumGen} shows the dependence of the peak
-luminosity slow component on jet parameters and ambient gas
-density. Substituting in our fiducial values for power law slopes of
-the gas density profile and energy distribution of accelerated
-electrons ($p$) gives
+The dependence of synchrotron peak luminosity and peak time on ambient
+gas density and jet parameters can be derived analytically by
+calculating the synchrotron radiation from the shocked slab of gas behind a
+self-similarly expanding blast wave. This was done in
+\citet{Leventis+2012}--we summarize the relevant results from this
+work in Appendix~\ref{app:analyt}. Equation~\ref{eq:peakLumGen} shows the
+dependence of the peak luminosity slow component on jet parameters and
+ambient gas density. Substituting in our fiducial values for power law
+slopes of the gas density profile and energy distribution of
+accelerated electrons ($p$) gives
 
 \begin{align}
 \nu L_{\nu, p}&=
 \begin{cases}
-  A_1 \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.59}
+  4.9\times 10^{40} \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.59}
   \left(\frac{\epsilon_e}{0.1}\right)^{1.3}
   \left(\frac{\epsilon_b}{0.002}\right)^{0.825}\\
-  \left(\frac{\nu_{\rm obs}}{5 {\rm GHz}}\right)^{0.35} n_{18}^{1.24}
-  {\rm erg s^{-1}} & {\rm Case \,1}\\\\
-  A_2 \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.87}
+  \left(\frac{\nu_{\rm obs}}{5 {\rm GHz}}\right)^{0.35} n_{18}^{1.24} 
+  {\rm erg \, s^{-1}} & {\rm Case \,1}\\\\
+ 1.1 \times 10^{42}  \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.87}
   \left(\frac{\epsilon_e}{0.1}\right)^{0.61}
   \left(\frac{\epsilon_b}{0.002}\right)^{0.26}\\
   \left(\frac{\nu_{\rm obs}}{5 {\rm GHz}}\right)^{2.01} n_{18}^{-0.14}
-  {\rm erg s^{-1}} & {\rm Case \,2}
+  {\rm erg\, s^{-1}} & {\rm Case \,2}
 \end{cases}
 \label{eq:peakLum}
 \end{align}
 %
-where $A_1$ and $A_2$ are constants.  Case 1 would be relevant for a
-low density medium, in which the jet is optically thin at the
-deceleration time. In this case, the peak luminosity is quite
-sensitive to density. Case 2 would be relevant for a high density
-medium, in which the jet is optically thick at the deceleration
-time. In this case, the peak luminosity is only weakly dependent on
-the ambient gas density.
+Case 1 would be relevant for a low density medium, in which the jet is
+optically thin at the deceleration time. In this case, the peak
+luminosity is quite sensitive to density. Case 2 would be relevant for
+a high density medium, in which the jet is optically thick at the
+deceleration time. In this case, the peak luminosity is only weakly
+dependent on the ambient gas density. The normalization for Case 1 and
+Case 2 to match our numerical results at low and high densities
+respectively.
 
 The right hand side of Fig.~\ref{fig:jetContours} shows comparisons of
 the numerical results for the slow component with the results of
-equation~\eqref{eq:peakLum}, with $A_1=4.9\times 10^{40}$ and $A_2=1.1
-\times 10^{42}$ to match the results for low and high nuclear gas
-densities respectively. For large $n_{18}$, the numerical results for
+equation~\eqref{eq:peakLum}. For large $n_{18}$, the numerical results for
 peak luminosity scale with density, jet energy, and frequency roughly
 as expected for ``Case 2.'' For 30 GHz and low ambient gas densities,
 the numerical results asymptotically approach the ``Case 1'' scalings.
