@@ -824,7 +824,6 @@ lower density floor of $n_{18} \sim 0.5$ cm$^{-3}$.
 \end{table}
 
 
-
 \section{Synchrotron Radio Emission}
 
 \label{sec:results}
@@ -893,7 +892,21 @@ slow component in 1D leads to better agreement with 2D results {\bf
   $\S$~\ref{sec:profileComp})}.
 \end{figure}
 
- \subsection{Effects of viewing angle}
+\subsection{Light curves}
+\label{sec:lightcurves}
+In this section, we investigate the effects of the gas density
+normalization, the gas density profile, the jet energy, and observer
+viewing angle on the observed synchrotron radio emission. 
+
+The left-hand panel of Fig.~\ref{fig:lightcurves} shows example light
+curves from both 1D and 2D simulation of a powerful $5\times 10^{53}$
+erg jet, going through different gas density profiles. The right-hand
+panel of Fig.~\ref{fig:lightcurves} show light curves of a less
+powerful $5\times 10^{51}$ erg jet. 
+
+
+
+ \subsubsection{Effects of viewing angle}
  Fig.~\ref{fig:onOff} shows a comparison of light curves for observers
  aligned with the jet axis (on-axis) and an angle of 0.8 radians off
  of the jet axis.  For $n_{18}=2000$ cm$^{-3}$ the light curves differ
@@ -917,7 +930,7 @@ slow component in 1D leads to better agreement with 2D results {\bf
   $\S$~\ref{sec:profileComp}).}
 \end{figure}
 
-\subsection{Effect of gas density profile}
+\subsubsection{Effect of gas density profile}
 \label{sec:profileComp}
 Fig.~\ref{fig:cores} shows on-axis radio light curves for our fiducial
 gas density profile, $n\propto r^{-1}$, and a core galaxy profile (equation~\ref{eq:cores}),
@@ -960,7 +973,7 @@ the deceleration/Sedov radius.
       red}).}
 \end{figure}
 
-\subsection{Contributions of the reverse shock}
+\subsubsection{Contributions of the reverse shock}
 Our calculations shown in Figs.~\ref{fig:1D2DB}$-$\ref{fig:cores}
 include only emission from the forward shock (shocked CNM).  In
 principal the reverse shock (shocked jet) may also contribute to the
@@ -1036,7 +1049,7 @@ either side of the black hole (\citealt{Giannios&Metzger2011}).
 \end{figure}
 
 
-\subsection{Overview of Results}
+\subsection{Overview of results}
 As summarized in Table~\ref{tab:jetParams}, we calculate light curves
 for a grid of on-axis jet simulations for five different values of
 $n_{18}$ (2, 11, 60, 345, and 2000 cm$^{-3}$) and three different
@@ -1458,14 +1471,14 @@ where
 \end{equation}
 is the ratio of the density of the jet to that of the CNM.  This expression is inaccurate for mildly relativistic or non-relativistic, in which case we apply the more general expression for $\Gamma_{\rm sh}$ given by 
 \citet{Beloborodov&Uhm2006} (their Fig.~6)
-\be
+\begin{equation}
 \frac{\Gamma^2-1}{\Gamma_{43}^2-1} f^{-1}=1 ,
-\ee
+\end{equation}
 where
-\be
+\begin{equation}
 \Gamma_{43}=\Gamma \Gamma_{\rm sh} \left(1-\beta_{\rm sh} \beta_j\right),
 \label{eq:gammaShGen}
-\ee
+\end{equation}
 is the Lorentz of shocked jet in the frame of the unshocked jet. In the lab frame the reverse shock moves with a velocity
 \begin{equation}
 \beta_{\rm rs}=\frac{\beta_{\rm sh}(f)-\beta_{43}(f)/3}{1-\beta_{\rm
