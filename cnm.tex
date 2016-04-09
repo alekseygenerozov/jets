@@ -1001,26 +1001,28 @@ electrons, gives
 \begin{align}
 t_p=
 \begin{cases}
-  t_1 E_{54}^{0.5} n_{18}^{-0.5} & {\rm Case \, 1}\\\\
-  t_2 \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.32}
+  500 E_{54}^{0.5} n_{18}^{-0.5} {\rm days} & {\rm Case \, 1}\\\\
+  49.9 \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.32}
   \left(\frac{\epsilon_e}{0.1}\right)^{0.45}
   \left(\frac{\epsilon_b}{0.002}\right)^{0.37}\\
-  \left(\frac{\nu_{\rm obs}}{5 {\rm GHz}}\right)^{-1.1} n_{18}^{0.4} &
-  {\rm Case \, 2}
+  \left(\frac{\nu_{\rm obs}}{5 {\rm GHz}}\right)^{-1.1} n_{18}^{0.4}
+  {\rm days}& {\rm Case \, 2}
 \end{cases}
 \label{eq:peakTime}
 \end{align}
 %
-where $t_1$ and $t_2$ are constants. In general, the light curve of a
-higher energy jet will peak later than the light curve for a low
-energy jet. The scaling with density is more complicated: if the
-emitting region is optically thick at the deceleration time (``Case
-2''), a higher ambient density results in a later peak time. The peak
-occurs when the self-absorption frequency crosses through the
-observing band and this occurs later for higher ambient gas
-densities. Otherwise, the peak time will scale as the deceleration
-time, which is larger for smaller ambient gas densities (see
-eq.~\ref{eq:tdec}). 
+Where the Case 2 (Case 1) normalizations are set to match the peak
+time from the numerical low (high) frequency light curves for high
+(low) ambient gas densities {\bf AG fix this sentence.}. In general,
+the light curve of a higher energy jet will peak later than the light
+curve for a low energy jet. The scaling with density is more
+complicated: if the emitting region is optically thick at the
+deceleration time (``Case 2''), a higher ambient density results in a
+later peak time. The peak occurs when the self-absorption frequency
+crosses through the observing band and this occurs later for higher
+ambient gas densities. Otherwise, the peak time will scale as the
+deceleration time, which is larger for smaller ambient gas densities
+(see eq.~\ref{eq:tdec}).
 
 \subsubsection{Numerical results}
 The left-hand panel of Fig.~\ref{fig:lightcurves} shows example light
@@ -1255,13 +1257,13 @@ the numerical results asymptotically approach the ``Case 1'' scalings.
 The left-hand side of Fig.~\ref{fig:ContoursTp} shows contours of the
 peak time for the slow component and total light curves. The
 right-hand side of Fig.~\ref{fig:ContoursTp} shows the Case 2 peak
-time from equation~\eqref{eq:peakTime} (with $t_2=49.9$ days), which
-roughly reproduces the numerical results for high densities/low
-frequencies. For lower densities, the numerical results diverge from
-the analytic prediction, in part due to the contributions of the fast
-component.  Furthermore, the peak time for the 30 GHz light curves
-decreases with density for small $n_{18}$, as the emitting region is
-optically thin at the deceleration time (``Case 1'').
+time from equation~\eqref{eq:peakTime}, which roughly reproduces the
+numerical results for high densities/low frequencies. For lower
+densities, the numerical results diverge from the analytic prediction,
+in part due to the contributions of the fast component.  Furthermore,
+the peak time for the 30 GHz light curves decreases with density for
+small $n_{18}$, as the emitting region is optically thin at the
+deceleration time (``Case 1'').
 
 
 
@@ -1359,16 +1361,16 @@ are summarized as follows.
   insensitive to changes in slope for fixed density at the
   deceleration radius.
 
-\item We use the distribution of Eddington ratios (measured by
-  \citealt{Kauffmann&Heckman2009} using $L[OIII]/\Mbh$) for a sample
-  $\sim 10^{7} \Msun$ black holes from SDSS to obtain an empirical
-  constraint on the average circumnuclear gas density, including all
-  phases of gas. We find that $\sim90\%$ of galaxies in the sample
-  have $n_{18}<10^{4} \, {\rm cm}^{-3}$, although we note that there is
-  considerable uncertainty in translating an observed Eddington ratio
-  to a circumnuclear gas density. TDE hosts would not fall on this
-  high density tail, as TDE hosts have either weak or no detected OIII
-  emission.
+% \item We use the distribution of Eddington ratios (measured by
+%   \citealt{Kauffmann&Heckman2009} using $L[OIII]/\Mbh$) for a sample
+%   $\sim 10^{7} \Msun$ black holes from SDSS to obtain an empirical
+%   constraint on the average circumnuclear gas density, including all
+%   phases of gas. We find that $\sim90\%$ of galaxies in the sample
+%   have $n_{18}<10^{4} \, {\rm cm}^{-3}$, although we note that there is
+%   considerable uncertainty in translating an observed Eddington ratio
+%   to a circumnuclear gas density. TDE hosts would not fall on this
+%   high density tail, as TDE hosts have either weak or no detected OIII
+%   emission.
 
 \item We take a jet model which fits the radio data for the SwJ1644
   transient (from \citealt{Mimica+2015}) and run it through a range of
