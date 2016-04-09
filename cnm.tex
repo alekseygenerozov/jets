@@ -939,13 +939,12 @@ slow component in 1D leads to better agreement with 2D results {\bf
 \includegraphics[width=8cm]{1d_2d.pdf}
 \caption{\label{fig:1D2DB} Comparison of light curves from 1D and 2D
   simulations for $n_{18}=60$ cm$^{-3}$ (top) and $n_{18}=2000$
-  cm$^{-3}$ (bottom) for frequencies of 1 GHz and 5 GHz and an
-  observer angle of 0.8 radians to the jet axis. We assume that the
-  gas density $n\propto r^{-1}$ for $n_{18}=2000$ cm$^{-3}$, but take
-  $n\propto r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$ for computational
-  convenience--this model was previously computed in
-  \citet{Mimica+2015} and 1D results suggest that the density slope
-  would have minimal impact on the results (see
+  cm$^{-3}$ (bottom)and an observer angle of 0.8 radians to the jet
+  axis. We assume that the gas density $n\propto r^{-1}$ for
+  $n_{18}=2000$ cm$^{-3}$, but take $n\propto r^{-1.5}$ for
+  $n_{18}=60$ cm$^{-3}$ for computational convenience--this model was
+  previously computed in \citet{Mimica+2015} and 1D results suggest
+  that the density slope would have minimal impact on the results (see
   $\S$~\ref{sec:profileComp})}.
 \end{figure}
 
@@ -962,7 +961,7 @@ calculating the synchrotron radiation from the shocked slab of gas
 behind a self-similarly expanding blast wave. This was done in
 \citet{Leventis+2012}. The relevant results from this work are
 summarized in Appendix~\ref{app:analyt}. Equation~\ref{eq:peakLumGen}
-shows the dependence of the peak luminosity slow component on jet
+shows the dependence of the slow component on jet
 parameters and ambient gas density. Substituting in our fiducial
 values for power law slopes of the gas density profile, $k=1$, and
 energy distribution of accelerated electrons, $p=2.3$, gives
@@ -1025,12 +1024,12 @@ eq.~\ref{eq:tdec}).
 
 \subsubsection{Numerical results}
 The left-hand panel of Fig.~\ref{fig:lightcurves} shows example light
-curves from both 1D and 2D simulations for different energy jets and
-density normalizations. The peak luminosity is virtually independent
-of density.  This is as expected for high densities and low
-frequencies: the emission is dominated by the slow component, which is
-optically thick at the deceleration time. In this case the peak
-luminosity is virtually independent of density (``Case 2'' in
+curves for different energy jets and density normalizations for both
+1D and 2D simulations. The peak luminosity is virtually independent of
+density.  This is as expected for high densities and low frequencies:
+the emission is dominated by the slow component, which is optically
+thick at the deceleration time. In this case the peak luminosity is
+virtually independent of density (``Case 2'' in
 eq.~\ref{eq:peakLum}). For high frequencies and small densities, the
 peak luminosity of the slow component falls off (see right-hand panel
 of Fig.~\ref{fig:lightcurves}). Coincidentally, the fast component
@@ -1045,10 +1044,11 @@ density. The peak occurs after the deceleration time when the emitting
 region transitions from optically thick to optically thin. This
 transition occurs later for larger ambient gas densities. Note,
 however, that at 30 GHz, the slow component light curve peaks later
-for $n_{18}=2$ than for $n_{18}=60$. This is the optically thin limit
-(``Case 1'' in eq.~\ref{eq:peakTime}), in which the peak time scales
-with the deceleration time, which is an increasing function of the
-ambient gas density (see eq.~\ref{eq:tdec}).
+for $n_{18}=2$ cm$^{-3}$ than for $n_{18}=60$ cm$^{-3}$. This is the
+optically thin limit (``Case 1'' in eq.~\ref{eq:peakTime}), in which
+the peak time scales with the deceleration time, which is an
+increasing function of the ambient gas density (see
+eq.~\ref{eq:tdec}).
 
 \begin{figure*} 
   \includegraphics[width=8cm]{lightcurves.pdf}
@@ -1228,7 +1228,7 @@ $5\times 10^{52}$, $5\times 10^{53}$ erg).
 
 The left-hand side of Fig.~\ref{fig:jetContours} shows contours of the
 peak luminosity for the slow component and total light curves across
-this grid. In general, the slow component dominates for large
+this grid. The slow component dominates for large
 densities and small frequencies.  The peak luminosity of the slow
 component falls off for low ambient gas densities, especially at 30
 GHz. However, the fast component compensates for this decline, so that
