@@ -636,179 +636,192 @@ return parameters equal to those derived from the full star formation
 history of the Galactic Center. 
 
 Our formalism give a somewhat lower value for the density than the
-observed value. In part, this is due to our neglect of discreteness
-effects: the nominal stagnation radius in our model is $\sim 6\times
-10^{16}$ cm. This is smaller than the inner radius of the disks of
-young stars in the galactic center which extend from $\sim
-10^{17}-10^{18}$ cm \citep{Genzel+2013} and dominate the mass
-budget. Previous studies which use more realistic distributions of
-stars (e.g. \citealt{Quataert 2004, Cuadra+2006}) larger densities
-{\bf AG how much detail do I need to go into about Cuadra? Still not
-  happy with the presentation here.} 
+observed value. In order to precisely model the gas density
+distribution in a particular galactic nucleus, detailed knowledge of
+the stellar population and its distribution are necessary (see
+e.g.~\citealt{Cuadra+2008}). In the case of the Galactic Center the young
+stars are more centrally concentrated than we assume in our
+model...{\bf AG double check--see Ghenzel+2003. Describe density in
+  case young stars dominate the central regions.}
 
-In order to precisely model the gas density distribution in a
-particular galactic nucleus, detailed knowledge of the stellar
-population and its distribution are necessary. However, here our goal
-is to simply establish the range of plausible densities across the
-space of possible galactic nuclei.
+% In addition, to the hot phase the galactic center also contains a cold
+% circumnuclear disk with density $10^{5}$ cm$^{-3}$
+% (e.g. \citealt{Becklin+1982, Morris+1999, Lau+2013}), which subtends a
+% solid angle of...(CITE). However, insofar as the angle of the TDE jet
+% is large compared to such features, the quantitative impact on the
+% radio flux is unlikely to be large.
 
+% {\bf AG warm phase gas? Freire+2012}
 
-\subsubsection{Eddington ratio distribution}
-We now translate observed constraints on the accretion
-rate distribution of supermassive black holes into constraints on the
-CNM density.  The accretion rate can be written as
-\begin{equation}
-\dot{M}_{\bullet} = f_{\rm in} 4 \pi r^2 \mu m_p n v,
-\label{eq:mdot}
-\end{equation}
-where $n$ is the average density at radius $r$ and $f_{\rm in}$ is the
-fraction of the large scale inflow which actually reaches small scales
-and accretes onto the black hole.  Inside the sonic point the velocity
-approaches the free-fall velocity, in which case
-equation~\eqref{eq:mdot} becomes
-\begin{equation}
-  \dot{M}_{\bullet} = 1.1\times 10^{-5} \Mbh[,7]^{0.5} f_{\rm in}
-  n_{18} \,\,\Msun {\rm yr}^{-1}.
-\label{eq:mdot2}
-\end{equation}
-%
-The corresponding Eddington ratio is
-\begin{equation}
-  \lambda\equiv L/L_{\rm Edd} = 4.8 \times 10^{-5}
-  \left(\frac{\epsilon_{\rm rad}}{0.1}\right) \Mbh[,7]^{0.5} f_{\rm in}
-  n_{18},
-\label{eq:n18Edd}
-\end{equation}
-%
-where $\epsilon_{\rm rad}$ is the radiative
-efficiency. \citet{Kauffmann&Heckman2009} present distributions of the
-OIII line luminosity, ${\rm L[OIII]}/\Mbh$ for a volume limited {\bf
-  AG double check} sample of SDSS galaxies, where ${\rm
-  L[OIII]}/\Mbh=1.7$ roughly corresponds to Eddington ratio of unity
-(REF).  This bolometric correction maps the distribution of ${\rm
-  L[OIII]}/\Mbh$ to a distribution of Eddington ratios
-\citep{Kauffmann&Heckman2009}.
-
-Equation (\ref{eq:mdot2}) provides a map between the Eddington ratio
-and gas density $n_{18}$, provided that the radiative efficiency
-$\epsilon_{\rm rad}$ and accretion efficiency $f_{\rm in}$ are known.
-For the former we adopt the MHD shearing box results of
-\citet{Sharma+2007}, who find (their Fig.~6)
-\begin{align}
-&\epsilon_{\rm rad} \simeq 
-\begin{cases}
-  0.03 \left(\frac{\dot{M}_{\bullet}}{10^{-4}\dot{M}_{\rm Edd}}\right)^{0.9} & \frac{\dot{M}_{\bullet}}{\dot{M}_{\rm edd}} \lsim 10^{-4} \\
- 0.03 &  10^{-2} \gsim \frac{\dot{M}_{\bullet}}{\dot{M}_{\rm edd}}
- \gsim  10^{-4},
-\end{cases}
-\label{eq:efficiency}
-\end{align}
-where
-\begin{equation} 
- \dot{M}_{\rm Edd} \equiv \frac{L_{\rm Edd}}{0.1 c^2} 
-\end{equation}
-%
-and
-there is a factor of $\sim$ 5 uncertainty in $\epsilon_{\rm rad}$ for
-$\dot{M}/\dot{M}_{\rm Edd}\lsim 10^{-4}$ due to the dependence of the
-results on uncertain microphysical parameters.  We linearly
-interpolate between equation~\eqref{eq:efficiency} for
-$\dot{M}/\dot{M}_{\rm Edd}<0.01$ and the standard thin-disk efficiency
-of $\epsilon_{\rm rad}=0.1$ for $\dot{M}/\dot{M}_{\rm Edd}>0.1$.
-
-\begin{figure}
-\includegraphics[width=8cm]{fcum_n18.pdf}
-\caption{\label{fig:n18Cum} Cumulative distribution of $f_{\rm in}
-  n_{18}$ for black holes with mass $\Mbh\simeq 10^{7} \Msun$ as
-  inferred based on the distribution of measured Eddington ratios from
-  \citet{Kauffmann&Heckman2009} {\it (solid black line)}. Here $f_{\rm
-    in}$ is the ratio of the true accretion rate onto the black hole
-  to the inflow rate of free-falling gas at $10^{18}$ cm.  A dashed
-  blue line shows the corresponding cumulative distribution of
-  $n_{18}$, obtained using values of $f_{\rm in}$ motivated by the
-  simulations of \citet{Li+2013} (see text). The distribution of
-  $f_{\rm in} n_{18}$ ($n_{18}$) is unreliable to the left of the
-  solid black (dashed blue) vertical line.  Such low densities
-  correspond to galaxies with small OIII luminosities, which could be
-  the result of star formation instead of AGN activity.}
-\end{figure}
+%  In part, this is due to our neglect of discreteness
+% effects: the nominal stagnation radius in our model is $\sim 6\times
+% 10^{16}$ cm. This is smaller than the inner radius of the disks of
+% young stars in the galactic center which extend from $\sim
+% 10^{17}-10^{18}$ cm \citep{Genzel+2013} and dominate the mass
+% budget. Previous studies which use more realistic distributions of
+% stars (e.g. \citealt{Quataert 2004, Cuadra+2006}) larger densities
+% {\bf AG how much detail do I need to go into about Cuadra? Still not
+%   happy with the presentation here.} 
 
 
-Fig.~\ref{fig:n18Cum} shows the distribution of $f_{\rm in} n_{18}$
-which results from combining the distributions of Eddington ratio from
-\citet{Kauffmann&Heckman2009} with equations~\eqref{eq:n18Edd} and
-~\eqref{eq:efficiency}.  It would at first appear that the absence of
-galaxies with $f_{\rm in }n_{18} \lsim$ few cm$^{-3}$ places a lower
-bound on $n_{18}$ of a few cm$^{-3}$ because $f_{\rm in} \le 1$.
-However, because measurements of Eddington ratios below $\sim 10^{-3}$
-(shown with a vertical line in Fig.~\ref{fig:n18Cum}) are not reliable
-(T.~Heckman, private communication), this allows a significant fraction
-($\sim 30\%$) of galaxies to have lower gas densities.
 
-To obtain the cumulative distribution of $n_{18}$ requires an
-additional prescription for $f_{\rm in}$.  We use the results of
-\citet{Li+2013}, who perform two-dimensional hydrodynamical
-simulations of axisymmetric rotating accretion flows.  They find that
-when the inflow rate on large scales is highly sub-Eddington
-($\dot{M}/\dot{M}_{\rm Edd} \lsim 10^{-4}$), cooling is inefficient
-and $f_{\rm in}\sim 0.01$. On the other hand, when
-$\dot{M}/\dot{M}_{\rm Edd}\gsim 10^{-2}$, $f_{\rm in}$ approaches
-unity.  We use $\dot{M}_{\bullet}/\dot{M}_{\rm Bondi}$ in their Figure
-6 for $f_{\rm in}$.\footnote{\citet{Li+2013} employ an alpha viscosity
-  prescription with $\alpha=0.01$.  A higher value of $\alpha$ would
-  likely increase the accretion fraction $f_{\rm in}$, thus decreasing
-  our estimates of $n_{18}$ in a systematic way.}  With this choice we
-find that only a third of nuclei have $n_{18}>2\times 10^{3}$
-cm$^{-3}$ and only 6\% have $n_{18}>10^{4}$ cm$^{-3}$.  We note,
-however, that existing candidate tidal disruption flares show little
-or no evidence for AGN emission lines (e.g. \citealt{van-Velzen+2011,
-  Arcavi+2014}), making them unlikely to reside in the high density
-tail of the $n_{18}$ distribution.
 
-%Two potential complications to keep in mind are (i) clumpiness of the
-%CNM and (ii) anisotropy. The distributions above are distributions of
-%the {\it average} $n_{18}$.  Most likely, some of the nuclear gas in a
-%low density hot phase, while the rest is in high density cold
-%clumps/filaments.  However, while the jet is relativistic the
-%light curve of a jet propagating through a clumpy medium will differ
-%little from that of a smooth medium with the same average
-%density. Even in the late stages when the jet becomes non-relativistic
-%clumps will only make a difference if the size of the clumps is
-%comparable to the size of the jet {\bf AG include some refs here}.
-One potential complication is that the CNM could be distributed
-anisotropically around the black hole.  The cold phase could be
-concentrated in a ring-like structure, similar to the cirumnuclear
-ring surrounding SgrA$^{*}$ (e.g.~\citealt{Lau+13}).  Anisotropies may
-also present in the hot phase, for instance due to low density bubbles
-inflated by the AGN.  However, insofar as the angle of the TDE jet is
-large compared to these features, the quantitative impact on the radio
-flux is unlikely to be large.
+% \subsubsection{Eddington ratio distribution}
+% We now translate observed constraints on the accretion
+% rate distribution of supermassive black holes into constraints on the
+% CNM density.  The accretion rate can be written as
+% \begin{equation}
+% \dot{M}_{\bullet} = f_{\rm in} 4 \pi r^2 \mu m_p n v,
+% \label{eq:mdot}
+% \end{equation}
+% where $n$ is the average density at radius $r$ and $f_{\rm in}$ is the
+% fraction of the large scale inflow which actually reaches small scales
+% and accretes onto the black hole.  Inside the sonic point the velocity
+% approaches the free-fall velocity, in which case
+% equation~\eqref{eq:mdot} becomes
+% \begin{equation}
+%   \dot{M}_{\bullet} = 1.1\times 10^{-5} \Mbh[,7]^{0.5} f_{\rm in}
+%   n_{18} \,\,\Msun {\rm yr}^{-1}.
+% \label{eq:mdot2}
+% \end{equation}
+% %
+% The corresponding Eddington ratio is
+% \begin{equation}
+%   \lambda\equiv L/L_{\rm Edd} = 4.8 \times 10^{-5}
+%   \left(\frac{\epsilon_{\rm rad}}{0.1}\right) \Mbh[,7]^{0.5} f_{\rm in}
+%   n_{18},
+% \label{eq:n18Edd}
+% \end{equation}
+% %
+% where $\epsilon_{\rm rad}$ is the radiative
+% efficiency. \citet{Kauffmann&Heckman2009} present distributions of the
+% OIII line luminosity, ${\rm L[OIII]}/\Mbh$ for a volume limited {\bf
+%   AG double check} sample of SDSS galaxies, where ${\rm
+%   L[OIII]}/\Mbh=1.7$ roughly corresponds to Eddington ratio of unity
+% (REF).  This bolometric correction maps the distribution of ${\rm
+%   L[OIII]}/\Mbh$ to a distribution of Eddington ratios
+% \citep{Kauffmann&Heckman2009}.
 
-%For instance, X-ray observations of the nuclei of massive elliptical galaxies show densities of density on scales of $\sim
-%100$ pc is $\gsim 0.1$ cm$^{-3}$
+% Equation (\ref{eq:mdot2}) provides a map between the Eddington ratio
+% and gas density $n_{18}$, provided that the radiative efficiency
+% $\epsilon_{\rm rad}$ and accretion efficiency $f_{\rm in}$ are known.
+% For the former we adopt the MHD shearing box results of
+% \citet{Sharma+2007}, who find (their Fig.~6)
+% \begin{align}
+% &\epsilon_{\rm rad} \simeq 
+% \begin{cases}
+%   0.03 \left(\frac{\dot{M}_{\bullet}}{10^{-4}\dot{M}_{\rm Edd}}\right)^{0.9} & \frac{\dot{M}_{\bullet}}{\dot{M}_{\rm edd}} \lsim 10^{-4} \\
+%  0.03 &  10^{-2} \gsim \frac{\dot{M}_{\bullet}}{\dot{M}_{\rm edd}}
+%  \gsim  10^{-4},
+% \end{cases}
+% \label{eq:efficiency}
+% \end{align}
+% where
+% \begin{equation} 
+%  \dot{M}_{\rm Edd} \equiv \frac{L_{\rm Edd}}{0.1 c^2} 
+% \end{equation}
+% %
+% and
+% there is a factor of $\sim$ 5 uncertainty in $\epsilon_{\rm rad}$ for
+% $\dot{M}/\dot{M}_{\rm Edd}\lsim 10^{-4}$ due to the dependence of the
+% results on uncertain microphysical parameters.  We linearly
+% interpolate between equation~\eqref{eq:efficiency} for
+% $\dot{M}/\dot{M}_{\rm Edd}<0.01$ and the standard thin-disk efficiency
+% of $\epsilon_{\rm rad}=0.1$ for $\dot{M}/\dot{M}_{\rm Edd}>0.1$.
 
-%For instance, \citet{Russell+2013} use X-ray observations to measure
-%gas density and temperature profiles for a sample of massive elliptical galaxies. The measured electron density on scales of $\sim
-%100$ pc is $\gsim 0.1$ cm$^{-3}$. Note that the gas density at 100 pc
-%would be irrelevant for a TDE jet, but we would not expect the gas
-%density to be decreasing towards the galactic center in a steady
-%state.  We note that massive black holes in the \citet{Russell+2013}
-%sample, with $\Mbh\sim 10^{9} \Msun$, whereas black holes tidal
-%disruption events would have $\Mbh\lsim 10^8 \Msun$. This is because
-%more massive black holes would not be able to disrupt (main sequence)
-%stars.
+% \begin{figure}
+% \includegraphics[width=8cm]{fcum_n18.pdf}
+% \caption{\label{fig:n18Cum} Cumulative distribution of $f_{\rm in}
+%   n_{18}$ for black holes with mass $\Mbh\simeq 10^{7} \Msun$ as
+%   inferred based on the distribution of measured Eddington ratios from
+%   \citet{Kauffmann&Heckman2009} {\it (solid black line)}. Here $f_{\rm
+%     in}$ is the ratio of the true accretion rate onto the black hole
+%   to the inflow rate of free-falling gas at $10^{18}$ cm.  A dashed
+%   blue line shows the corresponding cumulative distribution of
+%   $n_{18}$, obtained using values of $f_{\rm in}$ motivated by the
+%   simulations of \citet{Li+2013} (see text). The distribution of
+%   $f_{\rm in} n_{18}$ ($n_{18}$) is unreliable to the left of the
+%   solid black (dashed blue) vertical line.  Such low densities
+%   correspond to galaxies with small OIII luminosities, which could be
+%   the result of star formation instead of AGN activity.}
+% \end{figure}
 
-%In this scenario, the
-%some fraction of jets would likely be stifled by the very dense
-%ring. However, such a ring would not block all jet propagation
-%directions.
 
-The empirical estimates in this section nicely complement our analytic
-results.  The accretion rates of black holes are particularly are
-particularly challenging to measure for quiescent nuclei.  However,
-such cases, in which AGN feedback is minimal, are precisely the regime
-where our analytic estimates are the most trustworthy, providing a
-lower density floor of $n_{18} \sim 0.5$ cm$^{-3}$.
+% Fig.~\ref{fig:n18Cum} shows the distribution of $f_{\rm in} n_{18}$
+% which results from combining the distributions of Eddington ratio from
+% \citet{Kauffmann&Heckman2009} with equations~\eqref{eq:n18Edd} and
+% ~\eqref{eq:efficiency}.  It would at first appear that the absence of
+% galaxies with $f_{\rm in }n_{18} \lsim$ few cm$^{-3}$ places a lower
+% bound on $n_{18}$ of a few cm$^{-3}$ because $f_{\rm in} \le 1$.
+% However, because measurements of Eddington ratios below $\sim 10^{-3}$
+% (shown with a vertical line in Fig.~\ref{fig:n18Cum}) are not reliable
+% (T.~Heckman, private communication), this allows a significant fraction
+% ($\sim 30\%$) of galaxies to have lower gas densities.
+
+% To obtain the cumulative distribution of $n_{18}$ requires an
+% additional prescription for $f_{\rm in}$.  We use the results of
+% \citet{Li+2013}, who perform two-dimensional hydrodynamical
+% simulations of axisymmetric rotating accretion flows.  They find that
+% when the inflow rate on large scales is highly sub-Eddington
+% ($\dot{M}/\dot{M}_{\rm Edd} \lsim 10^{-4}$), cooling is inefficient
+% and $f_{\rm in}\sim 0.01$. On the other hand, when
+% $\dot{M}/\dot{M}_{\rm Edd}\gsim 10^{-2}$, $f_{\rm in}$ approaches
+% unity.  We use $\dot{M}_{\bullet}/\dot{M}_{\rm Bondi}$ in their Figure
+% 6 for $f_{\rm in}$.\footnote{\citet{Li+2013} employ an alpha viscosity
+%   prescription with $\alpha=0.01$.  A higher value of $\alpha$ would
+%   likely increase the accretion fraction $f_{\rm in}$, thus decreasing
+%   our estimates of $n_{18}$ in a systematic way.}  With this choice we
+% find that only a third of nuclei have $n_{18}>2\times 10^{3}$
+% cm$^{-3}$ and only 6\% have $n_{18}>10^{4}$ cm$^{-3}$.  We note,
+% however, that existing candidate tidal disruption flares show little
+% or no evidence for AGN emission lines (e.g. \citealt{van-Velzen+2011,
+%   Arcavi+2014}), making them unlikely to reside in the high density
+% tail of the $n_{18}$ distribution.
+
+% %Two potential complications to keep in mind are (i) clumpiness of the
+% %CNM and (ii) anisotropy. The distributions above are distributions of
+% %the {\it average} $n_{18}$.  Most likely, some of the nuclear gas in a
+% %low density hot phase, while the rest is in high density cold
+% %clumps/filaments.  However, while the jet is relativistic the
+% %light curve of a jet propagating through a clumpy medium will differ
+% %little from that of a smooth medium with the same average
+% %density. Even in the late stages when the jet becomes non-relativistic
+% %clumps will only make a difference if the size of the clumps is
+% %comparable to the size of the jet {\bf AG include some refs here}.
+% One potential complication is that the CNM could be distributed
+% anisotropically around the black hole.  The cold phase could be
+% concentrated in a ring-like structure, similar to the cirumnuclear
+% ring surrounding SgrA$^{*}$ (e.g.~\citealt{Lau+13}).  Anisotropies may
+% also present in the hot phase, for instance due to low density bubbles
+% inflated by the AGN.  However, insofar as the angle of the TDE jet is
+% large compared to these features, the quantitative impact on the radio
+% flux is unlikely to be large.
+
+% %For instance, X-ray observations of the nuclei of massive elliptical galaxies show densities of density on scales of $\sim
+% %100$ pc is $\gsim 0.1$ cm$^{-3}$
+
+% %For instance, \citet{Russell+2013} use X-ray observations to measure
+% %gas density and temperature profiles for a sample of massive elliptical galaxies. The measured electron density on scales of $\sim
+% %100$ pc is $\gsim 0.1$ cm$^{-3}$. Note that the gas density at 100 pc
+% %would be irrelevant for a TDE jet, but we would not expect the gas
+% %density to be decreasing towards the galactic center in a steady
+% %state.  We note that massive black holes in the \citet{Russell+2013}
+% %sample, with $\Mbh\sim 10^{9} \Msun$, whereas black holes tidal
+% %disruption events would have $\Mbh\lsim 10^8 \Msun$. This is because
+% %more massive black holes would not be able to disrupt (main sequence)
+% %stars.
+
+% %In this scenario, the
+% %some fraction of jets would likely be stifled by the very dense
+% %ring. However, such a ring would not block all jet propagation
+% %directions.
+
+% The empirical estimates in this section nicely complement our analytic
+% results.  The accretion rates of black holes are particularly are
+% particularly challenging to measure for quiescent nuclei.  However,
+% such cases, in which AGN feedback is minimal, are precisely the regime
+% where our analytic estimates are the most trustworthy, providing a
+% lower density floor of $n_{18} \sim 0.5$ cm$^{-3}$.
 
 % On the other hand, the analytic estimates are specific to
 % the hot phase of gas. The Eddington ratio distribution probes the
@@ -939,7 +952,7 @@ slow component in 1D leads to better agreement with 2D results {\bf
 \subsection{Light curves}
 \label{sec:lightcurves}
 In this section, we investigate the effects of the gas density
-profile, the jet energy, and observer viewing angle on the observed
+profile, jet energy, and observer viewing angle on the observed
 synchrotron radio light curve. 
 
 \subsubsection{Analytic results}
@@ -951,8 +964,8 @@ behind a self-similarly expanding blast wave. This was done in
 summarized in Appendix~\ref{app:analyt}. Equation~\ref{eq:peakLumGen}
 shows the dependence of the peak luminosity slow component on jet
 parameters and ambient gas density. Substituting in our fiducial
-values for power law slopes of the gas density profile and energy
-distribution of accelerated electrons ($p$) gives
+values for power law slopes of the gas density profile, $k=1$, and
+energy distribution of accelerated electrons, $p=2.3$, gives
 
 \begin{align}
 \nu L_{\nu, p}&=
@@ -971,7 +984,7 @@ distribution of accelerated electrons ($p$) gives
 \label{eq:peakLum}
 \end{align}
 %
-Case 1 would be relevant for a low density medium, in which the jet is
+Case 1 would be relevant for a low density medium, for which the jet is
 optically thin at the deceleration time. In this case, the peak
 luminosity is quite sensitive to density. Case 2 would be relevant for
 a high density medium, in which the jet is optically thick at the
@@ -1007,25 +1020,22 @@ emitting region is optically thick at the deceleration time (``Case
 occurs when the self-absorption frequency crosses through the
 observing band and this occurs later for higher ambient gas
 densities. Otherwise, the peak time will scale as the deceleration
-time, and a larger ambient gas density will result in a later peak
-(``Case 1'').
-
+time, which is larger for smaller ambient gas densities (see
+eq.~\ref{eq:tdec}). 
 
 \subsubsection{Numerical results}
 The left-hand panel of Fig.~\ref{fig:lightcurves} shows example light
-curves from both 1D and 2D simulations of $5\times 10^{51}$ erg and
-$5\times 10^{53}$ erg jets going through $n\propto r^{-1}$ density
-profiles with different normalizations. The peak luminosity is
-virtually independent of density.  This consistent with our analytic
-expectations for high densities and low frequencies: the emission is
-dominated by the slow component, which is optically thick at the
-deceleration time. In this case the peak luminosity is virtually
-independent of density (``Case 2'' in eq.~\ref{eq:peakLum}). For high
-frequencies and small densities, the peak luminosity of the slow
-component falls off (see right-hand panel of
-Fig.~\ref{fig:lightcurves}). Coincidentally, the fast component just
-compensates for this decline in the slow component luminosity, so the
-total peak luminosity is nearly independent of density across the
+curves from both 1D and 2D simulations for different energy jets and
+density normalizations. The peak luminosity is virtually independent
+of density.  This is as expected for high densities and low
+frequencies: the emission is dominated by the slow component, which is
+optically thick at the deceleration time. In this case the peak
+luminosity is virtually independent of density (``Case 2'' in
+eq.~\ref{eq:peakLum}). For high frequencies and small densities, the
+peak luminosity of the slow component falls off (see right-hand panel
+of Fig.~\ref{fig:lightcurves}). Coincidentally, the fast component
+just compensates for this decline in the slow component luminosity, so
+the total peak luminosity is nearly independent of density across the
 parameter space. In fact, the ``Case 2'' peak luminosity in
 equation~\ref{eq:peakLum} provides a good approximation for the total
 peak luminosity for a fixed value of $n_{18}=2000$ cm$^{-3}$.
