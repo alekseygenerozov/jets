@@ -443,15 +443,14 @@ a break in the stellar density profile in our analysis.
 
 \begin{figure}
 \includegraphics[width=8cm]{sedov_radius.pdf}
-\caption{\label{fig:profiles} Steady-state radial profiles of the gas
-  density of the CNM, $n(r)/n_{18}$, normalized to the value $n_{18} =
-  n(r = 10^{18}$ cm), calculated for a black hole mass $10^{7}
-  \,\Msun$ and gas heating parameter $v_w=600$ km s$^{-1}$.  Cusp and
-  core stellar density profiles are shown with solid and dashed lines,
+\caption{\label{fig:profiles} Steady-state radial profiles of the CNM
+  gas density, $n(r)/n_{18}$, normalized to the value $n_{18} = n(r =
+  10^{18}$ cm), calculated for a black hole mass $10^{7} \,\Msun$ and
+  gas heating parameter $v_w=600$ km s$^{-1}$.  Cusp and core stellar
+  density profiles are shown with solid and dashed lines,
   respectively.  The line color denotes the isotropic equivalent
   energy of a jet for which the Sedov radius equals that radius from
-  the black hole (given the swept up interior gaseous mass), assuming
-  an initial jet Lorentz factor of $\Gamma=2$.}
+  the black hole (given the swept up interior gaseous mass).}
 \end{figure}
 
 
@@ -591,7 +590,7 @@ star formation.
     stars formed a Hubble time ago.  We have assumed a black hole of
     mass $10^{7} \, \Msun$ and that both young and old stars possess a
     cusp-like density profile, which produces a gas density profile
-    obeys $n \propto r^{-1}$.  Hatched areas indicate regions of
+    that goes as $r^{-1}$.  Hatched areas indicate regions of
     parameter space where massive stars ($\gsim 15 \, \Msun$) dominate
     the gas heating rate, but less than one (doubly hatched) or less
     than ten (singly hatched) massive stars are present on average
@@ -945,8 +944,7 @@ results {\bf AG: Is this actually true for n18=60?}.
 \begin{figure}
 \includegraphics[width=8cm]{1d_2d.pdf}
 \caption{\label{fig:1D2DB} Comparison of light curves from 1D and 2D
-  simulations for $n_{18}=60$ cm$^{-3}$ (top) and $n_{18}=2000$
-  cm$^{-3}$ (bottom)and an observer angle of 0.8 radians to the jet
+  simulations for an observer angle of 0.8 radians to the jet
   axis. We assume that the gas density $n\propto r^{-1}$ for
   $n_{18}=2000$ cm$^{-3}$, but take $n\propto r^{-1.5}$ for
   $n_{18}=60$ cm$^{-3}$ for computational convenience--this model was
@@ -966,12 +964,12 @@ The dependence of synchrotron peak luminosity and peak time on ambient
 gas density and jet parameters can be derived analytically by
 calculating the synchrotron radiation from a homogenous, shocked slab
 of gas behind a self-similarly expanding blast wave. This was done in
-\citet{Leventis+2012}. The relevant results from this work are
-summarized in Appendix~\ref{app:analyt}. Equation~\ref{eq:peakLumGen}
-shows the dependence of the slow component on jet parameters and
-ambient gas density. Substituting in our fiducial values for power law
-slopes of the gas density profile, $k=1$, and energy distribution of
-accelerated electrons, $p=2.3$, gives
+\citet{Leventis+2012}. The relevant results are summarized in
+Appendix~\ref{app:analyt}. Equation~\ref{eq:peakLumGen} shows the
+dependence of the slow component on jet parameters and ambient gas
+density. Substituting in our fiducial values for power law slopes of
+the gas density profile, $k=1$, and energy distribution of accelerated
+electrons, $p=2.3$, gives
 
 \begin{align}
 \nu L_{\nu, p}&=
@@ -996,8 +994,8 @@ luminosity is quite sensitive to density. Case 2 would be relevant for
 a high density medium, in which the jet is optically thick at the
 deceleration time. In this case, the peak luminosity is only weakly
 dependent on the ambient gas density. The normalizations for Case 1
-and Case 2 are chosen to match our numerical results at low and high
-densities respectively.
+and Case 2 are chosen to match our numerical results in the optically
+thin and thick regimes respectively.
 
 Equation~\eqref{eq:tpeakGen} gives the peak time for the slow
 component. Substituting in our fiducial values for power law slopes of
@@ -1061,12 +1059,12 @@ ambient gas density (see eq.~\ref{eq:tdec}).
 \begin{figure*} 
   \includegraphics[width=8cm]{lightcurves.pdf}
   \includegraphics[width=8cm]{lightcurves_comp.pdf}
-  \caption{\label{fig:lightcurves} \textit{Right-hand panel:} On-axis
+  \caption{\label{fig:lightcurves} \textit{Left-hand panel:} On-axis
     ($\theta_{\rm obs}=0$) radio light curves for jet energies of
-    $5\times 10^{53}$ ({\it opaque}) and $5\times 10^{51}$ erg
-    ({\it translucent}) and three different values of n$_{18}$: 2, 60,
-    and 2000.  Solid lines correspond to the light curves from 1D jet
-    simulations. When available ($n_{18}=60$ cm$^{-3}$ and
+    $5\times 10^{53}$ erg ({\it opaque}) and $5\times 10^{51}$ erg ({\it
+      translucent}) and three different values of n$_{18}$: 2, 60, and
+    2000 cm$^{-3}$.  Solid lines correspond to the light curves from
+    1D jet simulations. When available ($n_{18}=60$ cm$^{-3}$ and
     $n_{18}=2000$ cm$^{-3}$), we have plotted light curves from the 2D
     jet simulations as dashed lines. Note we use $n\propto r^{-1}$ for
     $n_{18}=$ 2 and 2000, but $r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$, as
@@ -1078,7 +1076,7 @@ ambient gas density (see eq.~\ref{eq:tdec}).
     single upper limit in the top panel corresponds to 1.4 GHz. Gray
     triangles and squares in the middle panel indicate upper limits
     and detections at 3.0 GHz, while black triangles indicate upper
-    limits at 5.0 GHz. \textit{Left-hand panel:} Total ({\it opaque})
+    limits at 5.0 GHz. \textit{Right-hand panel:} Total ({\it opaque})
     and slow component ({\it translucent}) on-axis light curves for a
     $5\times 10^{53}$ erg jet.}
 \end{figure*}
@@ -1096,15 +1094,14 @@ ambient gas density (see eq.~\ref{eq:tdec}).
 
 \begin{figure}
 \includegraphics[width=8cm]{on_off.pdf}
-\caption{\label{fig:onOff} Comparison of (2D) off- and on-axis light
-  curves for $n_{18}=60$ cm$^{-3}$ (top) and $n_{18}=2000$ cm$^{-3}$
-  (bottom) for frequencies of 1 and 5 GHz. The observer line of sight
-  is taken to be at $\theta_{\rm obs}=0.8$ with respect to the jet
-  axis. We assume an $n\propto r^{-1}$ density profile for
-  $n_{18}=2000$ cm$^{-3}$, but take $n\propto r^{-1.5}$ for
-  $n_{18}=60$ cm$^{-3}$ for computational convenience--this model was
-  previously computed in \citet{Mimica+2015} and 1D results suggest
-  that the density slope would have minimal impact on the results (see
+\caption{\label{fig:onOff} Comparison of (2D) on-axis and off-axis
+  light curves. For the off-axis light curve the observer is an angle
+  $\theta_{\rm obs}$=0.8 radians away from the jet axis. We assume an
+  $n\propto r^{-1}$ density profile for $n_{18}=2000$ cm$^{-3}$, but
+  take $n\propto r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$ for computational
+  convenience--this model was previously computed in
+  \citet{Mimica+2015} and 1D results suggest that the density slope
+  would have minimal impact on the results (see
   $\S$~\ref{sec:profileComp}).}
 \end{figure}
 
