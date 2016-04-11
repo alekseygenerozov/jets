@@ -635,14 +635,19 @@ of two-burst star formation models, which produce heating and mass
 return parameters equal to those derived from the full star formation
 history of the Galactic Center. 
 
-Our formalism give a somewhat lower value for the density than the
-observed value. In order to precisely model the gas density
-distribution in a particular galactic nucleus, detailed knowledge of
-the stellar population and its distribution are necessary (see
-e.g.~\citealt{Cuadra+2008}). In the case of the Galactic Center the young
-stars are more centrally concentrated than we assume in our
-model...{\bf AG double check--see Ghenzel+2003. Describe density in
-  case young stars dominate the central regions.}
+Our formalism gives a lower value of the $n_{18}$ than observed for
+the global star formation history of the Galactic Center. In reality,
+most of the massive stars are concentrated in two counter-rotating
+disks \citep{Ghenzel+2003} with an extremely top heavy IMF
+\citep{Bartko+2003}. The disk stars extend from $\sim 10^{17}-10^{18}$
+cm and inject $\sim 10^{-3} \Msun$ yr$^{-1}$ of stellar wind
+material, much more than the $\sim 4\ times 10^{-5} \Msun$ yr$^{-1}$
+expected for the global star formation history. 
+
+In short, accurate modeling of the gas distribution in a particular
+galactic nucleus, requires detailed knowledge of the distribution of
+stars. Our goal here is to bracket the range of possible nuclear gas
+densities, by considering a broad range of stellar populations.
 
 % In addition, to the hot phase the galactic center also contains a cold
 % circumnuclear disk with density $10^{5}$ cm$^{-3}$
@@ -919,11 +924,12 @@ modified 1D approach and the 2D simulations. Although, the slow
 component in the 1D simulations is initially much broader 2D
 simulations, the 1D results and 2D results are quite close at high
 densities ($n_{18}=2000$ cm$^{-3}$). This is because the slow
-component rapidly spreads out and isotropizes in 2D. The agreement is
-not as good for $n_{18}=60$ cm$^{-3}$, for which the 1D calculation predict
-systematically higher luminosities. Nonetheless, using a broadened
-slow component in 1D leads to better agreement with 2D results {\bf
-  AG: Is this actually true for n18=60?}.
+component rapidly spreads out and isotropizes in 2D {\bf AG careful in
+  interpretation--see van Eerten & MacFayden 2012}. The agreement is
+not as good for $n_{18}=60$ cm$^{-3}$, for which the 1D calculation
+predict systematically higher luminosities. Nonetheless, using a
+broadened slow component in 1D leads to better agreement with 2D
+results {\bf AG: Is this actually true for n18=60?}.
 
 % Fig~\ref{fig:components}, which shows the relative contributions of
 % the fast and slow components to the 5 GHz light curve of a $5 \times
@@ -957,14 +963,14 @@ synchrotron radio light curve.
 \subsubsection{Analytic results}
 The dependence of synchrotron peak luminosity and peak time on ambient
 gas density and jet parameters can be derived analytically by
-calculating the synchrotron radiation from the shocked slab of gas
-behind a self-similarly expanding blast wave. This was done in
+calculating the synchrotron radiation from a homogenous, shocked slab
+of gas behind a self-similarly expanding blast wave. This was done in
 \citet{Leventis+2012}. The relevant results from this work are
 summarized in Appendix~\ref{app:analyt}. Equation~\ref{eq:peakLumGen}
-shows the dependence of the slow component on jet
-parameters and ambient gas density. Substituting in our fiducial
-values for power law slopes of the gas density profile, $k=1$, and
-energy distribution of accelerated electrons, $p=2.3$, gives
+shows the dependence of the slow component on jet parameters and
+ambient gas density. Substituting in our fiducial values for power law
+slopes of the gas density profile, $k=1$, and energy distribution of
+accelerated electrons, $p=2.3$, gives
 
 \begin{align}
 \nu L_{\nu, p}&=
@@ -1164,10 +1170,7 @@ Appendix~\ref{sec:reverse} for details).  For this estimate, we
 approximate the jet as a constant source of duration $t_0 = 5 \times
 10^{5}$ s.  The parameters of our numerical solutions are shown as red
 squares in Fig.~\ref{fig:diss}.
-% {\bf AG
-%careful shocks may be emitting at different frequencies. Also this
-%energy is not necessarily lost...As we discussed upper bound
-%interpretation may be naive}.
+
 
 Fig.~\ref{fig:diss} shows that for high ambient densities and/or low
 energy jets, the reverse shock dissipates an order unity fraction of
@@ -1235,17 +1238,9 @@ densities and small frequencies.  The peak luminosity of the slow
 component falls off for low ambient gas densities, especially at 30
 GHz. However, the fast component compensates for this decline, so that
 the total peak luminosity is very weakly dependent on density across
-the entire grid {\bf AG Not satisfying. Seems very coincidental and
-  model dependent}.
-
-% \begin{figure}
-% \includegraphics[width=8cm]{components.pdf}
-% \caption{\label{fig:components} Contributions from the fast
-%   (\textit{red}) and slow (\textit{blue}) to the 5 GHz light curves
-%   (\textit{black}) for $n_{18}=2$ cm$^{-3}$ (\textit{top}) and
-%   $n_{18}=2000$ cm$^{-3}$ (\textit{bottom}).}
-% \end{figure}
-
+the entire grid. {\bf AG Not satisfying. Seems very coincidental and
+  model dependent. Also the fast component seems to have a very strong
+density dependence.}
 
 The right hand side of Fig.~\ref{fig:jetContours} shows comparisons of
 the numerical results for the slow component with the results of
@@ -1328,7 +1323,8 @@ E\lsim 2 \times 10^{48} \left(\frac{S}{50 \,\mu{\rm Jy}}\right)^{1.1}
 \end{equation}
 %
 where $S$ is upper limit for the flux density and $d_L$ is the
-luminosity distance to the source, and we have set $n_{18}=1$. 
+luminosity distance to the source, and we have set $n_{18}=1$...{\bf
+  AG--fix! use n18=2000} 
 
 \section{Summary and Conclusions}
 \label{sec:conc}
