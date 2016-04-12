@@ -1128,32 +1128,17 @@ either side of the black hole (\citealt{Giannios&Metzger2011}).
 
 \subsection{Parameter Space of Jet-CNM Interaction}
 
-The left-hand side of Fig.~\ref{fig:jetContours} shows contours of the peak luminosity for the slow component and total light curves across our grid of models (Table~\ref{tab:jetParams}). The radio flux from the slow component dominates for large $n_{18}$ and small
-frequencies, while the fast component dominates for high frequencies
-and low ambient gas densities. Note that the overall peak luminosity
-is insensitive to the ambient gas density, although this is not the
-case for the individual components.  {\bf AG Not
-  satisfying. Seems very coincidental and model dependent. Also the
-  fast component seems to have a very strong density dependence.}
+The left-hand side of Fig.~\ref{fig:jetContours} shows contours of the peak luminosity across our grid of numerical models (Table~\ref{tab:jetParams}) as well as the luminosity originating exclusively from the slow component.  The slow component dominatens the peak flux for large $n_{18}$ and small frequencies, while the fast component dominates for high frequencies and low ambient gas densities.  Remarkably, the total peak luminosity is nearly independent of the ambient gas density; this is entirely coincidental, as the peak fluxes of the fast and slow components individually vary.  
+%{\bf AG Not
+ % satisfying. Seems very coincidental and model dependent. Also the
+ % fast component seems to have a very strong density dependence.}
 
-The right hand panel of Fig.~\ref{fig:jetContours} shows comparisons of
-the numerical results for the slow component with the results of
-equation~\eqref{eq:peakLum}. For large $n_{18}$, the numerical values
-of peak luminosity scale with density, jet energy, and frequency
-roughly as expected in the optically thick limit (``Case 2'') For 30
-GHz and low ambient gas densities, the numerical results
-asymptotically approach optically thin limit (``Case 1'').
+The right hand panel of Fig.~\ref{fig:jetContours} compares the numerical results for the slow component with our analytic estimate in equation~\eqref{eq:peakLum}.  For large $n_{18}$, the numerical values of peak luminosity scale with density, jet energy, and frequency roughly as expected in the optically thick limit (``Case 2'').  For 30 GHz and low ambient gas densities, the numerical results asymptotically approach optically thin limit (``Case 1'').
 
-The left-hand panel of Fig.~\ref{fig:ContoursTp} shows contours of the
-peak time for the slow component and total light curves. The
-right-hand side of Fig.~\ref{fig:ContoursTp} shows the Case 2 peak
-time from equation~\eqref{eq:peakTime}, which roughly reproduces the
-numerical results for high densities/low frequencies. For lower
-densities, the numerical results diverge from the analytic prediction,
-in part due to the contributions of the fast component.  Furthermore,
-the peak time for the 30 GHz light curves decreases with density for
-small $n_{18}$, as the emitting region is optically thin at the
-deceleration time (``Case 1'').
+The left-hand panel of Fig.~\ref{fig:ContoursTp} shows contours of the peak time, separately for the slow component and the total light curve.  Shown for comparison on the right hand side is the Case 2 peak
+time estimate from equation~\eqref{eq:peakTime}, which roughly reproduces the
+numerical results for high densities/low frequencies. For low densities, the numerical results diverge from the analytic prediction, in part due to the growing contribution of the fast component.  Furthermore,
+the peak time for the 30 GHz light curves decreases with density for small $n_{18}$, as the emitting region is optically thin at the deceleration time (``Case 1'').
 
 
 
@@ -1184,7 +1169,6 @@ deceleration time (``Case 1'').
     lines)}
 \end{figure*}
 
-
 \subsubsection{Comparison with radio detections and upper limits.}
 The left panel of Fig.~\ref{fig:lightcurves} show radio upper limits
 and detections for various TDE candidates (compiled from various
@@ -1192,24 +1176,16 @@ sources into Table 1 of \citealt{Mimica+2015}) together with on-axis
 light curves for our fiducial $5\times 10^{53}$ erg jet (comparable to
 SwJ1644) and three different ambient density normalizations: n$_{18}$:
 2, 60, and 2000 cm$^{-3}$. All of the 5 GHz light curves fall above
-the upper limits. However, we were unable to perform a 2D calculation
-for $n_{18}=2$ cm$^{-3}$.  For $n_{18}=60$ cm$^{-3}$, the 2D light curve falls
-$\sim$one order of magnitude below the 1D light curve after $\sim$ 10
-years. Thus, we caution that the 1D light curves for $n_{18}=2$
-cm$^{-3}$ likely overestimate the late time radio luminosity. For this
-density even a SwJ1644 like jet would fall below existing upper
-limits.
+the upper limits, in agreement with the results of previous works concluding that thermal TDEs do not possess jets as powerful as that responsible for SwJ1644 (\citealt{Bower+2013},\citealt{van-Velzen+2013},\citealt{Mimica+2015}), a result which we now find holds to be independent of the CNM environment.
+
+One caveat is that we were unable to perform a 2D calculation for $n_{18}=2$ cm$^{-3}$ to late times due to numerical issues.  Since for $n_{18}=60$ cm$^{-3}$ the 2D light curve fell roughly one order of magnitude below the 1D light curve after $\sim$ 10 years, we caution that the 1D light curves for $n_{18}=2$
+cm$^{-3}$ likely overestimate the late time radio luminosity.  For very low densities is therefore still possible that even a SwJ1644-like jet would fall below existing upper limits in some cases.  
 
 Multiple radio measurements from several months to a few years after a
 tidal disruption flare would provide better constraints on the
 presence of TDE jets. For example, suppose we have a TDE candidate
 with a radio upper limit. Equation~\eqref{eq:peakLum}, provides a
-constraint on the total energy of the jet
-
-% luminosity distance $d_L$ away and the radio flux density at 5 GHz is
-% constrained to be less than $S$. Then from equation~\eqref{eq:peakLum},
-% we can constrain the energy of the jet to be
-
+constraint on the total energy of the jet,
 \begin{equation}
 E\lsim 2 \times 10^{48} \left(\frac{S}{50 \,\mu{\rm Jy}}\right)^{1.1}
   \left(\frac{d_L}{200 \,{\rm Mpc}}\right)^{2.3} {\rm erg},
@@ -1279,34 +1255,26 @@ are summarized as follows.
 \appendix
 \section{Core Profile}
 \label{app:core}
-In $\S\ref{sec:profileComp}$ we compare the results of radio
-light curves from jets propagating in core and cusp like gas density
-profiles. See Fig.~\ref{fig:profiles} for a comparison of core and
-cusp-like profiles. 
-
-We use the following analytic expression to approximate the core
+Fig.~\ref{fig:cores} compares the results of radio light curves from jets propagating in core and cusp like gas density
+profiles (Fig.~\ref{fig:profiles}).  We use the following analytic expression to approximate the core
 galaxy profile
-
 \begin{align}
 \begin{cases}
 n=n(r_s) k(x) & 0.4 \leq x\leq 2.0\\
 n = 2.0 n(r_s) (x/0.4)^{-0.95} & x < 0.4\\
-n = 0.75 n(r_s) (x/2.0)^{-0.26} & x>2.\\
+n = 0.75 n(r_s) (x/2.0)^{-0.26} & x>2,\\
 \end{cases}
 \label{eq:cores}
 \end{align}
-
-Where, 
-
+where
 \begin{align}
   &x=r/r_s\\\nonumber
   &k(x)=\frac{45}{19} \frac{1}{x^{3/2}} \frac{1-x^{1.9}}{9-19
       x\frac{x^{0.9}-1}{x^{1.9}-1}}
 \end{align}
-
-To isolate the effects of the shape of the density profile, consider a
-core density profile with $r_s=10^{18}$ cm, and $n_{18}=2000$
-cm$^{-3}$: the same as our high density cusp model.
+To isolate the effects of the shape of the density profile, we consider a
+core density profile with a stagnation radius $r_s=10^{18}$ cm and density normalization $n_{18}=2000$
+cm$^{-3}$ which match those of our high density cusp model.
 
 \section{Peak Luminosities and times}
 \label{app:analyt}
