@@ -762,11 +762,11 @@ In short, accurate modeling of the gas distribution in a particular galactic nuc
 % One potential complication is that the CNM could be distributed
 % anisotropically around the black hole.  The cold phase could be
 % concentrated in a ring-like structure, similar to the cirumnuclear
-% ring surrounding SgrA$^{*}$ (e.g.~\citealt{Lau+13}).  Anisotropies may
-% also present in the hot phase, for instance due to low density bubbles
-% inflated by the AGN.  However, insofar as the angle of the TDE jet is
-% large compared to these features, the quantitative impact on the radio
-% flux is unlikely to be large.
+% ring surrounding SgrA$^{*}$ (e.g.~\citealt{Lau+13}).  Anisotropies
+% may also present in the hot phase, for instance due to low density
+% bubbles inflated by the AGN.  However, insofar as the angle of the
+% TDE jet is large compared to these features, the quantitative impact
+% on the radio flux is unlikely to be large.
 
 % %For instance, X-ray observations of the nuclei of massive elliptical galaxies show densities of density on scales of $\sim
 % %100$ pc is $\gsim 0.1$ cm$^{-3}$
@@ -787,18 +787,19 @@ In short, accurate modeling of the gas distribution in a particular galactic nuc
 % %ring. However, such a ring would not block all jet propagation
 % %directions.
 
-% The empirical estimates in this section nicely complement our analytic
-% results.  The accretion rates of black holes are particularly are
-% particularly challenging to measure for quiescent nuclei.  However,
-% such cases, in which AGN feedback is minimal, are precisely the regime
-% where our analytic estimates are the most trustworthy, providing a
-% lower density floor of $n_{18} \sim 0.5$ cm$^{-3}$.
+% The empirical estimates in this section nicely complement our
+% analytic results.  The accretion rates of black holes are
+% particularly are particularly challenging to measure for quiescent
+% nuclei.  However, such cases, in which AGN feedback is minimal, are
+% precisely the regime where our analytic estimates are the most
+% trustworthy, providing a lower density floor of $n_{18} \sim 0.5$
+% cm$^{-3}$.
 
-% On the other hand, the analytic estimates are specific to
-% the hot phase of gas. The Eddington ratio distribution probes the
-% average density (including any cold clumps). The
-% distribution of Eddington ratios gives us confidence in our high
-% density limit ($\sim 1000$ cm$^{-3}$).
+% On the other hand, the analytic estimates are specific to the hot
+% phase of gas. The Eddington ratio distribution probes the average
+% density (including any cold clumps). The distribution of Eddington
+% ratios gives us confidence in our high density limit ($\sim 1000$
+% cm$^{-3}$).
 
 
 
@@ -853,23 +854,31 @@ In short, accurate modeling of the gas distribution in a particular galactic nuc
 \label{sec:results}
 \subsection{Numerical Set-Up}
 \label{sec:numerical}
-We calculate the synchrotron radio emission from the jet-CNM shock interaction across the physically plausible range of nuclear gas densities.  We perform both one- and two-dimensional (axisymmetric) relativistic hydrodynamical simulations.  The synchrotron emission is computed as described in \citet{Mimica+2015}.  {\bf BDM: a bit more detail about the numerical procedure}
+We calculate the synchrotron radio emission from the jet-CNM shock
+interaction across the physically plausible range of nuclear gas
+densities.  We perform both one- and two-dimensional (axisymmetric)
+relativistic hydrodynamical simulations.  The synchrotron emission is
+computed as described in \citet{Mimica+2015}.  {\bf BDM: a bit more
+  detail about the numerical procedure}
 
-For the jet angular structure, we adopt the preferred two-component model for
-SwJ1644 from \citet{Mimica+2015}, corresponding to a fast, inner core
-with Lorentz factor $\Gamma = 10$, surrounded by a slower, $\Gamma=2$
-outer sheath.  In our 2D simulations the fast inner core spans an
-angular interval $0-0.1\ {\rm radians}$, while the slow outer sheath
-extends from $0.1\ {\rm radians}$ to $0.5\ {\rm rad}$.  The time dependence of the jet kinetic
-luminosity is given by (\citealt{Mimica+2015})
+For the jet angular structure, we adopt the preferred two-component
+model for SwJ1644 from \citet{Mimica+2015}, corresponding to a fast,
+inner core with Lorentz factor $\Gamma = 10$, surrounded by a slower,
+$\Gamma=2$ outer sheath.  In our 2D simulations the fast inner core
+spans an angular interval $0-0.1\ {\rm radians}$, while the slow outer
+sheath extends from $0.1\ {\rm radians}$ to $0.5\ {\rm rad}$.  The
+time dependence of the jet kinetic luminosity is given by
+(\citealt{Mimica+2015})
 \begin{equation}\label{eq:lum}
 L_{\rm j, ISO}(t) = L_{j,0}\max\left[1, (t/t_0)\right]^{-5/3},
 \end{equation}
-where $t_0 = 5\times 10^5$ s is the duration of peak jet power, which is assumed to match that of the period of the most luminous X-ray emission of SwJ1644.  Integrating equation~(\ref{eq:lum}) from $t
-= 0$ to $\infty$ gives the isotropic equivalent energy of the jet,
-$E_{\rm ISO}$, where $L_{j,0}=0.4\, E_{\rm ISO}/t_0$.  The ratio of
-the beaming-corrected energy of the fast component is fixed to
-be 4\% of that of the slow sheath (\citealt{Mimica+2015}).
+where $t_0 = 5\times 10^5$ s is the duration of peak jet power, which
+is assumed to match that of the period of the most luminous X-ray
+emission of SwJ1644.  Integrating equation~(\ref{eq:lum}) from $t = 0$
+to $\infty$ gives the isotropic equivalent energy of the jet, $E_{\rm
+  ISO}$, where $L_{j,0}=0.4\, E_{\rm ISO}/t_0$.  The ratio of the
+beaming-corrected energy of the fast component is fixed to be 4\% of
+that of the slow sheath (\citealt{Mimica+2015}).
 
 For our 1D simulations, we modify the geometry of the slow sheath to
 better mimick the results of the 2D simulations.  In our
@@ -914,13 +923,24 @@ component rapidly spreads out and isotropizes in 2D.  At lower densities ($n_{18
 
 \subsection{Analytic Estimates}
 
-In this section, we investigate the effects of the gas density profile, jet energy, and observer viewing angle on the observed synchrotron radio light curve.  We begin with a few analytic estimates. 
+In this section, we investigate the effects of the gas density
+profile, jet energy, and observer viewing angle on the observed
+synchrotron radio light curve.  We begin with a few analytic
+estimates.
 
-The dependence of the synchrotron peak luminosity and peak time on the ambient gas density and jet parameters can be estimated analytically using a simple model for the emission from a homogenous, shocked slab of gas behind a self-similarly expanding blast wave (e.g., \citealt{Sari+98, Granot+02}).  The relevant results, as presented by \citet{Leventis+2012}, are summarized in Appendix~\ref{app:analyt}.  The peak luminosity of the slow component of the jet can be estimated from equation~(\ref{eq:peakLumGen}),
+The dependence of the synchrotron peak luminosity, peak time, and late
+time luminosity power law slope on the ambient gas density and jet
+parameters can be estimated analytically using a simple model for the
+emission from a homogenous, shocked slab of gas behind a
+self-similarly expanding blast wave (e.g., \citealt{Sari+98,
+  Granot+02}).  The relevant results, as presented by
+\citet{Leventis+2012}, are summarized in Appendix~\ref{app:analyt}.
+The peak luminosity of the slow component of the jet can be estimated
+from equation~(\ref{eq:peakLumGen}),
 \begin{align}
 \nu L_{\nu, p}&=\text{min}
 \begin{cases}
-  4.9\times 10^{40} \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.59}
+  2.7\times 10^{40} \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.59}
   \left(\frac{\epsilon_e}{0.1}\right)^{1.3}\times \\
   \left(\frac{\epsilon_b}{0.002}\right)^{0.825}\left(\frac{\nu_{\rm obs}}{5 {\rm GHz}}\right)^{0.35} n_{18}^{1.24} 
   {\rm erg \, s^{-1}} & {\rm Case \,1}\\\\
@@ -931,9 +951,20 @@ The dependence of the synchrotron peak luminosity and peak time on the ambient g
 \end{cases}
 \label{eq:peakLum}
 \end{align}
-where we have adopted fiducial values for the power-law slope of the gas density profile, $k=1$, and the electron energy distribution, $p=2.3$.  Cases 1 and 2 apply, respectively, to the shocked CNM being optically thin and optically thick at the deceleration time.  The peak luminosity in the optically thin case depends sensitively on $n_{18}$, while in the optically thick regime the dependence on density is much weaker.  We have normalized the Case 1 and Case 2 peak fluxes in equation (\ref{eq:peakLum}) to match those derived from our numerical results in the optically thin and thick regimes, respectively.
+where we have adopted fiducial values for the power-law slope of the
+gas density profile, $k=1$, and the electron energy distribution,
+$p=2.3$.  Cases 1 and 2 apply, respectively, to the shocked CNM being
+optically thin and optically thick at the deceleration time.  The peak
+luminosity in the optically thin case depends sensitively on $n_{18}$,
+while in the optically thick regime the dependence on density is much
+weaker.  We have normalized the Case 1 and Case 2 peak fluxes in
+equation (\ref{eq:peakLum}) to match those derived from our numerical
+results in the optically thin and thick regimes, respectively. From
+equation~\eqref{eq:tslope}, we expect the luminosity to go a $L_\nu
+\propto t^{-1.5}$ at late times. 
 
-The time of maximum flux, for the same fiducial values ($k = 1$, $p=2.3$), is given by equation (\ref{eq:tpeakGen}),
+The time of maximum flux, for the same fiducial values ($k = 1$,
+$p=2.3$), is given by equation (\ref{eq:tpeakGen}),
 \begin{align}
 t_p= \text{min}
 \begin{cases}
@@ -946,25 +977,60 @@ t_p= \text{min}
 \end{cases}
 \label{eq:peakTime}
 \end{align}
-where again the normalization in Case 2 (Case 1) are chosen to match our numerical results in the optically thick (thin) regime.  In general, a more energetic jet produces emission which peaks later in time.  However, the scaling of $t_p$ with $n_{18}$ is more complicated: if the emitting region is optically thick at the deceleration time (``Case 2''), the peak time increases with increasing CNM density.  This is because the light curve maximum in the optically thick case is determined by when the self-absorption frequency passes through the observing band, which occurs later if the CNM density is higher. Otherwise, the peak time occurs near the deceleration time, which decreases for higher values of $n_{18}$ (eq.~\ref{eq:tdec}).
+where again the normalization in Case 2 (Case 1) are chosen to match
+our numerical results in the optically thick (thin) regime.  In
+general, a more energetic jet produces emission which peaks later in
+time.  However, the scaling of $t_p$ with $n_{18}$ is more
+complicated: if the emitting region is optically thick at the
+deceleration time (``Case 2''), the peak time increases with
+increasing CNM density.  This is because the light curve maximum in
+the optically thick case is determined by when the self-absorption
+frequency passes through the observing band, which occurs later if the
+CNM density is higher. Otherwise, the peak time occurs near the
+deceleration time, which decreases for higher values of $n_{18}$
+(eq.~\ref{eq:tdec}).
 
-{\bf BDM: I think we need to draw a line in $E-n_{18}$ space in Fig 8 which delineates Case 1 from Case 2.}
+Fig.~\ref{fig:diss} shows the rough division line between Case 1 and
+Case 2 for 1 and 30 GHz...{\bf AG continue}.
+
+
 
 \subsubsection{Numerical Light Curves}
 
 
-As summarized in Table~\ref{tab:jetParams}, we calculate light curves for a grid of on-axis jet simulations for five different values of $n_{18}$ (2, 11, 60, 345, and 2000 cm$^{-3}$) and three different values of the (beaming-corrected) jet energy $E$ ($5\times 10^{51}$, $5\times 10^{52}$, $5\times 10^{53}$ erg). 
+As summarized in Table~\ref{tab:jetParams}, we calculate light curves
+for a grid of on-axis jet simulations for five different values of
+$n_{18}$ (2, 11, 60, 345, and 2000 cm$^{-3}$) and three different
+values of the (beaming-corrected) jet energy $E$ ($5\times 10^{51}$,
+$5\times 10^{52}$, $5\times 10^{53}$ erg).
 
-The left-hand panel of Fig.~\ref{fig:lightcurves} shows example light curves for different energy jets and nuclear gas densities. The peak luminosity is close to linear in jet energy and is virtually independent of the ambient density.  This is as expected for high densities and low frequencies: the emission is dominated by the slow component, which is optically thick at the deceleration time (``Case 2'' in eq.~\ref{eq:peakLum}).  For high frequencies and small CNM densities, the peak luminosity of the slow component falls off (see right-hand panel of
-Fig.~\ref{fig:lightcurves}). Coincidentally, the fast component just
-compensates for this decline in the slow component luminosity, resulting in the
-total peak luminosity being nearly independent of $n_{18}$ across the parameter space. In fact, the ``Case 2'' peak luminosity in equation~\ref{eq:peakLum} provides a good approximation for the total peak luminosity for a fixed value of $n_{18}=2000$ cm$^{-3}$.
+The left-hand panel of Fig.~\ref{fig:lightcurves} shows example light
+curves for different energy jets and nuclear gas densities. The peak
+luminosity is close to linear in jet energy and is virtually
+independent of the ambient density.  This is as expected for high
+densities and low frequencies: the emission is dominated by the slow
+component, which is optically thick at the deceleration time (``Case
+2'' in eq.~\ref{eq:peakLum}).  For high frequencies and small CNM
+densities, the peak luminosity of the slow component falls off (see
+right-hand panel of Fig.~\ref{fig:lightcurves}). Coincidentally, the
+fast component just compensates for this decline in the slow component
+luminosity, resulting in the total peak luminosity being nearly
+independent of $n_{18}$ across the parameter space. In fact, the
+``Case 2'' peak luminosity in equation~\ref{eq:peakLum} provides a
+good approximation for the total peak luminosity for a fixed value of
+$n_{18}=2000$ cm$^{-3}$.
 
-Fig.~\ref{fig:lightcurves} also shows that the peak time is a decreasing function of the ambient gas density. The peak occurs after the deceleration time when the emitting region transitions from optically thick to optically
-thin, and this transition occurs later for larger ambient gas
-densities. Note, however, that at 30 GHz, the slow component light
-curve peaks later for $n_{18}=2$ cm$^{-3}$ than for $n_{18}=60$
-cm$^{-3}$. This can be understood because at high frequencies, the emitting region is optically thin at the deceleration time (``Case 1'' in eq.~\ref{eq:peakTime}). In this case the peak time follows the deceleration time, which is an increasing function of the ambient gas density (see eq.~\ref{eq:tdec}).
+Fig.~\ref{fig:lightcurves} also shows that the peak time is a
+decreasing function of the ambient gas density. The peak occurs after
+the deceleration time when the emitting region transitions from
+optically thick to optically thin, and this transition occurs later
+for larger ambient gas densities. Note, however, that at 30 GHz, the
+slow component light curve peaks later for $n_{18}=2$ cm$^{-3}$ than
+for $n_{18}=60$ cm$^{-3}$. This can be understood because at high
+frequencies, the emitting region is optically thin at the deceleration
+time (``Case 1'' in eq.~\ref{eq:peakTime}). In this case the peak time
+follows the deceleration time, which is an increasing function of the
+ambient gas density (see eq.~\ref{eq:tdec}).
 
 \begin{figure*} 
   \includegraphics[width=8cm]{lightcurves.pdf}
@@ -991,14 +1057,39 @@ cm$^{-3}$. This can be understood because at high frequencies, the emitting regi
     $5\times 10^{53}$ erg jet.}
 \end{figure*}
 
+The numerical light curves can be well fit with a broken power law of
+the form:
+
+\begin{equation}
+L_\nu (t) = L_{\nu, p} \frac{1}{2^{-1/s}}
+\left[\left(\frac{t}{t_p}\right)^{-s
+    a_1}+\left(\frac{t}{t_p}\right)^{-s a_1}\right]^{-1/s}, 
+\label{eq:lcAnal}
+\end{equation}
+
+where $L_{\nu, p}$ and $t_p$ is the peak luminosity and time given are
+the peak luminosity and time given by equations~\eqref{eq:peakLum}
+and~\eqref{eq:peakTime}, respectively. The light curve has a power law
+slope of $a_1$ at early times and transitions to power law slope $a_2$
+at late times. The sharpness of this transition is encapsulated in
+$s$. We find that $a_1\sim 1.9$, $a_2\sim -1.4$, and $s\sim 1.0$, best
+reproduce our numerical results. Note the late time power law slope is
+close to the analytic estimate in equation~\eqref{eq:tslope}, for
+$k=1$ and $p=2.3$.
+%%More precisely 1.94, -1.45, and 1.04 
+
 
 % \subsubsection{Effects of viewing angle}
- Fig.~\ref{fig:onOff} compares the light curves for observers
- aligned with the jet axis (on-axis) with those observed at an angle of 0.8 radians from
- the jet axis (off-axis).  While at high densities ($n_{18}=2000$ cm$^{-3}$) the light curves differ
- little, for $n_{18}=60$ cm$^{-3}$ the off-axis luminosity is smaller by a factor of a few before and near the peak. However, at late times the off- and on-axis light curves agree well. This is as expected:
- at late times the jet becomes more isotropic, which means the viewing
- angle has relatively little effect on the observed light curve.
+Fig.~\ref{fig:onOff} compares the light curves for observers aligned
+with the jet axis (on-axis) with those observed at an angle of 0.8
+radians from the jet axis (off-axis).  While at high densities
+($n_{18}=2000$ cm$^{-3}$) the light curves differ little, for
+$n_{18}=60$ cm$^{-3}$ the off-axis luminosity is smaller by a factor
+of a few before and near the peak. However, at late times the off- and
+on-axis light curves agree well. This is as expected: at late times
+the jet becomes more isotropic, which means the viewing angle has
+relatively little effect on the observed light curve {\bf AG note that
+the slow component is relatively wide to begin with in the 2D simulation}.
 
 \begin{figure}
 \includegraphics[width=8cm]{on_off.pdf}
@@ -1016,26 +1107,27 @@ cm$^{-3}$. This can be understood because at high frequencies, the emitting regi
 %\subsubsection{Effect of gas density profile}
 \label{sec:profileComp}
 Fig.~\ref{fig:cores} shows on-axis radio light curves for our fiducial
-gas density profile, $n\propto r^{-1}$, and a core galaxy profile (equation~\ref{eq:cores}),
-both with $n_{18}=2$ cm$^{-3}$.  The light curves differ by at most a
-factor of a few. The core and cusp light curves are even closer at
-higher densities, and virtually indistinguishable at $n_{18}=2000$
-cm$^{-3}$. This is because for larger ambient densities, the jet only
-samples small radii, where the core and cusp profiles are 
-similar (see Fig.~\ref{fig:profiles}). It is only at lower densities,
-for which the Sedov radius lies outside of the flattening of the core
-density profile, that noticeable differences emerge. {\bf AG why are
-  there differences at early times for $n_{18}=2$ cm$^{-3}$ but not
-  $n_{18}=2000$ cm$^{-3}$. Is this simply an artifact of the starting
-  radius?}
+gas density profile, $n\propto r^{-1}$, and a core galaxy profile
+(equation~\ref{eq:cores}), both with $n_{18}=2$ cm$^{-3}$.  The light
+curves differ by at most a factor of a few. The core and cusp light
+curves are even closer at higher densities, and virtually
+indistinguishable at $n_{18}=2000$ cm$^{-3}$. This is because for
+larger ambient densities, the jet only samples small radii, where the
+core and cusp profiles are similar (see Fig.~\ref{fig:profiles}). It
+is only at lower densities, for which the Sedov radius lies outside of
+the flattening of the core density profile, that noticeable
+differences emerge. {\bf AG why are there differences at early times
+  for $n_{18}=2$ cm$^{-3}$ but not $n_{18}=2000$ cm$^{-3}$. Is this
+  simply an artifact of the starting radius?}
 
-Fig.~\ref{fig:profs2} compares the 1D on-axis light curves for
-density two density profiles: $n\propto r^{-1}$ and $n\propto r^{-1.5}$
-with $n_{18}=60$. For most times the light curves are very close.
-This is as expected, since the Sedov radius, $r_{\rm sedov}\sim
-10^{18}$ cm.   {\bf BDM: combine these figures 6 and 7...}  Overall we conclude that the radio light curve is insensitive to the
-precise gas density profile, for a fixed value of the gas density near
-the deceleration/Sedov radius.
+Fig.~\ref{fig:profs2} compares the 1D on-axis light curves for density
+two density profiles: $n\propto r^{-1}$ and $n\propto r^{-1.5}$ with
+$n_{18}=60$. For most times the light curves are very close.  This is
+as expected, since the Sedov radius, $r_{\rm sedov}\sim 10^{18}$ cm.
+{\bf BDM: combine these figures 6 and 7...}  Overall we conclude that
+the radio light curve is insensitive to the precise gas density
+profile, for a fixed value of the gas density near the
+deceleration/Sedov radius.
 
 \begin{figure} 
   \includegraphics[width=8cm]{fig_cores.pdf}
@@ -1111,9 +1203,10 @@ either side of the black hole (\citealt{Giannios&Metzger2011}).
 
 \begin{figure}
 \includegraphics[width=8cm]{diss.pdf}
-\caption{\label{fig:diss} Fraction of the slow component
-  ($\Gamma=2$) kinetic energy dissipated by the reverse shock
-  vs. the isotropic jet luminosity ($L_{\rm j,iso}$) and $n_{18}$.  {\bf BDM: make y axis an energy axis and mark Case 1 and Case 2}}
+\caption{\label{fig:diss} Fraction of the slow component ($\Gamma=2$)
+  kinetic energy dissipated by the reverse shock vs. the isotropic jet
+  luminosity ($L_{\rm j,iso}$) and $n_{18}$.  {\bf BDM: make y axis an
+    energy axis and mark Case 1 and Case 2}}
 \end{figure}
 
 \begin{figure}
@@ -1128,25 +1221,53 @@ either side of the black hole (\citealt{Giannios&Metzger2011}).
 
 \subsection{Parameter Space of Jet-CNM Interaction}
 
-The left side of Fig.~\ref{fig:jetContours} shows contours of the peak luminosity from our numerical models covering the parameter space of jet energy $E$ and density $n_{18}$ (thick lines), as well as the luminosity originating exclusively from the slow component (thin lines).  The slow component dominates the total luminosity for large $n_{18}$ and small frequencies, while the fast component dominates for high frequencies and low ambient gas densities.  Remarkably, the total peak luminosity is nearly independent of the ambient gas density; this is entirely coincidental, as the fast and slow peak fluxes individually vary across the parameter space.
-%{\bf AG Not
- % satisfying. Seems very coincidental and model dependent. Also the
- % fast component seems to have a very strong density dependence.}
+The left side of Fig.~\ref{fig:jetContours} shows contours of the peak
+luminosity from our numerical models covering the parameter space of
+jet energy $E$ and density $n_{18}$ (thick lines), as well as the
+luminosity originating exclusively from the slow component (thin
+lines).  The slow component dominates the total luminosity for large
+$n_{18}$ and small frequencies, while the fast component dominates for
+high frequencies and low ambient gas densities.  Remarkably, the total
+peak luminosity is nearly independent of the ambient gas density; this
+is entirely coincidental, as the fast and slow peak fluxes
+individually vary across the parameter space.
+% {\bf AG Not satisfying. Seems very coincidental and model
+% dependent. Also the
+% fast component seems to have a very strong density dependence.}
 
-The right panel of Fig.~\ref{fig:jetContours} compares the numerical results for the slow component with our analytic estimate (eq.~\eqref{eq:peakLum}).  For large $n_{18}$, the peak luminosity scales with density, jet energy, and frequency roughly as expected in the optically thick limit (``Case 2'').  By contrast, for 30 GHz and low ambient gas densities, the numerical results asymptotically approach optically thin limit (``Case 1'').
+The right panel of Fig.~\ref{fig:jetContours} compares the numerical
+results for the slow component with our analytic estimate
+(eq.~\eqref{eq:peakLum}).  For large $n_{18}$, the peak luminosity
+scales with density, jet energy, and frequency roughly as expected in
+the optically thick limit (``Case 2'').  By contrast, for 30 GHz and
+low ambient gas densities, the numerical results asymptotically
+approach optically thin limit (``Case 1'').
 
-The left panel of Fig.~\ref{fig:ContoursTp} shows contours of the peak time in days, separately for the slow component (solid lines) and the total light curve (dashed lines).  Shown for comparison on the right side is the Case 2 peak
-time estimate from equation~\eqref{eq:peakTime}, which roughly reproduces the
-numerical results for high densities/low frequencies. For low densities, the numerical results diverge from the analytic prediction, in part due to the growing contribution of the fast component.  Furthermore,
-the peak time for the 30 GHz light curves decreases with density for small $n_{18}$, due to the emitting region being optically thin at the deceleration time (``Case 1'').
+The left panel of Fig.~\ref{fig:ContoursTp} shows contours of the peak
+time in days, separately for the slow component (solid lines) and the
+total light curve (dashed lines).  Shown for comparison on the right
+side is the Case 2 peak time estimate from
+equation~\eqref{eq:peakTime}, which roughly reproduces the numerical
+results for high densities/low frequencies. For low densities, the
+numerical results diverge from the analytic prediction, in part due to
+the growing contribution of the fast component.  Furthermore, the peak
+time for the 30 GHz light curves decreases with density for small
+$n_{18}$, due to the emitting region being optically thin at the
+deceleration time (``Case 1'').
 
 
 
 
 \begin{figure*}
   \includegraphics[width=16cm]{lp_contours_new.pdf}
-  \caption{\label{fig:jetContours} {\it {Left:}} Thick lines show the peak radio luminosity in the parameter space of jet energy and ambient gas density at $10^{18}$ cm, calculated from the grid of on-axis jet
-    simulations in Table~\ref{tab:jetParams}. Thin lines show contours of peak luminosity for the slow component light curve ($\S$~\ref{sec:numerical}). {\it Right:} Analytic estimate for the peak luminosity (dashed lines; eq.~\ref{eq:peakLum}) compared to the numerical results for the slow component (solid
+  \caption{\label{fig:jetContours} {\it {Left:}} Thick lines show the
+    peak radio luminosity in the parameter space of jet energy and
+    ambient gas density at $10^{18}$ cm, calculated from the grid of
+    on-axis jet simulations in Table~\ref{tab:jetParams}. Thin lines
+    show contours of peak luminosity for the slow component light
+    curve ($\S$~\ref{sec:numerical}). {\it Right:} Analytic estimate
+    for the peak luminosity (dashed lines; eq.~\ref{eq:peakLum})
+    compared to the numerical results for the slow component (solid
     lines).}
 \end{figure*}
 
@@ -1170,10 +1291,21 @@ sources into Table 1 of \citealt{Mimica+2015}) together with on-axis
 light curves for our fiducial $5\times 10^{53}$ erg jet (comparable to
 SwJ1644) and three different ambient density normalizations: n$_{18}$:
 2, 60, and 2000 cm$^{-3}$. All of the 5 GHz light curves fall above
-the upper limits, in agreement with the results of previous works concluding that thermal TDEs do not possess jets as powerful as that responsible for SwJ1644 (\citealt{Bower+2013},\citealt{van-Velzen+2013},\citealt{Mimica+2015}), a result which we now find holds to be independent of the CNM environment.
+the upper limits, in agreement with the results of previous works
+concluding that thermal TDEs do not possess jets as powerful as that
+responsible for SwJ1644
+(\citealt{Bower+2013},\citealt{van-Velzen+2013},\citealt{Mimica+2015}),
+a result which we now find holds to be independent of the CNM
+environment.
 
-One caveat is that we were unable to perform a 2D calculation for $n_{18}=2$ cm$^{-3}$ to late times due to numerical issues.  Since for $n_{18}=60$ cm$^{-3}$ the 2D light curve fell roughly one order of magnitude below the 1D light curve after $\sim$ 10 years, we caution that the 1D light curves for $n_{18}=2$
-cm$^{-3}$ likely overestimate the late time radio luminosity.  For very low densities is therefore still possible that even a SwJ1644-like jet would fall below existing upper limits in some cases.  
+One caveat is that we were unable to perform a 2D calculation for
+$n_{18}=2$ cm$^{-3}$ to late times due to numerical issues.  Since for
+$n_{18}=60$ cm$^{-3}$ the 2D light curve fell roughly one order of
+magnitude below the 1D light curve after $\sim$ 10 years, we caution
+that the 1D light curves for $n_{18}=2$ cm$^{-3}$ likely overestimate
+the late time radio luminosity.  For very low densities is therefore
+still possible that even a SwJ1644-like jet would fall below existing
+upper limits in some cases.
 
 Multiple radio measurements from several months to a few years after a
 tidal disruption flare would provide better constraints on the
@@ -1188,6 +1320,37 @@ E\lsim 2 \times 10^{48} \left(\frac{S}{50 \,\mu{\rm Jy}}\right)^{1.1}
 where $S$ is upper limit for the flux density and $d_L$ is the
 luminosity distance to the source, and we have set $n_{18}=1$...{\bf
   AG--fix! use n18=2000} 
+
+The jet energy can still be constrained from late time
+measurements. Fig.~\ref{fig:econtours}, shows a comparison between the
+analytic fit for the synchrotron light curve (eq.~\ref{eq:lcAnal})
+evaluated at different jet energies and radio upper limits at 5
+GHz. In the top panel shows the light curves for a fixed density
+normalization, whereas the bottom panel shows at every time, the
+minimum of the $n_{18}=1$ cm$^{-3}$, and $n_{18}=2000$ cm$^{-3}$ light
+curves. The curves in the bottom panel represent the minimum plausible
+radio luminosity as a function of time for jets of different energies.
+Changing the density normalization merely shifts the light curve in
+time. Thus, the radio luminosity at any given time is bounded by the
+luminosities for the minimum and maximum plausible $n_{18}$. An upper
+limit would exclude all jet energies whose minimum possible radio
+luminosity fall above it. 
+
+
+
+
+\begin{figure}
+\includegraphics[width=8.5cm]{e_contours1.pdf}
+\includegraphics[width=8.5cm]{e_contours2.pdf}
+\caption{\label{fig:econtours} {\it Top:} 5 GHz light curves and upper
+  limits for different energy jets for fixed density normalization
+  $n_{18}$. {\bf AG viewing angle dependence at early times?} {\it
+    Bottom:} Upper limits and minimum possible radio luminosity as a
+  function of time for different jet energies. Note that the radio
+  luminosity at any given time is bounded by the light curves
+  of the minimum plausible $n_{18}$ ($\sim 1$ cm$^{-3}$) and the
+  maximum plausible $n_{18}$ ($\sim 2000$ cm$^{-3}$).}
+\end{figure}
 
 \section{Summary and Conclusions}
 \label{sec:conc}
@@ -1294,6 +1457,7 @@ frequency,
 \begin{equation}
 \nu_m=C_2(p, k) E_{54}^{\frac{10-k}{2 (5-k)}} n_{18}^{-\frac{5}{2
     (5-k)}}  \epsilon_e^2  \epsilon_b^{1/2}  t^{\frac{4 k-15}{5-k}}.
+\label{eq:num}
 \end{equation}
 %
 % The observing frequencies considered here ($\geq 1$ GHz), are also
@@ -1340,7 +1504,7 @@ Extrapolating to the observer frequency gives
   \label{eq:Fpeak1}
 \end{align}
 %
-Combining equations~\eqref{eq:tpeakGen}, ~\eqref{eq:Fnum},
+Combining equations~\eqref{eq:num}, ~\eqref{eq:tpeakGen}, ~\eqref{eq:Fnum},
 and~\eqref{eq:Fpeak1}, we find
 \begin{align}
   \nu_{\rm obs} F_{\rm p} (\nu_{\rm obs}) \propto
@@ -1357,6 +1521,14 @@ and~\eqref{eq:Fpeak1}, we find
   \end{cases}
   \label{eq:peakLumGen}
 \end{align}
+
+After peak, we expect that the flux scales as 
+
+\begin{equation}
+F_{\nu}\propto t^{\frac{21-8k-15p+4kp}{10-2k}}
+\label{eq:tslope}
+\end{equation}
+
 
 
 \section{Reverse shock}
@@ -1400,10 +1572,11 @@ in which case we apply the more general expression for $\Gamma_{\rm
 \end{equation}
 where
 \begin{equation}
-\Gamma_{43}=\Gamma \Gamma_{\rm sh} \left(1-\beta_{\rm sh} \beta_j\right),
+  \Gamma_{43}=\Gamma \Gamma_{\rm sh} \left(1-\beta_{\rm sh} \beta_j\right),
 \label{eq:gammaShGen}
 \end{equation}
-is the Lorentz of shocked jet in the frame of the unshocked jet. In the lab frame the reverse shock moves with a velocity
+is the Lorentz of shocked jet in the frame of the unshocked jet. In
+the lab frame the reverse shock moves with a velocity
 \begin{equation}
 \beta_{\rm rs}=\frac{\beta_{\rm sh}(f)-\beta_{43}(f)/3}{1-\beta_{\rm
     sh}(f) \beta_{43}(f)/3}.
