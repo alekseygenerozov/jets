@@ -366,10 +366,11 @@ slope of the stellar density profile $\delta$.  The gas density at the
 stagnation radius, $n(\rs)$, is determined by the rate at which
 stellar winds inject mass interior to this,
 \begin{equation}
-  \dot{M}=\frac{\eta M_{\rm \star}(\rs)}{t_h} \approx  3.0 \times 10^{-6} \Mbh[,7]^{0.22} \eta_{0.02} \left(\frac{r_s}{\rm
+  \dot{M}=\frac{\eta M_{\rm \star}(\rs)}{t_h} \approx  2.8 \times 10^{-6} \Mbh[,7]^{0.22} \eta_{0.02} \left(\frac{r_s}{\rm
       pc}\right)^{1.3} \Msun \, {\rm yr}^{-1},
 \label{eq:dotM}
 \end{equation}
+%
 where $M_{\star}(\rs)$ is the total stellar mass enclosed within the
 stagnation radius and the second equality was derived for our fiducial
 value of $\delta=1.7$, where $\eta_{0.02}=\eta/0.02$ is normalized to
@@ -397,17 +398,17 @@ where $v_{500}=v_w/\left(500 \,\mathrm{km\,\,
 %
 Near the stagnation radius, GSM15 found that the radial gas profile
 has a power-law slope of $k \approx (4\delta-1)/6$, which for our
-fiducial value of $\delta$=1.7 gives $n \propto r^{-1}$.  A similar
-density profile obtains for most radii of interest.\footnote{For cusp
-  galaxies, the gas velocity asymptotes to a constant value between
-  the stagnation radius and break radius (provided they are
-  sufficiently far apart). In this region we instead expect $n\propto
-  r^{1-\delta}$.}  Thus, we adopt $n(r)= n_{18} (r/10^{18} {\rm
-  cm})^{-1}$ as our fiducial density profile, where $n_{18}$ is the
-density at $r = 10^{18}$ cm.  In Appendix~\ref{app:core} we explore a
-core-like density profile, to which we compare our results for the
-jetted radio emission to the fiducial cusp case in
-$\S\ref{sec:profileComp}$.
+fiducial value of $\delta$=1.7 gives $n \propto r^{-1}$. Furthermore,
+the density profile remains close to $n\propto r^{-1}$ for small radii
+of interest.\footnote{For cusp galaxies, the gas velocity asymptotes
+  to a constant value between the stagnation radius and break radius
+  (provided they are sufficiently far apart). In this region we
+  instead expect $n\propto r^{1-\delta}$.}  Thus, we adopt $n(r)=
+n_{18} (r/10^{18} {\rm cm})^{-1}$ as our fiducial density profile,
+where $n_{18}$ is the density at $r = 10^{18}$ cm.  In
+Appendix~\ref{app:core} we explore a core-like density profile, to
+which we compare our results for the jetted radio emission to the
+fiducial cusp case in $\S\ref{sec:profileComp}$.
 
 Combining our assumed $n\propto r^{-1}$ profile with
 equation~\eqref{eq:nrs}, we obtain
@@ -932,12 +933,13 @@ luminosities by a factor of $\lesssim 2$.
 \begin{figure}
 \includegraphics[width=8cm]{1d_2d.pdf}
 \caption{\label{fig:1D2DB} Comparison of light curves from 1D and 2D
-  simulations for an observer angle of 0.8 radians to the jet
-  axis. We assume that the gas density $n\propto r^{-1}$ for
-  $n_{18}=2000$ cm$^{-3}$, but take $n\propto r^{-1.5}$ for
-  $n_{18}=60$ cm$^{-3}$ for computational convenience--this model was
-  previously computed in \citet{Mimica+2015} and our 1D results suggest
-  that the light curve is insensitive to reasonable variations in the density power-law slope for a fixed value of $n_{18}$ ($\S$~\ref{sec:profileComp})}.
+  simulations for an observer angle of 0.8 radians to the jet axis. We
+  assume that the gas density $n\propto r^{-1}$ for $n_{18}=2000$
+  cm$^{-3}$, but take $n\propto r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$
+  for computational convenience--this model was previously computed in
+  \citet{Mimica+2015} and our 1D results suggest that the light curve
+  is insensitive to reasonable variations in the density power-law
+  slope for a fixed value of $n_{18}$ ($\S$~\ref{sec:profileComp})}.
 \end{figure}
 
 %\subsection{Light curves}
@@ -1100,8 +1102,7 @@ slope of $a_1$ at early times and transitions to power law slope $a_2$
 at late times. The sharpness of this transition is encapsulated in
 $s$. We find that $a_1\sim 1.9$, $a_2\sim -1.4$, and $s\sim 1.0$, best
 reproduce our numerical results. Note the late time power law slope is
-close to the analytic estimate in equation~\eqref{eq:tslope}, for
-$k=1$ and $p=2.3$.
+close to the analytic estimate in equation~\eqref{eq:tslope}.
 %%More precisely 1.94, -1.45, and 1.04 
 
 
@@ -1232,9 +1233,10 @@ either side of the black hole (\citealt{Giannios&Metzger2011}).
 \begin{figure}
 \includegraphics[width=8cm]{diss.pdf}
 \caption{\label{fig:diss} Fraction of the slow component ($\Gamma=2$)
-  kinetic energy dissipated by the reverse shock vs. the isotropic jet
-  luminosity ($L_{\rm j,iso}$) and $n_{18}$.  {\bf BDM: make y axis an
-    energy axis and mark Case 1 and Case 2}}
+  kinetic energy dissipated by the reverse shock vs. the jet energy
+  ($E_{\rm j}$) and $n_{18}$. It is implicitly assumed that the jet is
+  isotropic so that $E_{\rm j}\approx E_{\rm j, iso}$, and that the
+  jet has constant luminosity for $5\times 10^5$ seconds.}
 \end{figure}
 
 \begin{figure}
@@ -1330,7 +1332,7 @@ environment.
   curves again? You said part of the discrepancy is due to
   contributions of the fast component. But from the right panel of
   Fig. 4, it is clear that the slow component dominates the 1D light
-  curve for times >~ 1 yr.}  One caveat is that we were unable to
+  curve for times $\lsim$ 1 yr.}  One caveat is that we were unable to
 perform a 2D calculation for $n_{18}=2$ cm$^{-3}$ to late times due to
 numerical issues.  Since for $n_{18}=60$ cm$^{-3}$ the 2D light curve
 fell roughly one order of magnitude below the 1D light curve after
@@ -1345,14 +1347,13 @@ presence of TDE jets. For example, suppose we have a TDE candidate
 with a radio upper limit. Equation~\eqref{eq:peakLum}, provides a
 constraint on the total energy of the jet,
 \begin{equation}
-E\lsim 2 \times 10^{48} \left(\frac{S}{50 \,\mu{\rm Jy}}\right)^{1.1}
+E\lsim 6 \times 10^{48} \left(\frac{S}{50 \,\mu{\rm Jy}}\right)^{1.1}
   \left(\frac{d_L}{200 \,{\rm Mpc}}\right)^{2.3} {\rm erg},
 \end{equation}
 %
 where $S$ is upper limit for the flux density and $d_L$ is the
 luminosity distance to the source, and we have set $n_{18}=1$
-cm$^{-3}$...{\bf
-  AG--fix! use n18=2000} 
+cm$^{-3}$.
 
 {\bf This section implicitly assumes that late time slopes of the 1D
   light curves can be trusted.}  The jet energy can still be
