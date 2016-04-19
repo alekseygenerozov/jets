@@ -1025,7 +1025,7 @@ optically thick to optically thin, as occurs later for larger $n_{18}$. However,
 \begin{figure*} 
   \includegraphics[width=8cm]{lightcurves.pdf}
   \includegraphics[width=8cm]{lightcurves_comp.pdf}
-  \caption{\label{fig:lightcurves} \textit{Left-hand panel:} On-axis
+  \caption{\label{fig:lightcurves} \textit{Left panel:} On-axis
     ($\theta_{\rm obs}=0$) radio light curves for jet energies of
     $5\times 10^{53}$ erg ({\it opaque}) and $5\times 10^{51}$ erg
     ({\it translucent}) and three different values of n$_{18}$: 2, 60,
@@ -1045,7 +1045,7 @@ optically thick to optically thin, as occurs later for larger $n_{18}$. However,
     at 5.0 GHz (from \citealt{van-Velzen+2013}).  This data is
     summarized Table 1 of~\citealt{Mimica+2015}. The single red
     triangle corresponds a upper limit at 6.1 GHz for the PTF-09axc
-    flare from \citet{Arcavi+2014} \textit{Right-hand panel:} Total
+    flare from \citet{Arcavi+2014} \textit{Right panel:} Total
     ({\it opaque}) and slow component ({\it translucent}) on-axis
     light curves for a $5\times 10^{53}$ erg jet.}
 \end{figure*}
@@ -1065,27 +1065,17 @@ and~\eqref{eq:peakTime}, respectively.  The parameter $s$ controls the sharpness
 % \subsubsection{Effects of viewing angle}
 Fig.~\ref{fig:onOff} compares the light curves for observers aligned
 with the jet axis (on-axis) with those at an angle of 0.8 radians from
-the jet axis (off-axis).  While the $n_{18}=2000$ cm$^{-3}$ light
-curves differ little, for $n_{18}=60$ cm$^{-3}$ the off-axis
-luminosity is smaller by a factor of a few before and near the
-peak. However, at late times the off- and on-axis light curves agree
-well. This is as expected: at late times the jet becomes more
-isotropic, which means the viewing angle has relatively little effect
-on the observed light curve {\bf AG note that the slow component is
-  relatively wide to begin with in the 2D simulation. Very off-axis
-  jets will be ~an order of magnitude dimmer for early times}.
+the jet axis (off-axis).  While the on- and off-axis light curves agree well for $n_{18}=2000$ cm$^{-3}$, the off-axis luminosity for $n_{18}=60$ cm$^{-3}$ is smaller by a factor of a few before and near the
+peak.  However, at late times, as the jet becomes more isotropic, the light curve becomes largely independent of viewing angle.
+%{\bf AG note that the slow component is
+ % relatively wide to begin with in the 2D simulation. Very off-axis
+  %jets will be ~an order of magnitude dimmer for early times}.
 
 \begin{figure}
 \includegraphics[width=8cm]{on_off.pdf}
-\caption{\label{fig:onOff} Comparison of (2D) on-axis and off-axis
-  light curves. For the off-axis light curve the observer is an angle
-  $\theta_{\rm obs}$=0.8 radians away from the jet axis. We assume an
-  $n\propto r^{-1}$ density profile for $n_{18}=2000$ cm$^{-3}$, but
-  take $n\propto r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$ for computational
-  convenience--this model was previously computed in
-  \citet{Mimica+2015} and 1D results suggest that the density slope
-  would have minimal impact on the results (see
-  $\S$~\ref{sec:profileComp}).}
+\caption{\label{fig:onOff} Comparison between on-axis (solid line) and off-axis (dashed line)
+  light curves from our 2D simulations.  The off-axis light curves are calculated for an observer viewing angle $\theta_{\rm obs}$=0.8 rad.  We adopt a density profile $n\propto r^{-1}$ for $n_{18}=2000$ cm$^{-3}$ (top panel), but take $n\propto r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$ (bottom panel).  The latter profile was chosen for computational
+  convenience--this model was previously computed in \citet{Mimica+2015} - and because our results are not sensitive to the precise value of the density power-law slope ($\S$~\ref{sec:profileComp}).}
 \end{figure}
 
 %\subsubsection{Effect of gas density profile}
@@ -1107,11 +1097,7 @@ profile, that noticeable differences emerge. {\bf AG why are there
 
 The bottom panel of Fig.~\ref{fig:cores} compares the 1D on-axis light
 curves for $n\propto r^{-1}$ and $n\propto r^{-1.5}$ gas density
-profiles with $n_{18}=60$. For most times the light curves are very
-close.  This is as expected, since the Sedov radius, $r_{\rm
-  sedov}\sim 10^{18}$ cm. Overall we conclude that the radio light
-curve is insensitive to the precise gas density profile, for a fixed
-value of the gas density near the deceleration/Sedov radius.
+profiles with $n_{18}=60$. For most times the light curves agree well, which is perhaps not suprising because the density normalization in the two models agrees at $10^{18}$ cm, which is close to the Sedov radius.  We conclude that the radio light curve is insensitive to the precise gas density profile, for a fixed value of the gas density near the deceleration/Sedov radius.
 
 \begin{figure} 
   \includegraphics[width=8cm]{fig_cores.pdf}
