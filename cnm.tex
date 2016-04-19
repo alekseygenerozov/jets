@@ -908,7 +908,7 @@ luminosities by a factor of $\lesssim 2$.
 \begin{figure}
 \includegraphics[width=8cm]{1d_2d.pdf}
 \caption{\label{fig:1D2DB} Comparison of light curves from 1D and 2D
-  simulations for an observer angle of 0.8 radians to the jet axis. We
+  simulations for an off-axis observer ($\theta_{j} = 0.8$). We
   assume that the gas density $n\propto r^{-1}$ for $n_{18}=2000$
   cm$^{-3}$, but take $n\propto r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$
   for computational convenience--this model was previously computed in
@@ -1020,7 +1020,7 @@ optically thick to optically thin, as occurs later for larger $n_{18}$. However,
   \includegraphics[width=8cm]{lightcurves.pdf}
   \includegraphics[width=8cm]{lightcurves_comp.pdf}
   \caption{\label{fig:lightcurves} \textit{Left:} Radio light curves as viewed on axis ($\theta_{\rm obs}=0$) for jet energies of $5\times 10^{53}$ erg ({\it opaque}) and $5\times 10^{51}$ erg
-    ({\it translucent}), each for different values of n$_{18}=$ 2 (blue), 60 (red), and 2000 (green) cm$^{-3}$.  Solid lines show the result of 1D simulations, while 2D light curves are shown as dashed lines (when available).  A gas density profile of $n\propto r^{-1}$ is assumed for $n_{18}=$ 2 and 2000 cm$^{-3}$, but $r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$.  Radio upper limits and detections are shown as triangles and squares, respectively.  The single upper limit in the top panel is for D3-13 at 1.4 GHz from \citet{Bower+2011}).  Gray triangles and squares in the middle panel indicate upper limits and detections at 3.0 GHz from \citet{Bower+2013}, while black triangles indicate upper limits at 5.0 GHz from \citet{van-Velzen+2013}.  The red triangle shows the 6.1 GHz upper limit on PTF-09axc from \citet{Arcavi+2014} \textit{Right:}  Same as the $5\times 10^{53}$ erg case on the left, but comparing the total light curve ({\it opaque}) to just the contribution from the slow component of the jet ({\it translucent}).}
+    ({\it translucent}), each for different values of n$_{18}=$ 2 (blue), 60 (red), and 2000 (green) cm$^{-3}$.  Solid lines show the result of 1D simulations, while 2D light curves are shown as dashed lines (when available).  A gas density profile of $n\propto r^{-1}$ is assumed for $n_{18}=$ 2 and 2000 cm$^{-3}$, but $r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$.  Radio upper limits and detections are shown as triangles and squares, respectively.  The single upper limit in the top panel is for D3-13 at 1.4 GHz from \citet{Bower+2011}).  Gray triangles and squares in the middle panel indicate upper limits and detections at 3.0 GHz from \citet{Bower+2013}, while black triangles indicate upper limits at 5.0 GHz from \citet{van-Velzen+2013}.  The red triangle shows the 6.1 GHz upper limit on PTF-09axc from \citet{Arcavi+2014} \textit{Right:}  Same as the $5\times 10^{53}$ erg case on the left, but comparing the total light curve ({\it opaque}) to just the contribution from the slow component of the jet ({\it translucent}).  {\bf BDM: I find these differences very subtle - and right hand side curves need to be marked in words ("total" or "slow + fast", "slow")}}
 \end{figure*}
 
 The numerical light curves are well fit with a broken power law,
@@ -1047,8 +1047,8 @@ peak.  However, at late times as the jet becomes more isotropic, the light curve
 \begin{figure}
 \includegraphics[width=8cm]{on_off.pdf}
 \caption{\label{fig:onOff} Comparison between on-axis (solid line) and off-axis (dashed line)
-  light curves from our 2D simulations.  The off-axis light curves are calculated for an observer viewing angle $\theta_{\rm obs}$=0.8 rad.  We adopt a density profile $n\propto r^{-1}$ for $n_{18}=2000$ cm$^{-3}$ (top panel), but take $n\propto r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$ (bottom panel).  The latter profile was chosen for computational
-  convenience--this model was previously computed in \citet{Mimica+2015} - and because our results are not sensitive to the precise value of the density power-law slope ($\S$~\ref{sec:profileComp}).}
+  light curves from our 2D simulations.  The off-axis light curves are calculated for an observer viewing angle of $\theta_{\rm obs}$=0.8.  We adopt a density profile of $n\propto r^{-1}$ for $n_{18}=2000$ cm$^{-3}$ (top panel), but take $n\propto r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$ (bottom panel).  The latter profile was chosen for computational
+  convenience, as this model was previously computed in \citet{Mimica+2015}, and because our results are not sensitive to the precise density power-law slope ($\S$~\ref{sec:profileComp}).}
 \end{figure}
 
 %\subsubsection{Effect of gas density profile}
@@ -1075,115 +1075,52 @@ profiles with $n_{18}=60$. For most times the light curves agree well, which is 
 \begin{figure} 
   \includegraphics[width=8cm]{fig_cores.pdf}
   \includegraphics[width=8cm]{profs2.pdf}
-  \caption{\label{fig:cores} {\it Top Panel:} Comparison of (on-axis)
-    light curves for our fiducial $n\propto r^{-1}$ gas density
-    profile and the core galaxy profile from \eqref{eq:cores} with
-    $r_s=10^{18}$ cm. {\it Bottom Panel:} Comparison of (on-axis)
-    light curves for $n\propto r^{-1}$ ({\it solid black}) and
-    $n\propto r^{-1.5}$ ({\it dashed red}) gas density profiles.}
+  \caption{\label{fig:cores} {\it Top:} Comparison between on-axis light curves for our fiducial $n\propto r^{-1}$ gas density profile corresponding to a cusp-like galaxy, and the core galaxy profile defined by \eqref{eq:cores} with $r_s=10^{18}$ cm. {\it Bottom:} Comparison between on-axis light curves calculated for $n\propto r^{-1}$ ({\it solid black}) and $n\propto r^{-1.5}$ ({\it dashed red}) gas density profiles.}
 \end{figure}
 
 
 \subsubsection{Reverse Shock Emission?}
 Our calculations shown in Figs.~\ref{fig:1D2DB}$-$\ref{fig:cores}
-include only emission from the forward shock (shocked CNM).  In
-principal the reverse shock (shocked jet) may also contribute to the
+include only emission from the forward shock (shocked CNM), while in principle the reverse shock (shocked jet) also contributes to the
 radio light curve.
 % However, as we describe in this section its contribution will be
 % negligible, at least for high energy jets.
 
-The fraction of the initial kinetic energy of the jet which is
-dissipated by the reverse shock provides a first-order estimate of its
-maximum contribution to the radio light curve.  Fig.~\ref{fig:diss}
-shows the fraction of the slow component ($\Gamma=2$) kinetic energy
-dissipated by the reverse shock as a function of isotropic jet
-luminosity and CNM denisty $n_{18}$, as estimated by integrating the
-shock evolution determined from the jump conditions (see
-Appendix~\ref{sec:reverse} for details).  For this estimate, we
-approximate the jet as a constant source of duration $t_0 = 5 \times
-10^{5}$ s.  The parameters of our numerical solutions are shown as red
-squares in Fig.~\ref{fig:diss}.
+The fraction of the initial kinetic energy of the jet which is dissipated by the reverse shock provides a first-order estimate of its maximum contribution to the radio light curve.  Fig.~\ref{fig:diss}
+shows contours of the fraction of the kinetic energy of the slow component dissipated by the reverse shock as a function of the jet energy and CNM density, $n_{18}$.  This is estimated by integrating the shock evolution determined from the jump conditions (see Appendix~\ref{sec:reverse} for details), approximating the jet as a constant source of duration $t_0 = 5 \times 10^{5}$ s and Lorentz factor $\Gamma = 2$.  The parameters defining our grid of numerical solutions are shown in Fig.~\ref{fig:diss} as red squares.
 
 
 Fig.~\ref{fig:diss} shows that for high ambient densities and/or low
 energy jets, the reverse shock dissipates an order unity fraction of
-the kinetic energy of the jet.  However, this is somewhat deceptive
-because for high energy jets the reverse shock emission will be
-strongly attenuated by self absorption for observer frequencies below
-10 GHz.  This is illustrated in Fig.~\ref{fig:reverse}, which shows
-the 5 GHz light curve separated into contributions from the forward
-and reverse shocks, respectively, calculated for $E = 5\times 10^{53}$
-erg and $n_{18} = 2$.  Although the reverse shock contribution is
-comparable to that of the forward shock at early times, it contributes
-subdominantly to the total as compared to the forward shock due to
-self-absorption near the front of the jet (which is not included in
-the reverse shock light curve in Fig.~\ref{fig:reverse}).  While the
-reverse shock dissipates an even larger fraction of the jet energy for
-higher ambient density, its emission will be even more heavily
-absorbed.  We conclude that reverse shock emission can be neglected
-for the high energy jets with $E\gtrsim 10^{53}$ erg.
+the kinetic energy of the jet.   This is confirmed by Fig.~\ref{fig:reverse}, which shows
+the 5 GHz light curve for $E = 5\times 10^{53}$ erg, $n_{18} = 2$, separated into contributions from the forward
+and reverse shocks.  However, this somewhat overstates the contribution of the reverse shock to the observed emission because the latter is strongly attenuated by self absorption below 10 GHz, which has not been included in the reverse shock light curve in Fig.~\ref{fig:reverse}.  While the reverse shock dissipates an even larger fraction of the jet energy for
+higher ambient density, its emission will be even more heavily absorbed.  We conclude that the reverse shock emission can be neglected for the high energy jets with $E\gtrsim 10^{53}$ erg, consistent with the reverse shock not contributing appreciably to SwJ1644 (\citealt{Metzger+2012}).
 
-For low energy jets, we find that jet is crushed at early times, even
-for low values of $n_{18}$, making the reverse shock structure more
-challenging analyze in our simulations.  We defer a more detailed
-study of the reverse shock in this case to future work.  {\bf BDM:
-  Pere should add more here describing the issues with low energy
+For low energy jets, we find that the jet is crushed at early times, even for low values of $n_{18}$, making the reverse shock structure more challenging to identify and analyze in our simulations.  We defer a more detailed study of the reverse shock in the the low energy case to future work.  {\bf BDM: Pere may wish to dd more here describing the issues with low energy
   jets}
 
-As a final note, even if the reverse shock dissipates most of the
-kinetic energy into thermal energy, this energy is still available to
-be recoverted to kinetic energy through adiabatic expansion.  However,
-the jet re-expansion will be relatively isotropic because the bulk
-Lorentz factor of the shocked gas is now mildly relativistic.  The net
-result will likely be to produce two quasi-spherical `mushroom clouds' on
-either side of the black hole (\citealt{Giannios&Metzger2011}).
+As a final note of caution, even if the reverse shock dissipates most of the bulk kinetic energy into thermal energy, the latter can be converted back to kinetic energy through adiabatic expansion.  However, we expect that the re-expansion will be relatively isotropic compared to the original jet, because the matter is first slowed to mildly relativistic speeds.  The net result of a ultra-strong reverse shock (due to a weak jet, and/or an unusually high CNM density) is therefore likely to be the production of two quasi-spherical lobes on either side of the black hole, centered about the deceleration radius (\citealt{Giannios&Metzger2011}).
 
 
 \begin{figure}
   \includegraphics[width=8cm]{reverse.pdf}
-  \caption{\label{fig:reverse} Reverse shock, forward shock, and total
-    light curves for a $5\times 10^{53}$ erg jet propagating through
-    our fiducial $n\propto r^{-1}$ medium with density normalization,
-    $n_{18}=2$ cm$^{-3}$. The reverse shock emission is absorbed, so
-    that effectively only the forward shock contributes to the total
-    light curve.}
+  \caption{\label{fig:reverse}  Contributions to the radio light curve from the forward shock (red line), reverse shock (blue), and the total light curve (black) for a jet of energy $5\times 10^{53}$ erg and CNM density $n\propto r^{-1}$ with $n_{18} = 2$ cm$^{-3}$.  The reverse shock light curve excludes synchrotron self-absorption, which when included in the full calculation results in large attenuation of the emission, such that the total light curve is dominated by the forward shock.}
 \end{figure}
 
 \subsection{Parameter Space of Jet-CNM Interaction}
 \label{sec:param}
-The left side of Fig.~\ref{fig:jetContours} shows contours of the peak
-luminosity from our numerical models covering the parameter space of
-jet energy $E$ and density $n_{18}$ (thick lines), as well as the
-luminosity originating exclusively from the slow component (thin
-lines).  The slow component dominates the total luminosity for large
-$n_{18}$ and small frequencies, while the fast component dominates for
-high frequencies and low ambient gas densities.  Remarkably, the total
-peak luminosity is nearly independent of the ambient gas density; this
-is entirely coincidental, as the fast and slow peak fluxes
-individually vary across the parameter space.
+The left column of Fig.~\ref{fig:jetContours} shows contours of the peak
+luminosity (thick lines) as derived from our grid of numerical models, covering the parameter space of
+jet energy $E$ and density $n_{18}$.  Also shown with thin lines is the luminosity arising from just the slow, wide angle component.  The fast, narrow component of the jet dominates at high frequencies and low densities, while the slow, wide component dominates for large $n_{18}$ and low frequencies.  Remarkably, the total peak luminosity is nearly independent of the ambient gas density; this is entirely coincidental, as the fast and slow peak fluxes individually vary across the parameter space.
 % {\bf AG Not satisfying. Seems very coincidental and model
 % dependent. Also the
 % fast component seems to have a very strong density dependence.}
 
-The right panel of Fig.~\ref{fig:jetContours} compares the numerical
-results for the slow component with our analytic estimate
-(eq.~\eqref{eq:peakLum}).  For large $n_{18}$, the peak luminosity
-scales with density, jet energy, and frequency roughly as expected in
-the optically thick limit.  By contrast, for 30 GHz and low ambient
-gas densities, the numerical results asymptotically approach optically
-thin limit.
+The right column of Fig.~\ref{fig:jetContours} compares our numerical results for the slow component to the analytic estimate given in equation \eqref{eq:peakLum}.  For large $n_{18}$, the peak luminosity scales with density, jet energy, and frequency roughly as expected in the optically thick limit.  By contrast, for 30 GHz and low $n_{18}$, the numerical results approach the optically thin limit.
 
-The left panel of Fig.~\ref{fig:ContoursTp} shows contours of the peak
-time in days, separately for the slow component (solid lines) and the
-total light curve (dashed lines).  Shown for comparison on the right
-side is the optically thick peak time estimate from
-equation~\eqref{eq:peakTime}, which roughly reproduces the numerical
-results for high densities/low frequencies. For low densities, the
-numerical results diverge from the analytic prediction, in part due to
-the growing contribution of the fast component.  Furthermore, the peak
-time for the 30 GHz light curves decreases with density for small
-$n_{18}$, due to the emitting region being optically thin at the
-deceleration time.
+The left column of Fig.~\ref{fig:ContoursTp} shows contours of the time of peak flux in days, separately for the slow component (solid lines) and the total light curve (dashed lines).  Shown for comparison in columns on the right is the peak time as estimated from equation~\eqref{eq:peakTime} in the optically thick case, which roughly reproduces the numerical
+results for high densities/low frequencies. For low densities, the numerical results diverge from the analytic prediction, due in part to the growing contribution of the fast component.  At 30 GHz, the peak time decreases with $n_{18}$ at small values of the latter, because in this regime the jet is optically thin prior to the deceleration time.
 
 
 
@@ -1216,63 +1153,29 @@ deceleration time.
 
 \subsubsection{Comparison with radio detections and upper limits.}
 \label{sec:upLims}
-The left panel of Fig.~\ref{fig:lightcurves} show radio upper limits
-and detections for various TDE candidates (compiled from various
-sources into Table 1 of \citealt{Mimica+2015}) together with on-axis
-light curves for our fiducial $5\times 10^{53}$ erg jet (comparable to
-SwJ1644) and three different ambient density normalizations: n$_{18}$:
-2, 60, and 2000 cm$^{-3}$. All of the 5 GHz light curves fall above
-the upper limits, in agreement with the results of previous works
-concluding that thermal TDEs do not possess jets as powerful as that
-responsible for SwJ1644
-(\citealt{Bower+2013},\citealt{van-Velzen+2013},\citealt{Mimica+2015}),
-a result which we now find holds to be independent of the CNM
-environment.
+
+Fig.~\ref{fig:lightcurves} compares our fiducial $5\times 10^{53}$ erg on-axis jet model to radio detections and upper limits derived from follow-up observations of TDE flares, as compiled in Table 1 of \citealt{Mimica+2015}.  All of the 5 GHz light curves, corresponding to different CNM densities, fall above the upper limits.   In agreement with the results of previous work, we conclude that most TDEs discovered by their thermal emission do not produce jets as powerful as that responsible for SwJ1644 (\citealt{Bower+2013,van-Velzen+2013,Mimica+2015}), a result which is now found to hold independent of the CNM environment.
 
 {\bf AG--Pere could you check the late time slope of the 2D light
   curves again? You said part of the discrepancy is due to
   contributions of the fast component. But from the right panel of
   Fig. 4, it is clear that the slow component dominates the 1D light
   curve for times $\lsim$ 1 yr.}  One caveat is that we were unable to
-perform a 2D calculation for $n_{18}=2$ cm$^{-3}$ to late times due to
-numerical issues.  Since for $n_{18}=60$ cm$^{-3}$ the 2D light curve
-fell roughly one order of magnitude below the 1D light curve after
+perform a 2D calculation for $n_{18}=2$ cm$^{-3}$ due to numerical issues related to following the jet to late times.  Since for $n_{18}=60$ cm$^{-3}$ the 2D light curve fell roughly one order of magnitude below the 1D light curve after
 $\sim$ 10 years, we caution that the 1D light curves for $n_{18}=2$
 cm$^{-3}$ likely overestimate the late time radio luminosity.  For
 very low densities is therefore still possible that even a
-SwJ1644-like jet would fall below existing upper limits in some cases.
+SwJ1644-like jet would fall below existing upper limits in some cases.  {\bf BDM: I vote to remove this paragraph}
 
-Multiple radio measurements from several months to a few years after a
-tidal disruption flare would provide better constraints on the
-presence of TDE jets. For example, suppose we have a TDE candidate
-with a radio upper limit. Equation~\eqref{eq:peakLum}, provides a
-constraint on the total energy of the jet,
+Radio observations conducted from several months to years after a tidal disruption flare, which tightly constrain the peak flux of a putative jet, can be used to constrain the jet energy.  Equation~\eqref{eq:peakLum} shows that an upper limit of $F_{\rm ul}$ on the flux density of a source at distance $d_L$ results in an upper limit on the jet energy of
 \begin{equation}
-E\lsim 6 \times 10^{48} \left(\frac{S}{50 \,\mu{\rm Jy}}\right)^{1.1}
+E\lsim 6 \times 10^{48} \left(\frac{F_{\rm ul}}{50 \,\mu{\rm Jy}}\right)^{1.1}
   \left(\frac{d_L}{200 \,{\rm Mpc}}\right)^{2.3} {\rm erg},
 \end{equation}
-%
-where $S$ is upper limit for the flux density and $d_L$ is the
-luminosity distance to the source, and we have set $n_{18}=1$
-cm$^{-3}$.
+where we have assumed $n_{18}=1$ cm$^{-3}$ (but the constraint is not overly sensitive to this choice).
 
 {\bf This section implicitly assumes that late time slopes of the 1D
-  light curves can be trusted.}  The jet energy can still be
-constrained from late time measurements. Fig.~\ref{fig:econtours},
-shows a comparison between the analytic fit for the synchrotron light
-curve (eq.~\ref{eq:lcAnal}) evaluated at different jet energies and
-existing radio upper limits at 5 GHz for TDE candidates. The top panel
-shows the light curves for a fixed density normalization. Changing the
-density normalization simply shifts the light curve in time. Thus, the
-radio luminosity at any given time is bounded by the luminosities for
-the minimum and maximum plausible $n_{18}$: 0.5 cm$^{-3}$ and 2000
-cm$^{-3}$ respectively. The bottom panel of Fig.~\ref{fig:econtours}
-shows the curves of the minimum possible synchrotron luminosity for
-different jet energies along with radio upper limits. The minimum
-synchrotron luminosity curve going through each upper limit
-corresponds to the maximum possible jet energy consistent with
-it. Note that these constraints would apply to spherical outflows as
-well as jets.
+  light curves can be trusted.}  Even if the peak flux is missed, late-time measurements can still be used to constrain the jet energy.  Fig.~\ref{fig:econtours} compares our analytic fit to the 5 GHz synchrotron light curve (eq.~\ref{eq:lcAnal}) for different jet energies and existing radio upper limits.  The top panel shows the light curves for a fixed value of $n_{18}$, but an increase(decrease) in $n_{18}$ simply shifts the light curve to later(earlier) times.  One implication of this behavior is that the radio luminosity at a given time is bounded by that predicted for the entire range of allowed values of $n_{18} \in [0.5,2000]$ cm$^{-3}$ ($\S\ref{sec:densAllowed}$). The bottom panel of Fig.~\ref{fig:econtours} shows, for a range of jet energies, the minimum allowed synchrotron luminosity at a fixed time (across all $n_{18}$) for comparison to the radio upper limits.  The minimum curve which passes through each upper limit corresponds to the maximum jet energy consistent with the upper limit.  Note that these constraints apply to spherical outflows as well as collimated jets.
 
 
 
@@ -1287,40 +1190,23 @@ well as jets.
   $n_{18}$ ($\sim 2000$ cm$^{-3}$).}
 \end{figure}
 
-Fig.~\ref{fig:hist} shows a histograms of maximum jet energy
-consistent with existing radio upper limits and detections of TDE
-candidates. The latter group consists of 4 events: ASSASN-14li,
-CSS100217, SwJ1644, and SwJ2058. For ASSASN-14li and SwJ1644 the radio
-light curves are well sampled, and the energy of the jet is well
-constrained: $10^{48}-10^{49}$ erg (\citealt{van-Velzen+2015,
-  Alexander+2015}) for ASSASN-14li and $5\times 10^{53}$ erg. For
-CSS100217 there is only a single radio detection, which requires the
-outflow energy to be $1.7\times 10^{50}-6\times 10^{51}$ erg. For
-SwJ2058 we take the jet energy to be $5\times 10^{53}$ erg. On the one
-hand the observed radio luminosity ($\nu L_{\nu }\approx 10^{42}$ erg
-s$^{-1}$ \citep{Cenko+2012}) requires an outflow at least this
-energetic. On the other hand, this is comparable to the total energy
-available from the disruption of a solar type star. {\bf AG double
+Fig.~\ref{fig:hist} shows a histogram of the maximum jet energy which is consistent with the existing radio upper limits and detections of TDE flares with radio follow-up (see also Table \ref{tab:enConstr}).  The detected events include ASSASN-14li, CSS100217, SwJ1644, and SwJ2058.  For ASSASN-14li and SwJ1644 the lightcurves are well sampled, and the energy of the jet is relatively well constrained to be $\approx 10^{48}-10^{49}$ erg for ASSASN-14li (\citealt{van-Velzen+2015,
+  Alexander+2015}) and $5\times 10^{53}$ erg for SwJ1644 (\citealt{Mimica+15}).  The single detection of CSS100217  requires an outflow energy of $1.7\times 10^{50}-6\times 10^{51}$ erg.  For SwJ2058, we take the jet energy to be $5\times 10^{53}$ erg, similar to its twin SwJ1644.  On the one hand the observed radio luminosity ($\nu L_{\nu }\approx 10^{42}$ erg s$^{-1}$ \citep{Cenko+2012}) requires an outflow at least this energetic.  On the other hand, this is comparable to the total energy available from the disruption of a solar type star. {\bf AG double
   check SwJ2058}.
 
 \begin{figure}
 \includegraphics[width=8.5cm]{hist.pdf}
-\caption{\label{fig:hist} Histogram of maximum plausible jet energies
-  consistent with existing radio upper limits and radio detections
-  (ASSASN-14li, CSS100217, SwJ1644, and SwJ2058). The radio upper
-  limits are taken from the compilation in Table 1 of
-  \citet{Mimica+2015}, to which we add the upper limit for the
-  PTF-09axc flare from \citet{Arcavi+2014}. Energy constraints for
-  each event are summarized in Table~\ref{tab:enConstr}}
+\caption{\label{fig:hist} Histogram of jet energies consistent with existing radio detections (ASSASN-14li, CSS100217, SwJ1644, and SwJ2058) and upper limits (Table 1 of \citealt{Mimica+2015} and \citealt{Arcavi+2014}), as summarized in Table~\ref{tab:enConstr}.}
 \end{figure}
 
 \begin{table}
   \caption{\label{tab:enConstr} Inferred jet/outflow energies (and bounds) from radio detections and upper limits of optical/UV
-    and soft X-ray TDE candidates.}
+    and soft X-ray TDE flares.}
 \begin{tabular*}{0.95\columnwidth}{ll}
-Source & Energy [erg] \\
+Source & Jet Energy [erg] \\
 \hline\hline
 Detections &\\
+\hline
 ASSASN-14li & $10^{48}-10^{49}$\\
 CSS100217 & $1.7\times 10^{50}-6\times 10^{51}$\\
 SwJ1644 & $5\times 10^{53}$\\
