@@ -28,7 +28,7 @@
 
 \newcommand       \be          {\begin{eqnarray}}
 \newcommand       \ee          {\end{eqnarray}}
-\newcommand{\Mbh}[1][]{M_{\bullet1}}
+\newcommand{\Mbh}[1][]{M_{\bullet}}
 \newcommand{\Menc}{M_{\rm enc}}
 \renewcommand{\th}{t_h}
 \newcommand{\Msun}{{\rm M_\odot}}
@@ -179,20 +179,20 @@ to existing radio upper limits for TDE candidates, and show that they
 cannot have jets as powerful as Sw1644. We summarize our conclusions
 in $\S\ref{sec:conc}$.
 
-\section{Range of CNM Densities}
+\section{Diversity of CNM Densities}
 \label{sec:cnm}
 
-In this section we place constraints on the gas densities in galactic
-nuclei.  In $\S\ref{sec:analy}$, we determine the possible range of
-densities resulting from mass loss by stellar winds. 
+%In this section we place constraints on the gas densities in galactic
+%nuclei.  In $\S\ref{sec:analy}$, we determine the possible range of
+%densities resulting from mass loss by stellar winds. 
 
-\subsection{Analytic Constraints on CNM Density}
+\subsection{Analytic Constraints}
 \label{sec:analy}
 
-\subsubsection{Preliminary Considerations}
+%\subsubsection{Preliminary Considerations}
 
-The radio emission of a jet is primarily sensitive to the density of
-ambient gas near the Sedov radius, outside of which the jet has
+Jet radio emission is primarily sensitive to the density of
+ambient gas near the Sedov radius, $r_{\rm sed}$, outside of which the jet has
 swept up a gaseous mass exceeding its own. For a power law gas density
 profile, $n= n_{18} \left(r/r_{18}\right)^{-k}$,
 \begin{equation}
@@ -202,27 +202,23 @@ profile, $n= n_{18} \left(r/r_{18}\right)^{-k}$,
 \end{equation}
 where $E = E_{54}10^{54}$ erg is the isotropic equivalent energy,
 $r_{18} = r/10^{18}$ cm, and in the final equality we have taken $k =
-1$.  For a powerful jet similar to SwJ1644, the deceleration radius is
-typically of order a parsec.
+1$, typical of our results described later in this section.  For a powerful jet similar to SwJ1644, the deceleration radius is
+typically of order a parsec, but it can be as small as $10^{16}$ cm for a weak jet/outflow, such as that in ASASSN-14li.
 
-An initially relativistic jet will slow to sub-relativistic speeds at
-$r \sim r_{\rm sed}$.  However, significant deceleration sets in earlier, once the
-jet has swept up only a fraction $\sim 1/\Gamma$ of its rest mass, as
-occurs at the radius
+Although an initially relativistic jet will slow to sub-relativistic speeds at
+$r \sim r_{\rm sed}$, significant deceleration sets in earlier, once the
+jet has swept up only a fraction $\sim 1/\Gamma$ of its rest mass.  This occurs at a somewhat smaller radius,
 \begin{equation}
   r_{\rm dec}=\frac{r_{\rm sed}}{\Gamma^{2/(3-k)}}.
   \label{eq:rdec2}
 \end{equation}
-%
-The jet reaches
- the Sedov and deceleration radii, respectively, at
-observer times 
+According to an observer along the jet axis, the jet reaches the Sedov and deceleration radii, respectively, at times given by
 \begin{equation}
-t_{\rm sed} = \frac{c}{r_{\rm sed}} \approx
+t_{\rm sed} \simeq \frac{c}{r_{\rm sed}} \approx
 10 E_{54}^{-1/2}n_{18}^{1/2} {\rm year}
  \end{equation} 
 \begin{equation}
-t_{\rm dec} =
+t_{\rm dec} \simeq
 \frac{c}{2\Gamma^{2} r_{\rm dec}} = \frac{t_{\rm
     sed}}{2\Gamma^{3(4-k)/(3-k)}} = \frac{t_{\rm sed}}{2\Gamma^{3}},
  \label{eq:tdec}
@@ -417,11 +413,10 @@ a break in the stellar density profile in our analysis.
 
 
 
-\subsubsection{Plausible Density Range}
+\subsubsection{Allowed Density Range}
 \label{sec:densAllowed}
 
-In this section, we estimate the plausible range in the normalization
-of the CNM gas profile, $n_{18}$.  We assume that star formation
+We now estimate the plausible range in the normalization of the CNM gas profile, $n_{18}$.  We assume that star formation
 occurs in two bursts, an old burst of age comparable to the Hubble
 time $t_{\rm h} = 10^{10}$ yr, and a ``young'' burst of variable age
 $t_{\rm burst} \ll t_{\rm h}$ which contributes a fraction $f_{\rm
@@ -430,18 +425,18 @@ $t_{\rm burst} \ll t_{\rm h}$ which contributes a fraction $f_{\rm
 %same (cuspy) density profile, which implies that the gas density
 %profile goes as $r^{-1}$.
 
-For a sufficiently large burst occurring less than 40 Myr ago, gas
+For a sufficiently large burst of age $\lesssim$ 40 Myr, gas
 heating is dominated by the energetic winds of massive star
 winds.\footnote{Although Type II supernovae are also an important heating
   source which dominates stellar winds after $\sim$6 Myr
   \citep{Voss+2009}, they are intermittent and hence their
   contribution to the gas heating is neglected for simplicity.}  In
-this case, the mass return ($\eta$) and heating parameters ($v_w$) are
+this case the mass return ($\eta$) and heating parameters ($v_w$) are
 calculated as described in GSM15 (their Appendix C).  Given
 $\eta(t_{\rm burst},f_{\rm burst})$ and $v_w(t_{\rm burst},f_{\rm
   burst})$, we calculate $n_{18}$ following equation~\eqref{eq:n182}.
 
-For older stellar populations, gas heating may come from a few
+For an older stellar population, gas heating may come from a few
 different sources, including Type Ia Supernovae (SNe)\footnote{Unbound
   debris streams from TDEs provide another source of heating localized
   in the galactic center (\citealt{Guillochon+2015a}), which we
@@ -524,17 +519,17 @@ Our model for the CNM predicts the total gas density sourced by
 stellar winds, including both hot and cold phases.  In the first few
 Myr after a starburst, the injected stellar wind material is hot
 ($T\gsim 10^{7}$ K) due to the thermalized wind kinetic energy.
-Later, SNe Ia provide intermittent heating, but the stellar wind
-material that accumulates on small scales, between successive SNe Ia
-may become much cooler, with temperature $\lesssim 10^{4}$ K, and
+At later times, SNe Ia provide intermittent heating.  However, the stellar wind
+material that accumulates on small scales between successive SNe Ia
+may become much cooler, with temperatures $\lesssim 10^{4}$ K, and
 would condense into clumps.
 
-The radio emission from a TDE jet is expcted to be similar for a
+The radio emission from a TDE jet is expected to be similar for a
 clumpy and a smooth medium with the same average density
 (e.g.~\citealt{Nakar&Granot2007,van-Eerten+2009,Mimica&Giannios2011})
 {\bf AG these references show that density jumps don't create sharp
   features for a spherical, relativistic blast wave but they don't
-  really address the Newtonian regime}.  However, cold
+  really address the Newtonian regime  BDM: Pere can address this}.  However, cold
 gas may also condense into stars.  To estimate the star formation
 rate, we assume that the CNM self-regulates itself to a condition of
 marginal thermal stability.  This we define as the cooling time being
@@ -892,9 +887,8 @@ Despite the slow sheath being initially much broader in the 1D
 simulations than in 2D, the resulting light curves agree surprisingly
 well.  The agreement is particularly good at the highest densities
 ($n_{18}=2000$ cm$^{-3}$) because the slow component rapidly
-isotropizes in 2D.  component rapidly spreads out and isotropizes in
-2D.  At lower densities ($n_{18}=60$ cm$^{-3}$), the agreement is not
-at good, with the 1D simulations predicting systematically higher
+isotropizes in 2D.  At lower densities ($n_{18}=60$ cm$^{-3}$), the agreement is not
+as good, with the 1D simulations predicting systematically higher
 luminosities by a factor of $\lesssim 2$.
 
 %Nonetheless, using a
@@ -931,8 +925,7 @@ luminosities by a factor of $\lesssim 2$.
 \label{sec:analyt}
 In this section, we investigate the effects of the gas density
 profile, jet energy, and observer viewing angle on the observed
-synchrotron radio light curve.  We begin with a few analytic
-estimates.
+synchrotron radio light curve.  
 
 The dependence of the synchrotron peak luminosity, peak time, and late
 time luminosity power law slope on the ambient gas density and jet
@@ -950,12 +943,12 @@ from equation~(\ref{eq:peakLumGen}),
   \left(\frac{\epsilon_e}{0.1}\right)^{1.3}\times \\
   \left(\frac{\epsilon_b}{0.002}\right)^{0.825}\left(\frac{\nu_{\rm
         obs}}{5 {\rm GHz}}\right)^{0.35} n_{18}^{1.24}
-  {\rm erg \, s^{-1}} & {\rm Optically\, thin}\\\\
+  {\rm erg \, s^{-1}} & {\rm Opt.~Thin}\\\\
   1.1 \times 10^{42} \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.87}
   \left(\frac{\epsilon_e}{0.1}\right)^{0.61}\times\\
   \left(\frac{\epsilon_b}{0.002}\right)^{0.26}\left(\frac{\nu_{\rm
         obs}}{5 {\rm GHz}}\right)^{2.01} n_{18}^{-0.14} {\rm erg\,
-    s^{-1}} & {\rm Optically\, thick},
+    s^{-1}} & {\rm Opt.~Thick},
 \end{cases}
 \label{eq:peakLum}
 \end{align}
@@ -963,29 +956,32 @@ where we have adopted fiducial values for the power-law slope of the
 gas density profile, $k=1$, and the electron energy distribution,
 $p=2.3$.  The top and bottom lines apply, respectively, to the shocked
 CNM being optically thin and optically thick at the deceleration time.
+
 The peak luminosity in the optically thin case depends sensitively on
 $n_{18}$, while in the optically thick regime the dependence on
 density is much weaker.  We have normalized the peak fluxes in
 equation (\ref{eq:peakLum}) to match those derived from our numerical
 results. From equation~\eqref{eq:tslope}, we expect the luminosity to
-go a $L_\nu \propto t^{-1.5}$ at late times.
+decay a $L_\nu \propto t^{-1.5}$ at late times.
 
 The time of maximum flux, for the same fiducial values ($k = 1$,
 $p=2.3$), is given by equation (\ref{eq:tpeakGen}),
 \begin{align}
 t_p= \text{min}
 \begin{cases}
-  500 E_{54}^{0.5} n_{18}^{-0.5} {\rm days} & {\rm Optically\, Thin}\\\\
+  500 E_{54}^{0.5} n_{18}^{-0.5} {\rm days} & {\rm Opt.~Thin}\\\\
   49.9 \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.32}
   \left(\frac{\epsilon_e}{0.1}\right)^{0.45}
   \left(\frac{\epsilon_b}{0.002}\right)^{0.37}\\
   \left(\frac{\nu_{\rm obs}}{5 {\rm GHz}}\right)^{-1.1} n_{18}^{0.4}
-  {\rm days}& {\rm Optically\, Thick},
+  {\rm days}& {\rm Opt.~Thick},
 \end{cases}
 \label{eq:peakTime}
 \end{align}
 where again the normalizations are chosen to match our numerical
-results. In general, a more energetic jet produces emission which
+results. 
+
+In general, a more energetic jet produces emission which
 peaks later in time.  However, the scaling of $t_p$ with $n_{18}$ is
 more complicated: if the emitting region is optically thick at the
 deceleration time, the peak time increases with CNM density. In this
@@ -1008,7 +1004,7 @@ optically thin regimes at 1 and 30 GHz.
 \end{figure}
 
 
-\subsubsection{Numerical Light Curves}
+\subsection{Numerical Light Curves}
 \label{sec:numResults}
 As summarized in Table~\ref{tab:jetParams} (and shown in
 Fig~\ref{fig:diss}), we calculate light curves for a grid of on-axis
@@ -1017,31 +1013,13 @@ and 2000 cm$^{-3}$) and three different values of the
 (beaming-corrected) jet energy $E$ ($5\times 10^{51}$, $5\times
 10^{52}$, $5\times 10^{53}$ erg).
 
-The left-hand panel of Fig.~\ref{fig:lightcurves} shows example light
+The left panel of Fig.~\ref{fig:lightcurves} shows example light
 curves for different energy jets and nuclear gas densities. The peak
-luminosity is close to linear in jet energy and is virtually
-independent of the ambient density.  This is as expected for high
-densities and low frequencies: the emission is dominated by the slow
-component, which is optically thick at the deceleration time.  For
-high frequencies and small CNM densities, the peak luminosity of the
-slow component falls off (see right-hand panel of
-Fig.~\ref{fig:lightcurves}). Coincidentally, the fast component just
-compensates for this decline in the slow component luminosity,
-resulting in the total peak luminosity being nearly independent of
-$n_{18}$ across the parameter space. In fact, the optically thick peak
-luminosity in equation~\ref{eq:peakLum} provides a good approximation
-for the total peak luminosity for a fixed value of $n_{18}=2000$
-cm$^{-3}$.
+luminosity is linearly proportional to the jet energy and is virtually independent of the ambient density.  For high CNM densities and low frequencies this is to be expected because the emission is dominated by the slow component, which is optically thick at the deceleration time.  However, for high frequencies and small CNM densities, the peak luminosity of the slow component falls off (right panel of
+Fig.~\ref{fig:lightcurves}), but$-$coincidentally$-$the fast component just compensates for this decline, resulting in the total (fast + slow) peak luminosity being nearly independent of $n_{18}$ across the entire parameter space.  A good approximation to this universal peak luminosity is given by equation~\ref{eq:peakLum} for $n_{18}=2000$ cm$^{-3}$ in the optically-thick case.
 
-Fig.~\ref{fig:lightcurves} also shows that the peak time is a
-decreasing function of the ambient gas density. The peak occurs after
-the deceleration time when the emitting region transitions from
-optically thick to optically thin, and this transition occurs later
-for larger ambient gas densities. However, at high frequencies and low
-densities the slow component is optically thin at the deceleration
-time, and thus its peak time is an increasing function of nuclear gas
-density. In particular, at 30 GHz, the slow component light curves
-peaks later for $n_{18}$=2 cm$^{-3}$ than for $n_{18}$=60 cm$^{-3}$.
+Fig.~\ref{fig:lightcurves} also shows that the peak time decreases with the ambient gas density.  Across most of the parameter space the peak occurs after the deceleration time, when the emitting region transitions from
+optically thick to optically thin, as occurs later for larger $n_{18}$. However, at high frequencies and low densities the slow component is optically thin at the deceleration time, and thus its peak time is an increasing function of $n_{18}$. At 30 GHz, the slow component peaks later for $n_{18}$=2 cm$^{-3}$ than for $n_{18}$=60 cm$^{-3}$.
 
 
 \begin{figure*} 
@@ -1072,24 +1050,15 @@ peaks later for $n_{18}$=2 cm$^{-3}$ than for $n_{18}$=60 cm$^{-3}$.
     light curves for a $5\times 10^{53}$ erg jet.}
 \end{figure*}
 
-The numerical light curves can be well fit with a broken power law of
-the form:
-
+The numerical light curves are well fit with a broken power law,
 \begin{equation}
-L_\nu (t) = L_{\nu, p} \frac{1}{2^{-1/s}}
+L_\nu (t) =\frac{L_{\nu, p}}{2^{-1/s}}
 \left[\left(\frac{t}{t_p}\right)^{-s
     a_1}+\left(\frac{t}{t_p}\right)^{-s a_1}\right]^{-1/s}, 
 \label{eq:lcAnal}
 \end{equation}
-
-where $L_{\nu, p}$ and $t_p$ is the peak luminosity and time given are
-the peak luminosity and time given by equations~\eqref{eq:peakLum}
-and~\eqref{eq:peakTime}, respectively. The light curve has a power law
-slope of $a_1$ at early times and transitions to power law slope $a_2$
-at late times. The sharpness of this transition is encapsulated in
-$s$. We find that $a_1\sim 1.9$, $a_2\sim -1.4$, and $s\sim 1.0$, best
-reproduce our numerical results. Note the late time power law slope is
-close to the analytic estimate in equation~\eqref{eq:tslope}.
+where $L_{\nu, p}$ and $t_p$ are the peak luminosity and time given given by equations~\eqref{eq:peakLum}
+and~\eqref{eq:peakTime}, respectively.  The parameter $s$ controls the sharpness of the transition between the early-time power-law slope $a_1$ and the late-time slope $a_2$.  Fitting to the numerical light curves, we find that $s\sim 1.0$, $a_1\sim 1.9$, and $a_2\sim -1.4$, the latter agreeing well with the analytic estimate in equation~\eqref{eq:tslope}.
 %%More precisely 1.94, -1.45, and 1.04 
 
 
