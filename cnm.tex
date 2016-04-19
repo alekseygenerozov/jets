@@ -212,7 +212,7 @@ jet has swept up only a fraction $\sim 1/\Gamma$ of its rest mass.  This occurs 
   r_{\rm dec}=\frac{r_{\rm sed}}{\Gamma^{2/(3-k)}}.
   \label{eq:rdec2}
 \end{equation}
-According to an observer along the jet axis, the jet reaches the Sedov and deceleration radii, respectively, at times given by
+According to an observer within the opening angle of the jet, the jet reaches the Sedov and deceleration radii, respectively, at times given by
 \begin{equation}
 t_{\rm sed} \simeq \frac{c}{r_{\rm sed}} \approx
 10 E_{54}^{-1/2}n_{18}^{1/2} {\rm year}
@@ -955,7 +955,7 @@ from equation~(\ref{eq:peakLumGen}),
 where we have adopted fiducial values for the power-law slope of the
 gas density profile, $k=1$, and the electron energy distribution,
 $p=2.3$.  The top and bottom lines apply, respectively, to the shocked
-CNM being optically thin and optically thick at the deceleration time.
+CNM being optically thin and optically thick at the deceleration time (as delineated by blue lines in Fig.~\ref{fig:diss}).
 
 The peak luminosity in the optically thin case depends sensitively on
 $n_{18}$, while in the optically thick regime the dependence on
@@ -994,13 +994,7 @@ optically thin regimes at 1 and 30 GHz.
 
 \begin{figure}
 \includegraphics[width=8cm]{diss.pdf}
-\caption{\label{fig:diss} Black lines fraction of the slow component
-  ($\Gamma=2$) kinetic energy dissipated by the reverse shock in
-  parameter space jet energy and $n_{18}$. Note that for late stages
-  of evolution the jet becomes nearly isotropic so that $E_{\rm
-    j}\approx E_{\rm j, iso}$. Red squares indicate the on-axis jet
-  simulations we have performed. Blue lines show where the slow
-  component of the jet optically thin/thick at the deceleration time.}
+\caption{\label{fig:diss} Isocontours of the fraction of the kinetic energy of the slow component of the jet ($\Gamma=2$) which is dissipated at the reverse shock in the parameter space of jet energy, $E_{\rm j}$, and CNM density, $n_{18}$.  Jet simulations performed in this paper are shown as red squares.  Blue lines delineate the parameter space where the slow component of the jet is optically thick/thick at the deceleration time at 1 GHz (left line) and 30 GHz (right line).}
 \end{figure}
 
 
@@ -1018,36 +1012,15 @@ curves for different energy jets and nuclear gas densities. The peak
 luminosity is linearly proportional to the jet energy and is virtually independent of the ambient density.  For high CNM densities and low frequencies this is to be expected because the emission is dominated by the slow component, which is optically thick at the deceleration time.  However, for high frequencies and small CNM densities, the peak luminosity of the slow component falls off (right panel of
 Fig.~\ref{fig:lightcurves}), but$-$coincidentally$-$the fast component just compensates for this decline, resulting in the total (fast + slow) peak luminosity being nearly independent of $n_{18}$ across the entire parameter space.  A good approximation to this universal peak luminosity is given by equation~\ref{eq:peakLum} for $n_{18}=2000$ cm$^{-3}$ in the optically-thick case.
 
-Fig.~\ref{fig:lightcurves} also shows that the peak time decreases with the ambient gas density.  Across most of the parameter space the peak occurs after the deceleration time, when the emitting region transitions from
+Fig.~\ref{fig:lightcurves} also makes clear that the peak time decreases with the ambient gas density.  Across most of the parameter space the peak occurs after the deceleration time, when the emitting region transitions from
 optically thick to optically thin, as occurs later for larger $n_{18}$. However, at high frequencies and low densities the slow component is optically thin at the deceleration time, and thus its peak time is an increasing function of $n_{18}$. At 30 GHz, the slow component peaks later for $n_{18}$=2 cm$^{-3}$ than for $n_{18}$=60 cm$^{-3}$.
 
 
 \begin{figure*} 
   \includegraphics[width=8cm]{lightcurves.pdf}
   \includegraphics[width=8cm]{lightcurves_comp.pdf}
-  \caption{\label{fig:lightcurves} \textit{Left panel:} On-axis
-    ($\theta_{\rm obs}=0$) radio light curves for jet energies of
-    $5\times 10^{53}$ erg ({\it opaque}) and $5\times 10^{51}$ erg
-    ({\it translucent}) and three different values of n$_{18}$: 2, 60,
-    and 2000 cm$^{-3}$.  Solid lines correspond to the light curves
-    from 1D jet simulations. When available ($n_{18}=60$ cm$^{-3}$ and
-    $n_{18}=2000$ cm$^{-3}$), we have plotted light curves from the 2D
-    jet simulations as dashed lines. Note we use $n\propto r^{-1}$ for
-    $n_{18}=$ 2 and 2000, but $r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$, as
-    this model had already been computed and since the 1D results
-    suggest that the density slope will have minimal impact on the
-    results (see $\S$~\ref{sec:profileComp}).  Radio upper limits and
-    detections are shown as triangles and squares respectively. The
-    single upper limit in the top panel is for D3-13 at 1.4 GHz (from
-    \citet{Bower+2011}). Gray triangles and squares in the middle
-    panel indicate upper limits and detections at 3.0 GHz (from
-    \citealt{Bower+2013}), while black triangles indicate upper limits
-    at 5.0 GHz (from \citealt{van-Velzen+2013}).  This data is
-    summarized Table 1 of~\citealt{Mimica+2015}. The single red
-    triangle corresponds a upper limit at 6.1 GHz for the PTF-09axc
-    flare from \citet{Arcavi+2014} \textit{Right panel:} Total
-    ({\it opaque}) and slow component ({\it translucent}) on-axis
-    light curves for a $5\times 10^{53}$ erg jet.}
+  \caption{\label{fig:lightcurves} \textit{Left:} Radio light curves as viewed on axis ($\theta_{\rm obs}=0$) for jet energies of $5\times 10^{53}$ erg ({\it opaque}) and $5\times 10^{51}$ erg
+    ({\it translucent}), each for different values of n$_{18}=$ 2 (blue), 60 (red), and 2000 (green) cm$^{-3}$.  Solid lines show the result of 1D simulations, while 2D light curves are shown as dashed lines (when available).  A gas density profile of $n\propto r^{-1}$ is assumed for $n_{18}=$ 2 and 2000 cm$^{-3}$, but $r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$.  Radio upper limits and detections are shown as triangles and squares, respectively.  The single upper limit in the top panel is for D3-13 at 1.4 GHz from \citet{Bower+2011}).  Gray triangles and squares in the middle panel indicate upper limits and detections at 3.0 GHz from \citet{Bower+2013}, while black triangles indicate upper limits at 5.0 GHz from \citet{van-Velzen+2013}.  The red triangle shows the 6.1 GHz upper limit on PTF-09axc from \citet{Arcavi+2014} \textit{Right:}  Same as the $5\times 10^{53}$ erg case on the left, but comparing the total light curve ({\it opaque}) to just the contribution from the slow component of the jet ({\it translucent}).}
 \end{figure*}
 
 The numerical light curves are well fit with a broken power law,
@@ -1066,7 +1039,7 @@ and~\eqref{eq:peakTime}, respectively.  The parameter $s$ controls the sharpness
 Fig.~\ref{fig:onOff} compares the light curves for observers aligned
 with the jet axis (on-axis) with those at an angle of 0.8 radians from
 the jet axis (off-axis).  While the on- and off-axis light curves agree well for $n_{18}=2000$ cm$^{-3}$, the off-axis luminosity for $n_{18}=60$ cm$^{-3}$ is smaller by a factor of a few before and near the
-peak.  However, at late times, as the jet becomes more isotropic, the light curve becomes largely independent of viewing angle.
+peak.  However, at late times as the jet becomes more isotropic, the light curve becomes largely independent of viewing angle.
 %{\bf AG note that the slow component is
  % relatively wide to begin with in the 2D simulation. Very off-axis
   %jets will be ~an order of magnitude dimmer for early times}.
