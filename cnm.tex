@@ -523,7 +523,7 @@ gas is turned into stars.  The gas density would thus be only a few times lower 
 
 \begin{figure} 
   \includegraphics[width=8cm]{cnm_plot.pdf}
-  \caption{\label{fig:param} Isocontours of $n_{18}$, the CNM density
+  \caption{\label{fig:param} Contours of $n_{18}$, the CNM density
     at $r = 10^{18}$ cm (blue lines), as a function of the stellar
     population in the galactic nucleus.  The star formation is
     parameterized assuming that a fraction $f_{\rm burst}$ of the
@@ -844,7 +844,7 @@ emission of SwJ1644.  Integrating equation~(\ref{eq:lum}) from $t = 0$
 to $\infty$ gives the isotropic equivalent energy of the jet, $E_{\rm
   ISO}$, where $L_{j,0}=0.4\, E_{\rm ISO}/t_0$.  The ratio of the
 beaming-corrected energy of the fast component is fixed to be 4\% of
-that of the slow sheath (\citealt{Mimica+2015}).
+that of the slow sheath.  Following the best-fit model of SwJ1644 in \citet{Mimica+2015}, we adopt values for the microphysical parameters characterizing the fraction of the post-shock thermal energy placed into relativistic electrons ($\epsilon_e$) and magnetic field ($\epsilon_B$), and the power-law slope of the electron energy distribution $p$, as summarized in Table \ref{tab:jetParams}.
 
 For our 1D simulations, we modify the geometry of the slow sheath to
 better mimick the results of the 2D simulations.  In our 2D models the
@@ -898,9 +898,9 @@ luminosities by a factor of $\lesssim 2$.
 
 \subsection{Analytic Estimates}
 \label{sec:analyt}
-In this section, we investigate the effects of the gas density
-profile, jet energy, and observer viewing angle on the observed
-synchrotron radio light curve.  
+%In this section, we investigate the effects of the gas density
+%profile, jet energy, and observer viewing angle on the observed
+%synchrotron radio light curve.  
 
 The dependence of the synchrotron peak luminosity, peak time, and late
 time luminosity power law slope on the ambient gas density and jet
@@ -934,10 +934,9 @@ CNM being optically thin and optically thick at the deceleration time (as deline
 
 The peak luminosity in the optically thin case depends sensitively on
 $n_{18}$, while in the optically thick regime the dependence on
-density is much weaker.  We have normalized the peak fluxes in
-equation (\ref{eq:peakLum}) to match those derived from our numerical
-results. From equation~\eqref{eq:tslope}, we expect the luminosity to
-decay a $L_\nu \propto t^{-1.5}$ at late times.
+density is much weaker.  The peak fluxes in equation (\ref{eq:peakLum}) are normalized to match those derived from our numerical results. 
+%From equation~\eqref{eq:tslope}, we expect the luminosity to
+%decay a $L_\nu \propto t^{-1.5}$ at late times.
 
 The time of maximum flux, for the same fiducial values ($k = 1$,
 $p=2.3$), is given by equation (\ref{eq:tpeakGen}),
@@ -956,20 +955,20 @@ t_p= \text{min}
 where again the normalizations are chosen to match our numerical
 results. 
 
-In general, a more energetic jet produces emission which
+In general, more energetic jets produce emission which
 peaks later in time.  However, the scaling of $t_p$ with $n_{18}$ is
 more complicated: if the emitting region is optically thick at the
-deceleration time, the peak time increases with CNM density. In this
-case the peak occurs when the self-absorption frequency passes through
+deceleration time, then the peak time increases with CNM density. In this
+case the peak flux occurs when the self-absorption frequency passes through
 the observing band, and occurs later if the nuclear gas density is
-higher. Otherwise, the peak time occurs near the deceleration time,
+higher. Otherwise, peak flux is achieved near the deceleration time,
 which is a decreasing function of $n_{18}$ (eq.~\ref{eq:tdec}).
-Fig.~\ref{fig:diss} shows the rough division line optically thick and
-optically thin regimes at 1 and 30 GHz.
+Fig.~\ref{fig:diss} shows the division between the optically-thick and
+optically-thin regimes at 1 and 30 GHz in the parameter space of jet energy and $n_{18}$.
 
 \begin{figure}
 \includegraphics[width=8cm]{diss.pdf}
-\caption{\label{fig:diss} Isocontours of the fraction of the kinetic energy of the slow component of the jet ($\Gamma=2$) which is dissipated at the reverse shock in the parameter space of jet energy, $E_{\rm j}$, and CNM density, $n_{18}$.  Jet simulations performed in this paper are shown as red squares.  Blue lines delineate the parameter space where the slow component of the jet is optically thick/thick at the deceleration time at 1 GHz (left line) and 30 GHz (right line).}
+\caption{\label{fig:diss} Contours of the fraction of the kinetic energy of the slow component of the jet ($\Gamma=2$) which is dissipated at the reverse shock in the parameter space of jet energy, $E_{\rm j}$, and CNM density, $n_{18}$.  The parameters of the suite of jet simulations presented in this paper are shown as red squares.  Blue lines delineate the parameter space where the slow component of the jet is optically thick/thick at the deceleration time at 1 GHz (left line) and 30 GHz (right line).  {\bf BDM: where is J1644+57? - color square green?}}
 \end{figure}
 
 
