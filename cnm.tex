@@ -128,18 +128,20 @@ inferred for AGN jets or inferred for SwJ1644
 (\citealt{Metzger+2012}).
 
 The low detection rate of hard X-ray TDEs may instead indicate that
-jets are intrinsically rare in these events, or that the conditions of the
-surrounding environment are unfavorable for producing bright emission.
-Jets could be rare if they require, for instance, a highly
+jets are intrinsically rare in these events, or that the conditions of
+the surrounding environment are unfavorable for producing bright
+emission.  Jets could be rare if they require, for instance, a highly
 super-Eddington accretion rate (\citealt{De-Colle+2012}), a TDE from a
-deeply plunging stellar orbit (\citealt{Metzger&Stone2015}), or a
-particularly strong magnetic flux threading the star
-(\citealt{Tchekhovskoy+2014,Kelley+2014}).  Alternatively, jet formation
-or its X-ray emission could be suppressed if the disk undergoes
-Lens-Thirring precession due to a misalignment between the angular
-momentum of the BH and that of the disrupted star
-(\citealt{Stone&Loeb2012}).  In the latter case, however, even a `dirty'
-jet could still be produced, which still produces luminous radio emission from CNM interaction.  
+deeply plunging stellar orbit (\citealt{Metzger&Stone2015}), a TDE in
+a retrograde and equatorial orbit with respect to the spin of the
+black hole \citep{Parfrey+2015}, or a particularly strong magnetic
+flux threading the star (\citealt{Tchekhovskoy+2014,Kelley+2014}).
+Alternatively, jet formation or its X-ray emission could be suppressed
+if the disk undergoes Lens-Thirring precession due to a misalignment
+between the angular momentum of the BH and that of the disrupted star
+(\citealt{Stone&Loeb2012}).  In the latter case, however, even a
+`dirty' jet could still be produced, which still produces luminous
+radio emission from CNM interaction.
 
 \citet{Bower+2013} and \citet{van-Velzen+2013} performed radio
 follow-up of optical/UV and soft X-ray TDE flares on timescales of
@@ -179,11 +181,7 @@ Previous works (\citealt{Bower+2013}; \citealt{van-Velzen+2013};
 encounter a similar gaseous environment as SwJ1644.  However, the
 density of the circumnuclear medium (CNM) depends sensitively on the
 input of mass from stellar winds and the processes responsible for
-heating the gas (\citealt{Quataert2004,Generozov+2015}).  In a
-classical gamma-ray burst, the jet emerges into an environment which
-is well-understood to be the wind of the massive stellar progenitor,
-or the ISM of the host galaxy.  However, a priori the CNM density
-encountered by a TDE jet could be orders of magnitude higher or lower.
+heating the gas (\citealt{Quataert2004,Generozov+2015}). 
 
 The first goal of this paper is to constrain the range of gas
 densities encountered by jetted TDEs using the semi-analytic model for
@@ -246,8 +244,8 @@ $\S\ref{sec:conc}$.
 
 %\subsubsection{Preliminary Considerations}
 
-Jet radio emission is primarily sensitive to the density of
-ambient gas near the Sedov radius, $r_{\rm sed}$, outside of which the jet has
+Jet radio emission is primarily sensitive to the density of ambient
+gas near the Sedov radius, $r_{\rm sed}$, outside of which the jet has
 swept up a gaseous mass exceeding its own. For a power law gas density
 profile, $n= n_{18} \left(r/r_{18}\right)^{-k}$,
 \begin{equation}
@@ -257,24 +255,29 @@ profile, $n= n_{18} \left(r/r_{18}\right)^{-k}$,
 \end{equation}
 where $E = E_{54}10^{54}$ erg is the isotropic equivalent energy,
 $r_{18} = r/10^{18}$ cm, and in the final equality we have taken $k =
-1$, typical of our results described later in this section.  For a powerful jet similar to SwJ1644, the deceleration radius is
-typically of order a parsec, but it can be as small as $10^{16}$ cm for a weak jet/outflow, such as that in ASASSN-14li.
+1$, typical of our results described later in this section.  For a
+powerful jet similar to SwJ1644, the deceleration radius is typically
+of order a parsec, but it can be as small as $10^{16}$ cm for a weak
+jet/outflow, such as that in ASASSN-14li.
 
-Although an initially relativistic jet will slow to sub-relativistic speeds at
-$r \sim r_{\rm sed}$, significant deceleration sets in earlier, once the
-jet has swept up only a fraction $\sim 1/\Gamma$ of its rest mass.  This occurs at a somewhat smaller radius,
+Although an initially relativistic jet will slow to sub-relativistic
+speeds at $r \sim r_{\rm sed}$, significant deceleration sets in
+earlier, once the jet has swept up only a fraction $\sim 1/\Gamma$ of
+its rest mass.  This occurs at a somewhat smaller radius,
 \begin{equation}
   r_{\rm dec}=\frac{r_{\rm sed}}{\Gamma^{2/(3-k)}}.
   \label{eq:rdec2}
 \end{equation}
-According to an observer within the opening angle of the jet, the jet reaches the Sedov and deceleration radii, respectively, at times given by
+According to an observer within the opening angle of the jet, the jet
+reaches the Sedov and deceleration radii, respectively, at times given
+by
 \begin{equation}
-t_{\rm sed} \simeq \frac{c}{r_{\rm sed}} \approx
+t_{\rm sed} \simeq \frac{r_{\rm sed}}{c} \approx
 10 E_{54}^{-1/2}n_{18}^{1/2} {\rm year}
  \end{equation} 
 \begin{equation}
 t_{\rm dec} \simeq
-\frac{c}{2\Gamma^{2} r_{\rm dec}} = \frac{t_{\rm
+\frac{r_{\rm dec}}{2\Gamma^{2} c} = \frac{t_{\rm
     sed}}{2\Gamma^{3(4-k)/(3-k)}} = \frac{t_{\rm sed}}{2\Gamma^{3}},
  \label{eq:tdec}
 \end{equation}
@@ -310,11 +313,13 @@ sphere of influence, $r_{\rm inf}$, the enclosed stellar and black
 masses are equal, $M_{\star}(r_{\rm inf})=\Mbh$.  We take $r_{\rm
   inf}=3.5 \Mbh[,7]^{0.6}$ (GSM15), where $\Mbh[,7]=\Mbh/10^7 \Msun$.
 
-The source term $q =\eta \rho_\star/\th$ is the mass injection
-rate per unit volume per unit time. The energy source term $\propto
-v_w^{2}$, parameterizes the heating rate of the gas, as physically
-results from stellar wind kinetic energy, supernovae, and black hole
-feedback.
+The source term $q$ is the mass injection rate per unit volume per
+unit time. We take $q=\eta \rho_{\star}/t_h$, where $\eta$ is a
+dimensionless efficiency parameter that depends on the properties of
+the stellar population and $t_h$ is the Hubble time. The energy source
+term $\propto v_w^{2}$, parameterizes the heating rate of the gas, as
+physically results from stellar wind kinetic energy, supernovae, and
+black hole feedback.
 
 GSM15 present analytic approximations for the
 densities and temperatures of steady state solutions to
@@ -444,14 +449,14 @@ Sedov radius, even for a very energetic jet, with an isotropic
 equivalent energy of $E=4\times 10^{54}$ erg in a CNM of particularly
 low density, $n_{18} \sim 1$ cm$^{-3}$.
 
-The presence of nuclear star
-cluster in the galactic center could produce another break in the
-stellar density profile near the outer edge of the NSC, which is
-typically located at $\sim 1-5$ pc \citep{Georgiev+2014}.  However,
-even a break radius of 1 pc will reside inside the Sedov radius,
-except for the combination of a powerful jet and relatively small CNM
-density, $n_{18}<30$ cm$^{-3}$.  Henceforth we neglect the effects of
-a break in the stellar density profile in our analysis.
+The presence of nuclear star cluster in the galactic center could
+produce another break in the stellar density profile near the outer
+edge of the NSC, which is typically located at $\sim 1-5$ pc
+\citep{Georgiev+2014}.  However, even a break radius of 1 pc will
+reside inside the Sedov radius, except for the combination of a
+powerful jet and relatively small CNM density, $n_{18}<30$ cm$^{-3}$.
+Henceforth we neglect the effects of a break in the stellar density
+profile in our analysis.
 
 
 \begin{figure}
@@ -1157,9 +1162,16 @@ the light curve becomes largely independent of viewing angle.
 
 \begin{figure}
 \includegraphics[width=8cm]{on_off.pdf}
-\caption{\label{fig:onOff} Comparison between on-axis (solid line) and off-axis (dashed line)
-  light curves from our 2D simulations.  The off-axis light curves are calculated for an observer viewing angle of $\theta_{\rm obs}$=0.8.  We adopt a density profile of $n\propto r^{-1}$ for $n_{18}=2000$ cm$^{-3}$ (top panel), but take $n\propto r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$ (bottom panel).  The latter profile was chosen for computational
-  convenience, as this model was previously computed in \citet{Mimica+2015}, and because our results are not sensitive to the precise density power-law slope ($\S$~\ref{sec:profileComp}).}
+\caption{\label{fig:onOff} Comparison between on-axis (solid line) and
+  off-axis (dashed line) light curves from our 2D simulations.  The
+  off-axis light curves are calculated for an observer viewing angle
+  of $\theta_{\rm obs}$=0.8.  We adopt a density profile of $n\propto
+  r^{-1}$ for $n_{18}=2000$ cm$^{-3}$ (top panel), but take $n\propto
+  r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$ (bottom panel).  The latter
+  profile was chosen for computational convenience, as this model was
+  previously computed in \citet{Mimica+2015}, and because our results
+  are not sensitive to the precise density power-law slope
+  ($\S$~\ref{sec:profileComp}).}
 \end{figure}
 
 %\subsubsection{Effect of gas density profile}
