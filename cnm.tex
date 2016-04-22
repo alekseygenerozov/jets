@@ -368,15 +368,17 @@ density profile. The stagnation radius is marked as a blue dot on each
 profile.
 
 As described in GSM15, the stagnation radius is approximately given by
-\begin{equation}
-r_s \simeq f(\delta) \frac{G M}{v_w^2},
+\begin{align}
+r_s &\simeq f(\delta) \frac{G M}{v_w^2}\\
+ &\simeq 0.4 \Mbh[,7] v_{500}^{-2} \,{\rm pc},
 \label{eq:rs}
-\end{equation}
+\end{align}
 %
-where $f(\delta)$ is a constant of order unity that depends on the
-slope of the stellar density profile $\delta$.  The gas density at the
-stagnation radius, $n(\rs)$, is determined by the rate at which
-stellar winds inject mass interior to this,
+where $v_{500}\equiv v_w/500 \,{\rm km\, s^{-1}}$ and $f(\delta)$ is a
+constant of order unity ($f(\delta)$=2.5 for our fiducial value of
+$\delta=1.7$).  The gas density at the stagnation radius, $n(\rs)$, is
+determined by the rate at which stellar winds inject mass interior to
+this,
 \begin{equation}
   \dot{M}=\frac{\eta M_{\rm \star}(\rs)}{t_h} \approx  2.8 \times 10^{-6} \Mbh[,7]^{0.22} \eta_{0.02} \left(\frac{r_s}{\rm
       pc}\right)^{1.3} \Msun \, {\rm yr}^{-1},
@@ -405,8 +407,6 @@ Substituting equation~\eqref{eq:rs} for $r_s$, we obtain
 n(r_s) \simeq 0.2 \, v_{500}^{0.4} \eta_{0.02} \Mbh[,7]^{-0.48} {\rm cm}^{-3},
 \label{eq:nrs2}
 \end{equation}
-where $v_{500}=v_w/\left(500 \,\mathrm{km\,\,
-    s^{-1}}\right)$. 
 %
 Near the stagnation radius, GSM15 found that the radial gas profile
 has a power-law slope of $k \approx (4\delta-1)/6$, which for our
@@ -426,14 +426,14 @@ Combining our assumed $n\propto r^{-1}$ profile with
 equation~\eqref{eq:nrs}, we obtain
 \begin{equation}
   n_{18}\simeq 0.6 \left(\frac{r_s}{\rm pc}\right)^{0.8}
-  \Mbh[,7]^{-0.28} \eta_{0.02} {\rm cm^{-3}},
+  \Mbh[,7]^{-0.28} \eta_{0.02} \, {\rm cm^{-3}},
   \label{eq:n18}
 \end{equation}
 %
 Substituting the stagnation radius (eq.~\ref{eq:rs}) into this
 expression gives
 \begin{equation}
-  n_{18}\simeq 0.3 \Mbh[,7]^{0.52} v_{500}^{-1.6} \eta_{0.02} {\rm
+  n_{18}\simeq 0.3 \Mbh[,7]^{0.52} v_{500}^{-1.6} \eta_{0.02} \, {\rm
     cm^{-3}}.
 \label{eq:n182}
 \end{equation} 
@@ -1377,9 +1377,14 @@ apply to spherical outflows as well as collimated jets.
 \begin{figure}
 \includegraphics[width=8.5cm]{e_contours1.pdf}
 \includegraphics[width=8.5cm]{e_contours2.pdf}
-\caption{\label{fig:econtours} {\it Top:} Upper limits and analytic light
-  curves at 5 GHz for different jet energies.  {\it Bottom:} Upper limits and
-  minimum synchrotron luminosity across the allowed range of $n_{18}$ as a function of time for different jet energies.  This is calculated as the minimum of the light curves calculated for the maximum allowed density of $n_{18} = 2000$ cm$^{-3}$ and the minimum allowed density of $n_{18}= 0.5$ cm$^{-3}$), as determined from our CNM modeling in $\S\ref{sec:densAllowed}$.}
+\caption{\label{fig:econtours} {\it Top:} Upper limits and analytic
+  light curves at 5 GHz for different jet energies.  {\it Bottom:}
+  Upper limits and minimum synchrotron luminosity across the allowed
+  range of $n_{18}$ as a function of time for different jet energies.
+  This is calculated as the minimum of the light curves calculated for
+  the maximum allowed density of $n_{18} = 2000$ cm$^{-3}$ and the
+  minimum allowed density of $n_{18}= 0.5$ cm$^{-3}$), as determined
+  from our CNM modeling in $\S\ref{sec:densAllowed}$.}
 \end{figure}
 
 Fig.~\ref{fig:hist} shows a histogram of the maximum jet energy which
@@ -1402,7 +1407,10 @@ of a solar type star. {\bf AG double check SwJ2058}.
 
 \begin{figure}
 \includegraphics[width=8.5cm]{hist.pdf}
-\caption{\label{fig:hist} Histogram of jet energies consistent with existing radio detections (ASSASN-14li, CSS100217, SwJ1644, and SwJ2058) and upper limits (Table 1 of \citealt{Mimica+2015} and \citealt{Arcavi+2014}), as summarized in Table~\ref{tab:enConstr}.}
+\caption{\label{fig:hist} Histogram of jet energies consistent with
+  existing radio detections (ASSASN-14li, CSS100217, SwJ1644, and
+  SwJ2058) and upper limits (Table 1 of \citealt{Mimica+2015} and
+  \citealt{Arcavi+2014}), as summarized in Table~\ref{tab:enConstr}.}
 \end{figure}
 
 \begin{table*}
