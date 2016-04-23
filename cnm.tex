@@ -37,7 +37,7 @@
 
 % write title (with email and institute)
 \title[Influence of CNM on TDE radio emission]{The influence of
-  cicumnuclear environment on the radio emission from TDE jets}
+  circumnuclear environment on the radio emission from TDE jets}
 \author[Generozov et al.]{ A. Generozov$^{1}$, P. Mimica$^{2}$,
   B. D. Metzger$^{1}$, D. Giannios$^{3}$, N. Stone$^{1}$,
   M.A. Aloy$^{2}$
@@ -70,7 +70,7 @@
   of TDE jets (as viewed both on and off-axis) across the allowed
   range of density profiles.  We find that bright radio emission is
   ubiquitous from a powerful jet such as {\it Swift} J1644+57, and we
-  quantify the relationship between the peak radio luminosity and jet
+  quantify the relationship between the radio luminosity and jet
   energy.  We use existing radio detections and upper limits to
   constrain the energy distribution of TDE jets.  Prospects for
   optimizing future radio follow-up, and for discovering jetted TDEs
@@ -108,7 +108,7 @@ variable X-ray emission, which likely originates from the base of the
 jet, these events are characterized by radio synchrotron emission.
 The latter, more slowly evolving, is powered by shocks formed at the
 interface between the jet and surrounding circumnuclear medium (CNM)
-\citep{Bloom+2011,Giannios&Metzger2011,Metzger+2012,De-Colle+2012,Mimica+2015},
+\citep{Bloom+2011,Giannios&Metzger2011,Metzger+2012,De-Colle+2012,Kumar+13,Mimica+2015},
 analagous to the afterglow of a gamma-ray burst.
 
 Although a handful of jetted TDE flares have been observed, their
@@ -119,16 +119,16 @@ theoretically predicted TDE rate
 \citep{Wang&Merritt2004,Stone&Metzger2016}.  One explanation for this
 discrepancy is that the majority of TDEs produce powerful jets, but
 their hard X-ray emission is relativistically beamed into a small
-angle $\theta_{\rm b}$ by the bulk motion of the jet, making them
+angle $\theta_{\rm b}$ by the motion of the jet, making them
 visible to only a small fraction of observers.  However, the inferred
 beaming fraction $f_b \approx \theta_{b}^{2}/2 \sim 10^{-5}-10^{-4}$
 would require $\theta_{\rm b} \sim 0.01$ and hence a jet with a bulk
 Lorentz factor of $\Gamma \gtrsim 1/\theta_{\rm b} \sim 100$, much
-higher than typically inferred for AGN jets or inferred for SwJ1644
+higher than inferred for AGN jets or by modeling SwJ1644
 (\citealt{Metzger+2012}).
 
-The low detection rate of hard X-ray TDEs may instead indicate that
-jets are intrinsically rare in these events, or that the conditions of
+The low detection rate of hard X-ray TDEs may instead indicate that powerful
+jet production is intrinsically rare, or that the conditions in
 the surrounding environment are unfavorable for producing bright
 emission.  Jets could be rare if they require, for instance, a highly
 super-Eddington accretion rate (\citealt{De-Colle+2012}), a TDE from a
@@ -171,12 +171,12 @@ The recent TDE flare ASSASN-14li (\citealt{Holoien+2016a}) was
 accompanied by transient radio emission, consistent with either a weak
 relativistic jet \citep{van-Velzen+2015} or a sub-relativistic outflow
 \citep{Alexander+2015,Krolik+16} of total energy $\sim
-10^{48}-10^{49}$ erg.  The 90 Mpc distance of ASSASN-14li, roughly ten
+10^{48}-10^{49}$ erg.  The 90 Mpc distance of ASSASN-14li, ten
 times closer than most previous TDE flares, implies that even if other
 TDEs were accompanied by similar emission, their radio afterglows
 would fall below existing upper limits.  The extreme contrast between
 the radio emission of SwJ1644 and ASSASN-14li indicates that the
-energy distribution of TDE jets is extremely broad.
+energy distribution of TDE jets is very broad.
 
 Previous works (\citealt{Bower+2013}; \citealt{van-Velzen+2013};
 \citealt{Mimica+2015}) have generally assumed that all TDE jets
@@ -344,14 +344,13 @@ profile.
 
 As described in GSM15, the stagnation radius is approximately given by
 \begin{align}
-r_s &\simeq f(\delta) \frac{G M}{v_w^2}\\
- &\simeq 0.4 \Mbh[,7] v_{500}^{-2} \,{\rm pc},
+r_s \simeq f(\delta) \frac{G M_{\bullet}}{v_w^2}
+  \simeq 0.4 \Mbh[,7] v_{500}^{-2} \,{\rm pc},
 \label{eq:rs}
 \end{align}
 %
 where $v_{500}\equiv v_w/500 \,{\rm km\, s^{-1}}$ and $f(\delta)$ is a
-constant of order unity ($f(\delta)$=2.5 for our fiducial value of
-$\delta=1.7$).  The gas density at the stagnation radius, $n(\rs)$, is
+constant of order unity, which in the second equality we take equal to its fiducial value of $f(\delta = 1.7)$=2.5. {\bf BDM: check equation}  The gas density at the stagnation radius, $n(\rs)$, is
 determined by the rate at which stellar winds inject mass interior to
 this,
 \begin{equation}
@@ -361,9 +360,9 @@ this,
 \end{equation}
 %
 where $M_{\star}(\rs)$ is the total stellar mass enclosed within the
-stagnation radius and the second equality was derived for our fiducial
-value of $\delta=1.7$, where $\eta_{0.02}=\eta/0.02$ is normalized to
-a fiducial value characteristic of an old stellar population.
+stagnation radius, $\eta_{0.02}=\eta/0.02$ is normalized to
+a fiducial value characteristic of an old stellar population, and the second equality again assumes our fiducial
+value of $\delta=1.7$.
 
 The density at the stagnation radius, $n(\rs)$, is estimated by
 equating the gas injected by stellar winds over a dynamical time at
@@ -383,22 +382,16 @@ n(r_s) \simeq 0.2 \, v_{500}^{0.4} \eta_{0.02} \Mbh[,7]^{-0.48} {\rm cm}^{-3},
 \label{eq:nrs2}
 \end{equation}
 %
-Near the stagnation radius, GSM15 found that the radial gas profile
+Inside the stagnation radius, GSM15 found that the radial gas profile
 has a power-law slope of $k \approx (4\delta-1)/6$, which for our
-fiducial value of $\delta$=1.7 gives $n \propto r^{-1}$. Furthermore,
-the density profile remains close to $n\propto r^{-1}$ for small radii
-of interest.\footnote{For cusp galaxies, the gas velocity asymptotes
-  to a constant value between the stagnation radius and break radius
-  (provided they are sufficiently far apart). In this region we
-  instead expect $n\propto r^{1-\delta}$.}  Thus, we adopt $n(r)=
-n_{18} (r/10^{18} {\rm cm})^{-1}$ as our fiducial density profile,
-where $n_{18}$ is the density at $r = 10^{18}$ cm.  In
-Appendix~\ref{app:core} we explore a core-like density profile, to
-which we compare our results for the jetted radio emission to the
-fiducial cusp case in $\S\ref{sec:profileComp}$ (Fig.~\ref{fig:cores}).
+fiducial value of $\delta=1.7$ gives $n \propto r^{-1}$.  For cusp galaxies, the gas profile flattens to $n\propto r^{1-\delta}$ between the stagnation radius and the stellar break radius; however, for our fiducial value of $\delta = 1.7$, the resulting profile $n\propto r^{1-\delta} \approx r^{-0.7}$ is only moderately changed.  Thus, for our fiducial profile we adopt
+\be
+n(r)= n_{18} \left(\frac{r}{10^{18} {\rm cm}}\right)^{-1},
+\label{eq:profile}
+\ee
+where $n_{18}$ is the density at $r = 10^{18}$ cm.  In $\S\ref{sec:profileComp}$ we show that our results for the jet radio emission are not significantly altered in the case of a core-like density profile (Appendix~\ref{app:core}) for a fixed value of $n_{18}$ (Fig.~\ref{fig:cores}).
 
-Combining our assumed $n\propto r^{-1}$ profile with
-equation~\eqref{eq:nrs}, we obtain
+Combining equations \eqref{eq:nrs} and (\ref{eq:profile}), we obtain
 \begin{equation}
   n_{18}\simeq 0.6 \left(\frac{r_s}{\rm pc}\right)^{0.8}
   \Mbh[,7]^{-0.28} \eta_{0.02} \, {\rm cm^{-3}},
@@ -413,25 +406,13 @@ expression gives
 \label{eq:n182}
 \end{equation} 
 %
-Although the gas density steepens near the break radius $r_b$ of the
-stellar density profile (Fig.~\ref{fig:profiles}), this will only
-affect the radio emission near its peak if $r_b$ lies inside of the
-Sedov radius (eq.~\ref{eq:rdec}).  Figure \ref{fig:profiles} shows the
-Sedov radius for different energy jets and the gas density profiles
-there.  The measured break radii of all but four the galaxies in
-\citet{Lauer+2007} exceeds 10 parsecs.  This is well outside of the
-Sedov radius, even for a very energetic jet, with an isotropic
-equivalent energy of $E=4\times 10^{54}$ erg in a CNM of particularly
-low density, $n_{18} \sim 1$ cm$^{-3}$.
-
-The presence of nuclear star cluster in the galactic center could
-produce another break in the stellar density profile near the outer
-edge of the NSC, which is typically located at $\sim 1-5$ pc
-\citep{Georgiev+2014}.  However, even a break radius of 1 pc will
-reside inside the Sedov radius, except for the combination of a
-powerful jet and relatively small CNM density, $n_{18}<30$ cm$^{-3}$.
-Henceforth we neglect the effects of a break in the stellar density
-profile in our analysis.
+As shown in Fig.~\ref{fig:profiles}, the gas density profile also steepens outside the break radius $r_b$ of the
+stellar density profile.  However, this will only impact the radio emission near its maximum if $r_b$ lies inside of the
+Sedov radius, $r_{\rm sed}$ (eq.~\ref{eq:rdec}).  The lines in Fig.~\ref{fig:profiles} are colored according to the combination of jet energy and CNM density $n_{18}$ which results in $r = r_{\rm sed}$ at each radius.  The measured break radii of all but four of the \citet{Lauer+2007} galaxies exceed 10 parsecs, which greatly exceeds $r_{\rm sed}$ even in the case of a very energetic jet ($E=4\times 10^{54}$ erg) in a low density CNM of $n_{18} \sim 1$ cm$^{-3}$.  The presence of a nuclear star cluster in the galactic center could produce another break in the stellar density profile near the outer edge of the cluster, which is typically located at $r_{\rm nsc} \sim 1-5$ pc \citep{Georgiev+2014}.  But even in this case, only particular combinations of high $E$/low $n_{\rm 18}$ result in $r_{\rm sed} < r_{\rm nsc}$.  We therefore neglect the effects of an outer break int he stellar density profile in our analysis.  
+% However, even a break radius of 1 pc resides inside of $r_{\rm sed}$, except for the combination of a
+%powerful jet and relatively small CNM density, $n_{18}<30$ cm$^{-3}$.
+%Henceforth we neglect the effects of a break in the stellar density
+%profile in our analysis.
 
 
 \begin{figure}
