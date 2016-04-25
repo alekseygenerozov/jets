@@ -384,12 +384,21 @@ n(r_s) \simeq 0.2 \, v_{500}^{0.4} \eta_{0.02} \Mbh[,7]^{-0.48} {\rm cm}^{-3},
 %
 Inside the stagnation radius, GSM15 found that the radial gas profile
 has a power-law slope of $k \approx (4\delta-1)/6$, which for our
-fiducial value of $\delta=1.7$ gives $n \propto r^{-1}$.  For cusp galaxies, the gas profile flattens to $n\propto r^{1-\delta}$ between the stagnation radius and the stellar break radius; however, for our fiducial value of $\delta = 1.7$, the resulting profile $n\propto r^{1-\delta} \approx r^{-0.7}$ is only moderately changed.  Thus, for our fiducial profile we adopt
-\be
-n(r)= n_{18} \left(\frac{r}{10^{18} {\rm cm}}\right)^{-1},
+fiducial value of $\delta=1.7$ gives $n \propto r^{-1}$.  For cusp
+galaxies, the gas profile flattens to $n\propto r^{1-\delta}$ between
+the stagnation radius and the stellar break radius; however, for our
+fiducial value of $\delta = 1.7$, the resulting profile $n\propto
+r^{1-\delta} \approx r^{-0.7}$ is only moderately changed.  Thus, for
+our fiducial profile we adopt 
+\begin{equation} n(r)= n_{18} \left(\frac{r}{10^{18}
+    {\rm cm}}\right)^{-1},
 \label{eq:profile}
-\ee
-where $n_{18}$ is the density at $r = 10^{18}$ cm.  In $\S\ref{sec:profileComp}$ we show that our results for the jet radio emission are not significantly altered in the case of a core-like density profile (Appendix~\ref{app:core}) for a fixed value of $n_{18}$ (Fig.~\ref{fig:cores}).
+\end{equation}
+where $n_{18}$ is the density at $r = 10^{18}$ cm.  In
+$\S\ref{sec:profileComp}$ we show that our results for the jet radio
+emission are not significantly altered in the case of a core-like
+density profile (Appendix~\ref{app:core}) for a fixed value of
+$n_{18}$ (Fig.~\ref{fig:cores}).
 
 Combining equations \eqref{eq:nrs} and (\ref{eq:profile}), we obtain
 \begin{equation}
@@ -406,9 +415,23 @@ expression gives
 \label{eq:n182}
 \end{equation} 
 %
-As shown in Fig.~\ref{fig:profiles}, the gas density profile also steepens outside the break radius $r_b$ of the
-stellar density profile.  However, this will only impact the radio emission near its maximum if $r_b$ lies inside of the
-Sedov radius, $r_{\rm sed}$ (eq.~\ref{eq:rdec}).  The lines in Fig.~\ref{fig:profiles} are colored according to the combination of jet energy and CNM density $n_{18}$ which results in $r = r_{\rm sed}$ at each radius.  The measured break radii of all but four of the \citet{Lauer+2007} galaxies exceed 10 parsecs, which greatly exceeds $r_{\rm sed}$ even in the case of a very energetic jet ($E=4\times 10^{54}$ erg) in a low density CNM of $n_{18} \sim 1$ cm$^{-3}$.  The presence of a nuclear star cluster in the galactic center could produce another break in the stellar density profile near the outer edge of the cluster, which is typically located at $r_{\rm nsc} \sim 1-5$ pc \citep{Georgiev+2014}.  But even in this case, only particular combinations of high $E$/low $n_{\rm 18}$ result in $r_{\rm sed} < r_{\rm nsc}$.  We therefore neglect the effects of an outer break in the stellar density profile in our analysis.  
+As shown in Fig.~\ref{fig:profiles}, the gas density profile also
+steepens outside the break radius $r_b$ of the stellar density
+profile.  However, this will only impact the radio emission near its
+maximum if $r_b$ lies inside of the Sedov radius, $r_{\rm sed}$
+(eq.~\ref{eq:rdec}).  The lines in Fig.~\ref{fig:profiles} are colored
+according to the combination of jet energy and CNM density $n_{18}$
+which results in $r = r_{\rm sed}$ at each radius.  The measured break
+radii of all but four of the \citet{Lauer+2007} galaxies exceed 10
+parsecs, which greatly exceeds $r_{\rm sed}$ even in the case of a
+very energetic jet ($E=4\times 10^{54}$ erg) in a low density CNM of
+$n_{18} \sim 1$ cm$^{-3}$.  The presence of a nuclear star cluster in
+the galactic center could produce another break in the stellar density
+profile near the outer edge of the cluster, which is typically located
+at $r_{\rm nsc} \sim 1-5$ pc \citep{Georgiev+2014}.  But even in this
+case, only particular combinations of high $E$/low $n_{\rm 18}$ result
+in $r_{\rm sed} < r_{\rm nsc}$.  We therefore neglect the effects of
+an outer break in the stellar density profile in our analysis.
 % However, even a break radius of 1 pc resides inside of $r_{\rm sed}$, except for the combination of a
 %powerful jet and relatively small CNM density, $n_{18}<30$ cm$^{-3}$.
 %Henceforth we neglect the effects of a break in the stellar density
@@ -1224,7 +1247,7 @@ Source & $D_L$ & t & $\nu$ & $\nu L_{\nu}$ & Ref. & Energy\\
 Detections \\
 \hline
 ASSASN-14li & & & & & &  $10^{48}-10^{49}$\\
-CSS100217 & & & & & & $1.7\times 10^{50}-6\times 10^{51}$\\
+CSS100217 & & & & & 6 & $1.7\times 10^{50}-6\times 10^{51}$\\
 SwJ1644 & & & & & & $5\times 10^{53}$\\
 SwJ2058 & & & & & & $5\times 10^{53}$\\ 
 \hline 
@@ -1293,7 +1316,7 @@ are summarized as follows.
   transient (from \citealt{Mimica+2015}) and run it through a range of
   different density profiles. Motivated by the above results for the
   expected range of gas densities we take the density at $10^{18}$ cm,
-  to be $n_{18}$ 2, 11, 60, 345, or 2000 cm$^{-3}$. We find bright
+  $n_{18}$ to be 2, 11, 60, 345, or 2000 cm$^{-3}$. We find bright
   radio emission at a few GHz across this entire range of densities,
   with the peak luminosity only weakly dependent on the chosen value
   of $n_{18}$. The time of the peak luminosity depends, however, on
