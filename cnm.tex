@@ -264,7 +264,7 @@ where in the final equality we have again taken $k = 1$.
 In the absence of large scale inflows, the dominant source of gas in
 the CNM of quiescent galaxies is winds from stars in the galactic
 nucleus. We bracket the range of possible nuclear gas densities using
-a simple steady-state, spherical symmetric, hydrodynamic model
+a simple steady-state, spherically symmetric, hydrodynamic model
 including mass and energy injection from stellar winds. The relevant
 equations are (e.g. \citealt{Holzer+1970}; \citealt{Quataert2004})
 \begin{align}
@@ -279,15 +279,15 @@ equations are (e.g. \citealt{Holzer+1970}; \citealt{Quataert2004})
 \label{eq:model}
 \end{align}
 where $\rho = \mu m_p n$, $v$, $p$, and $s$ are the density, velocity,
-pressure (assumed to be an ideal gas with $\mu = 0.62$ and adiabatic
-index $\gamma_{\rm ad}$=5/3), and specific entropy, respectively. The
-enclosed mass $\Menc = M_{\bullet} + M_{\star}$ includes both the
-black hole mass $M_{\bullet}$ and enclosed stellar mass $M_{\star}
-\propto \int \rho_{\star}r^{2}dr$, where $\rho_{\star}$ is the stellar
-density. At the radius of the sphere of influence, $r_{\rm inf}$, the
-enclosed stellar and black masses are equal, $M_{\star}(r_{\rm
-  inf})=\Mbh$.  We take $r_{\rm inf}=3.5 \Mbh[,7]^{0.6}$ (GSM15),
-where $\Mbh[,7]=\Mbh/10^7 \Msun$.
+pressure (assumed to be an ideal gas with $\mu = 0.62$), and specific
+entropy of the gas, respectively.  $\gamma_{\rm ad}=5/3$ is the
+adiabatic index. The enclosed mass $\Menc = M_{\bullet} + M_{\star}$
+includes both the black hole mass $M_{\bullet}$ and enclosed stellar
+mass $M_{\star} \propto \int \rho_{\star}r^{2}dr$, where
+$\rho_{\star}$ is the stellar density. At the radius of the sphere of
+influence, $r_{\rm inf}$, the enclosed stellar and black masses are
+equal, $M_{\star}(r_{\rm inf})=\Mbh$.  We take $r_{\rm inf}=3.5
+\Mbh[,7]^{0.6}$ (GSM15), where $\Mbh[,7]=\Mbh/10^7 \Msun$.
 
 The source term $q$ is the mass injection rate per unit volume per
 unit time. We take $q=\eta \rho_{\star}/t_h$, where $\eta$ is a
@@ -316,8 +316,7 @@ Most galaxies have $0<\gamma<1$, and are classified into two broad
 categories: ``core" galaxies with $\gamma<0.3$ and ``cusp" galaxies with
 $\gamma>0.5$. Assuming spherical symmetry and a constant mass-to-light
 ratio, the inner stellar profile translates to a stellar density of
-$\rho_\star\propto r^{-1-\gamma}=r^{-\delta}$. Core galaxies have
-$1<\delta<1.3$, while cusp galaxies have $1.5<\delta<2$.
+$\rho_\star\propto r^{-1-\gamma}=r^{-\delta}$. 
 
 Cusp-like stellar density profiles, are the most relevant to TDEs for
 two reasons.  First, only a low mass black hole ($\Mbh\lsim 10^8
@@ -334,7 +333,7 @@ for the galaxies in \citet{Stone&Metzger2016} (their Table C).
 Given sufficiently strong heating, a one-dimensional steady-state
 model for the CNM is characterized by an inflow-outflow structure.
 The velocity passes through zero at the ``stagnation radius'', $\rs$.
-Mass loss from stars interior to the stagnation radius is accreted,
+Mass loss from stars interior to the stagnation radius flows inwards,
 while that outside of $\rs$ is unbound in an outflow from the nucleus.
 Fig.~\ref{fig:profiles} shows example radial profiles of the
 steady-state gas density calculated for a core and a cusp stellar
@@ -371,7 +370,7 @@ the gas mass enclosed at this location.  This gives
 \begin{align}
   &\frac{4 \pi}{3} \rs^3 \mu m_p n(r_s) \simeq \dot{M} t_{\rm dyn}
   (\rs) \nonumber\\
-  &\Rightarrow n(r_s) \simeq 0.21 \eta_{0.02} \Mbh[,7]^{-0.28} \left(\frac{r_s}{\rm
+  &\Rightarrow n(r_s) \simeq 0.2 \eta_{0.02} \Mbh[,7]^{-0.28} \left(\frac{r_s}{\rm
       pc}\right)^{-0.2} {\rm cm}^{-3}.
 \label{eq:nrs}
 \end{align}
@@ -415,7 +414,7 @@ expression gives
 \label{eq:n182}
 \end{equation} 
 %
-As shown in Fig.~\ref{fig:profiles}, the gas density profile also
+As shown in Fig.~\ref{fig:profiles}, the gas density profile 
 steepens outside the break radius $r_b$ of the stellar density
 profile.  However, this will only impact the radio emission near its
 maximum if $r_b$ lies inside of the Sedov radius, $r_{\rm sed}$
@@ -458,7 +457,7 @@ profile, $n_{18}$.  We assume that star formation occurs in two
 bursts, an old burst of age comparable to the Hubble time $t_{\rm h} =
 10^{10}$ yr, and a ``young'' burst of variable age $t_{\rm burst} \ll
 t_{\rm h}$ which contributes a fraction $f_{\rm burst}$ of the stellar
-mass.
+mass. We assume a Salpeter IMF for both stellar populations.
 
 For a sufficiently large burst of age $\lesssim$ 40 Myr, gas heating
 is dominated by the energetic winds of massive star
@@ -554,7 +553,7 @@ Myr after a starburst, the injected stellar wind material is hot
 ($T\gsim 10^{7}$ K) due to the thermalized wind kinetic energy.
 At later times, SNe Ia provide intermittent heating, but the stellar wind
 material that accumulates on small radial scales between successive SNe Ia
-may become much cooler ($T \lesssim 10^{4}$ K), causing it to condense
+may be much cooler ($T \lesssim 10^{4}$ K), causing it to condense
 into dense clumps.
 
 The propagation of jets through a medium containing clumps, clouds or
@@ -604,7 +603,7 @@ formation.
     nominal stagnation radius (eq.~\ref{eq:rs}).  In these regions
     discreteness effects not captured by our formalism are potentially
     important. The red line shows the approximate location of the
-    Galactic Center in this parameter space.}
+    Galactic Center in this parameter space (see text for details).}
 \end{figure}
 
 
@@ -656,7 +655,7 @@ The Galactic Center also contains a cold circumnuclear ring
 (e.g. \citealt{Becklin+1982}) with an opening angle of
 $\sim$12$\pm3^{\circ}$ \citep{Lau+2013} and a spatially averaged
 density of $\sim 10^{5}$ cm$^{-3}$ (although this varies by a few
-orders of magnitude across the ring--see \citealt{Ferriere2012} and
+orders of magnitude throughout the ring--see \citealt{Ferriere2012} and
 references therein). Additionally, the volume from $\sim$0.4 pc-2.5 pc
 is filled with warm, ionized atomic gas with density of $\sim 900$
 cm$^{-3}$ \citep{Ferriere2012}. This gas cannot be accounted for in
@@ -901,7 +900,7 @@ space the peak occurs after the deceleration time, when the emitting
 region transitions from optically thick to optically thin, as occurs
 later for larger $n_{18}$. However, at high frequencies and low
 densities the slow component is optically thin at the deceleration
-time, and thus its peak time is an decreasing function of $n_{18}$. At
+time, and thus its peak time is a decreasing function of $n_{18}$. At
 30 GHz, the slow component peaks later for $n_{18}$=2 cm$^{-3}$ than
 for $n_{18}$=60 cm$^{-3}$.
 
@@ -912,24 +911,22 @@ for $n_{18}$=60 cm$^{-3}$.
   \caption{\label{fig:lightcurves} \textit{Left:} Radio light curves
     as viewed on axis ($\theta_{\rm obs}=0$) for jet energies of
     $5\times 10^{53}$ erg ({\it darker-shaded lines}) and $5\times
-    10^{51}$ erg ({\it lighter-shaded lines}), each for different
-    values of n$_{18}=$ 2 (blue), 60 (red), and 2000 (green)
-    cm$^{-3}$.  Solid lines show the result of 1D simulations, while
-    2D light curves are shown as dashed lines (when available).  A gas
-    density profile of $n\propto r^{-1}$ is used for all of the 1D
-    light curves, but we use $n\propto r^{-1.5}$ for the 2D
-    $n_{18}$=60 cm$^{-3}$ light curve.  Radio upper limits and
-    detections are shown as triangles and squares, respectively.  The
-    single upper limit in the top panel is for D3-13 at 1.4 GHz from
-    \citet{Bower2011}.  Gray triangles and squares in the middle panel
-    indicate upper limits and detections at 3.0 GHz from
-    \citet{Bower+2013}, while black triangles indicate upper limits at
-    5.0 GHz from \citet{van-Velzen+2013}.  The red triangle shows the
-    6.1 GHz upper limit on PTF-09axc from \citet{Arcavi+2014}
-    \textit{Right:} Same as the $5\times 10^{53}$ erg case on the
-    left, but comparing the total light curve ({\it darker-shaded
-      lines}) to just the contribution from the slow component of the
-    jet ({\it lighter-shaded lines}).}
+    10^{51}$ erg ({\it lighter-shaded lines}), for values of n$_{18}=$
+    2 (blue), 60 (red), and 2000 (green) cm$^{-3}$.  Solid lines show
+    the result of 1D simulations, while 2D light curves are shown as
+    dashed lines (when available).  A gas density profile of $n\propto
+    r^{-1}$ is used for all of the 1D light curves, but we use
+    $n\propto r^{-1.5}$ for the 2D $n_{18}$=60 cm$^{-3}$ light curve.
+    Radio upper limits and detections are shown as triangles and
+    squares, respectively.  The single upper limit in the top panel is
+    for D3-13 at 1.4 GHz from \citet{Bower2011}.  Gray triangles and
+    squares in the middle panel indicate upper limits and detections
+    at 3.0 GHz from \citet{Bower+2013}, while black triangles indicate
+    upper limits at 5.0 GHz from \citet{van-Velzen+2013}.  The red
+    triangle shows the 6.1 GHz upper limit on PTF-09axc from
+    \citet{Arcavi+2014} \textit{Right:} $5\times 10^{53}$ erg light
+    curves ({\it darker-shaded lines}) and corresponding component
+    light curves ({\it lighter-shaded lines}).}
 \end{figure*}
 
 The numerical light curves are well fit with a broken power law,
@@ -986,22 +983,18 @@ because for larger ambient densities, the jet only samples small
 radii, where the core and cusp profiles are similar (see
 Fig.~\ref{fig:profiles}). It is only at lower densities, for which the
 Sedov radius lies outside of the flattening of the core density
-profile, that noticeable differences emerge.  {\bf AG why are there
-  differences at early times for $n_{18}=2$ cm$^{-3}$ but not
-  $n_{18}=2000$ cm$^{-3}$. Is this simply an artifact of the starting
-  radius?}  
-% {\bf \color{orange}PM: that is probably the case. For
-%   n18=2 the simulations start at $5\times 10^{16}$ cm, while for
-%   n18=2000 they start at $10^{15}$ cm. }
+profile, that noticeable differences emerge.  {\bf Early time
+  differences are (probably) an artifact of the starting radius...}
+
 
 The bottom panel of Fig.~\ref{fig:cores} compares the 1D on-axis light
 curves for $n\propto r^{-1}$ and $n\propto r^{-1.5}$ gas density
 profiles with $n_{18}=60$. For most times the light curves agree well,
 which is perhaps not suprising because the density normalization in
 the two models agrees at $10^{18}$ cm, which is close to the Sedov
-radius.  We conclude that the radio light curve is insensitive to the
-precise gas density profile, for a fixed value of the gas density near
-the deceleration/Sedov radius.
+radius for these density profiles.  We conclude that the radio light
+curve is insensitive to the precise gas density profile, for a fixed
+value of the gas density near the deceleration/Sedov radius.
 
 \begin{figure} 
   \includegraphics[width=8cm]{fig_cores.pdf}
@@ -1037,31 +1030,36 @@ solutions are shown in Fig.~\ref{fig:diss} as red squares.
 
 Fig.~\ref{fig:diss} shows that for high ambient densities and/or low
 energy jets, the reverse shock dissipates an order unity fraction of
-the kinetic energy of the jet.  This is confirmed by
-Fig.~\ref{fig:reverse}, which shows the 5 GHz light curve for $E =
-5\times 10^{53}$ erg, $n_{18} = 2$, separated into contributions from
-the forward and reverse shocks.  However, this somewhat overstates the
-contribution of the reverse shock to the observed emission because the
-latter is strongly attenuated by self absorption below 10 GHz, which
-has not been included in the reverse shock light curve in
-Fig.~\ref{fig:reverse}.  While the reverse shock dissipates an even
-larger fraction of the jet energy for higher ambient density, its
-emission will be even more heavily absorbed.  We conclude that the
-reverse shock emission can be neglected for the high energy jets with
-$E\gtrsim 10^{53}$ erg, consistent with the reverse shock not
-contributing appreciably to SwJ1644 (\citealt{Metzger+2012}).
+the kinetic energy of the jet.  Even for our highest energy/lowest
+energy model ($n_{18}=2$ cm$^{-3}$ and $E_j=5\times 10^{53}$
+erg). This reverse shock will dissipate of order $~20\%$ of the jet
+energy.  This is confirmed by Fig.~\ref{fig:reverse}, which shows the
+5 GHz light curve for $E = 5\times 10^{53}$ erg, $n_{18} = 2$,
+separated into contributions from the forward and reverse shocks {\bf
+  AG: I get the energy from the reverse shock light curve is $\sim
+  15\%$ of that in the total/forward shock, but at 30 GHz it is
+  $\sim30\%$ and most energy is coming out at higher frequencies}.
+However, this somewhat overstates the contribution of the reverse
+shock to the observed emission because the latter is strongly
+attenuated by self absorption below 10 GHz, which has not been
+included in the reverse shock light curve in Fig.~\ref{fig:reverse}.
+While the reverse shock dissipates an even larger fraction of the jet
+energy for higher ambient density, its emission will be even more
+heavily absorbed.  We conclude that the reverse shock emission can be
+neglected for the high energy jets with $E\gtrsim 10^{53}$ erg,
+consistent with the reverse shock not contributing appreciably to
+SwJ1644 (\citealt{Metzger+2012}).
 
 For low energy jets, we find that the jet is crushed at early times,
 even for low values of $n_{18}$. In the case of very low power jets
 the reverse shock structure is replaced by a number of recollimation
-shocks (similar to the structure seen in e.g, Fig. 1 of Mimica et
-al. 2009 ApJ 696, 1142). While this is potentially a very interesring
-case since the emitting volume from recollimation shocks can be larger
-than from a single reverse shock, because of a much more complex
-structure we defer a more detailed study of the emission from the
-reverse/recollimation shocks in the the low energy case to future
+shocks (similar to the structure seen in
+e.g. \citealt{Mimica+2009}). While this is potentially a very
+interesting case since the emitting volume from recollimation shocks
+can be larger than from a single reverse shock, because of a much more
+complex structure we defer a more detailed study of the emission from
+the reverse/recollimation shocks in the the low energy case to future
 work.
-
 
 As a final note of caution, even if the reverse shock dissipates most
 of the bulk kinetic energy into thermal energy, the latter can be
@@ -1077,14 +1075,14 @@ either side of the black hole, centered about the deceleration radius
 
 \begin{figure}
   \includegraphics[width=8cm]{reverse.pdf}
-  \caption{\label{fig:reverse} Contributions to the radio light curve
-    from the forward shock (red line), reverse shock (blue), and the
-    total light curve (black) for a jet of energy $5\times 10^{53}$
-    erg and CNM density $n\propto r^{-1}$ with $n_{18} = 2$ cm$^{-3}$.
-    The reverse shock light curve excludes synchrotron
-    self-absorption, which when included in the full calculation
-    results in large attenuation of the emission, such that the total
-    light curve is dominated by the forward shock.}
+  \caption{\label{fig:reverse} Radio light curve from the forward
+    shock (red line), reverse shock (blue), and the total light curve
+    (black) for a jet of energy $5\times 10^{53}$ erg and CNM density
+    $n\propto r^{-1}$ with $n_{18} = 2$ cm$^{-3}$.  The reverse shock
+    light curve excludes synchrotron self-absorption, which when
+    included in the full calculation results in large attenuation of
+    the emission, such that the total light curve is dominated by the
+    forward shock.}
 \end{figure}
 
 \subsection{Parameter Space of Jet-CNM Interaction}
@@ -1191,8 +1189,8 @@ limit on the jet energy of
 E\lsim 6 \times 10^{48} \left(\frac{F_{\rm ul}}{50 \,\mu{\rm Jy}}\right)^{1.1}
   \left(\frac{d_L}{200 \,{\rm Mpc}}\right)^{2.3} {\rm erg},
 \end{equation}
-
-where we have assumed $n_{18}=2000$ cm$^{-3}$ (but the constraint is not
+%
+where we have taken $n_{18}=2000$ cm$^{-3}$ (but the constraint is not
 overly sensitive to this choice). 
 
 {\bf This section implicitly assumes that late time slopes of the 1D
@@ -1232,24 +1230,24 @@ apply to spherical outflows as well as collimated jets.
   from our CNM modeling in $\S\ref{sec:densAllowed}$.}
 \end{figure}
 
-Fig.~\ref{fig:hist} shows a histogram of the maximum jet energy which
-is consistent with the existing radio upper limits and detections of
-TDE flares with radio follow-up (see also Table \ref{tab:enConstr}).
-The detected events include ASSASN-14li, CSS100217, SwJ1644, and
-SwJ2058.  For ASSASN-14li and SwJ1644 the lightcurves are well
-sampled, and the energy of the jet is relatively well constrained to
-be $\approx 10^{48}-10^{49}$ erg for ASSASN-14li
-(\citealt{van-Velzen+2015, Alexander+2015}) and $5\times 10^{53}$ erg
-for SwJ1644 (\citealt{Mimica+2015}).  The single detection {\bf AG
-  Drake actually has multiple detections} of CSS100217 requires an
-outflow energy of $1.7\times 10^{50}-6\times 10^{51}$ erg.  For
-SwJ2058, we take the jet energy to be $5\times 10^{53}$ erg, similar
-to its twin SwJ1644.  On one hand, the observed radio luminosity of
-$\nu L_{\nu }\approx 10^{42}$ erg s$^{-1}$ \citep{Cenko+2012} requires
-an outflow at least this energetic.  On the other hand, the inferred
-energy of $5\times 10^{53}$ erg is comparable to the total rest mass
-energy available from the disruption of a solar type star. {\bf AG
-  double check SwJ2058}.
+Fig.~\ref{fig:hist} shows a histogram of the maximum jet energies
+consistent with the existing radio upper limits and detections of TDE
+flares with radio follow-up (see also Table \ref{tab:enConstr}).  The
+detected events include ASSASN-14li, CSS100217, SwJ1644, and SwJ2058.
+For ASSASN-14li and SwJ1644 the lightcurves are well sampled, and the
+energy of the jet is relatively well constrained to be $\approx
+10^{48}-10^{49}$ erg for ASSASN-14li (\citealt{van-Velzen+2015,
+  Alexander+2015}) and $5\times 10^{53}$ erg for SwJ1644
+(\citealt{Mimica+2015}).  The single detection {\bf AG Drake actually
+  has multiple detections} of CSS100217 requires an outflow energy of
+$1.7\times 10^{50}-6\times 10^{51}$ erg.  For SwJ2058, we take the jet
+energy to be $5\times 10^{53}$ erg, similar to its twin SwJ1644.  On
+one hand, the observed radio luminosity of $\nu L_{\nu }\approx
+10^{42}$ erg s$^{-1}$ \citep{Cenko+2012} requires an outflow at least
+this energetic.  On the other hand, the inferred energy of $5\times
+10^{53}$ erg is comparable to the total rest mass energy available
+from the disruption of a solar type star. {\bf AG double check
+  SwJ2058}.
 
 \begin{figure}
 \includegraphics[width=8.5cm]{hist.pdf}
@@ -1346,7 +1344,7 @@ are summarized as follows.
   transient (from \citealt{Mimica+2015}) and run it through a range of
   different density profiles. Motivated by the above results for the
   expected range of gas densities we take the density at $10^{18}$ cm,
-  $n_{18}$ to be 2, 11, 60, 345, or 2000 cm$^{-3}$. We find bright
+  $n_{18}$, to be 2, 11, 60, 345, or 2000 cm$^{-3}$. We find bright
   radio emission at a few GHz across this entire range of densities,
   with the peak luminosity only weakly dependent on the chosen value
   of $n_{18}$. The time of the peak luminosity depends, however, on
