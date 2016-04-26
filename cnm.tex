@@ -567,34 +567,22 @@ may become much cooler ($T \lesssim 10^{4}$ K), causing it to condense
 into dense clumps.
 
 The propagation of jets through a medium containing clumps, clouds or
-stars has been studied in the context of AGNs (e.g., Wang, Wiita \&
-Hooda 2000 ApJ 534, 201; Choi, Wiita \& Ryu 2007 ApJ 655, 769) and
-microquasars (e.g., Araudo, Bosch-Ramon \& Romero 2009, A\& 503, 673;
-Perucho \& Bosch-Ramon 2012 A\&A 539, 57). It was found that the
-presence of these obstacles has an effect on the long-term jet
-stability, as well as observational signatures at high
-energies. However, the sotiation is different in the case of GRB and
-TDE afterglows, where the emission is expected to be similar for a
-clumpy and a smooth medium with the same average density
+stars has been studied in the context of AGNs (e.g.,
+\citealt{WangWiita+2000, ChoiWiita+2007}) and microquasars (e.g.,
+\citealt{Araudo+2009,Perucho+2012}). It was found that the presence of
+these obstacles has an effect on the long-term jet stability, as well
+as observational signatures at high energies. However, the situation
+is different in the case of GRB and TDE afterglows, where the emission
+is expected to be similar for a clumpy and a smooth medium with the
+same average density
 (e.g.~\citealt{Nakar&Granot2007,van-Eerten+2009,Mimica&Giannios2011}). The
 reason is that that the angular width of the outflow (especially of
 the slow component) is much larger than in the case of AGNs and
 microquasars. In fact, it is large enough to make the overall effect
 of the presence of any inhomogeneities in the external medium
-minor. We nota that even the presence of a star directly in the path
+minor. We note that even the presence of a star directly in the path
 of a two-component jet would probably not result in the disruption of
 the jet ({\bf, MA, please comment on this}).
-
-
-The radio afterglow emission is expected to be similar for a clumpy
-and a smooth medium with the same average density
-(e.g.~\citealt{Nakar&Granot2007,van-Eerten+2009,Mimica&Giannios2011}),
-if only for the reason that the jet will heat and ablate the clouds,
-such that the effective shock jump conditions across the ablation
-region would be similar to those of a homogeneous medium.  {\bf AG
-  these references show that density jumps don't create sharp features
-  for a spherical, relativistic blast wave but they don't really
-  address the Newtonian regime BDM: Pere can address this}.
 
 On the other hand, a fraction of the cold gas will also condense into
 stars.  To estimate the star formation rate, we assume that the CNM
@@ -729,26 +717,26 @@ We calculate the synchrotron radio emission from the jet-CNM shock
 interaction across the physically plausible range of nuclear gas
 densities.  We perform both one- and two-dimensional (axisymmetric)
 relativistic hydrodynamical simulations using the numerical code
-MRGENESIS (Mimica, Giannios \& Aloy 2009 A\&A 494, 879). MRGENESIS
-periodically outputs snapshots with the state of the fluid in its
-numerical grid. These snapshots are then used as an input to the
-radiative transfer code SPEV (Mimica et al. 2009 ApJ 696, 1142). SPEV
-detects the forward shock at the jet-CNM interface, accelerates the
-non-thermal electrons behind the shock front, evolves the electron
-energy and spatial distribution in time, and computes the non-thermal
-emission taking into account the synchrotron self-absorption
-(interested readers can find many more technical details see Mimica et
-al. 2016 arXiv:1603.05832). We use the same numerical grid resolution
-as in \citet{Mimica+2015}.
+MRGENESIS \citep{MimicaGianniosAloy2009}. MRGENESIS periodically
+outputs snapshots with the state of the fluid in its numerical
+grid. These snapshots are then used as an input to the radiative
+transfer code SPEV \citep{Mimica+2009}. SPEV detects the forward shock
+at the jet-CNM interface, accelerates the non-thermal electrons behind
+the shock front, evolves the electron energy and spatial distribution
+in time, and computes the non-thermal emission taking into account the
+synchrotron self-absorption (interested readers can find many more
+technical details see \citealt{Mimica+2016}). We use the same
+numerical grid resolution as in \citet{Mimica+2015}.
 
 For the jet angular structure, we adopt the preferred two-component
 model for SwJ1644 from \citet{Mimica+2015}, corresponding to a fast,
 inner core with Lorentz factor $\Gamma = 10$, surrounded by a slower,
-$\Gamma=2$ outer sheath.  In our 2D simulations the fast inner core
-spans an angular interval $0-0.1\ {\rm radians}$, while the slow outer
-sheath extends from $0.1\ {\rm radians}$ to $0.5\ {\rm rad}$.  The
-time dependence of the jet kinetic luminosity is given by
-(\citealt{Mimica+2015})
+$\Gamma=2$ outer sheath. A schematic depiction of the jet geometry is
+show in Fig.~\ref{fig:jetstruct}.  In our 2D simulations the fast
+inner core spans an angular interval $0-0.1\ {\rm radians}$, while the
+slow outer sheath extends from $0.1\ {\rm radians}$ to $0.5\ {\rm
+  rad}$.  The time dependence of the jet kinetic luminosity is given
+by (\citealt{Mimica+2015})
 \begin{equation}\label{eq:lum}
 L_{\rm j, ISO}(t) = L_{j,0}\max\left[1, (t/t_0)\right]^{-5/3},
 \end{equation}
@@ -764,6 +752,12 @@ characterizing the fraction of the post-shock thermal energy placed
 into relativistic electrons ($\epsilon_e$) and magnetic field
 ($\epsilon_B$), and the power-law slope of the electron energy
 distribution $p$, as summarized in Table \ref{tab:jetParams}.
+
+\begin{figure}
+\includegraphics[width=8.5cm]{jetstruct.pdf}
+\caption{\label{fig:jetstruct} Initial geometry of the jet used for 2D
+  (axisymmmetric) simulations.}
+\end{figure}
 
 For our 1D simulations, we modify the geometry of the slow sheath to
 better mimick the results of the 2D simulations.  In our 2D models the
@@ -785,19 +779,6 @@ isotropizes in 2D.  At lower densities ($n_{18}=60$ cm$^{-3}$), the
 agreement is not as good, with the 1D simulations predicting
 systematically higher luminosities by a factor of $\lesssim 2$.
 
-%Nonetheless, using a
-%broadened slow component in 1D leads to better agreement with 2D
-%results {\bf AG: Is this actually true for n18=60?}.
-
-% Fig~\ref{fig:components}, which shows the relative contributions of
-% the fast and slow components to the 5 GHz light curve of a $5 \times
-% 10^{53}$ erg jet for different ambient gas densities. For
-% $n_{18}=2000$ cm$^{-3}$, the slow component dominates for nearly all
-% times.  For $n_{18}=2$ cm$^{-3}$, the fast component dominates at
-% early times and at the peak of the light curve, while the slow
-% component dominates after $\sim$1 year. In general, the fast component
-% is more important for early times, higher frequencies and smaller
-% ambient gas densities.
 
 \begin{figure}
 \includegraphics[width=8cm]{1d_2d.pdf}
@@ -811,9 +792,6 @@ systematically higher luminosities by a factor of $\lesssim 2$.
   slope for a fixed value of $n_{18}$ ($\S$~\ref{sec:profileComp})}.
 \end{figure}
 
-%\subsection{Light curves}
-%\label{sec:lightcurves}
-%In this section, we investigate the effects of the gas density profile, jet energy, and observer viewing angle on the observed synchrotron radio light curve. 
 
 \subsection{Analytic Estimates}
 \label{sec:analyt}
@@ -1281,7 +1259,7 @@ energy available from the disruption of a solar type star. {\bf AG
   double check SwJ2058}.
 
 \begin{figure}
-\includegraphics[width=8.5cm]{hist.pdf}[!htpb]
+\includegraphics[width=8.5cm]{hist.pdf}
 \caption{\label{fig:hist} Histogram of jet energies consistent with
   existing radio detections (ASSASN-14li, CSS100217, SwJ1644, and
   SwJ2058) and upper limits (Table 1 of \citealt{Mimica+2015} and
