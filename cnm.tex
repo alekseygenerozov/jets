@@ -111,11 +111,11 @@ and surrounding circumnuclear medium (CNM)
 \citep{Bloom+2011,Giannios&Metzger2011,Metzger+2012,De-Colle+2012,Kumar+13,Mimica+2015},
 analagous to the afterglow of a gamma-ray burst.
 
-Although a handful of jetted TDE flares have been observed, their
-volumetric rate is a very small fraction $\sim 10^{-5}-10^{-4}$ of the
-observed TDE flare rate (e.g., \citealt{Burrows+2011},
-\citealt{Brown+2015}), and an even smaller fraction of the
-theoretically predicted TDE rate
+Although a handful of jetted TDE flares have been observed, the
+apparent volumetric rate is a very small fraction $\sim
+10^{-5}-10^{-4}$ of the observed TDE flare rate (e.g.,
+\citealt{Burrows+2011}, \citealt{Brown+2015}), and an even smaller
+fraction of the theoretically predicted TDE rate
 \citep{Wang&Merritt2004,Stone&Metzger2016}.  One explanation for this
 discrepancy is that the majority of TDEs produce powerful jets, but
 their hard X-ray emission is relativistically beamed into a small
@@ -466,33 +466,35 @@ mass. We assume a Salpeter IMF for both stellar populations.
 
 For a sufficiently large burst of age $\lesssim$ 40 Myr, gas heating
 is dominated by the energetic winds of massive star
-winds.\footnote{Type II SNe are also an important heating source,
-  which dominates stellar winds after $\sim$6 Myr \citep{Voss+2009},
-  but since they are intermittent we neglect their contribution to the
-  gas heating for simplicity.}  In this case the mass return ($\eta$)
-and heating parameters ($v_w$) are calculated as described in Appendix
-C of GSM15.\footnote{GSM15 included terms to account for mass and
-  energy injection from stars on the lower main sequence (in their
-  equations C1 and C2). These are always sub-dominant and we exclude
-  them for simplicity.}  Given $\eta(t_{\rm burst},f_{\rm burst})$ and
-$v_w(t_{\rm burst},f_{\rm burst})$, we calculate $n_{18}$ following
-equation~\eqref{eq:n182}.
+winds.\footnote{Type II SNe are also an important heating source.  In
+  a young stellar population, the power from Type II supernovae
+  exceeds that from massive stellar winds after $\sim$6 Myr
+  \citep{Voss+2009}. However, due to discreteness effects the heating
+  from massive star winds will be more important on small scales.}  In
+this case the mass return ($\eta$) and heating parameters ($v_w$) are
+calculated as described in Appendix C of GSM15.\footnote{GSM15
+  included terms to account for mass and energy injection from stars
+  on the lower main sequence (in their equations C1 and C2). These are
+  always sub-dominant and we exclude them for simplicity.}  Given
+$\eta(t_{\rm burst},f_{\rm burst})$ and $v_w(t_{\rm burst},f_{\rm
+  burst})$, we calculate $n_{18}$ following equation~\eqref{eq:n182}.
 
 For an older stellar population, a few different sources contribute to
 gas heating, including Type Ia Supernovae (SNe)\footnote{Unbound
-  debris streams from TDEs provide another source of heating localized
-  in the galactic center (\citealt{Guillochon+2015a}), which we
-  neglect.} and AGN feedback.  We focus on quiescent phases, during
-which SNe Ia dominate.  As discussed in GSM15, SNe Ia clear out the
-gas external to a critical radius, $r_{\rm Ia}$, where the interval
-between successive Ia SNe equals the dynamical (gas inflow) timescale.
-For an old stellar population, $n_{18}$ is estimated by equating
-$r_{\rm Ia}$ with the stagnation radius in equation~\eqref{eq:n18}.
-The Ia radius is calculated as described in GSM15 at times $t>300
-\,{\rm Myr}$ after star formation, and is taken to be constant for $t
-= 40-300$ Myr.\footnote{GSM15 incorrectly extrapolated the Ia rate
-  valid at times $t>300 \,{\rm Myr}$ back to a time $t = 3$ Myr, which
-  is unphysical as no white dwarfs would have formed by this time.
+  debris streams from TDEs potentially provide another source of
+  heating localized in the galactic center
+  (\citealt{Guillochon+2015a}), which we neglect.} and AGN feedback.
+We focus on quiescent phases, during which SNe Ia dominate.  As
+discussed in GSM15, SNe Ia clear out the gas external to a critical
+radius, $r_{\rm Ia}$, where the interval between successive Ia SNe
+equals the dynamical (gas inflow) timescale.  For an old stellar
+population, $n_{18}$ is estimated by equating $r_{\rm Ia}$ with the
+stagnation radius in equation~\eqref{eq:n18}.  The Ia radius is
+calculated as described in GSM15 at times $t>300 \,{\rm Myr}$ after
+star formation, and is taken to be constant for $t = 40-300$
+Myr.\footnote{GSM15 incorrectly extrapolated the Ia rate valid at
+  times $t>300 \,{\rm Myr}$ back to a time $t = 3$ Myr, which is
+  unphysical as no white dwarfs would have formed by this time.
   Although its qualitative impact on our results is minimal, here we
   instead take the Ia rate to be 0 for $ t < 40$ Myr.}
 
@@ -542,9 +544,10 @@ dominated by SN Ia and we expect $n_{18}\sim 10 \Mbh[,7]^{-0.4}-100
 \Mbh[,7]^{-0.4}$ cm$^{-3}$.
 
 In summary, the CNM densities of quiescent galaxies vary from
-min($n_{18}) \sim 0.03-0.5$ cm$^{-3}$ to max($n_{18})\sim 10^{3}$
-cm$^{-3}$, with a characteristic value of $n_{18}\sim 10-100$
-cm$^{-3}$ in the host galaxies of observed TDEs.
+min($n_{18}) \sim 0.03 \Mbh[,7]^{0.5}-0.5 \Mbh[,7]^{-0.4}$ cm$^{-3}$
+to max($n_{18})\sim 10^{3} \Mbh[,7]^{0.5}$ cm$^{-3}$, with a
+characteristic value of $n_{18}\sim 10 \Mbh[,7]^{-0.4}-100
+\Mbh[,7]^{-0.4}$ cm$^{-3}$ in the host galaxies of observed TDEs.
 
 \subsubsection{Mass drop-out from star formation?}
 
@@ -1343,7 +1346,9 @@ are summarized as follows.
 \item We estimate the nuclear gas densities expected from injection of
   stellar wind material for different star formation histories. We
   find that that range of gas densities at 10$^{18}$ cm is $n_{18}
-  \sim$ 0.5-2000 cm$^{-3}$.
+  \sim 0.5 \Mbh[,7]^{-0.4} - 2000 \Mbh[,7]^{0.5}$ cm$^{-3}$, with an
+  expected $n_{18}$ of $10 \Mbh[,7]^{-0.4}-100 \Mbh[,7]^{-0.4}$
+  cm$^{-3}$ for host galaxies of observed TDEs.
 
 \item The slope of the gas density profile depends on the slope of the
   stellar density profile. We expect a typical TDE host to have cuspy
