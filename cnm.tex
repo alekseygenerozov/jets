@@ -323,7 +323,7 @@ $\gamma>0.5$. Assuming spherical symmetry and a constant mass-to-light
 ratio, the inner stellar profile translates to a stellar density of
 $\rho_\star\propto r^{-1-\gamma}=r^{-\delta}$. 
 
-Cusp-like stellar density profiles, are the most relevant to TDEs for
+Cusp-like stellar density profiles are the most relevant to TDEs for
 two reasons.  First, only a low mass black hole ($\Mbh\lsim 10^8
 \Msun$) can disrupt a main sequence star, and low mass low mass black
 holes are more commonly characterized by cusp-like profiles.
@@ -375,8 +375,8 @@ the gas mass enclosed at this location.  This gives
 \begin{align}
   &\frac{4 \pi}{3} \rs^3 \mu m_p n(r_s) \simeq \dot{M} t_{\rm dyn}
   (\rs) \nonumber\\
-  &\Rightarrow n(r_s) \simeq 0.2 \eta_{0.02} \Mbh[,7]^{-0.28} \left(\frac{r_s}{\rm
-      pc}\right)^{-0.2} {\rm cm}^{-3}.
+  & n(r_s) \simeq 0.2 \eta_{0.02} \Mbh[,7]^{-0.28}
+  \left(\frac{r_s}{\rm pc}\right)^{-0.2} {\rm cm}^{-3}.
 \label{eq:nrs}
 \end{align}
 %
@@ -547,7 +547,7 @@ In summary, the CNM densities of quiescent galaxies vary from
 min($n_{18}) \sim 0.03 \Mbh[,7]^{0.5}-0.5 \Mbh[,7]^{-0.4}$ cm$^{-3}$
 to max($n_{18})\sim 10^{3} \Mbh[,7]^{0.5}$ cm$^{-3}$, with a
 characteristic value of $n_{18}\sim 10 \Mbh[,7]^{-0.4}-100
-\Mbh[,7]^{-0.4}$ cm$^{-3}$ in the host galaxies of observed TDEs.
+\Mbh[,7]^{-0.4}$ cm$^{-3}$ in the host galaxies of most observed TDEs.
 
 \subsubsection{Mass drop-out from star formation?}
 
@@ -644,9 +644,9 @@ derived from the full star formation history of the GC from
 \citet{Pfuhl+2011} (their Fig.~14).  Our formalism gives values of
 $n_{18}\sim 4-6$ cm$^{-3}$, which are too low compared to
 observations.  Discrepency at this level is not surprising because our
-model in spherically symmetric, while in reality many of the massive
+model is spherically symmetric, while in reality many of the massive
 stars in the GC are concentrated in two counter-rotating disks
-\citep{Genzel+2003} with a top heavy IMF \citep{Bartko+2010}.  The
+\citep{Genzel+2003} with a possibly top heavy IMF \citep{Bartko+2010}.  The
 disk stars extend from $\sim 10^{17}-10^{18}$ cm and inject $\sim
 10^{-3} \Msun$ yr$^{-1}$ of stellar wind material, much more than the
 $\sim 4 \times 10^{-5} \Msun$ yr$^{-1}$ expected for the global star
@@ -654,7 +654,7 @@ formation history, explaining the large density of hot gas.
 
 In short, accurate modeling of the gas distribution in a particular
 galactic nucleus, requires detailed knowledge of the distribution of
-stars. Our goal here is to bracket the range of possible nuclear gas
+stars. Our goal here has been to bracket the range of possible nuclear gas
 densities, by considering a broad range of stellar populations.
 
 The Galactic Center also contains a cold circumnuclear ring
@@ -665,7 +665,8 @@ orders of magnitude throughout the ring--see \citealt{Ferriere2012} and
 references therein). Additionally, the volume from $\sim$0.4-2.5 pc
 is filled with warm, ionized atomic gas with density of $\sim 900$
 cm$^{-3}$ \citep{Ferriere2012}. This gas cannot be accounted for in
-our model, and may originate from larger scale inflows.
+our model, and may originate from larger scale inflows or a disrupted
+giant molecular cloud.
 
 
 \begin{table}
@@ -764,10 +765,10 @@ distribution $p$, as summarized in Table \ref{tab:jetParams}.
 \end{figure}
 
 For our 1D simulations, we modify the geometry of the slow sheath to
-better mimick the results of the 2D simulations.  In our 2D models the
+better mimic the results of the 2D simulations.  In our 2D models the
 sheath is injected within a relatively narrow angular interval;
 however, at late stages of evolution the bow shock created by the
-jet-CNM interaction spans a much larger angular range due to laterial
+jet-CNM interaction spans a much larger angular range due to lateral
 spreading.  To account for the slow component becoming almost
 isotropic near peak emission in our 2D simulations \citep[bottom two
 panels of Fig.~8 in][]{Mimica+2015}, we instead take the slow
@@ -898,7 +899,7 @@ and 2000 cm$^{-3}$) and three different values of the
 10^{52}$, $5\times 10^{53}$ erg).
 
 The left panels of Fig.~\ref{fig:lightcurves} show example light
-curves for different energy jets and nuclear gas densities. The peak
+curves for different jet energies and nuclear gas densities. The peak
 luminosity is roughly linearly proportional to the jet energy and is
 virtually independent of the ambient density.  For high CNM densities
 and low frequencies this is to be expected because the emission is
@@ -944,12 +945,14 @@ for $n_{18}$=60 cm$^{-3}$.
     at 3.0 GHz from \citet{Bower+2013}, while black triangles indicate
     upper limits at 5.0 GHz from \citet{van-Velzen+2013}.  The red
     triangle shows the 6.1 GHz upper limit on PTF-09axc from
-    \citet{Arcavi+2014} \textit{Right:} $5\times 10^{53}$ erg light
-    curves ({\it darker-shaded lines}) and corresponding component
-    light curves ({\it lighter-shaded lines}).}
+    \citet{Arcavi+2014} \textit{Right:} $5\times 10^{53}$ erg on-axis
+    light curves from left column ({\it darker-shaded lines}) and
+    corresponding slow component light curves ({\it lighter-shaded
+      lines}).}
 \end{figure*}
 
-The numerical light curves are well fit with a broken power law,
+The numerical light curves are well fit with a broken power law (see
+e.g.~\citealt{Leventis+2012}),
 \begin{equation}
 L_\nu (t) =\frac{L_{\nu, p}}{2^{-1/s}}
 \left[\left(\frac{t}{t_p}\right)^{-s
@@ -983,8 +986,8 @@ the light curve becomes largely independent of viewing angle.
   off-axis (dashed line) light curves from our 2D simulations.  The
   off-axis light curves are calculated for an observer viewing angle
   of $\theta_{\rm obs}$=0.8.  We adopt a density profile of $n\propto
-  r^{-1}$ for $n_{18}=2000$ cm$^{-3}$ (top panel), but take $n\propto
-  r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$ (bottom panel).  The latter
+  r^{-1}$ for $n_{18}=2000$ cm$^{-3}$ (bottom panel), but take $n\propto
+  r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$ (top panel).  The latter
   profile was chosen for computational convenience, as this model was
   previously computed in \citet{Mimica+2015}, and because our results
   are not sensitive to the precise density power-law slope
@@ -1030,10 +1033,10 @@ value of the gas density near the deceleration/Sedov radius.
 
 
 \subsubsection{Reverse Shock Emission?}
-Our calculations shown in Figs.~\ref{fig:1D2DB}$-$\ref{fig:cores}
-include only emission from the forward shock (shocked CNM), while in
-principle the reverse shock (shocked jet) also contributes to the
-radio light curve.
+Our calculations shown in Figs.~\ref{fig:1D2DB}
+and~\ref{fig:lightcurves}-\ref{fig:cores} include only emission from
+the forward shock (shocked CNM), while in principle the reverse shock
+(shocked jet) also contributes to the radio light curve.
 
 The fraction of the initial kinetic energy of the jet which is
 dissipated by the reverse shock provides a first-order estimate of its
@@ -1116,7 +1119,7 @@ just the slow, wide angle component.  The fast, narrow component of
 the jet dominates at high frequencies and low densities, while the
 slow, wide component dominates for large $n_{18}$ and low frequencies.
 Remarkably, the total peak luminosity is nearly independent of the
-ambient gas density; this is entirely coincidental, as the fast and
+ambient gas density; this is in part coincidental, as the fast and
 slow peak fluxes individually vary across the parameter space.
 
 The right column of Fig.~\ref{fig:jetContours} compares our numerical
@@ -1157,8 +1160,8 @@ optically thin prior to the deceleration time.
 \begin{figure*}
   \includegraphics[width=16cm]{tp_contours_new.pdf}
   \caption{\label{fig:ContoursTp} {\it {Left:}} Thick lines show peak
-    time in the parameter space of jet energy and ambient gas density
-    at $10^{18}$ cm, calculated from the grid of on-axis jet
+    time in days in the parameter space of jet energy and ambient gas
+    density at $10^{18}$ cm, calculated from the grid of on-axis jet
     simulations in Table~\ref{tab:jetParams}. Thin lines show contours
     of peak time for the slow component light curve
     (see~\ref{sec:numerical}). {\it Right:} Analytic scaling for the
@@ -1201,7 +1204,7 @@ now found to hold independent of the CNM environment.
 
 Radio observations conducted from several months to years after a
 tidal disruption flare, which tightly constrain the peak flux of a
-putative jet, can be used to constrain the jet energy.
+putative jet, can therefore be used to constrain the jet energy.
 Equation~\eqref{eq:peakLum} shows that an upper limit of $F_{\rm ul}$
 on the flux density of a source at distance $d_L$ results in an upper
 limit on the jet energy of
@@ -1352,7 +1355,7 @@ are summarized as follows.
   find that that range of gas densities at 10$^{18}$ cm is $n_{18}
   \sim 0.5 \Mbh[,7]^{-0.4} - 2000 \Mbh[,7]^{0.5}$ cm$^{-3}$, with an
   expected $n_{18}$ of $10 \Mbh[,7]^{-0.4}-100 \Mbh[,7]^{-0.4}$
-  cm$^{-3}$ for host galaxies of observed TDEs.
+  cm$^{-3}$ for host galaxies of most observed TDEs.
 
 \item The slope of the gas density profile depends on the slope of the
   stellar density profile. We expect a typical TDE host to have cuspy
@@ -1393,9 +1396,10 @@ provided by the Servei de Inform\`atica of the University of Valencia.
 \appendix
 \section{Core Profile}
 \label{app:core}
-Fig.~\ref{fig:cores} compares the results of radio light curves from jets propagating in core and cusp like gas density
-profiles (Fig.~\ref{fig:profiles}).  We use the following analytic expression to approximate the core
-galaxy profile
+Fig.~\ref{fig:cores} compares the results of radio light curves from
+jets propagating in core and cusp like gas density profiles
+(Fig.~\ref{fig:profiles}).  We use the following analytic expression
+to approximate the core galaxy CNM profile in Fig.~\ref{fig:profiles}
 \begin{align}
 \begin{cases}
 n=n(r_s) k(x) & 0.4 \leq x\leq 2.0\\
@@ -1505,7 +1509,7 @@ and~\eqref{eq:Fpeak1}, we find
 After peak, we expect that the flux scales as 
 
 \begin{equation}
-F_{\nu}\propto t^{\frac{21-8k-15p+4kp}{10-2k}}
+F_{\nu}\propto t^{\frac{21-8k-15p+4kp}{10-2k}}.
 \label{eq:tslope}
 \end{equation}
 
