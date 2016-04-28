@@ -43,7 +43,7 @@
   M.A. Aloy$^{2}$
   \\
   $^{1}$Columbia Astrophysics Laboratory, Columbia University, 550 West 120th Street, New York, NY 10027\\
-  $^{2}$Departamento de Astronomia y Astrofisica, Universidad de Valencia, E-46100 Burjassot, Spain\\
+  $^{2}$Departamento de Astronom\'{\i}ia y Astrof\'{\i}sica, Universidad de Valencia, E-46100 Burjassot, Spain\\
   $^{3}$Department of Physics and Astronomy, Purdue University, 525
   Northwestern Avenue, West Lafayette, IN 47907, USA}
 
@@ -238,9 +238,9 @@ of order a parsec, but it can be as small as $10^{16}$ cm for a weak
 jet/outflow, such as that in ASASSN-14li.
 
 Although an initially relativistic jet will slow to sub-relativistic
-speeds at $r \sim r_{\rm sed}$, significant deceleration sets in
-earlier, once the jet has swept up only a fraction $\sim 1/\Gamma$ of
-its rest mass.  This occurs at a somewhat smaller radius,
+speeds at $r \sim r_{\rm sed}$, significant deceleration already sets
+in at the deceleration radius (after the jet has swept up a
+fraction $\sim 1/\Gamma$ of its rest mass),
 \begin{equation}
   r_{\rm dec}=\frac{r_{\rm sed}}{\Gamma^{2/(3-k)}}.
   \label{eq:rdec2}
@@ -570,13 +570,16 @@ is different in the case of GRB and TDE afterglows, where the emission
 is expected to be similar for a clumpy and a smooth medium with the
 same average density
 (e.g.~\citealt{Nakar&Granot2007,van-Eerten+2009,Mimica&Giannios2011}). The
-reason is that that the angular width of the outflow (especially of
-the slow component) is much larger than in the case of AGNs and
+reason is that the angular width of the outflow (especially of the
+slow component) is much larger than in the case of AGNs and
 microquasars. In fact, it is large enough to make the overall effect
 of the presence of any inhomogeneities in the external medium
-minor. We note that even the presence of a star directly in the path
-of a two-component jet would probably not result in the disruption of
-the jet ({\bf, MA, please comment on this}).
+minor. An analogous effect is found in case of SN remnants sweeping a
+clumpy medium (Obergaulinger, M.; Chimeno, J. M.; Mimica, P.;
+Aloy, M. A.; Iyudin, A., High Energy Density Physics, 17, 92-97,
+2015). We note that even the presence of a star directly in the path
+of the faster core of a two-component jet would probably not result in
+the disruption of the jet.
 
 On the other hand, a fraction of the cold gas will also condense into
 stars.  To estimate the star formation rate, we assume that the CNM
@@ -587,7 +590,7 @@ of age $\sim$1 Gyr, we find that achieving marginal thermal stability
 requires a star formation rate of $5\times 10^{-4} \,\Msun$ yr$^{-1}$,
 which implies that only $\sim 40$\% of the injected gas is turned into
 stars.  The gas density would thus be only a few times lower than in
-our standard estimates, which neglect mass drop out due to star
+our standard estimates. Thus we neglect mass drop out due to star
 formation.
 
 \begin{figure} 
@@ -727,7 +730,7 @@ For the jet angular structure, we adopt the preferred two-component
 model for SwJ1644 from \citet{Mimica+2015}, corresponding to a fast,
 inner core with Lorentz factor $\Gamma = 10$, surrounded by a slower,
 $\Gamma=2$ outer sheath. A schematic depiction of the jet geometry is
-show in Fig.~\ref{fig:jetstruct}.  In our 2D simulations the fast
+shown in Fig.~\ref{fig:jetstruct}.  In our 2D simulations the fast
 inner core spans an angular interval $0-0.1\ {\rm radians}$, while the
 slow outer sheath extends from $0.1\ {\rm radians}$ to $0.5\ {\rm
   rad}$.  The time dependence of the jet kinetic luminosity is given
@@ -749,9 +752,12 @@ into relativistic electrons ($\epsilon_e$) and magnetic field
 distribution $p$, as summarized in Table \ref{tab:jetParams}.
 
 \begin{figure}
-\includegraphics[width=8.5cm]{jetstruct.pdf}
-\caption{\label{fig:jetstruct} Initial geometry of the jet used for 2D
-  (axisymmetric) simulations.}
+\includegraphics[width=8.5cm]{jetstruct.png}
+\caption{\label{fig:jetstruct} Initial geometry of the jet used for
+  our hydrodynamic simulations. We note that for 1D- two component jet
+  models, we perform separate models for the inner fast core and for
+  the outer sheath, which are later combined to provide the resulting
+  emission. }
 \end{figure}
 
 For our 1D simulations, we modify the geometry of the slow sheath to
@@ -889,12 +895,14 @@ luminosity is roughly linearly proportional to the jet energy and is
 virtually independent of the ambient density.  For high CNM densities
 and low frequencies this is to be expected because the emission is
 dominated by the slow component, which is optically thick at the
-deceleration time.  However, for high frequencies and small CNM
-densities, the peak luminosity of the slow component falls off (right
-panel of Fig.~\ref{fig:lightcurves}), but$-$coincidentally$-$the fast
-component just compensates for this decline, resulting in the total
-(fast + slow) peak luminosity being weakly dependent $n_{18}$
-across the entire parameter space.  A good approximation to this
+deceleration time. However, for high frequencies and small CNM
+densities, the peak luminosity of the slow component falls off, as
+shown in the right panels of Fig.~\ref{fig:lightcurves}, where the
+stand alone contribution of the slower jet sheath is shown in lighter
+shades for each of the values of $n_{18}$ at hand. Coincidentally, the
+fast component just compensates for this decline, resulting in the
+total (fast + slow) peak luminosity being weakly dependent on n18
+across the entire parameter space. A good approximation to this
 universal peak luminosity is given by equation~\ref{eq:peakLum} for
 $n_{18}=2000$ cm$^{-3}$ in the optically-thick case.
 
@@ -1035,7 +1043,7 @@ solutions are shown in Fig.~\ref{fig:diss} as red squares.
 Fig.~\ref{fig:diss} shows that for high ambient densities and/or low
 energy jets, the reverse shock dissipates an order unity fraction of
 the kinetic energy of the jet.  Even for our highest energy/lowest
-energy model ($n_{18}=2$ cm$^{-3}$ and $E_j=5\times 10^{53}$
+dendity model ($n_{18}=2$ cm$^{-3}$ and $E_j=5\times 10^{53}$
 erg) the reverse shock will dissipate of order $~20\%$ of the jet
 energy.  This is confirmed by Fig.~\ref{fig:reverse}, which shows the
 5 GHz light curve for $E = 5\times 10^{53}$ erg, $n_{18} = 2$,
@@ -1082,11 +1090,12 @@ either side of the black hole, centered about the deceleration radius
   \caption{\label{fig:reverse} Radio light curve from the forward
     shock (red line), reverse shock (blue), and the total light curve
     (black) for a jet of energy $5\times 10^{53}$ erg and CNM density
-    $n\propto r^{-1}$ with $n_{18} = 2$ cm$^{-3}$.  The reverse shock
-    light curve excludes synchrotron self-absorption, which when
-    included in the full calculation results in large attenuation of
-    the emission, such that the total light curve is dominated by the
-    forward shock.}
+    $n\propto r^{-1}$ with $n_{18} = 2$ cm$^{-3}$. Both light curves
+    are computed at a frequency of 5 GHz. The reverse shock light
+    curve excludes synchrotron self-absorption, which when included in
+    the full calculation results in large attenuation of the emission,
+    such that the total light curve is dominated by the forward
+    shock.}
 \end{figure}
 
 \subsection{Parameter Space of Jet-CNM Interaction}
@@ -1112,7 +1121,7 @@ the numerical results approach the optically thin limit.
 The left column of Fig.~\ref{fig:ContoursTp} shows contours of the
 time of peak flux in days, separately for the slow component (thin
 lines) and the total light curve (thick lines).  Shown for comparison
-in columns on the right is the peak time as estimated from
+in the panels in the right column is the peak time as estimated from
 equation~\eqref{eq:peakTime} in the optically thick case, which
 roughly reproduces the numerical results for high densities/low
 frequencies. For low densities, the numerical results diverge from the
