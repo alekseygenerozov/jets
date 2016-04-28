@@ -6,6 +6,7 @@
 \makeatother
 
 
+\usepackage{mathtools}
 \usepackage{threeparttable}
  
 
@@ -50,7 +51,7 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-  Dozens of stellar tidal disruption events (TDEs) have now been
+  Dozens of stellar tidal disruption events (TDEs) have been
   identified at optical, UV and X-ray wavelengths.  A small fraction
   of these, most notably {\it Swift} J1644+57, produce radio
   synchrotron emission, consistent with a powerful, relativistic jet
@@ -73,9 +74,9 @@
     Swift} J1644+57, and we quantify the relationship between the
   radio luminosity and jet energy.  We use existing radio detections
   and upper limits to constrain the energy distribution of TDE jets.
-  Prospects for optimizing future radio follow-up, and for discovering
-  jetted TDEs independent of a high energy trigger with wide-field
-  radio surveys, are briefly addressed.
+  Radio follow ups several months to several years after the TDE
+  candidate will strongly constrain the energetics of any relativistic
+  flow.
 \end{abstract}
 \section{Introduction}
 \label{sec:intro}
@@ -140,7 +141,7 @@ Alternatively, jet formation or its X-ray emission could be suppressed
 if the disk undergoes Lens-Thirring precession due to a misalignment
 between the angular momentum of the BH and that of the disrupted star
 (\citealt{Stone&Loeb2012}).  In the latter case, however, even a
-`dirty' jet could still be produced, which still produces luminous
+`dirty' jet could still be generated, which would produce luminous
 radio emission from CNM interaction.
 
 \citet{Bower+2013} and \citet{van-Velzen+2013} performed radio
@@ -148,7 +149,7 @@ follow-up of optical/UV and soft X-ray TDE flares on timescales of
 months to decades after the outburst (see also
 \citealt{Arcavi+2014}). They detect no radio afterglows definitively
 associated with the host galaxy of a convincing TDE
-candidate\footnote{There were radio detections for two ROSAT flares:
+candidate.\footnote{There were radio detections for two ROSAT flares:
   RX J1420.4+5334 and IC 3599. However, for RX J1420.4+5334 the radio
   emission was observed in a different galaxy than was originally
   associated with the flare.  IC 3599 has shown multiple outbursts in
@@ -304,7 +305,7 @@ black hole feedback.
 GSM15 present analytic approximations for the
 densities and temperatures of steady state solutions to
 equation~\eqref{eq:model}. We apply these results across the
-physically allowed range heating rates ($v_w$) and mass injection
+physically allowed range of heating ($v_w$) and mass injection
 rates ($\eta$), and obtain the corresponding range of gas densities.
 
 \subsubsection{Stellar density profiles}
@@ -491,14 +492,14 @@ The Ia radius is calculated as described in GSM15 at times $t>300
 \,{\rm Myr}$ after star formation, and is taken to be constant for $t
 = 40-300$ Myr.\footnote{GSM15 incorrectly extrapolated the Ia rate
   valid at times $t>300 \,{\rm Myr}$ back to a time $t = 3$ Myr, which
-  unphysical as no white dwarfs would have formed by this time.
+  is unphysical as no white dwarfs would have formed by this time.
   Although its qualitative impact on our results is minimal, here we
   instead take the Ia rate to be 0 for $ t < 40$ Myr.}
 
 
 Fig.~\ref{fig:param} shows how $n_{18}$ varies with the young
 starburst properties, $f_{\rm burst}$ and $t_{\rm burst}$.  We find a
-maximum density of $n_{18} \sim 2,000$ cm$^{-3}$ is achieved for a
+maximum density of $n_{18} \sim 2,000\, \Mbh[,7]^{0.5}$ cm$^{-3}$ is achieved for a
 burst of age $t_{\rm burst} \sim 4$ Myr which forms most of the stars
 in the nucleus ($f_{\rm burst} \sim 1$).  In this case, both the
 energy and mass budgets of the CNM are dominated by fast winds from
@@ -506,17 +507,16 @@ massive stars.  Although a large gas density is present immediately
 after a starburst, the density will decline with the wind mass loss
 rate, approximately $\propto t^{-3}$, i.e. by an order of magnitude
 within just a few Myr.
-%Therefore, the gas
-%density would decline by an order of magnitude from this maximum
-%allowed value after just a few Myr.
+% Therefore, the gas density would decline by an order of magnitude
+% from this maximum allowed value after just a few Myr.
 
-By contrast, the lowest allowed density $\sim 0.03$ cm$^{-3}$ is
-achieved for a relatively modest burst of young stars $t_{\rm burst}
-\approx 10^{6}$ Myr, which forms a fraction $f_{\rm burst} = 4\times
-10^{-4}$ of the total stellar mass. In this case the young massive
-stars provide a high heating rate, while the mass injection rate is
-comparatively low and receives contributions from both young and old
-stars.
+By contrast, the lowest allowed density $\sim 0.03 \Mbh[,7]^{0.5}$
+cm$^{-3}$ is achieved for a relatively modest burst of young stars
+$t_{\rm burst} \approx 10^{6}$ Myr, which forms a fraction $f_{\rm
+  burst} = 4\times 10^{-4}$ of the total stellar mass. In this case
+the young massive stars provide a high heating rate, while the mass
+injection rate is comparatively low and receives contributions from
+both young and old stars.
 
 Our procedure may underestimate the value of $n_{18}$ somewhat, as we
 do not include the effects of discreteness on the assumed stellar
@@ -530,19 +530,16 @@ Discreteness effects are thus important for relatively small bursts of
 star formation, including the case described above which gives the
 minimum $n_{18}$.  If we instead equate the stagnation radius to the
 radius enclosing a single star of mass $\gsim 15 \Msun$, we find a
-larger value of $n_{18}\sim 0.5$ cm$^{-3}$.  The true minimum density
-therefore likely resides between these extremes, min($n_{18}) \sim
-0.03-0.5$ cm$^{-3}$.
+larger value of $n_{18}\sim 0.5 \Mbh[,7]^{-0.4}$ cm$^{-3}$.  The true
+minimum density therefore likely resides between these extremes,
+min($n_{18}) \sim 0.03 \Mbh[,7]^{0.5}-0.5 \Mbh[,7]^{-0.4}$ cm$^{-3}$.
 
-Finally, note that the host galaxies of most of the observed TDE population show evidence for some
-star formation within the last Gyr \citep{French+2016}.  In this
-region of parameter space corresponding to the right side of
-Fig.~\ref{fig:param}, gas heating rate is dominated by SN Ia and we
-expect $n_{18}\sim 10-100$ cm$^{-3}$.
-%{\bf AG note that the
- % entire stellar pop likely did not form 1 Gyr ago. In fact the
-  %observation merely indicate that there was some star formation w. in
- % the last Gyr}
+Finally, note that the host galaxies of most of the observed TDE
+population show evidence for some star formation within the last Gyr
+\citep{French+2016}.  In this region of parameter space corresponding
+to the right side of Fig.~\ref{fig:param}, gas heating rate is
+dominated by SN Ia and we expect $n_{18}\sim 10 \Mbh[,7]^{-0.4}-100
+\Mbh[,7]^{-0.4}$ cm$^{-3}$.
 
 In summary, the CNM densities of quiescent galaxies vary from
 min($n_{18}) \sim 0.03-0.5$ cm$^{-3}$ to max($n_{18})\sim 10^{3}$
@@ -570,13 +567,15 @@ is different in the case of GRB and TDE afterglows, where the emission
 is expected to be similar for a clumpy and a smooth medium with the
 same average density
 (e.g.~\citealt{Nakar&Granot2007,van-Eerten+2009,Mimica&Giannios2011}). The
-reason is that that the angular width of the outflow (especially of
-the slow component) is much larger than in the case of AGNs and
+reason is that the angular width of the outflow (especially of the
+slow component) is much larger than in the case of AGNs and
 microquasars. In fact, it is large enough to make the overall effect
 of the presence of any inhomogeneities in the external medium
-minor. We note that even the presence of a star directly in the path
-of a two-component jet would probably not result in the disruption of
-the jet ({\bf, MA, please comment on this}).
+minor. An analogous effect is found in case of SN remnants sweeping a
+clumpy medium \citep{Obergaulinger+2015}. We note that even the presence
+of a star directly in the path of the faster core of a two-component
+jet would probably not result in the disruption of the jet {\bf AG
+  what about a star in the slower sheath--this is more likely!}.
 
 On the other hand, a fraction of the cold gas will also condense into
 stars.  To estimate the star formation rate, we assume that the CNM
@@ -587,7 +586,7 @@ of age $\sim$1 Gyr, we find that achieving marginal thermal stability
 requires a star formation rate of $5\times 10^{-4} \,\Msun$ yr$^{-1}$,
 which implies that only $\sim 40$\% of the injected gas is turned into
 stars.  The gas density would thus be only a few times lower than in
-our standard estimates, which neglect mass drop out due to star
+our standard estimates. Thus, we neglect mass drop out due to star
 formation.
 
 \begin{figure} 
@@ -727,7 +726,7 @@ For the jet angular structure, we adopt the preferred two-component
 model for SwJ1644 from \citet{Mimica+2015}, corresponding to a fast,
 inner core with Lorentz factor $\Gamma = 10$, surrounded by a slower,
 $\Gamma=2$ outer sheath. A schematic depiction of the jet geometry is
-show in Fig.~\ref{fig:jetstruct}.  In our 2D simulations the fast
+shown in Fig.~\ref{fig:jetstruct}.  In our 2D simulations the fast
 inner core spans an angular interval $0-0.1\ {\rm radians}$, while the
 slow outer sheath extends from $0.1\ {\rm radians}$ to $0.5\ {\rm
   rad}$.  The time dependence of the jet kinetic luminosity is given
@@ -750,8 +749,13 @@ distribution $p$, as summarized in Table \ref{tab:jetParams}.
 
 \begin{figure}
 \includegraphics[width=8.5cm]{jetstruct.pdf}
-\caption{\label{fig:jetstruct} Initial geometry of the jet used for 2D
-  (axisymmetric) simulations.}
+\caption{\label{fig:jetstruct} Initial geometry of the jet used for
+  our hydrodynamic simulations. We note that for 1D- two component jet
+  models, we perform separate models for the inner fast core and for
+  the outer sheath, which are later combined to provide the resulting
+  emission. Note that for our 1D simulation we take a slow component
+  extending from 0-$\pi/2$ radians to account for the effects of jet
+  spreading.}
 \end{figure}
 
 For our 1D simulations, we modify the geometry of the slow sheath to
@@ -762,7 +766,11 @@ jet-CNM interaction spans a much larger angular range due to laterial
 spreading.  To account for the slow component becoming almost
 isotropic near peak emission in our 2D simulations \citep[bottom two
 panels of Fig.~8 in][]{Mimica+2015}, we instead take the slow
-component to extend from 0.1 to $\pi/2$ radians in our 1D models.
+component to extend from 0.1 to $\pi/2$ radians in our 1D models. We
+keep the true energy of the slow component fixed at $5\times 10^{53}$
+erg so that the isotropic equivalent energy of the slow component is a
+factor of $[\cos(0.1)-\cos(0.5))/(\cos(0.1)-\cos(\pi/2))]\approx 0.12$
+smaller than in the 2D simulations.
 
 Figure \ref{fig:1D2DB} compares light curves calculated from this
 modified 1D approach to the results of the full 2D simulations.
@@ -805,7 +813,7 @@ The peak luminosity of the slow component of the jet can be estimated
 from equation~(\ref{eq:peakLumGen}),
 \begin{align}
 \nu L_{\nu, p}&=\text{min}
-\begin{cases}
+\begin{dcases}
   2.7\times 10^{40} \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.59}
   \left(\frac{\epsilon_e}{0.1}\right)^{1.3}\times \\
   \left(\frac{\epsilon_b}{0.002}\right)^{0.825}\left(\frac{\nu_{\rm
@@ -816,7 +824,7 @@ from equation~(\ref{eq:peakLumGen}),
   \left(\frac{\epsilon_b}{0.002}\right)^{0.26}\left(\frac{\nu_{\rm
         obs}}{5 {\rm GHz}}\right)^{2.01} n_{18}^{-0.14} {\rm erg\,
     s^{-1}} & {\rm Opt.~Thick},
-\end{cases}
+\end{dcases}
 \label{eq:peakLum}
 \end{align}
 where we have adopted fiducial values for the power-law slope of the
@@ -836,29 +844,30 @@ The time of maximum flux, for the same fiducial values ($k = 1$,
 $p=2.3$), is given by equation (\ref{eq:tpeakGen}),
 \begin{align}
 t_p= \text{min}
-\begin{cases}
+\begin{dcases}
   500 E_{54}^{0.5} n_{18}^{-0.5} {\rm days} & {\rm Opt.~Thin}\\\\
   50 \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.32}
   \left(\frac{\epsilon_e}{0.1}\right)^{0.45}
   \left(\frac{\epsilon_b}{0.002}\right)^{0.37}\\
   \left(\frac{\nu_{\rm obs}}{5 {\rm GHz}}\right)^{-1.1} n_{18}^{0.4}
   {\rm days}& {\rm Opt.~Thick},
-\end{cases}
+\end{dcases}
 \label{eq:peakTime}
 \end{align}
 where again the normalizations are chosen to match our numerical
 results. 
 
-In general, more energetic jets produce emission which
-peaks later in time.  However, the scaling of $t_p$ with $n_{18}$ is
-more complicated: if the emitting region is optically thick at the
-deceleration time, then the peak time increases with CNM density. In this
-case the peak flux occurs when the self-absorption frequency passes through
-the observing band, and occurs later if the nuclear gas density is
-higher. Otherwise, peak flux is achieved near the deceleration time,
-which is a decreasing function of $n_{18}$ (eq.~\ref{eq:tdec}).
-Fig.~\ref{fig:diss} shows the division between the optically-thick and
-optically-thin regimes at 1 and 30 GHz in the parameter space of jet energy and $n_{18}$.
+In general, more energetic jets produce emission which peaks later in
+time.  However, the scaling of $t_p$ with $n_{18}$ is more
+complicated: if the emitting region is optically thick at the
+deceleration time, then the peak time increases with CNM density. In
+this case the peak flux occurs when the self-absorption frequency
+passes through the observing band, and occurs later if the nuclear gas
+density is higher. Otherwise, peak flux is achieved near the
+deceleration time, which is a decreasing function of $n_{18}$
+(eq.~\ref{eq:tdec}).  Fig.~\ref{fig:diss} shows the division between
+the optically-thick and optically-thin regimes at 1 and 30 GHz in the
+parameter space of jet energy and $n_{18}$.
 
 \begin{figure}
 \includegraphics[width=8cm]{diss.pdf}
@@ -883,20 +892,21 @@ and 2000 cm$^{-3}$) and three different values of the
 (beaming-corrected) jet energy $E$ ($5\times 10^{51}$, $5\times
 10^{52}$, $5\times 10^{53}$ erg).
 
-The left panel of Fig.~\ref{fig:lightcurves} shows example light
+The left panels of Fig.~\ref{fig:lightcurves} show example light
 curves for different energy jets and nuclear gas densities. The peak
 luminosity is roughly linearly proportional to the jet energy and is
 virtually independent of the ambient density.  For high CNM densities
 and low frequencies this is to be expected because the emission is
 dominated by the slow component, which is optically thick at the
-deceleration time.  However, for high frequencies and small CNM
-densities, the peak luminosity of the slow component falls off (right
-panel of Fig.~\ref{fig:lightcurves}), but$-$coincidentally$-$the fast
-component just compensates for this decline, resulting in the total
-(fast + slow) peak luminosity being weakly dependent $n_{18}$
-across the entire parameter space.  A good approximation to this
-universal peak luminosity is given by equation~\ref{eq:peakLum} for
-$n_{18}=2000$ cm$^{-3}$ in the optically-thick case.
+deceleration time. However, for high frequencies and small CNM
+densities, the peak luminosity of the slow component falls off, as
+shown in the right panels of
+Fig.~\ref{fig:lightcurves}. Coincidentally, the fast component just
+compensates for this decline, resulting in the total (fast + slow)
+peak luminosity being weakly dependent on $n_{18}$ across the entire
+parameter space.  A good approximation to this universal peak
+luminosity is given by equation~\ref{eq:peakLum} for $n_{18}=2000$
+cm$^{-3}$ in the optically-thick case.
 
 Fig.~\ref{fig:lightcurves} also makes clear that the peak time
 increases with the ambient gas density.  Across most of the parameter
@@ -1035,7 +1045,7 @@ solutions are shown in Fig.~\ref{fig:diss} as red squares.
 Fig.~\ref{fig:diss} shows that for high ambient densities and/or low
 energy jets, the reverse shock dissipates an order unity fraction of
 the kinetic energy of the jet.  Even for our highest energy/lowest
-energy model ($n_{18}=2$ cm$^{-3}$ and $E_j=5\times 10^{53}$
+density model ($n_{18}=2$ cm$^{-3}$ and $E_j=5\times 10^{53}$
 erg) the reverse shock will dissipate of order $~20\%$ of the jet
 energy.  This is confirmed by Fig.~\ref{fig:reverse}, which shows the
 5 GHz light curve for $E = 5\times 10^{53}$ erg, $n_{18} = 2$,
@@ -1112,7 +1122,7 @@ the numerical results approach the optically thin limit.
 The left column of Fig.~\ref{fig:ContoursTp} shows contours of the
 time of peak flux in days, separately for the slow component (thin
 lines) and the total light curve (thick lines).  Shown for comparison
-in columns on the right is the peak time as estimated from
+in the panels of the right is the peak time as estimated from
 equation~\eqref{eq:peakTime} in the optically thick case, which
 roughly reproduces the numerical results for high densities/low
 frequencies. For low densities, the numerical results diverge from the
@@ -1143,11 +1153,10 @@ optically thin prior to the deceleration time.
     time in the parameter space of jet energy and ambient gas density
     at $10^{18}$ cm, calculated from the grid of on-axis jet
     simulations in Table~\ref{tab:jetParams}. Thin lines show contours
-    of peak luminosity for the slow component light curve
+    of peak time for the slow component light curve
     (see~\ref{sec:numerical}). {\it Right:} Analytic scaling for the
-    peak luminosity ({\it dashed}, see equation~\ref{eq:peakTime})
-    compared to the numerical results for the slow component (solid
-    lines)}
+    peak time ({\it dashed}, see equation~\ref{eq:peakTime}) compared
+    to the numerical results for the slow component (solid)}
 \end{figure*}
 
 \subsubsection{Comparison with radio detections and upper limits.}
@@ -1211,13 +1220,12 @@ fixed jet energy cannot fall below the minimum of the largest $n_{18}$
 any given time.
 
 
-($\S\ref{sec:densAllowed}$). The bottom panel of
-Fig.~\ref{fig:econtours} shows, for a range of jet energies, the
-minimum allowed synchrotron luminosity at a fixed time (across all
-$n_{18}$) for comparison to the radio upper limits.  The minimum curve
-which passes through each upper limit corresponds to the maximum jet
-energy consistent with the upper limit.  Note that these constraints
-apply to spherical outflows as well as collimated jets.
+The bottom panel of Fig.~\ref{fig:econtours} shows, for a range of jet
+energies, the minimum allowed synchrotron luminosity at a fixed time
+(across all $n_{18}$) for comparison to the radio upper limits.  The
+minimum curve which passes through each upper limit corresponds to the
+maximum jet energy consistent with the upper limit.  Note that these
+constraints apply to spherical outflows as well as collimated jets.
 
 
 
@@ -1270,7 +1278,8 @@ from the disruption of a solar type star. {\bf AG double check
     soft X-ray TDE candidates. For each event detected in the radio
     there are multiple observations at different
     times/frequencies. Thus, we leave a dash in the time frequency,
-    and luminosity columns and simply to refer to reference in column ``Ref.''}
+    and luminosity columns and simply to refer to reference in column
+    ``Ref.''}
 \begin{tabular*}{1.5\columnwidth}{lllllll}
 \hline
 Source & $D_L$ & t & $\nu$ & $\nu L_{\nu}$ & Ref. & Energy\\
@@ -1280,35 +1289,35 @@ Detections \\
 \hline
 ASSASN-14li & 90 & - & - & - & 1 &  $10^{48}-10^{49}$\\
 %CSS100217 & 700 & - & - & - & 2 & $1.7\times 10^{50}-6\times 10^{51}$\\
-SwJ1644 & 1900 & - & - & - &  3  & $5\times 10^{53}$\\
-SwJ2058 & 8300  & - & - & - & 4 & $5\times 10^{53}$\\ 
+SwJ1644 & 1900 & - & - & - &  2  & $5\times 10^{53}$\\
+SwJ2058 & 8300  & - & - & - & 3 & $5\times 10^{53}$\\ 
 \hline 
 Upper limits & \\
 \hline
-RXJ1624+7554 & 265.0 & 21.67 & 3.0 & 12 & 5 & $< 9.9 \times 10^{ 52 }$ \\
-RXJ1242-1119 & 208.0 & 19.89 & 3.0 & 8 & 5 & $< 6.7 \times 10^{ 52 }$ \\
-SDSSJ1323+48 & 365.0 & 8.61 & 3.0 & 48 & 5 & $< 1.0 \times 10^{ 53 }$ \\
-SDSSJ1311-01 & 750.0 & 8.21 & 3.0 & 115 & 5 & $< 1.9 \times 10^{ 53 }$ \\
-D1-9 & 1700.0 & 8.0 & 5.0 & 800 & 6 & $< 6.6 \times 10^{ 53 }$ \\
-TDE1 & 645.0 & 5.4 & 5.0 & 120 & 6 & $< 1.0 \times 10^{ 53 }$ \\
-D23H-1 & 910.0 & 4.8 & 5.0 & 200 & 6 & $< 1.3 \times 10^{ 53 }$ \\
-PTF10iya & 1130.0 & 1.6 & 5.0 & 300 & 6 & $< 5.5 \times 10^{ 52 }$ \\
-PS1-10jh & 820.0 & 0.71 & 5.0 & 300 & 6 & $< 2.3 \times 10^{ 52 }$ \\
-NGC5905 & 52.0 & 21.91 & 3.0 & 2 & 5 & $< 2.6 \times 10^{ 52 }$ \\
-NGC5905 & 75.0 & 6.0 & 8.6 & 9 & 7 & $< 1.4 \times 10^{ 52 }$ \\
-D3-13 & 2000.0 & 7.6 & 5.0 & 960 & 6 & $< 7.2 \times 10^{ 53 }$ \\
-D3-13 & 2000.0 & 1.8 & 1.4 & 1000 & 8 & $< 2.4 \times 10^{ 53 }$ \\
-TDE2 & 1280.0 & 4.3 & 5.0 & 590 & 6 & $< 2.7 \times 10^{ 53 }$ \\
-TDE2 & 1280.0 & 1.1 & 8.4 & 1650 & 9 & $< 1.1 \times 10^{ 53 }$ \\
-SDSSJ1201+30 & 700.0 & 1.4 & 7.9 & 1000 & 10 & $< 1.0 \times 10^{ 53 }$ \\
-PTF09axc & 540 & 5.0 & 3.5 & 670 & 11 & $< 3.9 \times 10^{ 53 }$ \\
-PTF09axc & 540 & 5.0 & 6.1 & 530 & 11 & $< 2.7 \times 10^{ 53 }$ \\
+RXJ1624+7554 & 265.0 & 21.67 & 3.0 & 12 & 4 & $< 9.9 \times 10^{ 52 }$ \\
+RXJ1242-1119 & 208.0 & 19.89 & 3.0 & 8 & 4 & $< 6.7 \times 10^{ 52 }$ \\
+SDSSJ1323+48 & 365.0 & 8.61 & 3.0 & 48 & 4 & $< 1.0 \times 10^{ 53 }$ \\
+SDSSJ1311-01 & 750.0 & 8.21 & 3.0 & 115 & 4 & $< 1.9 \times 10^{ 53 }$ \\
+D1-9 & 1700.0 & 8.0 & 5.0 & 800 & 5 & $< 6.6 \times 10^{ 53 }$ \\
+TDE1 & 645.0 & 5.4 & 5.0 & 120 & 5 & $< 1.0 \times 10^{ 53 }$ \\
+D23H-1 & 910.0 & 4.8 & 5.0 & 200 & 5 & $< 1.3 \times 10^{ 53 }$ \\
+PTF10iya & 1130.0 & 1.6 & 5.0 & 300 & 5 & $< 5.5 \times 10^{ 52 }$ \\
+PS1-10jh & 820.0 & 0.71 & 5.0 & 300 & 5 & $< 2.3 \times 10^{ 52 }$ \\
+NGC5905 & 52.0 & 21.91 & 3.0 & 2 & 4 & $< 2.6 \times 10^{ 52 }$ \\
+NGC5905 & 75.0 & 6.0 & 8.6 & 9 & 6 & $< 1.4 \times 10^{ 52 }$ \\
+D3-13 & 2000.0 & 7.6 & 5.0 & 960 & 5 & $< 7.2 \times 10^{ 53 }$ \\
+D3-13 & 2000.0 & 1.8 & 1.4 & 1000 & 7 & $< 2.4 \times 10^{ 53 }$ \\
+TDE2 & 1280.0 & 4.3 & 5.0 & 590 & 5 & $< 2.7 \times 10^{ 53 }$ \\
+TDE2 & 1280.0 & 1.1 & 8.4 & 1650 & 8 & $< 1.1 \times 10^{ 53 }$ \\
+SDSSJ1201+30 & 700.0 & 1.4 & 7.9 & 1000 & 9 & $< 1.0 \times 10^{ 53 }$ \\
+PTF09axc & 540 & 5.0 & 3.5 & 670 & 10 & $< 3.9 \times 10^{ 53 }$ \\
+PTF09axc & 540 & 5.0 & 6.1 & 530 & 10 & $< 2.7 \times 10^{ 53 }$ \\
 \end{tabular*}
 \begin{tablenotes}
-\item References: $(1)$ \citet{Alexander+2015, van-Velzen+2015}, $(2)$
-  \citet{Drake+2011}, $(3)$ \citet{Berger+2012, Zauderer+2013} , $(4)$ \citet{Cenko+2012},
-  $(5)$ \citet{Bower+2013}, $(6)$ \citet{van-Velzen+2013}, $(7)$
-  \citet{Bade+1996, Komossa2002}, $(8)$
+\item References: $(1)$ \citet{Alexander+2015, van-Velzen+2015}, $(3)$
+  \citet{Berger+2012, Zauderer+2013} , $(4)$ \citet{Cenko+2012}, $(5)$
+  \citet{Bower+2013}, $(6)$ \citet{van-Velzen+2013}, $(7)$
+  \citet{Bade+1996, Komossa&Dahlem2001}, $(8)$
   \citet{Gezari+2008,Bower+2011}, $(9)$ \citet{van-Velzen+2011},
   $(10)$ \citet{Saxton+2012}, $(11)$ \citet{Arcavi+2014}. All upper
   limits are 5 $\sigma$.
@@ -1362,6 +1371,16 @@ are summarized as follows.
   constraints on the existence of TDE jets.
 \end{enumerate}
 
+
+\section*{Acknowledgments}
+{\bf AG more acknowledgements here!}
+PM and MAA acknowledge financial support from the European Research
+Council (ERC) through the Starting Independent Researcher Grant
+CAMAP-259276, and the partial support of grants AYA2013-40979-P,
+AYA2015-66899-C2-1-P and PROMETEO-II-2014-069. We thankfully
+acknowledge the computer resources, technical expertise and assistance
+provided by the Servei de Inform\`atica of the University of Valencia.
+
 \appendix
 \section{Core Profile}
 \label{app:core}
@@ -1382,9 +1401,10 @@ where
   &k(x)=\frac{45}{19} \frac{1}{x^{3/2}} \frac{1-x^{1.9}}{9-19
       x\frac{x^{0.9}-1}{x^{1.9}-1}}
 \end{align}
-To isolate the effects of the shape of the density profile, we consider a
-core density profile with a stagnation radius $r_s=10^{18}$ cm and density normalization $n_{18}=2000$
-cm$^{-3}$ which match those of our high density cusp model.
+To isolate the effects of the shape of the density profile, we
+consider a core density profile with a stagnation radius $r_s=10^{18}$
+cm and density normalization $n_{18}=2000$ cm$^{-3}$ which match those
+of our high density cusp model.
 
 \section{Peak Luminosities and times}
 \label{app:analyt}
@@ -1397,9 +1417,10 @@ make use of their results to estimate the peak radio flux of the slow
 During the late-time, Newtonian stage of the jet evolution,
 synchrotron self absorption is important for frequencies below
 \begin{align}
-  \nu_{\rm sa}=&C_1(p, k) E_{54}^{\frac{10 p-k p -6 k}{2 (4+p) (5-k)}} n_{18}^{\frac{30 - 5 p}{2 (4 + p) (5 - k)}}
+  \nu_{\rm sa}=&C_1(p, k) E_{54}^{\frac{10 p-k p -6 k}{2 (4+p) (5-k)}}
+  n_{18}^{\frac{30 - 5 p}{2 (4 + p) (5 - k)}}
   \epsilon_e^{\frac{2 (p-1)}{4+p}} \epsilon_b^{\frac{p+2}{2 (4+p)}}\nonumber\\
-  &t^{\frac{10 - 8 k - 15 p + 4 k p}{(4 + p) (5 - k)}}, 
+  &t^{\frac{10 - 8 k - 15 p + 4 k p}{(4 + p) (5 - k)}},
 \label{eq:nuSa} 
 \end{align}
 %
@@ -1423,7 +1444,7 @@ is
 
 \begin{align}
 t_{\rm p} \approx
-\begin{cases}
+\begin{dcases}
   \frac{t_{\rm dec}}{2 \Gamma^2} \approx \left(100 \,
     E_{54}\right)^{1/(3-k)}  \Gamma^{(2k - 8)/(3-k)}
   n_{18}^{-1/(3-k)} {\rm yr} & {\rm Opt.\, Thin}\\\\
@@ -1434,7 +1455,7 @@ t_{\rm p} \approx
   \times \epsilon_b^{-\frac{(5-k) (p+2)}{2 (4 k p-8 k-15 p+10)}}
   \epsilon_e^{-\frac{2 (5-k) (p-1)}{4 k p-8 k-15 p+10}} & {\rm
     Opt.\, Thick},
-\end{cases}
+\end{dcases}
 \label{eq:tpeakGen}
 \end{align}
 %
@@ -1458,7 +1479,7 @@ Combining equations~\eqref{eq:num}, ~\eqref{eq:tpeakGen}, ~\eqref{eq:Fnum},
 and~\eqref{eq:Fpeak1}, we find
 \begin{align}
   \nu_{\rm obs} F_{\rm p} (\nu_{\rm obs}) \propto
-  \begin{cases}
+  \begin{dcases}
     E_{54}^{\frac{k (p+5)-12}{4 (k-3)}} n_{18}^{-\frac{3 (p+1)}{4
         (k-3)}} \nu_{\rm obs}^{\frac{3-p}{2}}
     \epsilon_b^{\frac{p+1}{4}} \epsilon_e^{p-1} & {\rm Opt.\, Thin}\\\\
@@ -1468,7 +1489,7 @@ and~\eqref{eq:Fpeak1}, we find
     \epsilon_b^{\frac{k (-(p-2))+p-8}{4 k(p-2)-15 p+10}}
     \epsilon_e^{-\frac{11 (p-1)}{4 k (p-2)-15p+10}} & {\rm Opt.\,
     Thick}
-  \end{cases}
+  \end{dcases}
   \label{eq:peakLumGen}
 \end{align}
 
@@ -1487,7 +1508,7 @@ Here we estimate the fraction of the kinetic energy of the jet that is
 dissipated by the reverse shock, as opposed to the forward shock whose
 contribution is the focus of this paper.  From continuity, the
 comoving density of a relativistic jet is given by
-(e.g.~\citealt{Beloborodov&Uhm2006},  Mimica \& Aloy 2010 MNRAS 401, 525)
+(e.g.~\citealt{Beloborodov&Uhm2006})
  \begin{align}
    n_{\rm j} =  \frac{L_{\rm j, iso}}{4 \pi r^{2}\Gamma_{\rm
        j}^{2}c^{3}m_p(1 + r \dot{\Gamma}/c\Gamma^{3})}
@@ -1506,18 +1527,20 @@ be estimated using the relativistic shock jump condition and pressure
 equality between the forward and reverse shocks.  In the
 ultra-relativistic limit this gives,
 \begin{equation}
-\Gamma_{\rm sh} \underset{\Gamma_{\rm sh} \gg 1}= \Gamma\left[1 + 2\Gamma f^{-1/2}\right]^{-1/2},
+\Gamma_{\rm sh} \underset{\Gamma_{\rm sh} \gg 1}= \Gamma\left[1 +
+  2\Gamma f^{-1/2}\right]^{-1/2},
+\label{eq:gammaShSim}
 \end{equation}
 where
 \begin{equation}
   f\approx 40\,  L_{\rm j,48} n_{18}^{-1} \Gamma_{10}^{-2} \, \left(\frac{r}{10^{18} {\rm
         cm}}\right)^{-1} 
 \end{equation}
-is the ratio of the density of the jet to that of the CNM.  This
-expression is inaccurate for mildly relativistic or non-relativistic,
-in which case we apply the more general expression for $\Gamma_{\rm
-  sh}$ given by \citet{Beloborodov&Uhm2006} (their Fig.~6, see also
-Mimica \& Aloy 2010)
+is the ratio of the density of the jet to that of the
+CNM. Equation~\eqref{eq:gammaShSim} is inaccurate for mildly relativistic or
+non-relativistic flows, in which case we apply the more general
+expression for $\Gamma_{\rm sh}$ given by \citet{Beloborodov&Uhm2006}
+(their eq.~3, see also \citealt{Mimica&Aloy2010})
 \begin{equation}
 \frac{\Gamma^2-1}{\Gamma_{43}^2-1} f^{-1}=1 ,
 \end{equation}
