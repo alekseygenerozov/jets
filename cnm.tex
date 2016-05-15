@@ -229,22 +229,22 @@ $\S\ref{sec:conc}$.
 Jet radio emission is primarily sensitive to the density of ambient
 gas near the Sedov radius, $r_{\rm sed}$, outside of which the jet has
 swept up a gaseous mass exceeding its own. For a power law gas density
-profile, $n= n_{18} \left(r/r_{18}\right)^{-k}$,
+profile, $n= n_{18} \left(r/10^{18} {\rm cm}\right)^{-k}$,
 \begin{equation}
-  r_{\rm sed} = r_{18} \left( \frac{E(3-k)}{4\pi n_{0}
-      m_{\rm p} c^2 r_{18}^3} \right)^{1/(3-k)} \approx 3 E_{54}^{1/2} n_{\rm 18}^{-1/2}\,{\rm pc}. 
+  r_{\rm sed} = 10^{18} \left( \frac{E(3-k)}{4\pi n_{18}
+      m_{\rm p} c^2 (10^{18}\,{\rm cm})^3} \right)^{1/(3-k)} \,{\rm cm} \approx 3 E_{54}^{1/2} n_{\rm 18}^{-1/2}\,{\rm pc}. 
   \label{eq:rdec}
 \end{equation}
-where $E = E_{54}10^{54}$ erg is the isotropic equivalent energy,
-$r_{18} = 10^{18}$ cm, and in the final equality we have taken $k =
-1$, typical of our results described later in this section.  For a
-powerful jet similar to SwJ1644, the deceleration radius is typically
-of order a parsec, but it can be as small as $10^{16}$ cm for a weak
-jet/outflow, such as that in ASASSN-14li.
+where $E = E_{54}10^{54}$ erg is the isotropic equivalent energy and
+in the final equality we have taken $k = 1$, typical of our results
+described later in this section.  For a powerful jet similar to
+SwJ1644, the deceleration radius is typically of order a parsec, but
+it can be as small as $10^{16}$ cm for a weak jet/outflow, such as
+that in ASASSN-14li.
 
 Although an initially relativistic jet will slow to sub-relativistic
 speeds at $r \sim r_{\rm sed}$, significant deceleration already sets
-in at the deceleration radius (after the jet has swept up a
+in at the deceleration radius (where the jet has swept up a
 fraction $\sim 1/\Gamma$ of its rest mass),
 \begin{equation}
   r_{\rm dec}=\frac{r_{\rm sed}}{\Gamma^{2/(3-k)}}.
@@ -370,9 +370,9 @@ stellar winds inject mass interior to it,
 \end{equation}
 %
 where $M_{\star}(\rs)$ is the total stellar mass enclosed within the
-stagnation radius, $\eta_{0.02}=\eta/0.02$ is normalized to a fiducial
-value characteristic of an old stellar population, and the second
-equality again assumes our fiducial value of $\delta=1.7$.
+stagnation radius, $\eta_{0.02}=\eta/0.02$ is normalized to a value
+characteristic of an old stellar population, and the second equality
+again assumes our fiducial value of $\delta=1.7$.
 
 The density at the stagnation radius, $n(\rs)$, is estimated by
 equating the gas injected by stellar winds over a dynamical time at
@@ -392,14 +392,14 @@ n(r_s) \simeq 0.2 \, v_{500}^{0.4} \eta_{0.02} \Mbh[,7]^{-0.48} {\rm cm}^{-3},
 \label{eq:nrs2}
 \end{equation}
 %
-Inside the stagnation radius, GSM15 found that the radial gas profile
+Near the stagnation radius, GSM15 found that the radial gas profile
 has a power-law slope of $k \approx (4\delta-1)/6$, which for our
-fiducial value of $\delta=1.7$ gives $n \propto r^{-1}$.  For cusp
-galaxies, the gas profile flattens to $n\propto r^{1-\delta}$ between
-the stagnation radius and the stellar break radius; however, for our
-fiducial value of $\delta = 1.7$, the resulting profile $n\propto
-r^{1-\delta} \approx r^{-0.7}$ is only moderately changed.  Thus, for
-our fiducial profile we adopt 
+fiducial value of $\delta=1.7$ gives $n \propto r^{-1}$. The gas
+profile flattens to $n\propto r^{1-\delta}$ between the stagnation
+radius and the stellar break radius; however, for our fiducial value
+of $\delta = 1.7$, the resulting profile $n\propto r^{1-\delta}
+\approx r^{-0.7}$ is only moderately changed. Thus, for our fiducial
+profile we adopt
 \begin{equation} n(r)= n_{18} \left(\frac{r}{10^{18}
     {\rm cm}}\right)^{-1},
 \label{eq:profile}
@@ -452,13 +452,13 @@ in our analysis.
 \begin{figure}
 \includegraphics[width=8cm]{sedov_radius.pdf}
 \caption{\label{fig:profiles} Steady-state radial profiles of the CNM
-  gas density, $n(r)/n_{18}$, normalized to the value $n_{18} = n(r =
-  10^{18}$ cm), calculated for a black hole mass $10^{7} \,\Msun$ and
-  gas heating parameter $v_w=600$ km s$^{-1}$.  Cusp and core stellar
-  density profiles are shown with solid and dashed lines,
-  respectively.  The line colors denote the ratio of isotropic
-  equivalent jet energy to $n_{18}$ which results in $r = r_{\rm sed}$
-  at each radius.}
+  gas density, normalized to the gas density at 10^{18} {\rm cm},
+  $n_{18} = n(r = 10^{18}$ cm), calculated for a black hole mass 
+  $10^{7} \,\Msun$ and gas heating parameter $v_w=600$ km s$^{-1}$.
+  Cusp and core stellar density profiles are shown with solid and
+  dashed lines, respectively.  The line colors denote the ratio of
+  isotropic equivalent jet energy to $n_{18}$ which results in $r =
+  r_{\rm sed}$ at each radius.}
 \end{figure}
 
 \subsubsection{Allowed Density Range}
@@ -1266,24 +1266,24 @@ SwJ2058 & 8400  & - & - & - & 3 & $5\times 10^{53}$\\
 \hline 
 Upper limits & \\
 \hline
-RXJ1624+7554 & 290 & 21.67 & 3.0 & 27.0 & 4 & $< 1.8 \times 10^{ 53 }$ \\
-RXJ1242-1119 & 230 & 19.89 & 3.0 & 17.0 & 4 & $< 1.2 \times 10^{ 53 }$ \\
-SDSSJ1323+48 & 410 & 8.61 & 3.0 & 100.0 & 4 & $< 1.8 \times 10^{ 53 }$ \\
-SDSSJ1311-01 & 900 & 8.21 & 3.0 & 280.0 & 4 & $< 3.6 \times 10^{ 53 }$ \\
-D1-9 & 1800 & 8.0 & 5.0 & 840.0 & 5 & $< 6.9 \times 10^{ 53 }$ \\
-TDE1 & 660 & 5.4 & 5.0 & 130.0 & 5 & $< 1.1 \times 10^{ 53 }$ \\
-D23H-1 & 930 & 4.8 & 5.0 & 210.0 & 5 & $< 1.4 \times 10^{ 53 }$ \\
-PTF10iya & 1100 & 1.6 & 5.0 & 320.0 & 5 & $< 5.8 \times 10^{ 52 }$ \\
-PS1-10jh & 840 & 0.71 & 5.0 & 320.0 & 5 & $< 2.4 \times 10^{ 52 }$\\
+RXJ1624+7554 & 290 & 21.67 & 3.0 & 27 & 4 & $< 1.8 \times 10^{ 53 }$ \\
+RXJ1242-1119 & 230 & 19.89 & 3.0 & 17 & 4 & $< 1.2 \times 10^{ 53 }$ \\
+SDSSJ1323+48 & 410 & 8.61 & 3.0 & 100 & 4 & $< 1.8 \times 10^{ 53 }$ \\
+SDSSJ1311-01 & 900 & 8.21 & 3.0 & 280 & 4 & $< 3.6 \times 10^{ 53 }$ \\
+D1-9 & 1800 & 8.0 & 5.0 & 840 & 5 & $< 6.9 \times 10^{ 53 }$ \\
+TDE1 & 660 & 5.4 & 5.0 & 130 & 5 & $< 1.1 \times 10^{ 53 }$ \\
+D23H-1 & 930 & 4.8 & 5.0 & 210 & 5 & $< 1.4 \times 10^{ 53 }$ \\
+PTF10iya & 1100 & 1.6 & 5.0 & 320 & 5 & $< 5.8 \times 10^{ 52 }$ \\
+PS1-10jh & 840 & 0.71 & 5.0 & 320 & 5 & $< 2.4 \times 10^{ 52 }$\\
 NGC5905 & 49 & 21.91 & 3.0 & 1.7 & 4 & $< 2.3 \times 10^{ 52 }$ \\
 NGC5905 & 49 & 6.0 & 8.6 & 3.7 & 6 & $< 7.2 \times 10^{ 51 }$ \\
-D3-13 & 2000 & 7.6 & 5.0 & 1000.0 & 5 & $< 7.4 \times 10^{ 53 }$ \\
-D3-13 & 2000 & 1.8 & 1.4 & 1000.0 & 7 & $< 2.4 \times 10^{ 53 }$ \\
-TDE2 & 1300 & 4.3 & 5.0 & 610.0 & 5 & $< 2.8 \times 10^{ 53 }$ \\
-TDE2 & 1300 & 1.1 & 8.4 & 1700.0 & 8 & $< 1.2 \times 10^{ 53 }$ \\
-SDSSJ1201+30 & 710 & 1.4 & 7.9 & 1100.0 & 9 & $< 1.1 \times 10^{ 53 }$ \\
-PTF09axc & 550 & 5.0 & 3.5 & 700.0 & 10 & $< 4.0 \times 10^{ 53 }$ \\
-PTF09axc & 550 & 5.0 & 6.1 & 550.0 & 10 & $< 2.8 \times 10^{ 53 }$\\
+D3-13 & 2000 & 7.6 & 5.0 & 1000 & 5 & $< 7.4 \times 10^{ 53 }$ \\
+D3-13 & 2000 & 1.8 & 1.4 & 1000 & 7 & $< 2.4 \times 10^{ 53 }$ \\
+TDE2 & 1300 & 4.3 & 5.0 & 610 & 5 & $< 2.8 \times 10^{ 53 }$ \\
+TDE2 & 1300 & 1.1 & 8.4 & 1700 & 8 & $< 1.2 \times 10^{ 53 }$ \\
+SDSSJ1201+30 & 710 & 1.4 & 7.9 & 1100 & 9 & $< 1.1 \times 10^{ 53 }$ \\
+PTF09axc & 550 & 5.0 & 3.5 & 700 & 10 & $< 4.0 \times 10^{ 53 }$ \\
+PTF09axc & 550 & 5.0 & 6.1 & 550 & 10 & $< 2.8 \times 10^{ 53 }$\\
 \end{tabular*}
 \begin{tablenotes}
 \item References: $(1)$ \citet{Alexander+2015, van-Velzen+2015}, $(2)$
@@ -1295,7 +1295,7 @@ PTF09axc & 550 & 5.0 & 6.1 & 550.0 & 10 & $< 2.8 \times 10^{ 53 }$\\
   are 5 $\sigma$. Luminosity distances are calculated using the
   identified host galaxy redshift and the best fitting Planck
   2013 cosmology ($\Omega_M=0.307$ and $H_0=67.8$ km s$^{-1}$
-  Mpc$^{-1}$), as implemented in the Astropy 2013 cosmology package.
+  Mpc$^{-1}$), as implemented in the Astropy cosmology package.
 \end{tablenotes}
 \end{threeparttable}
 \end{table*}
