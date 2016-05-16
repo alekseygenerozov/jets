@@ -230,11 +230,12 @@ Jet radio emission is primarily sensitive to the density of ambient
 gas near the Sedov radius, $r_{\rm sed}$, outside of which the jet has
 swept up a gaseous mass exceeding its own. For a power law gas density
 profile, $n= n_{18} \left(r/10^{18} {\rm cm}\right)^{-k}$,
-\begin{equation}
-  r_{\rm sed} = 10^{18} \left( \frac{E(3-k)}{4\pi n_{18}
-      m_{\rm p} c^2 (10^{18}\,{\rm cm})^3} \right)^{1/(3-k)} \,{\rm cm} \approx 3 E_{54}^{1/2} n_{\rm 18}^{-1/2}\,{\rm pc}. 
+\begin{align}
+  r_{\rm sed} &= 10^{18} \,{\rm cm}\, \left( \frac{E(3-k)}{4\pi n_{18}
+      m_{\rm p} c^2 (10^{18}\,{\rm cm})^3} \right)^{1/(3-k)}  \nonumber\\
+  &\approx 3 E_{54}^{1/2} n_{\rm 18}^{-1/2}\,{\rm pc}.
   \label{eq:rdec}
-\end{equation}
+\end{align}
 where $E = E_{54}10^{54}$ erg is the isotropic equivalent energy and
 in the final equality we have taken $k = 1$, typical of our results
 described later in this section.  For a powerful jet similar to
@@ -452,7 +453,7 @@ in our analysis.
 \begin{figure}
 \includegraphics[width=8cm]{sedov_radius.pdf}
 \caption{\label{fig:profiles} Steady-state radial profiles of the CNM
-  gas density, normalized to the gas density at 10^{18} {\rm cm},
+  gas density, normalized to the gas density at $10^{18} {\rm cm}$,
   $n_{18} = n(r = 10^{18}$ cm), calculated for a black hole mass 
   $10^{7} \,\Msun$ and gas heating parameter $v_w=600$ km s$^{-1}$.
   Cusp and core stellar density profiles are shown with solid and
@@ -626,10 +627,11 @@ density distribution on parsec scales in the Galactic Center
 (GC). \citet{Baganoff+2003} find that the hot, diffuse plasma within
 10 arcseconds ($\sim 10^{18}$ cm) of Sgr A* has a root mean square
 electron density of $\sim 26$ cm$^{-3}$, which implies a number
-density of $n\sim 50$ cm$^{-3}$. However, this estimate includes
-regions closer to the center, where the gas density is higher, so that
-the true number density at $10^{18}$ cm may be smaller by a factor of
-$\sim 2$.
+density of $n\sim 50$ cm$^{-3}$. 
+% However, this estimate includes
+% regions closer to the center, where the gas density is higher, so that
+% the true number density at $10^{18}$ cm may be smaller by a factor of
+% $\sim 2$.
 
 In Fig.~\ref{fig:param} we show the range of two-burst star formation
 models which produce heating and mass return parameters equal to those
@@ -731,18 +733,18 @@ by (\citealt{Mimica+2015})
 \begin{equation}\label{eq:lum}
 L_{\rm j, ISO}(t) = L_{j,0}\max\left[1, (t/t_0)\right]^{-5/3},
 \end{equation}
-where $t_0 = 5\times 10^5$ s is the duration of peak jet power, which
+where $t_0 = 5\times 10^5$ s is the duration of peak jet power. This
 is assumed to match that of the period of the most luminous X-ray
 emission of SwJ1644.  Integrating equation~(\ref{eq:lum}) from $t = 0$
 to $\infty$ gives the isotropic equivalent energy of the jet, $E_{\rm
   ISO}$, where $L_{j,0}=0.4\, E_{\rm ISO}/t_0$.  The ratio of the
 beaming-corrected energy of the fast component is fixed to be 4\% of
-that of the slow sheath.  Following the best-fit model of SwJ1644 in
-\citet{Mimica+2015}, we adopt values for the microphysical parameters
+that of the slow sheath. For the microphysical parameters
 characterizing the fraction of the post-shock thermal energy placed
 into relativistic electrons ($\epsilon_e$) and magnetic field
 ($\epsilon_B$), and the power-law slope of the electron energy
-distribution $p$, as summarized in Table \ref{tab:jetParams}.
+distribution $p$, we adopt the values from the best fit model in
+\citet{Mimica+2015} (see Table~\ref{tab:jetParams}).
 
 \begin{figure}
 
@@ -751,7 +753,7 @@ distribution $p$, as summarized in Table \ref{tab:jetParams}.
   our hydrodynamic simulations. We note that for 1D- two component jet
   models, we perform separate models for the inner fast core and for
   the outer sheath, which are later combined to provide the resulting
-  emission. Note that for our 1D simulation we take a slow component
+  emission. For our 1D simulation we take a slow component
   extending from 0-$\pi/2$ radians to account for the effects of jet
   spreading.}
 \end{figure}
