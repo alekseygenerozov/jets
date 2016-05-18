@@ -339,6 +339,7 @@ for the galaxies in \citet{Stone&Metzger2016} (their Table C).
 
 
 \subsubsection{Gas density profiles}
+\label{sec:dProf}
 Given sufficiently strong heating, a one-dimensional steady-state
 model for the CNM is characterized by an inflow-outflow structure.
 The velocity passes through zero at the ``stagnation radius'', $\rs$.
@@ -954,9 +955,11 @@ Fig.~\ref{fig:onOff} compares the light curves for observers aligned
 with the jet axis (on-axis) with those at an angle of 0.8 radians from
 the jet axis (off-axis).  While the on- and off-axis light curves
 agree well for $n_{18}=2000$ cm$^{-3}$, the off-axis luminosity for
-$n_{18}=60$ cm$^{-3}$ is smaller by a factor of a few before and near
-the peak.  However, at late times as the jet becomes more isotropic,
-the light curve becomes largely independent of viewing angle.
+$n_{18}=2$ cm$^{-3}$ is smaller by an order of magnitude at peak.
+This is because the on-axis light curve for this density is dominated
+by the fast component of the jet, which would not be visible for
+significantly off-axis observers. However, we find that the late time
+light curve is nearly independent of viewing angle.
 
 
 \begin{figure}
@@ -965,19 +968,14 @@ the light curve becomes largely independent of viewing angle.
   off-axis (dashed line) light curves from our 2D simulations.  The
   off-axis light curves are calculated for an observer viewing angle
   of $\theta_{\rm obs}$=0.8.  We adopt a density profile of $n\propto
-  r^{-1}$ for $n_{18}=2000$ cm$^{-3}$ (bottom panel), but take $n\propto
-  r^{-1.5}$ for $n_{18}=60$ cm$^{-3}$ (top panel).  The latter
-  profile was chosen for computational convenience, as this model was
-  previously computed in \citet{Mimica+2015}, and because our results
-  are not sensitive to the precise density power-law slope
-  ($\S$~\ref{sec:profileComp}).}
+  r^{-1}$.}
 \end{figure}
 
 %\subsubsection{Effect of gas density profile}
 \label{sec:profileComp}
-The top panel of Fig.~\ref{fig:cores} shows on-axis radio light curves
-for our fiducial gas density profile, $n\propto r^{-1}$, and a core
-galaxy profile (equation~\ref{eq:cores}), both with $n_{18}=2$
+The top panel of Fig.~\ref{fig:cores} shows 1D on-axis radio light
+curves for our fiducial gas density profile, $n\propto r^{-1}$, and a
+core galaxy profile (equation~\ref{eq:cores}), both with $n_{18}=2$
 cm$^{-3}$.  The light curves differ by at most a factor of a few. The
 core and cusp light curves are even closer at higher densities, and
 virtually indistinguishable at $n_{18}=2000$ cm$^{-3}$. This is
@@ -989,16 +987,21 @@ profile, that noticeable differences emerge.
 
 The bottom panel of Fig.~\ref{fig:cores} compares the 1D on-axis light
 curves for $n\propto r^{-1}$ and $n\propto r^{-1.5}$ gas density
-profiles with $n_{18}=60$. For most times the light curves agree well,
-which is perhaps not suprising because the density normalization in
-the two models agrees at $10^{18}$ cm, which is close to the Sedov
-radius for these density profiles.  We conclude that the radio light
-curve is insensitive to the precise gas density profile, for a fixed
-value of the gas density near the deceleration/Sedov radius.
+profiles with $n_{18}=60$ cm$^{-3}$. For most times the light curves
+agree well, which is perhaps not surprising because the density
+normalization in the two models agrees at $10^{18}$ cm, which is close
+to the Sedov radius for these density profiles. However, In 2D
+hydrodynamical simulations, the jet structure for the $n\propto
+r^{-1.5}$ profile is more prolate, which results in a much steeper
+late time slope for the light curve (see Fig.~\ref{fig:prof2D}).  For the
+radii of interest, we do not expect CNM density profiles steeper than
+$r^{-1}$ (see sec.~\ref{sec:dProf}). Thus, we defer detailed study of
+this effect to future work.
+
 
 \begin{figure} 
   \includegraphics[width=8cm]{fig_cores.pdf}
-  \includegraphics[width=8cm]{profs2.pdf}
+  \includegraphics[width=8cm]{prof.pdf}
   \caption{\label{fig:cores} {\it Top:} Comparison between on-axis
     light curves for our fiducial $n\propto r^{-1}$ gas density
     profile corresponding to a cusp-like galaxy, and the core galaxy
@@ -1006,6 +1009,14 @@ value of the gas density near the deceleration/Sedov radius.
       Bottom:} Comparison between on-axis light curves calculated for
     $n\propto r^{-1}$ ({\it solid black}) and $n\propto r^{-1.5}$
     ({\it dashed red}) gas density profiles.}
+\end{figure}
+
+\begin{figure} 
+  \includegraphics[width=8cm]{prof2D.pdf}
+  \caption{\label{fig:prof2D} {\it Top:} Comparison between on-axis
+    light curves calculated from 2D hydro simulations for $n\propto
+    r^{-1}$ ({\it solid black}) and $n\propto r^{-1.5}$ ({\it dashed
+      red}) gas density profiles.}
 \end{figure}
 
 
@@ -1086,14 +1097,18 @@ either side of the black hole, centered about the deceleration radius
 \label{sec:param}
 The left column of Fig.~\ref{fig:jetContours} shows contours of the
 peak luminosity (thick lines) as derived from our grid of numerical
-models, covering the parameter space of jet energy $E$ and density
-$n_{18}$.  Also shown with thin lines is the luminosity arising from
-just the slow, wide angle component.  The fast, narrow component of
-the jet dominates at high frequencies and low densities, while the
-slow, wide component dominates for large $n_{18}$ and low frequencies.
-Remarkably, the total peak luminosity is nearly independent of the
-ambient gas density; this is in part coincidental, as the fast and
-slow peak fluxes individually vary across the parameter space.
+on-axis models, covering the parameter space of jet energy $E$ and
+density $n_{18}$.  Also shown with thin lines is the luminosity
+arising from just the slow, wide angle component.  The fast, narrow
+component of the jet dominates at high frequencies and low densities,
+while the slow, wide component dominates for large $n_{18}$ and low
+frequencies.  Remarkably, the total peak luminosity is nearly
+independent of the ambient gas density; this is in part coincidental,
+as the fast and slow peak fluxes individually vary across the
+parameter space. However, this is not the case for an off-axis jet,
+for which the peak luminosity would be comparable to the peak
+luminosity of just the slow component, and thus would fall off for
+smaller ambient densities for frequencies $\nu\gsim$ 1 GHz. 
 
 The right column of Fig.~\ref{fig:jetContours} compares our numerical
 results for the slow component to the analytic estimate given in
@@ -1111,8 +1126,6 @@ roughly reproduces the numerical results for high densities/low
 frequencies. At 30 GHz, the peak time decreases with $n_{18}$ at small
 values of the latter, because in this regime the jet is optically thin
 prior to the deceleration time.
-
-
 
 
 \begin{figure*}
@@ -1154,15 +1167,16 @@ do not produce jets as powerful as that responsible for SwJ1644
 (\citealt{Bower+2013,van-Velzen+2013,Mimica+2015}), a result which is
 now found to hold independent of the CNM environment.
 
-The peak radio luminosity at frequencies of a few GHz is weakly
+The peak radio luminosity at frequencies $\lsim$ 1 GHz is weakly
 dependent on the ambient gas density. Radio observations conducted
 from several months to years after a tidal disruption flare, which
 tightly constrain the peak flux of a putative jet, can therefore be
 used to constrain the jet energy.  Equation~\eqref{eq:peakLum} shows
-that an upper limit of $F_{\rm ul}$ on the flux density of a source at
-distance $d_L$ results in an upper limit on the jet energy of
+that an upper limit of $F_{\rm ul}$ on the flux density at 1 GHz of a
+source at distance $d_L$ results in an upper limit on the jet energy
+of
 \begin{equation}
-E\lsim 6 \times 10^{48} \left(\frac{F_{\rm ul}}{50 \,\mu{\rm Jy}}\right)^{1.1}
+  E\lsim 4.3 \times 10^{49} \left(\frac{F_{\rm ul}}{50 \,\mu{\rm Jy}}\right)^{1.1}
   \left(\frac{d_L}{200 \,{\rm Mpc}}\right)^{2.3} {\rm erg},
 \end{equation}
 %
@@ -1172,15 +1186,22 @@ following a TDE therefore serve as calorimeters of the total energy
 released in a relativistic jet.
 
 Even if the peak flux is missed, late-time measurements can still be
-used to constrain the jet energy.  Fig.~\ref{fig:econtours} compares
-our analytic fit to the 5 GHz synchrotron light curve
-(eq.~\ref{eq:lcAnal}) for different jet energies and existing radio
-upper limits.  The top panel shows the light curves for a fixed value
-of $n_{18}$, but an increase(decrease) in $n_{18}$ simply shifts the
-light curve to later(earlier) times.  One implication of this behavior
-is that the radio luminosity for a fixed jet energy cannot fall below
-the minimum of the largest $n_{18}$ (2000 cm$^{-3}$) and smallest
-$n_{18}$ (0.5 cm$^{-3}$) light curves at any given time.
+used to constrain the jet energy. In fact, with late time measurements
+it is possible to place robust constraints on the energy of the
+jet/outflow, even using higher frequency
+measurements. Fig.~\ref{fig:econtours} compares our analytic fit to
+the on-axis 5 GHz synchrotron light curve (eq.~\ref{eq:lcAnal}) for
+different jet energies and existing radio upper limits.  The top panel
+shows the light curves for a fixed value of $n_{18}$, but an
+increase(decrease) in $n_{18}$ simply shifts the light curve to
+later(earlier) times.  One implication of this behavior is that the
+radio luminosity for an on-axis fixed energy cannot fall below the
+minimum of the largest $n_{18}$ (2000 cm$^{-3}$) and smallest $n_{18}$
+(0.5 cm$^{-3}$) light curves at any given time. The radio luminosity
+for an off-axis jet propagating through low density environments would
+be reduced compared to the on-axis case, but would still generally
+fall above the expected luminosity for the same energy jet propagating
+through a high density medium.
 
 
 The bottom panel of Fig.~\ref{fig:econtours} shows, for a range of jet
@@ -1324,20 +1345,20 @@ are summarized as follows.
   cm, $n_{18}$, to be 2, 11, 60, 345, or 2000 cm$^{-3}$. We find
   bright radio emission at a few GHz across this entire range of
   densities, with the peak luminosity only weakly dependent on the
-  chosen value of $n_{18}$. The time of the peak luminosity depends,
-  however, on the density and can be as early as months and as late as
-  one decade after the TDE. By comparing radio detections and upper
-  limits from a set optical/UV and soft X-ray selected TDE, we show
-  that most of these sources cannot have jets as powerful as
-  SwJ1644. Prompt follow-up in the radio band, as well as regular
-  monitoring, would provide tighter constraints on the existence of
-  TDE jets. Radio afterglows can serve as calorimeters for off-axis
-  jets launched by TDEs, and future observational efforts that capture
-  the peak radio flux in thermally detected TDEs will add to the
-  diversity of jet energies observed in TDE flares.  The broad range
-  of energies (both detections and upper limits) already seen in TDE
-  jets presents an interesting puzzle for theoretical models of jet
-  launching.
+  chosen value of $n_{18}$ for frequencies $\lsim$1 GHz. The time of
+  the peak luminosity depends, however, on the density and can be as
+  early as months and as late as one decade after the TDE. By
+  comparing radio detections and upper limits from a set optical/UV
+  and soft X-ray selected TDE, we show that most of these sources
+  cannot have jets as powerful as SwJ1644. Prompt follow-up in the
+  radio band, as well as regular monitoring, would provide tighter
+  constraints on the existence of TDE jets. Radio afterglows can serve
+  as calorimeters for off-axis jets launched by TDEs, and future
+  observational efforts that capture the peak radio flux in thermally
+  detected TDEs will add to the diversity of jet energies observed in
+  TDE flares.  The broad range of energies (both detections and upper
+  limits) already seen in TDE jets presents an interesting puzzle for
+  theoretical models of jet launching.
 \end{enumerate}
 
 
