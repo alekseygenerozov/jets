@@ -712,7 +712,7 @@ MRGENESIS \citep{MimicaGianniosAloy2009}. MRGENESIS periodically
 outputs snapshots with the state of the fluid in its numerical
 grid. These snapshots are then used as an input to the radiative
 transfer code SPEV \citep{Mimica+2009}. SPEV detects the forward shock
-at the jet-CNM interface, accelerates the non-thermal electrons behind
+at the jet-CNM interface, accelerates non-thermal electrons behind
 the shock front, evolves the electron energy and spatial distribution
 in time, and computes the non-thermal emission taking into account the
 synchrotron self-absorption (interested readers can find many more
@@ -765,10 +765,10 @@ spreading.  To account for the slow component becoming almost
 isotropic near peak emission in our 2D simulations \citep[bottom two
 panels of Fig.~8 in][]{Mimica+2015}, we instead take the slow
 component to extend from 0.1 to $\pi/2$ radians in our 1D models. We
-keep the true energy of the slow component fixed at $5\times 10^{53}$
-erg so that the isotropic equivalent energy of the slow component is a
-factor of $[\cos(0.1)-\cos(0.5))/(\cos(0.1)-\cos(\pi/2))]\approx 0.12$
-smaller than in the 2D simulations.
+keep the true energy of the slow component fixed so that the isotropic
+equivalent energy of the slow component is a factor of
+$[\cos(0.1)-\cos(0.5))/(\cos(0.1)-\cos(\pi/2))]\approx 0.12$ smaller
+than in the corresponding 2D simulations.
 
 Figure \ref{fig:1D2DB} compares light curves calculated from this
 modified 1D approach to the results of the full 2D simulations.
@@ -777,8 +777,8 @@ simulations than in 2D, the resulting light curves agree surprisingly
 well.  The agreement is particularly good at the highest densities
 ($n_{18}=2000$ cm$^{-3}$) because the slow component rapidly
 isotropizes in 2D.  At lower densities ($n_{18}=60$ cm$^{-3}$), the
-agreement is not as good, with the 1D simulations predicting
-systematically higher luminosities by a factor of $\lesssim 2$.
+agreement is not as good, with the 1D simulations differing by a
+factor of $\lesssim 2$ from the 2D simulations.
 
 
 \begin{figure}
@@ -801,17 +801,17 @@ self-similarly expanding blast wave (e.g., \citealt{Sari+98,
 The peak luminosity of the slow component of the jet can be estimated
 from equation~(\ref{eq:peakLumGen}),
 \begin{align}
-\nu L_{\nu, p}&=\text{min}
+&\nu L_{\nu, p}=\nonumber\\ &\text{min}
 \begin{dcases}
   2.7\times 10^{40} \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.59}
   \left(\frac{\epsilon_e}{0.1}\right)^{1.3}\times \\
   \left(\frac{\epsilon_b}{0.002}\right)^{0.825}\left(\frac{\nu_{\rm
-        obs}}{5 {\rm GHz}}\right)^{0.35} n_{18}^{1.24}
-  {\rm erg \, s^{-1}} & {\rm Opt.~Thin}\\\\
+        obs}}{5 {\rm GHz}}\right)^{0.35}  n_{18}^{1.24}
+  \,{\rm erg \, s^{-1}} & {\rm Opt.~Thin}\\\\
   1.1 \times 10^{42} \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.87}
   \left(\frac{\epsilon_e}{0.1}\right)^{0.61}\times\\
   \left(\frac{\epsilon_b}{0.002}\right)^{0.26}\left(\frac{\nu_{\rm
-        obs}}{5 {\rm GHz}}\right)^{2.01} n_{18}^{-0.14} {\rm erg\,
+        obs}}{5 {\rm GHz}}\right)^{2.01}  n_{18}^{-0.14} \,{\rm erg\,
     s^{-1}} & {\rm Opt.~Thick},
 \end{dcases}
 \label{eq:peakLum}
@@ -832,14 +832,14 @@ numerical results.
 The time of maximum flux, for the same fiducial values ($k = 1$,
 $p=2.3$), is given by equation (\ref{eq:tpeakGen}),
 \begin{align}
-t_p= \text{min}
+&t_p =\nonumber\\ &\text{min}
 \begin{dcases}
-  500 E_{54}^{0.5} n_{18}^{-0.5} {\rm days} & {\rm Opt.~Thin}\\\\
+  500 E_{54}^{0.5} n_{18}^{-0.5} \,{\rm days} & {\rm Opt.~Thin}\\\\
   50 \left(\frac{E}{10^{54} {\rm ergs}}\right)^{0.32}
   \left(\frac{\epsilon_e}{0.1}\right)^{0.45}
   \left(\frac{\epsilon_b}{0.002}\right)^{0.37}\\
   \left(\frac{\nu_{\rm obs}}{5 {\rm GHz}}\right)^{-1.1} n_{18}^{0.4}
-  {\rm days}& {\rm Opt.~Thick},
+  \,{\rm days}& {\rm Opt.~Thick},
 \end{dcases}
 \label{eq:peakTime}
 \end{align}
