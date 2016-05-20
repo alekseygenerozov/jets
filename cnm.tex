@@ -393,12 +393,15 @@ Near the stagnation radius, GSM15 found that the radial gas profile
 has a power-law slope of $k \approx (4\delta-1)/6$, which for our
 fiducial value of $\delta=1.7$ gives $n \propto r^{-1}$. The gas
 density steepens gradually towards smaller radii, eventually
-approaching $n\propto r^{-1.5}$, but only for radii well inside of the
-stagnation radius and the SMBH's sphere of influence. The gas profile
-flattens to $n\propto r^{1-\delta}$ between the stagnation radius and
-the stellar break radius; however, for our fiducial value of $\delta =
-1.7$, the resulting profile $n\propto r^{1-\delta} \approx r^{-0.7}$
-is only moderately changed. Thus, for our fiducial profile we adopt
+approaching $n\propto r^{-1.5}$, but only for radii that are well
+inside of both the stagnation radius of the flow and the SMBH's sphere
+of influence. We expect the density profile near the
+Sedov/deceleration radius of powerful jets to be closer to $n\propto
+r^{-1}$ than $n\propto r^{-1.5}$. The gas profile flattens to
+$n\propto r^{1-\delta}$ between the stagnation radius and the stellar
+break radius; however, for our fiducial value of $\delta = 1.7$, the
+resulting profile $n\propto r^{1-\delta} \approx r^{-0.7}$ is only
+moderately changed. Thus, for our fiducial profile we adopt
 \begin{equation} n(r)= n_{18} \left(\frac{r}{10^{18}
     {\rm cm}}\right)^{-1},
 \label{eq:profile}
@@ -992,10 +995,9 @@ radius for these density profiles. However, In 2D hydrodynamical
 simulations, a jet propagating through an $r^{-1.5}$ density profile
 develops a more prolate structure than a jet propagating through an
 $r^{-1}$ profile. This results in a light curve with a much steeper
-late time slope (see dash-dotted line in Fig.~\ref{fig:cores}). For
-profiles shallower than $n\propto r^{-1}$ we do not expect a
-significant difference in the late time light curve slope, but this
-needs to be checked using further 2D simulations.
+late time slope (see dash-dotted line in Fig.~\ref{fig:cores}),
+although we note that the peak luminosity is the same for the
+$n\propto r^{-1}$ and $n\propto r^{-1.5}$ density profiles.
 
 \begin{figure} 
   \includegraphics[width=8cm]{fig_cores.pdf}
@@ -1174,7 +1176,7 @@ of
 %
 where we have taken $n_{18}=2000$ cm$^{-3}$ (but the constraint is not
 overly sensitive to this choice for $n_{18}\geq 2$ cm$^{-3}$). We
-expect that the peak luminosity will fall of roughly linearly with
+expect that the peak luminosity will fall off roughly linearly with
 $n_{18}$ at smaller densities. For example, for our derived density
 lower limit of $0.5$ cm$^{-3}$, the above upper limit would increase
 by a factor of 5.  Radio measurements of the peak flux following a TDE
@@ -1311,19 +1313,21 @@ are summarized as follows.
   expected $n_{18}$ of order 10 cm$^{-3}$ for host galaxies of most
   observed TDEs.
 
-\item The slope of the gas density profile depends on the slope of
-  the stellar density profile. We expect a typical TDE host to have
-  cuspy stellar density profile inside of a few pc, with $\rho_\star
-  \propto r^{-1.7}$. This translates into a gas density profile $n
-  \propto r^{(-0.7)-(-1)}$ on large scales.  The radio light curve of
-  a TDE jet is most sensitive to the density at the deceleration/Sedov
-  radius (where it has swept up its mass in CNM gas). For density
-  profiles steeper than $n\propto r^{-1}$ (e.g. $n\propto r^{-1.5}$)
-  the 2D dynamical evolution of the jet will change in a non-trivial
-  way, resulting in a radio light curve with a much steeper late time
-  decline. For profiles shallower than $n\propto r^{-1}$ we do not
-  expect a significant difference in the late time light curve slope,
-  but this needs to be checked using further 2D simulations.
+\item The slope of the gas density profile depends on the slope of the
+  stellar density profile. We expect a typical TDE host to have cuspy
+  stellar density profile inside of a few pc, with $\rho_\star \propto
+  r^{-1.7}$. This translates into a gas density profile ranging $n
+  \propto r^{-0.7}$ on large scales to $n\propto r^{-1.5}$ on very
+  small scales near the SMBH.  The radio light curve of a TDE jet is
+  most sensitive to the density at the deceleration/Sedov radius
+  (where it has swept up its mass in CNM gas). We expect a density
+  profile close $n\propto r^{-1}$ near the Sedov/deceleration radius
+  of a powerful jet and thus adopt this as our fiducial density
+  profile. For density profiles steeper than $n\propto r^{-1}$
+  (e.g. $n\propto r^{-1.5}$) the 2D dynamical evolution of the jet
+  will change in a non-trivial way, resulting in a radio light curve
+  with a much steeper late time decline.
+
 
 \item We take our two component jet model and run it through a range
   of different density profiles. Motivated by the above results for
@@ -1331,24 +1335,27 @@ are summarized as follows.
   cm, $n_{18}$, to be 2, 11, 60, 345, or 2000 cm$^{-3}$. We find
   bright radio emission at a few GHz across this entire range of
   densities, with the peak luminosity only weakly dependent on the
-  chosen value of $n_{18}$ for frequencies $\lsim$1 GHz. The time of
-  the peak luminosity depends, however, on the density and can be as
-  early as months and as late as one decade after the TDE. By
-  comparing radio detections and upper limits from a set optical/UV
-  and soft X-ray selected TDE, we show that most of these sources
-  cannot have jets as powerful as SwJ1644, at least for a CNM density
-  profile of $n\propto r^{-1}$. If the density profile of most TDE
-  hosts were n$\propto r^{-1.5}$ on scales of $10^{18}$ cm the
-  existing upper limits would not be very constraining, making it
-  impossible to rule out even powerful Sw1644-like jets. Prompt follow-up
-  in the radio band, as well as regular monitoring, would provide
-  tighter constraints on the existence of TDE jets. Radio afterglows
-  can serve as calorimeters for off-axis jets launched by TDEs, and
-  future observational efforts that capture the peak radio flux in
-  thermally detected TDEs will add to the diversity of jet energies
-  observed in TDE flares.  The broad range of energies (both
-  detections and upper limits) already seen in TDE jets presents an
-  interesting puzzle for theoretical models of jet launching.
+  chosen density profile for on-axis jets. For off-axis jets, the peak
+  luminosity at 1 GHz is insensitive to the CNM density profile and
+  viewing angle for $n_{18}\geq 2$ cm$^{-3}$, although it will be a
+  stronger function of density at higher frequencies. The time of the
+  peak luminosity depends, however, on the density and can be as early
+  as months and as late as one decade after the TDE. By comparing
+  radio detections and upper limits from a set optical/UV and soft
+  X-ray selected TDE, we show that most of these sources cannot have
+  jets as powerful as SwJ1644, at least for a CNM density profile of
+  $n\propto r^{-1}$. If the density profile of most TDE hosts were
+  n$\propto r^{-1.5}$ on scales of $10^{18}$ cm the existing upper
+  limits would not be constraining, making it impossible to rule out
+  even powerful Sw1644-like jets. Prompt follow-up in the radio band,
+  as well as regular monitoring, would provide tighter constraints on
+  the existence of TDE jets. Radio afterglows can serve as
+  calorimeters for off-axis jets launched by TDEs, and future
+  observational efforts that capture the peak radio flux in thermally
+  detected TDEs will add to the diversity of jet energies observed in
+  TDE flares.  The broad range of energies (both detections and upper
+  limits) already seen in TDE jets presents an interesting puzzle for
+  theoretical models of jet launching.
 \end{enumerate}
 
 
