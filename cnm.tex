@@ -396,17 +396,19 @@ density steepens gradually towards smaller radii, eventually
 approaching $n\propto r^{-1.5}$, but only for radii that are well
 inside of both the stagnation radius of the flow and the SMBH's sphere
 of influence. We expect the density profile near the
-Sedov/deceleration radius of powerful jets to be closer to $n\propto
+Sedov/deceleration radius of powerful jets to be between $n\propto
 r^{-1}$ than $n\propto r^{-1.5}$. The gas profile flattens to
 $n\propto r^{1-\delta}$ between the stagnation radius and the stellar
 break radius; however, for our fiducial value of $\delta = 1.7$, the
 resulting profile $n\propto r^{1-\delta} \approx r^{-0.7}$ is only
-moderately changed. Thus, for our fiducial profile we adopt
+moderately changed. For simplicity we adopt
 \begin{equation} n(r)= n_{18} \left(\frac{r}{10^{18}
     {\rm cm}}\right)^{-1},
 \label{eq:profile}
 \end{equation}
-where $n_{18}$ is the density at $r = 10^{18}$ cm. 
+as our fiducial density profile, where $n_{18}$ is the density at $r =
+10^{18}$ cm. We explore the effects of the density slope on jet radio
+emission in $\S$~\ref{sec:profileComp}
 
 \citet{Alexander+2015} use radio observations of the ASSASN-14li flare
 to infer a nuclear gas density profile of $n\propto r^{-2.6}$ for its
@@ -1041,13 +1043,15 @@ the kinetic energy of the jet.  Even for our highest energy/lowest
 density model ($n_{18}=2$ cm$^{-3}$ and $E_j=5\times 10^{53}$ erg) the
 reverse shock will dissipate of order $~20\%$ of the jet energy.
 Fig.~\ref{fig:reverse} shows the 5 GHz light curve for this case,
-separated into contributions from the forward and reverse shocks.  The reverse shock emission is comparable to that from the forward shock for the first month.  However, this overstates the
-true contribution of the reverse shock to the observed emission because the
-latter is strongly attenuated by absorption from the front of the jet
-below 10 GHz, which has not been included in the reverse shock light
-curve in Fig.~\ref{fig:reverse}.  While the reverse shock dissipates
-an even larger fraction of the jet energy for higher ambient density,
-its emission will be even more heavily absorbed.  We conclude that the
+separated into contributions from the forward and reverse shocks.  The
+reverse shock emission is comparable to that from the forward shock
+for the first month.  However, this overstates the true contribution
+of the reverse shock to the observed emission because the latter is
+strongly attenuated by absorption from the front of the jet below 10
+GHz, which has not been included in the reverse shock light curve in
+Fig.~\ref{fig:reverse}.  While the reverse shock dissipates an even
+larger fraction of the jet energy for higher ambient density, its
+emission will be even more heavily absorbed.  We conclude that the
 reverse shock emission can be neglected for the high energy jets with
 $E\gtrsim 10^{53}$ erg, consistent with the reverse shock not
 contributing appreciably to SwJ1644 (\citealt{Metzger+2012}).
@@ -1175,9 +1179,14 @@ of
 \end{equation}
 %
 where we have taken $n_{18}=2000$ cm$^{-3}$ (but the constraint is not
-overly sensitive to this choice for $n_{18}\geq 2$ cm$^{-3}$)\footnote{The peak luminosity will decrease approximately linearly with $n_{18}$ for $n_{18}\leq 2$ cm$^{-3}$.  For the smallest plausible value of $n_{18}$, 0.5 cm$^{-3}$, the normalization in equation~\eqref{eq:upLim} would increase by a factor of 5.}.  Radio measurements of the peak flux following a TDE therefore serve as
-calorimeters of the total energy released in a relativistic jet (or
-spherical outflow).
+overly sensitive to this choice for $n_{18}\geq 2$
+cm$^{-3}$)\footnote{The peak luminosity will decrease approximately
+  linearly with $n_{18}$ for $n_{18}\leq 2$ cm$^{-3}$.  For the
+  smallest plausible value of $n_{18}$, 0.5 cm$^{-3}$, the
+  normalization in equation~\eqref{eq:upLim} would increase by a
+  factor of 5.}.  Radio measurements of the peak flux following a TDE
+therefore serve as calorimeters of the total energy released in a
+relativistic jet (or spherical outflow).
 
 If the peak flux is missed, late time measurements can still be used
 to constrain the jet energy. In fact, with late time measurements it
@@ -1194,7 +1203,11 @@ Fig.~\ref{fig:econtours} curve gives smallest plausible radio
 luminosity for the corresponding jet energy. As the upper limits are
 all taken at late times, the $n_{18}$=0.5 cm$^{-3}$ light curve which
 passes through each upper limit corresponds to the maximum jet energy
-that is consistent with it.  Note that, as given, these constraints can only be applied if the density profile is $n\propto r^{-1}$ or shallower, which is expected for energetic jets which sample the circumnuclear gas external to the stagnation radius (Fig.~\ref{fig:profiles}).    
+that is consistent with it.  Note that, as given, these constraints
+can only be applied if the density profile is $n\propto r^{-1}$ or
+shallower, which is expected for energetic jets which sample the
+circumnuclear gas external to the stagnation radius
+(Fig.~\ref{fig:profiles}).
 % Note that these constraints apply to spherical outflows as
 % well as collimated jets.
 
@@ -1321,10 +1334,12 @@ summarized as follows.
   of a few pc, with $\rho_\star \propto r^{-1.7}$. This translates
   into a gas density profile ranging from $n \propto r^{-0.7}$ on
   large scales to $n\propto r^{-1.5}$ on very small scales, well
-  inside the stagnation radius, $r_{\rm s}$.  In our numerical
-  simulations we adopt a fiducial density profile of $n\propto
-  r^{-1}$, as is expected near the Sedov/deceleration radius for
-  powerful jets similar to SwJ1644.
+  inside the stagnation radius, $r_{\rm s}$ and influence radius
+  $r_{\rm inf}$. In general, we expect a density profile between
+  $n\propto r^{-1}$ and $n\propto r^{-1.5}$ near the
+  Sedov/deceleration radius for powerful jets similar to SwJ1644. For
+  simplicity we adopt a single power law $n\propto r^{-1}$ as our
+  fiducial density profile.
 
 
 \item We perform hydrodynamical simulations of our two component jet
@@ -1338,9 +1353,9 @@ summarized as follows.
   function of density at higher frequencies.  Although the peak radio
   flux is largely insensitive to the radial power-law slope for fixed
   $n_{18}$, a steeper profile $n\propto r^{-1.5}$ (e.g., as expected
-  at radii $\ll r_{\rm s}$) alters the 2D dynamical evolution of the
-  jet in a non-trivial way, resulting in a steeper post maximum
-  decline of the radio light curve.
+  at radii $\ll r_{\rm s}, r_{\rm inf}$) alters the 2D dynamical
+  evolution of the jet in a non-trivial way, resulting in a steeper
+  post maximum decline of the radio light curve.
 
 \item The time of the peak radio luminosity depends more sensitively
   on the density and can be as early as months, or as late as one
