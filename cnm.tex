@@ -1099,8 +1099,9 @@ while the slow, wide component dominates for large $n_{18}$ and low
 frequencies.  Remarkably, the total peak luminosity is nearly
 independent of the ambient gas density; this is in part coincidental,
 as the fast and slow peak fluxes individually vary across the
-parameter space. For off-axis jets, the peak luminosity is dominated by just that of the slow component,
-and thus would decrease with decreasing ambient density above 1 GHz.
+parameter space. For off-axis jets, the peak luminosity is dominated
+by just that of the slow component, and thus would be a decreasing
+function of the ambient density above 1 GHz.
 
 The right column of Fig.~\ref{fig:jetContours} compares our numerical
 results for the slow component to the analytic estimate given in
@@ -1290,50 +1291,94 @@ PTF09axc & 550 & 5.0 & 6.1 & 550 & 10 & $< 2.8 \times 10^{ 53 }$\\
 \section{Summary and Conclusions}
 \label{sec:conc}
 
-We calculate the radio emission from tidal disruption event jets propagating through a range of plausible circumnuclear gas densities.  The latter are motivated by analytic estimates of the gas supply from stellar winds based on our previous work in MGM15.  We simulate the jet propagation using both 1D and 2D hydrodynamic simulations, which we then post-process using a radiative transfer calculation to produce synchrotron light curves. To isolate the effects of the density profile and jet
-energy we employ a fixed two component jet model from \citet{Mimica+2015}, which produces an acceptable fit to the observed radio data of the on-axis jetted TDE SwJ1644.  Our conclusions are summarized as follows.
+We calculate the radio emission from tidal disruption event jets
+propagating through a range of plausible circumnuclear gas densities.
+The latter are motivated by analytic estimates of the gas supply from
+stellar winds based on our previous work in GSM15.  We simulate the
+jet propagation using both 1D and 2D hydrodynamic simulations, which
+we then post-process using a radiative transfer calculation to produce
+synchrotron light curves. To isolate the effects of the density
+profile and jet energy we employ a fixed two component jet model from
+\citet{Mimica+2015}, which produces an acceptable fit to the observed
+radio data of the on-axis jetted TDE SwJ1644.  Our conclusions are
+summarized as follows.
 
 \begin{enumerate}
-\item We estimate the radial profile of nuclear gas densities expected from injection of
-  stellar wind material for different star formation histories.  The range of gas densities at 10$^{18}$ cm lies in the range $n_{18} \sim 0.5 \Mbh[,7]^{-0.4} - 2000 \Mbh[,7]^{0.5}$ cm$^{-3}$, with a typical value of $n_{18} \sim$ 10 cm$^{-3}$ for the star formation histories of the majority of the observed TDE flare host galaxies.
+\item We estimate the radial profile of nuclear gas densities expected
+  from injection of stellar wind material for different star formation
+  histories.  The range of gas densities at 10$^{18}$ cm lies in the
+  range $n_{18} \sim 0.5 \Mbh[,7]^{-0.4} - 2000 \Mbh[,7]^{0.5}$
+  cm$^{-3}$, with a typical value of $n_{18} \sim$ 10 cm$^{-3}$ for
+  the star formation histories of the majority of the observed TDE
+  flare host galaxies.
 
-\item The peak radio emission is most sensitive to the density at the jet deceleration radius, which is typically $r_{\rm dec} \sim 0.1-1$ pc, depending on the jet energy and $n_{18}$ (Fig.~\ref{fig:profiles}).  The slope of the CNM gas density profile depends on the slope of the stellar density profile.  A typical TDE host galaxy likely possesses a cuspy stellar density profile inside of a few pc, with $\rho_\star \propto r^{-1.7}$. This translates into a gas density profile ranging from $n \propto r^{-0.7}$ on large scales to $n\propto r^{-1.5}$ on very
-  small scales, well inside the stagnation radius, $r_{\rm s}$.  In our numerical simulations we adopt a fiducial density profile of $n\propto r^{-1}$, as is expected near the Sedov/deceleration radius for powerful jets similar to SwJ1644. 
+\item The peak radio emission is most sensitive to the density at the
+  jet deceleration radius, which is typically $r_{\rm dec} \sim 0.1-1$
+  pc, depending on the jet energy and $n_{18}$
+  (Fig.~\ref{fig:profiles}).  The slope of the CNM gas density profile
+  depends on the slope of the stellar density profile.  A typical TDE
+  host galaxy likely possesses a cuspy stellar density profile inside
+  of a few pc, with $\rho_\star \propto r^{-1.7}$. This translates
+  into a gas density profile ranging from $n \propto r^{-0.7}$ on
+  large scales to $n\propto r^{-1.5}$ on very small scales, well
+  inside the stagnation radius, $r_{\rm s}$.  In our numerical
+  simulations we adopt a fiducial density profile of $n\propto
+  r^{-1}$, as is expected near the Sedov/deceleration radius for
+  powerful jets similar to SwJ1644.
 
 
-\item We perform hydrodynamical simulations of our two component jet model for a range
-  of plausible density profiles and normalizations $n_{18} = $ 2, 11, 60, 345, or 2000 cm$^{-3}$. We find
-  bright radio emission at a few GHz across this entire range of
-  densities. The peak luminosity is only weakly dependent on the
-  chosen density profile for on-axis jets. For off-axis jets, the peak
-  luminosity at 1 GHz is insensitive to the CNM density profile and
-  viewing angle for $n_{18}\geq 2$ cm$^{-3}$, although it will be a
-  stronger function of density at higher frequencies.   Although the peak radio flux is largely insensitive to the radial power-law slope for fixed $n_{18}$, a steeper profile $n\propto r^{-1.5}$ (e.g., as expected at radii $\ll r_{\rm s}$) alters the 2D dynamical evolution of the jet in a non-trivial way, resulting in a steeper post maximum decline of the radio light curve.
+\item We perform hydrodynamical simulations of our two component jet
+  model for a range of plausible density profiles and normalizations
+  $n_{18} = $ 2, 11, 60, 345, or 2000 cm$^{-3}$. We find bright radio
+  emission at a few GHz across this entire range of densities. The
+  peak luminosity is only weakly dependent on the chosen density
+  profile for on-axis jets. For off-axis jets, the peak luminosity at
+  1 GHz is insensitive to the CNM density profile and viewing angle
+  for $n_{18}\geq 2$ cm$^{-3}$, although it will be a stronger
+  function of density at higher frequencies.  Although the peak radio
+  flux is largely insensitive to the radial power-law slope for fixed
+  $n_{18}$, a steeper profile $n\propto r^{-1.5}$ (e.g., as expected
+  at radii $\ll r_{\rm s}$) alters the 2D dynamical evolution of the
+  jet in a non-trivial way, resulting in a steeper post maximum
+  decline of the radio light curve.
 
-\item The time of the peak radio luminosity depends more sensitively on the density and can be as early
-  as months, or as late as one decade, after the TDE. By comparing our
-  calculated light curves with upper limits from a set optical/UV and
-  soft X-ray selected TDE, we show that most of these sources cannot
-  have jets as powerful as SwJ1644, at least for a CNM density profile
-  of $n\propto r^{-1}$.  However, if the density profile is closer to $n\propto r^{-1.5}$ on scales of $10^{18}$ cm, then existing upper limits are not as constraining.  
+\item The time of the peak radio luminosity depends more sensitively
+  on the density and can be as early as months, or as late as one
+  decade, after the TDE. By comparing our calculated light curves with
+  upper limits from a set optical/UV and soft X-ray selected TDE, we
+  show that most of these sources cannot have jets as powerful as
+  SwJ1644, at least for a CNM density profile of $n\propto r^{-1}$.
+  However, if the density profile is closer to $n\propto r^{-1.5}$ on
+  scales of $10^{18}$ cm, then existing upper limits are not as
+  constraining.
 
-Prompt radio follow-up, as well as regular monitoring, of future TDE flares would provide tighter constraints on the presence of jets.  Radio afterglows can serve as calorimeters for off-axis jets launched by TDEs, and future observational efforts that capture the peak radio flux in thermally detected TDEs will add to the diversity of jet energies observed in TDE flares.  The broad range of energies (both detections and upper limits) already seen in TDE jets presents an interesting puzzle for theoretical models of jet launching.
+  Prompt radio follow-up, as well as regular monitoring, of future TDE
+  flares would provide tighter constraints on the presence of jets.
+  Radio afterglows can serve as calorimeters for off-axis jets
+  launched by TDEs, and future observational efforts that capture the
+  peak radio flux in thermally detected TDEs will add to the diversity
+  of jet energies observed in TDE flares.  The broad range of energies
+  (both detections and upper limits) already seen in TDE jets presents
+  an interesting puzzle for theoretical models of jet launching.
 \end{enumerate}
 
 
 \section*{Acknowledgments}
 We acknowledge helpful conversations with Jerry Ostriker, Luca Ciotti,
-James Guillochon, and Yue Shen. BDM and AG acknowledge support from the NSF (grant AST-1410950), NASA (grants NNX15AR47G, NNX15AU77G, NNX16AB30G), the Alfred P.~Sloan Foundation, and the Research Corporation for Science Advancement.  NS acknowledges support form the NASA Einstein Postdoctoral Felloswhip Program (grant SAO PF5-160145).
-PM and MAA acknowledge financial
-support from the European Research Council (ERC) through the Starting
-Independent Researcher Grant CAMAP-259276, and the partial support of
-grants AYA2013-40979-P, AYA2015-66899-C2-1-P and
-PROMETEO-II-2014-069. We thankfully acknowledge the computer
-resources, technical expertise and assistance provided by the Servei
-de Inform\`atica of the University of Valencia and Columbia
-University's Yeti Computer Cluster. This research made use of Astropy,
-a community-developed core Python package for Astronomy (Astropy
-Collaboration, 2013).
+James Guillochon, and Yue Shen. BDM and AG acknowledge support from
+the NSF (grant AST-1410950), NASA (grants NNX15AR47G, NNX15AU77G,
+NNX16AB30G), the Alfred P.~Sloan Foundation, and the Research
+Corporation for Science Advancement.  NS acknowledges support form the
+NASA Einstein Postdoctoral Felloswhip Program (grant SAO PF5-160145).
+PM and MAA acknowledge financial support from the European Research
+Council (ERC) through the Starting Independent Researcher Grant
+CAMAP-259276, and the partial support of grants AYA2013-40979-P,
+AYA2015-66899-C2-1-P and PROMETEO-II-2014-069. We thankfully
+acknowledge the computer resources, technical expertise and assistance
+provided by the Servei de Inform\`atica of the University of Valencia
+and Columbia University's Yeti Computer Cluster. This research made
+use of Astropy, a community-developed core Python package for
+Astronomy (Astropy Collaboration, 2013).
 
 \appendix
 \section{Core Profile}
