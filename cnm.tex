@@ -44,7 +44,7 @@
   M.~A. Aloy$^{2}$
   \\
   $^{1}$Columbia Astrophysics Laboratory, Columbia University, 550 West 120th Street, New York, NY 10027\\
-  $^{2}$Departamento de Astronom\'{\i}ia y Astrof\'{\i}sica, Universidad de Valencia, E-46100 Burjassot, Spain\\
+  $^{2}$Departamento de Astronom\'{\i}a y Astrof\'{\i}sica, Universidad de Valencia, E-46100 Burjassot, Spain\\
   $^{3}$Department of Physics and Astronomy, Purdue University, 525
   Northwestern Avenue, West Lafayette, IN 47907, USA}
 
@@ -323,7 +323,7 @@ $\rho_\star\propto r^{-1-\gamma}=r^{-\delta}$.
 
 Cusp-like stellar density profiles are the most relevant to TDEs for
 two reasons.  First, only a low mass black hole ($\Mbh\lsim 10^8
-\Msun$) can disrupt a main sequence star, and low mass low mass black
+\Msun$) can disrupt a main sequence star, and low mass black
 holes are more commonly characterized by cusp-like profiles.
 Additionally, as described in \citet{Stone&Metzger2016} a cuspy
 stellar density profile results in a higher TDE rate per galaxy.  We
@@ -471,9 +471,9 @@ t_{\rm h}$ which contributes a fraction $f_{\rm burst}$ of the stellar
 mass. We assume a Salpeter IMF for both stellar populations.
 
 For a sufficiently large burst of age $\lesssim$ 40 Myr, gas heating
-is dominated by the energetic winds of massive star
-winds.\footnote{Core-collapse SNe are also an important heating
-  source.  In a young stellar population, the power from Core-collapse
+is dominated by the energetic winds of massive
+stars.\footnote{Core-collapse SNe are also an important heating
+  source.  In a young stellar population, the power from core-collapse
   supernovae exceeds that from massive stellar winds after $\sim$6 Myr
   \citep{Voss+2009}. However, due to discreteness effects the heating
   from massive star winds will be more important on small scales.}  In
@@ -547,7 +547,7 @@ dominated by SN Ia and we expect $n_{18}\sim (10-100)
 
 In summary, the CNM densities of quiescent galaxies vary from
 min($n_{18}) \sim 0.5 \Mbh[,7]^{-0.4}$ cm$^{-3}$
-to max($n_{18})\sim 10^{3} \Mbh[,7]^{0.5}$ cm$^{-3}$, with a
+to max($n_{18})\sim 2\times 10^{3} \Mbh[,7]^{0.5}$ cm$^{-3}$, with a
 characteristic value of $n_{18}\sim (10-100)
 \Mbh[,7]^{-0.4}$ cm$^{-3}$ in the host galaxies of most observed TDEs.
 
@@ -706,7 +706,7 @@ at the jet-CNM interface, accelerates non-thermal electrons behind
 the shock front, evolves the electron energy and spatial distribution
 in time, and computes the non-thermal emission taking into account the
 synchrotron self-absorption (interested readers can find many more
-technical details see \citealt{Mimica+2016}). We use the same
+technical details in \citealt{Mimica+2016}). We use the same
 numerical grid resolution as in \citet{Mimica+2015}.
 
 For the jet angular structure, we adopt the preferred two-component
@@ -1531,28 +1531,46 @@ non-relativistic flows, in which case we apply the more general
 expression for $\Gamma_{\rm sh}$ given by \citet{Beloborodov&Uhm2006}
 (their eq.~3, see also \citealt{Mimica&Aloy2010})
 \begin{equation}
-\frac{\Gamma^2-1}{\Gamma_{43}^2-1} f^{-1}=1 ,
+\frac{\Gamma_{\rm sh}^2-1}{\Gamma_{43}^2-1} f^{-1}=1 ,
+\label{eq:gamma43}
 \end{equation}
 where
 \begin{equation}
   \Gamma_{43}=\Gamma \Gamma_{\rm sh} \left(1-\beta_{\rm sh} \beta_j\right),
 \label{eq:gammaShGen}
 \end{equation}
-is the Lorentz of shocked jet in the frame of the unshocked jet. In
-the lab frame the reverse shock moves with a velocity
+is the Lorentz of shocked jet in the frame of the unshocked
+jet. Combining equations~\eqref{eq:gamma43}
+and~\eqref{eq:gammaShGen}, we obtain 
+
+\begin{align}
+&\Gamma_{\rm sh}(f)=\sqrt{\frac{f \left(\Gamma ^2 (f-3)-2 \left(\Gamma ^2-1\right) \Gamma
+      \sqrt{f}+1\right)+1}{(f+1)^2-4 \Gamma ^2 f}}\nonumber\\
+&\Gamma_{43}(f) = \sqrt{\frac{4 \Gamma  f^{3/2}+f^2+\Gamma ^4 f+4 \Gamma ^3 \sqrt{f}+2 \Gamma ^2 (2 f+1)+f-1}{\left(2 \Gamma  \sqrt{f}+f+1\right)^2}}
+\label{eq:gammaShGen2}
+\end{align}
+%
+In the lab frame the reverse shock moves with a velocity
 \begin{equation}
 \beta_{\rm rs}=\frac{\beta_{\rm sh}(f)-\beta_{43}(f)/3}{1-\beta_{\rm
     sh}(f) \beta_{43}(f)/3}.
 \label{eq:betars}
 \end{equation} 
 %
-Equations~\eqref{eq:gammaShGen} and ~\eqref{eq:betars} can be used to
+Equations~\eqref{eq:gammaShGen2} and ~\eqref{eq:betars} can be used to
 determine the radius of the shocks when the reverse shock crosses the
-trailing edge of the jet and the value of $\Gamma_{\rm sh}$ at this
-time.  The latter allows us to calculate what fraction of the initial
-kinetic energy of the jet is dissipated at the reverse shock, instead
-of being transferred to the shocked external medium via the forward
-shock.
+trailing edge of the jet and the value of $\Gamma_{\rm sh, rs}$ at this
+time.  This involves numerically integrating $\beta_{\rm
+  rs}/\beta_{j}=d r_{\rm rs}/d r_{\rm ej}$, where $r_{\rm \rs}$ is the
+position of the reverse and $r_{\rm ej}$ is the position of the back
+of the jet. The latter allows us to calculate what fraction of the
+initial kinetic energy of the jet is dissipated at the reverse shock,
+instead of being transferred to the shocked external medium via the
+forward shock. This is given by
+
+\begin{equation}
+f_{\rm ke}=\frac{\Gamma-\Gamma_{\rm sh, rs}}{\Gamma-1}
+\end{equation}
 
 
 
