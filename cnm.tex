@@ -238,8 +238,11 @@ that in ASASSN-14li.
 
 Although an initially relativistic jet will slow to sub-relativistic
 speeds at $r \sim r_{\rm sed}$, significant deceleration already sets
-in at the deceleration radius (where the jet has swept up a
-fraction $\sim 1/\Gamma$ of its rest mass),
+in at the deceleration radius (where the jet has swept up a fraction
+$\sim 1/\Gamma$\footnote{This is really the Lorentz factor of the
+  shock (see \citealt{Hascoet+2014}). For simplicity, we use the
+  Lorentz factor of the ejecta, which would lead to a factor of $\sim
+  2$ overestimate in the deceleration time/radius.} of its rest mass),
 \begin{equation}
   r_{\rm dec}=\frac{r_{\rm sed}}{\Gamma^{2/(3-k)}}.
   \label{eq:rdec2}
@@ -396,9 +399,9 @@ $\sigma_\star$ is the stellar velocity dispersion. Thus,
 where as in GSM15 we have taken $\sigma_\star=190 \Mbh[,7]^{0.2} {\rm
   km s^{-1}}$ (based on the $\Mbh-\sigma$ relation from
 \citealt{McConnell+2011})\footnote{This may be of questionable
-  validity for low mass black holes
-  (e.g. \citealt{Kormendy&Ho2013}). Also, several of the black hole
-  masses used in \citet{McConnell+2011} were underestimated
+  validity for low mass black holes (e.g. \citealt{Greene+2010,
+    Kormendy&Ho2013}). Also, several of the black hole masses used in
+  \citet{McConnell+2011} were underestimated
   \citep{Kormendy&Ho2013}. However, the precise form of the
   $\Mbh-\sigma$ relationship has minimal impact on our results}. For
 sufficiently strong heating, the stagnation radius will lie inside the
@@ -1595,10 +1598,10 @@ position of the reverse and $r_{\rm ej}$ is the position of the back
 of the jet. The latter allows us to calculate what fraction of the
 initial kinetic energy of the jet is dissipated at the reverse shock,
 instead of being transferred to the shocked external medium via the
-forward shock. This is given by
+forward shock. This is approximately given by
 
 \begin{equation}
-f_{\rm ke}=\frac{\Gamma-\Gamma_{\rm sh, rs}}{\Gamma-1}
+f_{\rm ke} \approx\frac{\Gamma-\Gamma_{\rm sh, rs}}{\Gamma-1}
 \end{equation}
 
 
